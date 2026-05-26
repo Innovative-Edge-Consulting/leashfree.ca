@@ -1,0 +1,21 @@
+---
+import Card from "../../components/Card.astro";
+import Layout from "../../components/Layout.astro";
+import PageShell from "../../components/PageShell.astro";
+import breeds from "../../data/generated/dog-breeds.json";
+import groups from "../../data/generated/breed-groups.json";
+---
+
+<Layout title="Dog Breeds" description="Converted LeashFree.ca dog breed records." canonical="https://leashfree.ca/dog-breeds/">
+  <PageShell eyebrow="Dog breeds" title="Dog breed data review" summary="Initial generated dog breed and breed group pages from Webflow CMS data.">
+    <h2>Breed Groups</h2>
+    <div class="grid">
+      {groups.map((group) => <Card title={group.name} href={`/dog-breeds/group/${group.slug}/`} description={group.metaDescription || group.description} />)}
+    </div>
+
+    <h2>Breeds</h2>
+    <div class="grid">
+      {breeds.slice(0, 80).map((breed) => <Card title={breed.name} href={`/dog-breeds/${breed.slug}/`} description={breed.metaDescription || breed.description} />)}
+    </div>
+  </PageShell>
+</Layout>

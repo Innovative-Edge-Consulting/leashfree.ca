@@ -1,0 +1,30 @@
+---
+import Layout from "../../components/Layout.astro";
+import PageShell from "../../components/PageShell.astro";
+import mediaMap from "../../data/media-map.json";
+import breeds from "../../data/generated/dog-breeds.json";
+import { resolveMedia } from "../../utils/media.js";
+
+export function getStaticPaths() {
+  return breeds.filter((breed) => breed.slug).map((breed) => ({
+    params: { slug: breed.slug },
+    props: { breed }
+  }));
+}
+
+const { breed } = Astro.props;
+const image = resolveMedia(breed, "Featured Image", mediaMap);
+---
+
+<Layout title={breed.seoTitle || breed.title || breed.name} description={breed.metaDescription || breed.description} canonical={breed.canonicalUrl} ogImage={image.src}>
+  <PageShell eyebrow="Dog breed" title={breed.title || breed.name} summary={breed.description}>
+    <img class="hero-image" src={image.src} alt="" loading="lazy" />
+    <ul class="meta-list">
+      {breed.raw["Breed Group"] && <li><strong>Breed group</strong><br />{breed.raw["Breed Group"]}</li>}
+      {breed.raw["Size Category"] && <li><strong>Size</strong><br />{breed.raw["Size Category"]}</li>}
+      {breed.raw["Activity Level"] && <li><strong>Activity level</strong><br />{breed.raw["Activity Level"]}</li>}
+      {breed.raw["Apartment Friendly"] && <li><strong>Apartment friendly</strong><br />{breed.raw["Apartment Friendly"]}</li>}
+    </ul>
+    {breed.body && <section class="content-block" set:html={breed.body} />}
+  </PageShell>
+</Layout>

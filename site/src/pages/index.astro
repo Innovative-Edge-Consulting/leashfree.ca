@@ -1,0 +1,30 @@
+---
+import Card from "../components/Card.astro";
+import Layout from "../components/Layout.astro";
+import PageShell from "../components/PageShell.astro";
+import parks from "../data/generated/parks.json";
+import cities from "../data/generated/cities.json";
+import provinces from "../data/generated/provinces.json";
+import posts from "../data/generated/blog-posts.json";
+import breeds from "../data/generated/dog-breeds.json";
+---
+
+<Layout
+  title="LeashFree.ca Static Migration Scaffold"
+  description="Initial static rebuild scaffold generated from Webflow CMS exports."
+  canonical="https://leashfree.ca/"
+>
+  <PageShell
+    eyebrow="Migration scaffold"
+    title="LeashFree.ca"
+    summary="This phase proves the data pipeline, route generation, SEO basics, and local media mapping before final design work."
+  >
+    <div class="grid">
+      <Card title="Dog Parks" href="/dog-parks/" description={`${parks.length} park records converted from Webflow CMS.`} />
+      <Card title="City Pages" href="/dog-parks/" description={`${cities.length} city landing page records share the dog parks route prefix.`} />
+      <Card title="Province Pages" href="/dog-parks/" description={`${provinces.length} province records are available for review.`} />
+      <Card title="Dog Breeds" href="/dog-breeds/" description={`${breeds.length} dog breed records converted.`} />
+      <Card title="Blog" href="/blog/" description={`${posts.length} blog posts converted.`} />
+    </div>
+  </PageShell>
+</Layout>

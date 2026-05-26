@@ -1,0 +1,27 @@
+---
+import Card from "../../components/Card.astro";
+import Layout from "../../components/Layout.astro";
+import PageShell from "../../components/PageShell.astro";
+import parks from "../../data/generated/parks.json";
+import cities from "../../data/generated/cities.json";
+import provinces from "../../data/generated/provinces.json";
+---
+
+<Layout title="Dog Parks" description="Browse converted dog park, city, and province records." canonical="https://leashfree.ca/dog-parks/">
+  <PageShell eyebrow="Dog parks" title="Dog park data review" summary="Initial generated pages for parks, cities, and provinces using the audited `/dog-parks/{slug}/` pattern.">
+    <h2>Provinces</h2>
+    <div class="grid">
+      {provinces.map((item) => <Card title={item.name} href={`/dog-parks/${item.slug}/`} description={item.metaDescription || item.description} />)}
+    </div>
+
+    <h2>Cities</h2>
+    <div class="grid">
+      {cities.slice(0, 24).map((item) => <Card title={item.name} href={`/dog-parks/${item.slug}/`} description={item.metaDescription || item.description} />)}
+    </div>
+
+    <h2>Dog Parks</h2>
+    <div class="grid">
+      {parks.slice(0, 48).map((item) => <Card title={item.name} href={`/dog-parks/${item.slug}/`} description={item.description || item.raw["Street Address"]} />)}
+    </div>
+  </PageShell>
+</Layout>

@@ -1,0 +1,24 @@
+---
+import Layout from "../../../components/Layout.astro";
+import PageShell from "../../../components/PageShell.astro";
+import mediaMap from "../../../data/media-map.json";
+import groups from "../../../data/generated/breed-groups.json";
+import { resolveMedia } from "../../../utils/media.js";
+
+export function getStaticPaths() {
+  return groups.filter((group) => group.slug).map((group) => ({
+    params: { slug: group.slug },
+    props: { group }
+  }));
+}
+
+const { group } = Astro.props;
+const image = resolveMedia(group, "Hero Image", mediaMap);
+---
+
+<Layout title={group.seoTitle || group.title || group.name} description={group.metaDescription || group.description} canonical={group.canonicalUrl} ogImage={image.src}>
+  <PageShell eyebrow="Breed group" title={group.title || group.name} summary={group.description}>
+    <img class="hero-image" src={image.src} alt="" loading="lazy" />
+    {group.body && <section class="content-block" set:html={group.body} />}
+  </PageShell>
+</Layout>

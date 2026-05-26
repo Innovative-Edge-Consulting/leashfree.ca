@@ -1,0 +1,68 @@
+[
+  {
+    "collection": "Blog Categories",
+    "file": "blog-categories.json",
+    "itemCount": 7,
+    "routePrefix": "/blog/category/"
+  },
+  {
+    "collection": "Blog Posts",
+    "file": "blog-posts.json",
+    "itemCount": 38,
+    "routePrefix": "/blog/"
+  },
+  {
+    "collection": "Blog Tags",
+    "file": "blog-tags.json",
+    "itemCount": 28,
+    "routePrefix": "/blog/tag/"
+  },
+  {
+    "collection": "Breed Groups",
+    "file": "breed-groups.json",
+    "itemCount": 9,
+    "routePrefix": "/dog-breeds/group/"
+  },
+  {
+    "collection": "Categories",
+    "file": "categories.json",
+    "itemCount": 7,
+    "routePrefix": "/directory/"
+  },
+  {
+    "collection": "City Pages",
+    "file": "cities.json",
+    "itemCount": 88,
+    "routePrefix": "/dog-parks/"
+  },
+  {
+    "collection": "Directories",
+    "file": "directories.json",
+    "itemCount": 66,
+    "routePrefix": "/directory/"
+  },
+  {
+    "collection": "Dog Breeds",
+    "file": "dog-breeds.json",
+    "itemCount": 310,
+    "routePrefix": "/dog-breeds/"
+  },
+  {
+    "collection": "Dog Parks",
+    "file": "parks.json",
+    "itemCount": 511,
+    "routePrefix": "/dog-parks/"
+  },
+  {
+    "collection": "Pet Insurance Providers",
+    "file": "pet-insurance-providers.json",
+    "itemCount": 8,
+    "routePrefix": "/dog-insurance-canada/"
+  },
+  {
+    "collection": "Provinces",
+    "file": "provinces.json",
+    "itemCount": 4,
+    "routePrefix": "/dog-parks/"
+  }
+]

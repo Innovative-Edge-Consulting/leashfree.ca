@@ -1,0 +1,14 @@
+---
+import Card from "../../components/Card.astro";
+import Layout from "../../components/Layout.astro";
+import PageShell from "../../components/PageShell.astro";
+import posts from "../../data/generated/blog-posts.json";
+---
+
+<Layout title="Blog" description="Converted LeashFree.ca blog posts." canonical="https://leashfree.ca/blog/">
+  <PageShell eyebrow="Blog" title="Blog data review" summary="Initial generated blog post listing from the Webflow CMS export.">
+    <div class="grid">
+      {posts.map((post) => <Card title={post.title || post.name} href={`/blog/${post.slug}/`} description={post.metaDescription || post.description} />)}
+    </div>
+  </PageShell>
+</Layout>

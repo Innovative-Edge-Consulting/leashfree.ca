@@ -1,0 +1,14 @@
+---
+import Card from "../../components/Card.astro";
+import Layout from "../../components/Layout.astro";
+import PageShell from "../../components/PageShell.astro";
+import directories from "../../data/generated/directories.json";
+---
+
+<Layout title="Directory" description="Converted LeashFree.ca directory listings." canonical="https://leashfree.ca/directory/">
+  <PageShell eyebrow="Directory" title="Directory data review" summary="Initial generated directory listing pages from Webflow CMS data.">
+    <div class="grid">
+      {directories.map((item) => <Card title={item.name} href={`/directory/${item.slug}/`} description={item.metaDescription || item.description} />)}
+    </div>
+  </PageShell>
+</Layout>

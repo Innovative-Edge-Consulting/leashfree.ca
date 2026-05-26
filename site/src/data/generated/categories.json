@@ -1,0 +1,359 @@
+[
+  {
+    "id": "68f3f25c9b625fad415cbf92",
+    "name": "Animal Shelters & Rescues",
+    "slug": "animal-shelters-and-rescues",
+    "title": "Animal Shelters & Dog Rescues Across Canada",
+    "seoTitle": "Animal Shelters & Dog Rescues in Canada | Adopt a Pet – LeashFree.ca",
+    "metaDescription": "Discover trusted animal shelters and dog rescues across Canada with LeashFree.ca. Find verified organizations, adoptable dogs, and connect with local shelters dedicated to giving pets a second chance.",
+    "description": "Discover trusted animal shelters and dog rescues across Canada with LeashFree.ca. Find verified organizations, adoptable dogs, and connect with local shelters dedicated to giving pets a second chance.",
+    "body": "",
+    "collection": "Categories",
+    "sourceFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Categories - 68f3eb6627330a66b9e68114.csv",
+    "canonicalUrl": "https://leashfree.ca/directory/animal-shelters-and-rescues/",
+    "routePath": "/directory/animal-shelters-and-rescues/",
+    "media": [
+      {
+        "fieldName": "Hero Image",
+        "value": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68f64bddbf5a975a35fedd01_animal-shelter-volunteer-cuddling-rescue-dog-canada.jpg",
+        "originalUrls": [
+          "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68f64bddbf5a975a35fedd01_animal-shelter-volunteer-cuddling-rescue-dog-canada.jpg"
+        ]
+      }
+    ],
+    "references": {},
+    "raw": {
+      "Name": "Animal Shelters & Rescues",
+      "Slug": "animal-shelters-and-rescues",
+      "Collection ID": "68f3eb6627330a66b9e68114",
+      "Locale ID": "683758b09dd1e3ac2e4e9809",
+      "Item ID": "68f3f25c9b625fad415cbf92",
+      "Archived": "false",
+      "Draft": "false",
+      "Created On": "Sat Oct 18 2025 20:02:36 GMT+0000 (Coordinated Universal Time)",
+      "Updated On": "Sat Oct 25 2025 10:57:13 GMT+0000 (Coordinated Universal Time)",
+      "Published On": "Sat Oct 25 2025 11:21:48 GMT+0000 (Coordinated Universal Time)",
+      "Header 1": "Animal Shelters & Dog Rescues Across Canada",
+      "Intro Description": "<p id=\"\">Looking to adopt a dog or support a local rescue? LeashFree.ca’s <strong id=\"\">Animal Shelters &amp; Rescues Directory</strong> connects you with verified organizations across Canada dedicated to saving, caring for, and rehoming dogs in need. Each listing includes full contact details, maps, and links to official websites—helping you find the right place to adopt or volunteer.</p>",
+      "Header 2": "Find a Shelter or Rescue Near You",
+      "Secondary Description": "<p id=\"\">Whether you’re in Ontario, British Columbia, Alberta, or beyond, you can explore shelters by province or browse all verified listings below. Each organization is carefully reviewed to ensure accuracy and credibility, giving you peace of mind when choosing where to adopt or donate.</p><blockquote id=\"\">💚 <strong id=\"\">Tip:</strong> Many shelters offer volunteer opportunities, fostering programs, and adoption events. Contact your local shelter to learn how you can help.</blockquote><p id=\"\">‍</p><h4 id=\"\">‍<strong id=\"\">Why Adopt From a Rescue?</strong></h4><p id=\"\">Adopting from a rescue not only changes a dog’s life - it changes yours too.<br>Rescue organizations provide medical care, rehabilitation, and love to dogs waiting for their forever homes. By adopting, you’re helping reduce overpopulation and supporting ethical animal care across Canada.</p><p id=\"\"><strong id=\"\">Benefits of adopting from a shelter:</strong></p><ul id=\"\"><li id=\"\">Give a homeless dog a second chance</li><li id=\"\">Support local animal welfare</li><li id=\"\">Adopt a dog that’s health-checked and vaccinated</li><li id=\"\">Receive guidance and post-adoption support</li></ul>",
+      "Header 3": "Explore Our Verified Listings",
+      "Third Description": "<p>Below you’ll find verified <strong id=\"\">Animal Shelters &amp; Rescues</strong> across Canada.Click on each listing to view details, contact information, and adoption links.</p>",
+      "Hero Image": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68f64bddbf5a975a35fedd01_animal-shelter-volunteer-cuddling-rescue-dog-canada.jpg",
+      "Icon": "",
+      "SEO Title": "Animal Shelters & Dog Rescues in Canada | Adopt a Pet – LeashFree.ca",
+      "Meta Description": "Discover trusted animal shelters and dog rescues across Canada with LeashFree.ca. Find verified organizations, adoptable dogs, and connect with local shelters dedicated to giving pets a second chance.",
+      "OG Title": "Animal Shelters & Dog Rescues in Canada | LeashFree.ca",
+      "OG Description": "Explore verified dog rescues and shelters across Canada. Adopt a pet, support local animal welfare, and find trusted rescue organizations near you.",
+      "OG Image": "",
+      "Canonical URL": "https://www.leashfree.ca/directory/animal-shelters-rescues"
+    },
+    "warnings": []
+  },
+  {
+    "id": "68f3f25c3c7f48303e8962d7",
+    "name": "Dog Daycares & Boarding",
+    "slug": "dog-daycares-and-boarding",
+    "title": "Dog Daycares & Boarding Services Across Canada",
+    "seoTitle": "Dog Daycares & Boarding Services in Canada | Trusted Overnight & Play Care – LeashFree.ca",
+    "metaDescription": "Find trusted dog daycares and boarding services across Canada with LeashFree.ca. Explore verified facilities offering safe play spaces, cage-free boarding, and professional overnight pet care.",
+    "description": "Find trusted dog daycares and boarding services across Canada with LeashFree.ca. Explore verified facilities offering safe play spaces, cage-free boarding, and professional overnight pet care.",
+    "body": "",
+    "collection": "Categories",
+    "sourceFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Categories - 68f3eb6627330a66b9e68114.csv",
+    "canonicalUrl": "https://leashfree.ca/directory/dog-daycares-and-boarding/",
+    "routePath": "/directory/dog-daycares-and-boarding/",
+    "media": [
+      {
+        "fieldName": "Hero Image",
+        "value": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68f6526b45244aa80e43436b_dogs-playing-outdoor-daycare-yard-canada.jpg",
+        "originalUrls": [
+          "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68f6526b45244aa80e43436b_dogs-playing-outdoor-daycare-yard-canada.jpg"
+        ]
+      }
+    ],
+    "references": {},
+    "raw": {
+      "Name": "Dog Daycares & Boarding",
+      "Slug": "dog-daycares-and-boarding",
+      "Collection ID": "68f3eb6627330a66b9e68114",
+      "Locale ID": "683758b09dd1e3ac2e4e9809",
+      "Item ID": "68f3f25c3c7f48303e8962d7",
+      "Archived": "false",
+      "Draft": "false",
+      "Created On": "Sat Oct 18 2025 20:02:36 GMT+0000 (Coordinated Universal Time)",
+      "Updated On": "Sat Oct 25 2025 11:11:39 GMT+0000 (Coordinated Universal Time)",
+      "Published On": "Sat Oct 25 2025 11:21:48 GMT+0000 (Coordinated Universal Time)",
+      "Header 1": "Dog Daycares & Boarding Services Across Canada",
+      "Intro Description": "<p id=\"\">Whether it’s for the day or the weekend, finding a safe and reliable place for your dog to stay is essential.<br>LeashFree.ca’s <strong id=\"\">Dog Daycares &amp; Boarding Directory</strong> connects pet owners with trusted, verified facilities across Canada that provide fun, comfort, and attentive care.</p>",
+      "Header 2": "Trusted Dog Daycares & Boarding Facilities",
+      "Secondary Description": "<p id=\"\">Our verified listings feature dog daycare centers, boarding kennels, and dog hotels offering a range of services - from cage-free play areas to luxury overnight stays.<br>Each facility prioritizes your dog’s safety, socialization, and happiness.</p><blockquote id=\"\">🏠 <strong id=\"\">Tip:</strong> Many facilities offer live camera access, playtime updates, and social media posts so you can check in on your pup during their stay.</blockquote><h3 id=\"\"><strong id=\"\">Why Choose a Verified Facility</strong></h3><p id=\"\">Leaving your dog in someone else’s care requires trust.<br>Every daycare and boarding provider listed on LeashFree.ca is reviewed for transparency, safety standards, and customer satisfaction.</p><p id=\"\"><strong id=\"\">Common features offered:</strong></p><ul id=\"\"><li>Supervised play and socialization</li><li>Clean, comfortable sleeping areas</li><li>Feeding and medication schedules</li><li>Separate play zones for size and temperament</li><li>Photo and video updates for peace of mind</li></ul>",
+      "Header 3": "Explore Our Verified Listings",
+      "Third Description": "<p>Browse our collection of <strong id=\"\">Dog Daycares &amp; Boarding</strong> providers across Canada. Each listing includes contact information, addresses, and website links for easy booking.</p>",
+      "Hero Image": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68f6526b45244aa80e43436b_dogs-playing-outdoor-daycare-yard-canada.jpg",
+      "Icon": "",
+      "SEO Title": "Dog Daycares & Boarding Services in Canada | Trusted Overnight & Play Care – LeashFree.ca",
+      "Meta Description": "Find trusted dog daycares and boarding services across Canada with LeashFree.ca. Explore verified facilities offering safe play spaces, cage-free boarding, and professional overnight pet care.",
+      "OG Title": "Dog Daycares & Boarding Services in Canada | LeashFree.ca",
+      "OG Description": "Discover verified dog daycares and boarding facilities across Canada. Safe, comfortable, and caring environments for your dog’s daily play or overnight stay.",
+      "OG Image": "",
+      "Canonical URL": "https://www.leashfree.ca/directory/dog-daycares-and-boarding"
+    },
+    "warnings": []
+  },
+  {
+    "id": "68f3f25cf785b6c04aeffb50",
+    "name": "Dog Groomers",
+    "slug": "dog-groomers",
+    "title": "Find Dog Groomers Across Canada",
+    "seoTitle": "Dog Groomers in Canada | Trusted Grooming Salons & Mobile Services – LeashFree.ca",
+    "metaDescription": "Find trusted dog groomers and mobile grooming services across Canada with LeashFree.ca. Discover verified salons offering professional haircuts, baths, nail trims, and coat care for dogs of every breed.",
+    "description": "Find trusted dog groomers and mobile grooming services across Canada with LeashFree.ca. Discover verified salons offering professional haircuts, baths, nail trims, and coat care for dogs of every breed.",
+    "body": "",
+    "collection": "Categories",
+    "sourceFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Categories - 68f3eb6627330a66b9e68114.csv",
+    "canonicalUrl": "https://leashfree.ca/directory/dog-groomers/",
+    "routePath": "/directory/dog-groomers/",
+    "media": [
+      {
+        "fieldName": "Hero Image",
+        "value": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68f3f6123263a8d00ac24293_dog-groomer-brushing-small-dog-in-grooming-salon-canada.jpg",
+        "originalUrls": [
+          "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68f3f6123263a8d00ac24293_dog-groomer-brushing-small-dog-in-grooming-salon-canada.jpg"
+        ]
+      }
+    ],
+    "references": {},
+    "raw": {
+      "Name": "Dog Groomers",
+      "Slug": "dog-groomers",
+      "Collection ID": "68f3eb6627330a66b9e68114",
+      "Locale ID": "683758b09dd1e3ac2e4e9809",
+      "Item ID": "68f3f25cf785b6c04aeffb50",
+      "Archived": "false",
+      "Draft": "false",
+      "Created On": "Sat Oct 18 2025 20:02:36 GMT+0000 (Coordinated Universal Time)",
+      "Updated On": "Sat Oct 25 2025 11:07:07 GMT+0000 (Coordinated Universal Time)",
+      "Published On": "Sat Oct 25 2025 11:21:48 GMT+0000 (Coordinated Universal Time)",
+      "Header 1": "Find Dog Groomers Across Canada",
+      "Intro Description": "<p id=\"\">Your dog deserves to look and feel their best - and regular grooming is key to a healthy, happy pet.<br>LeashFree.ca’s <strong id=\"\">Dog Groomers Directory</strong> connects you with trusted professionals and salons across Canada offering haircuts, baths, nail trims, and full-service grooming care.</p>",
+      "Header 2": "Professional Dog Grooming Services Near You",
+      "Secondary Description": "<p id=\"\">From boutique salons to mobile grooming vans, Canada has hundreds of qualified groomers ready to care for your dog.<br>Our verified listings make it easy to find experienced professionals who treat every dog with patience, safety, and love.</p><blockquote id=\"\">✂️ <strong id=\"\">Tip:</strong> Many groomers offer express sessions, spa treatments, or breed-specific styling - check individual listings for details.</blockquote><h3 id=\"\"><strong id=\"\">Why Choose a Verified Dog Groomer</strong></h3><p id=\"\">Finding the right groomer can make all the difference in your dog’s comfort and coat health.<br>Every groomer listed on LeashFree.ca has been reviewed for professionalism, safety, and service quality.</p><p id=\"\"><strong id=\"\">Benefits of a verified groomer:</strong></p><ul id=\"\"><li>Gentle handling and breed-appropriate care</li><li>Clean, safe grooming environments</li><li>Personalized grooming packages</li><li>Mobile grooming options for convenience</li></ul>",
+      "Header 3": "Explore Our Verified Listings",
+      "Third Description": "<p>Browse our collection of <strong id=\"\">Dog Groomers</strong> across Canada. Each listing includes address, contact info, and website links so you can book with confidence.</p>",
+      "Hero Image": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68f3f6123263a8d00ac24293_dog-groomer-brushing-small-dog-in-grooming-salon-canada.jpg",
+      "Icon": "",
+      "SEO Title": "Dog Groomers in Canada | Trusted Grooming Salons & Mobile Services – LeashFree.ca",
+      "Meta Description": "Find trusted dog groomers and mobile grooming services across Canada with LeashFree.ca. Discover verified salons offering professional haircuts, baths, nail trims, and coat care for dogs of every breed.",
+      "OG Title": "Dog Groomers in Canada | Trusted Grooming & Spa Services – LeashFree.ca",
+      "OG Description": "Explore verified dog grooming salons and mobile groomers across Canada. Professional care to keep your dog clean, comfortable, and healthy.",
+      "OG Image": "",
+      "Canonical URL": "https://www.leashfree.ca/directory/dog-groomers"
+    },
+    "warnings": []
+  },
+  {
+    "id": "68f3f25cb033f646ad5da20c",
+    "name": "Dog Trainers",
+    "slug": "dog-trainers",
+    "title": "Dog Trainers & Obedience Classes Across Canada",
+    "seoTitle": "Dog Trainers & Obedience Classes in Canada | Certified Training Services – LeashFree.ca",
+    "metaDescription": "Find professional dog trainers and obedience classes across Canada with LeashFree.ca. Explore verified experts offering puppy training, behavioral support, and positive-reinforcement programs.",
+    "description": "Find professional dog trainers and obedience classes across Canada with LeashFree.ca. Explore verified experts offering puppy training, behavioral support, and positive-reinforcement programs.",
+    "body": "",
+    "collection": "Categories",
+    "sourceFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Categories - 68f3eb6627330a66b9e68114.csv",
+    "canonicalUrl": "https://leashfree.ca/directory/dog-trainers/",
+    "routePath": "/directory/dog-trainers/",
+    "media": [
+      {
+        "fieldName": "Hero Image",
+        "value": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68f64b8e1b21eb9b301e5ca0_dog-trainer-teaching-labrador-obedience-park-canada.jpg",
+        "originalUrls": [
+          "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68f64b8e1b21eb9b301e5ca0_dog-trainer-teaching-labrador-obedience-park-canada.jpg"
+        ]
+      }
+    ],
+    "references": {},
+    "raw": {
+      "Name": "Dog Trainers",
+      "Slug": "dog-trainers",
+      "Collection ID": "68f3eb6627330a66b9e68114",
+      "Locale ID": "683758b09dd1e3ac2e4e9809",
+      "Item ID": "68f3f25cb033f646ad5da20c",
+      "Archived": "false",
+      "Draft": "false",
+      "Created On": "Sat Oct 18 2025 20:02:36 GMT+0000 (Coordinated Universal Time)",
+      "Updated On": "Sat Oct 25 2025 11:14:55 GMT+0000 (Coordinated Universal Time)",
+      "Published On": "Sat Oct 25 2025 11:21:48 GMT+0000 (Coordinated Universal Time)",
+      "Header 1": "Dog Trainers & Obedience Classes Across Canada",
+      "Intro Description": "<p id=\"\">Training builds trust, confidence, and a lasting bond between you and your dog.<br>LeashFree.ca’s <strong id=\"\">Dog Trainers Directory</strong> connects pet owners with verified, certified professionals offering obedience classes, puppy training, and behavioral support across Canada.</p>",
+      "Header 2": "Trusted Dog Training Professionals",
+      "Secondary Description": "<p id=\"\">Whether you’re working on basic manners or specialized behavioral training, our verified trainers provide personalized programs designed for your dog’s needs.<br>Browse listings by city or province to find qualified professionals who use science-based, positive-reinforcement methods.</p><blockquote id=\"\">🎓 <strong id=\"\">Tip:</strong> Many trainers offer private sessions, group classes, or in-home training options - check listings for details.</blockquote><p>‍</p><h3 id=\"\"><strong id=\"\">Why Choose a Verified Dog Trainer</strong></h3><p id=\"\">Every trainer on LeashFree.ca has been reviewed for qualifications, experience, and ethical training practices.<br>Choosing a verified trainer ensures your dog learns in a safe, supportive, and enjoyable environment.</p><p id=\"\"><strong id=\"\">Common services offered:</strong></p><ul id=\"\"><li>🐾 Puppy socialization and obedience</li><li>🦮 Leash manners and recall training</li><li>🧠 Behavioral modification and anxiety support</li><li>👨‍👩‍👧 Group and private training classes</li><li>💬 Ongoing coaching and progress tracking</li></ul>",
+      "Header 3": "Explore Our Verified Listings",
+      "Third Description": "<p>Browse verified <strong id=\"\">Dog Trainers</strong> across Canada. Each listing includes credentials, location, contact info, and links to official websites to make finding the right trainer easy.</p>",
+      "Hero Image": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68f64b8e1b21eb9b301e5ca0_dog-trainer-teaching-labrador-obedience-park-canada.jpg",
+      "Icon": "",
+      "SEO Title": "Dog Trainers & Obedience Classes in Canada | Certified Training Services – LeashFree.ca",
+      "Meta Description": "Find professional dog trainers and obedience classes across Canada with LeashFree.ca. Explore verified experts offering puppy training, behavioral support, and positive-reinforcement programs.",
+      "OG Title": "Dog Trainers & Obedience Classes in Canada | LeashFree.ca",
+      "OG Description": "Discover verified dog trainers across Canada. Certified professionals providing obedience, puppy, and behavioral training for dogs of every breed.",
+      "OG Image": "",
+      "Canonical URL": "https://www.leashfree.ca/directory/dog-trainers"
+    },
+    "warnings": []
+  },
+  {
+    "id": "68f3f25cf717304454ba5695",
+    "name": "Dog Walkers & Pet Sitters",
+    "slug": "dog-walkers-and-pet-sitters",
+    "title": "Dog Walkers & Pet Sitters Across Canada",
+    "seoTitle": "Dog Walkers & Pet Sitters in Canada | Trusted Local Pet Care – LeashFree.ca",
+    "metaDescription": "Find trusted dog walkers and pet sitters across Canada with LeashFree.ca. Explore verified professionals offering safe, reliable, and caring services for your pets at home or on the go.",
+    "description": "Find trusted dog walkers and pet sitters across Canada with LeashFree.ca. Explore verified professionals offering safe, reliable, and caring services for your pets at home or on the go.",
+    "body": "",
+    "collection": "Categories",
+    "sourceFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Categories - 68f3eb6627330a66b9e68114.csv",
+    "canonicalUrl": "https://leashfree.ca/directory/dog-walkers-and-pet-sitters/",
+    "routePath": "/directory/dog-walkers-and-pet-sitters/",
+    "media": [
+      {
+        "fieldName": "Hero Image",
+        "value": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68f64e79b4569a912fda1554_dog-walker-with-multiple-dogs-city-trail-canada.jpg",
+        "originalUrls": [
+          "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68f64e79b4569a912fda1554_dog-walker-with-multiple-dogs-city-trail-canada.jpg"
+        ]
+      }
+    ],
+    "references": {},
+    "raw": {
+      "Name": "Dog Walkers & Pet Sitters",
+      "Slug": "dog-walkers-and-pet-sitters",
+      "Collection ID": "68f3eb6627330a66b9e68114",
+      "Locale ID": "683758b09dd1e3ac2e4e9809",
+      "Item ID": "68f3f25cf717304454ba5695",
+      "Archived": "false",
+      "Draft": "false",
+      "Created On": "Sat Oct 18 2025 20:02:36 GMT+0000 (Coordinated Universal Time)",
+      "Updated On": "Sat Oct 25 2025 10:59:46 GMT+0000 (Coordinated Universal Time)",
+      "Published On": "Sat Oct 25 2025 11:21:48 GMT+0000 (Coordinated Universal Time)",
+      "Header 1": "Dog Walkers & Pet Sitters Across Canada",
+      "Intro Description": "<p id=\"\">When life gets busy, finding someone you trust to care for your dog is essential. LeashFree.ca’s <strong id=\"\">Dog Walkers &amp; Pet Sitters Directory</strong> connects you with reliable professionals who provide daily walks, pet sitting, and in-home care services across Canada - all with verified listings you can count on.</p>",
+      "Header 2": "Trusted Local Dog Walkers & Sitters",
+      "Secondary Description": "<p id=\"\">Whether you’re away for the day or on vacation, our verified walkers and sitters make sure your pets stay happy, exercised, and loved.<br>Browse listings by city or province to find experienced, insured professionals who understand your dog’s unique needs.</p><blockquote id=\"\"><strong id=\"\">Tip:</strong> Many dog walkers offer small group walks, solo walks, or playtime add-ons - check individual listings for details.</blockquote><p id=\"\">‍</p><h3 id=\"\"><strong id=\"\">Why Choose a Verified Dog Walker or Sitter</strong></h3><p id=\"\">Every listing on LeashFree.ca is reviewed for accuracy, professionalism, and trustworthiness.<br>Hiring a verified walker or sitter gives you peace of mind knowing your dog is in caring, experienced hands.</p><p id=\"\"><strong id=\"\">Benefits of hiring a verified professional:</strong></p><ul id=\"\"><li id=\"\">Reliable, background-checked service providers</li><li id=\"\">Personalized care tailored to your dog’s routine</li><li id=\"\">Easy scheduling and local contact info</li><li id=\"\">Peace of mind while you’re away</li></ul>",
+      "Header 3": "Explore Our Verified Listings",
+      "Third Description": "<p>Browse our collection of <strong id=\"\">Dog Walkers &amp; Pet Sitters</strong> across Canada. Each listing includes a full address, phone number, and website for easy connection and booking.</p>",
+      "Hero Image": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68f64e79b4569a912fda1554_dog-walker-with-multiple-dogs-city-trail-canada.jpg",
+      "Icon": "",
+      "SEO Title": "Dog Walkers & Pet Sitters in Canada | Trusted Local Pet Care – LeashFree.ca",
+      "Meta Description": "Find trusted dog walkers and pet sitters across Canada with LeashFree.ca. Explore verified professionals offering safe, reliable, and caring services for your pets at home or on the go.",
+      "OG Title": "Dog Walkers & Pet Sitters in Canada | LeashFree.ca",
+      "OG Description": "Discover verified dog walkers and pet sitters across Canada. Reliable, professional, and dedicated to your pet’s well-being.",
+      "OG Image": "",
+      "Canonical URL": "https://www.leashfree.ca/directory/dog-walkers-and-pet-sitters"
+    },
+    "warnings": []
+  },
+  {
+    "id": "68f3f25db2585150b8f98981",
+    "name": "Pet Stores & Boutiques",
+    "slug": "pet-stores-and-boutiques",
+    "title": "Pet Stores & Dog Boutiques Across Canada",
+    "seoTitle": "Pet Stores & Dog Boutiques in Canada | Shop Local – LeashFree.ca",
+    "metaDescription": "Find trusted pet stores and dog boutiques across Canada with LeashFree.ca. Discover local shops, eco-friendly brands, and online retailers offering premium food, treats, and accessories for your dog.",
+    "description": "Find trusted pet stores and dog boutiques across Canada with LeashFree.ca. Discover local shops, eco-friendly brands, and online retailers offering premium food, treats, and accessories for your dog.",
+    "body": "",
+    "collection": "Categories",
+    "sourceFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Categories - 68f3eb6627330a66b9e68114.csv",
+    "canonicalUrl": "https://leashfree.ca/directory/pet-stores-and-boutiques/",
+    "routePath": "/directory/pet-stores-and-boutiques/",
+    "media": [
+      {
+        "fieldName": "Hero Image",
+        "value": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68f64cc0124a0ee31ffd49bd_dog-browsing-treats-pet-boutique-canada.jpg",
+        "originalUrls": [
+          "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68f64cc0124a0ee31ffd49bd_dog-browsing-treats-pet-boutique-canada.jpg"
+        ]
+      }
+    ],
+    "references": {},
+    "raw": {
+      "Name": "Pet Stores & Boutiques",
+      "Slug": "pet-stores-and-boutiques",
+      "Collection ID": "68f3eb6627330a66b9e68114",
+      "Locale ID": "683758b09dd1e3ac2e4e9809",
+      "Item ID": "68f3f25db2585150b8f98981",
+      "Archived": "false",
+      "Draft": "false",
+      "Created On": "Sat Oct 18 2025 20:02:37 GMT+0000 (Coordinated Universal Time)",
+      "Updated On": "Sat Oct 25 2025 10:55:51 GMT+0000 (Coordinated Universal Time)",
+      "Published On": "Sat Oct 25 2025 11:21:48 GMT+0000 (Coordinated Universal Time)",
+      "Header 1": "Pet Stores & Dog Boutiques Across Canada",
+      "Intro Description": "<p id=\"\">Welcome to the LeashFree.ca Pet Stores &amp; Boutiques Directory - your trusted guide to local and online pet retailers across Canada. Whether you’re searching for premium dog food, eco-friendly toys, or stylish accessories, our curated listings help you find shops that share your love for dogs.</p>",
+      "Header 2": "Discover Local Pet Shops and Dog Boutiques",
+      "Secondary Description": "<p id=\"\">From small-town pet stores to modern dog boutiques, Canada is home to hundreds of independent retailers committed to your dog’s health and happiness.<br>Browse verified listings to find shops that offer everything from nutritious treats to handmade collars — and support local entrepreneurs making a difference in your community.</p><blockquote id=\"\">🛍️ <strong id=\"\">Tip:</strong> Many stores offer online ordering, curbside pickup, and loyalty rewards for Canadian customers.</blockquote><h3 id=\"\"><strong id=\"\">Why Shop at a Local Pet Boutique?</strong></h3><p id=\"\">Choosing local pet shops over big-box retailers helps build stronger communities — and gives your dog the care they deserve.<br>Independent boutiques often source <strong id=\"\">natural</strong>, <strong id=\"\">Canadian-made</strong>, and <strong id=\"\">sustainably produced</strong> items designed for quality, comfort, and safety.</p><p id=\"\"><strong id=\"\">Benefits of shopping local:</strong></p><ul id=\"\"><li>Personalized advice from knowledgeable staff</li><li>🇨🇦 Support Canadian-made and small-batch products</li><li>Find eco-conscious and cruelty-free brands</li><li>Discover unique toys, collars, and accessories</li></ul>",
+      "Header 3": "Explore Our Verified Listings",
+      "Third Description": "<p>Browse our collection of verified <strong id=\"\">Pet Stores &amp; Dog Boutiques</strong> across Canada. Each listing includes a full address, website, and contact details - making it easy to visit in person or shop online.</p>",
+      "Hero Image": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68f64cc0124a0ee31ffd49bd_dog-browsing-treats-pet-boutique-canada.jpg",
+      "Icon": "",
+      "SEO Title": "Pet Stores & Dog Boutiques in Canada | Shop Local – LeashFree.ca",
+      "Meta Description": "Find trusted pet stores and dog boutiques across Canada with LeashFree.ca. Discover local shops, eco-friendly brands, and online retailers offering premium food, treats, and accessories for your dog.",
+      "OG Title": "Pet Stores & Dog Boutiques in Canada | LeashFree.ca",
+      "OG Description": "Explore verified Canadian pet stores and dog boutiques. Support local businesses and find quality food, toys, and gear for your dog.",
+      "OG Image": "",
+      "Canonical URL": "https://www.leashfree.ca/directory/pet-stores-and-boutiques"
+    },
+    "warnings": []
+  },
+  {
+    "id": "68f3f25cd0411afb20867110",
+    "name": "Veterinarians",
+    "slug": "veterinarians",
+    "title": "Veterinarians & Animal Hospitals Across Canada",
+    "seoTitle": "Veterinarians & Animal Hospitals in Canada | Trusted Pet Care – LeashFree.ca",
+    "metaDescription": "Find trusted veterinarians and animal hospitals across Canada with LeashFree.ca. Explore verified clinics offering preventive care, diagnostics, emergency services, and compassionate care for your pets.",
+    "description": "Find trusted veterinarians and animal hospitals across Canada with LeashFree.ca. Explore verified clinics offering preventive care, diagnostics, emergency services, and compassionate care for your pets.",
+    "body": "",
+    "collection": "Categories",
+    "sourceFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Categories - 68f3eb6627330a66b9e68114.csv",
+    "canonicalUrl": "https://leashfree.ca/directory/veterinarians/",
+    "routePath": "/directory/veterinarians/",
+    "media": [
+      {
+        "fieldName": "Hero Image",
+        "value": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68f3f41098677c628cf48853_veterinarian-examining-golden-retriever-clinic-canada.jpg",
+        "originalUrls": [
+          "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68f3f41098677c628cf48853_veterinarian-examining-golden-retriever-clinic-canada.jpg"
+        ]
+      }
+    ],
+    "references": {},
+    "raw": {
+      "Name": "Veterinarians",
+      "Slug": "veterinarians",
+      "Collection ID": "68f3eb6627330a66b9e68114",
+      "Locale ID": "683758b09dd1e3ac2e4e9809",
+      "Item ID": "68f3f25cd0411afb20867110",
+      "Archived": "false",
+      "Draft": "false",
+      "Created On": "Sat Oct 18 2025 20:02:36 GMT+0000 (Coordinated Universal Time)",
+      "Updated On": "Sat Oct 25 2025 11:02:43 GMT+0000 (Coordinated Universal Time)",
+      "Published On": "Sat Oct 25 2025 11:21:48 GMT+0000 (Coordinated Universal Time)",
+      "Header 1": "Veterinarians & Animal Hospitals Across Canada",
+      "Intro Description": "<p id=\"\">Your dog’s health deserves expert care - and the right veterinarian makes all the difference.<br>LeashFree.ca’s <strong id=\"\">Veterinarians Directory</strong> connects you with trusted veterinary clinics and animal hospitals across Canada, from routine checkups to specialized treatments and emergency care.</p>",
+      "Header 2": "Trusted Veterinary Care Near You",
+      "Secondary Description": "<p id=\"\">Whether you need annual vaccinations, dental cleanings, or after-hours care, our verified veterinary listings help you find the right professional quickly.<br>Each clinic listing includes a full address, contact details, and a link to their official website for easy booking or inquiries.</p><blockquote id=\"\">🩺 <strong id=\"\">Tip:</strong> Many clinics offer online appointment scheduling and telemedicine consultations - check individual listings for details.</blockquote><p>‍</p><h3 id=\"\"><strong id=\"\">What to Expect From a Verified Veterinary Clinic</strong></h3><p id=\"\">Every veterinary clinic in our directory is reviewed for accuracy and professionalism.<br>Our mission is to make it easier for Canadian dog owners to access <strong id=\"\">qualified</strong>, <strong id=\"\">reputable</strong>, and <strong id=\"\">compassionate</strong> animal healthcare providers.</p><p id=\"\"><strong id=\"\">Common services offered:</strong></p><ul id=\"\"><li>Routine exams &amp; vaccinations</li><li>Dental care</li><li>Diagnostics &amp; lab testing</li><li>Surgery &amp; emergency treatment</li><li>Preventive and holistic care</li></ul>",
+      "Header 3": "Explore Our Verified Listings",
+      "Third Description": "<p>Find veterinary clinics and animal hospitals near you. Each listing provides accurate contact details, Google Maps location, and links to official websites.</p>",
+      "Hero Image": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68f3f41098677c628cf48853_veterinarian-examining-golden-retriever-clinic-canada.jpg",
+      "Icon": "",
+      "SEO Title": "Veterinarians & Animal Hospitals in Canada | Trusted Pet Care – LeashFree.ca",
+      "Meta Description": "Find trusted veterinarians and animal hospitals across Canada with LeashFree.ca. Explore verified clinics offering preventive care, diagnostics, emergency services, and compassionate care for your pets.",
+      "OG Title": "Veterinarians & Animal Hospitals in Canada | LeashFree.ca",
+      "OG Description": "Explore verified veterinarians and animal hospitals across Canada. Find compassionate pet care professionals for routine exams, treatment, and emergencies.",
+      "OG Image": "",
+      "Canonical URL": "https://www.leashfree.ca/directory/veterinarians"
+    },
+    "warnings": []
+  }
+]

@@ -1,0 +1,30 @@
+---
+import Layout from "../../components/Layout.astro";
+import PageShell from "../../components/PageShell.astro";
+import mediaMap from "../../data/media-map.json";
+import directories from "../../data/generated/directories.json";
+import { resolveMedia } from "../../utils/media.js";
+
+export function getStaticPaths() {
+  return directories.filter((item) => item.slug).map((item) => ({
+    params: { slug: item.slug },
+    props: { item }
+  }));
+}
+
+const { item } = Astro.props;
+const image = resolveMedia(item, "Featured Image", mediaMap);
+---
+
+<Layout title={item.seoTitle || item.title || item.name} description={item.metaDescription || item.description} canonical={item.canonicalUrl} ogImage={image.src}>
+  <PageShell eyebrow="Directory" title={item.title || item.name} summary={item.description}>
+    <img class="hero-image" src={image.src} alt="" loading="lazy" />
+    <ul class="meta-list">
+      {item.raw.Category && <li><strong>Category</strong><br />{item.raw.Category}</li>}
+      {item.raw.City && <li><strong>City</strong><br />{item.raw.City}</li>}
+      {item.raw.Province && <li><strong>Province</strong><br />{item.raw.Province}</li>}
+      {item.raw.Phone && <li><strong>Phone</strong><br />{item.raw.Phone}</li>}
+    </ul>
+    {item.body && <section class="content-block" set:html={item.body} />}
+  </PageShell>
+</Layout>

@@ -1,0 +1,45 @@
+---
+import SEO from "./SEO.astro";
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+  canonical?: string;
+  ogImage?: string;
+}
+
+const { title, description, canonical, ogImage } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <SEO title={title} description={description} canonical={canonical} ogImage={ogImage} />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="container nav">
+          <a class="brand" href="/">LeashFree.ca</a>
+          <nav class="nav-links" aria-label="Main">
+            <a href="/dog-parks/">Dog Parks</a>
+            <a href="/dog-breeds/">Dog Breeds</a>
+            <a href="/blog/">Blog</a>
+            <a href="/directory/">Directory</a>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <slot />
+      </main>
+      <footer class="site-footer">
+        <div class="container page">
+          Static migration scaffold. Data is generated from Webflow CMS exports.
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

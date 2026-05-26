@@ -1,0 +1,24 @@
+---
+import Layout from "../../components/Layout.astro";
+import PageShell from "../../components/PageShell.astro";
+import mediaMap from "../../data/media-map.json";
+import posts from "../../data/generated/blog-posts.json";
+import { resolveMedia } from "../../utils/media.js";
+
+export function getStaticPaths() {
+  return posts.filter((post) => post.slug).map((post) => ({
+    params: { slug: post.slug },
+    props: { post }
+  }));
+}
+
+const { post } = Astro.props;
+const image = resolveMedia(post, "Hero Image", mediaMap);
+---
+
+<Layout title={post.seoTitle || post.title || post.name} description={post.metaDescription || post.description} canonical={post.canonicalUrl} ogImage={image.src}>
+  <PageShell eyebrow="Blog" title={post.title || post.name} summary={post.description}>
+    <img class="hero-image" src={image.src} alt="" loading="lazy" />
+    {post.body && <section class="content-block" set:html={post.body} />}
+  </PageShell>
+</Layout>

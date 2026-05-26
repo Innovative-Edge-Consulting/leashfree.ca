@@ -1,0 +1,54 @@
+---
+import Layout from "../../components/Layout.astro";
+import PageShell from "../../components/PageShell.astro";
+import mediaMap from "../../data/media-map.json";
+import cities from "../../data/generated/cities.json";
+import parks from "../../data/generated/parks.json";
+import provinces from "../../data/generated/provinces.json";
+import { resolveMedia } from "../../utils/media.js";
+
+export function getStaticPaths() {
+  const grouped = new Map();
+  for (const item of [...parks, ...cities, ...provinces]) {
+    if (!item.slug) continue;
+    if (!grouped.has(item.slug)) grouped.set(item.slug, []);
+    grouped.get(item.slug).push(item);
+  }
+
+  return [...grouped.entries()].map(([slug, matches]) => ({
+    params: { slug },
+    props: { matches }
+  }));
+}
+
+const { matches } = Astro.props;
+const primary = matches.find((item) => item.collection === "Dog Parks") || matches[0];
+const image = resolveMedia(primary, undefined, mediaMap);
+const title = primary.seoTitle || primary.title || primary.name;
+const description = primary.metaDescription || primary.description || `${primary.name} on LeashFree.ca.`;
+---
+
+<Layout title={title} description={description} canonical={primary.canonicalUrl} ogImage={image.src}>
+  <PageShell eyebrow={primary.collection} title={primary.title || primary.name} summary={description}>
+    <img class="hero-image" src={image.src} alt="" loading="lazy" />
+
+    {matches.length > 1 && (
+      <section class="card">
+        <h2>Shared slug review</h2>
+        <p>This route has multiple CMS records with the same slug. Confirm the final URL owner before launch.</p>
+        <ul>
+          {matches.map((item) => <li>{item.collection}: {item.name}</li>)}
+        </ul>
+      </section>
+    )}
+
+    <ul class="meta-list">
+      {primary.raw["Street Address"] && <li><strong>Address</strong><br />{primary.raw["Street Address"]}</li>}
+      {primary.raw.City && <li><strong>City</strong><br />{primary.raw.City}</li>}
+      {primary.raw.Province && <li><strong>Province</strong><br />{primary.raw.Province}</li>}
+      {primary.raw.Fenced && <li><strong>Fenced</strong><br />{primary.raw.Fenced}</li>}
+    </ul>
+
+    {primary.body && <section class="content-block" set:html={primary.body} />}
+  </PageShell>
+</Layout>

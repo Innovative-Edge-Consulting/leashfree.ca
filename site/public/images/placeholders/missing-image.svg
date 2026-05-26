@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Missing image placeholder</title>
+  <desc id="desc">A neutral placeholder used while CMS media is being matched.</desc>
+  <rect width="1200" height="675" fill="#e4f0e8"/>
+  <rect x="60" y="60" width="1080" height="555" rx="24" fill="#fbfaf7" stroke="#2f6f4e" stroke-width="6" stroke-dasharray="18 18"/>
+  <circle cx="442" cy="270" r="64" fill="#9bb8a4"/>
+  <path d="M250 520 470 370l125 92 104-74 251 132H250Z" fill="#b9cdbf"/>
+  <text x="600" y="590" text-anchor="middle" fill="#2f6f4e" font-family="Arial, sans-serif" font-size="38" font-weight="700">Image pending</text>
+</svg>

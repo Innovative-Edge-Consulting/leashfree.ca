@@ -1,0 +1,21 @@
+{
+  "name": "leashfree-static-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "convert:cms": "node scripts/convert-cms.js",
+    "build:media-map": "node scripts/build-media-map.js",
+    "validate:data": "node scripts/validate-data.js",
+    "migrate:prep": "npm run convert:cms && npm run build:media-map && npm run validate:data"
+  },
+  "dependencies": {
+    "astro": "^4.16.18"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}
