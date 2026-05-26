@@ -9,6 +9,9 @@
     "preview": "astro preview",
     "convert:cms": "node scripts/convert-cms.js",
     "build:media-map": "node scripts/build-media-map.js",
+    "media:scan": "node scripts/build-media-map.js",
+    "media:copy:dry": "node scripts/copy-media.js --dry-run",
+    "media:copy": "node scripts/copy-media.js --write",
     "validate:data": "node scripts/validate-data.js",
     "migrate:prep": "npm run convert:cms && npm run build:media-map && npm run validate:data"
   },

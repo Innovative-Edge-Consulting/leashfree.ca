@@ -1,25 +1,28 @@
 # Media Map Report
 
-Generated at: 2026-05-26T17:31:09.985Z
-
+Generated at: 2026-05-26T22:01:40.931Z
 - Total tracker rows: 689
-- Total local media files found: 277
-- Matched media rows: 369
-- Missing media rows: 320
-- Unmatched local files: 14
-- Duplicate filenames: none
-- Files with risky names: 277
+- Total source media files found: 356
+- Published media rows: 424
+- Copy-ready media rows: 0
+- High-confidence matches: 417
+- Medium-confidence matches: 11
+- Low-confidence matches: 2
+- Missing media rows: 259
+- Unmatched source files: 4
+- Files with risky source names: 356
 - Inventory records from Phase 1: 138
 
 ## Recommended Manual Fixes
 
-- Fill `current_local_filename` in `migration-prep/manual-media-tracker.csv` as media is downloaded.
-- Save high-priority files from `migration-prep/phase-3-media-to-save-next.csv` first.
-- Verify filename-similarity matches before copying media into `/public/images/`.
-- Leave missing rows unresolved until owner confirms whether each image is required.
+- Review low-confidence and unmatched files in the Phase 5 owner review report.
+- Keep the source CMS Media folder unchanged; publishable copies belong under `site/public/images/`.
+- Use `npm run media:copy:dry` before every write copy run.
 
 ## Suggested Filename Cleanup Sample
 
+- 6855f8b7dddec16f09782f9d_off-leash-dog-parks-canada (1).png -> off-leash-dog-parks-canada-1.png
+- 6855f8b7dddec16f09782f9d_off-leash-dog-parks-canada.png -> off-leash-dog-parks-canada.png
 - 687bae9bd98148b169a93b25_weimaraner-dog-breed-sitting-outdoors.avif -> weimaraner-dog-breed-sitting-outdoors.avif
 - 6884018ec1f30a71198c3766_shiba-inu-dog-breed-sitting-outdoors.avif -> shiba-inu-dog-breed-sitting-outdoors.avif
 - 6884306d6dec5df6f828103c_golden-retriever-dog-breed-closeup-outdoors.avif -> golden-retriever-dog-breed-closeup-outdoors.avif
@@ -58,22 +61,10 @@ Generated at: 2026-05-26T17:31:09.985Z
 - 6887c13e9b3fda18f9f67069_american-leopard-hound-dog-breed-standing-on-forest-path.avif -> american-leopard-hound-dog-breed-standing-on-forest-path.avif
 - 6887c5003fb8ae7ec7b577bf_american-staffordshire-terrier-dog-breed-sitting-on-forest-trail.avif -> american-staffordshire-terrier-dog-breed-sitting-on-forest-trail.avif
 - 6887c612405312512f5f8a86_american-water-spaniel-dog-breed-sitting-on-forest-path.avif -> american-water-spaniel-dog-breed-sitting-on-forest-path.avif
-- 6887c8757edd8507279d71bb_anatolian-shepherd-dog-sitting-forest-trail.avif -> anatolian-shepherd-dog-sitting-forest-trail.avif
-- 6887ca4df0e85ce8b3f1f667_appenzeller-sennenhund-dog-sitting-on-grassy-trail.avif -> appenzeller-sennenhund-dog-sitting-on-grassy-trail.avif
 
-## Unmatched Local Files Sample
+## Unmatched Source Files Sample
 
-- ../LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/6887616be2f92189e3c2ab51_ChatGPT Image Jul 28, 2025, 07_36_32 AM.avif
-- ../LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/688e26fb81d1b62072d28831_norwich-terrier-dog-breed-sitting-on-forest-path.avif
-- ../LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/688e2ca215ef0fa8246e61a4_vizsla-dog-breed-sitting-on-forest-path.avif
-- ../LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/688e63da183ff7b96a81ffac_lovakian-wirehaired-pointer-dog-breed-sitting-on-forest-path.avif
-- ../LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/688ec4f3f830b978f0ce8bb0_redbone-coonhound-dog-breed-sitting-on-forest-path.avif
-- ../LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68a236c53d7111f8f0a0fca0_pointer-dog-breed-sitting-on-forest-path.avif
-- ../LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68a24cdc368e00e43eeaa0c7_A_high-resolution_photograph_captures_a_Neapolitan.avif
-- ../LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68a31518206f02cd0f3c08df_A_photograph_of_an_English_Bulldog.avif
-- ../LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68a316a21ae614368ccfb4cf_A_photograph_captures_a_Bull_Terrier_with_a_predom.avif
-- ../LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68a38678d486cd0ad4d7c6cf_shar-pei-dog-forest-path.avif
-- ../LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68a38b731ed82645f5221168_collie-dog-sitting-outdoors.avif
-- ../LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68a4826b129056815dcc7901_english-cocker-spaniel-dog-forest-path.avif
-- ../LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68a48e05d4109a61e8dff156_Eurasian-dog.avif
-- ../LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68d7202b5f5c5c405f2a15f8_kooikerhondje-forest-trail-portrait-leashfree.avif
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/688ec4f3f830b978f0ce8bb0_redbone-coonhound-dog-breed-sitting-on-forest-path (1).avif
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bef84a071bc039505c4fdd_Wide shot of dogs running in a fenced park (2880x1488).avif
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bf0830fc36f27098a4aaa8_Cute puppy with name tag (2880x1488).avif
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bf0cbbc7c5626a9d251a54_Dog with Canadian flag bandana at park (2880x1488) (2).avif

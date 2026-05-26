@@ -1,6 +1,6 @@
 # Validation Report
 
-Generated at: 2026-05-26T17:31:10.439Z
+Generated at: 2026-05-26T22:01:41.770Z
 
 - Errors: 0
 - Warnings: 3
@@ -9,7 +9,7 @@ Generated at: 2026-05-26T17:31:10.439Z
 - Data quality warnings: 0
 - Owner review items: 0
 - Generated routes checked: 1076
-- Media tracker rows missing local files: 320
+- Media tracker rows missing local files: 259
 
 ## Counts By Collection
 
@@ -37,9 +37,9 @@ Generated at: 2026-05-26T17:31:10.439Z
 
 ## Media Warnings
 
-- 320 media tracker rows do not have a matched local file yet.
-- 14 local media files do not match tracker rows yet.
-- 277 local media files have risky names for publishing.
+- 259 media tracker rows do not have a matched local file yet.
+- 4 local media files do not match tracker rows yet.
+- 356 local media files have risky names for publishing.
 
 ## Data Quality Warnings
 

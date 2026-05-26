@@ -7,13 +7,13 @@ export function resolveMedia(item, fieldName, mediaMap) {
       entry.collection === item.collection &&
       entry.itemSlug === item.slug &&
       (!fieldName || entry.fieldName === fieldName) &&
-      entry.currentLocalPath
+      (entry.publicPathReady || entry.publicPath || entry.currentLocalPath)
     );
   });
 
-  if (match?.publicPathReady && match.status === "matched") {
+  if (match?.publicPathReady && match.publicPath) {
     return {
-      src: match.suggestedPublicPath,
+      src: match.publicPath,
       status: "mapped",
       source: match
     };
