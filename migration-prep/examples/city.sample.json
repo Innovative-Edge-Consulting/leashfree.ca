@@ -1,0 +1,32 @@
+{
+  "sourceCollection": "City Pages",
+  "sourceFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - City Pages - 68419a1c56454ae93923d2e4.csv",
+  "originalWebflowId": "686594162ce1301146da2455",
+  "name": "Ajax",
+  "slug": "ajax",
+  "seo": {
+    "title": "Dog Parks in Ajax Ontario | LeashFree.ca",
+    "description": "Looking for leash-free dog parks in Ajax, Ontario? Explore fenced off-leash areas where dogs can socialize, exercise, and play safely."
+  },
+  "fields": {
+    "City Name": "Ajax",
+    "Slug": "ajax",
+    "Collection ID": "68419a1c56454ae93923d2e4",
+    "Locale ID": "683758b09dd1e3ac2e4e9809",
+    "Item ID": "686594162ce1301146da2455",
+    "Archived": "false",
+    "Draft": "false",
+    "Created On": "Wed Jul 02 2025 20:18:30 GMT+0000 (Coordinated Universal Time)",
+    "Updated On": "Mon Sep 08 2025 13:21:11 GMT+0000 (Coordinated Universal Time)",
+    "Published On": "Mon Sep 08 2025 13:27:50 GMT+0000 (Coordinated Universal Time)",
+    "Province": "Ontario",
+    "SEO Title Tag": "Dog Parks in Ajax Ontario | LeashFree.ca"
+  },
+  "media": {
+    "status": "needs_review",
+    "localPath": ""
+  },
+  "references": {
+    "status": "needs_review"
+  }
+}

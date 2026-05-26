@@ -1,0 +1,32 @@
+{
+  "sourceCollection": "Dog Breeds",
+  "sourceFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Dog Breeds - 687babbf5586e6eeb3b8dd39 (1).csv",
+  "originalWebflowId": "68876b37d9bdf7647c2bc5ac",
+  "name": "Affenpinscher",
+  "slug": "affenpinscher",
+  "seo": {
+    "title": "Affenpinscher – Traits, Shedding & Exercise in Canada | LeashFree.ca",
+    "description": "Affenpinscher guide for Canadian owners: temperament, exercise needs, grooming and common health issues. Learn how to care for this breed at home."
+  },
+  "fields": {
+    "Breed Name": "Affenpinscher",
+    "Slug": "affenpinscher",
+    "Collection ID": "687babbf5586e6eeb3b8dd39",
+    "Locale ID": "683758b09dd1e3ac2e4e9809",
+    "Item ID": "68876b37d9bdf7647c2bc5ac",
+    "Archived": "false",
+    "Draft": "false",
+    "Created On": "Mon Jul 28 2025 12:21:11 GMT+0000 (Coordinated Universal Time)",
+    "Updated On": "Sat Oct 11 2025 19:22:10 GMT+0000 (Coordinated Universal Time)",
+    "Published On": "Sat Oct 11 2025 19:33:29 GMT+0000 (Coordinated Universal Time)",
+    "H2 Subheading": "Is the Affenpinscher Right for You? Traits, Training & Care Tips",
+    "Breed Summary": "<p id=\"\">The Affenpinscher is a compact and wiry toy breed known for its comical expression and monkey-like face, earning it the nickname “Monkey Terrier.” Despite its small size, the Affenpinscher is bold, curious, and fiercely loyal to its family. Ideal for experienced dog owners, this breed thrives in apartments or small homes with regular stimulation and attention.</p><p>‍</p>"
+  },
+  "media": {
+    "status": "needs_review",
+    "localPath": ""
+  },
+  "references": {
+    "status": "needs_review"
+  }
+}

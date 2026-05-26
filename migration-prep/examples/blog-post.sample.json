@@ -1,0 +1,32 @@
+{
+  "sourceCollection": "Blog Posts",
+  "sourceFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Blog Posts - 68bef494bffe949f670f04e5.csv",
+  "originalWebflowId": "68ec16e83d4163849e2b811b",
+  "name": "15 Most Googled Dog Questions - Answered",
+  "slug": "most-googled-dog-questions",
+  "seo": {
+    "title": "15 Most Googled Dog Questions - Answered | LeashFree.ca",
+    "description": "Why do dogs bury bones, tilt their heads, or eat grass? Discover the 15 most Googled dog questions - answered with fun, science-backed insights for Canadian dog owners."
+  },
+  "fields": {
+    "Name": "15 Most Googled Dog Questions - Answered",
+    "Slug": "most-googled-dog-questions",
+    "Collection ID": "68bef494bffe949f670f04e5",
+    "Locale ID": "683758b09dd1e3ac2e4e9809",
+    "Item ID": "68ec16e83d4163849e2b811b",
+    "Archived": "false",
+    "Draft": "false",
+    "Created On": "Sun Oct 12 2025 21:00:24 GMT+0000 (Coordinated Universal Time)",
+    "Updated On": "Thu Oct 16 2025 08:55:01 GMT+0000 (Coordinated Universal Time)",
+    "Published On": "Thu Oct 16 2025 08:55:01 GMT+0000 (Coordinated Universal Time)",
+    "Blog Header (H1 Override)": "5 Most Googled Dog Questions - Answered",
+    "Category": "training-behavior"
+  },
+  "media": {
+    "status": "needs_review",
+    "localPath": ""
+  },
+  "references": {
+    "status": "needs_review"
+  }
+}

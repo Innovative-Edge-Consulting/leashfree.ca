@@ -1,0 +1,421 @@
+word,hint,meaning,difficulty,is_answer,weight,valid_from,length
+BARK,Dog sound,"Short, sharp canine vocalization",Easy,TRUE,1,2025-11-03,4
+WOOF,Dog bark sound,Onomatopoeic bark sound,Easy,TRUE,1,2025-11-03,4
+HOWL,Long call,"Long, mournful canine call",Easy,TRUE,1,2025-11-03,4
+YELP,Pain cry,Short sharp cry of pain,Easy,TRUE,1,2025-11-03,4
+GNAW,Chew hard,Chew persistently with the teeth,Easy,TRUE,1,2025-11-03,4
+LICK,Dog kiss,Touch with the tongue,Easy,TRUE,1,2025-11-03,4
+BITE,Mouth grip,Use teeth to grip or chew,Easy,TRUE,1,2025-11-03,4
+PAWS,Feet of dogs,Feet with pads and claws,Easy,TRUE,1,2025-11-03,4
+TAIL,Wagging part,Rear appendage dogs wag,Easy,TRUE,1,2025-11-03,4
+NOSE,Smeller,Organ of smell; end of snout,Easy,TRUE,1,2025-11-03,4
+EARS,Hearing,Organs of hearing,Easy,TRUE,1,2025-11-03,4
+EYES,Vision,Organs of sight,Easy,TRUE,1,2025-11-03,4
+PADS,Foot pads,Cushioned paw bottoms,Easy,TRUE,1,2025-11-03,4
+BONE,Chew item,Chewable treat/toy dogs enjoy,Easy,TRUE,1,2025-11-03,4
+PUPS,Young dogs,Plural of puppy,Easy,TRUE,1,2025-11-03,4
+WALK,Daily walk,To go for a walk,Easy,TRUE,1,2025-11-03,4
+LEAD,Walking strap,Strap used to guide a dog,Easy,TRUE,1,2025-11-03,4
+HEEL,Walk close,Dog walks at handler’s side,Easy,TRUE,1,2025-11-03,4
+COME,Recall cue,Command to return,Easy,TRUE,1,2025-11-03,4
+STAY,Hold position,Command to remain,Easy,TRUE,1,2025-11-03,4
+DOWN,Lie down cue,Command to lie down,Easy,TRUE,1,2025-11-03,4
+DROP,Release item,Command to let go,Easy,TRUE,1,2025-11-03,4
+ROLL,Trick cue,Roll over onto back,Easy,TRUE,1,2025-11-03,4
+PLAY,Dog fun,Activity dogs enjoy,Easy,TRUE,1,2025-11-03,4
+REST,Quiet time,Relaxation period,Easy,TRUE,1,2025-11-03,4
+JUMP,Leap up,Propel off the ground,Easy,TRUE,1,2025-11-03,4
+BOWL,Dish,Container for food/water,Easy,TRUE,1,2025-11-03,4
+FOOD,Meals,Edible nourishment,Easy,TRUE,1,2025-11-03,4
+FLEA,Parasite,Small biting insect on pets,Easy,TRUE,1,2025-11-03,4
+TICK,Parasite,Blood-feeding arachnid,Easy,TRUE,1,2025-11-03,4
+MITE,Tiny pest,Small arthropod causing irritation,Easy,TRUE,1,2025-11-03,4
+LICE,External pest,Parasitic insects on hair/skin,Easy,TRUE,1,2025-11-03,4
+RUNT,Smallest pup,Smallest puppy in the litter,Easy,TRUE,1,2025-11-03,4
+HUNT,Chase prey,Pursue by scent or sight,Easy,TRUE,1,2025-11-03,4
+LURE,Training aid,Object used to attract attention,Easy,TRUE,1,2025-11-03,4
+LEAP,Jump forward,Spring or jump,Easy,TRUE,1,2025-11-03,4
+COAT,Fur layer,Hair covering of a dog,Easy,TRUE,1,2025-11-03,4
+HAIR,Strand of fur,Individual hair of coat,Easy,TRUE,1,2025-11-03,4
+HIPS,Joint area,Hip joints of a dog,Easy,TRUE,1,2025-11-03,4
+LIMB,Leg/arm,A dog’s leg (limb),Easy,TRUE,1,2025-11-03,4
+NAPS,Short sleeps,Brief periods of sleep,Easy,TRUE,1,2025-11-03,4
+SPAY,Sterilize female,Surgical sterilization of a female,Easy,TRUE,1,2025-11-03,4
+VETS,Animal doctors,Veterinarians,Easy,TRUE,1,2025-11-03,4
+YARD,Fenced area,Outdoor area at home,Easy,TRUE,1,2025-11-03,4
+GATE,Barrier,Device that keeps areas secure,Easy,TRUE,1,2025-11-03,4
+LEGS,Limbs,Dog’s legs,Easy,TRUE,1,2025-11-03,4
+MOLT,Shed hair,Shedding of the coat,Easy,TRUE,1,2025-11-03,4
+WAIT,Pause command,Command to pause briefly,Easy,TRUE,1,2025-11-03,4
+QUIET,Stop barking,Command to be quiet,Easy,TRUE,1,2025-11-03,5
+PLACE,Mat command,Command to go to a defined spot,Easy,TRUE,1,2025-11-03,5
+LEASH,Walking strap,Strap used to control a dog,Medium,TRUE,1,2025-11-03,5
+FETCH,Retrieve game,Dog retrieves a thrown item,Medium,TRUE,1,2025-11-03,5
+TREAT,Reward food,Snack given for good behavior,Medium,TRUE,1,2025-11-03,5
+CRATE,Kennel box,Enclosure for transport or sleep,Medium,TRUE,1,2025-11-03,5
+SNIFF,Smell action,Inhale through the nose to detect scent,Medium,TRUE,1,2025-11-03,5
+GROOM,Fur care,"Clean, brush, or trim a dog",Medium,TRUE,1,2025-11-03,5
+BONES,Chew items,Hard treats or toys to gnaw,Medium,TRUE,1,2025-11-03,5
+WHINE,Soft cry,High-pitched complaint sound,Medium,TRUE,1,2025-11-03,5
+GUARD,Protect,Watch over and protect,Medium,TRUE,1,2025-11-03,5
+CHASE,Run after,Pursue quickly,Medium,TRUE,1,2025-11-03,5
+LICKS,Dog kisses,Touches with the tongue,Medium,TRUE,1,2025-11-03,5
+PAWED,Touched with paw,Struck or tapped using a paw,Medium,TRUE,1,2025-11-03,5
+SNOUT,Face part,Projecting nose and mouth area,Medium,TRUE,1,2025-11-03,5
+HOWLS,Long calls,"Long, mournful vocalizations",Medium,TRUE,1,2025-11-03,5
+YELPS,Pain cries,Sharp cries of pain or surprise,Medium,TRUE,1,2025-11-03,5
+WOOFS,Playful barks,Friendly vocal sounds,Medium,TRUE,1,2025-11-03,5
+BARKS,Dog sounds,Short sharp barks,Medium,TRUE,1,2025-11-03,5
+BLOAT,Urgent risk,Stomach distention (GDV risk),Medium,TRUE,1,2025-11-03,5
+MANGE,Skin mites,Skin disease caused by mites,Medium,TRUE,1,2025-11-03,5
+FLEAS,Jumping pests,Small biting insects on pets,Medium,TRUE,1,2025-11-03,5
+TICKS,External pests,Blood-feeding arachnids,Medium,TRUE,1,2025-11-03,5
+WORMS,Intestinal pests,Parasitic worms in pets,Medium,TRUE,1,2025-11-03,5
+TEETH,Chompers,Hard structures for biting/chewing,Medium,TRUE,1,2025-11-03,5
+TOOTH,Single tooth,One of the bony structures for biting,Medium,TRUE,1,2025-11-03,5
+COATS,Fur layers,Dog’s hair covering,Medium,TRUE,1,2025-11-03,5
+CLAWS,Toe tips,Curved nails on toes,Medium,TRUE,1,2025-11-03,5
+NAILS,Toe keratin,Hard protective coverings,Medium,TRUE,1,2025-11-03,5
+FURRY,Hairy coat,Having lots of fur,Medium,TRUE,1,2025-11-03,5
+MIXED,Mixed breed,Of combined ancestry,Medium,TRUE,1,2025-11-03,5
+BREED,Type of dog,Group with shared traits,Medium,TRUE,1,2025-11-03,5
+ALERT,Watchful,Quick to notice danger,Medium,TRUE,1,2025-11-03,5
+TRACK,Follow scent,Trail a person/animal by scent,Medium,TRUE,1,2025-11-03,5
+TRAIL,Scent path,Path of odor left behind,Medium,TRUE,1,2025-11-03,5
+FENCE,Yard barrier,Structure enclosing an area,Medium,TRUE,1,2025-11-03,5
+SWIMS,Water play,Propel through water,Medium,TRUE,1,2025-11-03,5
+ADOPT,Give a home,Take a dog into one’s home,Medium,TRUE,1,2025-11-03,5
+OWNER,Dog guardian,Person responsible for the dog,Medium,TRUE,1,2025-11-03,5
+MOUTH,Oral area,Opening used for eating/vocalizing,Medium,TRUE,1,2025-11-03,5
+TUMMY,Belly,Informal term for abdomen,Medium,TRUE,1,2025-11-03,5
+BELLY,Abdomen,Underside of a dog,Medium,TRUE,1,2025-11-03,5
+NOSES,Nostrils area,External organs of smell,Medium,TRUE,1,2025-11-03,5
+SMELL,Odor,Scent detected by dogs,Medium,TRUE,1,2025-11-03,5
+ODORS,Scents,Smells detected by the nose,Medium,TRUE,1,2025-11-03,5
+ODOUR,Scent (CA),Canadian spelling of odor,Medium,TRUE,1,2025-11-03,5
+SHEDS,Drops fur,Lose hair from the coat,Medium,TRUE,1,2025-11-03,5
+SPOTS,Coat marks,Round coat markings,Medium,TRUE,1,2025-11-03,5
+PATCH,Coat patch,Distinct colored area on the coat,Medium,TRUE,1,2025-11-03,5
+BLAZE,Face stripe,White stripe on the face,Medium,TRUE,1,2025-11-03,5
+MASKS,Face marking,Dark facial pattern,Medium,TRUE,1,2025-11-03,5
+LEAVE,Impulse control,Command to ignore/drop item,Medium,TRUE,1,2025-11-03,5
+SPEAK,Bark on cue,Command to bark,Medium,TRUE,1,2025-11-03,5
+HEELS,Walk close,Dog walks at handler’s side,Medium,TRUE,1,2025-11-03,5
+DRINK,Water intake,Consume water,Medium,TRUE,1,2025-11-03,5
+WATER,Hydration,Essential fluid for health,Medium,TRUE,1,2025-11-03,5
+FEEDS,Provide food,Give food to the dog,Medium,TRUE,1,2025-11-03,5
+BITES,Uses teeth,Closes teeth on something,Medium,TRUE,1,2025-11-03,5
+CHEWS,Gnaws on,Bites repeatedly,Medium,TRUE,1,2025-11-03,5
+GNAWS,Strong chews,Bites hard and persistently,Medium,TRUE,1,2025-11-03,5
+CORGI,Breed,Short-legged herding dog,Medium,TRUE,1,2025-11-03,5
+BOXER,Breed,Medium muscular breed,Medium,TRUE,1,2025-11-03,5
+AKITA,Breed,Large Japanese working breed,Medium,TRUE,1,2025-11-03,5
+SHIBA,Breed,Small Japanese spitz-type breed,Medium,TRUE,1,2025-11-03,5
+HUSKY,Breed,Energetic northern sled dog,Medium,TRUE,1,2025-11-03,5
+SPITZ,Breed type,Family of pointy-eared breeds,Medium,TRUE,1,2025-11-03,5
+DINGO,Wild dog,Wild canid from Australia,Medium,TRUE,1,2025-11-03,5
+VOMIT,Upset tummy,Expel stomach contents,Medium,TRUE,1,2025-11-03,5
+COUGH,Airway sound,Harsh expulsion of air,Medium,TRUE,1,2025-11-03,5
+ITCHY,Needs scratch,Sensation causing desire to scratch,Medium,TRUE,1,2025-11-03,5
+PARVO,Viral illness,Parvovirus disease in dogs,Medium,TRUE,1,2025-11-03,5
+RINSE,Wash off,Remove soap/dirt with water,Medium,TRUE,1,2025-11-03,5
+BRUSH,Coat tool,Tool to remove loose fur,Medium,TRUE,1,2025-11-03,5
+BATHE,Wash time,Clean with water/shampoo,Medium,TRUE,1,2025-11-03,5
+COLLAR,Neck band,Band placed around a dog’s neck,Hard,TRUE,1,2025-11-03,6
+MUZZLE,Snout guard,Device to prevent biting,Hard,TRUE,1,2025-11-03,6
+KENNEL,Boarding place,Facility where dogs are housed,Hard,TRUE,1,2025-11-03,6
+KIBBLE,Dry food,Pellets of dry dog food,Hard,TRUE,1,2025-11-03,6
+RESCUE,Saved dog,Dog adopted or saved from shelter,Hard,TRUE,1,2025-11-03,6
+BARKER,Noisy dog,Dog that barks a lot,Hard,TRUE,1,2025-11-03,6
+CHEWER,Dog that chews,Dog inclined to chew,Hard,TRUE,1,2025-11-03,6
+CHEWED,Gnawed,Past tense of chew,Hard,TRUE,1,2025-11-03,6
+SITTER,Pet sitter,Person who cares for pets,Hard,TRUE,1,2025-11-03,6
+WALKER,Dog walker,Person who walks dogs,Hard,TRUE,1,2025-11-03,6
+RECALL,Come cue,Command for dog to return,Hard,TRUE,1,2025-11-03,6
+REWARD,Training pay,Positive reinforcement item,Hard,TRUE,1,2025-11-03,6
+TUGTOY,Tug toy,Toy used for tug games,Hard,TRUE,1,2025-11-03,6
+TUNNEL,Agility gear,Agility obstacle tunnel,Hard,TRUE,1,2025-11-03,6
+WEAVES,Agility poles,Weave pole obstacle,Hard,TRUE,1,2025-11-03,6
+JUMPER,Agility jump,Dog that jumps hurdles,Hard,TRUE,1,2025-11-03,6
+SNIFFS,Smelling action,Act of smelling repeatedly,Hard,TRUE,1,2025-11-03,6
+SNOUTS,Nose parts,Elongated facial parts of dogs,Hard,TRUE,1,2025-11-03,6
+WHINES,Soft cries,High-pitched complaints,Hard,TRUE,1,2025-11-03,6
+YELPER,Dog that yelps,Dog prone to yelping,Hard,TRUE,1,2025-11-03,6
+DROOLS,Saliva drips,Saliva falling from mouth,Hard,TRUE,1,2025-11-03,6
+BATHES,Cleans dog,Washes a dog with water,Hard,TRUE,1,2025-11-03,6
+RINSES,Rinses off,Washes away soap or dirt,Hard,TRUE,1,2025-11-03,6
+SCALER,Tartar tool,Dental tool removing tartar,Hard,TRUE,1,2025-11-03,6
+TETHER,Tie line,Line used to tie a dog safely,Hard,TRUE,1,2025-11-03,6
+BREEDS,Dog types,Categories with shared traits,Hard,TRUE,1,2025-11-03,6
+ADOPTS,Takes home,Takes a dog into one’s home,Hard,TRUE,1,2025-11-03,6
+OWNERS,Dog guardians,People responsible for dogs,Hard,TRUE,1,2025-11-03,6
+MATURE,Adult dog,Fully grown,Hard,TRUE,1,2025-11-03,6
+SENIOR,Older dog,Aged dog,Hard,TRUE,1,2025-11-03,6
+SPAYED,Sterilized,Female sterilization,Hard,TRUE,1,2025-11-03,6
+NEUTER,Sterilize male,Male sterilization,Hard,TRUE,1,2025-11-03,6
+HOUNDS,Breed group,Hunting breed group,Hard,TRUE,1,2025-11-03,6
+HERDER,Herding dog,Dog used to herd livestock,Hard,TRUE,1,2025-11-03,6
+GUARDS,Protects,Acts as protector/watch dog,Hard,TRUE,1,2025-11-03,6
+SCENTS,Odors,Distinct smells,Hard,TRUE,1,2025-11-03,6
+TRAILS,Scent paths,Paths left by scent,Hard,TRUE,1,2025-11-03,6
+TRACKS,Follow marks,Follows tracks or scent,Hard,TRUE,1,2025-11-03,6
+GROOMS,Cleans coat,Performs grooming,Hard,TRUE,1,2025-11-03,6
+FEEDER,Food giver,Device/person that feeds,Hard,TRUE,1,2025-11-03,6
+DRINKS,Liquids intake,Consumes liquids,Hard,TRUE,1,2025-11-03,6
+MOUTHS,Holds in mouth,Manipulates with mouth,Hard,TRUE,1,2025-11-03,6
+RABIES,Viral disease,Preventable by vaccine,Hard,TRUE,1,2025-11-03,6
+EYELID,Lid of eye,Protective fold of skin over the eye,Hard,TRUE,1,2025-11-03,6
+STIFLE,Knee joint,Dog’s knee joint,Hard,TRUE,1,2025-11-03,6
+THROAT,Neck part,Front of the neck; airway area,Hard,TRUE,1,2025-11-03,6
+MUSCLE,Body tissue,Contractile tissue of the body,Hard,TRUE,1,2025-11-03,6
+SPINAL,Back area,Relating to the spine,Hard,TRUE,1,2025-11-03,6
+LUMBAR,Back region,Lower back area,Hard,TRUE,1,2025-11-03,6
+BEAGLE,Breed,Small hound with keen scent,Hard,TRUE,1,2025-11-03,6
+BORZOI,Breed,Tall Russian sighthound,Hard,TRUE,1,2025-11-03,6
+COLLIE,Breed,Herding breed with long nose,Hard,TRUE,1,2025-11-03,6
+POODLE,Breed,Intelligent curly-coated breed,Hard,TRUE,1,2025-11-03,6
+BASSET,Breed,Short-legged scent hound,Hard,TRUE,1,2025-11-03,6
+BOXERS,Breed,Muscular medium-sized dogs,Hard,TRUE,1,2025-11-03,6
+CORGIS,Breed,Short-legged herding dogs,Hard,TRUE,1,2025-11-03,6
+AKITAS,Breed,Large Japanese working dogs,Hard,TRUE,1,2025-11-03,6
+HUSKIES,Breed,Northern sled dogs,Hard,TRUE,1,2025-11-03,7
+TRAINER,Instructor,Person who teaches dogs commands,Expert,TRUE,1,2025-11-03,7
+POINTER,Breed,Hunting breed that indicates game,Expert,TRUE,1,2025-11-03,7
+TERRIER,Breed,Energetic small breed group,Expert,TRUE,1,2025-11-03,7
+SETTERS,Breed group,Hunting breeds locating game birds,Expert,TRUE,1,2025-11-03,7
+SPANIEL,Breed,Gun dog known for long ears,Expert,TRUE,1,2025-11-03,7
+WHIPPET,Breed,"Slim, fast sighthound",Expert,TRUE,1,2025-11-03,7
+MASTIFF,Breed,"Large, powerful guardian breed",Expert,TRUE,1,2025-11-03,7
+BULLDOG,Breed,"Solid, wrinkled companion breed",Expert,TRUE,1,2025-11-03,7
+HARRIER,Breed,Medium-sized hound breed,Expert,TRUE,1,2025-11-03,7
+SAMOYED,Breed,Friendly white spitz breed,Expert,TRUE,1,2025-11-03,7
+MALTESE,Breed,Small companion toy breed,Expert,TRUE,1,2025-11-03,7
+BASENJI,Breed,African ‘barkless’ breed,Expert,TRUE,1,2025-11-03,7
+POODLES,Breed,Curly-coated intelligent dogs,Expert,TRUE,1,2025-11-03,7
+BEAGLES,Breed,Small hounds with keen scent,Expert,TRUE,1,2025-11-03,7
+COLLIES,Breed,Herding dogs with long noses,Expert,TRUE,1,2025-11-03,7
+SHELTER,Rescue place,Facility for housing/adopting dogs,Expert,TRUE,1,2025-11-03,7
+HARNESS,Body gear,Straps fitting around torso for walking,Expert,TRUE,1,2025-11-03,7
+RECALLS,Come cues,Commands to return to handler,Expert,TRUE,1,2025-11-03,7
+MUZZLES,Snout guards,Devices to prevent biting,Expert,TRUE,1,2025-11-03,7
+KENNELS,Boarding,Places where dogs are housed,Expert,TRUE,1,2025-11-03,7
+TUNNELS,Agility gear,Tunnels in agility courses,Expert,TRUE,1,2025-11-03,7
+WEAVERS,Agility,Dogs navigating weave poles,Expert,TRUE,1,2025-11-03,7
+WALKERS,Dog walkers,People who walk dogs,Expert,TRUE,1,2025-11-03,7
+SITTERS,Pet sitters,People who care for pets,Expert,TRUE,1,2025-11-03,7
+RESCUES,Saved dogs,Dogs adopted from shelters,Expert,TRUE,1,2025-11-03,7
+CHEWERS,Heavy chewers,Dogs inclined to chew,Expert,TRUE,1,2025-11-03,7
+HOWLERS,Vocal dogs,Dogs that howl,Expert,TRUE,1,2025-11-03,7
+YELPERS,Vocal dogs,Dogs that yelp,Expert,TRUE,1,2025-11-03,7
+DROOLER,Saliva maker,Dog that drools a lot,Expert,TRUE,1,2025-11-03,7
+BRUSHER,Groom tool user,Person who brushes a dog,Expert,TRUE,1,2025-11-03,7
+SHAMPOO,Bath liquid,Soap used to wash a dog,Expert,TRUE,1,2025-11-03,7
+TETHERS,Tie lines,Lines used to tie dogs safely,Expert,TRUE,1,2025-11-03,7
+BREEDER,Dog breeder,Person who breeds dogs,Expert,TRUE,1,2025-11-03,7
+HERDERS,Herd dogs,Dogs used for herding,Expert,TRUE,1,2025-11-03,7
+GROOMER,Profession,Professional dog groomer,Expert,TRUE,1,2025-11-03,7
+TRIMMER,Tool/role,Person/tool that trims fur,Expert,TRUE,1,2025-11-03,7
+CLICKER,Training tool,Device that makes a clicking sound,Expert,TRUE,1,2025-11-03,7
+MARKERS,Training,Signals to mark correct behavior,Expert,TRUE,1,2025-11-03,7
+TARGETS,Training,Objects/points a dog is taught to touch,Expert,TRUE,1,2025-11-03,7
+HEELING,Training,Walking close at the handler’s side,Expert,TRUE,1,2025-11-03,7
+REWARDS,Training,Items/actions used as reinforcement,Expert,TRUE,1,2025-11-03,7
+COLLARS,Gear,Bands worn around necks,Expert,TRUE,1,2025-11-03,7
+LEASHES,Gear,Straps used for walking dogs,Expert,TRUE,1,2025-11-03,7
+AGILITY,Sport,Dog sport of obstacle courses,Expert,TRUE,1,2025-11-03,7
+WALKING,Activity,Act of taking a dog for a walk,Expert,TRUE,1,2025-11-03,7
+PLAYFUL,Trait,Full of play and energy,Expert,TRUE,1,2025-11-03,7
+FRIENDS,Companions,Human–dog companionship,Expert,TRUE,1,2025-11-03,7
+OUTDOOR,Environment,Outside spaces for dogs,Expert,TRUE,1,2025-11-03,7
+INDOORS,Environment,Inside the home,Expert,TRUE,1,2025-11-03,7
+TRAINED,Status,Dog that has been trained,Expert,TRUE,1,2025-11-03,7
+RESCUER,Role,Person who rescues dogs,Expert,TRUE,1,2025-11-03,7
+VACCINE,Health,Immunization used for disease prevention,Expert,TRUE,1,2025-11-03,7
+BANDAGE,Care,Protective dressing for wounds,Expert,TRUE,1,2025-11-03,7
+EYELIDS,Anatomy,Upper/lower lids that protect the eyes,Expert,TRUE,1,2025-11-03,7
+NOSTRIL,Anatomy,External opening of the nose,Expert,TRUE,1,2025-11-03,7
+INCISOR,Tooth,Front cutting tooth,Expert,TRUE,1,2025-11-03,7
+WITHERS,Anatomy,Highest point of back at the shoulders,Expert,TRUE,1,2025-11-03,7
+TENDONS,Anatomy,Fibrous tissues attaching muscle to bone,Expert,TRUE,1,2025-11-03,7
+MUSCLES,Anatomy,Contractile tissues of the body,Expert,TRUE,1,2025-11-03,7
+LITTERS,Puppy groups,Groups of puppies born to a dog,Expert,TRUE,1,2025-11-03,7
+FOSTERS,Caregivers,People who foster dogs,Expert,TRUE,1,2025-11-03,7
+ADOPTER,New owner,Person adopting a dog,Expert,TRUE,1,2025-11-03,7
+ADOPTED,Rehomed,Dog taken into a new home,Expert,TRUE,1,2025-11-03,7
+LEASHED,Restrained,On a leash,Expert,TRUE,1,2025-11-03,7
+UNLEASH,Release,To remove a leash,Expert,TRUE,1,2025-11-03,7
+CHEWTOY,Toy type,Toy designed for chewing,Expert,TRUE,1,2025-11-03,7
+BOOTIES,Dog boots,Protective footwear for dogs,Expert,TRUE,1,2025-11-03,7
+JACKETS,Dog coats,Outerwear for warmth/weather,Expert,TRUE,1,2025-11-03,7
+SWEATER,Dog sweater,Knitted garment for warmth,Expert,TRUE,1,2025-11-03,7
+BARKED,Bark forms,Different forms of barking,Hard,TRUE,1,2025-11-03,6
+BARKERS,Bark forms,Different forms of barking,Expert,TRUE,1,2025-11-03,7
+BARKES,Bark forms,Different forms of barking,Hard,TRUE,1,2025-11-03,6
+BARKING,Bark forms,Different forms of barking,Expert,TRUE,1,2025-11-03,7
+HOWLED,Howl forms,Different forms of howling,Hard,TRUE,1,2025-11-03,6
+HOWLER,Howl forms,Different forms of howling,Hard,TRUE,1,2025-11-03,6
+HOWLES,Howl forms,Different forms of howling,Hard,TRUE,1,2025-11-03,6
+HOWLING,Howl forms,Different forms of howling,Expert,TRUE,1,2025-11-03,7
+YELPED,Yelp forms,Different forms of yelping,Hard,TRUE,1,2025-11-03,6
+YELPES,Yelp forms,Different forms of yelping,Hard,TRUE,1,2025-11-03,6
+YELPING,Yelp forms,Different forms of yelping,Expert,TRUE,1,2025-11-03,7
+CHEWES,Chew forms,Different forms of chewing,Hard,TRUE,1,2025-11-03,6
+CHEWING,Chew forms,Different forms of chewing,Expert,TRUE,1,2025-11-03,7
+SNIFFED,Sniff forms,Different forms of sniffing,Expert,TRUE,1,2025-11-03,7
+SNIFFER,Sniff forms,Different forms of sniffing,Expert,TRUE,1,2025-11-03,7
+SNIFFES,Sniff forms,Different forms of sniffing,Expert,TRUE,1,2025-11-03,7
+GROWLS,Growl forms,Different forms of growling,Hard,TRUE,1,2025-11-03,6
+GROWLED,Growl forms,Different forms of growling,Expert,TRUE,1,2025-11-03,7
+GROWLER,Growl forms,Different forms of growling,Expert,TRUE,1,2025-11-03,7
+GROWLES,Growl forms,Different forms of growling,Expert,TRUE,1,2025-11-03,7
+FETCHS,Fetch forms,Different forms of fetching,Hard,TRUE,1,2025-11-03,6
+FETCHED,Fetch forms,Different forms of fetching,Expert,TRUE,1,2025-11-03,7
+FETCHER,Fetch forms,Different forms of fetching,Expert,TRUE,1,2025-11-03,7
+FETCHES,Fetch forms,Different forms of fetching,Expert,TRUE,1,2025-11-03,7
+WALKS,Walk forms,Different forms of walking,Medium,TRUE,1,2025-11-03,5
+WALKED,Walk forms,Different forms of walking,Hard,TRUE,1,2025-11-03,6
+WALKES,Walk forms,Different forms of walking,Hard,TRUE,1,2025-11-03,6
+CHASES,Chase forms,Different forms of chasing,Hard,TRUE,1,2025-11-03,6
+CHASEED,Chase forms,Different forms of chasing,Expert,TRUE,1,2025-11-03,7
+CHASEER,Chase forms,Different forms of chasing,Expert,TRUE,1,2025-11-03,7
+CHASEES,Chase forms,Different forms of chasing,Expert,TRUE,1,2025-11-03,7
+HERDS,Herd forms,Different forms of herding,Medium,TRUE,1,2025-11-03,5
+HERDED,Herd forms,Different forms of herding,Hard,TRUE,1,2025-11-03,6
+HERDES,Herd forms,Different forms of herding,Hard,TRUE,1,2025-11-03,6
+HERDING,Herd forms,Different forms of herding,Expert,TRUE,1,2025-11-03,7
+GUARDED,Guard forms,Different forms of guarding,Expert,TRUE,1,2025-11-03,7
+GUARDER,Guard forms,Different forms of guarding,Expert,TRUE,1,2025-11-03,7
+GUARDES,Guard forms,Different forms of guarding,Expert,TRUE,1,2025-11-03,7
+LICKED,Lick forms,Different forms of licking,Hard,TRUE,1,2025-11-03,6
+LICKER,Lick forms,Different forms of licking,Hard,TRUE,1,2025-11-03,6
+LICKERS,Lick forms,Different forms of licking,Expert,TRUE,1,2025-11-03,7
+LICKES,Lick forms,Different forms of licking,Hard,TRUE,1,2025-11-03,6
+LICKING,Lick forms,Different forms of licking,Expert,TRUE,1,2025-11-03,7
+BITEED,Bite forms,Different forms of biting,Hard,TRUE,1,2025-11-03,6
+BITEER,Bite forms,Different forms of biting,Hard,TRUE,1,2025-11-03,6
+BITEERS,Bite forms,Different forms of biting,Expert,TRUE,1,2025-11-03,7
+BITEES,Bite forms,Different forms of biting,Hard,TRUE,1,2025-11-03,6
+BITEING,Bite forms,Different forms of biting,Expert,TRUE,1,2025-11-03,7
+BASSETS,Breed (plural),Plural of a recognized dog breed,Expert,TRUE,1,2025-11-03,7
+SETTER,Breed,Recognized dog breed,Hard,TRUE,1,2025-11-03,6
+NASAL,Anatomy,Relating to the nose,Medium,TRUE,1,2025-11-03,5
+NASALS,Anatomy,Plural of nasal,Hard,TRUE,1,2025-11-03,6
+ORBIT,Anatomy,Eye socket region,Medium,TRUE,1,2025-11-03,5
+THORAX,Anatomy,Chest region,Hard,TRUE,1,2025-11-03,6
+LIVER,Anatomy,Organ that processes nutrients,Medium,TRUE,1,2025-11-03,5
+LIVERS,Anatomy,Plural of liver,Hard,TRUE,1,2025-11-03,6
+KIDNEY,Anatomy,Organ that filters blood,Hard,TRUE,1,2025-11-03,6
+KIDNEYS,Anatomy,Plural of kidney,Expert,TRUE,1,2025-11-03,7
+SPLEEN,Anatomy,Organ involved in immunity,Hard,TRUE,1,2025-11-03,6
+STOMACH,Anatomy,Digestive organ,Expert,TRUE,1,2025-11-03,7
+LARYNX,Anatomy,Voice box in the throat,Hard,TRUE,1,2025-11-03,6
+TRACHEA,Anatomy,Windpipe conducting air,Expert,TRUE,1,2025-11-03,7
+BRONCHI,Anatomy,Air passages to lungs,Expert,TRUE,1,2025-11-03,7
+PELVIS,Anatomy,Bony structure at the base of spine,Hard,TRUE,1,2025-11-03,6
+FEMURS,Anatomy,Thigh bones,Hard,TRUE,1,2025-11-03,6
+HUMERUS,Anatomy,Upper forelimb bone,Expert,TRUE,1,2025-11-03,7
+DENTAL,Health,Relating to teeth,Hard,TRUE,1,2025-11-03,6
+TARTAR,Health,Hardened dental plaque,Hard,TRUE,1,2025-11-03,6
+PLAQUE,Health,Film on teeth causing decay,Hard,TRUE,1,2025-11-03,6
+ALLERGY,Health,Immune reaction to substances,Expert,TRUE,1,2025-11-03,7
+ASTHMA,Health,Inflammatory airway disease,Hard,TRUE,1,2025-11-03,6
+COUGHED,Health,Expelled air forcefully,Expert,TRUE,1,2025-11-03,7
+SNEEZE,Health,Sudden involuntary expulsion of air,Hard,TRUE,1,2025-11-03,6
+SNEEZED,Health,Past tense of sneeze,Expert,TRUE,1,2025-11-03,7
+SNEEZES,Health,Third person/plural of sneeze,Expert,TRUE,1,2025-11-03,7
+ITCHES,Health,Itching sensations,Hard,TRUE,1,2025-11-03,6
+ITCHING,Health,Sensation that causes scratching,Expert,TRUE,1,2025-11-03,7
+NAUSEA,Health,Sensation of needing to vomit,Hard,TRUE,1,2025-11-03,6
+CANCER,Health,Uncontrolled cell growth disease,Hard,TRUE,1,2025-11-03,6
+TUMORS,Health,Abnormal tissue masses,Hard,TRUE,1,2025-11-03,6
+ANEMIA,Health,Low red blood cell count,Hard,TRUE,1,2025-11-03,6
+ANEMIAS,Health,Plural of anemia,Expert,TRUE,1,2025-11-03,7
+LOYAL,Temperament,Showing firm allegiance,Medium,TRUE,1,2025-11-03,5
+CALM,Temperament,Free from agitation,Easy,TRUE,1,2025-11-03,4
+CALMER,Temperament,More calm than before,Hard,TRUE,1,2025-11-03,6
+CALMEST,Temperament,Most calm state,Expert,TRUE,1,2025-11-03,7
+BRAVER,Temperament,More brave,Hard,TRUE,1,2025-11-03,6
+GENTLE,Temperament,Mild and kind,Hard,TRUE,1,2025-11-03,6
+SOCIAL,Temperament,Enjoys company of others,Hard,TRUE,1,2025-11-03,6
+ACTIVE,Temperament,Engages in action; energetic,Hard,TRUE,1,2025-11-03,6
+ALERTS,Behavior,Warns of something unusual,Hard,TRUE,1,2025-11-03,6
+TIMID,Temperament,Lacking in courage,Medium,TRUE,1,2025-11-03,5
+CURIOUS,Temperament,Eager to learn or know,Expert,TRUE,1,2025-11-03,7
+FOCUS,Training,Concentrate attention as a cue,Medium,TRUE,1,2025-11-03,5
+FOCUSED,Training,Kept attention on handler,Expert,TRUE,1,2025-11-03,7
+DRIVEN,Temperament,Highly motivated,Hard,TRUE,1,2025-11-03,6
+LAZY,Temperament,Unwilling to work or use energy,Easy,TRUE,1,2025-11-03,4
+POLITE,Behavior,Showing good manners,Hard,TRUE,1,2025-11-03,6
+QUIETER,Behavior,Less loud; softer sounds,Expert,TRUE,1,2025-11-03,7
+PLAYED,Behavior,Engaged in play,Hard,TRUE,1,2025-11-03,6
+PLAYS,Behavior,Engages in play,Medium,TRUE,1,2025-11-03,5
+RESTED,Behavior,Took a rest,Hard,TRUE,1,2025-11-03,6
+JUMPS,Behavior,Leaps into the air,Medium,TRUE,1,2025-11-03,5
+HANDLER,Role,Person who manages and trains a dog,Expert,TRUE,1,2025-11-03,7
+CLICKS,Training,Short sounds used as markers,Hard,TRUE,1,2025-11-03,6
+CLICKED,Training,Used a clicker to mark behavior,Expert,TRUE,1,2025-11-03,7
+TARGET,Training,Object/spot for the dog to touch,Hard,TRUE,1,2025-11-03,6
+TRACKER,Training,One who tracks by scent,Expert,TRUE,1,2025-11-03,7
+TRACKED,Training,Followed a trail or scent,Expert,TRUE,1,2025-11-03,7
+SEEKER,Training,One who looks/searches,Hard,TRUE,1,2025-11-03,6
+SEEKERS,Training,People/animals that search,Expert,TRUE,1,2025-11-03,7
+SEARCH,Training,Look carefully to find,Hard,TRUE,1,2025-11-03,6
+HEELED,Training,Walked close at handler’s side,Hard,TRUE,1,2025-11-03,6
+HEELER,Training/Breed,Dog that heels; also a cattle dog type,Hard,TRUE,1,2025-11-03,6
+HEELERS,Training/Breed,Plural of heeler,Expert,TRUE,1,2025-11-03,7
+MARKER,Training,Signal used to mark behavior,Hard,TRUE,1,2025-11-03,6
+HALTER,Equipment,Headcollar used for control,Hard,TRUE,1,2025-11-03,6
+HALTERS,Equipment,Multiple headcollars,Expert,TRUE,1,2025-11-03,7
+BLANKET,Equipment,Covering for warmth,Expert,TRUE,1,2025-11-03,7
+CLIPPER,Equipment,Grooming tool that clips fur,Expert,TRUE,1,2025-11-03,7
+BRUSHES,Equipment,Multiple grooming brushes,Expert,TRUE,1,2025-11-03,7
+BRUSHED,Equipment,Groomed using a brush,Expert,TRUE,1,2025-11-03,7
+COATING,Equipment,Layer of protective or fur covering,Expert,TRUE,1,2025-11-03,7
+BATHTUB,Equipment,Tub used for bathing a dog,Expert,TRUE,1,2025-11-03,7
+FRISBEE,Toy,Flying disc used for fetch,Expert,TRUE,1,2025-11-03,7
+BALL,Toy,Spherical toy for fetch,Easy,TRUE,1,2025-11-03,4
+BALLS,Toy,Plural of ball,Medium,TRUE,1,2025-11-03,5
+ROPE,Toy,Cord used for tug-of-war,Easy,TRUE,1,2025-11-03,4
+ROPES,Toy,Plural of rope,Medium,TRUE,1,2025-11-03,5
+RESCUED,Rescue,Saved and rehomed from shelter,Expert,TRUE,1,2025-11-03,7
+BOARDER,Boarding,Dog staying temporarily for care,Expert,TRUE,1,2025-11-03,7
+ADOPTEE,Rescue,One who is adopted,Expert,TRUE,1,2025-11-03,7
+FEEDERS,Care,Devices/people that feed,Expert,TRUE,1,2025-11-03,7
+WATERS,Care,Gives water to (verb),Hard,TRUE,1,2025-11-03,6
+BATHERS,Care,People who bathe dogs,Expert,TRUE,1,2025-11-03,7
+SALUKI,Breed,"Slim, fast sighthound from the Middle East",Hard,TRUE,1,2025-11-03,6
+SALUKIS,Breed,Plural of Saluki,Expert,TRUE,1,2025-11-03,7
+MUDI,Breed,Hungarian herding breed,Easy,TRUE,1,2025-11-03,4
+MUDIS,Breed,Plural of Mudi,Medium,TRUE,1,2025-11-03,5
+KELPIE,Breed,Australian herding dog,Hard,TRUE,1,2025-11-03,6
+KELPIES,Breed,Plural of Kelpie,Expert,TRUE,1,2025-11-03,7
+SPITZES,Breed type,Plural of spitz-type dogs,Expert,TRUE,1,2025-11-03,7
+SHARPEI,Breed,Wrinkle-skinned Chinese breed,Expert,TRUE,1,2025-11-03,7
+VESTS,Equipment,Protective/service vests for dogs,Medium,TRUE,1,2025-11-03,5
+ECOLLAR,Health,Protective cone collar used after surgery,Expert,TRUE,1,2025-11-03,7
+CONE,Equipment,Protective cone to prevent licking,Easy,TRUE,1,2025-11-03,4
+CONES,Equipment,Plural of cone,Medium,TRUE,1,2025-11-03,5
+BOWLS,Feeding,Dishes used for food or water,Medium,TRUE,1,2025-11-03,5
+BOTTLE,Care,Container for feeding puppies,Hard,TRUE,1,2025-11-03,6
+BOTTLES,Care,Multiple feeding containers,Expert,TRUE,1,2025-11-03,7
+TEETER,Agility,Seesaw obstacle in agility,Hard,TRUE,1,2025-11-03,6
+TEETERS,Agility,Plural/verb form of teeter,Expert,TRUE,1,2025-11-03,7
+SLALOM,Agility,Weaving movement between poles,Hard,TRUE,1,2025-11-03,6
+CHUTES,Agility,Fabric tunnel obstacle,Hard,TRUE,1,2025-11-03,6
+JUMPERS,Agility,Dogs competing in jumpers class,Expert,TRUE,1,2025-11-03,7
+NIPPED,Behavior,Bit lightly or sharply,Hard,TRUE,1,2025-11-03,6
+NIPPER,Behavior,Dog that tends to nip,Hard,TRUE,1,2025-11-03,6
+NIPPERS,Behavior,Dogs that tend to nip,Expert,TRUE,1,2025-11-03,7
+MOUNTS,Behavior,Climbs on; mating behavior,Hard,TRUE,1,2025-11-03,6
+MOUNTED,Behavior,Climbed on; mating behavior,Expert,TRUE,1,2025-11-03,7
+SEIZURE,Health,Sudden neurological event,Expert,TRUE,1,2025-11-03,7
+VIRUS,Health,Infectious agent causing disease,Medium,TRUE,1,2025-11-03,5
+VIRUSES,Health,Plural of virus,Expert,TRUE,1,2025-11-03,7
+FUNGAL,Health,Related to fungus infections,Hard,TRUE,1,2025-11-03,6
+FUNGUS,Health,Fungal organism,Hard,TRUE,1,2025-11-03,6
+YEASTS,Health,Fungi that can cause infections,Hard,TRUE,1,2025-11-03,6
+WHISKER,Anatomy,Long tactile hair on muzzle/face,Expert,TRUE,1,2025-11-03,7
+EYEBALL,Anatomy,The eyeball itself,Expert,TRUE,1,2025-11-03,7
+EARDRUM,Anatomy,Tympanic membrane in the ear,Expert,TRUE,1,2025-11-03,7
+NIPPLES,Anatomy,Mammary papillae on the abdomen,Expert,TRUE,1,2025-11-03,7
+NURSING,Care,Feeding milk from the mother,Expert,TRUE,1,2025-11-03,7

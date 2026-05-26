@@ -1,0 +1,32 @@
+{
+  "sourceCollection": "Dog Parks",
+  "sourceFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Dog Parks - 683758b0a3f8a696dfc417b0.csv",
+  "originalWebflowId": "68705619cce7d0ad22b006fc",
+  "name": "Adams Park",
+  "slug": "adams-park-cornwall",
+  "seo": {
+    "title": "",
+    "description": ""
+  },
+  "fields": {
+    "Park Name": "Adams Park",
+    "slug": "adams-park-cornwall",
+    "Collection ID": "683758b0a3f8a696dfc417b0",
+    "Locale ID": "683758b09dd1e3ac2e4e9809",
+    "Item ID": "68705619cce7d0ad22b006fc",
+    "Archived": "false",
+    "Draft": "false",
+    "Created On": "Fri Jul 11 2025 00:08:57 GMT+0000 (Coordinated Universal Time)",
+    "Updated On": "Fri Jul 11 2025 00:28:21 GMT+0000 (Coordinated Universal Time)",
+    "Published On": "Fri Jul 11 2025 12:18:36 GMT+0000 (Coordinated Universal Time)",
+    "Park Header": "Adams Park Leash Free Dog Park",
+    "Park type": "Dogs Allowed"
+  },
+  "media": {
+    "status": "needs_review",
+    "localPath": ""
+  },
+  "references": {
+    "status": "needs_review"
+  }
+}

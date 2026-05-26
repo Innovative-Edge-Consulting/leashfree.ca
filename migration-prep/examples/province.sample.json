@@ -1,0 +1,30 @@
+{
+  "sourceCollection": "Provinces",
+  "sourceFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Provinces - 68f3eba286b1e2a4d04cd70c.csv",
+  "originalWebflowId": "68fbd649485c76aa6b9020f2",
+  "name": "Alberta",
+  "slug": "ab",
+  "seo": {
+    "title": "",
+    "description": ""
+  },
+  "fields": {
+    "Province": "Alberta",
+    "Slug": "ab",
+    "Collection ID": "68f3eba286b1e2a4d04cd70c",
+    "Locale ID": "683758b09dd1e3ac2e4e9809",
+    "Item ID": "68fbd649485c76aa6b9020f2",
+    "Archived": "false",
+    "Draft": "false",
+    "Created On": "Fri Oct 24 2025 19:40:57 GMT+0000 (Coordinated Universal Time)",
+    "Updated On": "Fri Oct 24 2025 19:40:57 GMT+0000 (Coordinated Universal Time)",
+    "Published On": "Fri Oct 24 2025 19:40:57 GMT+0000 (Coordinated Universal Time)"
+  },
+  "media": {
+    "status": "needs_review",
+    "localPath": ""
+  },
+  "references": {
+    "status": "needs_review"
+  }
+}

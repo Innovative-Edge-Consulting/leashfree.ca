@@ -1,0 +1,816 @@
+[
+  {
+    "collectionFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Blog Categories - 68bef5db17912168bc66d805.csv",
+    "inferredCollectionName": "Blog Categories",
+    "itemCount": 7,
+    "columns": [
+      "Name",
+      "Slug",
+      "Collection ID",
+      "Locale ID",
+      "Item ID",
+      "Archived",
+      "Draft",
+      "Created On",
+      "Updated On",
+      "Published On",
+      "H1",
+      "Description",
+      "Thumbnail Image (Image, optional)",
+      "Meta Title",
+      "Meta Description"
+    ],
+    "likelySlugField": "Slug",
+    "likelyNameField": "Name",
+    "seoFields": [
+      "Meta Title",
+      "Meta Description"
+    ],
+    "mediaFields": [
+      "Thumbnail Image (Image, optional)"
+    ],
+    "referenceFields": [],
+    "richTextFields": [
+      "Description",
+      "Meta Description"
+    ],
+    "plainTextFields": [
+      "Name",
+      "Meta Title"
+    ],
+    "webflowUrlFields": [],
+    "websiteFilesUrlFields": [
+      "Thumbnail Image (Image, optional)"
+    ],
+    "urlFields": [
+      "Thumbnail Image (Image, optional)"
+    ],
+    "mostlyEmptyFields": [],
+    "cleanupCandidateFields": [
+      "Description"
+    ],
+    "notes": []
+  },
+  {
+    "collectionFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Blog Posts - 68bef494bffe949f670f04e5.csv",
+    "inferredCollectionName": "Blog Posts",
+    "itemCount": 38,
+    "columns": [
+      "Name",
+      "Slug",
+      "Collection ID",
+      "Locale ID",
+      "Item ID",
+      "Archived",
+      "Draft",
+      "Created On",
+      "Updated On",
+      "Published On",
+      "Blog Header (H1 Override)",
+      "Category",
+      "Blog Tags",
+      "Meta Title",
+      "Meta Description",
+      "Hero Image",
+      "Intro Paragraph",
+      "Rich Text Body",
+      "Additional Images (Optional)",
+      "Thumbnail image",
+      "Post Summary",
+      "Featured?",
+      "Color"
+    ],
+    "likelySlugField": "Slug",
+    "likelyNameField": "Name",
+    "seoFields": [
+      "Blog Header (H1 Override)",
+      "Blog Tags",
+      "Meta Title",
+      "Meta Description"
+    ],
+    "mediaFields": [
+      "Hero Image",
+      "Rich Text Body",
+      "Additional Images (Optional)",
+      "Thumbnail image"
+    ],
+    "referenceFields": [
+      "Category",
+      "Blog Tags"
+    ],
+    "richTextFields": [
+      "Meta Description",
+      "Rich Text Body",
+      "Post Summary"
+    ],
+    "plainTextFields": [
+      "Name",
+      "Blog Header (H1 Override)",
+      "Meta Title",
+      "Intro Paragraph"
+    ],
+    "webflowUrlFields": [],
+    "websiteFilesUrlFields": [
+      "Hero Image",
+      "Rich Text Body",
+      "Additional Images (Optional)"
+    ],
+    "urlFields": [
+      "Hero Image",
+      "Intro Paragraph",
+      "Rich Text Body",
+      "Additional Images (Optional)"
+    ],
+    "mostlyEmptyFields": [
+      "Additional Images (Optional)",
+      "Thumbnail image",
+      "Color"
+    ],
+    "cleanupCandidateFields": [
+      "Intro Paragraph",
+      "Rich Text Body",
+      "Post Summary",
+      "Featured?"
+    ],
+    "notes": []
+  },
+  {
+    "collectionFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Blog Tags - 68bf0d7329f4aba707b03d73.csv",
+    "inferredCollectionName": "Blog Tags",
+    "itemCount": 28,
+    "columns": [
+      "Name",
+      "Slug",
+      "Collection ID",
+      "Locale ID",
+      "Item ID",
+      "Archived",
+      "Draft",
+      "Created On",
+      "Updated On",
+      "Published On",
+      "H1",
+      "Description",
+      "Meta Title",
+      "Meta Description",
+      "Tag Hero Image"
+    ],
+    "likelySlugField": "Slug",
+    "likelyNameField": "Name",
+    "seoFields": [
+      "Meta Title",
+      "Meta Description"
+    ],
+    "mediaFields": [
+      "Tag Hero Image"
+    ],
+    "referenceFields": [],
+    "richTextFields": [
+      "Description",
+      "Meta Description"
+    ],
+    "plainTextFields": [
+      "Name",
+      "Meta Title"
+    ],
+    "webflowUrlFields": [],
+    "websiteFilesUrlFields": [
+      "Tag Hero Image"
+    ],
+    "urlFields": [
+      "Tag Hero Image"
+    ],
+    "mostlyEmptyFields": [],
+    "cleanupCandidateFields": [
+      "Description"
+    ],
+    "notes": []
+  },
+  {
+    "collectionFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Breed Groups - 68ea7925e7187cdd719733f1.csv",
+    "inferredCollectionName": "Breed Groups",
+    "itemCount": 9,
+    "columns": [
+      "Group Name",
+      "Slug",
+      "Collection ID",
+      "Locale ID",
+      "Item ID",
+      "Archived",
+      "Draft",
+      "Created On",
+      "Updated On",
+      "Published On",
+      "H2 Subheading",
+      "Summary (Intro Copy)",
+      "Hero Image",
+      "Meta Title",
+      "Meta Description",
+      "FAQ (Group)"
+    ],
+    "likelySlugField": "Slug",
+    "likelyNameField": "Group Name",
+    "seoFields": [
+      "Meta Title",
+      "Meta Description"
+    ],
+    "mediaFields": [
+      "Hero Image"
+    ],
+    "referenceFields": [],
+    "richTextFields": [
+      "Summary (Intro Copy)",
+      "Meta Description",
+      "FAQ (Group)"
+    ],
+    "plainTextFields": [
+      "Group Name",
+      "H2 Subheading",
+      "Meta Title"
+    ],
+    "webflowUrlFields": [],
+    "websiteFilesUrlFields": [
+      "Hero Image"
+    ],
+    "urlFields": [
+      "Hero Image"
+    ],
+    "mostlyEmptyFields": [],
+    "cleanupCandidateFields": [],
+    "notes": []
+  },
+  {
+    "collectionFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Categories - 68f3eb6627330a66b9e68114.csv",
+    "inferredCollectionName": "Categories",
+    "itemCount": 7,
+    "columns": [
+      "Name",
+      "Slug",
+      "Collection ID",
+      "Locale ID",
+      "Item ID",
+      "Archived",
+      "Draft",
+      "Created On",
+      "Updated On",
+      "Published On",
+      "Header 1",
+      "Intro Description",
+      "Header 2",
+      "Secondary Description",
+      "Header 3",
+      "Third Description",
+      "Hero Image",
+      "Icon",
+      "SEO Title",
+      "Meta Description",
+      "OG Title",
+      "OG Description",
+      "OG Image",
+      "Canonical URL"
+    ],
+    "likelySlugField": "Slug",
+    "likelyNameField": "Name",
+    "seoFields": [
+      "SEO Title",
+      "Meta Description",
+      "OG Title",
+      "OG Description",
+      "OG Image",
+      "Canonical URL"
+    ],
+    "mediaFields": [
+      "Hero Image",
+      "Icon",
+      "OG Image"
+    ],
+    "referenceFields": [],
+    "richTextFields": [
+      "Intro Description",
+      "Secondary Description",
+      "Third Description",
+      "Meta Description",
+      "OG Description"
+    ],
+    "plainTextFields": [
+      "Name",
+      "Header 1",
+      "Header 2",
+      "Header 3",
+      "SEO Title",
+      "OG Title"
+    ],
+    "webflowUrlFields": [],
+    "websiteFilesUrlFields": [
+      "Hero Image"
+    ],
+    "urlFields": [
+      "Hero Image",
+      "Canonical URL"
+    ],
+    "mostlyEmptyFields": [
+      "Icon",
+      "OG Image"
+    ],
+    "cleanupCandidateFields": [
+      "Secondary Description",
+      "Canonical URL"
+    ],
+    "notes": []
+  },
+  {
+    "collectionFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - City Pages - 68419a1c56454ae93923d2e4.csv",
+    "inferredCollectionName": "City Pages",
+    "itemCount": 88,
+    "columns": [
+      "City Name",
+      "Slug",
+      "Collection ID",
+      "Locale ID",
+      "Item ID",
+      "Archived",
+      "Draft",
+      "Created On",
+      "Updated On",
+      "Published On",
+      "Province",
+      "SEO Title Tag",
+      "Meta Description",
+      "Hero Image",
+      "Intro Paragraph",
+      "About Section",
+      "Featured Park 1",
+      "Featured Park 2",
+      "Featured Park 3",
+      "Seasonal Tips",
+      "Park Rules",
+      "City Website",
+      "Province Page",
+      "Dog Park Etiquettes",
+      "Dog Park FAQs",
+      "Nearby Cities"
+    ],
+    "likelySlugField": "Slug",
+    "likelyNameField": "City Name",
+    "seoFields": [
+      "SEO Title Tag",
+      "Meta Description",
+      "Dog Park Etiquettes",
+      "Dog Park FAQs"
+    ],
+    "mediaFields": [
+      "Hero Image"
+    ],
+    "referenceFields": [
+      "City Name",
+      "Province",
+      "Featured Park 1",
+      "Featured Park 2",
+      "Featured Park 3",
+      "Park Rules",
+      "City Website",
+      "Province Page",
+      "Dog Park Etiquettes",
+      "Dog Park FAQs",
+      "Nearby Cities"
+    ],
+    "richTextFields": [
+      "Meta Description",
+      "About Section",
+      "Seasonal Tips",
+      "Park Rules",
+      "Dog Park FAQs"
+    ],
+    "plainTextFields": [
+      "City Name",
+      "SEO Title Tag",
+      "Intro Paragraph"
+    ],
+    "webflowUrlFields": [],
+    "websiteFilesUrlFields": [
+      "Hero Image"
+    ],
+    "urlFields": [
+      "Hero Image",
+      "About Section",
+      "City Website",
+      "Province Page",
+      "Dog Park Etiquettes",
+      "Dog Park FAQs"
+    ],
+    "mostlyEmptyFields": [
+      "Featured Park 3",
+      "City Website",
+      "Nearby Cities"
+    ],
+    "cleanupCandidateFields": [
+      "About Section",
+      "Seasonal Tips",
+      "Park Rules",
+      "Dog Park Etiquettes",
+      "Dog Park FAQs"
+    ],
+    "notes": []
+  },
+  {
+    "collectionFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Directories - 68f3eb26d7ca3dac6e94b96d.csv",
+    "inferredCollectionName": "Directories",
+    "itemCount": 66,
+    "columns": [
+      "Business Name",
+      "Slug",
+      "Collection ID",
+      "Locale ID",
+      "Item ID",
+      "Archived",
+      "Draft",
+      "Created On",
+      "Updated On",
+      "Published On",
+      "Category",
+      "Province",
+      "City",
+      "Street Address",
+      "Latitude",
+      "Longitude",
+      "Primary Website URL",
+      "Affiliate URL",
+      "Phone",
+      "Email",
+      "Instagram URL",
+      "Facebook URL",
+      "Google Maps Link",
+      "Short Description",
+      "Long Description",
+      "Hours",
+      "Service Tags",
+      "Featured Image",
+      "Gallery",
+      "Feature Rank",
+      "CTA Label",
+      "SEO Title",
+      "Meta Description",
+      "OG Title",
+      "OG Description"
+    ],
+    "likelySlugField": "Slug",
+    "likelyNameField": "Business Name",
+    "seoFields": [
+      "SEO Title",
+      "Meta Description",
+      "OG Title",
+      "OG Description"
+    ],
+    "mediaFields": [
+      "Featured Image",
+      "Gallery"
+    ],
+    "referenceFields": [
+      "Category",
+      "Province",
+      "City",
+      "Service Tags"
+    ],
+    "richTextFields": [
+      "Short Description",
+      "Long Description",
+      "Meta Description",
+      "OG Description"
+    ],
+    "plainTextFields": [
+      "Business Name",
+      "Street Address",
+      "Phone",
+      "Email",
+      "Hours",
+      "SEO Title",
+      "OG Title"
+    ],
+    "webflowUrlFields": [],
+    "websiteFilesUrlFields": [
+      "Featured Image"
+    ],
+    "urlFields": [
+      "Primary Website URL",
+      "Affiliate URL",
+      "Instagram URL",
+      "Facebook URL",
+      "Google Maps Link",
+      "Featured Image"
+    ],
+    "mostlyEmptyFields": [
+      "Affiliate URL",
+      "Service Tags",
+      "Gallery"
+    ],
+    "cleanupCandidateFields": [
+      "Primary Website URL",
+      "Affiliate URL",
+      "Instagram URL",
+      "Facebook URL",
+      "Google Maps Link",
+      "Long Description"
+    ],
+    "notes": []
+  },
+  {
+    "collectionFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Dog Breeds - 687babbf5586e6eeb3b8dd39 (1).csv",
+    "inferredCollectionName": "Dog Breeds",
+    "itemCount": 310,
+    "columns": [
+      "Breed Name",
+      "Slug",
+      "Collection ID",
+      "Locale ID",
+      "Item ID",
+      "Archived",
+      "Draft",
+      "Created On",
+      "Updated On",
+      "Published On",
+      "H2 Subheading",
+      "Breed Summary",
+      "Meta Title",
+      "Meta Description",
+      "Featured Image",
+      "Breed History",
+      "Physical Characteristics",
+      "Grooming",
+      "Exercise Needs",
+      "Training Tips",
+      "Nutrition & Diet",
+      "Health Concerns",
+      "Adoption & Breeders",
+      "FAQs",
+      "Ratings",
+      "Video Link 1",
+      "Video Link 2",
+      "Tags",
+      "Breed Group",
+      "Breed Group Reference",
+      "Size Category",
+      "Coat Type",
+      "Coat Texture",
+      "Activity Level",
+      "Trainability",
+      "Shedding Level",
+      "Family Friendly",
+      "Apartment Friendly",
+      "Hypoallergenic",
+      "Dog Breed Type"
+    ],
+    "likelySlugField": "Slug",
+    "likelyNameField": "Breed Name",
+    "seoFields": [
+      "Meta Title",
+      "Meta Description",
+      "Dog Breed Type"
+    ],
+    "mediaFields": [
+      "Featured Image",
+      "Grooming"
+    ],
+    "referenceFields": [
+      "Tags",
+      "Breed Group",
+      "Breed Group Reference",
+      "Size Category"
+    ],
+    "richTextFields": [
+      "Breed Summary",
+      "Meta Description",
+      "Breed History",
+      "Grooming",
+      "Exercise Needs",
+      "Training Tips",
+      "Nutrition & Diet",
+      "Health Concerns",
+      "Adoption & Breeders",
+      "FAQs"
+    ],
+    "plainTextFields": [
+      "Breed Name",
+      "H2 Subheading",
+      "Meta Title"
+    ],
+    "webflowUrlFields": [],
+    "websiteFilesUrlFields": [
+      "Featured Image",
+      "Grooming"
+    ],
+    "urlFields": [
+      "Featured Image",
+      "Grooming",
+      "Nutrition & Diet",
+      "Adoption & Breeders",
+      "Video Link 1",
+      "Video Link 2"
+    ],
+    "mostlyEmptyFields": [
+      "Video Link 1",
+      "Video Link 2",
+      "Tags"
+    ],
+    "cleanupCandidateFields": [
+      "Breed Summary",
+      "Breed History",
+      "Physical Characteristics",
+      "Grooming",
+      "Exercise Needs",
+      "Training Tips",
+      "Nutrition & Diet",
+      "Health Concerns",
+      "Adoption & Breeders",
+      "FAQs",
+      "Ratings",
+      "Video Link 1",
+      "Video Link 2"
+    ],
+    "notes": []
+  },
+  {
+    "collectionFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Dog Parks - 683758b0a3f8a696dfc417b0.csv",
+    "inferredCollectionName": "Dog Parks",
+    "itemCount": 511,
+    "columns": [
+      "Park Name",
+      "slug",
+      "Collection ID",
+      "Locale ID",
+      "Item ID",
+      "Archived",
+      "Draft",
+      "Created On",
+      "Updated On",
+      "Published On",
+      "Park Header",
+      "Park type",
+      "Description",
+      "Street Address",
+      "latitude",
+      "longitude",
+      "City",
+      "Province",
+      "Postal Code",
+      "Fenced",
+      "Separate Small Dog Area",
+      "Surface type",
+      "Size",
+      "Water source available",
+      "Benches",
+      "Shaded area",
+      "Waste bins",
+      "Bag Dispensers",
+      "Parking Available",
+      "Washrooms nearby",
+      "Operating hours",
+      "Seasonal Restrictions",
+      "Park Website or Source",
+      "Google Maps Link",
+      "Tags",
+      "Notes / Comments",
+      "Intro Paragraph",
+      "Media"
+    ],
+    "likelySlugField": "slug",
+    "likelyNameField": "Park Name",
+    "seoFields": [
+      "Separate Small Dog Area"
+    ],
+    "mediaFields": [
+      "Media"
+    ],
+    "referenceFields": [
+      "Park Name",
+      "Park Header",
+      "Park type",
+      "City",
+      "Province",
+      "Parking Available",
+      "Washrooms nearby",
+      "Park Website or Source",
+      "Tags"
+    ],
+    "richTextFields": [
+      "Description"
+    ],
+    "plainTextFields": [
+      "Park Name",
+      "Park Header",
+      "Street Address",
+      "Operating hours",
+      "Notes / Comments",
+      "Intro Paragraph"
+    ],
+    "webflowUrlFields": [],
+    "websiteFilesUrlFields": [
+      "Media"
+    ],
+    "urlFields": [
+      "Park Website or Source",
+      "Google Maps Link",
+      "Media"
+    ],
+    "mostlyEmptyFields": [],
+    "cleanupCandidateFields": [
+      "Description",
+      "Google Maps Link",
+      "Notes / Comments"
+    ],
+    "notes": []
+  },
+  {
+    "collectionFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Pet Insurance Providers - 68ec341dc3aa0e470a391659.csv",
+    "inferredCollectionName": "Pet Insurance Providers",
+    "itemCount": 8,
+    "columns": [
+      "Provider",
+      "Slug",
+      "Collection ID",
+      "Locale ID",
+      "Item ID",
+      "Archived",
+      "Draft",
+      "Created On",
+      "Updated On",
+      "Published On",
+      "Parent/Underwriter",
+      "PlanTypes",
+      "AnnualLimit",
+      "ReimbursementPercents",
+      "DeductibleOptions",
+      "WaitingPeriodAccident",
+      "WaitingPeriodIllness",
+      "Dental",
+      "AlternativeRehabBehavioral",
+      "ClaimsNotes",
+      "ExclusionsSummary",
+      "ProvincesAvailable",
+      "SourceURL",
+      "SourceCapturedDate",
+      "LastVerified",
+      "AffiliateURL",
+      "DisplayRank"
+    ],
+    "likelySlugField": "Slug",
+    "likelyNameField": "Provider",
+    "seoFields": [],
+    "mediaFields": [],
+    "referenceFields": [
+      "Parent/Underwriter",
+      "ProvincesAvailable"
+    ],
+    "richTextFields": [
+      "ExclusionsSummary"
+    ],
+    "plainTextFields": [
+      "ClaimsNotes"
+    ],
+    "webflowUrlFields": [],
+    "websiteFilesUrlFields": [],
+    "urlFields": [
+      "SourceURL"
+    ],
+    "mostlyEmptyFields": [
+      "AffiliateURL"
+    ],
+    "cleanupCandidateFields": [
+      "Parent/Underwriter",
+      "SourceURL",
+      "AffiliateURL"
+    ],
+    "notes": []
+  },
+  {
+    "collectionFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Provinces - 68f3eba286b1e2a4d04cd70c.csv",
+    "inferredCollectionName": "Provinces",
+    "itemCount": 4,
+    "columns": [
+      "Province",
+      "Slug",
+      "Collection ID",
+      "Locale ID",
+      "Item ID",
+      "Archived",
+      "Draft",
+      "Created On",
+      "Updated On",
+      "Published On"
+    ],
+    "likelySlugField": "Slug",
+    "likelyNameField": "Province",
+    "seoFields": [],
+    "mediaFields": [],
+    "referenceFields": [
+      "Province"
+    ],
+    "richTextFields": [],
+    "plainTextFields": [],
+    "webflowUrlFields": [],
+    "websiteFilesUrlFields": [],
+    "urlFields": [],
+    "mostlyEmptyFields": [],
+    "cleanupCandidateFields": [],
+    "notes": []
+  }
+]
