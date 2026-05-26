@@ -1,0 +1,30 @@
+---
+interface LinkItem {
+  href: string;
+  label: string;
+  description?: string;
+}
+
+interface Props {
+  title?: string;
+  links: LinkItem[];
+}
+
+const { title = "Related links", links } = Astro.props;
+---
+
+{links.length > 0 && (
+  <section class="card">
+    <div class="card-body">
+      <h2>{title}</h2>
+      <div class="footer-links">
+        {links.map((link) => (
+          <a href={link.href}>
+            <strong>{link.label}</strong>
+            {link.description && <span class="small"> - {link.description}</span>}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+)}

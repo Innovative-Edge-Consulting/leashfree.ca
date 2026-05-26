@@ -1,14 +1,45 @@
 ---
 import Card from "../../components/Card.astro";
+import Hero from "../../components/Hero.astro";
 import Layout from "../../components/Layout.astro";
-import PageShell from "../../components/PageShell.astro";
+import Section from "../../components/Section.astro";
 import posts from "../../data/generated/blog-posts.json";
+import { dateLabel, excerpt, breadcrumbSchema } from "../../utils/content.js";
+
+const breadcrumbs = [
+  { label: "Home", href: "/" },
+  { label: "Blog", href: "/blog/" }
+];
 ---
 
-<Layout title="Blog" description="Converted LeashFree.ca blog posts." canonical="https://leashfree.ca/blog/">
-  <PageShell eyebrow="Blog" title="Blog data review" summary="Initial generated blog post listing from the Webflow CMS export.">
+<Layout
+  title="LeashFree.ca Blog"
+  description="Dog park tips, breed guides, dog care articles, and practical resources for Canadian dog owners."
+  canonical="https://leashfree.ca/blog/"
+  structuredData={breadcrumbSchema(breadcrumbs)}
+>
+  <Hero
+    eyebrow="Blog"
+    title="Dog care guides and park resources"
+    summary="Review converted LeashFree.ca articles from the Webflow CMS export, including dog park tips, breed guidance, training, and seasonal care."
+    primaryHref="#articles"
+    primaryLabel="Browse articles"
+    secondaryHref="/dog-parks/"
+    secondaryLabel="Find dog parks"
+  />
+
+  <Section id="articles" title="Latest articles" intro={`${posts.length} blog posts are available in the static rebuild.`}>
     <div class="grid">
-      {posts.map((post) => <Card title={post.title || post.name} href={`/blog/${post.slug}/`} description={post.metaDescription || post.description} />)}
+      {posts.map((post) => (
+        <Card
+          title={post.title || post.name}
+          href={`/blog/${post.slug}/`}
+          description={excerpt(post.metaDescription, post.description)}
+          meta={dateLabel(post.raw["Published On"] || post.raw["Updated On"])}
+          badges={[post.references.Category?.[0] || ""].filter(Boolean)}
+          ctaLabel="Read article"
+        />
+      ))}
     </div>
-  </PageShell>
+  </Section>
 </Layout>

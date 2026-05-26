@@ -1,0 +1,26 @@
+---
+const links = [
+  { href: "/dog-parks/", label: "Dog Parks" },
+  { href: "/dog-breeds/", label: "Dog Breeds" },
+  { href: "/blog/", label: "Blog" },
+  { href: "/directory/", label: "Directory" }
+];
+---
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/" aria-label="LeashFree.ca home">
+      <span class="brand-mark">LF</span>
+      <span>LeashFree.ca</span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      {links.map((link) => <a href={link.href}>{link.label}</a>)}
+    </nav>
+    <details class="mobile-nav">
+      <summary>Menu</summary>
+      <nav class="mobile-nav-panel" aria-label="Mobile navigation">
+        {links.map((link) => <a href={link.href}>{link.label}</a>)}
+      </nav>
+    </details>
+  </div>
+</header>

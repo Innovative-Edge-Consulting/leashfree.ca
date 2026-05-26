@@ -1,21 +1,53 @@
 ---
 import Card from "../../components/Card.astro";
+import Hero from "../../components/Hero.astro";
 import Layout from "../../components/Layout.astro";
-import PageShell from "../../components/PageShell.astro";
+import Section from "../../components/Section.astro";
 import breeds from "../../data/generated/dog-breeds.json";
 import groups from "../../data/generated/breed-groups.json";
+import { excerpt, breadcrumbSchema } from "../../utils/content.js";
+
+const breadcrumbs = [
+  { label: "Home", href: "/" },
+  { label: "Dog Breeds", href: "/dog-breeds/" }
+];
 ---
 
-<Layout title="Dog Breeds" description="Converted LeashFree.ca dog breed records." canonical="https://leashfree.ca/dog-breeds/">
-  <PageShell eyebrow="Dog breeds" title="Dog breed data review" summary="Initial generated dog breed and breed group pages from Webflow CMS data.">
-    <h2>Breed Groups</h2>
-    <div class="grid">
-      {groups.map((group) => <Card title={group.name} href={`/dog-breeds/group/${group.slug}/`} description={group.metaDescription || group.description} />)}
-    </div>
+<Layout
+  title="Dog Breeds"
+  description="Browse dog breed profiles converted from LeashFree.ca Webflow CMS data."
+  canonical="https://leashfree.ca/dog-breeds/"
+  structuredData={breadcrumbSchema(breadcrumbs)}
+>
+  <Hero
+    eyebrow="Dog breeds"
+    title="Explore dog breed profiles"
+    summary="Review breed guides with traits, grooming, exercise, training, and health fields where available from the CMS export."
+    primaryHref="#breeds"
+    primaryLabel="Browse breeds"
+    secondaryHref="#groups"
+    secondaryLabel="Browse groups"
+  />
 
-    <h2>Breeds</h2>
-    <div class="grid">
-      {breeds.slice(0, 80).map((breed) => <Card title={breed.name} href={`/dog-breeds/${breed.slug}/`} description={breed.metaDescription || breed.description} />)}
+  <Section id="groups" title="Breed groups" intro="Group pages provide a lightweight way to browse similar breeds." alt>
+    <div class="grid compact">
+      {groups.map((group) => (
+        <Card title={group.name} href={`/dog-breeds/group/${group.slug}/`} description={excerpt(group.metaDescription, group.description)} ctaLabel="View group" />
+      ))}
     </div>
-  </PageShell>
+  </Section>
+
+  <Section id="breeds" title="Breed profiles" intro={`${breeds.length} dog breed pages are generated from the CMS export.`}>
+    <div class="grid">
+      {breeds.map((breed) => (
+        <Card
+          title={breed.name}
+          href={`/dog-breeds/${breed.slug}/`}
+          description={excerpt(breed.metaDescription, breed.description)}
+          badges={[breed.raw["Breed Group"], breed.raw["Size Category"]].filter(Boolean)}
+          ctaLabel="View breed"
+        />
+      ))}
+    </div>
+  </Section>
 </Layout>

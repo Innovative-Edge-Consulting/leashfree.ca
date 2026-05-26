@@ -1,8 +1,30 @@
 ---
+import CTA from "../components/CTA.astro";
 import Layout from "../components/Layout.astro";
-import PageShell from "../components/PageShell.astro";
+import Section from "../components/Section.astro";
 ---
 
 <Layout title="Page Not Found" description="The requested LeashFree.ca page was not found." canonical="https://leashfree.ca/404/">
-  <PageShell eyebrow="404" title="Page not found" summary="This static scaffold does not have a generated page for that URL yet." />
+  <section class="page-header">
+    <div class="container narrow">
+      <div class="eyebrow">404</div>
+      <h1>Page not found</h1>
+      <p class="summary">This page is not available in the static rebuild yet, or the URL may have changed during the Webflow migration.</p>
+      <div class="button-row">
+        <a class="button primary" href="/dog-parks/">Browse dog parks</a>
+        <a class="button secondary" href="/">Go home</a>
+      </div>
+    </div>
+  </section>
+
+  <Section>
+    <CTA
+      title="Keep exploring LeashFree.ca"
+      text="The main dog park directory, dog breed pages, and blog are available for review."
+      primaryHref="/dog-breeds/"
+      primaryLabel="Browse dog breeds"
+      secondaryHref="/blog/"
+      secondaryLabel="Read the blog"
+    />
+  </Section>
 </Layout>

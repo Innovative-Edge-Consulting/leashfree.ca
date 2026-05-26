@@ -1,0 +1,23 @@
+---
+interface Props {
+  title: string;
+  text?: string;
+  primaryHref?: string;
+  primaryLabel?: string;
+  secondaryHref?: string;
+  secondaryLabel?: string;
+}
+
+const { title, text, primaryHref, primaryLabel, secondaryHref, secondaryLabel } = Astro.props;
+---
+
+<section class="card">
+  <div class="card-body">
+    <h2>{title}</h2>
+    {text && <p>{text}</p>}
+    <div class="button-row">
+      {primaryHref && <a class="button primary" href={primaryHref}>{primaryLabel || "Explore"}</a>}
+      {secondaryHref && <a class="button secondary" href={secondaryHref}>{secondaryLabel || "Learn more"}</a>}
+    </div>
+  </div>
+</section>

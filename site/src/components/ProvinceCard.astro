@@ -1,0 +1,12 @@
+---
+import Card from "./Card.astro";
+
+const { province } = Astro.props;
+---
+
+<Card
+  title={province.name}
+  href={`/dog-parks/${province.slug}/`}
+  description={province.metaDescription || `Browse dog parks in ${province.name}.`}
+  ctaLabel="View province"
+/>

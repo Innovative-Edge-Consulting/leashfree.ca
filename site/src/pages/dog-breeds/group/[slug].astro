@@ -1,9 +1,12 @@
 ---
+import Breadcrumbs from "../../../components/Breadcrumbs.astro";
+import Card from "../../../components/Card.astro";
+import ContentBlock from "../../../components/ContentBlock.astro";
 import Layout from "../../../components/Layout.astro";
-import PageShell from "../../../components/PageShell.astro";
-import mediaMap from "../../../data/media-map.json";
+import Section from "../../../components/Section.astro";
 import groups from "../../../data/generated/breed-groups.json";
-import { resolveMedia } from "../../../utils/media.js";
+import breeds from "../../../data/generated/dog-breeds.json";
+import { breadcrumbSchema, excerpt, slugify } from "../../../utils/content.js";
 
 export function getStaticPaths() {
   return groups.filter((group) => group.slug).map((group) => ({
@@ -13,12 +16,35 @@ export function getStaticPaths() {
 }
 
 const { group } = Astro.props;
-const image = resolveMedia(group, "Hero Image", mediaMap);
+const groupBreeds = breeds.filter((breed) => slugify(breed.raw["Breed Group"]) === slugify(group.name));
+const breadcrumbs = [
+  { label: "Home", href: "/" },
+  { label: "Dog Breeds", href: "/dog-breeds/" },
+  { label: group.name }
+];
 ---
 
-<Layout title={group.seoTitle || group.title || group.name} description={group.metaDescription || group.description} canonical={group.canonicalUrl} ogImage={image.src}>
-  <PageShell eyebrow="Breed group" title={group.title || group.name} summary={group.description}>
-    <img class="hero-image" src={image.src} alt="" loading="lazy" />
-    {group.body && <section class="content-block" set:html={group.body} />}
-  </PageShell>
+<Layout title={group.seoTitle || group.title || group.name} description={group.metaDescription || group.description} canonical={group.canonicalUrl} structuredData={breadcrumbSchema(breadcrumbs)}>
+  <section class="page-header">
+    <div class="container">
+      <Breadcrumbs items={breadcrumbs} />
+      <div class="eyebrow">Breed group</div>
+      <h1>{group.title || group.name}</h1>
+      <p class="summary">{excerpt(group.description, group.metaDescription)}</p>
+    </div>
+  </section>
+
+  {group.body && (
+    <Section>
+      <ContentBlock html={group.body} />
+    </Section>
+  )}
+
+  <Section title={`Breeds in ${group.name}`} intro={`${groupBreeds.length} breed profiles currently match this group.`} alt>
+    <div class="grid">
+      {groupBreeds.map((breed) => (
+        <Card title={breed.name} href={`/dog-breeds/${breed.slug}/`} description={excerpt(breed.metaDescription, breed.description)} ctaLabel="View breed" />
+      ))}
+    </div>
+  </Section>
 </Layout>

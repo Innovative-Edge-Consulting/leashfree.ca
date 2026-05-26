@@ -22,6 +22,7 @@ const {
 } = Astro.props;
 
 const pageTitle = title.includes("LeashFree") ? title : `${title} | LeashFree.ca`;
+const finalOgImage = ogImage || "/images/placeholders/missing-image.svg";
 ---
 
 <title>{pageTitle}</title>
@@ -32,8 +33,8 @@ const pageTitle = title.includes("LeashFree") ? title : `${title} | LeashFree.ca
 <meta property="og:description" content={ogDescription || description} />
 <meta property="og:type" content="website" />
 {canonical && <meta property="og:url" content={canonical} />}
-{ogImage && <meta property="og:image" content={ogImage} />}
-<meta name="twitter:card" content={ogImage ? "summary_large_image" : "summary"} />
+<meta property="og:image" content={finalOgImage} />
+<meta name="twitter:card" content="summary_large_image" />
 {structuredData && (
   <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
 )}

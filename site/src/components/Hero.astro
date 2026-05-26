@@ -1,0 +1,32 @@
+---
+import ImageWithFallback from "./ImageWithFallback.astro";
+
+interface Props {
+  eyebrow?: string;
+  title: string;
+  summary?: string;
+  image?: string;
+  imageAlt?: string;
+  primaryHref?: string;
+  primaryLabel?: string;
+  secondaryHref?: string;
+  secondaryLabel?: string;
+}
+
+const { eyebrow, title, summary, image, imageAlt, primaryHref, primaryLabel, secondaryHref, secondaryLabel } = Astro.props;
+---
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      {eyebrow && <div class="eyebrow">{eyebrow}</div>}
+      <h1>{title}</h1>
+      {summary && <p class="lead">{summary}</p>}
+      <div class="button-row">
+        {primaryHref && <a class="button primary" href={primaryHref}>{primaryLabel || "Explore"}</a>}
+        {secondaryHref && <a class="button secondary" href={secondaryHref}>{secondaryLabel || "Learn more"}</a>}
+      </div>
+    </div>
+    <ImageWithFallback src={image} alt={imageAlt || ""} variant="hero" loading="eager" />
+  </div>
+</section>

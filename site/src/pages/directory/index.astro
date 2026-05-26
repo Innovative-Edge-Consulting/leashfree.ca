@@ -1,14 +1,43 @@
 ---
 import Card from "../../components/Card.astro";
+import Hero from "../../components/Hero.astro";
 import Layout from "../../components/Layout.astro";
-import PageShell from "../../components/PageShell.astro";
+import Section from "../../components/Section.astro";
 import directories from "../../data/generated/directories.json";
+import { excerpt, breadcrumbSchema } from "../../utils/content.js";
+
+const breadcrumbs = [
+  { label: "Home", href: "/" },
+  { label: "Directory", href: "/directory/" }
+];
 ---
 
-<Layout title="Directory" description="Converted LeashFree.ca directory listings." canonical="https://leashfree.ca/directory/">
-  <PageShell eyebrow="Directory" title="Directory data review" summary="Initial generated directory listing pages from Webflow CMS data.">
+<Layout
+  title="Dog Services Directory"
+  description="Browse converted LeashFree.ca directory listings for dog services and pet resources."
+  canonical="https://leashfree.ca/directory/"
+  structuredData={breadcrumbSchema(breadcrumbs)}
+>
+  <Hero
+    eyebrow="Directory"
+    title="Dog services and pet resources"
+    summary="Review converted directory listings for rescues, clinics, and dog-related services before final launch cleanup."
+    primaryHref="#listings"
+    primaryLabel="Browse listings"
+  />
+
+  <Section id="listings" title="Directory listings" intro={`${directories.length} service records are available for review.`}>
     <div class="grid">
-      {directories.map((item) => <Card title={item.name} href={`/directory/${item.slug}/`} description={item.metaDescription || item.description} />)}
+      {directories.map((item) => (
+        <Card
+          title={item.name}
+          href={`/directory/${item.slug}/`}
+          description={excerpt(item.metaDescription, item.description)}
+          meta={[item.raw.City, item.raw.Province].filter(Boolean).join(", ")}
+          badges={[item.references.Category?.[0] || item.raw.Category || ""].filter(Boolean)}
+          ctaLabel="View listing"
+        />
+      ))}
     </div>
-  </PageShell>
+  </Section>
 </Layout>

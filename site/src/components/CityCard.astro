@@ -1,0 +1,14 @@
+---
+import Card from "./Card.astro";
+import { excerpt } from "../utils/content.js";
+
+const { city } = Astro.props;
+---
+
+<Card
+  title={`${city.name} dog parks`}
+  href={`/dog-parks/${city.slug}/`}
+  description={excerpt(city.description, city.metaDescription)}
+  badges={[city.raw?.Province].filter(Boolean)}
+  ctaLabel="View city"
+/>

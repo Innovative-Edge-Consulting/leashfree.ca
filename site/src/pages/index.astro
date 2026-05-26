@@ -1,30 +1,97 @@
 ---
 import Card from "../components/Card.astro";
+import Hero from "../components/Hero.astro";
 import Layout from "../components/Layout.astro";
-import PageShell from "../components/PageShell.astro";
+import Section from "../components/Section.astro";
+import CTA from "../components/CTA.astro";
 import parks from "../data/generated/parks.json";
 import cities from "../data/generated/cities.json";
 import provinces from "../data/generated/provinces.json";
 import posts from "../data/generated/blog-posts.json";
 import breeds from "../data/generated/dog-breeds.json";
+import { excerpt, websiteSchema } from "../utils/content.js";
+
+const featuredCities = cities.slice(0, 8);
+const featuredParks = parks.slice(0, 6);
+const recentPosts = posts.slice(0, 3);
 ---
 
 <Layout
-  title="LeashFree.ca Static Migration Scaffold"
-  description="Initial static rebuild scaffold generated from Webflow CMS exports."
+  title="LeashFree.ca | Discover Dog Parks, Breeds & Pet Guides Across Canada"
+  description="Find leash-free dog parks in Canada, browse dog breed profiles, and read practical guides for dog owners."
   canonical="https://leashfree.ca/"
+  structuredData={websiteSchema()}
 >
-  <PageShell
-    eyebrow="Migration scaffold"
-    title="LeashFree.ca"
-    summary="This phase proves the data pipeline, route generation, SEO basics, and local media mapping before final design work."
-  >
-    <div class="grid">
-      <Card title="Dog Parks" href="/dog-parks/" description={`${parks.length} park records converted from Webflow CMS.`} />
-      <Card title="City Pages" href="/dog-parks/" description={`${cities.length} city landing page records share the dog parks route prefix.`} />
-      <Card title="Province Pages" href="/dog-parks/" description={`${provinces.length} province records are available for review.`} />
-      <Card title="Dog Breeds" href="/dog-breeds/" description={`${breeds.length} dog breed records converted.`} />
-      <Card title="Blog" href="/blog/" description={`${posts.length} blog posts converted.`} />
+  <Hero
+    eyebrow="Canadian dog park directory"
+    title="Find leash-free dog parks across Canada"
+    summary="Browse city and province dog park guides, check park details, and explore dog-friendly resources while the static rebuild moves toward launch."
+    primaryHref="/dog-parks/"
+    primaryLabel="Browse dog parks"
+    secondaryHref="/dog-breeds/"
+    secondaryLabel="Explore dog breeds"
+    imageAlt="LeashFree.ca dog park directory placeholder"
+  />
+
+  <Section title="Browse by province" intro={`${provinces.length} province-level dog park guides are ready for review.`} alt>
+    <div class="grid compact">
+      {provinces.map((province) => (
+        <Card
+          title={province.name}
+          href={`/dog-parks/${province.slug}/`}
+          description={`Find city and dog park pages in ${province.name}.`}
+          ctaLabel="View province"
+        />
+      ))}
     </div>
-  </PageShell>
+  </Section>
+
+  <Section title="Popular city guides" intro="Start with city landing pages that group nearby leash-free parks.">
+    <div class="grid">
+      {featuredCities.map((city) => (
+        <Card
+          title={`${city.name} dog parks`}
+          href={`/dog-parks/${city.slug}/`}
+          description={excerpt(city.description, city.metaDescription)}
+          badges={[city.raw.Province].filter(Boolean)}
+          ctaLabel="View city"
+        />
+      ))}
+    </div>
+  </Section>
+
+  <Section title="Park pages ready for review" intro={`${parks.length} dog park records have been converted from the Webflow CMS export.`} alt>
+    <div class="grid">
+      {featuredParks.map((park) => (
+        <Card
+          title={park.name}
+          href={`/dog-parks/${park.slug}/`}
+          description={excerpt(park.description, park.raw["Street Address"])}
+          meta={[park.raw.City, park.raw.Province].filter(Boolean).join(", ")}
+          ctaLabel="View park"
+        />
+      ))}
+    </div>
+  </Section>
+
+  <Section title="Helpful dog resources" intro="Breed profiles and articles support the dog park directory with practical ownership content.">
+    <div class="grid">
+      <Card title="Dog Breeds" href="/dog-breeds/" description={`${breeds.length} breed profiles converted for static review.`} ctaLabel="Browse breeds" />
+      <Card title="Blog" href="/blog/" description={`${posts.length} articles converted from Webflow CMS.`} ctaLabel="Read articles" />
+      {recentPosts.map((post) => (
+        <Card title={post.title || post.name} href={`/blog/${post.slug}/`} description={excerpt(post.metaDescription, post.description)} ctaLabel="Read post" />
+      ))}
+    </div>
+  </Section>
+
+  <Section title="About this rebuild" intro="LeashFree.ca is being moved from Webflow to a low-cost static site that keeps SEO-friendly content, local CMS data files, and local media paths.">
+    <CTA
+      title="Media migration is still in progress"
+      text="Some pages intentionally use placeholders until saved CMS images are reviewed, cleaned, and copied into the public image folders."
+      primaryHref="/dog-parks/"
+      primaryLabel="Review dog park pages"
+      secondaryHref="/blog/"
+      secondaryLabel="Review blog pages"
+    />
+  </Section>
 </Layout>

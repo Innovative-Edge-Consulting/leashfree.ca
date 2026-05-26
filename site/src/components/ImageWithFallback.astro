@@ -1,0 +1,16 @@
+---
+import { PLACEHOLDER } from "../utils/media.js";
+
+interface Props {
+  src?: string;
+  alt?: string;
+  variant?: "hero" | "card";
+  loading?: "lazy" | "eager";
+}
+
+const { src, alt = "", variant = "card", loading = "lazy" } = Astro.props;
+const finalSrc = src || PLACEHOLDER;
+const className = variant === "hero" ? "media hero-media" : "media card-media";
+---
+
+<img class={className} src={finalSrc} alt={alt} loading={loading} decoding="async" />

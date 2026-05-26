@@ -3,15 +3,26 @@ interface Props {
   title: string;
   href?: string;
   description?: string;
+  image?: string;
+  imageAlt?: string;
+  meta?: string;
+  badges?: string[];
+  ctaLabel?: string;
 }
 
-const { title, href, description } = Astro.props;
+const { title, href, description, image, imageAlt = "", meta, badges = [], ctaLabel = "View details" } = Astro.props;
 ---
 
 <article class="card">
-  <h2>
-    {href ? <a href={href}>{title}</a> : title}
-  </h2>
-  {description && <p>{description}</p>}
-  <slot />
+  {image && <img class="card-media" src={image} alt={imageAlt} loading="lazy" decoding="async" />}
+  <div class="card-body">
+    {badges.length > 0 && <div class="badges">{badges.map((badge) => <span class="badge">{badge}</span>)}</div>}
+    {meta && <p class="small">{meta}</p>}
+    <h3>
+      {href ? <a class="card-link" href={href}>{title}</a> : title}
+    </h3>
+    {description && <p>{description}</p>}
+    {href && <a class="button secondary" href={href}>{ctaLabel}</a>}
+    <slot />
+  </div>
 </article>

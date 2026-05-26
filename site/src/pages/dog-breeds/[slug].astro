@@ -1,10 +1,14 @@
 ---
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import ContentBlock from "../../components/ContentBlock.astro";
+import ImageWithFallback from "../../components/ImageWithFallback.astro";
 import Layout from "../../components/Layout.astro";
-import PageShell from "../../components/PageShell.astro";
+import RelatedLinks from "../../components/RelatedLinks.astro";
+import Section from "../../components/Section.astro";
 import mediaMap from "../../data/media-map.json";
 import breeds from "../../data/generated/dog-breeds.json";
 import groups from "../../data/generated/breed-groups.json";
-import { excerpt, findByName } from "../../utils/content.js";
+import { breadcrumbSchema, excerpt, findByName } from "../../utils/content.js";
 import { resolveMedia } from "../../utils/media.js";
 
 export function getStaticPaths() {
@@ -17,18 +21,69 @@ export function getStaticPaths() {
 const { breed } = Astro.props;
 const image = resolveMedia(breed, "Featured Image", mediaMap);
 const group = findByName(groups, breed.raw["Breed Group"]);
+const breadcrumbs = [
+  { label: "Home", href: "/" },
+  { label: "Dog Breeds", href: "/dog-breeds/" },
+  group ? { label: group.name, href: `/dog-breeds/group/${group.slug}/` } : null,
+  { label: breed.name }
+].filter(Boolean);
+const traits = [
+  ["Breed group", group ? group.name : breed.raw["Breed Group"]],
+  ["Size", breed.raw["Size Category"]],
+  ["Coat", breed.raw["Coat Type"]],
+  ["Activity level", breed.raw["Activity Level"]],
+  ["Trainability", breed.raw.Trainability],
+  ["Shedding", breed.raw["Shedding Level"]],
+  ["Family friendly", breed.raw["Family Friendly"]],
+  ["Apartment friendly", breed.raw["Apartment Friendly"]],
+  ["Hypoallergenic", breed.raw.Hypoallergenic]
+].filter(([, value]) => value);
+const sections = [
+  ["Breed history", breed.raw["Breed History"]],
+  ["Physical characteristics", breed.raw["Physical Characteristics"]],
+  ["Grooming", breed.raw.Grooming],
+  ["Exercise needs", breed.raw["Exercise Needs"]],
+  ["Training tips", breed.raw["Training Tips"]],
+  ["Nutrition and diet", breed.raw["Nutrition & Diet"]],
+  ["Health concerns", breed.raw["Health Concerns"]],
+  ["Adoption and breeders", breed.raw["Adoption & Breeders"]],
+  ["FAQs", breed.raw.FAQs]
+].filter(([, value]) => value);
 ---
 
-<Layout title={breed.seoTitle || breed.title || breed.name} description={breed.metaDescription || breed.description} canonical={breed.canonicalUrl} ogImage={image.src}>
-  <PageShell eyebrow="Dog breed" title={breed.title || breed.name} summary={excerpt(breed.description, breed.metaDescription)}>
-    <p><a href="/dog-breeds/">Dog Breeds</a>{group && <> / <a href={`/dog-breeds/group/${group.slug}/`}>{group.name}</a></>}</p>
-    <img class="hero-image" src={image.src} alt="" loading="lazy" />
+<Layout title={breed.seoTitle || breed.title || breed.name} description={breed.metaDescription || breed.description} canonical={breed.canonicalUrl} ogImage={image.src} structuredData={breadcrumbSchema(breadcrumbs)}>
+  <section class="page-header">
+    <div class="container detail-layout">
+      <div>
+        <Breadcrumbs items={breadcrumbs} />
+        <div class="eyebrow">Dog breed</div>
+        <h1>{breed.name}</h1>
+        <p class="summary">{excerpt(breed.description, breed.metaDescription)}</p>
+      </div>
+      <ImageWithFallback src={image.src} alt={`${breed.name} breed image`} variant="hero" loading="eager" />
+    </div>
+  </section>
+
+  <Section title="Breed traits">
     <ul class="meta-list">
-      {breed.raw["Breed Group"] && <li><strong>Breed group</strong><br />{group ? <a href={`/dog-breeds/group/${group.slug}/`}>{group.name}</a> : breed.raw["Breed Group"]}</li>}
-      {breed.raw["Size Category"] && <li><strong>Size</strong><br />{breed.raw["Size Category"]}</li>}
-      {breed.raw["Activity Level"] && <li><strong>Activity level</strong><br />{breed.raw["Activity Level"]}</li>}
-      {breed.raw["Apartment Friendly"] && <li><strong>Apartment friendly</strong><br />{breed.raw["Apartment Friendly"]}</li>}
+      {traits.map(([label, value]) => <li><strong>{label}</strong><br />{value}</li>)}
     </ul>
-    {breed.body && <section class="content-block" set:html={breed.body} />}
-  </PageShell>
+  </Section>
+
+  <Section>
+    <div class="split">
+      <article>
+        <ContentBlock html={breed.body || breed.raw["Breed Summary"] || breed.description} />
+        {sections.map(([heading, html]) => (
+          <section class="content-block">
+            <h2>{heading}</h2>
+            <div set:html={html} />
+          </section>
+        ))}
+      </article>
+      <aside class="sidebar">
+        <RelatedLinks title="Breed links" links={group ? [{ href: `/dog-breeds/group/${group.slug}/`, label: `More ${group.name}` }] : []} />
+      </aside>
+    </div>
+  </Section>
 </Layout>

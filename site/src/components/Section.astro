@@ -1,0 +1,22 @@
+---
+interface Props {
+  title?: string;
+  eyebrow?: string;
+  intro?: string;
+  alt?: boolean;
+  tight?: boolean;
+}
+
+const { title, eyebrow, intro, alt = false, tight = false } = Astro.props;
+const rest = Astro.props;
+const className = ["section", alt ? "alt" : "", tight ? "tight" : ""].filter(Boolean).join(" ");
+---
+
+<section class={className} id={rest.id}>
+  <div class="container">
+    {eyebrow && <div class="eyebrow">{eyebrow}</div>}
+    {title && <h2>{title}</h2>}
+    {intro && <p class="summary">{intro}</p>}
+    <slot />
+  </div>
+</section>

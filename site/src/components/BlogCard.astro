@@ -1,0 +1,15 @@
+---
+import Card from "./Card.astro";
+import { dateLabel, excerpt } from "../utils/content.js";
+
+const { post } = Astro.props;
+---
+
+<Card
+  title={post.title || post.name}
+  href={`/blog/${post.slug}/`}
+  description={excerpt(post.metaDescription, post.description)}
+  meta={dateLabel(post.raw?.["Published On"] || post.raw?.["Updated On"])}
+  badges={[post.references?.Category?.[0] || ""].filter(Boolean)}
+  ctaLabel="Read article"
+/>

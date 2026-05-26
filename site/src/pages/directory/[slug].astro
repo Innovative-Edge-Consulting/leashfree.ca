@@ -1,8 +1,12 @@
 ---
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import ContentBlock from "../../components/ContentBlock.astro";
+import ImageWithFallback from "../../components/ImageWithFallback.astro";
 import Layout from "../../components/Layout.astro";
-import PageShell from "../../components/PageShell.astro";
+import Section from "../../components/Section.astro";
 import mediaMap from "../../data/media-map.json";
 import directories from "../../data/generated/directories.json";
+import { breadcrumbSchema, excerpt } from "../../utils/content.js";
 import { resolveMedia } from "../../utils/media.js";
 
 export function getStaticPaths() {
@@ -14,17 +18,34 @@ export function getStaticPaths() {
 
 const { item } = Astro.props;
 const image = resolveMedia(item, "Featured Image", mediaMap);
+const breadcrumbs = [
+  { label: "Home", href: "/" },
+  { label: "Directory", href: "/directory/" },
+  { label: item.name }
+];
 ---
 
-<Layout title={item.seoTitle || item.title || item.name} description={item.metaDescription || item.description} canonical={item.canonicalUrl} ogImage={image.src}>
-  <PageShell eyebrow="Directory" title={item.title || item.name} summary={item.description}>
-    <img class="hero-image" src={image.src} alt="" loading="lazy" />
+<Layout title={item.seoTitle || item.title || item.name} description={item.metaDescription || item.description} canonical={item.canonicalUrl} ogImage={image.src} structuredData={breadcrumbSchema(breadcrumbs)}>
+  <section class="page-header">
+    <div class="container detail-layout">
+      <div>
+        <Breadcrumbs items={breadcrumbs} />
+        <div class="eyebrow">Directory</div>
+        <h1>{item.title || item.name}</h1>
+        <p class="summary">{excerpt(item.description, item.metaDescription)}</p>
+      </div>
+      <ImageWithFallback src={image.src} alt={`${item.name} image`} variant="hero" loading="eager" />
+    </div>
+  </section>
+
+  <Section title="Listing details">
     <ul class="meta-list">
       {item.raw.Category && <li><strong>Category</strong><br />{item.raw.Category}</li>}
       {item.raw.City && <li><strong>City</strong><br />{item.raw.City}</li>}
       {item.raw.Province && <li><strong>Province</strong><br />{item.raw.Province}</li>}
       {item.raw.Phone && <li><strong>Phone</strong><br />{item.raw.Phone}</li>}
+      {item.raw.Email && <li><strong>Email</strong><br />{item.raw.Email}</li>}
     </ul>
-    {item.body && <section class="content-block" set:html={item.body} />}
-  </PageShell>
+    <ContentBlock html={item.body || item.raw["Long Description"] || item.description} />
+  </Section>
 </Layout>

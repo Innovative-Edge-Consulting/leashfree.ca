@@ -1,9 +1,13 @@
 ---
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import ContentBlock from "../../components/ContentBlock.astro";
+import ImageWithFallback from "../../components/ImageWithFallback.astro";
 import Layout from "../../components/Layout.astro";
-import PageShell from "../../components/PageShell.astro";
+import Section from "../../components/Section.astro";
+import Card from "../../components/Card.astro";
 import mediaMap from "../../data/media-map.json";
 import posts from "../../data/generated/blog-posts.json";
-import { excerpt } from "../../utils/content.js";
+import { breadcrumbSchema, dateLabel, excerpt, stripHtml } from "../../utils/content.js";
 import { resolveMedia } from "../../utils/media.js";
 
 export function getStaticPaths() {
@@ -17,18 +21,78 @@ const { post } = Astro.props;
 const image = resolveMedia(post, "Hero Image", mediaMap);
 const tags = post.references["Blog Tags"] || [];
 const category = post.references.Category?.[0] || "";
+const published = dateLabel(post.raw["Published On"]);
+const updated = dateLabel(post.raw["Updated On"]);
+const related = posts.filter((candidate) => candidate.slug !== post.slug && candidate.references.Category?.[0] === category).slice(0, 3);
+const breadcrumbs = [
+  { label: "Home", href: "/" },
+  { label: "Blog", href: "/blog/" },
+  { label: post.title || post.name }
+];
+const structuredData = [
+  breadcrumbSchema(breadcrumbs),
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title || post.name,
+    description: stripHtml(post.metaDescription || post.description),
+    datePublished: post.raw["Published On"] || undefined,
+    dateModified: post.raw["Updated On"] || undefined,
+    url: post.canonicalUrl,
+    image: image.src
+  }
+];
 ---
 
-<Layout title={post.seoTitle || post.title || post.name} description={post.metaDescription || post.description} canonical={post.canonicalUrl} ogImage={image.src}>
-  <PageShell eyebrow="Blog" title={post.title || post.name} summary={excerpt(post.description, post.metaDescription)}>
-    <p><a href="/blog/">Blog</a>{category && <> / {category}</>}</p>
-    <img class="hero-image" src={image.src} alt="" loading="lazy" />
-    {(category || tags.length > 0) && (
-      <ul class="meta-list">
-        {category && <li><strong>Category</strong><br />{category}</li>}
-        {tags.length > 0 && <li><strong>Tags</strong><br />{tags.join(", ")}</li>}
-      </ul>
-    )}
-    {post.body && <section class="content-block" set:html={post.body} />}
-  </PageShell>
+<Layout title={post.seoTitle || post.title || post.name} description={post.metaDescription || post.description} canonical={post.canonicalUrl} ogImage={image.src} structuredData={structuredData}>
+  <section class="page-header">
+    <div class="container narrow">
+      <Breadcrumbs items={breadcrumbs} />
+      <div class="eyebrow">Blog</div>
+      <h1>{post.title || post.name}</h1>
+      <p class="summary">{excerpt(post.description, post.metaDescription)}</p>
+      {(category || published || updated) && (
+        <div class="badges">
+          {category && <span class="badge">{category}</span>}
+          {published && <span class="badge">Published {published}</span>}
+          {updated && updated !== published && <span class="badge">Updated {updated}</span>}
+        </div>
+      )}
+    </div>
+  </section>
+
+  <Section tight>
+    <ImageWithFallback src={image.src} alt={`${post.title || post.name} featured image`} variant="hero" loading="eager" />
+  </Section>
+
+  <Section>
+    <div class="split">
+      <article>
+        <ContentBlock html={post.body || post.description} />
+      </article>
+      <aside class="sidebar">
+        {(category || tags.length > 0) && (
+          <section class="card">
+            <div class="card-body">
+              <h2>Article details</h2>
+              <ul>
+                {category && <li><strong>Category:</strong> {category}</li>}
+                {tags.length > 0 && <li><strong>Tags:</strong> {tags.join(", ")}</li>}
+              </ul>
+            </div>
+          </section>
+        )}
+      </aside>
+    </div>
+  </Section>
+
+  {related.length > 0 && (
+    <Section title="Related articles" alt>
+      <div class="grid">
+        {related.map((item) => (
+          <Card title={item.title || item.name} href={`/blog/${item.slug}/`} description={excerpt(item.metaDescription, item.description)} ctaLabel="Read article" />
+        ))}
+      </div>
+    </Section>
+  )}
 </Layout>

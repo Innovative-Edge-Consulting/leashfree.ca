@@ -1,27 +1,80 @@
 ---
 import Card from "../../components/Card.astro";
+import Hero from "../../components/Hero.astro";
 import Layout from "../../components/Layout.astro";
-import PageShell from "../../components/PageShell.astro";
+import Section from "../../components/Section.astro";
 import parks from "../../data/generated/parks.json";
 import cities from "../../data/generated/cities.json";
 import provinces from "../../data/generated/provinces.json";
+import { excerpt, breadcrumbSchema } from "../../utils/content.js";
+
+const featuredCities = cities.slice(0, 24);
+const featuredParks = parks.slice(0, 48);
+const breadcrumbs = [
+  { label: "Home", href: "/" },
+  { label: "Dog Parks", href: "/dog-parks/" }
+];
 ---
 
-<Layout title="Dog Parks" description="Browse converted dog park, city, and province records." canonical="https://leashfree.ca/dog-parks/">
-  <PageShell eyebrow="Dog parks" title="Dog park data review" summary="Initial generated pages for parks, cities, and provinces using the audited `/dog-parks/{slug}/` pattern.">
-    <h2>Provinces</h2>
-    <div class="grid">
-      {provinces.map((item) => <Card title={item.name} href={`/dog-parks/${item.slug}/`} description={item.metaDescription || item.description} />)}
-    </div>
+<Layout
+  title="Find Leash-Free Dog Parks in Canada"
+  description="Browse leash-free dog parks across Canada by province, city, and park page."
+  canonical="https://leashfree.ca/dog-parks/"
+  structuredData={breadcrumbSchema(breadcrumbs)}
+>
+  <Hero
+    eyebrow="Dog parks"
+    title="Find leash-free dog parks in Canada"
+    summary="Browse converted dog park, city, and province pages from the Webflow CMS migration. Each page is ready for data and design review before launch."
+    primaryHref="#provinces"
+    primaryLabel="Browse provinces"
+    secondaryHref="#parks"
+    secondaryLabel="Review parks"
+    imageAlt="Leash-free dog park directory placeholder"
+  />
 
-    <h2>Cities</h2>
-    <div class="grid">
-      {cities.slice(0, 24).map((item) => <Card title={item.name} href={`/dog-parks/${item.slug}/`} description={item.metaDescription || item.description} />)}
+  <Section title="Dog park coverage" tight>
+    <div class="stat-strip">
+      <div class="stat"><strong>{parks.length}</strong><span>park records</span></div>
+      <div class="stat"><strong>{cities.length}</strong><span>city guides</span></div>
+      <div class="stat"><strong>{provinces.length}</strong><span>province guides</span></div>
     </div>
+  </Section>
 
-    <h2>Dog Parks</h2>
-    <div class="grid">
-      {parks.slice(0, 48).map((item) => <Card title={item.name} href={`/dog-parks/${item.slug}/`} description={item.description || item.raw["Street Address"]} />)}
+  <Section id="provinces" title="Browse by province" intro="Province pages group city guides and park records where relationships are clear." alt>
+    <div class="grid compact">
+      {provinces.map((item) => (
+        <Card title={item.name} href={`/dog-parks/${item.slug}/`} description={item.metaDescription || `Browse dog parks in ${item.name}.`} ctaLabel="View province" />
+      ))}
     </div>
-  </PageShell>
+  </Section>
+
+  <Section title="City dog park guides" intro="City pages list related dog parks where the CMS city field can be matched.">
+    <div class="grid">
+      {featuredCities.map((item) => (
+        <Card
+          title={`${item.name} dog parks`}
+          href={`/dog-parks/${item.slug}/`}
+          description={excerpt(item.description, item.metaDescription)}
+          badges={[item.raw.Province].filter(Boolean)}
+          ctaLabel="View city"
+        />
+      ))}
+    </div>
+  </Section>
+
+  <Section id="parks" title="Individual park pages" intro="Park pages preserve the current audited `/dog-parks/{slug}/` URL pattern for this phase." alt>
+    <div class="grid">
+      {featuredParks.map((item) => (
+        <Card
+          title={item.name}
+          href={`/dog-parks/${item.slug}/`}
+          description={excerpt(item.description, item.raw["Street Address"])}
+          meta={[item.raw.City, item.raw.Province].filter(Boolean).join(", ")}
+          badges={[item.raw.Fenced ? `Fenced: ${item.raw.Fenced}` : ""].filter(Boolean)}
+          ctaLabel="View park"
+        />
+      ))}
+    </div>
+  </Section>
 </Layout>

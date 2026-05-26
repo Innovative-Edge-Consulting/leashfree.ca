@@ -1,11 +1,17 @@
 ---
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import Card from "../../components/Card.astro";
+import ContentBlock from "../../components/ContentBlock.astro";
+import EmptyState from "../../components/EmptyState.astro";
+import ImageWithFallback from "../../components/ImageWithFallback.astro";
 import Layout from "../../components/Layout.astro";
-import PageShell from "../../components/PageShell.astro";
+import RelatedLinks from "../../components/RelatedLinks.astro";
+import Section from "../../components/Section.astro";
 import mediaMap from "../../data/media-map.json";
 import cities from "../../data/generated/cities.json";
 import parks from "../../data/generated/parks.json";
 import provinces from "../../data/generated/provinces.json";
-import { excerpt, findByName, slugify } from "../../utils/content.js";
+import { breadcrumbSchema, excerpt, findByName, slugify, stripHtml } from "../../utils/content.js";
 import { resolveMedia } from "../../utils/media.js";
 
 export function getStaticPaths() {
@@ -34,98 +40,193 @@ const isProvince = pageType === "Provinces";
 const city = isPark ? findByName(cities, primary.raw.City) : null;
 const province = isPark || isCity ? findByName(provinces, primary.raw.Province) : primary;
 const cityParks = isCity
-  ? parks.filter((park) => slugify(park.raw.City) === slugify(primary.name)).slice(0, 80)
+  ? parks.filter((park) => slugify(park.raw.City) === slugify(primary.name)).slice(0, 120)
   : [];
 const provinceCities = isProvince
-  ? cities.filter((cityItem) => slugify(cityItem.raw.Province) === slugify(primary.name)).slice(0, 80)
+  ? cities.filter((cityItem) => slugify(cityItem.raw.Province) === slugify(primary.name)).slice(0, 120)
   : [];
 const provinceParks = isProvince
-  ? parks.filter((park) => slugify(park.raw.Province) === slugify(primary.name)).slice(0, 80)
+  ? parks.filter((park) => slugify(park.raw.Province) === slugify(primary.name)).slice(0, 120)
   : [];
+const breadcrumbs = [
+  { label: "Home", href: "/" },
+  { label: "Dog Parks", href: "/dog-parks/" },
+  city && isPark ? { label: city.name, href: `/dog-parks/${city.slug}/` } : null,
+  { label: primary.name }
+].filter(Boolean);
 const reviewNotes = [
   !primary.metaDescription ? "Meta description is using a generated fallback." : "",
-  image.status !== "mapped" ? "Image is using the migration placeholder until media is copied into public images." : ""
+  image.status !== "mapped" ? "Image is using the migration placeholder until media is copied into public images." : "",
+  isPark && !primary.raw.City ? "Park record is missing a city." : "",
+  isPark && !primary.raw.Province ? "Park record is missing a province." : ""
+].filter(Boolean);
+const amenities = [
+  ["Fenced", primary.raw.Fenced],
+  ["Small dog area", primary.raw["Separate Small Dog Area"]],
+  ["Surface", primary.raw["Surface type"]],
+  ["Size", primary.raw.Size],
+  ["Water", primary.raw["Water source available"]],
+  ["Benches", primary.raw.Benches],
+  ["Shade", primary.raw["Shaded area"]],
+  ["Waste bins", primary.raw["Waste bins"]],
+  ["Bag dispensers", primary.raw["Bag Dispensers"]],
+  ["Parking", primary.raw["Parking Available"]],
+  ["Washrooms", primary.raw["Washrooms nearby"]]
+].filter(([, value]) => value);
+const relatedLinks = [
+  city ? { href: `/dog-parks/${city.slug}/`, label: `Dog parks in ${city.name}` } : null,
+  province ? { href: `/dog-parks/${province.slug}/`, label: `Dog parks in ${province.name}` } : null
+].filter(Boolean);
+const structuredData = [
+  breadcrumbSchema(breadcrumbs),
+  isPark && primary.raw.latitude && primary.raw.longitude
+    ? {
+        "@context": "https://schema.org",
+        "@type": "Park",
+        name: primary.name,
+        description: stripHtml(description),
+        address: [primary.raw["Street Address"], primary.raw.City, primary.raw.Province, primary.raw["Postal Code"]].filter(Boolean).join(", "),
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: primary.raw.latitude,
+          longitude: primary.raw.longitude
+        },
+        url: primary.canonicalUrl
+      }
+    : null
 ].filter(Boolean);
 ---
 
-<Layout title={title} description={description} canonical={primary.canonicalUrl} ogImage={image.src}>
-  <PageShell eyebrow={primary.collection} title={primary.title || primary.name} summary={excerpt(description)}>
-    <p><a href="/dog-parks/">Dog Parks</a>{city && <> / <a href={`/dog-parks/${city.slug}/`}>{city.name}</a></>}{province && <> / <a href={`/dog-parks/${province.slug}/`}>{province.name}</a></>}</p>
-    <img class="hero-image" src={image.src} alt="" loading="lazy" />
+<Layout title={title} description={excerpt(description)} canonical={primary.canonicalUrl} ogImage={image.src} structuredData={structuredData}>
+  <section class="page-header">
+    <div class="container detail-layout">
+      <div>
+        <Breadcrumbs items={breadcrumbs} />
+        <div class="eyebrow">{isPark ? "Dog park" : isCity ? "City guide" : "Province guide"}</div>
+        <h1>{primary.title || primary.name}</h1>
+        <p class="summary">{excerpt(description)}</p>
+        <div class="button-row">
+          <a class="button primary" href="/dog-parks/">Back to dog parks</a>
+          {city && <a class="button secondary" href={`/dog-parks/${city.slug}/`}>More in {city.name}</a>}
+        </div>
+      </div>
+      <ImageWithFallback src={image.src} alt={`${primary.name} image`} variant="hero" loading="eager" />
+    </div>
+  </section>
 
-    {matches.length > 1 && (
-      <section class="card">
-        <h2>Shared slug review</h2>
-        <p>This route has multiple CMS records with the same slug. Confirm the final URL owner before launch.</p>
-        <ul>
-          {matches.map((item) => <li>{item.collection}: {item.name}</li>)}
-        </ul>
-      </section>
-    )}
-
-    {reviewNotes.length > 0 && (
-      <section class="card">
-        <h2>Data review</h2>
+  {import.meta.env.DEV && reviewNotes.length > 0 && (
+    <Section tight>
+      <div class="review-note">
+        <strong>Data review</strong>
         <ul>
           {reviewNotes.map((note) => <li>{note}</li>)}
         </ul>
-      </section>
-    )}
+      </div>
+    </Section>
+  )}
 
-    <ul class="meta-list">
-      {primary.raw["Street Address"] && <li><strong>Address</strong><br />{primary.raw["Street Address"]}</li>}
-      {primary.raw.City && <li><strong>City</strong><br />{primary.raw.City}</li>}
-      {primary.raw.Province && <li><strong>Province</strong><br />{primary.raw.Province}</li>}
-      {primary.raw.Fenced && <li><strong>Fenced</strong><br />{primary.raw.Fenced}</li>}
-    </ul>
+  {matches.length > 1 && (
+    <Section title="Shared slug review" intro="This route has multiple CMS records with the same slug. Confirm the final URL owner before launch." alt tight>
+      <ul>
+        {matches.map((item) => <li>{item.collection}: {item.name}</li>)}
+      </ul>
+    </Section>
+  )}
 
-    {isCity && (
-      <section>
-        <h2>Dog parks in {primary.name}</h2>
-        <div class="grid">
-          {cityParks.map((park) => (
-            <article class="card">
-              <h3><a href={`/dog-parks/${park.slug}/`}>{park.name}</a></h3>
-              <p>{excerpt(park.description, park.raw["Street Address"])}</p>
-            </article>
-          ))}
+  {isPark && (
+    <Section title="Park details">
+      <div class="split">
+        <div>
+          <ul class="meta-list">
+            {primary.raw["Street Address"] && <li><strong>Address</strong><br />{primary.raw["Street Address"]}</li>}
+            {primary.raw.City && <li><strong>City</strong><br />{primary.raw.City}</li>}
+            {primary.raw.Province && <li><strong>Province</strong><br />{primary.raw.Province}</li>}
+            {primary.raw["Operating hours"] && <li><strong>Hours</strong><br />{primary.raw["Operating hours"]}</li>}
+            {primary.raw.latitude && primary.raw.longitude && <li><strong>Coordinates</strong><br />{primary.raw.latitude}, {primary.raw.longitude}</li>}
+          </ul>
+          <ContentBlock html={primary.body || primary.description} />
+          {primary.raw["Park Rules"] && <ContentBlock html={primary.raw["Park Rules"]} />}
+          {primary.raw["Notes / Comments"] && <p>{primary.raw["Notes / Comments"]}</p>}
         </div>
-      </section>
-    )}
+        <aside class="sidebar">
+          {amenities.length > 0 && (
+            <section class="card">
+              <div class="card-body">
+                <h2>Amenities</h2>
+                <ul>
+                  {amenities.map(([label, value]) => <li><strong>{label}:</strong> {value}</li>)}
+                </ul>
+              </div>
+            </section>
+          )}
+          <RelatedLinks title="Location links" links={relatedLinks} />
+        </aside>
+      </div>
+    </Section>
+  )}
 
-    {isProvince && (
-      <section>
-        <h2>Cities in {primary.name}</h2>
+  {isCity && (
+    <>
+      <Section title={`Dog parks in ${primary.name}`} intro={`${cityParks.length} park records currently match this city.`}>
+        {cityParks.length > 0 ? (
+          <div class="grid">
+            {cityParks.map((park) => (
+              <Card
+                title={park.name}
+                href={`/dog-parks/${park.slug}/`}
+                description={excerpt(park.description, park.raw["Street Address"])}
+                badges={[park.raw.Fenced ? `Fenced: ${park.raw.Fenced}` : ""].filter(Boolean)}
+                ctaLabel="View park"
+              />
+            ))}
+          </div>
+        ) : (
+          <EmptyState text="No park records currently match this city. Review the CMS city relationship before launch." />
+        )}
+      </Section>
+      <Section title="City dog park guidance" alt>
+        <ContentBlock html={primary.body || primary.raw["About Section"] || primary.raw["Intro Paragraph"]} />
+        {primary.raw["Park Rules"] && <ContentBlock html={primary.raw["Park Rules"]} />}
+        {primary.raw["Seasonal Tips"] && <ContentBlock html={primary.raw["Seasonal Tips"]} />}
+      </Section>
+    </>
+  )}
+
+  {isProvince && (
+    <>
+      <Section title={`Cities in ${primary.name}`} intro={`${provinceCities.length} city guides currently match this province.`}>
         <div class="grid">
           {provinceCities.map((cityItem) => (
-            <article class="card">
-              <h3><a href={`/dog-parks/${cityItem.slug}/`}>{cityItem.name}</a></h3>
-              <p>{excerpt(cityItem.description, `${cityItem.name} dog parks`)}</p>
-            </article>
+            <Card
+              title={`${cityItem.name} dog parks`}
+              href={`/dog-parks/${cityItem.slug}/`}
+              description={excerpt(cityItem.description, `${cityItem.name} dog park guide`)}
+              ctaLabel="View city"
+            />
           ))}
         </div>
-        <h2>Dog parks in {primary.name}</h2>
+      </Section>
+      <Section title={`Dog parks in ${primary.name}`} intro={`${provinceParks.length} park records currently match this province.`} alt>
         <div class="grid">
           {provinceParks.map((park) => (
-            <article class="card">
-              <h3><a href={`/dog-parks/${park.slug}/`}>{park.name}</a></h3>
-              <p>{park.raw.City}{park.raw.City && park.raw["Street Address"] ? " - " : ""}{park.raw["Street Address"]}</p>
-            </article>
+            <Card
+              title={park.name}
+              href={`/dog-parks/${park.slug}/`}
+              description={excerpt(park.description, park.raw["Street Address"])}
+              meta={park.raw.City}
+              ctaLabel="View park"
+            />
           ))}
         </div>
-      </section>
-    )}
+      </Section>
+    </>
+  )}
 
-    {isPark && (
-      <section>
-        <h2>Location links</h2>
-        <ul>
-          {city && <li><a href={`/dog-parks/${city.slug}/`}>More dog parks in {city.name}</a></li>}
-          {province && <li><a href={`/dog-parks/${province.slug}/`}>More dog parks in {province.name}</a></li>}
-        </ul>
-      </section>
-    )}
-
-    {primary.body && <section class="content-block" set:html={primary.body} />}
-  </PageShell>
+  <Section title="Before you visit" tight>
+    <div class="card">
+      <div class="card-body">
+        <p>Confirm current rules, hours, seasonal restrictions, and leash requirements with the municipality or park operator before visiting.</p>
+      </div>
+    </div>
+  </Section>
 </Layout>
