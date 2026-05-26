@@ -128,6 +128,16 @@ export function canonicalFor(collectionName, slug) {
   return `https://leashfree.ca${prefix}${slug}/`;
 }
 
+export function excerpt(value, fallback = "", maxLength = 180) {
+  const text = String(value || fallback || "")
+    .replace(/<[^>]*>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  if (!text) return "";
+  if (text.length <= maxLength) return text;
+  return `${text.slice(0, maxLength - 1).trim()}...`;
+}
+
 export function getDescription(raw) {
   return (
     raw["Meta Description"] ||
@@ -142,6 +152,23 @@ export function getDescription(raw) {
   );
 }
 
+export function getSeoDescription(raw, collectionName, name) {
+  const direct = getDescription(raw);
+  if (direct) return excerpt(direct);
+
+  const fallbacks = {
+    "Pet Insurance Providers": `${name} pet insurance provider information for Canadian dog owners.`,
+    Provinces: `Browse dog parks and city dog park guides for ${name}.`,
+    "Dog Parks": `${name} dog park information, amenities, location details, and owner review notes.`,
+    "City Pages": `Browse off-leash dog parks and dog-friendly information for ${name}.`,
+    "Dog Breeds": `${name} dog breed profile, traits, care, training, and health information.`,
+    "Blog Posts": `${name} from LeashFree.ca.`,
+    Directories: `${name} directory listing on LeashFree.ca.`
+  };
+
+  return fallbacks[collectionName] || `${name} on LeashFree.ca.`;
+}
+
 export function getBody(raw) {
   return (
     raw["Rich Text Body"] ||
@@ -152,6 +179,19 @@ export function getBody(raw) {
     raw["FAQ (Group)"] ||
     ""
   );
+}
+
+export function referenceFieldNames(collectionName) {
+  const fields = {
+    "Blog Posts": ["Category", "Blog Tags"],
+    "City Pages": ["Province", "Featured Park 1", "Featured Park 2", "Featured Park 3", "Province Page", "Nearby Cities"],
+    Directories: ["Category", "Province", "City", "Service Tags"],
+    "Dog Breeds": ["Breed Group", "Breed Group Reference", "Tags"],
+    "Dog Parks": ["City", "Province", "Tags"],
+    "Pet Insurance Providers": ["ProvincesAvailable"]
+  };
+
+  return fields[collectionName] || [];
 }
 
 export function listFiles(dir) {

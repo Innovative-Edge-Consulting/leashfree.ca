@@ -11,7 +11,7 @@ export function resolveMedia(item, fieldName, mediaMap) {
     );
   });
 
-  if (match?.suggestedPublicPath && match.status === "matched") {
+  if (match?.publicPathReady && match.status === "matched") {
     return {
       src: match.suggestedPublicPath,
       status: "mapped",
@@ -22,8 +22,8 @@ export function resolveMedia(item, fieldName, mediaMap) {
   const fallback = Array.isArray(item.media) ? item.media[0] : null;
   return {
     src: PLACEHOLDER,
-    status: fallback?.originalUrl ? "webflow-url-preserved" : "placeholder",
-    source: fallback || null
+    status: match?.currentLocalPath ? "matched-not-copied" : fallback?.originalUrls?.length ? "webflow-url-preserved" : "placeholder",
+    source: match || fallback || null
   };
 }
 

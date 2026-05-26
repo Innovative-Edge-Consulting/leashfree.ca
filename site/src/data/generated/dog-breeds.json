@@ -32,9 +32,6 @@
       ],
       "Breed Group Reference": [
         "toy-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -114,9 +111,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -196,9 +190,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -278,9 +269,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -360,9 +348,6 @@
       ],
       "Breed Group Reference": [
         "miscellaneous"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -442,9 +427,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -524,9 +506,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -606,9 +585,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -688,9 +664,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -770,9 +743,6 @@
       ],
       "Breed Group Reference": [
         "non-sporting-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -852,9 +822,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -934,9 +901,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -1016,9 +980,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -1098,9 +1059,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -1180,9 +1138,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -1262,9 +1217,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -1344,9 +1296,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -1426,9 +1375,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -1508,9 +1454,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -1590,9 +1533,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -1672,9 +1612,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -1754,9 +1691,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -1836,9 +1770,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -1918,9 +1849,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -2000,9 +1928,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -2082,9 +2007,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -2164,9 +2086,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -2246,9 +2165,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -2328,9 +2244,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -2410,9 +2323,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -2492,9 +2402,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -2567,9 +2474,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -2642,9 +2546,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -2717,9 +2618,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -2792,9 +2690,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -2867,9 +2762,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -2942,9 +2834,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -3024,9 +2913,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -3099,9 +2985,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -3181,9 +3064,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -3263,9 +3143,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Extra Large"
       ]
     },
     "raw": {
@@ -3345,9 +3222,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -3420,9 +3294,6 @@
       ],
       "Breed Group Reference": [
         "non-sporting-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -3495,9 +3366,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -3570,9 +3438,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Extra Large"
       ]
     },
     "raw": {
@@ -3645,9 +3510,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -3727,9 +3589,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -3802,9 +3661,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -3877,9 +3733,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Extra Large"
       ]
     },
     "raw": {
@@ -3959,9 +3812,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -4041,9 +3891,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -4116,9 +3963,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -4198,9 +4042,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -4273,9 +4114,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -4355,9 +4193,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -4430,9 +4265,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -4512,9 +4344,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -4653,9 +4482,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -4735,9 +4561,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -4817,9 +4640,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -4899,9 +4719,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -4981,9 +4798,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Extra Large"
       ]
     },
     "raw": {
@@ -5063,9 +4877,6 @@
       ],
       "Breed Group Reference": [
         "toy-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -5145,9 +4956,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -5227,9 +5035,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -5309,9 +5114,6 @@
       ],
       "Breed Group Reference": [
         "non-sporting-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -5391,9 +5193,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Extra Large"
       ]
     },
     "raw": {
@@ -5473,9 +5272,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -5555,9 +5351,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -5637,9 +5430,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Extra Large"
       ]
     },
     "raw": {
@@ -5719,9 +5509,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -5801,9 +5588,6 @@
       ],
       "Breed Group Reference": [
         "miscellaneous"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -5883,9 +5667,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -5965,9 +5746,6 @@
       ],
       "Breed Group Reference": [
         "miscellaneous"
-      ],
-      "Size Category": [
-        "Extra Large"
       ]
     },
     "raw": {
@@ -6047,9 +5825,6 @@
       ],
       "Breed Group Reference": [
         "toy-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -6129,9 +5904,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -6211,9 +5983,6 @@
       ],
       "Breed Group Reference": [
         "miscellaneous"
-      ],
-      "Size Category": [
-        "Extra Large"
       ]
     },
     "raw": {
@@ -6293,9 +6062,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -6375,9 +6141,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -6457,9 +6220,6 @@
       ],
       "Breed Group Reference": [
         "toy-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -6539,9 +6299,6 @@
       ],
       "Breed Group Reference": [
         "toy-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -6621,9 +6378,6 @@
       ],
       "Breed Group Reference": [
         "non-sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -6703,9 +6457,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -6785,9 +6536,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -6867,9 +6615,6 @@
       ],
       "Breed Group Reference": [
         "non-sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -6949,9 +6694,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -7031,9 +6773,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -7113,9 +6852,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -7195,9 +6931,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -7277,9 +7010,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -7359,9 +7089,6 @@
       ],
       "Breed Group Reference": [
         "non-sporting-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -7441,9 +7168,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -7523,9 +7247,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -7605,9 +7326,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -7687,9 +7405,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -7769,9 +7484,6 @@
       ],
       "Breed Group Reference": [
         "non-sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -7851,9 +7563,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -7933,9 +7642,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -8015,9 +7721,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -8097,9 +7800,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -8179,9 +7879,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -8261,9 +7958,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Extra Large"
       ]
     },
     "raw": {
@@ -8343,9 +8037,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -8425,9 +8116,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -8507,9 +8195,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -8589,9 +8274,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -8671,9 +8353,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -8753,9 +8432,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -8835,9 +8511,6 @@
       ],
       "Breed Group Reference": [
         "toy-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -8917,9 +8590,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -8999,9 +8669,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -9081,9 +8748,6 @@
       ],
       "Breed Group Reference": [
         "non-sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -9163,9 +8827,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -9245,9 +8906,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -9327,9 +8985,6 @@
       ],
       "Breed Group Reference": [
         "non-sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -9409,9 +9064,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -9494,9 +9146,6 @@
       ],
       "Breed Group Reference": [
         "non-sporting-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -9576,9 +9225,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -9725,9 +9371,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -9810,9 +9453,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -9892,9 +9532,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -10234,9 +9871,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -10316,9 +9950,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -10401,9 +10032,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -10483,9 +10111,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -10683,9 +10308,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Extra Large"
       ]
     },
     "raw": {
@@ -10765,9 +10387,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Extra Large"
       ]
     },
     "raw": {
@@ -10899,9 +10518,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Extra Large"
       ]
     },
     "raw": {
@@ -10981,9 +10597,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -11056,9 +10669,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -11131,9 +10741,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -11213,9 +10820,6 @@
       ],
       "Breed Group Reference": [
         "toy-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -11295,9 +10899,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -11370,9 +10971,6 @@
       ],
       "Breed Group Reference": [
         "miscellaneous"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -11452,9 +11050,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -11534,9 +11129,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -11609,9 +11201,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -11684,9 +11273,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -11766,9 +11352,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -11848,9 +11431,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -11930,9 +11510,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -12012,9 +11589,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -12094,9 +11668,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -12176,9 +11747,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -12258,9 +11826,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Extra Large"
       ]
     },
     "raw": {
@@ -12340,9 +11905,6 @@
       ],
       "Breed Group Reference": [
         "toy-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -12422,9 +11984,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -12504,9 +12063,6 @@
       ],
       "Breed Group Reference": [
         "toy-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -12586,9 +12142,6 @@
       ],
       "Breed Group Reference": [
         "non-sporting-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -12668,9 +12221,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -12743,9 +12293,6 @@
       ],
       "Breed Group Reference": [
         "miscellaneous"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -12825,9 +12372,6 @@
       ],
       "Breed Group Reference": [
         "miscellaneous"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -12907,9 +12451,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -12989,9 +12530,6 @@
       ],
       "Breed Group Reference": [
         "non-sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -13071,9 +12609,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -13153,9 +12688,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Extra Large"
       ]
     },
     "raw": {
@@ -13235,9 +12767,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -13317,9 +12846,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -13399,9 +12925,6 @@
       ],
       "Breed Group Reference": [
         "miscellaneous"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -13481,9 +13004,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -13563,9 +13083,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -13648,9 +13165,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -13730,9 +13244,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -13812,9 +13323,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -13894,9 +13402,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -13976,9 +13481,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -14058,9 +13560,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Extra Large"
       ]
     },
     "raw": {
@@ -14140,9 +13639,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -14222,9 +13718,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -14304,9 +13797,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Extra Large"
       ]
     },
     "raw": {
@@ -14386,9 +13876,6 @@
       ],
       "Breed Group Reference": [
         "non-sporting-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -14468,9 +13955,6 @@
       ],
       "Breed Group Reference": [
         "non-sporting-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -14550,9 +14034,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -14632,9 +14113,6 @@
       ],
       "Breed Group Reference": [
         "toy-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -14714,9 +14192,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -14796,9 +14271,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -14878,9 +14350,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -14960,9 +14429,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Extra Large"
       ]
     },
     "raw": {
@@ -15035,9 +14501,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -15117,9 +14580,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -15199,9 +14659,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -15281,9 +14738,6 @@
       ],
       "Breed Group Reference": [
         "toy-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -15363,9 +14817,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -15445,9 +14896,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -15527,9 +14975,6 @@
       ],
       "Breed Group Reference": [
         "miscellaneous"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -15609,9 +15054,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -15691,9 +15133,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Extra Large"
       ]
     },
     "raw": {
@@ -15773,9 +15212,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -15855,9 +15291,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Extra Large"
       ]
     },
     "raw": {
@@ -15937,9 +15370,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Extra Large"
       ]
     },
     "raw": {
@@ -16019,9 +15449,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -16101,9 +15528,6 @@
       ],
       "Breed Group Reference": [
         "miscellaneous"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -16183,9 +15607,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -16265,9 +15686,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -16347,9 +15765,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -16429,9 +15844,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -16511,9 +15923,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -16593,9 +16002,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -16675,9 +16081,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -16757,9 +16160,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -16839,9 +16239,6 @@
       ],
       "Breed Group Reference": [
         "toy-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -16921,9 +16318,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -17003,9 +16397,6 @@
       ],
       "Breed Group Reference": [
         "toy-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -17085,9 +16476,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -17167,9 +16555,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -17249,9 +16634,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -17331,9 +16713,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -17413,9 +16792,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -17495,9 +16871,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -17577,9 +16950,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -17659,9 +17029,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -17741,9 +17108,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -17823,9 +17187,6 @@
       ],
       "Breed Group Reference": [
         "toy-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -17905,9 +17266,6 @@
       ],
       "Breed Group Reference": [
         "non-sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -17987,9 +17345,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -18069,9 +17424,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -18151,9 +17503,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -18233,9 +17582,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -18315,9 +17661,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -18397,9 +17740,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -18479,9 +17819,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -18561,9 +17898,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -18643,9 +17977,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -18725,9 +18056,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -18807,9 +18135,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Extra Large"
       ]
     },
     "raw": {
@@ -18889,9 +18214,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -18971,9 +18293,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -19053,9 +18372,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -19135,9 +18451,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -19217,9 +18530,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -19299,9 +18609,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -19381,9 +18688,6 @@
       ],
       "Breed Group Reference": [
         "toy-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -19463,9 +18767,6 @@
       ],
       "Breed Group Reference": [
         "toy-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -19545,9 +18846,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Extra Large"
       ]
     },
     "raw": {
@@ -19627,9 +18925,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Extra Large"
       ]
     },
     "raw": {
@@ -19709,9 +19004,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -19791,9 +19083,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -19873,9 +19162,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -19955,9 +19241,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -20037,9 +19320,6 @@
       ],
       "Breed Group Reference": [
         "non-sporting-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -20119,9 +19399,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -20201,9 +19478,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Extra Large"
       ]
     },
     "raw": {
@@ -20283,9 +19557,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -20365,9 +19636,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -20447,9 +19715,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -20529,9 +19794,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -20611,9 +19873,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -20693,9 +19952,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -20778,9 +20034,6 @@
       ],
       "Breed Group Reference": [
         "non-sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -20860,9 +20113,6 @@
       ],
       "Breed Group Reference": [
         "toy-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -20942,9 +20192,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -21024,9 +20271,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -21106,9 +20350,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -21188,9 +20429,6 @@
       ],
       "Breed Group Reference": [
         "toy-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -21270,9 +20508,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -21352,9 +20587,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -21434,9 +20666,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -21516,9 +20745,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -21598,9 +20824,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -21680,9 +20903,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -21762,9 +20982,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -21844,9 +21061,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -21926,9 +21140,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -22008,9 +21219,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -22090,9 +21298,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -22172,9 +21377,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -22254,9 +21456,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -22336,9 +21535,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -22418,9 +21614,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -22500,9 +21693,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -22582,9 +21772,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -22664,9 +21851,6 @@
       ],
       "Breed Group Reference": [
         "miscellaneous"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -22746,9 +21930,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -22828,9 +22009,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -22910,9 +22088,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Extra Large"
       ]
     },
     "raw": {
@@ -22992,9 +22167,6 @@
       ],
       "Breed Group Reference": [
         "non-sporting-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -23074,9 +22246,6 @@
       ],
       "Breed Group Reference": [
         "non-sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -23156,9 +22325,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -23238,9 +22404,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Extra Large"
       ]
     },
     "raw": {
@@ -23320,9 +22483,6 @@
       ],
       "Breed Group Reference": [
         "toy-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -23402,9 +22562,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -23484,9 +22641,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -23566,9 +22720,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -23648,9 +22799,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -23730,9 +22878,6 @@
       ],
       "Breed Group Reference": [
         "non-sporting-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -23809,6 +22954,12 @@
       }
     ],
     "references": {
+      "Breed Group": [
+        "Sporting"
+      ],
+      "Breed Group Reference": [
+        "sporting-dogs"
+      ],
       "Tags": [
         "High Energy",
         "Intelligent",
@@ -23819,15 +22970,6 @@
         "Athletic",
         "Requires Daily Exercise",
         "Hunting Dog"
-      ],
-      "Breed Group": [
-        "Sporting"
-      ],
-      "Breed Group Reference": [
-        "sporting-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -23907,9 +23049,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -23989,9 +23128,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -24071,9 +23207,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -24153,9 +23286,6 @@
       ],
       "Breed Group Reference": [
         "hound-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -24235,9 +23365,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -24317,9 +23444,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -24399,9 +23523,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -24481,9 +23602,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -24563,9 +23681,6 @@
       ],
       "Breed Group Reference": [
         "sporting-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -24645,9 +23760,6 @@
       ],
       "Breed Group Reference": [
         "herding-dogs"
-      ],
-      "Size Category": [
-        "Medium"
       ]
     },
     "raw": {
@@ -24727,9 +23839,6 @@
       ],
       "Breed Group Reference": [
         "non-sporting-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -24809,9 +23918,6 @@
       ],
       "Breed Group Reference": [
         "working-dogs"
-      ],
-      "Size Category": [
-        "Large"
       ]
     },
     "raw": {
@@ -24891,9 +23997,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -24973,9 +24076,6 @@
       ],
       "Breed Group Reference": [
         "terrier-dogs"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {
@@ -25055,9 +24155,6 @@
       ],
       "Breed Group Reference": [
         "hybrid-designer-mixes"
-      ],
-      "Size Category": [
-        "Small"
       ]
     },
     "raw": {

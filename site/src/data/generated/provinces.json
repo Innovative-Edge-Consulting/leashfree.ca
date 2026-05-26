@@ -5,7 +5,7 @@
     "slug": "ab",
     "title": "Alberta",
     "seoTitle": "Alberta",
-    "metaDescription": "",
+    "metaDescription": "Browse dog parks and city dog park guides for Alberta.",
     "description": "",
     "body": "",
     "collection": "Provinces",
@@ -13,11 +13,7 @@
     "canonicalUrl": "https://leashfree.ca/dog-parks/ab/",
     "routePath": "/dog-parks/ab/",
     "media": [],
-    "references": {
-      "Province": [
-        "Alberta"
-      ]
-    },
+    "references": {},
     "raw": {
       "Province": "Alberta",
       "Slug": "ab",
@@ -38,7 +34,7 @@
     "slug": "bc",
     "title": "British Columbia",
     "seoTitle": "British Columbia",
-    "metaDescription": "",
+    "metaDescription": "Browse dog parks and city dog park guides for British Columbia.",
     "description": "",
     "body": "",
     "collection": "Provinces",
@@ -46,11 +42,7 @@
     "canonicalUrl": "https://leashfree.ca/dog-parks/bc/",
     "routePath": "/dog-parks/bc/",
     "media": [],
-    "references": {
-      "Province": [
-        "British Columbia"
-      ]
-    },
+    "references": {},
     "raw": {
       "Province": "British Columbia",
       "Slug": "bc",
@@ -71,7 +63,7 @@
     "slug": "on",
     "title": "Ontario",
     "seoTitle": "Ontario",
-    "metaDescription": "",
+    "metaDescription": "Browse dog parks and city dog park guides for Ontario.",
     "description": "",
     "body": "",
     "collection": "Provinces",
@@ -79,11 +71,7 @@
     "canonicalUrl": "https://leashfree.ca/dog-parks/on/",
     "routePath": "/dog-parks/on/",
     "media": [],
-    "references": {
-      "Province": [
-        "Ontario"
-      ]
-    },
+    "references": {},
     "raw": {
       "Province": "Ontario",
       "Slug": "on",
@@ -104,7 +92,7 @@
     "slug": "qc",
     "title": "Quebec",
     "seoTitle": "Quebec",
-    "metaDescription": "",
+    "metaDescription": "Browse dog parks and city dog park guides for Quebec.",
     "description": "",
     "body": "",
     "collection": "Provinces",
@@ -112,11 +100,7 @@
     "canonicalUrl": "https://leashfree.ca/dog-parks/qc/",
     "routePath": "/dog-parks/qc/",
     "media": [],
-    "references": {
-      "Province": [
-        "Quebec"
-      ]
-    },
+    "references": {},
     "raw": {
       "Province": "Quebec",
       "Slug": "qc",

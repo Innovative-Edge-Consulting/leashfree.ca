@@ -5,6 +5,7 @@ import mediaMap from "../../data/media-map.json";
 import cities from "../../data/generated/cities.json";
 import parks from "../../data/generated/parks.json";
 import provinces from "../../data/generated/provinces.json";
+import { excerpt, findByName, slugify } from "../../utils/content.js";
 import { resolveMedia } from "../../utils/media.js";
 
 export function getStaticPaths() {
@@ -22,14 +23,34 @@ export function getStaticPaths() {
 }
 
 const { matches } = Astro.props;
-const primary = matches.find((item) => item.collection === "Dog Parks") || matches[0];
+const primary = matches[0];
+const pageType = primary.collection;
 const image = resolveMedia(primary, undefined, mediaMap);
 const title = primary.seoTitle || primary.title || primary.name;
 const description = primary.metaDescription || primary.description || `${primary.name} on LeashFree.ca.`;
+const isPark = pageType === "Dog Parks";
+const isCity = pageType === "City Pages";
+const isProvince = pageType === "Provinces";
+const city = isPark ? findByName(cities, primary.raw.City) : null;
+const province = isPark || isCity ? findByName(provinces, primary.raw.Province) : primary;
+const cityParks = isCity
+  ? parks.filter((park) => slugify(park.raw.City) === slugify(primary.name)).slice(0, 80)
+  : [];
+const provinceCities = isProvince
+  ? cities.filter((cityItem) => slugify(cityItem.raw.Province) === slugify(primary.name)).slice(0, 80)
+  : [];
+const provinceParks = isProvince
+  ? parks.filter((park) => slugify(park.raw.Province) === slugify(primary.name)).slice(0, 80)
+  : [];
+const reviewNotes = [
+  !primary.metaDescription ? "Meta description is using a generated fallback." : "",
+  image.status !== "mapped" ? "Image is using the migration placeholder until media is copied into public images." : ""
+].filter(Boolean);
 ---
 
 <Layout title={title} description={description} canonical={primary.canonicalUrl} ogImage={image.src}>
-  <PageShell eyebrow={primary.collection} title={primary.title || primary.name} summary={description}>
+  <PageShell eyebrow={primary.collection} title={primary.title || primary.name} summary={excerpt(description)}>
+    <p><a href="/dog-parks/">Dog Parks</a>{city && <> / <a href={`/dog-parks/${city.slug}/`}>{city.name}</a></>}{province && <> / <a href={`/dog-parks/${province.slug}/`}>{province.name}</a></>}</p>
     <img class="hero-image" src={image.src} alt="" loading="lazy" />
 
     {matches.length > 1 && (
@@ -42,12 +63,68 @@ const description = primary.metaDescription || primary.description || `${primary
       </section>
     )}
 
+    {reviewNotes.length > 0 && (
+      <section class="card">
+        <h2>Data review</h2>
+        <ul>
+          {reviewNotes.map((note) => <li>{note}</li>)}
+        </ul>
+      </section>
+    )}
+
     <ul class="meta-list">
       {primary.raw["Street Address"] && <li><strong>Address</strong><br />{primary.raw["Street Address"]}</li>}
       {primary.raw.City && <li><strong>City</strong><br />{primary.raw.City}</li>}
       {primary.raw.Province && <li><strong>Province</strong><br />{primary.raw.Province}</li>}
       {primary.raw.Fenced && <li><strong>Fenced</strong><br />{primary.raw.Fenced}</li>}
     </ul>
+
+    {isCity && (
+      <section>
+        <h2>Dog parks in {primary.name}</h2>
+        <div class="grid">
+          {cityParks.map((park) => (
+            <article class="card">
+              <h3><a href={`/dog-parks/${park.slug}/`}>{park.name}</a></h3>
+              <p>{excerpt(park.description, park.raw["Street Address"])}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {isProvince && (
+      <section>
+        <h2>Cities in {primary.name}</h2>
+        <div class="grid">
+          {provinceCities.map((cityItem) => (
+            <article class="card">
+              <h3><a href={`/dog-parks/${cityItem.slug}/`}>{cityItem.name}</a></h3>
+              <p>{excerpt(cityItem.description, `${cityItem.name} dog parks`)}</p>
+            </article>
+          ))}
+        </div>
+        <h2>Dog parks in {primary.name}</h2>
+        <div class="grid">
+          {provinceParks.map((park) => (
+            <article class="card">
+              <h3><a href={`/dog-parks/${park.slug}/`}>{park.name}</a></h3>
+              <p>{park.raw.City}{park.raw.City && park.raw["Street Address"] ? " - " : ""}{park.raw["Street Address"]}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {isPark && (
+      <section>
+        <h2>Location links</h2>
+        <ul>
+          {city && <li><a href={`/dog-parks/${city.slug}/`}>More dog parks in {city.name}</a></li>}
+          {province && <li><a href={`/dog-parks/${province.slug}/`}>More dog parks in {province.name}</a></li>}
+        </ul>
+      </section>
+    )}
 
     {primary.body && <section class="content-block" set:html={primary.body} />}
   </PageShell>

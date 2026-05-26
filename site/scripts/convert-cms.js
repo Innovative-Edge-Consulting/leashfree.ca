@@ -10,7 +10,9 @@ import {
   escapeMd,
   getBody,
   getDescription,
+  getSeoDescription,
   parseCsv,
+  referenceFieldNames,
   readJson,
   rowToObject,
   slugify,
@@ -52,7 +54,7 @@ for (const collection of schema) {
     const slug = String(raw[collection.likelySlugField] || "").trim();
     const title = raw["Blog Header (H1 Override)"] || raw["Park Header"] || raw["Header 1"] || raw["H1"] || raw["H2 Subheading"] || name;
     const seoTitle = raw["Meta Title"] || raw["SEO Title"] || raw["SEO Title Tag"] || raw["OG Title"] || title;
-    const metaDescription = raw["Meta Description"] || raw["OG Description"] || getDescription(raw);
+    const metaDescription = raw["Meta Description"] || raw["OG Description"] || getSeoDescription(raw, collection.inferredCollectionName, name);
     const description = getDescription(raw);
     const body = getBody(raw);
     const rowWarnings = [];
@@ -84,8 +86,9 @@ for (const collection of schema) {
       })
       .filter((entry) => entry.value || entry.originalUrls.length);
 
+    const referenceFields = referenceFieldNames(collection.inferredCollectionName);
     const references = Object.fromEntries(
-      collection.referenceFields
+      referenceFields
         .filter((fieldName) => raw[fieldName])
         .map((fieldName) => [
           fieldName,
@@ -128,12 +131,12 @@ for (const collection of schema) {
     routePrefix: new URL(canonicalFor(collection.inferredCollectionName, "example")).pathname.replace("example/", "")
   });
 
-  const mappedFields = [
+    const mappedFields = [
     collection.likelyNameField,
     collection.likelySlugField,
     ...collection.seoFields,
     ...collection.mediaFields,
-    ...collection.referenceFields
+    ...referenceFieldNames(collection.inferredCollectionName)
   ].filter(Boolean);
   const rawOnly = headers.filter((header) => !mappedFields.includes(header));
 

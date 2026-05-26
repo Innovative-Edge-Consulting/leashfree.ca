@@ -3,6 +3,7 @@ import Layout from "../../components/Layout.astro";
 import PageShell from "../../components/PageShell.astro";
 import mediaMap from "../../data/media-map.json";
 import posts from "../../data/generated/blog-posts.json";
+import { excerpt } from "../../utils/content.js";
 import { resolveMedia } from "../../utils/media.js";
 
 export function getStaticPaths() {
@@ -14,11 +15,20 @@ export function getStaticPaths() {
 
 const { post } = Astro.props;
 const image = resolveMedia(post, "Hero Image", mediaMap);
+const tags = post.references["Blog Tags"] || [];
+const category = post.references.Category?.[0] || "";
 ---
 
 <Layout title={post.seoTitle || post.title || post.name} description={post.metaDescription || post.description} canonical={post.canonicalUrl} ogImage={image.src}>
-  <PageShell eyebrow="Blog" title={post.title || post.name} summary={post.description}>
+  <PageShell eyebrow="Blog" title={post.title || post.name} summary={excerpt(post.description, post.metaDescription)}>
+    <p><a href="/blog/">Blog</a>{category && <> / {category}</>}</p>
     <img class="hero-image" src={image.src} alt="" loading="lazy" />
+    {(category || tags.length > 0) && (
+      <ul class="meta-list">
+        {category && <li><strong>Category</strong><br />{category}</li>}
+        {tags.length > 0 && <li><strong>Tags</strong><br />{tags.join(", ")}</li>}
+      </ul>
+    )}
     {post.body && <section class="content-block" set:html={post.body} />}
   </PageShell>
 </Layout>

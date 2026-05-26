@@ -1,6 +1,6 @@
 # CMS Conversion Report
 
-Generated at: 2026-05-26T17:02:57.081Z
+Generated at: 2026-05-26T17:31:06.752Z
 
 The conversion preserves every source CSV column under each item's `raw` field.
 
@@ -72,8 +72,8 @@ The conversion preserves every source CSV column under each item's `raw` field.
 - Missing slugs: 0
 - Duplicate slugs: 0
 - Missing title/name values: 0
-- Fields mapped: City Name, Slug, SEO Title Tag, Meta Description, Dog Park Etiquettes, Dog Park FAQs, Hero Image, City Name, Province, Featured Park 1, Featured Park 2, Featured Park 3, Park Rules, City Website, Province Page, Dog Park Etiquettes, Dog Park FAQs, Nearby Cities
-- Fields left raw only: Collection ID, Locale ID, Item ID, Archived, Draft, Created On, Updated On, Published On, Intro Paragraph, About Section, Seasonal Tips
+- Fields mapped: City Name, Slug, SEO Title Tag, Meta Description, Dog Park Etiquettes, Dog Park FAQs, Hero Image, Province, Featured Park 1, Featured Park 2, Featured Park 3, Province Page, Nearby Cities
+- Fields left raw only: Collection ID, Locale ID, Item ID, Archived, Draft, Created On, Updated On, Published On, Intro Paragraph, About Section, Seasonal Tips, Park Rules, City Website
 - Rows with warnings: 0
 
 ## Directories
@@ -96,8 +96,8 @@ The conversion preserves every source CSV column under each item's `raw` field.
 - Missing slugs: 0
 - Duplicate slugs: 0
 - Missing title/name values: 0
-- Fields mapped: Breed Name, Slug, Meta Title, Meta Description, Dog Breed Type, Featured Image, Grooming, Tags, Breed Group, Breed Group Reference, Size Category
-- Fields left raw only: Collection ID, Locale ID, Item ID, Archived, Draft, Created On, Updated On, Published On, H2 Subheading, Breed Summary, Breed History, Physical Characteristics, Exercise Needs, Training Tips, Nutrition & Diet, Health Concerns, Adoption & Breeders, FAQs, Ratings, Video Link 1, Video Link 2, Coat Type, Coat Texture, Activity Level, Trainability, Shedding Level, Family Friendly, Apartment Friendly, Hypoallergenic
+- Fields mapped: Breed Name, Slug, Meta Title, Meta Description, Dog Breed Type, Featured Image, Grooming, Breed Group, Breed Group Reference, Tags
+- Fields left raw only: Collection ID, Locale ID, Item ID, Archived, Draft, Created On, Updated On, Published On, H2 Subheading, Breed Summary, Breed History, Physical Characteristics, Exercise Needs, Training Tips, Nutrition & Diet, Health Concerns, Adoption & Breeders, FAQs, Ratings, Video Link 1, Video Link 2, Size Category, Coat Type, Coat Texture, Activity Level, Trainability, Shedding Level, Family Friendly, Apartment Friendly, Hypoallergenic
 - Rows with warnings: 0
 
 ## Dog Parks
@@ -108,8 +108,8 @@ The conversion preserves every source CSV column under each item's `raw` field.
 - Missing slugs: 0
 - Duplicate slugs: 0
 - Missing title/name values: 0
-- Fields mapped: Park Name, slug, Separate Small Dog Area, Media, Park Name, Park Header, Park type, City, Province, Parking Available, Washrooms nearby, Park Website or Source, Tags
-- Fields left raw only: Collection ID, Locale ID, Item ID, Archived, Draft, Created On, Updated On, Published On, Description, Street Address, latitude, longitude, Postal Code, Fenced, Surface type, Size, Water source available, Benches, Shaded area, Waste bins, Bag Dispensers, Operating hours, Seasonal Restrictions, Google Maps Link, Notes / Comments, Intro Paragraph
+- Fields mapped: Park Name, slug, Separate Small Dog Area, Media, City, Province, Tags
+- Fields left raw only: Collection ID, Locale ID, Item ID, Archived, Draft, Created On, Updated On, Published On, Park Header, Park type, Description, Street Address, latitude, longitude, Postal Code, Fenced, Surface type, Size, Water source available, Benches, Shaded area, Waste bins, Bag Dispensers, Parking Available, Washrooms nearby, Operating hours, Seasonal Restrictions, Park Website or Source, Google Maps Link, Notes / Comments, Intro Paragraph
 - Rows with warnings: 0
 
 ## Pet Insurance Providers
@@ -120,8 +120,8 @@ The conversion preserves every source CSV column under each item's `raw` field.
 - Missing slugs: 0
 - Duplicate slugs: 0
 - Missing title/name values: 0
-- Fields mapped: Provider, Slug, Parent/Underwriter, ProvincesAvailable
-- Fields left raw only: Collection ID, Locale ID, Item ID, Archived, Draft, Created On, Updated On, Published On, PlanTypes, AnnualLimit, ReimbursementPercents, DeductibleOptions, WaitingPeriodAccident, WaitingPeriodIllness, Dental, AlternativeRehabBehavioral, ClaimsNotes, ExclusionsSummary, SourceURL, SourceCapturedDate, LastVerified, AffiliateURL, DisplayRank
+- Fields mapped: Provider, Slug, ProvincesAvailable
+- Fields left raw only: Collection ID, Locale ID, Item ID, Archived, Draft, Created On, Updated On, Published On, Parent/Underwriter, PlanTypes, AnnualLimit, ReimbursementPercents, DeductibleOptions, WaitingPeriodAccident, WaitingPeriodIllness, Dental, AlternativeRehabBehavioral, ClaimsNotes, ExclusionsSummary, SourceURL, SourceCapturedDate, LastVerified, AffiliateURL, DisplayRank
 - Rows with warnings: 0
 
 ## Provinces
@@ -132,7 +132,7 @@ The conversion preserves every source CSV column under each item's `raw` field.
 - Missing slugs: 0
 - Duplicate slugs: 0
 - Missing title/name values: 0
-- Fields mapped: Province, Slug, Province
+- Fields mapped: Province, Slug
 - Fields left raw only: Collection ID, Locale ID, Item ID, Archived, Draft, Created On, Updated On, Published On
 - Rows with warnings: 0
 

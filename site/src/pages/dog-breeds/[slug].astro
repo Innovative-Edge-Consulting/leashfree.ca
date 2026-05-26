@@ -3,6 +3,8 @@ import Layout from "../../components/Layout.astro";
 import PageShell from "../../components/PageShell.astro";
 import mediaMap from "../../data/media-map.json";
 import breeds from "../../data/generated/dog-breeds.json";
+import groups from "../../data/generated/breed-groups.json";
+import { excerpt, findByName } from "../../utils/content.js";
 import { resolveMedia } from "../../utils/media.js";
 
 export function getStaticPaths() {
@@ -14,13 +16,15 @@ export function getStaticPaths() {
 
 const { breed } = Astro.props;
 const image = resolveMedia(breed, "Featured Image", mediaMap);
+const group = findByName(groups, breed.raw["Breed Group"]);
 ---
 
 <Layout title={breed.seoTitle || breed.title || breed.name} description={breed.metaDescription || breed.description} canonical={breed.canonicalUrl} ogImage={image.src}>
-  <PageShell eyebrow="Dog breed" title={breed.title || breed.name} summary={breed.description}>
+  <PageShell eyebrow="Dog breed" title={breed.title || breed.name} summary={excerpt(breed.description, breed.metaDescription)}>
+    <p><a href="/dog-breeds/">Dog Breeds</a>{group && <> / <a href={`/dog-breeds/group/${group.slug}/`}>{group.name}</a></>}</p>
     <img class="hero-image" src={image.src} alt="" loading="lazy" />
     <ul class="meta-list">
-      {breed.raw["Breed Group"] && <li><strong>Breed group</strong><br />{breed.raw["Breed Group"]}</li>}
+      {breed.raw["Breed Group"] && <li><strong>Breed group</strong><br />{group ? <a href={`/dog-breeds/group/${group.slug}/`}>{group.name}</a> : breed.raw["Breed Group"]}</li>}
       {breed.raw["Size Category"] && <li><strong>Size</strong><br />{breed.raw["Size Category"]}</li>}
       {breed.raw["Activity Level"] && <li><strong>Activity level</strong><br />{breed.raw["Activity Level"]}</li>}
       {breed.raw["Apartment Friendly"] && <li><strong>Apartment friendly</strong><br />{breed.raw["Apartment Friendly"]}</li>}
