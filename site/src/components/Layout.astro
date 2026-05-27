@@ -23,9 +23,10 @@ const { title, description, canonical, ogImage, structuredData } = Astro.props;
     <SEO title={title} description={description} canonical={canonical} ogImage={ogImage} structuredData={structuredData} />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="site-shell">
       <Header />
-      <main class="site-main">
+      <main id="main-content" class="site-main">
         <slot />
       </main>
       <Footer />

@@ -13,10 +13,12 @@
     "media:copy:dry": "node scripts/copy-media.js --dry-run",
     "media:copy": "node scripts/copy-media.js --write",
     "validate:data": "node scripts/validate-data.js",
-    "migrate:prep": "npm run convert:cms && npm run build:media-map && npm run validate:data"
+    "migrate:prep": "npm run convert:cms && npm run build:media-map && npm run validate:data",
+    "qa:pages": "node scripts/qa-pages.js",
+    "launch:check": "npm run migrate:prep && npm run build && npm run qa:pages && npm audit"
   },
   "dependencies": {
-    "astro": "^4.16.18"
+    "astro": "^6.3.8"
   },
   "devDependencies": {
     "typescript": "^5.6.3"

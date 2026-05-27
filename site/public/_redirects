@@ -1,0 +1,31 @@
+# Draft Cloudflare Pages redirects for launch review.
+# Keep this file conservative; unresolved legacy sections remain in the Phase 6 redirect report.
+
+/breed-groups/herding-dogs /dog-breeds/group/herding-dogs/ 301
+/breed-groups/hound-dogs /dog-breeds/group/hound-dogs/ 301
+/breed-groups/hybrid-designer-mixes /dog-breeds/group/hybrid-designer-mixes/ 301
+/breed-groups/sporting-dogs /dog-breeds/group/sporting-dogs/ 301
+/breed-groups/toy-dogs /dog-breeds/group/toy-dogs/ 301
+/breed-groups/working-dogs /dog-breeds/group/working-dogs/ 301
+
+/dog-insurance-waiting-periods-canada /blog/dog-insurance-waiting-periods-canada/ 301
+/average-vet-costs-in-canada /blog/average-vet-costs-in-canada/ 301
+/dog-names /blog/trending-dog-names-2025/ 302
+/dog-names/ /blog/trending-dog-names-2025/ 302
+/dog-insurance-canada /blog/is-dog-insurance-worth-it-canada/ 302
+/per-condition-vs-annual-deductible /blog/unlimited-vs-10000-annual-limit/ 302
+
+/parks/charleson-park /dog-parks/charleson-dog-park/ 301
+/parks/crab-park /dog-parks/crab-park-at-portside-dog-park/ 301
+/parks/everett-crowley-park /dog-parks/everett-crowley-dog-park/ 301
+/parks/fraser-river-park /dog-parks/fraser-river-dog-park/ 301
+/parks/hadden-park /dog-parks/hadden-dog-park/ 301
+/parks/john-hendry-park /dog-parks/john-hendry-dog-park/ 301
+/parks/queen-elizabeth-park /dog-parks/queen-elizabeth-dog-park/ 301
+/parks/spanish-banks-beach-park /dog-parks/spanish-banks-dog-park-vancouver/ 301
+/parks/sunset-beach-park /dog-parks/sunset-beach-dog-park/ 301
+
+/alberta-dog-parks /dog-parks/ab/ 301
+/british-columbia-dog-parks /dog-parks/bc/ 301
+/ontario-dog-parks /dog-parks/on/ 301
+/quebec-dog-parks /dog-parks/qc/ 301
