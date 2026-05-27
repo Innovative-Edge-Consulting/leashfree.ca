@@ -3,9 +3,11 @@ import Card from "../../components/Card.astro";
 import Hero from "../../components/Hero.astro";
 import Layout from "../../components/Layout.astro";
 import Section from "../../components/Section.astro";
+import mediaMap from "../../data/media-map.json";
 import breeds from "../../data/generated/dog-breeds.json";
 import groups from "../../data/generated/breed-groups.json";
 import { excerpt, breadcrumbSchema } from "../../utils/content.js";
+import { resolveMedia } from "../../utils/media.js";
 
 const breadcrumbs = [
   { label: "Home", href: "/" },
@@ -15,35 +17,39 @@ const breadcrumbs = [
 
 <Layout
   title="Dog Breeds"
-  description="Browse dog breed profiles converted from LeashFree.ca Webflow CMS data."
+  description="Browse LeashFree.ca dog breed profiles with traits, grooming, exercise, training, and care guidance."
   canonical="https://leashfree.ca/dog-breeds/"
   structuredData={breadcrumbSchema(breadcrumbs)}
 >
   <Hero
     eyebrow="Dog breeds"
     title="Explore dog breed profiles"
-    summary="Review breed guides with traits, grooming, exercise, training, and health fields where available from the CMS export."
+    summary="Compare breed traits, grooming needs, exercise requirements, training notes, and health considerations."
     primaryHref="#breeds"
     primaryLabel="Browse breeds"
     secondaryHref="#groups"
     secondaryLabel="Browse groups"
+    image="/images/general/blog-category-dog-breeds-card.avif"
+    imageAlt="Dog breed profiles"
   />
 
-  <Section id="groups" title="Breed groups" intro="Group pages provide a lightweight way to browse similar breeds." alt>
+  <Section id="groups" title="Breed groups" intro="Browse similar breeds by group.">
     <div class="grid compact">
       {groups.map((group) => (
-        <Card title={group.name} href={`/dog-breeds/group/${group.slug}/`} description={excerpt(group.metaDescription, group.description)} ctaLabel="View group" />
+        <Card title={group.name} href={`/dog-breeds/group/${group.slug}/`} description={excerpt(group.metaDescription, group.description)} image={resolveMedia(group, "Hero Image", mediaMap).src} imageAlt={`${group.name} breed group`} ctaLabel="View group" />
       ))}
     </div>
   </Section>
 
-  <Section id="breeds" title="Breed profiles" intro={`${breeds.length} dog breed pages are generated from the CMS export.`}>
+  <Section id="breeds" title="Breed profiles" intro={`Explore ${breeds.length} breed profiles for Canadian dog owners.`}>
     <div class="grid">
       {breeds.map((breed) => (
         <Card
           title={breed.name}
           href={`/dog-breeds/${breed.slug}/`}
           description={excerpt(breed.metaDescription, breed.description)}
+          image={resolveMedia(breed, "Featured Image", mediaMap).src}
+          imageAlt={`${breed.name} breed`}
           badges={[breed.raw["Breed Group"], breed.raw["Size Category"]].filter(Boolean)}
           ctaLabel="View breed"
         />

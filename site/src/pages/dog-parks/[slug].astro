@@ -5,6 +5,7 @@ import ContentBlock from "../../components/ContentBlock.astro";
 import EmptyState from "../../components/EmptyState.astro";
 import ImageWithFallback from "../../components/ImageWithFallback.astro";
 import Layout from "../../components/Layout.astro";
+import MapPanel from "../../components/MapPanel.astro";
 import RelatedLinks from "../../components/RelatedLinks.astro";
 import Section from "../../components/Section.astro";
 import mediaMap from "../../data/media-map.json";
@@ -53,12 +54,6 @@ const breadcrumbs = [
   { label: "Dog Parks", href: "/dog-parks/" },
   city && isPark ? { label: city.name, href: `/dog-parks/${city.slug}/` } : null,
   { label: primary.name }
-].filter(Boolean);
-const reviewNotes = [
-  !primary.metaDescription ? "Meta description is using a generated fallback." : "",
-  image.status !== "mapped" ? "Image is using the migration placeholder until media is copied into public images." : "",
-  isPark && !primary.raw.City ? "Park record is missing a city." : "",
-  isPark && !primary.raw.Province ? "Park record is missing a province." : ""
 ].filter(Boolean);
 const amenities = [
   ["Fenced", primary.raw.Fenced],
@@ -114,19 +109,8 @@ const structuredData = [
     </div>
   </section>
 
-  {import.meta.env.DEV && reviewNotes.length > 0 && (
-    <Section tight>
-      <div class="review-note">
-        <strong>Data review</strong>
-        <ul>
-          {reviewNotes.map((note) => <li>{note}</li>)}
-        </ul>
-      </div>
-    </Section>
-  )}
-
   {matches.length > 1 && (
-    <Section title="Shared slug review" intro="This route has multiple CMS records with the same slug. Confirm the final URL owner before launch." alt tight>
+    <Section title="Related records" intro="This page includes more than one matching dog park record." alt tight>
       <ul>
         {matches.map((item) => <li>{item.collection}: {item.name}</li>)}
       </ul>
@@ -165,6 +149,23 @@ const structuredData = [
     </Section>
   )}
 
+  {isPark && (
+    <Section tight>
+      <MapPanel
+        title="Map and directions"
+        intro={`Use the map to confirm the location for ${primary.name}, then open directions in your device map before you leave.`}
+        name={primary.name}
+        address={primary.raw["Street Address"]}
+        city={primary.raw.City}
+        province={primary.raw.Province}
+        postalCode={primary.raw["Postal Code"]}
+        latitude={primary.raw.latitude}
+        longitude={primary.raw.longitude}
+        googleMapsLink={primary.raw["Google Maps Link"]}
+      />
+    </Section>
+  )}
+
   {isCity && (
     <>
       <Section title={`Dog parks in ${primary.name}`} intro={`${cityParks.length} park records currently match this city.`}>
@@ -181,7 +182,7 @@ const structuredData = [
             ))}
           </div>
         ) : (
-          <EmptyState text="No park records currently match this city. Review the CMS city relationship before launch." />
+          <EmptyState text="No park records currently match this city." />
         )}
       </Section>
       <Section title="City dog park guidance" alt>

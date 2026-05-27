@@ -1,0 +1,41 @@
+---
+import { mapLocation } from "../utils/maps.js";
+
+interface Props {
+  title: string;
+  intro: string;
+  name: string;
+  address?: string;
+  city?: string;
+  province?: string;
+  postalCode?: string;
+  latitude?: string;
+  longitude?: string;
+  googleMapsLink?: string;
+}
+
+const location = mapLocation(Astro.props);
+---
+
+{location && (
+  <div class="map-panel">
+    <div class="map-copy">
+      <div>
+        <h2>{Astro.props.title}</h2>
+        <p>{Astro.props.intro}</p>
+      </div>
+      <div class="button-row compact-row">
+        <a class="button primary" href={location.directionsUrl} target="_blank" rel="noopener noreferrer">Directions</a>
+        <a class="button secondary" href={location.searchUrl} target="_blank" rel="noopener noreferrer">Open map</a>
+      </div>
+    </div>
+    <iframe
+      class="map-frame"
+      src={location.embedUrl}
+      title={`Map for ${Astro.props.name}`}
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </div>
+)}

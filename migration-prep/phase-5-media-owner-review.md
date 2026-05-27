@@ -1,11 +1,11 @@
 # Phase 5 Media Owner Review
 
-Generated at: 2026-05-27T01:41:27.164Z
-- Media tracker rows fully resolved: 424
-- Media tracker rows unresolved: 265
-- Source files unmatched: 4
-- Possible duplicate groups by size: 5
-- Pages may still rely on placeholders for unresolved rows: 265
+Generated at: 2026-05-27T17:13:34.712Z
+- Media tracker rows fully resolved: 425
+- Media tracker rows unresolved: 264
+- Source files unmatched: 40
+- Possible duplicate groups by size: 6
+- Pages may still rely on placeholders for unresolved rows: 264
 
 ## Highest Priority Unresolved Rows
 
@@ -19,10 +19,8 @@ Generated at: 2026-05-27T01:41:27.164Z
 - High: City Pages / Toronto / Hero Image (review_required)
 - High: City Pages / Truro / Hero Image (missing)
 - High: City Pages / Vancouver / Hero Image (review_required)
-- High: Dog Breeds / English Springer Spaniel / Featured Image (missing)
 - High: Dog Breeds / Korean Jindo Dog / Featured Image (missing)
 - High: Dog Breeds / Kuvasz / Featured Image (missing)
-- High: Dog Breeds / Portuguese Water Dog / Featured Image (missing)
 - High: Dog Parks / Andy Livingstone / Media (missing)
 - High: Dog Parks / Andy Livingstone / Media (missing)
 - High: Dog Parks / Bayview Park / Media (missing)
@@ -89,6 +87,8 @@ Generated at: 2026-05-27T01:41:27.164Z
 - High: Dog Parks / Queen Elizabeth Park / Media (missing)
 - High: Dog Parks / Queensland Off-Leash Area / Media (missing)
 - High: Dog Parks / Quenippenon Meadows Leash Free Park / Media (missing)
+- High: Dog Parks / Quilchena Park / Media (missing)
+- High: Dog Parks / Renfrew Community Park / Media (missing)
 
 ## Recommended Owner Action
 

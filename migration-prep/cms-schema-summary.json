@@ -812,5 +812,113 @@
     "mostlyEmptyFields": [],
     "cleanupCandidateFields": [],
     "notes": []
+  },
+  {
+    "collectionFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Dog-names - 68b1f0334a0402ec57ea28aa.csv",
+    "inferredCollectionName": "Dog Names",
+    "itemCount": 36,
+    "columns": [
+      "Page Name",
+      "Slug",
+      "Collection ID",
+      "Locale ID",
+      "Item ID",
+      "Archived",
+      "Draft",
+      "Created On",
+      "Updated On",
+      "Published On",
+      "Breed Name",
+      "H1 Header",
+      "Intro Summary",
+      "Hero Image",
+      "Table of Content (Jump Links)",
+      "Breed Snapshot",
+      "Editor???s Picks (Optional)",
+      "Puppy Naming Tips",
+      "Male Names",
+      "Female Names",
+      "Cute Names",
+      "Unique Names",
+      "Strong Names",
+      "Nature-Inspired Names",
+      "Color-Inspired Names",
+      "Canadian-Inspired Names",
+      "FAQs",
+      "Dog Breed Profile",
+      "Last Update Date",
+      "Meta Title",
+      "Meta Description",
+      "Open Graph Title",
+      "Open Graph Description"
+    ],
+    "likelySlugField": "Slug",
+    "likelyNameField": "Page Name",
+    "seoFields": [
+      "Meta Title",
+      "Meta Description",
+      "Open Graph Title",
+      "Open Graph Description"
+    ],
+    "mediaFields": [
+      "Hero Image"
+    ],
+    "referenceFields": [
+      "Breed Name",
+      "Dog Breed Profile"
+    ],
+    "richTextFields": [
+      "Intro Summary",
+      "Breed Snapshot",
+      "Editor???s Picks (Optional)",
+      "Puppy Naming Tips",
+      "Male Names",
+      "Female Names",
+      "Cute Names",
+      "Unique Names",
+      "Strong Names",
+      "Nature-Inspired Names",
+      "Color-Inspired Names",
+      "Canadian-Inspired Names",
+      "FAQs",
+      "Meta Description",
+      "Open Graph Description"
+    ],
+    "plainTextFields": [
+      "Page Name",
+      "Breed Name",
+      "H1 Header",
+      "Meta Title",
+      "Open Graph Title"
+    ],
+    "webflowUrlFields": [],
+    "websiteFilesUrlFields": [
+      "Hero Image"
+    ],
+    "urlFields": [
+      "Hero Image",
+      "Dog Breed Profile"
+    ],
+    "mostlyEmptyFields": [
+      "Editor???s Picks (Optional)",
+      "Last Update Date"
+    ],
+    "cleanupCandidateFields": [
+      "Table of Content (Jump Links)",
+      "Intro Summary",
+      "Breed Snapshot",
+      "Editor???s Picks (Optional)",
+      "Puppy Naming Tips",
+      "Male Names",
+      "Female Names",
+      "Cute Names",
+      "Unique Names",
+      "Strong Names",
+      "Nature-Inspired Names",
+      "Color-Inspired Names",
+      "Canadian-Inspired Names",
+      "FAQs"
+    ],
+    "notes": []
   }
 ]

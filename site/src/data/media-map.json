@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-27T01:41:27.164Z",
+  "generatedAt": "2026-05-27T17:13:34.712Z",
   "mediaSourceFolder": "/cms-exports/CMS Media/",
   "actualMediaSourceFolder": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media",
   "publicImagesFolder": "site/public/images/",
@@ -60,23 +60,23 @@
       "itemSlug": "dog-names",
       "fieldName": "Thumbnail Image (Image, optional)",
       "originalWebflowUrl": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68bf0830fc36f27098a4aaa8_Cute%20puppy%20with%20name%20tag%20(2880x1488",
-      "localFilename": "68e30d3fbc2f8e7f7df74ffd_leashfree-trending-dog-names-2025-hero-2880x1488.jpg",
-      "currentLocalPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68e30d3fbc2f8e7f7df74ffd_leashfree-trending-dog-names-2025-hero-2880x1488.jpg",
-      "originalSourcePath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68e30d3fbc2f8e7f7df74ffd_leashfree-trending-dog-names-2025-hero-2880x1488.jpg",
+      "localFilename": "68b2fee07f6d21cd2a19ed34_german-longhaired-pointer-puppy-dog-names-hero.jpg",
+      "currentLocalPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b2fee07f6d21cd2a19ed34_german-longhaired-pointer-puppy-dog-names-hero.jpg",
+      "originalSourcePath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b2fee07f6d21cd2a19ed34_german-longhaired-pointer-puppy-dog-names-hero.jpg",
       "cleanedFilename": "blog-category-dog-names-card.jpg",
       "suggestedFilename": "blog-category-dog-names-card.jpg",
       "suggestedPublicPath": "/images/general/blog-category-dog-names-card.jpg",
-      "publicPath": "/images/general/blog-category-dog-names-card.jpg",
-      "publicPathReady": true,
+      "publicPath": "",
+      "publicPathReady": false,
       "priority": "Medium",
-      "status": "published",
-      "matchStatus": "published",
+      "status": "needs_review",
+      "matchStatus": "review_required",
       "confidence": "medium",
       "matchConfidence": "medium",
-      "needsOwnerReview": false,
+      "needsOwnerReview": true,
       "notes": [
         "Best source match scored 52: slug in filename, item name in filename.",
-        "Public image exists and is preferred for rendering."
+        "Medium confidence match has competing candidates and was not copy eligible."
       ]
     },
     {
@@ -9853,22 +9853,23 @@
       "itemSlug": "english-springer-spaniel",
       "fieldName": "Featured Image",
       "originalWebflowUrl": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68a48a2c228d09fcf4f5b05f_A_high-resolution_digital_photograph_taken_during.avif",
-      "localFilename": "",
-      "currentLocalPath": "",
-      "originalSourcePath": "",
-      "cleanedFilename": "",
-      "suggestedFilename": "",
-      "suggestedPublicPath": "",
-      "publicPath": "",
-      "publicPathReady": false,
+      "localFilename": "6908c6d6a1a8ab10e1f6d19b_english-springer-spaniel-puppy-dog-names-hero.png",
+      "currentLocalPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/6908c6d6a1a8ab10e1f6d19b_english-springer-spaniel-puppy-dog-names-hero.png",
+      "originalSourcePath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/6908c6d6a1a8ab10e1f6d19b_english-springer-spaniel-puppy-dog-names-hero.png",
+      "cleanedFilename": "breed-english-springer-spaniel-featured.png",
+      "suggestedFilename": "breed-english-springer-spaniel-featured.png",
+      "suggestedPublicPath": "/images/breeds/breed-english-springer-spaniel-featured.png",
+      "publicPath": "/images/breeds/breed-english-springer-spaniel-featured.png",
+      "publicPathReady": true,
       "priority": "High",
-      "status": "missing",
-      "matchStatus": "missing",
-      "confidence": "none",
-      "matchConfidence": "none",
-      "needsOwnerReview": true,
+      "status": "published",
+      "matchStatus": "published",
+      "confidence": "medium",
+      "matchConfidence": "medium",
+      "needsOwnerReview": false,
       "notes": [
-        "No source media file matched this tracker row."
+        "Best source match scored 55: slug in filename, item name in filename.",
+        "Public image exists and is preferred for rendering."
       ]
     },
     {
@@ -12667,22 +12668,23 @@
       "itemSlug": "portuguese-water-dog",
       "fieldName": "Featured Image",
       "originalWebflowUrl": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68a22e86fb7309f199442ecd_portuguese-water-dog-breed-sitting-on-forest-path.avif",
-      "localFilename": "",
-      "currentLocalPath": "",
-      "originalSourcePath": "",
-      "cleanedFilename": "",
-      "suggestedFilename": "",
-      "suggestedPublicPath": "",
-      "publicPath": "",
-      "publicPathReady": false,
+      "localFilename": "68b658094310169f88162cd2_portuguese-water-dog-puppy-dog-names-hero.jpg",
+      "currentLocalPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b658094310169f88162cd2_portuguese-water-dog-puppy-dog-names-hero.jpg",
+      "originalSourcePath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b658094310169f88162cd2_portuguese-water-dog-puppy-dog-names-hero.jpg",
+      "cleanedFilename": "breed-portuguese-water-dog-featured.jpg",
+      "suggestedFilename": "breed-portuguese-water-dog-featured.jpg",
+      "suggestedPublicPath": "/images/breeds/breed-portuguese-water-dog-featured.jpg",
+      "publicPath": "/images/breeds/breed-portuguese-water-dog-featured.jpg",
+      "publicPathReady": true,
       "priority": "High",
-      "status": "missing",
-      "matchStatus": "missing",
-      "confidence": "none",
-      "matchConfidence": "none",
-      "needsOwnerReview": true,
+      "status": "published",
+      "matchStatus": "published",
+      "confidence": "medium",
+      "matchConfidence": "medium",
+      "needsOwnerReview": false,
       "notes": [
-        "No source media file matched this tracker row."
+        "Best source match scored 55: slug in filename, item name in filename.",
+        "Public image exists and is preferred for rendering."
       ]
     },
     {
@@ -16973,10 +16975,394 @@
   ],
   "unmatchedLocalFiles": [
     {
+      "filename": "6884306d6dec5df6f828103c_golden-retriever-dog-breed-closeup-outdoors.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/6884306d6dec5df6f828103c_golden-retriever-dog-breed-closeup-outdoors.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 46344,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "688437646aa97547b7eed0a4_labrador-retriever-dog-breed-standing-outdoors.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/688437646aa97547b7eed0a4_labrador-retriever-dog-breed-standing-outdoors.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 75779,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68843d7e7d8dbf98a2ca7c34_german-shepherd-dog-breed-sitting-outdoors.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68843d7e7d8dbf98a2ca7c34_german-shepherd-dog-breed-sitting-outdoors.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 49573,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
       "filename": "688ec4f3f830b978f0ce8bb0_redbone-coonhound-dog-breed-sitting-on-forest-path (1).avif",
       "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/688ec4f3f830b978f0ce8bb0_redbone-coonhound-dog-breed-sitting-on-forest-path (1).avif",
       "fileType": ".avif",
       "sizeBytes": 9436,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68a4933d9925b142d2891664_german-pinscher.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68a4933d9925b142d2891664_german-pinscher.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 66002,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68b3007c53fb5920dfbd0c31_german-spitz-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b3007c53fb5920dfbd0c31_german-spitz-puppy-dog-names-hero.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 43392,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68b31ee020760b2387be41f2_german-shorthaired-pointer-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b31ee020760b2387be41f2_german-shorthaired-pointer-puppy-dog-names-hero.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 66959,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68b32189e186a04d8b167798_german-wirehaired-pointer-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b32189e186a04d8b167798_german-wirehaired-pointer-puppy-dog-names-hero.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 81998,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68b32393ba6b0a04e2f4c6f7_giant-schnauzer-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b32393ba6b0a04e2f4c6f7_giant-schnauzer-puppy-dog-names-hero.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 31210,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68b32637418ba6efc1334aea_glen-of-imaal-terrier-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b32637418ba6efc1334aea_glen-of-imaal-terrier-puppy-dog-names-hero.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 39628,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68b646bf44ca47ee86f2b07e_french-bulldog-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b646bf44ca47ee86f2b07e_french-bulldog-puppy-dog-names-hero.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 44562,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68b6488d0faeba23040c048c_poodle-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b6488d0faeba23040c048c_poodle-puppy-dog-names-hero.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 44214,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68b64a55003ae1cd12ed0b0b_australian-shepherd-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b64a55003ae1cd12ed0b0b_australian-shepherd-puppy-dog-names-hero.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 44628,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68b6500c879c312c79aefeb7_havanese-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b6500c879c312c79aefeb7_havanese-puppy-dog-names-hero.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 45578,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68b651f452b78aa1c5811b4e_shetland-sheepdog-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b651f452b78aa1c5811b4e_shetland-sheepdog-puppy-dog-names-hero.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 52164,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68b655bda71734eb5c66677c_cavalier-king-charles-spaniel-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b655bda71734eb5c66677c_cavalier-king-charles-spaniel-puppy-dog-names-hero.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 54959,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68b65a1afffc2a03d3260691_border-collie-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b65a1afffc2a03d3260691_border-collie-puppy-dog-names-hero.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 40732,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68b8a157175a0a768754f669_Bernese Mountain Dog puppy dog names ideas.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b8a157175a0a768754f669_Bernese Mountain Dog puppy dog names ideas.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 48888,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68b8a524c244b2c0d3890087_yorkshire-terrier-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b8a524c244b2c0d3890087_yorkshire-terrier-puppy-dog-names-hero.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 50466,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68b8a78b0f76d5bb91973933_shih-tzu-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b8a78b0f76d5bb91973933_shih-tzu-puppy-dog-names-hero.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 53250,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68b988a5cf65bff2cb9d1d06_miniature-schnauzer-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b988a5cf65bff2cb9d1d06_miniature-schnauzer-puppy-dog-names-hero.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 67730,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68bc65ddb6fd71e63bef39c6_maltese-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc65ddb6fd71e63bef39c6_maltese-puppy-dog-names-hero.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 52052,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68bc690ab82e6ba64017a1cc_boston-terrier-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc690ab82e6ba64017a1cc_boston-terrier-puppy-dog-names-hero.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 47108,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68bc81f61628e4694492d575_pomeranian-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc81f61628e4694492d575_pomeranian-puppy-dog-names-hero.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 45613,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68bc85c7558e9c33b7b44637_bulldog-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc85c7558e9c33b7b44637_bulldog-puppy-dog-names-hero.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 55635,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68bc8704454cbbc5f3922a37_doberman-pinscher-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc8704454cbbc5f3922a37_doberman-pinscher-puppy-dog-names-hero.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 48836,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68bc895f791514d5d306eb5b_boxer-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc895f791514d5d306eb5b_boxer-puppy-dog-names-hero.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 44843,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68bc8ab70b51d0648829a796_rottweiler-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc8ab70b51d0648829a796_rottweiler-puppy-dog-names-hero.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 48466,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68bc8d76752851d41a93cb73_great-dane-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc8d76752851d41a93cb73_great-dane-puppy-dog-names-hero.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 52214,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68bc8f4916806beb8b765710_chihuahua-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc8f4916806beb8b765710_chihuahua-puppy-dog-names-hero.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 55236,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68bc92d678c78b37e581360c_mastiff-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc92d678c78b37e581360c_mastiff-puppy-dog-names-hero.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 65432,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68bedc5dfac4c3dd0482c4e3_saint-bernard-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bedc5dfac4c3dd0482c4e3_saint-bernard-puppy-dog-names-hero.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 62501,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68bee4b44a0ec48dbb96acc2_newfoundland-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bee4b44a0ec48dbb96acc2_newfoundland-puppy-dog-names-hero.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 57833,
       "possibleMatch": "",
       "reason": "No tracker row matched this local file.",
       "status": "unmatched",
@@ -17013,6 +17399,54 @@
       "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bf0cbbc7c5626a9d251a54_Dog with Canadian flag bandana at park (2880x1488) (2).avif",
       "fileType": ".avif",
       "sizeBytes": 31110,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "68e19aa0bc5790b754298498_bernedoodle-puppy-dog-names-hero.png",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68e19aa0bc5790b754298498_bernedoodle-puppy-dog-names-hero.png",
+      "fileType": ".png",
+      "sizeBytes": 2419947,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "6901311f4248c664eb3b2974_labradoodle-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/6901311f4248c664eb3b2974_labradoodle-puppy-dog-names-hero.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 56878,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "69021bb51176943b3b01aa5d_cocker-spaniel-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/69021bb51176943b3b01aa5d_cocker-spaniel-puppy-dog-names-hero.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 56028,
+      "possibleMatch": "",
+      "reason": "No tracker row matched this local file.",
+      "status": "unmatched",
+      "notes": [
+        "Review manually before publishing."
+      ]
+    },
+    {
+      "filename": "69022227d80e2e557797b32a_cane-corso-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/69022227d80e2e557797b32a_cane-corso-puppy-dog-names-hero.jpg",
+      "fileType": ".jpg",
+      "sizeBytes": 56152,
       "possibleMatch": "",
       "reason": "No tracker row matched this local file.",
       "status": "unmatched",
@@ -20792,30 +21226,6 @@
     },
     {
       "collection": "Dog Breeds",
-      "itemName": "English Springer Spaniel",
-      "itemSlug": "english-springer-spaniel",
-      "fieldName": "Featured Image",
-      "originalWebflowUrl": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68a48a2c228d09fcf4f5b05f_A_high-resolution_digital_photograph_taken_during.avif",
-      "localFilename": "",
-      "currentLocalPath": "",
-      "originalSourcePath": "",
-      "cleanedFilename": "",
-      "suggestedFilename": "",
-      "suggestedPublicPath": "",
-      "publicPath": "",
-      "publicPathReady": false,
-      "priority": "High",
-      "status": "missing",
-      "matchStatus": "missing",
-      "confidence": "none",
-      "matchConfidence": "none",
-      "needsOwnerReview": true,
-      "notes": [
-        "No source media file matched this tracker row."
-      ]
-    },
-    {
-      "collection": "Dog Breeds",
       "itemName": "French Bulldog",
       "itemSlug": "french-bulldog",
       "fieldName": "Grooming",
@@ -21045,30 +21455,6 @@
       "publicPath": "",
       "publicPathReady": false,
       "priority": "Low",
-      "status": "missing",
-      "matchStatus": "missing",
-      "confidence": "none",
-      "matchConfidence": "none",
-      "needsOwnerReview": true,
-      "notes": [
-        "No source media file matched this tracker row."
-      ]
-    },
-    {
-      "collection": "Dog Breeds",
-      "itemName": "Portuguese Water Dog",
-      "itemSlug": "portuguese-water-dog",
-      "fieldName": "Featured Image",
-      "originalWebflowUrl": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68a22e86fb7309f199442ecd_portuguese-water-dog-breed-sitting-on-forest-path.avif",
-      "localFilename": "",
-      "currentLocalPath": "",
-      "originalSourcePath": "",
-      "cleanedFilename": "",
-      "suggestedFilename": "",
-      "suggestedPublicPath": "",
-      "publicPath": "",
-      "publicPathReady": false,
-      "priority": "High",
       "status": "missing",
       "matchStatus": "missing",
       "confidence": "none",
@@ -23240,6 +23626,31 @@
     }
   ],
   "unresolvedItems": [
+    {
+      "collection": "Blog Categories",
+      "itemName": "Dog Names",
+      "itemSlug": "dog-names",
+      "fieldName": "Thumbnail Image (Image, optional)",
+      "originalWebflowUrl": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68bf0830fc36f27098a4aaa8_Cute%20puppy%20with%20name%20tag%20(2880x1488",
+      "localFilename": "68b2fee07f6d21cd2a19ed34_german-longhaired-pointer-puppy-dog-names-hero.jpg",
+      "currentLocalPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b2fee07f6d21cd2a19ed34_german-longhaired-pointer-puppy-dog-names-hero.jpg",
+      "originalSourcePath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b2fee07f6d21cd2a19ed34_german-longhaired-pointer-puppy-dog-names-hero.jpg",
+      "cleanedFilename": "blog-category-dog-names-card.jpg",
+      "suggestedFilename": "blog-category-dog-names-card.jpg",
+      "suggestedPublicPath": "/images/general/blog-category-dog-names-card.jpg",
+      "publicPath": "",
+      "publicPathReady": false,
+      "priority": "Medium",
+      "status": "needs_review",
+      "matchStatus": "review_required",
+      "confidence": "medium",
+      "matchConfidence": "medium",
+      "needsOwnerReview": true,
+      "notes": [
+        "Best source match scored 52: slug in filename, item name in filename.",
+        "Medium confidence match has competing candidates and was not copy eligible."
+      ]
+    },
     {
       "collection": "Blog Categories",
       "itemName": "Dog Parks",
@@ -27135,30 +27546,6 @@
     },
     {
       "collection": "Dog Breeds",
-      "itemName": "English Springer Spaniel",
-      "itemSlug": "english-springer-spaniel",
-      "fieldName": "Featured Image",
-      "originalWebflowUrl": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68a48a2c228d09fcf4f5b05f_A_high-resolution_digital_photograph_taken_during.avif",
-      "localFilename": "",
-      "currentLocalPath": "",
-      "originalSourcePath": "",
-      "cleanedFilename": "",
-      "suggestedFilename": "",
-      "suggestedPublicPath": "",
-      "publicPath": "",
-      "publicPathReady": false,
-      "priority": "High",
-      "status": "missing",
-      "matchStatus": "missing",
-      "confidence": "none",
-      "matchConfidence": "none",
-      "needsOwnerReview": true,
-      "notes": [
-        "No source media file matched this tracker row."
-      ]
-    },
-    {
-      "collection": "Dog Breeds",
       "itemName": "French Bulldog",
       "itemSlug": "french-bulldog",
       "fieldName": "Grooming",
@@ -27388,30 +27775,6 @@
       "publicPath": "",
       "publicPathReady": false,
       "priority": "Low",
-      "status": "missing",
-      "matchStatus": "missing",
-      "confidence": "none",
-      "matchConfidence": "none",
-      "needsOwnerReview": true,
-      "notes": [
-        "No source media file matched this tracker row."
-      ]
-    },
-    {
-      "collection": "Dog Breeds",
-      "itemName": "Portuguese Water Dog",
-      "itemSlug": "portuguese-water-dog",
-      "fieldName": "Featured Image",
-      "originalWebflowUrl": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68a22e86fb7309f199442ecd_portuguese-water-dog-breed-sitting-on-forest-path.avif",
-      "localFilename": "",
-      "currentLocalPath": "",
-      "originalSourcePath": "",
-      "cleanedFilename": "",
-      "suggestedFilename": "",
-      "suggestedPublicPath": "",
-      "publicPath": "",
-      "publicPathReady": false,
-      "priority": "High",
       "status": "missing",
       "matchStatus": "missing",
       "confidence": "none",
@@ -29634,9 +29997,19 @@
       "suggestedFilename": "golden-retriever-dog-breed-closeup-outdoors.avif"
     },
     {
+      "filename": "6884306d6dec5df6f828103c_golden-retriever-dog-breed-closeup-outdoors.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/6884306d6dec5df6f828103c_golden-retriever-dog-breed-closeup-outdoors.jpg",
+      "suggestedFilename": "golden-retriever-dog-breed-closeup-outdoors.jpg"
+    },
+    {
       "filename": "688437646aa97547b7eed0a4_labrador-retriever-dog-breed-standing-outdoors.avif",
       "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/688437646aa97547b7eed0a4_labrador-retriever-dog-breed-standing-outdoors.avif",
       "suggestedFilename": "labrador-retriever-dog-breed-standing-outdoors.avif"
+    },
+    {
+      "filename": "688437646aa97547b7eed0a4_labrador-retriever-dog-breed-standing-outdoors.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/688437646aa97547b7eed0a4_labrador-retriever-dog-breed-standing-outdoors.jpg",
+      "suggestedFilename": "labrador-retriever-dog-breed-standing-outdoors.jpg"
     },
     {
       "filename": "68843a5c6dec5df6f8295fe4_french-bulldog-dog-breed-standing-outdoors.avif",
@@ -29647,6 +30020,11 @@
       "filename": "68843d7e7d8dbf98a2ca7c34_german-shepherd-dog-breed-sitting-outdoors.avif",
       "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68843d7e7d8dbf98a2ca7c34_german-shepherd-dog-breed-sitting-outdoors.avif",
       "suggestedFilename": "german-shepherd-dog-breed-sitting-outdoors.avif"
+    },
+    {
+      "filename": "68843d7e7d8dbf98a2ca7c34_german-shepherd-dog-breed-sitting-outdoors.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68843d7e7d8dbf98a2ca7c34_german-shepherd-dog-breed-sitting-outdoors.jpg",
+      "suggestedFilename": "german-shepherd-dog-breed-sitting-outdoors.jpg"
     },
     {
       "filename": "688441afaafa3ac399658996_poodle-dog-breed-sitting-on-forest-path.avif",
@@ -30634,6 +31012,11 @@
       "suggestedFilename": "german-pinscher.avif"
     },
     {
+      "filename": "68a4933d9925b142d2891664_german-pinscher.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68a4933d9925b142d2891664_german-pinscher.jpg",
+      "suggestedFilename": "german-pinscher.jpg"
+    },
+    {
       "filename": "68a494282552f634438a4b32_A_photograph_captures_a_German_Longhaired_Pointer.jpg",
       "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68a494282552f634438a4b32_A_photograph_captures_a_German_Longhaired_Pointer.jpg",
       "suggestedFilename": "a-photograph-captures-a-german-longhaired-pointer.jpg"
@@ -30654,9 +31037,54 @@
       "suggestedFilename": "german-wirehaired-pointer.jpg"
     },
     {
+      "filename": "68b2fee07f6d21cd2a19ed34_german-longhaired-pointer-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b2fee07f6d21cd2a19ed34_german-longhaired-pointer-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "german-longhaired-pointer-puppy-dog-names-hero.jpg"
+    },
+    {
+      "filename": "68b3007c53fb5920dfbd0c31_german-spitz-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b3007c53fb5920dfbd0c31_german-spitz-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "german-spitz-puppy-dog-names-hero.jpg"
+    },
+    {
+      "filename": "68b31ee020760b2387be41f2_german-shorthaired-pointer-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b31ee020760b2387be41f2_german-shorthaired-pointer-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "german-shorthaired-pointer-puppy-dog-names-hero.jpg"
+    },
+    {
+      "filename": "68b32189e186a04d8b167798_german-wirehaired-pointer-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b32189e186a04d8b167798_german-wirehaired-pointer-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "german-wirehaired-pointer-puppy-dog-names-hero.jpg"
+    },
+    {
+      "filename": "68b32393ba6b0a04e2f4c6f7_giant-schnauzer-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b32393ba6b0a04e2f4c6f7_giant-schnauzer-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "giant-schnauzer-puppy-dog-names-hero.jpg"
+    },
+    {
+      "filename": "68b32637418ba6efc1334aea_glen-of-imaal-terrier-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b32637418ba6efc1334aea_glen-of-imaal-terrier-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "glen-of-imaal-terrier-puppy-dog-names-hero.jpg"
+    },
+    {
       "filename": "68b32818aa6715bd702e434e_glen-of-imaal-terrier-dog-forest-path.avif",
       "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b32818aa6715bd702e434e_glen-of-imaal-terrier-dog-forest-path.avif",
       "suggestedFilename": "glen-of-imaal-terrier-dog-forest-path.avif"
+    },
+    {
+      "filename": "68b646bf44ca47ee86f2b07e_french-bulldog-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b646bf44ca47ee86f2b07e_french-bulldog-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "french-bulldog-puppy-dog-names-hero.jpg"
+    },
+    {
+      "filename": "68b6488d0faeba23040c048c_poodle-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b6488d0faeba23040c048c_poodle-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "poodle-puppy-dog-names-hero.jpg"
+    },
+    {
+      "filename": "68b64a55003ae1cd12ed0b0b_australian-shepherd-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b64a55003ae1cd12ed0b0b_australian-shepherd-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "australian-shepherd-puppy-dog-names-hero.jpg"
     },
     {
       "filename": "68b64e03e42c4e5c38873405_havanese-dog-forest-path.avif",
@@ -30664,14 +31092,104 @@
       "suggestedFilename": "havanese-dog-forest-path.avif"
     },
     {
+      "filename": "68b6500c879c312c79aefeb7_havanese-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b6500c879c312c79aefeb7_havanese-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "havanese-puppy-dog-names-hero.jpg"
+    },
+    {
+      "filename": "68b651f452b78aa1c5811b4e_shetland-sheepdog-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b651f452b78aa1c5811b4e_shetland-sheepdog-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "shetland-sheepdog-puppy-dog-names-hero.jpg"
+    },
+    {
+      "filename": "68b655bda71734eb5c66677c_cavalier-king-charles-spaniel-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b655bda71734eb5c66677c_cavalier-king-charles-spaniel-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "cavalier-king-charles-spaniel-puppy-dog-names-hero.jpg"
+    },
+    {
+      "filename": "68b658094310169f88162cd2_portuguese-water-dog-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b658094310169f88162cd2_portuguese-water-dog-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "portuguese-water-dog-puppy-dog-names-hero.jpg"
+    },
+    {
+      "filename": "68b65a1afffc2a03d3260691_border-collie-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b65a1afffc2a03d3260691_border-collie-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "border-collie-puppy-dog-names-hero.jpg"
+    },
+    {
+      "filename": "68b8a157175a0a768754f669_Bernese Mountain Dog puppy dog names ideas.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b8a157175a0a768754f669_Bernese Mountain Dog puppy dog names ideas.jpg",
+      "suggestedFilename": "bernese-mountain-dog-puppy-dog-names-ideas.jpg"
+    },
+    {
+      "filename": "68b8a524c244b2c0d3890087_yorkshire-terrier-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b8a524c244b2c0d3890087_yorkshire-terrier-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "yorkshire-terrier-puppy-dog-names-hero.jpg"
+    },
+    {
+      "filename": "68b8a78b0f76d5bb91973933_shih-tzu-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b8a78b0f76d5bb91973933_shih-tzu-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "shih-tzu-puppy-dog-names-hero.jpg"
+    },
+    {
+      "filename": "68b988a5cf65bff2cb9d1d06_miniature-schnauzer-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b988a5cf65bff2cb9d1d06_miniature-schnauzer-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "miniature-schnauzer-puppy-dog-names-hero.jpg"
+    },
+    {
+      "filename": "68bc65ddb6fd71e63bef39c6_maltese-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc65ddb6fd71e63bef39c6_maltese-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "maltese-puppy-dog-names-hero.jpg"
+    },
+    {
+      "filename": "68bc690ab82e6ba64017a1cc_boston-terrier-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc690ab82e6ba64017a1cc_boston-terrier-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "boston-terrier-puppy-dog-names-hero.jpg"
+    },
+    {
+      "filename": "68bc81f61628e4694492d575_pomeranian-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc81f61628e4694492d575_pomeranian-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "pomeranian-puppy-dog-names-hero.jpg"
+    },
+    {
+      "filename": "68bc85c7558e9c33b7b44637_bulldog-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc85c7558e9c33b7b44637_bulldog-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "bulldog-puppy-dog-names-hero.jpg"
+    },
+    {
+      "filename": "68bc8704454cbbc5f3922a37_doberman-pinscher-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc8704454cbbc5f3922a37_doberman-pinscher-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "doberman-pinscher-puppy-dog-names-hero.jpg"
+    },
+    {
       "filename": "68bc89000dfd18230b80d9aa_miniature-pinscher-dog-forest-path.avif",
       "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc89000dfd18230b80d9aa_miniature-pinscher-dog-forest-path.avif",
       "suggestedFilename": "miniature-pinscher-dog-forest-path.avif"
     },
     {
+      "filename": "68bc895f791514d5d306eb5b_boxer-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc895f791514d5d306eb5b_boxer-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "boxer-puppy-dog-names-hero.jpg"
+    },
+    {
+      "filename": "68bc8ab70b51d0648829a796_rottweiler-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc8ab70b51d0648829a796_rottweiler-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "rottweiler-puppy-dog-names-hero.jpg"
+    },
+    {
       "filename": "68bc8b977b0ee00c1f42ff9d_miniature-bull-terrier-dog-forest-path.avif",
       "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc8b977b0ee00c1f42ff9d_miniature-bull-terrier-dog-forest-path.avif",
       "suggestedFilename": "miniature-bull-terrier-dog-forest-path.avif"
+    },
+    {
+      "filename": "68bc8d76752851d41a93cb73_great-dane-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc8d76752851d41a93cb73_great-dane-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "great-dane-puppy-dog-names-hero.jpg"
+    },
+    {
+      "filename": "68bc8f4916806beb8b765710_chihuahua-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc8f4916806beb8b765710_chihuahua-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "chihuahua-puppy-dog-names-hero.jpg"
     },
     {
       "filename": "68bc904e3f5b8f9143358ef7_miniature-american-shepherd-dog-forest-path.avif",
@@ -30682,6 +31200,21 @@
       "filename": "68bc91ec4f1402f28b2130e7_great-dane-dog-forest-path.avif",
       "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc91ec4f1402f28b2130e7_great-dane-dog-forest-path.avif",
       "suggestedFilename": "great-dane-dog-forest-path.avif"
+    },
+    {
+      "filename": "68bc92d678c78b37e581360c_mastiff-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc92d678c78b37e581360c_mastiff-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "mastiff-puppy-dog-names-hero.jpg"
+    },
+    {
+      "filename": "68bedc5dfac4c3dd0482c4e3_saint-bernard-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bedc5dfac4c3dd0482c4e3_saint-bernard-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "saint-bernard-puppy-dog-names-hero.jpg"
+    },
+    {
+      "filename": "68bee4b44a0ec48dbb96acc2_newfoundland-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bee4b44a0ec48dbb96acc2_newfoundland-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "newfoundland-puppy-dog-names-hero.jpg"
     },
     {
       "filename": "68bef84a071bc039505c4fdd_Wide shot of dogs running in a fenced park (2880x1488).avif",
@@ -30922,6 +31455,11 @@
       "filename": "68e19508bac9120c0c526b79_diy-halloween-dog-costumes-hero-leashfree-2880x1488.jpg",
       "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68e19508bac9120c0c526b79_diy-halloween-dog-costumes-hero-leashfree-2880x1488.jpg",
       "suggestedFilename": "diy-halloween-dog-costumes-hero-leashfree-2880x1488.jpg"
+    },
+    {
+      "filename": "68e19aa0bc5790b754298498_bernedoodle-puppy-dog-names-hero.png",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68e19aa0bc5790b754298498_bernedoodle-puppy-dog-names-hero.png",
+      "suggestedFilename": "bernedoodle-puppy-dog-names-hero.png"
     },
     {
       "filename": "68e19bbc4bb31efae7508f53_bernedoodle-puppy-forest-trail-leashfree.jpg",
@@ -31334,6 +31872,21 @@
       "suggestedFilename": "calm-dog-greeting-owner-home.jpg"
     },
     {
+      "filename": "6901311f4248c664eb3b2974_labradoodle-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/6901311f4248c664eb3b2974_labradoodle-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "labradoodle-puppy-dog-names-hero.jpg"
+    },
+    {
+      "filename": "69021bb51176943b3b01aa5d_cocker-spaniel-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/69021bb51176943b3b01aa5d_cocker-spaniel-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "cocker-spaniel-puppy-dog-names-hero.jpg"
+    },
+    {
+      "filename": "69022227d80e2e557797b32a_cane-corso-puppy-dog-names-hero.jpg",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/69022227d80e2e557797b32a_cane-corso-puppy-dog-names-hero.jpg",
+      "suggestedFilename": "cane-corso-puppy-dog-names-hero.jpg"
+    },
+    {
       "filename": "69051f882cfd5e41d1b44ce9_labrador-fresh-dog-food-kitchen-canada.jpg",
       "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/69051f882cfd5e41d1b44ce9_labrador-fresh-dog-food-kitchen-canada.jpg",
       "suggestedFilename": "labrador-fresh-dog-food-kitchen-canada.jpg"
@@ -31377,6 +31930,11 @@
       "filename": "6908c1e403b08b9528979e61_berger-picard-dog-forest-path.png",
       "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/6908c1e403b08b9528979e61_berger-picard-dog-forest-path.png",
       "suggestedFilename": "berger-picard-dog-forest-path.png"
+    },
+    {
+      "filename": "6908c6d6a1a8ab10e1f6d19b_english-springer-spaniel-puppy-dog-names-hero.png",
+      "currentPath": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/6908c6d6a1a8ab10e1f6d19b_english-springer-spaniel-puppy-dog-names-hero.png",
+      "suggestedFilename": "english-springer-spaniel-puppy-dog-names-hero.png"
     },
     {
       "filename": "6909265a5096aa2f584ccdc1_american-cocker-spaniel-dog-forest-path.png",

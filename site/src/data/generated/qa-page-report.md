@@ -1,18 +1,18 @@
 # QA Page Report
 
-Generated at: 2026-05-27T01:42:09.604Z
-- HTML pages checked: 1032
-- Sitemap routes found: 1031
+Generated at: 2026-05-27T17:13:53.965Z
+- HTML pages checked: 1076
+- Sitemap routes found: 1075
 - Missing title tags: 0
 - Missing meta descriptions: 0
 - Duplicate title groups: 8
 - Duplicate meta description groups: 3
 - Missing H1: 0
 - Multiple H1s: 0
-- Broken internal links: 1
-- Redirect-covered internal links: 25
+- Broken internal links: 0
+- Redirect-covered internal links: 23
 - Broken image paths: 0
-- Pages using placeholder images: 626
+- Pages using placeholder images: 0
 - Empty or very short pages: 0
 - Canonical mismatches: 0
 - Pages missing Open Graph title/description: 0
@@ -20,126 +20,7 @@ Generated at: 2026-05-27T01:42:09.604Z
 
 ## Issue Page Sample
 
-- /blog/: placeholder image
-- /blog/top-10-dog-parks-in-vancouver/: 1 broken links, placeholder image
-- /directory/aldershot-animal-hospital-burlington/: placeholder image
-- /directory/alderwood-veterinary-clinic/: placeholder image
-- /directory/animal-hospital-of-milton/: placeholder image
-- /directory/animal-hospital-of-milton-e6f9b/: placeholder image
-- /directory/animal-hospital-of-oakville/: placeholder image
-- /directory/applewood-veterinary-hospital-mississauga/: placeholder image
-- /directory/aquitaine-animal-hospital-mississauga/: placeholder image
-- /directory/bristol-veterinary-hospital-mississauga/: placeholder image
-- /directory/burlington-veterinary-emergency-and-referral-hospital/: placeholder image
-- /directory/burloak-animal-hospital/: placeholder image
-- /directory/credit-valley-animal-hospital-mississauga/: placeholder image
-- /directory/derry-heights-animal-hospital-milton/: placeholder image
-- /directory/east-plains-animal-hospital-burlington/: placeholder image
-- /directory/eatonville-animal-hospital/: placeholder image
-- /directory/eglinton-hwy-10-veterinary-clinic-mississauga/: placeholder image
-- /directory/erin-mills-pet-hospital-mississauga/: placeholder image
-- /directory/erindale-animal-hospital-mississauga/: placeholder image
-- /directory/etobicoke-veterinary-hospital/: placeholder image
-- /directory/glen-erin-animal-hospital-mississauga/: placeholder image
-- /directory/halton-peel-animal-hospital-milton/: placeholder image
-- /directory/hawkins-animal-hospital/: placeholder image
-- /directory/hawkins-animal-hospital-milton/: placeholder image
-- /directory/heartland-pet-hospital-mississauga/: placeholder image
-- /directory/hollybank-animal-hospital-milton/: placeholder image
-- /directory/humber-bay-veterinary-hospital/: placeholder image
-- /directory/: placeholder image
-- /directory/james-snow-animal-hospital/: placeholder image
-- /directory/james-snow-animal-hospital-milton/: placeholder image
-- /directory/long-branch-animal-clinic/: placeholder image
-- /directory/lorne-park-animal-hospital-mississauga/: placeholder image
-- /directory/mainview-animal-hospital-milton/: placeholder image
-- /directory/martin-veterinary-hospital/: placeholder image
-- /directory/mavis-road-animal-clinic-mississauga/: placeholder image
-- /directory/mccleary-animal-hospital-mississauga/: placeholder image
-- /directory/meadowvale-animal-clinic-mississauga/: placeholder image
-- /directory/mississauga-animal-hospital/: placeholder image
-- /directory/oakville-animal-clinic/: placeholder image
-- /directory/oakville-lakeshore-animal-hospital/: placeholder image
-- /directory/richview-animal-hospital/: placeholder image
-- /directory/river-grove-animal-hospital-mississauga/: placeholder image
-- /directory/robinson-pet-hospital-milton/: placeholder image
-- /directory/royal-ford-veterinary-hospital/: placeholder image
-- /directory/royal-york-animal-hospital/: placeholder image
-- /directory/south-etobicoke-animal-hospital/: placeholder image
-- /directory/southdown-animal-clinic-mississauga/: placeholder image
-- /directory/southeast-oakville-vet/: placeholder image
-- /directory/streetsville-animal-hospital-mississauga/: placeholder image
-- /directory/tansley-woods-veterinary-hospital/: placeholder image
-- /directory/toronto-veterinary-clinic-etobicoke/: placeholder image
-- /directory/upper-middle-road-animal-hospital-burlington/: placeholder image
-- /directory/upper-oakville-pet-hospital/: placeholder image
-- /directory/vca-canada-burlington-animal-hospital/: placeholder image
-- /directory/westbridge-veterinary-hospital-mississauga/: placeholder image
-- /dog-breeds/bearded-collie/: placeholder image
-- /dog-breeds/beauceron/: placeholder image
-- /dog-breeds/bedlington-terrier/: placeholder image
-- /dog-breeds/belgian-laekenois/: placeholder image
-- /dog-breeds/belgian-malinois/: placeholder image
-- /dog-breeds/belgian-sheepdog/: placeholder image
-- /dog-breeds/bergamasco-sheepdog/: placeholder image
-- /dog-breeds/bichon-frise/: placeholder image
-- /dog-breeds/biewer-terrier/: placeholder image
-- /dog-breeds/black-and-tan-coonhound/: placeholder image
-- /dog-breeds/black-russian-terrier/: placeholder image
-- /dog-breeds/bluetick-coonhound/: placeholder image
-- /dog-breeds/boerboel/: placeholder image
-- /dog-breeds/border-terrier/: placeholder image
-- /dog-breeds/borzoi/: placeholder image
-- /dog-breeds/bouvier-des-flandres/: placeholder image
-- /dog-breeds/boykin-spaniel/: placeholder image
-- /dog-breeds/english-springer-spaniel/: placeholder image
-- /dog-breeds/giant-schnauzer/: placeholder image
-- /dog-breeds/gordon-setter/: placeholder image
-- /dog-breeds/grand-basset-griffon-vendeen/: placeholder image
-- /dog-breeds/great-pyrenees/: placeholder image
-- /dog-breeds/greater-swiss-mountain-dog/: placeholder image
-- /dog-breeds/hamiltonstovare/: placeholder image
-- /dog-breeds/harrier/: placeholder image
-- /dog-breeds/hokkaido/: placeholder image
-- /dog-breeds/husky-retriever-mix/: placeholder image
-- /dog-breeds/ibizan-hound/: placeholder image
-- /dog-breeds/: placeholder image
-- /dog-breeds/jindo/: placeholder image
-- /dog-breeds/korean-jindo-dog/: placeholder image
-- /dog-breeds/kuvasz/: placeholder image
-- /dog-breeds/miniature-american-shepherd/: placeholder image
-- /dog-breeds/portuguese-water-dog/: placeholder image
-- /dog-parks/ab/: placeholder image
-- /dog-parks/adams-park-cornwall/: placeholder image
-- /dog-parks/aitken-place-park/: placeholder image
-- /dog-parks/ajax-waterfront-park/: placeholder image
-- /dog-parks/albert-park-radisson-heights-off-leash-area/: placeholder image
-- /dog-parks/albion-fairgrounds-maple-ridge/: placeholder image
-- /dog-parks/alexander-park-victoria/: placeholder image
-- /dog-parks/alguire-park-cornwall/: placeholder image
-- /dog-parks/allan-gardens/: placeholder image
-- /dog-parks/allan-hogg-rotary-park/: placeholder image
-- /dog-parks/amherst/: placeholder image
-- /dog-parks/andy-livingstone-dog-park/: placeholder image
-- /dog-parks/antigonish-dog-park/: placeholder image
-- /dog-parks/apollo-crater-park/: placeholder image
-- /dog-parks/ardmore-park-service-dog-park/: placeholder image
-- /dog-parks/auburn-bay-off-leash-area/: placeholder image
-- /dog-parks/audley-recreation-centre/: placeholder image
-- /dog-parks/avalon-dog-park/: placeholder image
-- /dog-parks/awenda-pet-beach-area/: placeholder image
-- /dog-parks/baffin-dog-park/: placeholder image
-- /dog-parks/bakerview-park-surrey/: placeholder image
-- /dog-parks/balaclava-dog-park/: placeholder image
-- /dog-parks/ballantyne-park/: placeholder image
-- /dog-parks/balmoral-park-chilliwack/: placeholder image
-- /dog-parks/balmy-beach-park/: placeholder image
-- /dog-parks/banfield-park-victoria/: placeholder image
-- /dog-parks/barbara-hall-park/: placeholder image
-- /dog-parks/barber-park-chilliwack/: placeholder image
-- /dog-parks/barkwood-forest/: placeholder image
-- /dog-parks/barnet-marine-park-burnaby/: placeholder image
-- /dog-parks/base-plein-air-de-sainte-foy-dog-park/: placeholder image
+- None
 
 ## Duplicate Title Groups Sample
 

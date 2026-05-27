@@ -3,10 +3,12 @@ import Card from "../../components/Card.astro";
 import Hero from "../../components/Hero.astro";
 import Layout from "../../components/Layout.astro";
 import Section from "../../components/Section.astro";
+import mediaMap from "../../data/media-map.json";
 import parks from "../../data/generated/parks.json";
 import cities from "../../data/generated/cities.json";
 import provinces from "../../data/generated/provinces.json";
 import { excerpt, breadcrumbSchema } from "../../utils/content.js";
+import { resolveMedia } from "../../utils/media.js";
 
 const featuredCities = cities.slice(0, 24);
 const featuredParks = parks.slice(0, 48);
@@ -25,12 +27,13 @@ const breadcrumbs = [
   <Hero
     eyebrow="Dog parks"
     title="Find leash-free dog parks in Canada"
-    summary="Browse converted dog park, city, and province pages from the Webflow CMS migration. Each page is ready for data and design review before launch."
+    summary="Browse dog park, city, and province guides with local details for Canadian dog owners."
     primaryHref="#provinces"
     primaryLabel="Browse provinces"
     secondaryHref="#parks"
-    secondaryLabel="Review parks"
-    imageAlt="Leash-free dog park directory placeholder"
+    secondaryLabel="Browse parks"
+    image="/images/blog/blog-how-to-choose-the-right-dog-park-for-your-pup-hero.jpg"
+    imageAlt="Dog enjoying a leash-free park"
   />
 
   <Section title="Dog park coverage" tight>
@@ -41,7 +44,7 @@ const breadcrumbs = [
     </div>
   </Section>
 
-  <Section id="provinces" title="Browse by province" intro="Province pages group city guides and park records where relationships are clear." alt>
+  <Section id="provinces" title="Browse by province" intro="Province pages group city guides and park records across Canada." alt>
     <div class="grid compact">
       {provinces.map((item) => (
         <Card title={item.name} href={`/dog-parks/${item.slug}/`} description={item.metaDescription || `Browse dog parks in ${item.name}.`} ctaLabel="View province" />
@@ -49,13 +52,15 @@ const breadcrumbs = [
     </div>
   </Section>
 
-  <Section title="City dog park guides" intro="City pages list related dog parks where the CMS city field can be matched.">
+  <Section title="City dog park guides" intro="Find local dog park pages by city.">
     <div class="grid">
       {featuredCities.map((item) => (
         <Card
           title={`${item.name} dog parks`}
           href={`/dog-parks/${item.slug}/`}
           description={excerpt(item.description, item.metaDescription)}
+          image={resolveMedia(item, "Hero Image", mediaMap).src}
+          imageAlt={`${item.name} dog park guide`}
           badges={[item.raw.Province].filter(Boolean)}
           ctaLabel="View city"
         />
@@ -63,13 +68,15 @@ const breadcrumbs = [
     </div>
   </Section>
 
-  <Section id="parks" title="Individual park pages" intro="Park pages preserve the current audited `/dog-parks/{slug}/` URL pattern for this phase." alt>
+  <Section id="parks" title="Individual park pages" intro="Compare park amenities, locations, and visitor details." alt>
     <div class="grid">
       {featuredParks.map((item) => (
         <Card
           title={item.name}
           href={`/dog-parks/${item.slug}/`}
           description={excerpt(item.description, item.raw["Street Address"])}
+          image={resolveMedia(item, undefined, mediaMap).src}
+          imageAlt={`${item.name} dog park`}
           meta={[item.raw.City, item.raw.Province].filter(Boolean).join(", ")}
           badges={[item.raw.Fenced ? `Fenced: ${item.raw.Fenced}` : ""].filter(Boolean)}
           ctaLabel="View park"

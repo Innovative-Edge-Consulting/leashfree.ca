@@ -5,6 +5,7 @@ import parks from "../data/generated/parks.json";
 import cities from "../data/generated/cities.json";
 import provinces from "../data/generated/provinces.json";
 import directories from "../data/generated/directories.json";
+import dogNames from "../data/generated/dog-names.json";
 
 const SITE = "https://leashfree.ca";
 
@@ -21,6 +22,11 @@ export function GET() {
     url("/"),
     url("/dog-parks/"),
     url("/dog-breeds/"),
+    url("/dog-names/"),
+    url("/dog-name-finder/"),
+    url("/resources/"),
+    url("/resources/dog-calorie-calculator/"),
+    url("/resources/dog-gear-finder/"),
     url("/blog/"),
     url("/directory/"),
     ...parks.map(itemUrl),
@@ -29,6 +35,7 @@ export function GET() {
     ...posts.map(itemUrl),
     ...breeds.map(itemUrl),
     ...groups.map(itemUrl),
+    ...dogNames.map(itemUrl),
     ...directories.map(itemUrl)
   ];
 

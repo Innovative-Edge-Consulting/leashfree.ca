@@ -18,7 +18,8 @@
     "launch:check": "npm run migrate:prep && npm run build && npm run qa:pages && npm audit"
   },
   "dependencies": {
-    "astro": "^6.3.8"
+    "astro": "^6.3.8",
+    "leaflet": "^1.9.4"
   },
   "devDependencies": {
     "typescript": "^5.6.3"

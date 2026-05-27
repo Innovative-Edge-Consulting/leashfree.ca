@@ -3,6 +3,7 @@ import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import ContentBlock from "../../components/ContentBlock.astro";
 import ImageWithFallback from "../../components/ImageWithFallback.astro";
 import Layout from "../../components/Layout.astro";
+import MapPanel from "../../components/MapPanel.astro";
 import Section from "../../components/Section.astro";
 import mediaMap from "../../data/media-map.json";
 import directories from "../../data/generated/directories.json";
@@ -47,5 +48,19 @@ const breadcrumbs = [
       {item.raw.Email && <li><strong>Email</strong><br />{item.raw.Email}</li>}
     </ul>
     <ContentBlock html={item.body || item.raw["Long Description"] || item.description} />
+  </Section>
+
+  <Section tight>
+    <MapPanel
+      title="Location and directions"
+      intro={`Find ${item.name} on the map, check the surrounding area, and open directions from your current location.`}
+      name={item.name}
+      address={item.raw["Street Address"]}
+      city={item.raw.City}
+      province={item.raw.Province}
+      latitude={item.raw.Latitude}
+      longitude={item.raw.Longitude}
+      googleMapsLink={item.raw["Google Maps Link"]}
+    />
   </Section>
 </Layout>

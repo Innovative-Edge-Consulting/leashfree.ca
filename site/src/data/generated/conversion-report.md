@@ -1,6 +1,6 @@
 # CMS Conversion Report
 
-Generated at: 2026-05-27T01:41:05.327Z
+Generated at: 2026-05-27T17:13:27.431Z
 
 The conversion preserves every source CSV column under each item's `raw` field.
 
@@ -134,5 +134,17 @@ The conversion preserves every source CSV column under each item's `raw` field.
 - Missing title/name values: 0
 - Fields mapped: Province, Slug
 - Fields left raw only: Collection ID, Locale ID, Item ID, Archived, Draft, Created On, Updated On, Published On
+- Rows with warnings: 0
+
+## Dog Names
+
+- Source: `LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Dog-names - 68b1f0334a0402ec57ea28aa.csv`
+- Output: `dog-names.json`
+- Items converted: 39
+- Missing slugs: 0
+- Duplicate slugs: 0
+- Missing title/name values: 0
+- Fields mapped: Page Name, Slug, Meta Title, Meta Description, Open Graph Title, Open Graph Description, Hero Image, Breed Name, Dog Breed Profile
+- Fields left raw only: Collection ID, Locale ID, Item ID, Archived, Draft, Created On, Updated On, Published On, H1 Header, Intro Summary, Table of Content (Jump Links), Breed Snapshot, Editor’s Picks (Optional), Puppy Naming Tips, Male Names, Female Names, Cute Names, Unique Names, Strong Names, Nature-Inspired Names, Color-Inspired Names, Canadian-Inspired Names, FAQs, Last Update Date
 - Rows with warnings: 0
 

@@ -3,8 +3,10 @@ import Card from "../../components/Card.astro";
 import Hero from "../../components/Hero.astro";
 import Layout from "../../components/Layout.astro";
 import Section from "../../components/Section.astro";
+import mediaMap from "../../data/media-map.json";
 import posts from "../../data/generated/blog-posts.json";
 import { dateLabel, excerpt, breadcrumbSchema } from "../../utils/content.js";
+import { resolveMedia } from "../../utils/media.js";
 
 const breadcrumbs = [
   { label: "Home", href: "/" },
@@ -21,20 +23,24 @@ const breadcrumbs = [
   <Hero
     eyebrow="Blog"
     title="Dog care guides and park resources"
-    summary="Review converted LeashFree.ca articles from the Webflow CMS export, including dog park tips, breed guidance, training, and seasonal care."
+    summary="Read LeashFree.ca articles on dog park tips, breed guidance, training, gear, and seasonal care."
     primaryHref="#articles"
     primaryLabel="Browse articles"
     secondaryHref="/dog-parks/"
     secondaryLabel="Find dog parks"
+    image="/images/blog/blog-how-to-choose-the-right-dog-park-for-your-pup-hero.jpg"
+    imageAlt="Dog care and park resources"
   />
 
-  <Section id="articles" title="Latest articles" intro={`${posts.length} blog posts are available in the static rebuild.`}>
+  <Section id="articles" title="Latest articles" intro={`${posts.length} dog care articles and practical guides.`}>
     <div class="grid">
       {posts.map((post) => (
         <Card
           title={post.title || post.name}
           href={`/blog/${post.slug}/`}
           description={excerpt(post.metaDescription, post.description)}
+          image={resolveMedia(post, "Hero Image", mediaMap).src}
+          imageAlt={`${post.title || post.name} article`}
           meta={dateLabel(post.raw["Published On"] || post.raw["Updated On"])}
           badges={[post.references.Category?.[0] || ""].filter(Boolean)}
           ctaLabel="Read article"

@@ -58,6 +58,7 @@ function collectionType(collection) {
     "City Pages": "city",
     Directories: "directory",
     "Dog Breeds": "breed",
+    "Dog Names": "dog-name",
     "Dog Parks": "park",
     "Pet Insurance Providers": "pet-insurance",
     Provinces: "province"
@@ -71,7 +72,8 @@ function publicFolderForType(type) {
     city: "cities",
     province: "provinces",
     blog: "blog",
-    breed: "breeds"
+    breed: "breeds",
+    "dog-name": "dog-names"
   };
   return map[type] || "general";
 }

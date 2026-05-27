@@ -1,0 +1,100 @@
+---
+import Layout from "../../components/Layout.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import ImageWithFallback from "../../components/ImageWithFallback.astro";
+import Section from "../../components/Section.astro";
+import { breadcrumbSchema } from "../../utils/content.js";
+
+const breadcrumbs = [
+  { label: "Home", href: "/" },
+  { label: "Resources", href: "/resources/" }
+];
+---
+
+<Layout
+  title="Free Dog Tools & Resources for Canadian Dog Owners | LeashFree.ca"
+  description="Discover free tools and resources for dog owners in Canada including our Dog Calorie Calculator, Dog Name Finder, and Dog Gear Finder."
+  canonical="https://leashfree.ca/resources/"
+  structuredData={breadcrumbSchema(breadcrumbs)}
+>
+  <section class="page-header">
+    <div class="container detail-layout">
+      <div>
+        <Breadcrumbs items={breadcrumbs} />
+        <div class="eyebrow">Resources</div>
+        <h1>Free Dog Tools & Resources</h1>
+        <p class="summary">
+          Science-based calculators and practical tools for Canadian dog owners.
+        </p>
+      </div>
+      <ImageWithFallback src="/images/general/blog-category-dog-gear-card.jpg" alt="Dog tools and resources" variant="hero" loading="eager" />
+    </div>
+  </section>
+
+  <Section title="Featured Tools" intro="Interactive tools for feeding, naming, and shopping decisions.">
+    <div class="resource-grid">
+      <article class="resource-card">
+        <h3>Dog Calorie Calculator (RER -> MER)</h3>
+        <p>Estimate your dog's daily calorie needs using vet-standard formulas with activity and age adjustments.</p>
+        <a class="button" href="/resources/dog-calorie-calculator/">Open calculator</a>
+      </article>
+      <article class="resource-card">
+        <h3>Dog Name Finder</h3>
+        <p>Get personalized dog name suggestions based on your pup's personality, style, and vibe.</p>
+        <a class="button" href="/dog-name-finder/">Try Dog Name Finder</a>
+      </article>
+      <article class="resource-card">
+        <h3>Dog Gear Finder</h3>
+        <p>Find dog gear recommendations tailored to your dog's activity, environment, and everyday routine.</p>
+        <a class="button" href="/resources/dog-gear-finder/">Try Dog Gear Finder</a>
+      </article>
+    </div>
+  </Section>
+
+  <Section title="Coming Soon" intro="More practical dog-owner tools are in progress.">
+    <ul>
+      <li><strong>Dog Food Comparison Tool:</strong> Compare Canadian brands by nutrition, ingredients, and price per day.</li>
+      <li><strong>Dog Breed Match Quiz:</strong> Find your ideal breed based on lifestyle, space, and activity level.</li>
+      <li><strong>Dog Insurance Finder:</strong> Explore coverage options and typical costs for Canadian pet insurance.</li>
+    </ul>
+  </Section>
+
+  <Section title="Why We Built These Tools">
+    <p>
+      LeashFree.ca exists to help Canadian dog owners make informed decisions. Our tools are research-guided,
+      practical, and designed for clear use on mobile and desktop.
+    </p>
+    <p>
+      We prioritize clarity over clutter, science over hype, and real-world usefulness in each release.
+    </p>
+  </Section>
+
+  <Section title="Explore More on LeashFree.ca">
+    <ul>
+      <li><a href="/dog-parks/">Find off-leash dog parks in your city</a></li>
+      <li><a href="/dog-breeds/">Browse our dog breed directory</a></li>
+      <li><a href="/blog/">Read our latest articles and guides</a></li>
+    </ul>
+  </Section>
+</Layout>
+
+<style>
+  .resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+  }
+  .resource-card {
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1rem;
+    background: #fff;
+  }
+  .resource-card h3 {
+    margin-top: 0;
+  }
+  .resource-card .button {
+    margin-top: 0.5rem;
+    display: inline-block;
+  }
+</style>

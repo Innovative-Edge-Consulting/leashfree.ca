@@ -1,0 +1,97 @@
+---
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import ContentBlock from "../../components/ContentBlock.astro";
+import ImageWithFallback from "../../components/ImageWithFallback.astro";
+import Layout from "../../components/Layout.astro";
+import Section from "../../components/Section.astro";
+import Card from "../../components/Card.astro";
+import mediaMap from "../../data/media-map.json";
+import dogNames from "../../data/generated/dog-names.json";
+import { breadcrumbSchema, excerpt, stripHtml } from "../../utils/content.js";
+import { resolveMedia } from "../../utils/media.js";
+
+export function getStaticPaths() {
+  return dogNames.filter((entry) => entry.slug).map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry }
+  }));
+}
+
+const { entry } = Astro.props;
+const media = (entry.media || []).find((item) => item.fieldName === "Hero Image") || (entry.media || [])[0];
+const url = media?.originalUrls?.[0] || "";
+const extMatch = url.match(/\.(jpg|jpeg|png|webp|avif|gif|svg)(?:$|[?#])/i);
+const ext = (extMatch?.[1] || "jpg").toLowerCase().replace("jpeg", "jpg");
+const localHero = `/images/dog-names/dog-name-${entry.slug}-hero.${ext}`;
+const image = { ...resolveMedia(entry, "Hero Image", mediaMap), src: localHero };
+const breed = entry.references["Breed Name"]?.[0] || entry.raw["Breed Name"] || "";
+const related = dogNames.filter((candidate) => candidate.slug !== entry.slug && candidate.references["Breed Name"]?.[0] === breed).slice(0, 3);
+const breadcrumbs = [
+  { label: "Home", href: "/" },
+  { label: "Dog Names", href: "/dog-names/" },
+  { label: entry.title || entry.name }
+];
+const structuredData = [
+  breadcrumbSchema(breadcrumbs),
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: entry.title || entry.name,
+    description: stripHtml(entry.metaDescription || entry.description),
+    datePublished: entry.raw["Published On"] || undefined,
+    dateModified: entry.raw["Updated On"] || undefined,
+    url: entry.canonicalUrl,
+    image: image.src
+  }
+];
+---
+
+<Layout title={entry.seoTitle || entry.title || entry.name} description={entry.metaDescription || entry.description} canonical={entry.canonicalUrl} ogImage={image.src} structuredData={structuredData}>
+  <section class="page-header">
+    <div class="container narrow">
+      <Breadcrumbs items={breadcrumbs} />
+      <div class="eyebrow">Dog Names</div>
+      <h1>{entry.title || entry.name}</h1>
+      <p class="summary">{excerpt(entry.description, entry.metaDescription)}</p>
+      {breed && (
+        <div class="badges">
+          <span class="badge">{breed}</span>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <Section tight>
+    <ImageWithFallback src={image.src} alt={`${entry.title || entry.name} featured image`} variant="hero" loading="eager" />
+  </Section>
+
+  <Section>
+    <div class="split">
+      <article>
+        <ContentBlock html={entry.body || entry.description} />
+      </article>
+      <aside class="sidebar">
+        {breed && (
+          <section class="card">
+            <div class="card-body">
+              <h2>Guide details</h2>
+              <ul>
+                <li><strong>Breed:</strong> {breed}</li>
+              </ul>
+            </div>
+          </section>
+        )}
+      </aside>
+    </div>
+  </Section>
+
+  {related.length > 0 && (
+    <Section title="Related dog name guides" alt>
+      <div class="grid">
+        {related.map((item) => (
+          <Card title={item.title || item.name} href={`/dog-names/${item.slug}/`} description={excerpt(item.metaDescription, item.description)} ctaLabel="Read guide" />
+        ))}
+      </div>
+    </Section>
+  )}
+</Layout>

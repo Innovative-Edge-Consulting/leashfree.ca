@@ -3,8 +3,10 @@ import Card from "../../components/Card.astro";
 import Hero from "../../components/Hero.astro";
 import Layout from "../../components/Layout.astro";
 import Section from "../../components/Section.astro";
+import mediaMap from "../../data/media-map.json";
 import directories from "../../data/generated/directories.json";
 import { excerpt, breadcrumbSchema } from "../../utils/content.js";
+import { resolveMedia } from "../../utils/media.js";
 
 const breadcrumbs = [
   { label: "Home", href: "/" },
@@ -14,25 +16,29 @@ const breadcrumbs = [
 
 <Layout
   title="Dog Services Directory"
-  description="Browse converted LeashFree.ca directory listings for dog services and pet resources."
+  description="Browse LeashFree.ca directory listings for dog services and pet resources."
   canonical="https://leashfree.ca/directory/"
   structuredData={breadcrumbSchema(breadcrumbs)}
 >
   <Hero
     eyebrow="Directory"
     title="Dog services and pet resources"
-    summary="Review converted directory listings for rescues, clinics, and dog-related services before final launch cleanup."
+    summary="Find rescues, clinics, pet stores, trainers, groomers, and other dog-related services."
     primaryHref="#listings"
     primaryLabel="Browse listings"
+    image="/images/general/category-veterinarians-hero.jpg"
+    imageAlt="Dog services and pet resources"
   />
 
-  <Section id="listings" title="Directory listings" intro={`${directories.length} service records are available for review.`}>
+  <Section id="listings" title="Directory listings" intro={`${directories.length} dog service and pet resource listings.`}>
     <div class="grid">
       {directories.map((item) => (
         <Card
           title={item.name}
           href={`/directory/${item.slug}/`}
           description={excerpt(item.metaDescription, item.description)}
+          image={resolveMedia(item, "Featured Image", mediaMap).src}
+          imageAlt={`${item.name} listing`}
           meta={[item.raw.City, item.raw.Province].filter(Boolean).join(", ")}
           badges={[item.references.Category?.[0] || item.raw.Category || ""].filter(Boolean)}
           ctaLabel="View listing"

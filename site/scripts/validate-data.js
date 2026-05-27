@@ -13,6 +13,8 @@ import {
 const indexPath = path.join(GENERATED_DIR, "collections-index.json");
 const index = fs.existsSync(indexPath) ? readJson(indexPath) : [];
 const mediaMap = fs.existsSync(MEDIA_MAP_PATH) ? readJson(MEDIA_MAP_PATH) : { items: [], missingLocalFiles: [] };
+const strictMedia = process.env.STRICT_MEDIA === "1";
+const reviewMediaBacklog = process.env.REVIEW_MEDIA_BACKLOG === "1";
 const errors = [];
 const seoWarnings = [];
 const mediaWarnings = [];
@@ -87,14 +89,28 @@ for (const collection of index) {
 }
 
 const missingMedia = mediaMap.missingLocalFiles || [];
-if (missingMedia.length) {
-  mediaWarnings.push(`${missingMedia.length} media tracker rows do not have a matched local file yet.`);
-}
-if ((mediaMap.unmatchedLocalFiles || []).length) {
-  mediaWarnings.push(`${mediaMap.unmatchedLocalFiles.length} local media files do not match tracker rows yet.`);
-}
-if ((mediaMap.riskyFiles || []).length) {
-  mediaWarnings.push(`${mediaMap.riskyFiles.length} local media files have risky names for publishing.`);
+const unmatchedLocalFiles = mediaMap.unmatchedLocalFiles || [];
+const riskyFiles = mediaMap.riskyFiles || [];
+if (strictMedia) {
+  if (missingMedia.length) {
+    mediaWarnings.push(`${missingMedia.length} media tracker rows do not have a matched local file yet.`);
+  }
+  if (unmatchedLocalFiles.length) {
+    mediaWarnings.push(`${unmatchedLocalFiles.length} local media files do not match tracker rows yet.`);
+  }
+  if (riskyFiles.length) {
+    mediaWarnings.push(`${riskyFiles.length} local media files have risky names for publishing.`);
+  }
+} else if (reviewMediaBacklog) {
+  if (missingMedia.length) {
+    ownerReviewItems.push(`[media] ${missingMedia.length} tracker rows are missing source files (backlog, non-blocking by default).`);
+  }
+  if (unmatchedLocalFiles.length) {
+    ownerReviewItems.push(`[media] ${unmatchedLocalFiles.length} local media files remain unmatched to tracker rows.`);
+  }
+  if (riskyFiles.length) {
+    ownerReviewItems.push(`[media] ${riskyFiles.length} source files still use risky naming conventions.`);
+  }
 }
 
 const warnings = [...seoWarnings, ...mediaWarnings, ...dataWarnings, ...ownerReviewItems];

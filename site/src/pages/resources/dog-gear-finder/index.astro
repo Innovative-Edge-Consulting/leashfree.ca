@@ -1,0 +1,102 @@
+---
+import Layout from "../../../components/Layout.astro";
+import Breadcrumbs from "../../../components/Breadcrumbs.astro";
+import ImageWithFallback from "../../../components/ImageWithFallback.astro";
+import { breadcrumbSchema } from "../../../utils/content.js";
+
+const breadcrumbs = [
+  { label: "Home", href: "/" },
+  { label: "Resources", href: "/resources/" },
+  { label: "Dog Gear Finder", href: "/resources/dog-gear-finder/" }
+];
+---
+
+<Layout
+  title="Dog Gear Finder | LeashFree.ca"
+  description="Find the best dog gear recommendations for your dog's lifestyle, activity level, and daily routine."
+  canonical="https://leashfree.ca/resources/dog-gear-finder/"
+  structuredData={breadcrumbSchema(breadcrumbs)}
+>
+  <section class="page-header">
+    <div class="container detail-layout">
+      <div>
+        <Breadcrumbs items={breadcrumbs} />
+        <div class="eyebrow">Resources</div>
+        <h1>Dog Gear Finder</h1>
+        <p class="summary">
+          Tell us about your dog and get practical gear recommendations for everyday walks and outdoor adventures.
+        </p>
+      </div>
+      <ImageWithFallback src="/images/general/blog-category-dog-gear-card.jpg" alt="Dog gear finder" variant="hero" loading="eager" />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow">
+      <div class="tool-card">
+        <p>
+          The original export includes a quiz-driven recommendation flow with affiliate-linked gear suggestions.
+          This page preserves that content structure while we complete the full interactive migration.
+        </p>
+        <h2>How It Works</h2>
+        <ol>
+          <li>Answer a short use-case quiz about your dog's routine and walking environment.</li>
+          <li>Get matched to a recommendation profile.</li>
+          <li>Review suggested leash and harness setups for that profile.</li>
+        </ol>
+
+        <h2>Recommendation Profiles From the Export</h2>
+        <div class="profiles">
+          <article>
+            <h3>Trail Explorer</h3>
+            <p>Hands-free freedom and mountain-grade durability for longer trail outings.</p>
+          </article>
+          <article>
+            <h3>Urban Walker</h3>
+            <p>Easy-handling, durable everyday leash setup for city walks and neighborhood routes.</p>
+          </article>
+          <article>
+            <h3>Night Adventurer</h3>
+            <p>Reflective and visibility-focused gear for low-light and evening walks.</p>
+          </article>
+          <article>
+            <h3>Training Partner</h3>
+            <p>More control-focused setups for pullers and training sessions.</p>
+          </article>
+          <article>
+            <h3>Weekend Wanderer</h3>
+            <p>Flexible, comfort-first setup for mixed use: parks, short trails, and travel days.</p>
+          </article>
+        </div>
+
+        <p>
+          Current gear collection link:
+          <a href="https://rockymountaindog.ca/collections/dog-gear?ref=ladlcphb" target="_blank" rel="noreferrer">Rocky Mountain Dog gear collection</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .tool-card {
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1rem;
+    background: #fff;
+  }
+  .profiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.75rem;
+    margin: 0.75rem 0;
+  }
+  .profiles article {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.75rem;
+  }
+  .profiles h3 {
+    margin: 0 0 0.25rem;
+  }
+</style>

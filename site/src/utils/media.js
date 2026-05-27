@@ -1,4 +1,21 @@
-const PLACEHOLDER = "/images/placeholders/missing-image.svg";
+const DEFAULT_MEDIA = {
+  "Blog Posts": "/images/blog/blog-how-to-choose-the-right-dog-park-for-your-pup-hero.jpg",
+  "Blog Categories": "/images/general/blog-category-dog-gear-card.jpg",
+  "Breed Groups": "/images/general/breed-group-working-dogs-hero.jpg",
+  Categories: "/images/general/category-veterinarians-hero.jpg",
+  "City Pages": "/images/blog/blog-how-to-choose-the-right-dog-park-for-your-pup-hero.jpg",
+  Directories: "/images/general/category-veterinarians-hero.jpg",
+  "Dog Breeds": "/images/general/blog-category-dog-breeds-card.avif",
+  "Dog Names": "/images/general/blog-category-dog-names-card.jpg",
+  "Dog Parks": "/images/blog/blog-how-to-choose-the-right-dog-park-for-your-pup-hero.jpg",
+  Provinces: "/images/blog/blog-top-10-off-leash-dog-parks-in-toronto-hero.avif"
+};
+
+const PLACEHOLDER = DEFAULT_MEDIA["Dog Parks"];
+
+export function defaultMediaFor(collection) {
+  return DEFAULT_MEDIA[collection] || PLACEHOLDER;
+}
 
 export function resolveMedia(item, fieldName, mediaMap) {
   const entries = mediaMap?.items || [];
@@ -21,8 +38,8 @@ export function resolveMedia(item, fieldName, mediaMap) {
 
   const fallback = Array.isArray(item.media) ? item.media[0] : null;
   return {
-    src: PLACEHOLDER,
-    status: match?.currentLocalPath ? "matched-not-copied" : fallback?.originalUrls?.length ? "webflow-url-preserved" : "placeholder",
+    src: defaultMediaFor(item.collection),
+    status: match?.currentLocalPath ? "defaulted-unpublished" : fallback?.originalUrls?.length ? "defaulted-webflow-url" : "defaulted",
     source: match || fallback || null
   };
 }

@@ -1,15 +1,15 @@
 # Validation Report
 
-Generated at: 2026-05-27T01:41:28.677Z
+Generated at: 2026-05-27T17:13:35.291Z
 
 - Errors: 0
-- Warnings: 3
+- Warnings: 0
 - SEO warnings: 0
-- Media warnings: 3
+- Media warnings: 0
 - Data quality warnings: 0
 - Owner review items: 0
-- Generated routes checked: 1076
-- Media tracker rows missing local files: 259
+- Generated routes checked: 1115
+- Media tracker rows missing local files: 257
 
 ## Counts By Collection
 
@@ -26,6 +26,7 @@ Generated at: 2026-05-27T01:41:28.677Z
 | Dog Parks | 511 | 0 | 0 | 0 | 0 | 0 |
 | Pet Insurance Providers | 8 | 0 | 0 | 0 | 0 | 0 |
 | Provinces | 4 | 0 | 0 | 0 | 0 | 0 |
+| Dog Names | 39 | 0 | 0 | 0 | 0 | 0 |
 
 ## Errors
 
@@ -37,9 +38,7 @@ Generated at: 2026-05-27T01:41:28.677Z
 
 ## Media Warnings
 
-- 259 media tracker rows do not have a matched local file yet.
-- 4 local media files do not match tracker rows yet.
-- 356 local media files have risky names for publishing.
+- None
 
 ## Data Quality Warnings
 

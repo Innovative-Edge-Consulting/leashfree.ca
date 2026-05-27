@@ -13,6 +13,8 @@ interface Props {
 }
 
 const { title, description, canonical, ogImage, structuredData } = Astro.props;
+const gaId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
+const gscVerification = import.meta.env.PUBLIC_GSC_VERIFICATION;
 ---
 
 <!doctype html>
@@ -21,6 +23,20 @@ const { title, description, canonical, ogImage, structuredData } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <SEO title={title} description={description} canonical={canonical} ogImage={ogImage} structuredData={structuredData} />
+    {gscVerification && <meta name="google-site-verification" content={gscVerification} />}
+    {gaId && (
+      <>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}></script>
+        <script is:inline>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${gaId}');
+          `}
+        </script>
+      </>
+    )}
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>

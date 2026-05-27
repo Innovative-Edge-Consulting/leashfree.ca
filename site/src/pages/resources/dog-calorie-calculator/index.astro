@@ -1,0 +1,246 @@
+---
+import Layout from "../../../components/Layout.astro";
+import Breadcrumbs from "../../../components/Breadcrumbs.astro";
+import ImageWithFallback from "../../../components/ImageWithFallback.astro";
+import dogBreeds from "../../../data/generated/dog-breeds.json";
+import { breadcrumbSchema } from "../../../utils/content.js";
+
+const breadcrumbs = [
+  { label: "Home", href: "/" },
+  { label: "Resources", href: "/resources/" },
+  { label: "Dog Calorie Calculator", href: "/resources/dog-calorie-calculator/" }
+];
+
+const breedOptions = [...new Set(dogBreeds.map((entry) => entry.name).filter(Boolean))].sort((a, b) => a.localeCompare(b));
+const breedMeta = Object.fromEntries(
+  dogBreeds.map((entry) => [entry.name, String(entry.references?.["Breed Group"]?.[0] || "").toLowerCase()])
+);
+---
+
+<Layout
+  title="Dog Calorie Calculator (Vet-Standard RER/MER) | LeashFree.ca"
+  description="Free dog calorie calculator for Canadian dog owners. Estimate daily calories using vet-approved RER and MER with age and activity adjustments."
+  canonical="https://leashfree.ca/resources/dog-calorie-calculator/"
+  structuredData={breadcrumbSchema(breadcrumbs)}
+>
+  <section class="page-header">
+    <div class="container detail-layout">
+      <div>
+        <Breadcrumbs items={breadcrumbs} />
+        <div class="eyebrow">Resources</div>
+        <h1>Dog Calorie Calculator (RER -> MER)</h1>
+        <p class="summary">Estimate your dog's daily calorie target using veterinarian-standard formulas.</p>
+      </div>
+      <ImageWithFallback src="/images/blog/blog-dog-age-calculator-hero.jpg" alt="Dog calorie calculator" variant="hero" loading="eager" />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow">
+      <div class="calc-card">
+        <div class="calc-grid">
+          <label>Breed
+            <select id="breed">
+              <option value="">Select breed</option>
+              {breedOptions.map((name) => <option value={name}>{name}</option>)}
+            </select>
+          </label>
+          <label>Units
+            <select id="unit">
+              <option value="kg">kg</option>
+              <option value="lb">lb</option>
+            </select>
+          </label>
+          <label>Weight
+            <input id="weight" type="number" min="0" step="0.1" placeholder="e.g., 30" />
+          </label>
+          <label>Age
+            <select id="age">
+              <option value="1">Adult (x1.00)</option>
+              <option value="0.9">Senior (x0.90)</option>
+              <option value="3">Puppy 0-4 months (x3.00)</option>
+              <option value="2">Puppy 4 months-adult (x2.00)</option>
+            </select>
+          </label>
+          <label>Activity
+            <select id="activity">
+              <option value="1.6">Neutered Adult (x1.6)</option>
+              <option value="1.8">Intact Adult (x1.8)</option>
+              <option value="1.2">Senior / Low Activity (x1.2)</option>
+              <option value="1.4">Senior / Moderate Activity (x1.4)</option>
+              <option value="2">Active / Working (x2.0)</option>
+              <option value="3">Active / Working (x3.0)</option>
+              <option value="1">Weight Loss Target (x1.0)</option>
+            </select>
+          </label>
+        </div>
+        <button id="calculate" class="button" type="button">Calculate Daily Calories</button>
+        <div id="result" class="result"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow prose">
+      <h2>How to Use Your Result</h2>
+      <p>Your number is a daily calorie target (kcal/day) using vet-standard RER to MER formulas.</p>
+      <ol>
+        <li>Convert calories to food amount using kcal per 100 g (or per cup) from your food label.</li>
+        <li>Split meals: adults usually 2 meals/day; puppies typically 3-4 meals/day.</li>
+        <li>Adjust gradually by 5-10% and reassess in 1-2 weeks.</li>
+        <li>Monitor body condition: ribs easy to feel, visible waist, slight abdominal tuck.</li>
+      </ol>
+
+      <h2>Healthy Weight Ranges by Size Class</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Dog Size</th><th>Average Weight Range</th><th>Typical Calories / Day</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Toy</td><td>2-5 kg (4-11 lb)</td><td>150-350 kcal</td></tr>
+            <tr><td>Small</td><td>5-10 kg (11-22 lb)</td><td>350-550 kcal</td></tr>
+            <tr><td>Medium</td><td>10-25 kg (22-55 lb)</td><td>550-1,100 kcal</td></tr>
+            <tr><td>Large</td><td>25-45 kg (55-99 lb)</td><td>1,100-1,900 kcal</td></tr>
+            <tr><td>Giant</td><td>45+ kg (99+ lb)</td><td>1,900+ kcal</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="muted">Estimates are baseline guidance for healthy adult dogs at maintenance.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <h3>How do I calculate calories manually?</h3>
+      <p>RER = 70 × (kg^0.75), then MER = RER × activity × age × breed tendency.</p>
+      <h3>Should I feed by calories or cups?</h3>
+      <p>Calories are more precise. Cups vary by food density, so use label kcal values.</p>
+      <h3>Can I use this for weight loss?</h3>
+      <p>Yes. Use the weight-loss activity option and target gradual loss (about 1% body weight per week).</p>
+
+      <h2>Scientific Basis</h2>
+      <p>
+        This tool follows veterinary energy estimation standards used in practice, based on RER and MER with
+        lifestyle adjustments.
+      </p>
+      <ul>
+        <li><a href="https://wsava.org/global-guidelines/global-nutrition-guidelines/" target="_blank" rel="noreferrer">WSAVA Global Nutrition Guidelines</a></li>
+        <li><a href="https://www.merckvetmanual.com/dog-owners/nutrition-and-feeding-of-dogs/nutritional-requirements-of-dogs" target="_blank" rel="noreferrer">Merck Veterinary Manual</a></li>
+        <li>National Research Council (2006), Nutrient Requirements of Dogs and Cats.</li>
+      </ul>
+      <p>
+        Want a done-for-you meal plan? <a href="https://www.nutricanine.ca/LeashFree" target="_blank" rel="noreferrer">Explore NutriCanine recipes</a>.
+      </p>
+    </div>
+  </section>
+</Layout>
+
+<script is:inline define:vars={{ breedMeta }}>
+  (() => {
+    const groupMultiplier = {
+      sporting: 1.1,
+      working: 1.1,
+      herding: 1.1,
+      hound: 1.0,
+      terrier: 1.05,
+      "non-sporting": 0.95,
+      toy: 0.9
+    };
+
+    const el = {
+      breed: document.getElementById("breed"),
+      unit: document.getElementById("unit"),
+      weight: document.getElementById("weight"),
+      age: document.getElementById("age"),
+      activity: document.getElementById("activity"),
+      button: document.getElementById("calculate"),
+      result: document.getElementById("result")
+    };
+
+    const asNumber = (value) => Number.parseFloat(value || "0");
+    const toKg = (weight, unit) => (unit === "lb" ? weight * 0.45359237 : weight);
+    const round = (value) => Math.round(value);
+
+    el.button?.addEventListener("click", () => {
+      const weightValue = asNumber(el.weight?.value);
+      if (!weightValue || weightValue <= 0) {
+        if (el.result) el.result.textContent = "Enter a valid weight to calculate calories.";
+        return;
+      }
+
+      const kg = toKg(weightValue, el.unit?.value || "kg");
+      const rer = 70 * Math.pow(kg, 0.75);
+      const activity = asNumber(el.activity?.value || "1.6");
+      const age = asNumber(el.age?.value || "1");
+      const group = breedMeta[el.breed?.value || ""] || "";
+      const breedFactor = groupMultiplier[group] || 1;
+      const mer = rer * activity * age * breedFactor;
+
+      if (el.result) {
+        el.result.innerHTML =
+          `<strong>Estimated daily calories: ${round(mer)} kcal/day</strong><br>` +
+          `RER: ${round(rer)} kcal/day | Activity: x${activity.toFixed(2)} | Age: x${age.toFixed(2)} | Breed: x${breedFactor.toFixed(2)}`;
+      }
+    });
+  })();
+</script>
+
+<style>
+  .calc-card {
+    background: #111;
+    color: #fff;
+    border-radius: 14px;
+    padding: 1rem;
+  }
+  .calc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 0.95rem;
+  }
+  select,
+  input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    background: #1a1a1a;
+    color: #fff;
+  }
+  .result {
+    margin-top: 12px;
+    border: 1px solid #333;
+    background: #171717;
+    border-radius: 10px;
+    padding: 12px;
+    min-height: 48px;
+  }
+  .prose h2 {
+    margin-top: 1.25rem;
+  }
+  .table-wrap {
+    overflow-x: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid var(--border);
+    padding: 0.6rem;
+    text-align: left;
+  }
+  .muted {
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  @media (max-width: 720px) {
+    .calc-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

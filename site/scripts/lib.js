@@ -97,6 +97,7 @@ export function collectionFileName(collectionName) {
     "City Pages": "cities.json",
     Directories: "directories.json",
     "Dog Breeds": "dog-breeds.json",
+    "Dog Names": "dog-names.json",
     "Dog Parks": "parks.json",
     "Pet Insurance Providers": "pet-insurance-providers.json",
     Provinces: "provinces.json"
@@ -115,6 +116,7 @@ export function collectionRoutePrefix(collectionName) {
     "City Pages": "/dog-parks/",
     Directories: "/directory/",
     "Dog Breeds": "/dog-breeds/",
+    "Dog Names": "/dog-names/",
     "Dog Parks": "/dog-parks/",
     "Pet Insurance Providers": "/dog-insurance-canada/",
     Provinces: "/dog-parks/"
@@ -160,6 +162,7 @@ export function getSeoDescription(raw, collectionName, name) {
     "Pet Insurance Providers": `${name} pet insurance provider information for Canadian dog owners.`,
     Provinces: `Browse dog parks and city dog park guides for ${name}.`,
     "Dog Parks": `${name} dog park information, amenities, location details, and owner review notes.`,
+    "Dog Names": `${name} dog naming guide with curated male, female, and themed name ideas.`,
     "City Pages": `Browse off-leash dog parks and dog-friendly information for ${name}.`,
     "Dog Breeds": `${name} dog breed profile, traits, care, training, and health information.`,
     "Blog Posts": `${name} from LeashFree.ca.`,
@@ -187,6 +190,7 @@ export function referenceFieldNames(collectionName) {
     "City Pages": ["Province", "Featured Park 1", "Featured Park 2", "Featured Park 3", "Province Page", "Nearby Cities"],
     Directories: ["Category", "Province", "City", "Service Tags"],
     "Dog Breeds": ["Breed Group", "Breed Group Reference", "Tags"],
+    "Dog Names": ["Breed Name", "Dog Breed Profile"],
     "Dog Parks": ["City", "Province", "Tags"],
     "Pet Insurance Providers": ["ProvincesAvailable"]
   };

@@ -1,0 +1,432 @@
+---
+import Layout from "../../components/Layout.astro";
+import Section from "../../components/Section.astro";
+import Card from "../../components/Card.astro";
+import dogNames from "../../data/generated/dog-names.json";
+import { excerpt, breadcrumbSchema } from "../../utils/content.js";
+
+const breadcrumbs = [
+  { label: "Home", href: "/" },
+  { label: "Dog Names", href: "/dog-names/" }
+];
+
+const topCsvUrl = "/data/top-1000-dog-names-2025.csv";
+---
+
+<Layout
+  title="Top Dog Names (2025): 1,000 Popular Dog & Puppy Names | LeashFree.ca"
+  description="Discover the 1,000 most popular dog and puppy names of 2025: male, female, cute, unique, strong, nature, colour, and Canadian-inspired."
+  canonical="https://leashfree.ca/dog-names/"
+  structuredData={breadcrumbSchema(breadcrumbs)}
+>
+  <section class="hero-heading-center">
+    <div class="container narrow">
+      <div class="eyebrow">Dog Names</div>
+      <h1>Top Dog Names (2025): 1,000 Male, Female, Cute & Unique Picks</h1>
+      <p class="summary">
+        Browse the Top 1,000 most popular dog and puppy names for 2025. Filter by category and gender,
+        search by meaning, or use our Dog Name Finder for personalized picks.
+      </p>
+      <div class="actions">
+        <a class="button" href="/dog-name-finder/">Try Dog Name Finder</a>
+      </div>
+    </div>
+  </section>
+
+  <Section tight>
+    <section id="lf-dog-names" data-csv-url={topCsvUrl} style="--lf-primary:#497f64;--lf-bg:#f3f9ec;--lf-ink:#173a2e;--lf-muted:#5d8a75;">
+      <div class="lf-wrap">
+        <header class="lf-head">
+          <h2 class="lf-title">Top 1,000 Dog & Puppy Names</h2>
+          <p class="lf-sub">
+            Search the list or filter by gender and category. Prefer personalized ideas?
+            <a href="/dog-name-finder/">Try the Dog Name Finder</a>.
+          </p>
+        </header>
+        <div class="lf-controls" role="region" aria-label="Dog name filters">
+          <input id="lf-search" type="search" placeholder="Search names or meanings..." aria-label="Search names or meanings" />
+          <select id="lf-gender" aria-label="Filter by ideal gender">
+            <option value="">All Genders</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Unisex</option>
+          </select>
+          <select id="lf-category" aria-label="Filter by category">
+            <option value="">All Categories</option>
+            <option>Male Names</option>
+            <option>Female Names</option>
+            <option>Cute Names</option>
+            <option>Unique Names</option>
+            <option>Strong Names</option>
+            <option>Nature-Inspired Names</option>
+            <option>Color-Inspired Names</option>
+            <option>Canadian-Inspired Names</option>
+          </select>
+          <label class="lf-pagesize"
+            >Show
+            <select id="lf-page-size" aria-label="Rows per page">
+              <option selected>50</option>
+              <option>100</option>
+              <option>200</option>
+            </select>
+            per page
+          </label>
+          <button id="lf-clear" type="button" class="lf-clear" aria-label="Clear filters">Clear</button>
+        </div>
+        <div class="lf-meta">
+          <span id="lf-count">Loading...</span>
+          <span class="lf-divider">•</span>
+          <a id="lf-share" href="#" aria-label="Copy link with current filters">Share filtered view</a>
+        </div>
+        <div class="lf-table-wrap">
+          <table class="lf-table" aria-describedby="lf-count">
+            <thead>
+              <tr>
+                <th class="col-rank">Rank</th>
+                <th class="col-name">Name</th>
+                <th class="col-desc">Meaning</th>
+                <th class="col-gender">Ideal Gender</th>
+                <th class="col-cat">Category</th>
+              </tr>
+            </thead>
+            <tbody id="lf-body"></tbody>
+          </table>
+        </div>
+        <nav class="lf-pager" aria-label="Pagination">
+          <button id="lf-prev" type="button" disabled>Previous</button>
+          <span id="lf-page-label" class="lf-page-label">Page 1</span>
+          <button id="lf-next" type="button" disabled>Next</button>
+        </nav>
+      </div>
+    </section>
+  </Section>
+
+  <Section title="Dog name ideas by breed" intro={`${dogNames.length} breed-specific naming guides.`}>
+    <div class="grid">
+      {dogNames.slice(0, 12).map((entry) => (
+        <Card
+          title={entry.title || entry.name}
+          href={`/dog-names/${entry.slug}/`}
+          description={excerpt(entry.metaDescription, entry.description)}
+          ctaLabel="Read guide"
+        />
+      ))}
+    </div>
+  </Section>
+</Layout>
+
+<style>
+  .actions {
+    margin-top: 1rem;
+  }
+  #lf-dog-names {
+    background: var(--lf-bg);
+    color: var(--lf-ink);
+    padding: 28px 0;
+  }
+  #lf-dog-names .lf-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  .lf-title {
+    margin: 0 0 6px;
+    font-size: clamp(24px, 4vw, 36px);
+    color: var(--lf-primary);
+  }
+  .lf-sub {
+    margin: 0 0 18px;
+    color: var(--lf-muted);
+  }
+  .lf-controls {
+    display: grid;
+    grid-template-columns: 1fr 160px 220px auto auto;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .lf-controls input,
+  .lf-controls select {
+    padding: 10px 12px;
+    border: 1px solid #d7e6df;
+    border-radius: 10px;
+    background: #fff;
+  }
+  .lf-pagesize {
+    color: var(--lf-muted);
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    white-space: nowrap;
+  }
+  .lf-clear {
+    padding: 10px 14px;
+    border-radius: 10px;
+    background: var(--lf-primary);
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+  }
+  .lf-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--lf-muted);
+    margin: 6px 0 12px;
+    flex-wrap: wrap;
+  }
+  .lf-table-wrap {
+    overflow: auto;
+    border: 1px solid #dbe9e3;
+    border-radius: 12px;
+    background: #fff;
+  }
+  .lf-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 760px;
+  }
+  .lf-table th,
+  .lf-table td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid #edf4f1;
+    vertical-align: top;
+  }
+  .lf-table th {
+    background: #f8fcfa;
+    color: #285543;
+    font-weight: 700;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  .lf-tag {
+    display: inline-block;
+    border: 1px solid #d3e4dd;
+    border-radius: 999px;
+    padding: 2px 8px;
+    font-size: 12px;
+    color: #2a5a47;
+    background: #f5fbf8;
+  }
+  .lf-pager {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 12px;
+  }
+  .lf-pager button {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #d3e4dd;
+    background: #fff;
+    cursor: pointer;
+  }
+  .lf-pager button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  @media (max-width: 980px) {
+    .lf-controls {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+</style>
+
+<script>
+  (() => {
+    const root = document.getElementById("lf-dog-names");
+    if (!root) return;
+    const CSV_URL = root.dataset.csvUrl;
+    const elSearch = root.querySelector("#lf-search");
+    const elGender = root.querySelector("#lf-gender");
+    const elCategory = root.querySelector("#lf-category");
+    const elPageSize = root.querySelector("#lf-page-size");
+    const elBody = root.querySelector("#lf-body");
+    const elCount = root.querySelector("#lf-count");
+    const elPrev = root.querySelector("#lf-prev");
+    const elNext = root.querySelector("#lf-next");
+    const elPageLbl = root.querySelector("#lf-page-label");
+    const elShare = root.querySelector("#lf-share");
+    const elClear = root.querySelector("#lf-clear");
+    let rows = [];
+    let filtered = [];
+    let page = 1;
+
+    function parseCSV(text) {
+      const out = [];
+      let row = [];
+      let cur = "";
+      let i = 0;
+      let inQ = false;
+      while (i < text.length) {
+        const c = text[i];
+        if (inQ) {
+          if (c === '"') {
+            if (text[i + 1] === '"') {
+              cur += '"';
+              i++;
+            } else inQ = false;
+          } else cur += c;
+        } else if (c === '"') inQ = true;
+        else if (c === ",") {
+          row.push(cur);
+          cur = "";
+        } else if (c === "\n" || c === "\r") {
+          if (cur.length || row.length) {
+            row.push(cur);
+            out.push(row);
+            row = [];
+            cur = "";
+          }
+          if (c === "\r" && text[i + 1] === "\n") i++;
+        } else cur += c;
+        i++;
+      }
+      if (cur.length || row.length) {
+        row.push(cur);
+        out.push(row);
+      }
+      return out;
+    }
+
+    function csvToObjects(csv) {
+      const arr = parseCSV(csv).filter((r) => r.length && r.some((x) => String(x).trim() !== ""));
+      const header = arr.shift().map((h) => h.trim());
+      return arr.map((r) => {
+        const o = {};
+        header.forEach((h, idx) => (o[h] = (r[idx] ?? "").toString().trim()));
+        if (o["Name Category"] === "" && o["Category"]) o["Name Category"] = o["Category"];
+        if (o["Ideal Gender"] === "" && o["Gender"]) o["Ideal Gender"] = o["Gender"];
+        return o;
+      });
+    }
+
+    function escapeHTML(s) {
+      return (s || "").replace(/[&<>"']/g, (m) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[m]);
+    }
+
+    function applyFilters() {
+      const q = elSearch.value.trim().toLowerCase();
+      const g = elGender.value;
+      const c = elCategory.value;
+      filtered = rows.filter((r) => {
+        const okQ = !q || r.Name.toLowerCase().includes(q) || r.Description.toLowerCase().includes(q);
+        const okG = !g || r["Ideal Gender"] === g;
+        const okC = !c || r["Name Category"] === c;
+        return okQ && okG && okC;
+      });
+      page = 1;
+      render();
+      updateURL();
+    }
+
+    function render() {
+      const per = parseInt(elPageSize.value, 10) || 50;
+      const total = filtered.length;
+      const pages = Math.max(1, Math.ceil(total / per));
+      page = Math.min(Math.max(1, page), pages);
+      elCount.textContent = `${total.toLocaleString()} result${total === 1 ? "" : "s"}`;
+      elPrev.disabled = page <= 1;
+      elNext.disabled = page >= pages;
+      elPageLbl.textContent = `Page ${page} of ${pages}`;
+      const start = (page - 1) * per;
+      const end = start + per;
+      const slice = filtered.slice(start, end);
+      elBody.innerHTML = slice
+        .map(
+          (r) => `
+      <tr>
+        <td class="col-rank">${r.Rank}</td>
+        <td class="col-name"><strong>${escapeHTML(r.Name)}</strong></td>
+        <td class="col-desc">${escapeHTML(r.Description)}</td>
+        <td class="col-gender">${r["Ideal Gender"] || "Unisex"}</td>
+        <td class="col-cat"><span class="lf-tag">${r["Name Category"] || "Unique Names"}</span></td>
+      </tr>`
+        )
+        .join("");
+    }
+
+    function updateURL() {
+      const params = new URLSearchParams();
+      if (elSearch.value) params.set("q", elSearch.value);
+      if (elGender.value) params.set("gender", elGender.value);
+      if (elCategory.value) params.set("category", elCategory.value);
+      if (parseInt(elPageSize.value, 10) !== 50) params.set("per", elPageSize.value);
+      params.set("page", page);
+      const qs = params.toString();
+      history.replaceState(null, "", qs ? `?${qs}` : location.pathname);
+      elShare.href = window.location.href;
+    }
+
+    function syncFromURL() {
+      const p = new URLSearchParams(location.search);
+      if (p.has("q")) elSearch.value = p.get("q");
+      if (p.has("gender")) elGender.value = p.get("gender");
+      if (p.has("category")) elCategory.value = p.get("category");
+      if (p.has("per")) elPageSize.value = p.get("per");
+      if (p.has("page")) page = Math.max(1, parseInt(p.get("page"), 10) || 1);
+    }
+
+    (async function init() {
+      if (!CSV_URL) {
+        elCount.textContent = "Error: No CSV URL found.";
+        return;
+      }
+      try {
+        const res = await fetch(CSV_URL, { cache: "no-cache" });
+        if (!res.ok) throw new Error("Network error");
+        const text = await res.text();
+        rows = csvToObjects(text)
+          .filter((r) => r.Name && r.Rank)
+          .sort((a, b) => (parseInt(a.Rank, 10) || 0) - (parseInt(b.Rank, 10) || 0));
+        syncFromURL();
+        applyFilters();
+      } catch (e) {
+        console.error(e);
+        elCount.textContent = "Could not load the list.";
+      }
+    })();
+
+    const debounce = (fn, ms) => {
+      let t;
+      return (...a) => {
+        clearTimeout(t);
+        t = setTimeout(() => fn.apply(null, a), ms);
+      };
+    };
+    elSearch.addEventListener("input", debounce(applyFilters, 150));
+    elGender.addEventListener("change", applyFilters);
+    elCategory.addEventListener("change", applyFilters);
+    elPageSize.addEventListener("change", applyFilters);
+    elPrev.addEventListener("click", () => {
+      page--;
+      render();
+      updateURL();
+    });
+    elNext.addEventListener("click", () => {
+      page++;
+      render();
+      updateURL();
+    });
+    elClear.addEventListener("click", () => {
+      elSearch.value = "";
+      elGender.value = "";
+      elCategory.value = "";
+      elPageSize.value = "50";
+      applyFilters();
+    });
+
+    document.addEventListener("click", (e) => {
+      const a = e.target.closest("#lf-share");
+      if (!a) return;
+      e.preventDefault();
+      navigator.clipboard.writeText(a.href).then(() => {
+        a.textContent = "Link copied!";
+        setTimeout(() => (a.textContent = "Share filtered view"), 1200);
+      });
+    });
+  })();
+</script>

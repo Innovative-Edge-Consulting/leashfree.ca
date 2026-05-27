@@ -64,5 +64,11 @@
     "file": "provinces.json",
     "itemCount": 4,
     "routePrefix": "/dog-parks/"
+  },
+  {
+    "collection": "Dog Names",
+    "file": "dog-names.json",
+    "itemCount": 39,
+    "routePrefix": "/dog-names/"
   }
 ]

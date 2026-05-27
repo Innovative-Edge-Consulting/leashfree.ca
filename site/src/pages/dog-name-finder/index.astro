@@ -1,0 +1,41 @@
+---
+import Layout from "../../components/Layout.astro";
+import Section from "../../components/Section.astro";
+import { breadcrumbSchema } from "../../utils/content.js";
+
+const breadcrumbs = [
+  { label: "Home", href: "/" },
+  { label: "Dog Name Finder", href: "/dog-name-finder/" }
+];
+---
+
+<Layout
+  title="AI Dog Name Finder | Personalized Dog Name Generator | LeashFree.ca"
+  description="Find the perfect name for your dog with our AI-powered name generator. Get personalized ideas based on breed, style, and vibe."
+  canonical="https://leashfree.ca/dog-name-finder/"
+  structuredData={breadcrumbSchema(breadcrumbs)}
+>
+  <section class="hero-heading-center">
+    <div class="container narrow">
+      <div class="eyebrow">Dog Name Finder</div>
+      <h1>AI Dog Name Finder</h1>
+      <p class="summary">
+        Find the perfect dog name with personalized suggestions based on breed, personality, and style.
+      </p>
+    </div>
+  </section>
+
+  <Section>
+    <div data-quizflow-embed="dog-name-finder"></div>
+  </Section>
+
+  <Section title="How It Works" intro="Get fast name ideas tailored to your pup.">
+    <ul>
+      <li>Tell us your dog's breed, personality, and vibe.</li>
+      <li>Get curated personalized name ideas.</li>
+      <li>Save your favorites or regenerate new options.</li>
+    </ul>
+  </Section>
+</Layout>
+
+<script async src="https://quizflowlabs.com/embed.js"></script>

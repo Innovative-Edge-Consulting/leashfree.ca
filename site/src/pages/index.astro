@@ -1,19 +1,23 @@
 ---
 import Card from "../components/Card.astro";
 import Hero from "../components/Hero.astro";
+import HomeMapSearch from "../components/HomeMapSearch.astro";
 import Layout from "../components/Layout.astro";
 import Section from "../components/Section.astro";
 import CTA from "../components/CTA.astro";
+import mediaMap from "../data/media-map.json";
 import parks from "../data/generated/parks.json";
 import cities from "../data/generated/cities.json";
 import provinces from "../data/generated/provinces.json";
 import posts from "../data/generated/blog-posts.json";
 import breeds from "../data/generated/dog-breeds.json";
 import { excerpt, websiteSchema } from "../utils/content.js";
+import { resolveMedia } from "../utils/media.js";
 
 const featuredCities = cities.slice(0, 8);
 const featuredParks = parks.slice(0, 6);
 const recentPosts = posts.slice(0, 3);
+const homeHeroImage = "/images/blog/blog-how-to-choose-the-right-dog-park-for-your-pup-hero.jpg";
 ---
 
 <Layout
@@ -25,15 +29,20 @@ const recentPosts = posts.slice(0, 3);
   <Hero
     eyebrow="Canadian dog park directory"
     title="Find leash-free dog parks across Canada"
-    summary="Browse city and province dog park guides, check park details, and explore dog-friendly resources while the static rebuild moves toward launch."
+    summary="Browse city and province dog park guides, check park details, and explore practical resources for Canadian dog owners."
     primaryHref="/dog-parks/"
     primaryLabel="Browse dog parks"
     secondaryHref="/dog-breeds/"
     secondaryLabel="Explore dog breeds"
-    imageAlt="LeashFree.ca dog park directory placeholder"
+    image={homeHeroImage}
+    imageAlt="Dog enjoying an off-leash park"
   />
 
-  <Section title="Browse by province" intro={`${provinces.length} province-level dog park guides are ready for review.`} alt>
+  <Section title="Search by map" intro="Find dog parks, rescues, shelters, and veterinarians across Canada.">
+    <HomeMapSearch />
+  </Section>
+
+  <Section title="Browse by province" intro={`Explore dog park guides across ${provinces.length} provinces.`} alt>
     <div class="grid compact">
       {provinces.map((province) => (
         <Card
@@ -53,6 +62,8 @@ const recentPosts = posts.slice(0, 3);
           title={`${city.name} dog parks`}
           href={`/dog-parks/${city.slug}/`}
           description={excerpt(city.description, city.metaDescription)}
+          image={resolveMedia(city, "Hero Image", mediaMap).src}
+          imageAlt={`${city.name} dog park guide`}
           badges={[city.raw.Province].filter(Boolean)}
           ctaLabel="View city"
         />
@@ -60,13 +71,15 @@ const recentPosts = posts.slice(0, 3);
     </div>
   </Section>
 
-  <Section title="Park pages ready for review" intro={`${parks.length} dog park records have been converted from the Webflow CMS export.`} alt>
+  <Section title="Dog park guides" intro={`Browse ${parks.length} dog park pages with locations, amenities, and local details.`} alt>
     <div class="grid">
       {featuredParks.map((park) => (
         <Card
           title={park.name}
           href={`/dog-parks/${park.slug}/`}
           description={excerpt(park.description, park.raw["Street Address"])}
+          image={resolveMedia(park, undefined, mediaMap).src}
+          imageAlt={`${park.name} dog park`}
           meta={[park.raw.City, park.raw.Province].filter(Boolean).join(", ")}
           ctaLabel="View park"
         />
@@ -76,22 +89,22 @@ const recentPosts = posts.slice(0, 3);
 
   <Section title="Helpful dog resources" intro="Breed profiles and articles support the dog park directory with practical ownership content.">
     <div class="grid">
-      <Card title="Dog Breeds" href="/dog-breeds/" description={`${breeds.length} breed profiles converted for static review.`} ctaLabel="Browse breeds" />
-      <Card title="Blog" href="/blog/" description={`${posts.length} articles converted from Webflow CMS.`} ctaLabel="Read articles" />
+      <Card title="Dog Breeds" href="/dog-breeds/" description={`Compare ${breeds.length} breed profiles by traits, grooming, exercise, and care needs.`} image="/images/general/blog-category-dog-breeds-card.avif" imageAlt="Dog breed profiles" ctaLabel="Browse breeds" />
+      <Card title="Blog" href="/blog/" description={`${posts.length} dog care articles, park tips, and practical ownership guides.`} image="/images/general/blog-category-dog-gear-card.jpg" imageAlt="Dog care resources" ctaLabel="Read articles" />
       {recentPosts.map((post) => (
-        <Card title={post.title || post.name} href={`/blog/${post.slug}/`} description={excerpt(post.metaDescription, post.description)} ctaLabel="Read post" />
+        <Card title={post.title || post.name} href={`/blog/${post.slug}/`} description={excerpt(post.metaDescription, post.description)} image={resolveMedia(post, "Hero Image", mediaMap).src} imageAlt={`${post.title || post.name} article`} ctaLabel="Read post" />
       ))}
     </div>
   </Section>
 
-  <Section title="About this rebuild" intro="LeashFree.ca is being moved from Webflow to a low-cost static site that keeps SEO-friendly content, local CMS data files, and local media paths.">
+  <Section title="Plan a better outing" intro="Use LeashFree.ca to compare local park options, discover breed-specific care guidance, and find dog-friendly resources nearby.">
     <CTA
-      title="Media migration is still in progress"
-      text="Some pages intentionally use placeholders until saved CMS images are reviewed, cleaned, and copied into the public image folders."
+      title="Start with dog parks near you"
+      text="Browse park pages by province and city, then check rules, amenities, and local details before heading out."
       primaryHref="/dog-parks/"
-      primaryLabel="Review dog park pages"
+      primaryLabel="Browse dog parks"
       secondaryHref="/blog/"
-      secondaryLabel="Review blog pages"
+      secondaryLabel="Read dog care guides"
     />
   </Section>
 </Layout>

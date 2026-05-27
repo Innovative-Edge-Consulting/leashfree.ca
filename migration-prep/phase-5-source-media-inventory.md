@@ -1,18 +1,18 @@
 # Phase 5 Source Media Inventory
 
-Generated at: 2026-05-27T01:41:27.160Z
+Generated at: 2026-05-27T17:13:34.711Z
 - Source folder: LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media
-- Total media files found: 356
-- Total size: 25 MB
-- File types: .png (6), .avif (243), .jpg (107)
+- Total media files found: 395
+- Total size: 31 MB
+- File types: .png (8), .avif (243), .jpg (144)
 - Duplicate filenames: 0
-- Files with spaces: 10
+- Files with spaces: 11
 - Files with special characters: 3
 - Files with very long names: 3
 - Files with uppercase extensions: 0
-- Possible duplicates by size: 5
+- Possible duplicates by size: 6
 - High-confidence matched source files: 349
-- Files not matched to tracker rows: 4
+- Files not matched to tracker rows: 40
 
 ## Duplicate Filename Sample
 
@@ -25,9 +25,12 @@ Generated at: 2026-05-27T01:41:27.160Z
 - 687bae9bd98148b169a93b25_weimaraner-dog-breed-sitting-outdoors.avif -> weimaraner-dog-breed-sitting-outdoors.avif
 - 6884018ec1f30a71198c3766_shiba-inu-dog-breed-sitting-outdoors.avif -> shiba-inu-dog-breed-sitting-outdoors.avif
 - 6884306d6dec5df6f828103c_golden-retriever-dog-breed-closeup-outdoors.avif -> golden-retriever-dog-breed-closeup-outdoors.avif
+- 6884306d6dec5df6f828103c_golden-retriever-dog-breed-closeup-outdoors.jpg -> golden-retriever-dog-breed-closeup-outdoors.jpg
 - 688437646aa97547b7eed0a4_labrador-retriever-dog-breed-standing-outdoors.avif -> labrador-retriever-dog-breed-standing-outdoors.avif
+- 688437646aa97547b7eed0a4_labrador-retriever-dog-breed-standing-outdoors.jpg -> labrador-retriever-dog-breed-standing-outdoors.jpg
 - 68843a5c6dec5df6f8295fe4_french-bulldog-dog-breed-standing-outdoors.avif -> french-bulldog-dog-breed-standing-outdoors.avif
 - 68843d7e7d8dbf98a2ca7c34_german-shepherd-dog-breed-sitting-outdoors.avif -> german-shepherd-dog-breed-sitting-outdoors.avif
+- 68843d7e7d8dbf98a2ca7c34_german-shepherd-dog-breed-sitting-outdoors.jpg -> german-shepherd-dog-breed-sitting-outdoors.jpg
 - 688441afaafa3ac399658996_poodle-dog-breed-sitting-on-forest-path.avif -> poodle-dog-breed-sitting-on-forest-path.avif
 - 6884cd8249247233db52ca1a_beagle-dog-breed-sitting-on-wooded-trail.avif -> beagle-dog-breed-sitting-on-wooded-trail.avif
 - 6884d094e02413305dc3ca0f_border-collie-dog-breed-sitting-on-nature-trail.avif -> border-collie-dog-breed-sitting-on-nature-trail.avif
@@ -77,13 +80,46 @@ Generated at: 2026-05-27T01:41:27.160Z
 - 688d1e456578c3f56ce0c806_spinone-italiano-dog-breed-sitting-on-forest-path.avif -> spinone-italiano-dog-breed-sitting-on-forest-path.avif
 - 688d1edbfaf747a874035da8_rottweiler-dog-breed-sitting-on-forest-path.avif -> rottweiler-dog-breed-sitting-on-forest-path.avif
 - 688d2563f462483add3e0aec_mudi-dog-breed-sitting-on-forest-path.avif -> mudi-dog-breed-sitting-on-forest-path.avif
-- 688d26f7dbae7e047c3dc599_papillon-dog-breed-sitting-on-forest-path.avif -> papillon-dog-breed-sitting-on-forest-path.avif
-- 688d27615cb065ab1b9d8326_old-english-sheepdog-dog-breed-sitting-on-forest-path.avif -> old-english-sheepdog-dog-breed-sitting-on-forest-path.avif
-- 688d283f58b2d59adb9b95a4_norwich-terrier-dog-breed-sitting-on-forest-path.avif -> norwich-terrier-dog-breed-sitting-on-forest-path.avif
 
 ## Unmatched Source File Sample
 
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/6884306d6dec5df6f828103c_golden-retriever-dog-breed-closeup-outdoors.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/688437646aa97547b7eed0a4_labrador-retriever-dog-breed-standing-outdoors.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68843d7e7d8dbf98a2ca7c34_german-shepherd-dog-breed-sitting-outdoors.jpg
 - LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/688ec4f3f830b978f0ce8bb0_redbone-coonhound-dog-breed-sitting-on-forest-path (1).avif
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68a4933d9925b142d2891664_german-pinscher.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b3007c53fb5920dfbd0c31_german-spitz-puppy-dog-names-hero.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b31ee020760b2387be41f2_german-shorthaired-pointer-puppy-dog-names-hero.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b32189e186a04d8b167798_german-wirehaired-pointer-puppy-dog-names-hero.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b32393ba6b0a04e2f4c6f7_giant-schnauzer-puppy-dog-names-hero.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b32637418ba6efc1334aea_glen-of-imaal-terrier-puppy-dog-names-hero.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b646bf44ca47ee86f2b07e_french-bulldog-puppy-dog-names-hero.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b6488d0faeba23040c048c_poodle-puppy-dog-names-hero.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b64a55003ae1cd12ed0b0b_australian-shepherd-puppy-dog-names-hero.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b6500c879c312c79aefeb7_havanese-puppy-dog-names-hero.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b651f452b78aa1c5811b4e_shetland-sheepdog-puppy-dog-names-hero.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b655bda71734eb5c66677c_cavalier-king-charles-spaniel-puppy-dog-names-hero.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b65a1afffc2a03d3260691_border-collie-puppy-dog-names-hero.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b8a157175a0a768754f669_Bernese Mountain Dog puppy dog names ideas.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b8a524c244b2c0d3890087_yorkshire-terrier-puppy-dog-names-hero.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b8a78b0f76d5bb91973933_shih-tzu-puppy-dog-names-hero.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68b988a5cf65bff2cb9d1d06_miniature-schnauzer-puppy-dog-names-hero.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc65ddb6fd71e63bef39c6_maltese-puppy-dog-names-hero.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc690ab82e6ba64017a1cc_boston-terrier-puppy-dog-names-hero.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc81f61628e4694492d575_pomeranian-puppy-dog-names-hero.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc85c7558e9c33b7b44637_bulldog-puppy-dog-names-hero.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc8704454cbbc5f3922a37_doberman-pinscher-puppy-dog-names-hero.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc895f791514d5d306eb5b_boxer-puppy-dog-names-hero.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc8ab70b51d0648829a796_rottweiler-puppy-dog-names-hero.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc8d76752851d41a93cb73_great-dane-puppy-dog-names-hero.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc8f4916806beb8b765710_chihuahua-puppy-dog-names-hero.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bc92d678c78b37e581360c_mastiff-puppy-dog-names-hero.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bedc5dfac4c3dd0482c4e3_saint-bernard-puppy-dog-names-hero.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bee4b44a0ec48dbb96acc2_newfoundland-puppy-dog-names-hero.jpg
 - LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bef84a071bc039505c4fdd_Wide shot of dogs running in a fenced park (2880x1488).avif
 - LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bf0830fc36f27098a4aaa8_Cute puppy with name tag (2880x1488).avif
 - LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68bf0cbbc7c5626a9d251a54_Dog with Canadian flag bandana at park (2880x1488) (2).avif
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/68e19aa0bc5790b754298498_bernedoodle-puppy-dog-names-hero.png
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/6901311f4248c664eb3b2974_labradoodle-puppy-dog-names-hero.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/69021bb51176943b3b01aa5d_cocker-spaniel-puppy-dog-names-hero.jpg
+- LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/69022227d80e2e557797b32a_cane-corso-puppy-dog-names-hero.jpg
