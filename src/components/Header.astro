@@ -2,11 +2,16 @@
 const links = [
   { href: "/dog-parks/", label: "Dog Parks" },
   { href: "/dog-breeds/", label: "Dog Breeds" },
-  { href: "/dog-names/", label: "Dog Names" },
-  { href: "/dog-name-finder/", label: "Dog Name Finder" },
-  { href: "/resources/", label: "Resources" },
   { href: "/blog/", label: "Blog" },
   { href: "/directory/", label: "Directory" }
+];
+
+const resourceLinks = [
+  { href: "/resources/", label: "All Resources" },
+  { href: "/dog-names/", label: "Dog Names" },
+  { href: "/dog-name-finder/", label: "Dog Name Finder" },
+  { href: "/resources/dog-calorie-calculator/", label: "Dog Calorie Calculator" },
+  { href: "/resources/dog-gear-finder/", label: "Dog Gear Finder" }
 ];
 ---
 
@@ -17,12 +22,26 @@ const links = [
       <span>LeashFree.ca</span>
     </a>
     <nav class="nav-links" aria-label="Main navigation">
-      {links.map((link) => <a href={link.href}>{link.label}</a>)}
+      {links.slice(0, 2).map((link) => <a href={link.href}>{link.label}</a>)}
+      <details class="nav-dropdown">
+        <summary>Resources</summary>
+        <div class="nav-dropdown-panel">
+          {resourceLinks.map((link) => <a href={link.href}>{link.label}</a>)}
+        </div>
+      </details>
+      {links.slice(2).map((link) => <a href={link.href}>{link.label}</a>)}
     </nav>
     <details class="mobile-nav">
       <summary>Menu</summary>
       <nav class="mobile-nav-panel" aria-label="Mobile navigation">
-        {links.map((link) => <a href={link.href}>{link.label}</a>)}
+        {links.slice(0, 2).map((link) => <a href={link.href}>{link.label}</a>)}
+        <details class="mobile-nav-group">
+          <summary>Resources</summary>
+          <div class="mobile-nav-submenu">
+            {resourceLinks.map((link) => <a href={link.href}>{link.label}</a>)}
+          </div>
+        </details>
+        {links.slice(2).map((link) => <a href={link.href}>{link.label}</a>)}
       </nav>
     </details>
   </div>

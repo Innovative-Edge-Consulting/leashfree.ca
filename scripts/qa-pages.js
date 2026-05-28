@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import { GENERATED_DIR, ROOT_DIR, SITE_DIR, ensureDir, escapeMd } from "./lib.js";
+import { GENERATED_DIR, SITE_DIR, ensureDir, escapeMd } from "./lib.js";
 
 const DIST_DIR = path.join(SITE_DIR, "dist");
 const PUBLIC_DIR = path.join(SITE_DIR, "public");
@@ -285,7 +285,6 @@ const csvRows = [
 
 ensureDir(GENERATED_DIR);
 fs.writeFileSync(path.join(GENERATED_DIR, "qa-page-report.md"), `${report.join("\n")}\n`);
-fs.writeFileSync(path.join(ROOT_DIR, "migration-prep", "phase-6-page-qa-report.md"), `${report.join("\n")}\n`);
 fs.writeFileSync(path.join(GENERATED_DIR, "qa-page-details.csv"), `${csvRows.map(csvLine).join("\n")}\n`);
 
 console.log(
