@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
+    "preview": "npm run build && wrangler dev",
     "convert:cms": "node scripts/convert-cms.js",
     "build:media-map": "node scripts/build-media-map.js",
     "media:scan": "node scripts/build-media-map.js",
@@ -15,13 +15,20 @@
     "validate:data": "node scripts/validate-data.js",
     "migrate:prep": "npm run convert:cms && npm run build:media-map && npm run validate:data",
     "qa:pages": "node scripts/qa-pages.js",
-    "launch:check": "npm run build && npm run qa:pages && npm audit"
+    "launch:check": "npm run build && npm run qa:pages && npm audit",
+    "generate-types": "wrangler types",
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
+    "@astrojs/cloudflare": "^13.6.0",
     "astro": "^6.3.8",
     "leaflet": "^1.9.4"
   },
   "devDependencies": {
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "wrangler": "^4.95.0"
+  },
+  "overrides": {
+    "vite": "^7"
   }
 }
