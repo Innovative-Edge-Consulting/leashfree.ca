@@ -15,6 +15,7 @@
     "validate:data": "node scripts/validate-data.js",
     "migrate:prep": "npm run convert:cms && npm run build:media-map && npm run validate:data",
     "qa:pages": "node scripts/qa-pages.js",
+    "content:health": "node scripts/content-health.js",
     "launch:check": "npm run build && npm run qa:pages && npm audit"
   },
   "dependencies": {

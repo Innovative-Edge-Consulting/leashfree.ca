@@ -14,11 +14,14 @@ import parks from "../../data/generated/parks.json";
 import provinces from "../../data/generated/provinces.json";
 import { breadcrumbSchema, excerpt, findByName, slugify, stripHtml } from "../../utils/content.js";
 import { resolveMedia } from "../../utils/media.js";
+import { isRedirectSourceRoute, withoutRedirectedRecords } from "../../utils/redirects.js";
 
 export function getStaticPaths() {
+  const activePathParks = withoutRedirectedRecords(parks);
   const grouped = new Map();
-  for (const item of [...parks, ...cities, ...provinces]) {
+  for (const item of [...activePathParks, ...cities, ...provinces]) {
     if (!item.slug) continue;
+    if (isRedirectSourceRoute(item.routePath || `/dog-parks/${item.slug}/`)) continue;
     if (!grouped.has(item.slug)) grouped.set(item.slug, []);
     grouped.get(item.slug).push(item);
   }
@@ -31,6 +34,7 @@ export function getStaticPaths() {
 
 const { matches } = Astro.props;
 const primary = matches[0];
+const activeParks = withoutRedirectedRecords(parks);
 const pageType = primary.collection;
 const image = resolveMedia(primary, undefined, mediaMap);
 const title = primary.seoTitle || primary.title || primary.name;
@@ -41,13 +45,13 @@ const isProvince = pageType === "Provinces";
 const city = isPark ? findByName(cities, primary.raw.City) : null;
 const province = isPark || isCity ? findByName(provinces, primary.raw.Province) : primary;
 const cityParks = isCity
-  ? parks.filter((park) => slugify(park.raw.City) === slugify(primary.name)).slice(0, 120)
+  ? activeParks.filter((park) => slugify(park.raw.City) === slugify(primary.name)).slice(0, 120)
   : [];
 const provinceCities = isProvince
   ? cities.filter((cityItem) => slugify(cityItem.raw.Province) === slugify(primary.name)).slice(0, 120)
   : [];
 const provinceParks = isProvince
-  ? parks.filter((park) => slugify(park.raw.Province) === slugify(primary.name)).slice(0, 120)
+  ? activeParks.filter((park) => slugify(park.raw.Province) === slugify(primary.name)).slice(0, 120)
   : [];
 const breadcrumbs = [
   { label: "Home", href: "/" },

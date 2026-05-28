@@ -1,0 +1,38 @@
+[
+  {
+    "sourceRoute": "/dog-parks/charleson-dog-park-8fc05/",
+    "targetRoute": "/dog-parks/charleson-dog-park/",
+    "status": 301,
+    "duplicateGroupKey": "park-name-city|charleson park|vancouver|bc"
+  },
+  {
+    "sourceRoute": "/dog-parks/lee-street-park-202b1/",
+    "targetRoute": "/dog-parks/lee-street-park/",
+    "status": 301,
+    "duplicateGroupKey": "park-name-city|lee street park|guelph|ontario"
+  },
+  {
+    "sourceRoute": "/dog-parks/new-brighton-dog-park-vancouver-65262/",
+    "targetRoute": "/dog-parks/new-brighton-dog-park-vancouver/",
+    "status": 301,
+    "duplicateGroupKey": "park-name-city|new brighton park|vancouver|bc"
+  },
+  {
+    "sourceRoute": "/dog-parks/balaclava-dog-park/",
+    "targetRoute": "/dog-parks/andy-livingstone-dog-park/",
+    "status": 301,
+    "duplicateGroupKey": "park-name-city|andy livingstone|vancouver|bc"
+  },
+  {
+    "sourceRoute": "/dog-parks/falaise-dog-park-vancouver/",
+    "targetRoute": "/dog-parks/falaise-park-dog-park/",
+    "status": 301,
+    "duplicateGroupKey": "park-name-city|falaise park|vancouver|bc"
+  },
+  {
+    "sourceRoute": "/dog-parks/falaise-dog-park/",
+    "targetRoute": "/dog-parks/falaise-park-dog-park/",
+    "status": 301,
+    "duplicateGroupKey": "park-name-city|falaise park|vancouver|bc"
+  }
+]

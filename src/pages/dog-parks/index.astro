@@ -9,9 +9,11 @@ import cities from "../../data/generated/cities.json";
 import provinces from "../../data/generated/provinces.json";
 import { excerpt, breadcrumbSchema } from "../../utils/content.js";
 import { resolveMedia } from "../../utils/media.js";
+import { withoutRedirectedRecords } from "../../utils/redirects.js";
 
 const featuredCities = cities.slice(0, 24);
-const featuredParks = parks.slice(0, 48);
+const activeParks = withoutRedirectedRecords(parks);
+const featuredParks = activeParks.slice(0, 48);
 const breadcrumbs = [
   { label: "Home", href: "/" },
   { label: "Dog Parks", href: "/dog-parks/" }
@@ -38,7 +40,7 @@ const breadcrumbs = [
 
   <Section title="Dog park coverage" tight>
     <div class="stat-strip">
-      <div class="stat"><strong>{parks.length}</strong><span>park records</span></div>
+      <div class="stat"><strong>{activeParks.length}</strong><span>active park records</span></div>
       <div class="stat"><strong>{cities.length}</strong><span>city guides</span></div>
       <div class="stat"><strong>{provinces.length}</strong><span>province guides</span></div>
     </div>

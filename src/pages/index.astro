@@ -13,9 +13,11 @@ import posts from "../data/generated/blog-posts.json";
 import breeds from "../data/generated/dog-breeds.json";
 import { excerpt, websiteSchema } from "../utils/content.js";
 import { resolveMedia } from "../utils/media.js";
+import { withoutRedirectedRecords } from "../utils/redirects.js";
 
 const featuredCities = cities.slice(0, 8);
-const featuredParks = parks.slice(0, 6);
+const activeParks = withoutRedirectedRecords(parks);
+const featuredParks = activeParks.slice(0, 6);
 const recentPosts = posts.slice(0, 3);
 const homeHeroImage = "/images/blog/blog-how-to-choose-the-right-dog-park-for-your-pup-hero.jpg";
 ---
@@ -71,7 +73,7 @@ const homeHeroImage = "/images/blog/blog-how-to-choose-the-right-dog-park-for-yo
     </div>
   </Section>
 
-  <Section title="Dog park guides" intro={`Browse ${parks.length} dog park pages with locations, amenities, and local details.`} alt>
+  <Section title="Dog park guides" intro={`Browse ${activeParks.length} dog park pages with locations, amenities, and local details.`} alt>
     <div class="grid">
       {featuredParks.map((park) => (
         <Card

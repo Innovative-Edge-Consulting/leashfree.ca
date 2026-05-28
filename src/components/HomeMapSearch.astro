@@ -2,6 +2,7 @@
 import "leaflet/dist/leaflet.css";
 import directories from "../data/generated/directories.json";
 import parks from "../data/generated/parks.json";
+import { withoutRedirectedRecords } from "../utils/redirects.js";
 
 function clean(value) {
   return typeof value === "string" ? value.trim() : "";
@@ -100,7 +101,8 @@ function businessItem(item) {
   };
 }
 
-const mapItems = [...parks.map(parkItem), ...directories.map(businessItem)].filter(Boolean);
+const activeParks = withoutRedirectedRecords(parks);
+const mapItems = [...activeParks.map(parkItem), ...directories.map(businessItem)].filter(Boolean);
 const provinces = [...new Set(mapItems.map((item) => item.province).filter(Boolean))].sort();
 const cities = [...new Set(mapItems.map((item) => item.city).filter(Boolean))].sort();
 const categories = [
