@@ -3,9 +3,18 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["src/components/*"],
-      "@data/*": ["src/data/*"],
-      "@utils/*": ["src/utils/*"]
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@data/*": [
+        "src/data/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ]
     }
-  }
+  },
+  "include": [
+    "./worker-configuration.d.ts"
+  ]
 }

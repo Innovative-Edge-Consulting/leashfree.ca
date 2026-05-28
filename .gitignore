@@ -9,3 +9,9 @@ Thumbs.db
 .env.local
 *.log
 LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
