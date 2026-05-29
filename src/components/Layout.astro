@@ -14,6 +14,10 @@ interface Props {
 
 const { title, description, canonical, ogImage, structuredData } = Astro.props;
 const gscVerification = import.meta.env.PUBLIC_GSC_VERIFICATION;
+const gaMeasurementId =
+  process.env.PUBLIC_GA_MEASUREMENT_ID ||
+  process.env.GA_MEASUREMENT_ID ||
+  process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 ---
 
 <!doctype html>
@@ -25,6 +29,21 @@ const gscVerification = import.meta.env.PUBLIC_GSC_VERIFICATION;
     <link rel="apple-touch-icon" href="/images/general/leashfree-logo.png" />
     <SEO title={title} description={description} canonical={canonical} ogImage={ogImage} structuredData={structuredData} />
     {gscVerification && <meta name="google-site-verification" content={gscVerification} />}
+    {
+      gaMeasurementId && (
+        <>
+          <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`} />
+          <script is:inline define:vars={{ gaMeasurementId }}>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+              dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", gaMeasurementId);
+          </script>
+        </>
+      )
+    }
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>

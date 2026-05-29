@@ -22,9 +22,8 @@ export default {
     const response = await env.ASSETS.fetch(request);
     const contentType = response.headers.get("content-type") || "";
     const gaId =
-      env.PUBLIC_GA_MEASUREMENT_ID ||
-      env.GA_MEASUREMENT_ID ||
-      env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+      env.EDGE_GA_MEASUREMENT_ID ||
+      env.EDGE_PUBLIC_GA_MEASUREMENT_ID;
 
     if (!gaId || !contentType.includes("text/html")) {
       return response;
