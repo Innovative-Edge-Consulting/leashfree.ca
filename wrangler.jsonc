@@ -1,6 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "leashfree",
+  "main": "worker.mjs",
   "compatibility_date": "2026-05-28",
   "assets": {
     "directory": "./dist"
