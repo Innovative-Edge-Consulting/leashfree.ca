@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
+    "prebuild": "node scripts/assert-production-branch.js",
     "build": "astro build",
     "preview": "astro preview",
     "convert:cms": "node scripts/convert-cms.js",
