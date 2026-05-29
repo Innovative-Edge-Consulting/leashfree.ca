@@ -1,35 +1,5 @@
 [
   {
-    "sourceRoute": "/dog-parks/charleson-dog-park-8fc05/",
-    "targetRoute": "/dog-parks/charleson-dog-park/",
-    "sourceCanonicalUrl": "https://leashfree.ca/dog-parks/charleson-dog-park-8fc05/",
-    "targetCanonicalUrl": "https://leashfree.ca/dog-parks/charleson-dog-park/",
-    "confidenceScore": 95,
-    "reason": "High-confidence duplicate with generated-looking slug; risks: exact-duplicate, generated-slug-risk, title-only-duplicate, meta-only-duplicate",
-    "duplicateGroupKey": "park-name-city|charleson park|vancouver|bc",
-    "implementationStatus": "implemented"
-  },
-  {
-    "sourceRoute": "/dog-parks/lee-street-park-202b1/",
-    "targetRoute": "/dog-parks/lee-street-park/",
-    "sourceCanonicalUrl": "https://leashfree.ca/dog-parks/lee-street-park-202b1/",
-    "targetCanonicalUrl": "https://leashfree.ca/dog-parks/lee-street-park/",
-    "confidenceScore": 95,
-    "reason": "High-confidence duplicate with generated-looking slug; risks: exact-duplicate, generated-slug-risk, title-only-duplicate",
-    "duplicateGroupKey": "park-name-city|lee street park|guelph|ontario",
-    "implementationStatus": "implemented"
-  },
-  {
-    "sourceRoute": "/dog-parks/new-brighton-dog-park-vancouver-65262/",
-    "targetRoute": "/dog-parks/new-brighton-dog-park-vancouver/",
-    "sourceCanonicalUrl": "https://leashfree.ca/dog-parks/new-brighton-dog-park-vancouver-65262/",
-    "targetCanonicalUrl": "https://leashfree.ca/dog-parks/new-brighton-dog-park-vancouver/",
-    "confidenceScore": 95,
-    "reason": "High-confidence duplicate with generated-looking slug; risks: exact-duplicate, generated-slug-risk, title-only-duplicate",
-    "duplicateGroupKey": "park-name-city|new brighton park|vancouver|bc",
-    "implementationStatus": "implemented"
-  },
-  {
     "sourceRoute": "/dog-parks/balaclava-dog-park/",
     "targetRoute": "/dog-parks/andy-livingstone-dog-park/",
     "sourceCanonicalUrl": "https://leashfree.ca/dog-parks/balaclava-dog-park/",

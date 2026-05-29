@@ -59,23 +59,50 @@ const breadcrumbs = [
   city && isPark ? { label: city.name, href: `/dog-parks/${city.slug}/` } : null,
   { label: primary.name }
 ].filter(Boolean);
-const amenities = [
-  ["Fenced", primary.raw.Fenced],
-  ["Small dog area", primary.raw["Separate Small Dog Area"]],
-  ["Surface", primary.raw["Surface type"]],
-  ["Size", primary.raw.Size],
-  ["Water", primary.raw["Water source available"]],
-  ["Benches", primary.raw.Benches],
-  ["Shade", primary.raw["Shaded area"]],
-  ["Waste bins", primary.raw["Waste bins"]],
-  ["Bag dispensers", primary.raw["Bag Dispensers"]],
-  ["Parking", primary.raw["Parking Available"]],
-  ["Washrooms", primary.raw["Washrooms nearby"]]
-].filter(([, value]) => value);
 const relatedLinks = [
   city ? { href: `/dog-parks/${city.slug}/`, label: `Dog parks in ${city.name}` } : null,
   province ? { href: `/dog-parks/${province.slug}/`, label: `Dog parks in ${province.name}` } : null
 ].filter(Boolean);
+const parkRulesText = primary.raw["Park Rules"] ? stripHtml(primary.raw["Park Rules"]).trim() : "";
+const mapLink = primary.raw["Google Maps Link"] || (primary.raw.latitude && primary.raw.longitude
+  ? `https://www.google.com/maps?q=${primary.raw.latitude},${primary.raw.longitude}`
+  : "");
+const amenityIcons = {
+  fence: "M4 6h16M4 12h16M4 18h16M8 4v16M16 4v16",
+  paw: "M8 12a2 2 0 1 0 0-4a2 2 0 0 0 0 4Zm8 0a2 2 0 1 0 0-4a2 2 0 0 0 0 4Zm-4 8c2.8 0 5-1.4 5-3.3S14.8 13 12 13s-5 1.8-5 3.7S9.2 20 12 20ZM6 8a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3Zm12 0a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3Z",
+  surface: "M3 8l9-5l9 5l-9 5l-9-5Zm0 8l9 5l9-5M3 12l9 5l9-5",
+  size: "M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7",
+  water: "M12 3c3 4 6 7 6 11a6 6 0 1 1-12 0c0-4 3-7 6-11Z",
+  bench: "M4 14h16M5 10h14M6 14v4M18 14v4",
+  shade: "M12 4v2M12 18v2M4 12h2M18 12h2M6.5 6.5l1.4 1.4M16.1 16.1l1.4 1.4M17.5 6.5l-1.4 1.4M7.9 16.1l-1.4 1.4M12 16a4 4 0 1 0 0-8a4 4 0 0 0 0 8Z",
+  waste: "M4 7h16M9 7V5h6v2M8 7l1 12h6l1-12",
+  bag: "M7 8h10l-1 12H8L7 8Zm3 0V6a2 2 0 1 1 4 0v2",
+  parking: "M5 4h14v16H5zM9 17V7h4a3 3 0 1 1 0 6H9",
+  washroom: "M8 4a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Zm8 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3ZM7 10h2v4l-1 6M15 10h2v10M13 12h6"
+};
+const amenityGroups = [
+  {
+    title: "Park setup",
+    items: [
+      { icon: "fence", label: "Fenced", value: primary.raw.Fenced },
+      { icon: "paw", label: "Small dog area", value: primary.raw["Separate Small Dog Area"] },
+      { icon: "surface", label: "Surface", value: primary.raw["Surface type"] },
+      { icon: "size", label: "Size", value: primary.raw.Size }
+    ].filter((item) => item.value)
+  },
+  {
+    title: "Facilities",
+    items: [
+      { icon: "water", label: "Water", value: primary.raw["Water source available"] },
+      { icon: "bench", label: "Benches", value: primary.raw.Benches },
+      { icon: "shade", label: "Shade", value: primary.raw["Shaded area"] },
+      { icon: "waste", label: "Waste bins", value: primary.raw["Waste bins"] },
+      { icon: "bag", label: "Bag dispensers", value: primary.raw["Bag Dispensers"] },
+      { icon: "parking", label: "Parking", value: primary.raw["Parking Available"] },
+      { icon: "washroom", label: "Washrooms", value: primary.raw["Washrooms nearby"] }
+    ].filter((item) => item.value)
+  }
+].filter((group) => group.items.length > 0);
 const structuredData = [
   breadcrumbSchema(breadcrumbs),
   isPark && primary.raw.latitude && primary.raw.longitude
@@ -123,27 +150,68 @@ const structuredData = [
 
   {isPark && (
     <Section title="Park details">
-      <div class="split">
-        <div>
-          <ul class="meta-list">
-            {primary.raw["Street Address"] && <li><strong>Address</strong><br />{primary.raw["Street Address"]}</li>}
-            {primary.raw.City && <li><strong>City</strong><br />{primary.raw.City}</li>}
-            {primary.raw.Province && <li><strong>Province</strong><br />{primary.raw.Province}</li>}
-            {primary.raw["Operating hours"] && <li><strong>Hours</strong><br />{primary.raw["Operating hours"]}</li>}
-            {primary.raw.latitude && primary.raw.longitude && <li><strong>Coordinates</strong><br />{primary.raw.latitude}, {primary.raw.longitude}</li>}
-          </ul>
+      <div class="split park-details-layout">
+        <div class="park-details-main">
+          <dl class="meta-list park-meta-list">
+            {primary.raw["Street Address"] && (
+              <div class="park-meta-item">
+                <dt>Address</dt>
+                <dd>{primary.raw["Street Address"]}</dd>
+              </div>
+            )}
+            {primary.raw.City && (
+              <div class="park-meta-item">
+                <dt>City</dt>
+                <dd>{primary.raw.City}</dd>
+              </div>
+            )}
+            {primary.raw.Province && (
+              <div class="park-meta-item">
+                <dt>Province</dt>
+                <dd>{primary.raw.Province}</dd>
+              </div>
+            )}
+            {primary.raw["Operating hours"] && (
+              <div class="park-meta-item">
+                <dt>Hours</dt>
+                <dd>{primary.raw["Operating hours"]}</dd>
+              </div>
+            )}
+            {mapLink && (
+              <div class="park-meta-item">
+                <dt>Map</dt>
+                <dd><a class="button secondary park-map-button" href={mapLink} target="_blank" rel="noreferrer">View on map</a></dd>
+              </div>
+            )}
+          </dl>
           <ContentBlock html={primary.body || primary.description} />
-          {primary.raw["Park Rules"] && <ContentBlock html={primary.raw["Park Rules"]} />}
+          {parkRulesText && (
+            <p class="park-rules-summary"><strong>Park Rules:</strong> {parkRulesText}</p>
+          )}
           {primary.raw["Notes / Comments"] && <p>{primary.raw["Notes / Comments"]}</p>}
         </div>
         <aside class="sidebar">
-          {amenities.length > 0 && (
+          {amenityGroups.length > 0 && (
             <section class="card">
-              <div class="card-body">
+              <div class="card-body amenities-card">
                 <h2>Amenities</h2>
-                <ul>
-                  {amenities.map(([label, value]) => <li><strong>{label}:</strong> {value}</li>)}
-                </ul>
+                {amenityGroups.map((group) => (
+                  <section class="amenity-group">
+                    <h3>{group.title}</h3>
+                    <ul class="amenity-chip-list">
+                      {group.items.map((item) => (
+                        <li class="amenity-chip">
+                          <span class="amenity-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                              <path d={amenityIcons[item.icon]}></path>
+                            </svg>
+                          </span>
+                          <span class="amenity-text"><strong>{item.label}</strong><span>{item.value}</span></span>
+                        </li>
+                      ))}
+                    </ul>
+                  </section>
+                ))}
               </div>
             </section>
           )}

@@ -1,0 +1,2229 @@
+[
+  {
+    "routePath": "/dog-parks/king-city/",
+    "city": "King city",
+    "province": "Ontario",
+    "currentTitle": "King city",
+    "currentMetaDescription": "Browse off-leash dog parks and dog-friendly information for King city.",
+    "priorityScore": 118,
+    "qualityCompletionScore": 18,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "seoIntro",
+      "about",
+      "rules",
+      "seasonalTips",
+      "etiquette",
+      "officialSource",
+      "faq",
+      "reviewedOn",
+      "parkListingGrid"
+    ],
+    "suggestedSearchQuery": [
+      "King city Ontario dog parks official",
+      "King city Ontario off leash dog park official",
+      "King city Ontario leash free dog park rules",
+      "King city municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.king.ca/recreation-living/parks-trails-and-forestry/parks/king-city-leash-dog-park",
+    "reviewStatus": "applied-live",
+    "sourceTitle": "King City Off-Leash Dog Park | Township Of King",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.99,
+    "sourceNotes": "Official Township of King page dedicated to the King City off-leash dog park.",
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/mission/",
+    "city": "Mission",
+    "province": "British Columbia",
+    "currentTitle": "Mission",
+    "currentMetaDescription": "Browse off-leash dog parks and dog-friendly information for Mission.",
+    "priorityScore": 118,
+    "qualityCompletionScore": 18,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "seoIntro",
+      "about",
+      "rules",
+      "seasonalTips",
+      "etiquette",
+      "officialSource",
+      "faq",
+      "reviewedOn",
+      "parkListingGrid"
+    ],
+    "suggestedSearchQuery": [
+      "Mission British Columbia dog parks official",
+      "Mission British Columbia off leash dog park official",
+      "Mission British Columbia leash free dog park rules",
+      "Mission municipal dog park bylaw"
+    ],
+    "sourceStatus": "likely-official-needs-review",
+    "recommendedSourceUrl": "https://www.mission.ca/community-environment/about-mission/mission-wayfinder",
+    "reviewStatus": "pending",
+    "sourceTitle": "Mission Wayfinder | City of Mission",
+    "sourceType": "official city or municipality website",
+    "sourceConfidenceScore": 0.68,
+    "sourceNotes": "Official City of Mission page that references off-leash dog park access, but not a dedicated off-leash policy page.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/yorkton/",
+    "city": "Yorkton",
+    "province": "Saskatchewan",
+    "currentTitle": "Off-Leash Dog Park in Yorkton SK | LeashFree.ca",
+    "currentMetaDescription": "Discover Yorkton’s fenced off-leash dog park — a spacious and friendly environment where your dog can enjoy off-leash fun in eastern Saskatchewan.",
+    "priorityScore": 116,
+    "qualityCompletionScore": 45,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "etiquette",
+      "officialSource",
+      "faq",
+      "reviewedOn",
+      "parkListingGrid"
+    ],
+    "suggestedSearchQuery": [
+      "Yorkton Saskatchewan dog parks official",
+      "Yorkton Saskatchewan off leash dog park official",
+      "Yorkton Saskatchewan leash free dog park rules",
+      "Yorkton municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.yorkton.ca/our-government/animal-services/enforcement/",
+    "reviewStatus": "applied-live",
+    "sourceTitle": "Enforcement | City of Yorkton",
+    "sourceType": "official bylaw or animal services page",
+    "sourceConfidenceScore": 0.94,
+    "sourceNotes": "City of Yorkton Animal Services enforcement page explicitly references off-leash dog park use.",
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/battleford/",
+    "city": "Battleford",
+    "province": "Saskatchewan",
+    "currentTitle": "Off-Leash Dog Park in Battleford SK | LeashFree.ca",
+    "currentMetaDescription": "Discover the off-leash dog park in Battleford, SK — a safe, fenced area where dogs can run free and socialize in west-central Saskatchewan.",
+    "priorityScore": 110,
+    "qualityCompletionScore": 64,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn",
+      "parkListingGrid"
+    ],
+    "suggestedSearchQuery": [
+      "Battleford Saskatchewan dog parks official",
+      "Battleford Saskatchewan off leash dog park official",
+      "Battleford Saskatchewan leash free dog park rules",
+      "Battleford municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://battleford.ca/off-leash-dog-park",
+    "reviewStatus": "applied-live",
+    "sourceTitle": "Off Leash Dog Park - Battleford, SK",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.98,
+    "sourceNotes": "Official Town of Battleford off-leash dog park page.",
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/estevan/",
+    "city": "Estevan",
+    "province": "Saskatchewan",
+    "currentTitle": "Off-Leash Dog Park in Estevan SK | LeashFree.ca",
+    "currentMetaDescription": "Discover Estevan’s fenced off-leash dog park — a safe and open space for dogs to play and exercise freely in Saskatchewan’s southeast.",
+    "priorityScore": 110,
+    "qualityCompletionScore": 64,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn",
+      "parkListingGrid"
+    ],
+    "suggestedSearchQuery": [
+      "Estevan Saskatchewan dog parks official",
+      "Estevan Saskatchewan off leash dog park official",
+      "Estevan Saskatchewan leash free dog park rules",
+      "Estevan municipal dog park bylaw"
+    ],
+    "sourceStatus": "likely-official-needs-review",
+    "recommendedSourceUrl": "https://estevan.ca/wp-content/uploads/2021/05/MAY-31-2021-WEBSITE.pdf",
+    "reviewStatus": "pending",
+    "sourceTitle": "City of Estevan Council Minutes (Dog Park Rules Discussion)",
+    "sourceType": "official city or municipality website",
+    "sourceConfidenceScore": 0.63,
+    "sourceNotes": "Official Estevan-hosted council document discussing off-leash dog park rules; dedicated evergreen city dog park page was not clearly found.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/gatineau/",
+    "city": "Gatineau",
+    "province": "Quebec",
+    "currentTitle": "Gatineau Dog Parks | LeashFree.ca",
+    "currentMetaDescription": "Explore Gatineau's top off-leash dog parks. Find fenced, safe, and scenic parcs à chiens where your dog can run freely across the city.",
+    "priorityScore": 110,
+    "qualityCompletionScore": 64,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn",
+      "parkListingGrid"
+    ],
+    "suggestedSearchQuery": [
+      "Gatineau Quebec dog parks official",
+      "Gatineau Quebec off leash dog park official",
+      "Gatineau Quebec leash free dog park rules",
+      "Gatineau municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.gatineau.ca/portail/default.aspx?p=guichet_municipal/animaux/chiens/chiens_dans_parcs",
+    "reviewStatus": "applied-live",
+    "sourceTitle": "Chiens dans les parcs - Ville de Gatineau",
+    "sourceType": "official bylaw or animal services page",
+    "sourceConfidenceScore": 0.97,
+    "sourceNotes": "Official Ville de Gatineau dogs-in-parks guidance including off-leash and on-leash rules.",
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/humboldt/",
+    "city": "Humboldt",
+    "province": "Saskatchewan",
+    "currentTitle": "Off-Leash Dog Park in Humboldt SK | LeashFree.ca",
+    "currentMetaDescription": "Explore Humboldt’s fenced off-leash dog park, offering a secure and welcoming environment for dogs to play and socialize in central Saskatchewan.",
+    "priorityScore": 110,
+    "qualityCompletionScore": 64,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn",
+      "parkListingGrid"
+    ],
+    "suggestedSearchQuery": [
+      "Humboldt Saskatchewan dog parks official",
+      "Humboldt Saskatchewan off leash dog park official",
+      "Humboldt Saskatchewan leash free dog park rules",
+      "Humboldt municipal dog park bylaw"
+    ],
+    "sourceStatus": "likely-official-needs-review",
+    "recommendedSourceUrl": "https://humboldt.ca/parks-and-trails/",
+    "reviewStatus": "pending",
+    "sourceTitle": "Parks, Trails & Outdoor Activities - City of Humboldt",
+    "sourceType": "official parks and recreation page",
+    "sourceConfidenceScore": 0.66,
+    "sourceNotes": "Official City of Humboldt parks page; direct off-leash dog park listing requires manual verification.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/laval/",
+    "city": "Laval",
+    "province": "Quebec",
+    "currentTitle": "Dog parks in Laval, Quebec | LeashFree.ca",
+    "currentMetaDescription": "Find Laval's top off-leash dog parks. Explore fenced parcs à chiens where dogs can run freely, play safely, and meet other pups across Laval.",
+    "priorityScore": 110,
+    "qualityCompletionScore": 64,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn",
+      "parkListingGrid"
+    ],
+    "suggestedSearchQuery": [
+      "Laval Quebec dog parks official",
+      "Laval Quebec off leash dog park official",
+      "Laval Quebec leash free dog park rules",
+      "Laval municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.laval.ca/conseils/tout-savoir-parcs-chiens-laval/",
+    "reviewStatus": "applied-live",
+    "sourceTitle": "Tout savoir sur les parcs � chiens | Ville de Laval",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.98,
+    "sourceNotes": "Official Ville de Laval page specifically about dog parks and rules.",
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/lloydminster/",
+    "city": "Lloydminster",
+    "province": "Saskatchewan",
+    "currentTitle": "Off-Leash Dog Park in Lloydminster | LeashFree.ca",
+    "currentMetaDescription": "Explore the off-leash dog park in Lloydminster, located in Bud Miller All Seasons Park. A safe, fenced space for dogs to run freely on the SK/AB border.",
+    "priorityScore": 110,
+    "qualityCompletionScore": 64,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn",
+      "parkListingGrid"
+    ],
+    "suggestedSearchQuery": [
+      "Lloydminster Saskatchewan dog parks official",
+      "Lloydminster Saskatchewan off leash dog park official",
+      "Lloydminster Saskatchewan leash free dog park rules",
+      "Lloydminster municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.lloydminster.ca/home-property-utilities/animal-services/",
+    "reviewStatus": "applied-live",
+    "sourceTitle": "Animal Services | City of Lloydminster",
+    "sourceType": "official bylaw or animal services page",
+    "sourceConfidenceScore": 0.95,
+    "sourceNotes": "Official City of Lloydminster animal services page referencing off-leash dog park and bylaw context.",
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/martensville/",
+    "city": "Martensville",
+    "province": "Saskatchewan",
+    "currentTitle": "Off-Leash Dog Park in Martensville SK | LeashFree.ca",
+    "currentMetaDescription": "Explore Martensville’s off-leash dog park, a fully fenced and open space where dogs can play and socialize safely just minutes from Saskatoon.",
+    "priorityScore": 110,
+    "qualityCompletionScore": 64,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn",
+      "parkListingGrid"
+    ],
+    "suggestedSearchQuery": [
+      "Martensville Saskatchewan dog parks official",
+      "Martensville Saskatchewan off leash dog park official",
+      "Martensville Saskatchewan leash free dog park rules",
+      "Martensville municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.martensville.ca/pages/off_leash_dog_park.html",
+    "reviewStatus": "applied-live",
+    "sourceTitle": "Off-Leash Dog Park | City of Martensville",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.99,
+    "sourceNotes": "Official City of Martensville page for the off-leash dog park.",
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/meadow-lake/",
+    "city": "Meadow Lake",
+    "province": "Saskatchewan",
+    "currentTitle": "Off-Leash Dog Park in Meadow Lake SK | LeashFree.ca",
+    "currentMetaDescription": "Visit the fenced off-leash dog park in Meadow Lake, SK — a safe and friendly space where dogs can run free and socialize in northwest Saskatchewan.",
+    "priorityScore": 110,
+    "qualityCompletionScore": 64,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn",
+      "parkListingGrid"
+    ],
+    "suggestedSearchQuery": [
+      "Meadow Lake Saskatchewan dog parks official",
+      "Meadow Lake Saskatchewan off leash dog park official",
+      "Meadow Lake Saskatchewan leash free dog park rules",
+      "Meadow Lake municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.meadowlake.ca/p/animal-control",
+    "reviewStatus": "applied-live",
+    "sourceTitle": "Animal Control | City of Meadow Lake",
+    "sourceType": "official bylaw or animal services page",
+    "sourceConfidenceScore": 0.9,
+    "sourceNotes": "Official city animal control page includes dog bylaw and off-leash dog park behaviour expectations.",
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/amherst/",
+    "city": "Amherst",
+    "province": "Nova Scotia",
+    "currentTitle": "Amherst Off-Leash Dog Park",
+    "currentMetaDescription": "Visit the off-leash dog park in Amherst, Nova Scotia, located near Dickey Park. A great place for dogs to play and socialize safely.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "officialSource",
+      "reviewedOn",
+      "parkListingGrid"
+    ],
+    "suggestedSearchQuery": [
+      "Amherst Nova Scotia dog parks official",
+      "Amherst Nova Scotia off leash dog park official",
+      "Amherst Nova Scotia leash free dog park rules",
+      "Amherst municipal dog park bylaw"
+    ],
+    "sourceStatus": "human-review-required",
+    "recommendedSourceUrl": "https://pub-amherst.escribemeetings.com/filestream.ashx?DocumentId=14062",
+    "reviewStatus": "pending",
+    "sourceTitle": "Companion Animal By-law | Town of Amherst",
+    "sourceType": "official bylaw or animal services page",
+    "sourceConfidenceScore": 0.55,
+    "sourceNotes": "Official bylaw document appears to mention leash rules, but a stable official dog-park page for Amherst should be confirmed manually.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/barrie/",
+    "city": "Barrie",
+    "province": "Ontario",
+    "currentTitle": "Dog Parks in Barrie Ontario | LeashFree.ca",
+    "currentMetaDescription": "Discover the top dog parks in Barrie, Ontario. Explore fenced off-leash areas where your dog can run, play, and socialize in a safe, natural setting.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Barrie Ontario dog parks official",
+      "Barrie Ontario off leash dog park official",
+      "Barrie Ontario leash free dog park rules",
+      "Barrie municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.barrie.ca/community-recreation-environment/parks-trails-waterfront/dog-leash-recreation-areas",
+    "reviewStatus": "applied-live",
+    "sourceTitle": "Dog Off-Leash Recreation Areas | City of Barrie",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.98,
+    "sourceNotes": "Official City of Barrie page for dog off-leash recreation areas.",
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/belleville/",
+    "city": "Belleville",
+    "province": "Ontario",
+    "currentTitle": "Dog Parks in Belleville Ontario | LeashFree.ca",
+    "currentMetaDescription": "Explore Belleville’s leash-free dog parks. Find fenced off-leash areas where your dog can exercise, socialize, and enjoy the outdoors.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Belleville Ontario dog parks official",
+      "Belleville Ontario off leash dog park official",
+      "Belleville Ontario leash free dog park rules",
+      "Belleville municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://belleville.net/facilities/facility/details/Dog-Park-at-Rotary-Park-16",
+    "reviewStatus": "applied-live",
+    "sourceTitle": "Dog Park at Rotary Park | City of Belleville",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.97,
+    "sourceNotes": "Official City of Belleville facility page for the municipal dog park.",
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/brampton/",
+    "city": "Brampton",
+    "province": "Ontario",
+    "currentTitle": "Dog Parks in Brampton | LeashFree.ca",
+    "currentMetaDescription": "Explore leash-free dog parks in Brampton, Ontario. Find fenced off-leash areas where your dog can play, exercise, and socialize safely.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Brampton Ontario dog parks official",
+      "Brampton Ontario off leash dog park official",
+      "Brampton Ontario leash free dog park rules",
+      "Brampton municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.brampton.ca/EN/residents/Animal-Services/Pages/Off-Leash-Parks.aspx",
+    "reviewStatus": "applied-live",
+    "sourceTitle": "Off-Leash Dog Areas | City of Brampton",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.99,
+    "sourceNotes": "Official City of Brampton off-leash parks page with rules.",
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/brandon/",
+    "city": "Brandon",
+    "province": "Manitoba",
+    "currentTitle": "Off-Leash Dog Parks in Brandon MB | LeashFree.ca",
+    "currentMetaDescription": "Explore the top off-leash dog parks in Brandon Manitoba. Enjoy fenced parks and scenic prairie trails where your dog can roam free and play safely.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Brandon Manitoba dog parks official",
+      "Brandon Manitoba off leash dog park official",
+      "Brandon Manitoba leash free dog park rules",
+      "Brandon municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.brandon.ca/home-property-environment/animal-control/off-leash-dog-parks/",
+    "reviewStatus": "applied-live",
+    "sourceTitle": "Off Leash Dog Parks | City of Brandon",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.99,
+    "sourceNotes": "Official City of Brandon off-leash dog parks page.",
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/burnaby/",
+    "city": "Burnaby",
+    "province": "British Columbia",
+    "currentTitle": "Off-Leash Dog Parks in Burnaby BC | LeashFree.ca",
+    "currentMetaDescription": "Explore Burnaby’s best off-leash dog parks and pet-friendly trails. Discover where your dog can play, run, and enjoy fenced parks or nature paths in Burnaby BC.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Burnaby British Columbia dog parks official",
+      "Burnaby British Columbia off leash dog park official",
+      "Burnaby British Columbia leash free dog park rules",
+      "Burnaby municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.burnaby.ca/Things-To-Do/Explore-Outdoors/Dogs-in-Parks/Off-Leash-Areas.html",
+    "reviewStatus": "applied-live",
+    "sourceTitle": "Dog Off-leash Areas | City of Burnaby",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.9,
+    "sourceNotes": "Official City of Burnaby off-leash areas URL captured from municipal link references; path should be re-checked for current site routing.",
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/campbellford/",
+    "city": "Campbellford",
+    "province": "Ontario",
+    "currentTitle": "Dog Parks in Campbellford Ontario | LeashFree.ca",
+    "currentMetaDescription": "Discover the leash-free dog park in Campbellford, Ontario. A great space for your dog to run, play, and socialize in a safe and fenced environment.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Campbellford Ontario dog parks official",
+      "Campbellford Ontario off leash dog park official",
+      "Campbellford Ontario leash free dog park rules",
+      "Campbellford municipal dog park bylaw"
+    ],
+    "sourceStatus": "human-review-required",
+    "recommendedSourceUrl": "https://www.trenthills.ca/parks-recreation-community/",
+    "reviewStatus": "pending",
+    "sourceTitle": "Parks, Recreation & Community | Municipality of Trent Hills",
+    "sourceType": "official parks and recreation page",
+    "sourceConfidenceScore": 0.52,
+    "sourceNotes": "Official municipality parks page found, but no clearly identified Campbellford off-leash dog park source on first pass.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/coquitlam/",
+    "city": "Coquitlam",
+    "province": "British Columbia",
+    "currentTitle": "Dog Parks in Coquitlam BC | LeashFree.ca",
+    "currentMetaDescription": "Explore Coquitlam’s best off-leash dog parks and trails. Discover fenced zones, open fields, and scenic forest paths where dogs can safely run and play.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Coquitlam British Columbia dog parks official",
+      "Coquitlam British Columbia off leash dog park official",
+      "Coquitlam British Columbia leash free dog park rules",
+      "Coquitlam municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.coquitlam.ca/464/Pets-Animals",
+    "reviewStatus": "applied-live",
+    "sourceTitle": "Pets & Animals | City of Coquitlam",
+    "sourceType": "official bylaw or animal services page",
+    "sourceConfidenceScore": 0.9,
+    "sourceNotes": "Official City of Coquitlam pets page linking leash/off-leash guidance and animal services.",
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/courtice/",
+    "city": "Courtice",
+    "province": "Ontario",
+    "currentTitle": "Dog Parks in Courtice Ontario | LeashFree.ca",
+    "currentMetaDescription": "Find leash-free dog parks in Courtice, Ontario. Explore safe, fenced off-leash areas where your dog can run, play, and socialize year-round.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Courtice Ontario dog parks official",
+      "Courtice Ontario off leash dog park official",
+      "Courtice Ontario leash free dog park rules",
+      "Courtice municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.clarington.net/community-and-people/animal-services/leash-free-dog-parks/",
+    "reviewStatus": "applied-live",
+    "sourceTitle": "Leash-Free Dog Parks | Municipality of Clarington",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.98,
+    "sourceNotes": "Official Clarington page explicitly includes Courtice leash-free dog park information.",
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/edmonton/",
+    "city": "Edmonton",
+    "province": "Alberta",
+    "currentTitle": "Off-Leash Dog Parks in Edmonton | LeashFree.ca",
+    "currentMetaDescription": "Explore Edmonton’s top off-leash dog parks and trails. From river valley routes to fenced dog zones, discover where your dog can run and play in Edmonton AB.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Edmonton Alberta dog parks official",
+      "Edmonton Alberta off leash dog park official",
+      "Edmonton Alberta leash free dog park rules",
+      "Edmonton municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.edmonton.ca/activities_parks_recreation/parks_rivervalley/off-leash-area-updates",
+    "reviewStatus": "applied-live",
+    "sourceTitle": "Off-Leash Areas and Dog Parks | City of Edmonton",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.99,
+    "sourceNotes": "Official City of Edmonton off-leash areas and dog parks page.",
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/etobicoke/",
+    "city": "Etobicoke",
+    "province": "Ontario",
+    "currentTitle": "Dog Parks in Etobicoke | LeashFree.ca",
+    "currentMetaDescription": "Find the best leash-free dog parks in Etobicoke, Ontario. Explore fenced off-leash areas and dog-friendly green spaces to let your pup run and play.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Etobicoke Ontario dog parks official",
+      "Etobicoke Ontario off leash dog park official",
+      "Etobicoke Ontario leash free dog park rules",
+      "Etobicoke municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.toronto.ca/community-people/animals-pets/pets-in-the-city/dog-off-leash-areas/",
+    "reviewStatus": "applied-live",
+    "sourceTitle": "Dogs Off-Leash Areas | City of Toronto",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.95,
+    "sourceNotes": "Official City of Toronto dog off-leash areas page; applicable for Etobicoke pages within Toronto city limits.",
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/gimli/",
+    "city": "Gimli",
+    "province": "Manitoba",
+    "currentTitle": "Off-Leash Dog Park in Gimli MB | LeashFree.ca",
+    "currentMetaDescription": "Discover Gimli’s off-leash dog park. A safe, fenced space near the lake for dogs to run, play, and socialize in the heart of Manitoba’s Interlake region.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Gimli Manitoba dog parks official",
+      "Gimli Manitoba off leash dog park official",
+      "Gimli Manitoba leash free dog park rules",
+      "Gimli municipal dog park bylaw"
+    ],
+    "sourceStatus": "likely-official-needs-review",
+    "recommendedSourceUrl": "https://www.gimli.ca/p/animal-control",
+    "reviewStatus": "pending",
+    "sourceTitle": "Animal Control | Rural Municipality of Gimli",
+    "sourceType": "official bylaw or animal services page",
+    "sourceConfidenceScore": 0.64,
+    "sourceNotes": "Official RM of Gimli animal control page and bylaw reference found; dedicated municipal off-leash dog park page should be confirmed.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/grande-prairie/",
+    "city": "Grande Prairie",
+    "province": "Alberta",
+    "currentTitle": "Off-Leash Dog Parks in Grande Prairie AB | LeashFree.ca",
+    "currentMetaDescription": "Explore off-leash dog parks in Grande Prairie Alberta. Find fenced runs, open fields, and accessible trails where dogs can play safely and freely.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Grande Prairie Alberta dog parks official",
+      "Grande Prairie Alberta off leash dog park official",
+      "Grande Prairie Alberta leash free dog park rules",
+      "Grande Prairie municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://cityofgp.com/economic-development/lifestyle-community/outdoor-dog-parks",
+    "reviewStatus": "applied-live",
+    "sourceTitle": "Outdoor - Dog Parks | City of Grande Prairie",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.99,
+    "sourceNotes": "Official City of Grande Prairie dog parks page.",
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/grimsby/",
+    "city": "Grimsby",
+    "province": "Ontario",
+    "currentTitle": "Dog Parks in Grimsby | LeashFree.ca",
+    "currentMetaDescription": "Discover Grimsby's designated leash-free dog parks, offering safe, fenced spaces for dogs to play and socialize off-leash year-round.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Grimsby Ontario dog parks official",
+      "Grimsby Ontario off leash dog park official",
+      "Grimsby Ontario leash free dog park rules",
+      "Grimsby municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.grimsby.ca/parks-recreation-and-culture/parks-sports-fields-and-trails/parks-and-pavilions/",
+    "reviewStatus": "applied-live",
+    "sourceTitle": "Parks and Pavilions | Town of Grimsby",
+    "sourceType": "official parks and recreation page",
+    "sourceConfidenceScore": 0.92,
+    "sourceNotes": "Official Town of Grimsby parks page includes Steve McDonnell Dog Park listing.",
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/guelph/",
+    "city": "Guelph",
+    "province": "Ontario",
+    "currentTitle": "Dog Parks in Guelph | LeashFree.ca",
+    "currentMetaDescription": "Explore the best dog parks in Guelph, Ontario — including fenced off-leash zones and leash-free trails where your dog can run, play, and socialize year-round.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Guelph Ontario dog parks official",
+      "Guelph Ontario off leash dog park official",
+      "Guelph Ontario leash free dog park rules",
+      "Guelph municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://guelph.ca/living/recreation/parks/",
+    "reviewStatus": "pending",
+    "sourceTitle": "Parks and trails - City of Guelph",
+    "sourceType": "official parks and recreation page",
+    "sourceConfidenceScore": 0.95,
+    "sourceNotes": "Official City of Guelph parks page includes off-leash dog parks section.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/halton-hills-dog-parks/",
+    "city": "Halton Hills",
+    "province": "Ontario",
+    "currentTitle": "Dog Parks in Halton Hills | LeashFree.ca",
+    "currentMetaDescription": "Find the best leash-free dog parks in Halton Hills, Ontario. Explore Trafalgar Sports Park, Cedarvale Park, Prospect Park, and more safe off-leash areas for your dog.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Halton Hills Ontario dog parks official",
+      "Halton Hills Ontario off leash dog park official",
+      "Halton Hills Ontario leash free dog park rules",
+      "Halton Hills municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.haltonhills.ca/en/explore-and-play/leash-free-dog-parks.aspx",
+    "reviewStatus": "pending",
+    "sourceTitle": "Leash Free Dog Parks - Halton Hills",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.98,
+    "sourceNotes": "Official Town of Halton Hills leash-free dog parks page.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/hamilton/",
+    "city": "Hamilton",
+    "province": "Ontario",
+    "currentTitle": "Dog Parks in Hamilton | LeashFree.ca",
+    "currentMetaDescription": "Explore Hamilton's leash-free dog parks with fully fenced off-leash areas where dogs can exercise and socialize safely year-round.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Hamilton Ontario dog parks official",
+      "Hamilton Ontario off leash dog park official",
+      "Hamilton Ontario leash free dog park rules",
+      "Hamilton municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.hamilton.ca/home-neighbourhood/animals-pets/dogs/dog-parks-and-free-running-areas",
+    "reviewStatus": "pending",
+    "sourceTitle": "Dog Parks and Free Running Areas | City of Hamilton",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.99,
+    "sourceNotes": "Official City of Hamilton page listing dog parks and free running areas.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/ladysmith/",
+    "city": "Ladysmith",
+    "province": "British Columbia",
+    "currentTitle": "Dog Parks in Ladysmith BC | LeashFree.ca",
+    "currentMetaDescription": "Looking for dog parks in Ladysmith BC? Discover fenced off-leash zones and pet-friendly trails in this scenic Vancouver Island town.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Ladysmith British Columbia dog parks official",
+      "Ladysmith British Columbia off leash dog park official",
+      "Ladysmith British Columbia leash free dog park rules",
+      "Ladysmith municipal dog park bylaw"
+    ],
+    "sourceStatus": "likely-official-needs-review",
+    "recommendedSourceUrl": "https://www.ladysmith.ca/docs/default-source/brochures-other-publications-2021/dog-faq.pdf?sfvrsn=d196ac9a_6",
+    "reviewStatus": "pending",
+    "sourceTitle": "Dog FAQ - Town of Ladysmith",
+    "sourceType": "official bylaw or animal services page",
+    "sourceConfidenceScore": 0.69,
+    "sourceNotes": "Official municipal PDF references fenced off-leash park; verify current permanent page URL.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/lethbridge/",
+    "city": "Lethbridge",
+    "province": "Alberta",
+    "currentTitle": "Off-Leash Dog Parks in Lethbridge AB | LeashFree.ca",
+    "currentMetaDescription": "Discover the top off-leash dog parks in Lethbridge Alberta. Explore fenced parks, natural trails, and wide-open spaces where your dog can play safely.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Lethbridge Alberta dog parks official",
+      "Lethbridge Alberta off leash dog park official",
+      "Lethbridge Alberta leash free dog park rules",
+      "Lethbridge municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.lethbridge.ca/parks-leisure-recreation/parks-and-playgrounds/dog-parks/",
+    "reviewStatus": "pending",
+    "sourceTitle": "Dog Parks | City of Lethbridge",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.99,
+    "sourceNotes": "Official City of Lethbridge dog parks page.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/medicine-hat/",
+    "city": "Medicine Hat",
+    "province": "Alberta",
+    "currentTitle": "Off-Leash Dog Parks in Medicine Hat AB | LeashFree.ca",
+    "currentMetaDescription": "Explore the best off-leash dog parks in Medicine Hat Alberta. Discover fenced areas, scenic trails, and open fields where your dog can safely enjoy the outdoors.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Medicine Hat Alberta dog parks official",
+      "Medicine Hat Alberta off leash dog park official",
+      "Medicine Hat Alberta leash free dog park rules",
+      "Medicine Hat municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.medicinehat.ca/parks-recreation/parks-playgrounds/parks/off-leash-dog-parks/",
+    "reviewStatus": "pending",
+    "sourceTitle": "Off-Leash Dog Parks | City of Medicine Hat",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.99,
+    "sourceNotes": "Official City of Medicine Hat off-leash dog parks page with rules.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/melfort/",
+    "city": "Melfort",
+    "province": "Saskatchewan",
+    "currentTitle": "Off-Leash Dog Park in Melfort SK | LeashFree.ca",
+    "currentMetaDescription": "Discover Melfort’s off-leash dog park, a fenced and welcoming space in northeast Saskatchewan where dogs can enjoy safe, off-leash play.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Melfort Saskatchewan dog parks official",
+      "Melfort Saskatchewan off leash dog park official",
+      "Melfort Saskatchewan leash free dog park rules",
+      "Melfort municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.melfort.ca/p/parks-greenspaces",
+    "reviewStatus": "pending",
+    "sourceTitle": "Parks & Greenspaces - City of Melfort",
+    "sourceType": "official parks and recreation page",
+    "sourceConfidenceScore": 0.91,
+    "sourceNotes": "Official City of Melfort parks page includes dog park listing.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/melville/",
+    "city": "Melville",
+    "province": "Saskatchewan",
+    "currentTitle": "Off-Leash Dog Park in Melville SK | LeashFree.ca",
+    "currentMetaDescription": "Visit the off-leash dog park in Melville, Saskatchewan. A quiet, fenced park offering dogs a safe and open space to run, play, and socialize.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Melville Saskatchewan dog parks official",
+      "Melville Saskatchewan off leash dog park official",
+      "Melville Saskatchewan leash free dog park rules",
+      "Melville municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://melville.ca/m/tourism-melville/dog-park",
+    "reviewStatus": "pending",
+    "sourceTitle": "Tourism Melville - Dog Park",
+    "sourceType": "official public facilities page",
+    "sourceConfidenceScore": 0.9,
+    "sourceNotes": "Official City of Melville tourism domain page for the off-leash dog park.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/milton/",
+    "city": "Milton",
+    "province": "Ontario",
+    "currentTitle": "Dog Parks in Milton | LeashFree.ca",
+    "currentMetaDescription": "Explore Milton's off-leash dog parks. Find safe, fenced leash-free areas where your dog can run, socialize, and enjoy outdoor recreation.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Milton Ontario dog parks official",
+      "Milton Ontario off leash dog park official",
+      "Milton Ontario leash free dog park rules",
+      "Milton municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.milton.ca/en/arts-and-recreation/dog-parks.aspx",
+    "reviewStatus": "pending",
+    "sourceTitle": "Dog Parks - Town of Milton",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.99,
+    "sourceNotes": "Official Town of Milton dog parks page.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/moose-jaw/",
+    "city": "Moose Jaw",
+    "province": "Saskatchewan",
+    "currentTitle": "Off-Leash Dog Park in Moose Jaw SK | LeashFree.ca",
+    "currentMetaDescription": "Visit Moose Jaw’s off-leash dog park — a safe, fully fenced space for dogs to run and play freely in southern Saskatchewan. Ideal for social dogs and active owners.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Moose Jaw Saskatchewan dog parks official",
+      "Moose Jaw Saskatchewan off leash dog park official",
+      "Moose Jaw Saskatchewan leash free dog park rules",
+      "Moose Jaw municipal dog park bylaw"
+    ],
+    "sourceStatus": "likely-official-needs-review",
+    "recommendedSourceUrl": "https://moosejaw.ca/wp-content/uploads/2022/03/Dog-Bylaw-4495.pdf",
+    "reviewStatus": "pending",
+    "sourceTitle": "Dog Bylaw 4495 - City of Moose Jaw",
+    "sourceType": "official bylaw or animal services page",
+    "sourceConfidenceScore": 0.67,
+    "sourceNotes": "Official city-hosted bylaw references off-leash dog park; confirm preferred current dog-park landing page.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/morden/",
+    "city": "Morden",
+    "province": "Manitoba",
+    "currentTitle": "Off-Leash Dog Park in Morden MB | LeashFree.ca",
+    "currentMetaDescription": "Explore Morden’s fenced off-leash dog park in Manitoba. A welcoming and secure place where your dog can play, run, and socialize off-leash.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Morden Manitoba dog parks official",
+      "Morden Manitoba off leash dog park official",
+      "Morden Manitoba leash free dog park rules",
+      "Morden municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://morden.ca/parks-urban-forestry/parks",
+    "reviewStatus": "pending",
+    "sourceTitle": "Parks - City of Morden",
+    "sourceType": "official parks and recreation page",
+    "sourceConfidenceScore": 0.93,
+    "sourceNotes": "Official City of Morden parks page references off-leash dog park location.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/nelson/",
+    "city": "Nelson",
+    "province": "British Columbia",
+    "currentTitle": "Dog Parks in Nelson BC | LeashFree.ca",
+    "currentMetaDescription": "Discover the best off-leash dog park in Nelson BC. Learn where dogs can run freely, explore forested trails, and enjoy pet-friendly spaces in this Kootenay town.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Nelson British Columbia dog parks official",
+      "Nelson British Columbia off leash dog park official",
+      "Nelson British Columbia leash free dog park rules",
+      "Nelson municipal dog park bylaw"
+    ],
+    "sourceStatus": "likely-official-needs-review",
+    "recommendedSourceUrl": "https://www.nelson.ca/320/Parks",
+    "reviewStatus": "pending",
+    "sourceTitle": "Parks | Nelson, BC",
+    "sourceType": "official parks and recreation page",
+    "sourceConfidenceScore": 0.62,
+    "sourceNotes": "Official City of Nelson parks page; off-leash specifics are limited and should be manually confirmed.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/new-westminster/",
+    "city": "New Westminster",
+    "province": "British Columbia",
+    "currentTitle": "Dog Parks in New Westminster BC | LeashFree.ca",
+    "currentMetaDescription": "Discover off-leash dog parks in New Westminster, BC. From fenced enclosures to riverside trails, explore the best dog-friendly areas in the Royal City.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "New Westminster British Columbia dog parks official",
+      "New Westminster British Columbia off leash dog park official",
+      "New Westminster British Columbia leash free dog park rules",
+      "New Westminster municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.newwestcity.ca/parks-and-recreation/parks/off-leash-dog-areas",
+    "reviewStatus": "pending",
+    "sourceTitle": "Off-Leash Dog Areas | City of New Westminster",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.99,
+    "sourceNotes": "Official City of New Westminster off-leash dog areas page.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/niagara-falls/",
+    "city": "Niagara Falls",
+    "province": "Ontario",
+    "currentTitle": "Dog Parks in Niagara Falls Ontario | LeashFree.ca",
+    "currentMetaDescription": "Discover the best dog parks in Niagara Falls, Ontario. Explore safe, fenced off-leash areas where your dog can run, play, and socialize year-round.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Niagara Falls Ontario dog parks official",
+      "Niagara Falls Ontario off leash dog park official",
+      "Niagara Falls Ontario leash free dog park rules",
+      "Niagara Falls municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://niagarafalls.ca/recreation-culture-and-community/parks-trails-and-sports-fields/off-leash-dog-parks/",
+    "reviewStatus": "pending",
+    "sourceTitle": "Off-Leash Dog Parks | Niagara Falls",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.99,
+    "sourceNotes": "Official City of Niagara Falls off-leash dog parks page.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/nipawin/",
+    "city": "Nipawin",
+    "province": "Saskatchewan",
+    "currentTitle": "Off-Leash Dog Park in Nipawin SK | LeashFree.ca",
+    "currentMetaDescription": "Visit Nipawin’s fenced off-leash dog park in Saskatchewan. A safe and friendly space for your dog to run free, socialize, and enjoy outdoor playtime.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Nipawin Saskatchewan dog parks official",
+      "Nipawin Saskatchewan off leash dog park official",
+      "Nipawin Saskatchewan leash free dog park rules",
+      "Nipawin municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://nipawin.com/animal-control/",
+    "reviewStatus": "pending",
+    "sourceTitle": "Animal Control - Town of Nipawin",
+    "sourceType": "official bylaw or animal services page",
+    "sourceConfidenceScore": 0.9,
+    "sourceNotes": "Official Town of Nipawin animal control page with animal control bylaw references.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/north-battleford/",
+    "city": "North Battleford",
+    "province": "Saskatchewan",
+    "currentTitle": "Off-Leash Dog Park in North Battleford SK | LeashFree.ca",
+    "currentMetaDescription": "Explore North Battleford’s fenced off-leash dog park — a secure and welcoming green space where your dog can run freely and safely in northwest Saskatchewan.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "North Battleford Saskatchewan dog parks official",
+      "North Battleford Saskatchewan off leash dog park official",
+      "North Battleford Saskatchewan leash free dog park rules",
+      "North Battleford municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.cityofnb.ca/parks-recreation-culture/parks-trails-and-sports-fields/dog-park/",
+    "reviewStatus": "pending",
+    "sourceTitle": "Dog Park | City of North Battleford",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.99,
+    "sourceNotes": "Official City of North Battleford dog park page.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/oshawa/",
+    "city": "Oshawa",
+    "province": "Ontario",
+    "currentTitle": "Dog Parks in Oshawa Ontario | LeashFree.ca",
+    "currentMetaDescription": "Explore leash-free dog parks in Oshawa, Ontario. Find fenced off-leash spaces where your dog can play, socialize, and enjoy the outdoors safely.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Oshawa Ontario dog parks official",
+      "Oshawa Ontario off leash dog park official",
+      "Oshawa Ontario leash free dog park rules",
+      "Oshawa municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.oshawa.ca/en/home-property/off-leash-parks.aspx?_mid_=3344",
+    "reviewStatus": "pending",
+    "sourceTitle": "Off-Leash Parks - City of Oshawa",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.98,
+    "sourceNotes": "Official City of Oshawa off-leash parks page.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/portage-la-prairie/",
+    "city": "Portage la Prairie",
+    "province": "Manitoba",
+    "currentTitle": "Off-Leash Dog Parks in Portage la Prairie MB",
+    "currentMetaDescription": "Discover off-leash dog parks in Portage la Prairie Manitoba. Explore fenced parks and scenic trails where your dog can run freely and safely.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Portage la Prairie Manitoba dog parks official",
+      "Portage la Prairie Manitoba off leash dog park official",
+      "Portage la Prairie Manitoba leash free dog park rules",
+      "Portage la Prairie municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.city-plap.com/media/hkqfa1q4/animalcontrolbylaw21-8721.pdf",
+    "reviewStatus": "pending",
+    "sourceTitle": "Animal Control By-Law 21-8721 - City of Portage la Prairie",
+    "sourceType": "official bylaw or animal services page",
+    "sourceConfidenceScore": 0.92,
+    "sourceNotes": "Official city bylaw PDF includes off-leash dog park rules and city licensing requirements.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/prince-albert/",
+    "city": "Prince Albert",
+    "province": "Saskatchewan",
+    "currentTitle": "Off-Leash Dog Park in Prince Albert SK | LeashFree.ca",
+    "currentMetaDescription": "Explore Prince Albert’s fenced off-leash dog park — a safe space in northern Saskatchewan where dogs can run freely and socialize outdoors.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Prince Albert Saskatchewan dog parks official",
+      "Prince Albert Saskatchewan off leash dog park official",
+      "Prince Albert Saskatchewan leash free dog park rules",
+      "Prince Albert municipal dog park bylaw"
+    ],
+    "sourceStatus": "likely-official-needs-review",
+    "recommendedSourceUrl": "https://www.citypa.ca/en/living-in-our-community/animal-services.aspx",
+    "reviewStatus": "pending",
+    "sourceTitle": "Animal Services | City of Prince Albert",
+    "sourceType": "official bylaw or animal services page",
+    "sourceConfidenceScore": 0.66,
+    "sourceNotes": "Official city animal services page found; dedicated off-leash dog park page not clearly identified.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/quebec-city/",
+    "city": "Quebec City",
+    "province": "Quebec",
+    "currentTitle": "Dog Parks in Quebec City | LeashFree.ca",
+    "currentMetaDescription": "Explore Quebec City’s many dog parks and off-leash areas — fenced spaces for safe canine play, with options throughout the city’s beautiful boroughs.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Quebec City Quebec dog parks official",
+      "Quebec City Quebec off leash dog park official",
+      "Quebec City Quebec leash free dog park rules",
+      "Quebec City municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.ville.quebec.qc.ca/citoyens/animaux/parcs-et-aires-d-exercice-canins/index.aspx",
+    "reviewStatus": "pending",
+    "sourceTitle": "Parcs et aires d?exercice canins | Ville de Qu?bec",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.99,
+    "sourceNotes": "Official Ville de Qu?bec page listing dog parks and canine exercise areas.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/quinte-west/",
+    "city": "Quinte West",
+    "province": "Ontario",
+    "currentTitle": "Dog Parks in Quinte West Ontario | LeashFree.ca",
+    "currentMetaDescription": "Find off-leash dog parks and scenic trails in Quinte West, Ontario. Enjoy fenced spaces and pet-friendly paths throughout this welcoming community.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Quinte West Ontario dog parks official",
+      "Quinte West Ontario off leash dog park official",
+      "Quinte West Ontario leash free dog park rules",
+      "Quinte West municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://quintewest.ca/parks-facilities/parks/hanna-park/",
+    "reviewStatus": "pending",
+    "sourceTitle": "Hanna Park - The City of Quinte West",
+    "sourceType": "official public facilities page",
+    "sourceConfidenceScore": 0.91,
+    "sourceNotes": "Official City of Quinte West park page includes dog park rules for the site.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/red-deer/",
+    "city": "Red Deer",
+    "province": "Alberta",
+    "currentTitle": "Off-Leash Dog Parks in Red Deer AB | LeashFree.ca",
+    "currentMetaDescription": "Discover the top off-leash dog parks in Red Deer Alberta. Explore fenced areas, wooded trails, and natural green spaces where your dog can roam freely.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Red Deer Alberta dog parks official",
+      "Red Deer Alberta off leash dog park official",
+      "Red Deer Alberta leash free dog park rules",
+      "Red Deer municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.reddeer.ca/recreation-and-culture/outdoor-recreation/year-round-activities/off-leash-dog-parks/",
+    "reviewStatus": "pending",
+    "sourceTitle": "Off Leash Dog Parks - The City of Red Deer",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.99,
+    "sourceNotes": "Official City of Red Deer off-leash dog parks page.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/regina/",
+    "city": "Regina",
+    "province": "Saskatchewan",
+    "currentTitle": "Off-Leash Dog Parks in Regina SK | LeashFree.ca",
+    "currentMetaDescription": "Discover Regina’s top off-leash dog parks, including naturalized trails and fenced spaces. Explore where your dog can safely play across Saskatchewan’s capital city.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Regina Saskatchewan dog parks official",
+      "Regina Saskatchewan off leash dog park official",
+      "Regina Saskatchewan leash free dog park rules",
+      "Regina municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.regina.ca/parks-recreation-culture/parks/dog-parks/index.html",
+    "reviewStatus": "pending",
+    "sourceTitle": "Dog Parks | City of Regina",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.99,
+    "sourceNotes": "Official City of Regina dog parks page.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/restoule/",
+    "city": "Restoule",
+    "province": "Ontario",
+    "currentTitle": "Dog-Friendly Spaces in Restoule Ontario | LeashFree.ca",
+    "currentMetaDescription": "Explore dog-friendly spaces in Restoule, Ontario. While there’s no fenced dog park, discover off-leash-friendly trails and nature areas in and around Restoule Provincial Park.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Restoule Ontario dog parks official",
+      "Restoule Ontario off leash dog park official",
+      "Restoule Ontario leash free dog park rules",
+      "Restoule municipal dog park bylaw"
+    ],
+    "sourceStatus": "human-review-required",
+    "recommendedSourceUrl": "https://www.ontarioparks.ca/park/restoule",
+    "reviewStatus": "pending",
+    "sourceTitle": "Restoule Provincial Park | Ontario Parks",
+    "sourceType": "official public facilities page",
+    "sourceConfidenceScore": 0.53,
+    "sourceNotes": "Official Ontario Parks source found, but this is a provincial park context rather than a municipal off-leash city page; requires manual validation of page intent.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/saskatoon/",
+    "city": "Saskatoon",
+    "province": "Saskatchewan",
+    "currentTitle": "Off-Leash Dog Parks in Saskatoon SK | LeashFree.ca",
+    "currentMetaDescription": "Find the best off-leash dog parks in Saskatoon, Saskatchewan. Explore fenced play areas, open trails, and dog-friendly parks across the city.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Saskatoon Saskatchewan dog parks official",
+      "Saskatoon Saskatchewan off leash dog park official",
+      "Saskatoon Saskatchewan leash free dog park rules",
+      "Saskatoon municipal dog park bylaw"
+    ],
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.saskatoon.ca/services-residents/pet-licensing-animal-services/dog-parks",
+    "reviewStatus": "pending",
+    "sourceTitle": "Dog Parks | City of Saskatoon",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.99,
+    "sourceNotes": "Official City of Saskatoon dog parks page.",
+    "reviewedOnCandidate": "2026-05-29"
+  },
+  {
+    "routePath": "/dog-parks/selkirk/",
+    "city": "Selkirk",
+    "province": "Manitoba",
+    "currentTitle": "Off-Leash Dog Parks in Selkirk MB | LeashFree.ca",
+    "currentMetaDescription": "Discover off-leash dog parks in Selkirk Manitoba. Explore fenced spaces and local walking trails where your dog can play safely near Winnipeg.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Selkirk Manitoba dog parks official",
+      "Selkirk Manitoba off leash dog park official",
+      "Selkirk Manitoba leash free dog park rules",
+      "Selkirk municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  },
+  {
+    "routePath": "/dog-parks/st-albert/",
+    "city": "St. Albert",
+    "province": "Alberta",
+    "currentTitle": "Off-Leash Dog Parks in St. Albert AB | LeashFree.ca",
+    "currentMetaDescription": "Discover off-leash dog parks in St. Albert Alberta. Find fenced parks, river trail access, and wide-open spaces where your dog can roam free near Edmonton.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "St. Albert Alberta dog parks official",
+      "St. Albert Alberta off leash dog park official",
+      "St. Albert Alberta leash free dog park rules",
+      "St. Albert municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  },
+  {
+    "routePath": "/dog-parks/steinbach/",
+    "city": "Steinbach",
+    "province": "Manitoba",
+    "currentTitle": "Off-Leash Dog Park in Steinbach MB | LeashFree.ca",
+    "currentMetaDescription": "Explore Steinbach’s fenced off-leash dog park. A safe, well-kept area for dogs to run freely, socialize, and enjoy the outdoors near Winnipeg.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Steinbach Manitoba dog parks official",
+      "Steinbach Manitoba off leash dog park official",
+      "Steinbach Manitoba leash free dog park rules",
+      "Steinbach municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  },
+  {
+    "routePath": "/dog-parks/stouffville/",
+    "city": "Stouffville",
+    "province": "Ontario",
+    "currentTitle": "Dog Parks in Stouffville Ontario | Leashfree.ca",
+    "currentMetaDescription": "Discover Stouffville’s top off-leash dog park in Memorial Park. Safe, fenced, and surrounded by trails - perfect for your dog to run, play, and socialize.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "officialSource",
+      "reviewedOn",
+      "parkListingGrid"
+    ],
+    "suggestedSearchQuery": [
+      "Stouffville Ontario dog parks official",
+      "Stouffville Ontario off leash dog park official",
+      "Stouffville Ontario leash free dog park rules",
+      "Stouffville municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  },
+  {
+    "routePath": "/dog-parks/surrey/",
+    "city": "Surrey",
+    "province": "British Columbia",
+    "currentTitle": "Off-Leash Dog Parks in Surrey BC | LeashFree.ca",
+    "currentMetaDescription": "Discover Surrey’s top off-leash dog parks, from fenced fields to beach trails. Explore the best spots for dogs to run, play, and socialize across BC’s second-largest city.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Surrey British Columbia dog parks official",
+      "Surrey British Columbia off leash dog park official",
+      "Surrey British Columbia leash free dog park rules",
+      "Surrey municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  },
+  {
+    "routePath": "/dog-parks/swift-current/",
+    "city": "Swift Current",
+    "province": "Saskatchewan",
+    "currentTitle": "Off-Leash Dog Park in Swift Current SK | LeashFree.ca",
+    "currentMetaDescription": "Discover Swift Current’s fenced off-leash dog park — a safe, green space where dogs can run, socialize, and enjoy the outdoors in Southwest Saskatchewan.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Swift Current Saskatchewan dog parks official",
+      "Swift Current Saskatchewan off leash dog park official",
+      "Swift Current Saskatchewan leash free dog park rules",
+      "Swift Current municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  },
+  {
+    "routePath": "/dog-parks/thompson/",
+    "city": "Thompson",
+    "province": "Manitoba",
+    "currentTitle": "Off-Leash Dog Park in Thompson MB | LeashFree.ca",
+    "currentMetaDescription": "Discover Thompson’s off-leash dog park in northern Manitoba. A safe, fenced green space for dogs to run and play year-round in the heart of the north.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Thompson Manitoba dog parks official",
+      "Thompson Manitoba off leash dog park official",
+      "Thompson Manitoba leash free dog park rules",
+      "Thompson municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  },
+  {
+    "routePath": "/dog-parks/tiny/",
+    "city": "Tiny",
+    "province": "Ontario",
+    "currentTitle": "Dog Parks in Tiny Ontario | LeashFree.ca",
+    "currentMetaDescription": "Explore dog-friendly beaches and trails in Tiny, Ontario. While no fenced dog park exists, leashed dogs are welcome at select beaches and natural areas.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Tiny Ontario dog parks official",
+      "Tiny Ontario off leash dog park official",
+      "Tiny Ontario leash free dog park rules",
+      "Tiny municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  },
+  {
+    "routePath": "/dog-parks/victoria/",
+    "city": "Victoria",
+    "province": "British Columbia",
+    "currentTitle": "Dog Parks in Victoria BC | LeashFree.ca",
+    "currentMetaDescription": "Discover Victoria’s best off-leash dog parks and pet-friendly trails. Explore fenced areas, coastal walks, and scenic green spaces for dogs in BC’s capital.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Victoria British Columbia dog parks official",
+      "Victoria British Columbia off leash dog park official",
+      "Victoria British Columbia leash free dog park rules",
+      "Victoria municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  },
+  {
+    "routePath": "/dog-parks/warman/",
+    "city": "Warman",
+    "province": "Saskatchewan",
+    "currentTitle": "Off-Leash Dog Park in Warman SK | LeashFree.ca",
+    "currentMetaDescription": "Visit Warman’s fenced off-leash dog park in Saskatchewan. A clean and open space where your dog can run freely and safely, just minutes from Saskatoon.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Warman Saskatchewan dog parks official",
+      "Warman Saskatchewan off leash dog park official",
+      "Warman Saskatchewan leash free dog park rules",
+      "Warman municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  },
+  {
+    "routePath": "/dog-parks/weyburn/",
+    "city": "Weyburn",
+    "province": "Saskatchewan",
+    "currentTitle": "Off-Leash Dog Park in Weyburn SK | LeashFree.ca",
+    "currentMetaDescription": "Visit Weyburn’s fenced off-leash dog park — a clean, friendly space where dogs can run free and socialize in southeast Saskatchewan.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Weyburn Saskatchewan dog parks official",
+      "Weyburn Saskatchewan off leash dog park official",
+      "Weyburn Saskatchewan leash free dog park rules",
+      "Weyburn municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  },
+  {
+    "routePath": "/dog-parks/white-rock/",
+    "city": "White Rock",
+    "province": "British Columbia",
+    "currentTitle": "Dog Parks in White Rock BC",
+    "currentMetaDescription": "Explore White Rock's top off-leash dog park and scenic trails. Discover where dogs can roam and play in this seaside BC city.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "White Rock British Columbia dog parks official",
+      "White Rock British Columbia off leash dog park official",
+      "White Rock British Columbia leash free dog park rules",
+      "White Rock municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  },
+  {
+    "routePath": "/dog-parks/winnipeg/",
+    "city": "Winnipeg",
+    "province": "Manitoba",
+    "currentTitle": "Off-Leash Dog Parks in Winnipeg MB | LeashFree.ca",
+    "currentMetaDescription": "Discover Winnipeg’s best off-leash dog parks. From fenced dog runs to scenic forest trails, explore safe and accessible spaces for your dog to play.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Winnipeg Manitoba dog parks official",
+      "Winnipeg Manitoba off leash dog park official",
+      "Winnipeg Manitoba leash free dog park rules",
+      "Winnipeg municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  },
+  {
+    "routePath": "/dog-parks/woodstock/",
+    "city": "Woodstock",
+    "province": "Ontario",
+    "currentTitle": "Dog Parks in Woodstock Ontario | LeashFree.ca",
+    "currentMetaDescription": "Discover leash-free dog parks in Woodstock, Ontario. Explore safe, fenced off-leash areas where your dog can run, play, and socialize.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Woodstock Ontario dog parks official",
+      "Woodstock Ontario off leash dog park official",
+      "Woodstock Ontario leash free dog park rules",
+      "Woodstock municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  },
+  {
+    "routePath": "/dog-parks/yarmouth/",
+    "city": "Yarmouth",
+    "province": "Nova Scotia",
+    "currentTitle": "Yarmouth Off-Leash Dog Parks",
+    "currentMetaDescription": "Discover the Yarmouth Dog Park in Nova Scotia – a fully fenced, two-zone dog park along the scenic Broad Brook Trail. Perfect for safe off-leash play.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "officialSource",
+      "reviewedOn",
+      "parkListingGrid"
+    ],
+    "suggestedSearchQuery": [
+      "Yarmouth Nova Scotia dog parks official",
+      "Yarmouth Nova Scotia off leash dog park official",
+      "Yarmouth Nova Scotia leash free dog park rules",
+      "Yarmouth municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  },
+  {
+    "routePath": "/dog-parks/montreal/",
+    "city": "Montreal",
+    "province": "Quebec",
+    "currentTitle": "Montreal Dog Parks",
+    "currentMetaDescription": "Discover the best dog parks in Montreal. Enjoy secure, fenced parcs à chiens where your pup can run, play, and socialize off-leash across boroughs.",
+    "priorityScore": 107,
+    "qualityCompletionScore": 73,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "seasonalTips",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Montreal Quebec dog parks official",
+      "Montreal Quebec off leash dog park official",
+      "Montreal Quebec leash free dog park rules",
+      "Montreal municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  },
+  {
+    "routePath": "/dog-parks/bridgewater/",
+    "city": "Bridgewater",
+    "province": "Nova Scotia",
+    "currentTitle": "Off-Leash Dog Park in Bridgewater, NS",
+    "currentMetaDescription": "Visit Bridgewater’s fully fenced South Shore Vet Dog Zone for off-leash dog fun. Safe, clean, and community-supported dog park in Generations Active Park.",
+    "priorityScore": 104,
+    "qualityCompletionScore": 82,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Bridgewater Nova Scotia dog parks official",
+      "Bridgewater Nova Scotia off leash dog park official",
+      "Bridgewater Nova Scotia leash free dog park rules",
+      "Bridgewater municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  },
+  {
+    "routePath": "/dog-parks/kentville/",
+    "city": "Kentville",
+    "province": "Nova Scotia",
+    "currentTitle": "Off-Leash Dog Park in Kentville, NS",
+    "currentMetaDescription": "Discover Kentville's off-leash dog park located at 250 Park Street. A secure and welcoming space for dogs to run, play, and socialize freely.",
+    "priorityScore": 104,
+    "qualityCompletionScore": 82,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Kentville Nova Scotia dog parks official",
+      "Kentville Nova Scotia off leash dog park official",
+      "Kentville Nova Scotia leash free dog park rules",
+      "Kentville municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  },
+  {
+    "routePath": "/dog-parks/london/",
+    "city": "London",
+    "province": "Ontario",
+    "currentTitle": "Find dog parks in London Onatio | Leashfree.ca",
+    "currentMetaDescription": "Explore the best leash-free dog parks in London, Ontario. Discover safe, fenced off-leash spaces for your pup to run, play, and socialize year-round.",
+    "priorityScore": 104,
+    "qualityCompletionScore": 82,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "London Ontario dog parks official",
+      "London Ontario off leash dog park official",
+      "London Ontario leash free dog park rules",
+      "London municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  },
+  {
+    "routePath": "/dog-parks/sydney/",
+    "city": "Sydney",
+    "province": "Nova Scotia",
+    "currentTitle": "Off-Leash Dog Parks in Sydney, NS",
+    "currentMetaDescription": "Explore off-leash dog parks in Sydney, Nova Scotia. Find the best spaces for your dog to run, play, and socialize safely.",
+    "priorityScore": 104,
+    "qualityCompletionScore": 82,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Sydney Nova Scotia dog parks official",
+      "Sydney Nova Scotia off leash dog park official",
+      "Sydney Nova Scotia leash free dog park rules",
+      "Sydney municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  },
+  {
+    "routePath": "/dog-parks/truro/",
+    "city": "Truro",
+    "province": "Nova Scotia",
+    "currentTitle": "Off-Leash Dog Park in Truro",
+    "currentMetaDescription": "Discover Truro’s fully fenced off-leash dog park in Bible Hill, Nova Scotia. Safe, clean, and perfect for dogs of all sizes with space to run and explore.",
+    "priorityScore": 104,
+    "qualityCompletionScore": 82,
+    "thinContent": true,
+    "missingRequiredFields": [
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Truro Nova Scotia dog parks official",
+      "Truro Nova Scotia off leash dog park official",
+      "Truro Nova Scotia leash free dog park rules",
+      "Truro municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  },
+  {
+    "routePath": "/dog-parks/charleston-lake/",
+    "city": "Charleston Lake",
+    "province": "Ontario",
+    "currentTitle": "Dog-Friendly Trails at Charleston Lake Ontario | LeashFree.ca",
+    "currentMetaDescription": "Discover dog-friendly hiking trails at Charleston Lake, Ontario. While there’s no fenced dog park, dogs on leash are welcome to explore scenic park trails and lakeside routes.",
+    "priorityScore": 82,
+    "qualityCompletionScore": 73,
+    "thinContent": false,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Charleston Lake Ontario dog parks official",
+      "Charleston Lake Ontario off leash dog park official",
+      "Charleston Lake Ontario leash free dog park rules",
+      "Charleston Lake municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  },
+  {
+    "routePath": "/dog-parks/chilliwack/",
+    "city": "Chilliwack",
+    "province": "British Columbia",
+    "currentTitle": "Dog Parks in Chilliwack BC | LeashFree.ca",
+    "currentMetaDescription": "Explore off-leash dog parks in Chilliwack, BC. From fenced dog runs to scenic trails, discover the best places to exercise your dog in this outdoor-loving Fraser Valley city.",
+    "priorityScore": 82,
+    "qualityCompletionScore": 73,
+    "thinContent": false,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Chilliwack British Columbia dog parks official",
+      "Chilliwack British Columbia off leash dog park official",
+      "Chilliwack British Columbia leash free dog park rules",
+      "Chilliwack municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  },
+  {
+    "routePath": "/dog-parks/kelowna/",
+    "city": "Kelowna",
+    "province": "British Columbia",
+    "currentTitle": "Dog Parks in Kelowna BC | LeashFree.ca",
+    "currentMetaDescription": "Explore the top off-leash dog parks in Kelowna BC. Find fenced play areas, dog-friendly beaches, and scenic trails perfect for active pets.",
+    "priorityScore": 82,
+    "qualityCompletionScore": 73,
+    "thinContent": false,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Kelowna British Columbia dog parks official",
+      "Kelowna British Columbia off leash dog park official",
+      "Kelowna British Columbia leash free dog park rules",
+      "Kelowna municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  },
+  {
+    "routePath": "/dog-parks/st-catharines/",
+    "city": "St. Catharines",
+    "province": "Ontario",
+    "currentTitle": "Dog Parks in St. Catharines | LeashFree.ca",
+    "currentMetaDescription": "Discover the best leash-free dog parks in St. Catharines, Ontario. Explore safe, off-leash areas to let your dog run and play freely.",
+    "priorityScore": 82,
+    "qualityCompletionScore": 73,
+    "thinContent": false,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "St. Catharines Ontario dog parks official",
+      "St. Catharines Ontario off leash dog park official",
+      "St. Catharines Ontario leash free dog park rules",
+      "St. Catharines municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  },
+  {
+    "routePath": "/dog-parks/toronto/",
+    "city": "Toronto",
+    "province": "Ontario",
+    "currentTitle": "Dog Parks in Toronto | LeashFree.ca",
+    "currentMetaDescription": "Discover Toronto's top leash-free dog parks. Explore fenced, off-leash areas across the city where your dog can run and play safely.",
+    "priorityScore": 82,
+    "qualityCompletionScore": 73,
+    "thinContent": false,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Toronto Ontario dog parks official",
+      "Toronto Ontario off leash dog park official",
+      "Toronto Ontario leash free dog park rules",
+      "Toronto municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  },
+  {
+    "routePath": "/dog-parks/vancouver/",
+    "city": "Vancouver",
+    "province": "British Columbia",
+    "currentTitle": "Off Leash Dog Parks in Vancouver BC | LeashFree.ca",
+    "currentMetaDescription": "Discover the best off leash dog parks in Vancouver, BC. From beaches to trails, explore over 30 designated leash-free areas for dogs in one of Canada’s most pet-friendly cities.",
+    "priorityScore": 82,
+    "qualityCompletionScore": 73,
+    "thinContent": false,
+    "missingRequiredFields": [
+      "rules",
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Vancouver British Columbia dog parks official",
+      "Vancouver British Columbia off leash dog park official",
+      "Vancouver British Columbia leash free dog park rules",
+      "Vancouver municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  },
+  {
+    "routePath": "/dog-parks/calgary/",
+    "city": "Calgary",
+    "province": "Alberta",
+    "currentTitle": "Off-Leash Dog Parks in Calgary | LeashFree.ca",
+    "currentMetaDescription": "Discover Calgary’s best off-leash dog parks. From fenced enclosures to riverside trails and natural meadows, explore where your pup can roam free across the city.",
+    "priorityScore": 79,
+    "qualityCompletionScore": 82,
+    "thinContent": false,
+    "missingRequiredFields": [
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Calgary Alberta dog parks official",
+      "Calgary Alberta off leash dog park official",
+      "Calgary Alberta leash free dog park rules",
+      "Calgary municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  },
+  {
+    "routePath": "/dog-parks/kitchener/",
+    "city": "Kitchener",
+    "province": "Ontario",
+    "currentTitle": "Dog Parks in Kitchener | LeashFree.ca",
+    "currentMetaDescription": "Explore leash-free dog parks in Kitchener, Ontario. Find fenced off-leash areas where your dog can play, exercise, and socialize safely.",
+    "priorityScore": 79,
+    "qualityCompletionScore": 82,
+    "thinContent": false,
+    "missingRequiredFields": [
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Kitchener Ontario dog parks official",
+      "Kitchener Ontario off leash dog park official",
+      "Kitchener Ontario leash free dog park rules",
+      "Kitchener municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  },
+  {
+    "routePath": "/dog-parks/oakville/",
+    "city": "Oakville",
+    "province": "Ontario",
+    "currentTitle": "Dog Parks in Oakville, Ontario | Best Leash and leash Free Dog Parks",
+    "currentMetaDescription": "Explore the best off-leash dog parks in Oakville, Ontario. Find fenced and unfenced leash-free zones, parking, and dog-friendly trails where pets can run, play, and socialize safely.",
+    "priorityScore": 79,
+    "qualityCompletionScore": 82,
+    "thinContent": false,
+    "missingRequiredFields": [
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Oakville Ontario dog parks official",
+      "Oakville Ontario off leash dog park official",
+      "Oakville Ontario leash free dog park rules",
+      "Oakville municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  },
+  {
+    "routePath": "/dog-parks/ottawa/",
+    "city": "Ottawa",
+    "province": "Ontario",
+    "currentTitle": "Dog Parks in Ottawa | LeashFree.ca",
+    "currentMetaDescription": "Discover the top leash-free dog parks in Ottawa. Explore fully fenced off-leash areas, wooded trails, and wide-open dog parks across the city.",
+    "priorityScore": 79,
+    "qualityCompletionScore": 82,
+    "thinContent": false,
+    "missingRequiredFields": [
+      "officialSource",
+      "reviewedOn"
+    ],
+    "suggestedSearchQuery": [
+      "Ottawa Ontario dog parks official",
+      "Ottawa Ontario off leash dog park official",
+      "Ottawa Ontario leash free dog park rules",
+      "Ottawa municipal dog park bylaw"
+    ],
+    "sourceStatus": "not-started",
+    "recommendedSourceUrl": "",
+    "reviewStatus": "pending"
+  }
+]

@@ -13,6 +13,18 @@ const breadcrumbs = [
   { label: "Home", href: "/" },
   { label: "Dog Breeds", href: "/dog-breeds/" }
 ];
+
+const getOptions = (field) =>
+  [...new Set(breeds.map((breed) => breed.raw[field]).filter(Boolean))].sort((a, b) =>
+    a.localeCompare(b)
+  );
+
+const groupOptions = getOptions("Breed Group");
+const sizeOptions = getOptions("Size Category");
+const activityOptions = getOptions("Activity Level");
+const trainabilityOptions = getOptions("Trainability");
+const apartmentOptions = getOptions("Apartment Friendly");
+const hypoallergenicOptions = getOptions("Hypoallergenic");
 ---
 
 <Layout
@@ -42,18 +54,282 @@ const breadcrumbs = [
   </Section>
 
   <Section id="breeds" title="Breed profiles" intro={`Explore ${breeds.length} breed profiles for Canadian dog owners.`}>
-    <div class="grid">
+    <div class="breed-search">
+      <div class="breed-search-head">
+        <label for="breed-search-input">Search & filter breeds</label>
+        <button id="breed-filter-reset" class="breed-filter-reset" type="button">Reset filters</button>
+      </div>
+      <input id="breed-search-input" type="search" placeholder="Type a breed name (e.g., Labrador Retriever)" autocomplete="off" />
+      <div class="breed-filters" aria-label="Advanced breed filters">
+        <label>
+          <span>Group</span>
+          <select id="breed-filter-group">
+            <option value="">All groups</option>
+            {groupOptions.map((option) => <option value={option}>{option}</option>)}
+          </select>
+        </label>
+        <label>
+          <span>Size</span>
+          <select id="breed-filter-size">
+            <option value="">All sizes</option>
+            {sizeOptions.map((option) => <option value={option}>{option}</option>)}
+          </select>
+        </label>
+        <label>
+          <span>Activity</span>
+          <select id="breed-filter-activity">
+            <option value="">All activity levels</option>
+            {activityOptions.map((option) => <option value={option}>{option}</option>)}
+          </select>
+        </label>
+        <label>
+          <span>Trainability</span>
+          <select id="breed-filter-trainability">
+            <option value="">All trainability levels</option>
+            {trainabilityOptions.map((option) => <option value={option}>{option}</option>)}
+          </select>
+        </label>
+        <label>
+          <span>Apartment</span>
+          <select id="breed-filter-apartment">
+            <option value="">All options</option>
+            {apartmentOptions.map((option) => <option value={option}>{option}</option>)}
+          </select>
+        </label>
+        <label>
+          <span>Hypoallergenic</span>
+          <select id="breed-filter-hypoallergenic">
+            <option value="">All options</option>
+            {hypoallergenicOptions.map((option) => <option value={option}>{option}</option>)}
+          </select>
+        </label>
+      </div>
+      <p id="breed-search-summary" class="small" aria-live="polite">Showing all {breeds.length} breeds</p>
+    </div>
+    <div id="breed-grid" class="grid">
       {breeds.map((breed) => (
-        <Card
-          title={breed.name}
-          href={`/dog-breeds/${breed.slug}/`}
-          description={excerpt(breed.metaDescription, breed.description)}
-          image={resolveMedia(breed, "Featured Image", mediaMap).src}
-          imageAlt={`${breed.name} breed`}
-          badges={[breed.raw["Breed Group"], breed.raw["Size Category"]].filter(Boolean)}
-          ctaLabel="View breed"
-        />
+        <div
+          class="breed-search-item"
+          data-breed-name={breed.name.toLowerCase()}
+          data-breed-group={breed.raw["Breed Group"]?.toLowerCase() ?? ""}
+          data-breed-size={breed.raw["Size Category"]?.toLowerCase() ?? ""}
+          data-breed-activity={breed.raw["Activity Level"]?.toLowerCase() ?? ""}
+          data-breed-trainability={breed.raw["Trainability"]?.toLowerCase() ?? ""}
+          data-breed-apartment={breed.raw["Apartment Friendly"]?.toLowerCase() ?? ""}
+          data-breed-hypoallergenic={breed.raw["Hypoallergenic"]?.toLowerCase() ?? ""}
+        >
+          <Card
+            title={breed.name}
+            href={`/dog-breeds/${breed.slug}/`}
+            description={excerpt(breed.metaDescription, breed.description)}
+            image={resolveMedia(breed, "Featured Image", mediaMap).src}
+            imageAlt={`${breed.name} breed`}
+            imagePosition="center 20%"
+            badges={[breed.raw["Breed Group"], breed.raw["Size Category"]].filter(Boolean)}
+            ctaLabel="View breed"
+          />
+        </div>
       ))}
     </div>
+    <p id="breed-search-empty" class="small breed-search-empty" hidden>No breeds matched your search.</p>
   </Section>
+
+  <script is:inline>
+    (() => {
+      const input = document.getElementById("breed-search-input");
+      const reset = document.getElementById("breed-filter-reset");
+      const summary = document.getElementById("breed-search-summary");
+      const empty = document.getElementById("breed-search-empty");
+      const filters = {
+        group: document.getElementById("breed-filter-group"),
+        size: document.getElementById("breed-filter-size"),
+        activity: document.getElementById("breed-filter-activity"),
+        trainability: document.getElementById("breed-filter-trainability"),
+        apartment: document.getElementById("breed-filter-apartment"),
+        hypoallergenic: document.getElementById("breed-filter-hypoallergenic")
+      };
+      const items = Array.from(document.querySelectorAll(".breed-search-item"));
+      if (!input || !summary || !empty || !reset || items.length === 0) return;
+
+      const total = items.length;
+
+      const update = () => {
+        const query = input.value.trim().toLowerCase();
+        const selected = {
+          group: filters.group?.value.toLowerCase() ?? "",
+          size: filters.size?.value.toLowerCase() ?? "",
+          activity: filters.activity?.value.toLowerCase() ?? "",
+          trainability: filters.trainability?.value.toLowerCase() ?? "",
+          apartment: filters.apartment?.value.toLowerCase() ?? "",
+          hypoallergenic: filters.hypoallergenic?.value.toLowerCase() ?? ""
+        };
+        const hasAdvancedFilter = Object.values(selected).some(Boolean);
+        let visible = 0;
+
+        for (const item of items) {
+          const name = item.dataset.breedName || "";
+          const matchQuery = !query || name.includes(query);
+          const matchGroup = !selected.group || item.dataset.breedGroup === selected.group;
+          const matchSize = !selected.size || item.dataset.breedSize === selected.size;
+          const matchActivity = !selected.activity || item.dataset.breedActivity === selected.activity;
+          const matchTrainability = !selected.trainability || item.dataset.breedTrainability === selected.trainability;
+          const matchApartment = !selected.apartment || item.dataset.breedApartment === selected.apartment;
+          const matchHypoallergenic = !selected.hypoallergenic || item.dataset.breedHypoallergenic === selected.hypoallergenic;
+          const match = matchQuery && matchGroup && matchSize && matchActivity && matchTrainability && matchApartment && matchHypoallergenic;
+          item.hidden = !match;
+          if (match) visible += 1;
+        }
+
+        if (!query && !hasAdvancedFilter) {
+          summary.textContent = `Showing all ${total} breeds`;
+        } else {
+          summary.textContent = `Showing ${visible} of ${total} breeds`;
+        }
+
+        empty.hidden = visible !== 0;
+      };
+
+      input.addEventListener("input", update);
+      Object.values(filters).forEach((filter) => filter?.addEventListener("change", update));
+      reset.addEventListener("click", () => {
+        input.value = "";
+        Object.values(filters).forEach((filter) => {
+          if (filter) filter.value = "";
+        });
+        update();
+      });
+    })();
+  </script>
 </Layout>
+
+<style>
+  .breed-search {
+    background:
+      linear-gradient(160deg, color-mix(in srgb, var(--color-primary-soft) 88%, #ffffff 12%) 0%, #ffffff 42%),
+      radial-gradient(circle at top right, color-mix(in srgb, var(--color-primary) 14%, #ffffff 86%) 0%, transparent 45%);
+    border: 1px solid color-mix(in srgb, var(--color-primary) 26%, var(--color-border) 74%);
+    border-radius: var(--radius-card);
+    box-shadow: 0 12px 30px rgba(49, 95, 73, 0.08);
+    display: grid;
+    gap: 0.7rem;
+    margin-bottom: var(--space-4);
+    padding: clamp(0.85rem, 1.8vw, 1.2rem);
+  }
+
+  .breed-search-head {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+
+  .breed-search label,
+  .breed-filters span {
+    color: var(--color-primary-dark);
+    font-size: 0.82rem;
+    font-weight: 850;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+
+  .breed-search input {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #ffffff;
+    border: 1px solid color-mix(in srgb, var(--color-primary) 30%, var(--color-border) 70%);
+    border-radius: var(--radius-sm);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+    color: var(--color-text);
+    font: inherit;
+    font-size: 0.95rem;
+    font-weight: 650;
+    min-height: 46px;
+    padding: 0.75rem 0.9rem;
+    transition: border-color 120ms ease, box-shadow 120ms ease;
+    width: min(640px, 100%);
+  }
+
+  .breed-search input::placeholder {
+    color: color-mix(in srgb, var(--color-muted) 86%, #ffffff 14%);
+  }
+
+  .breed-search input:focus-visible,
+  .breed-filters select:focus-visible,
+  .breed-filter-reset:focus-visible {
+    border-color: var(--color-primary);
+    box-shadow:
+      0 0 0 3px color-mix(in srgb, var(--color-primary) 22%, transparent 78%),
+      0 6px 14px rgba(49, 95, 73, 0.14);
+    outline: none;
+  }
+
+  .breed-filter-reset {
+    background: var(--color-primary-dark);
+    border: 1px solid var(--color-primary-dark);
+    border-radius: var(--radius-sm);
+    color: #ffffff;
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.8rem;
+    font-weight: 750;
+    min-height: 38px;
+    padding: 0.45rem 0.85rem;
+    transition: transform 120ms ease, filter 120ms ease, box-shadow 120ms ease;
+  }
+
+  .breed-filter-reset:hover {
+    filter: brightness(1.08);
+    transform: translateY(-1px);
+  }
+
+  .breed-filters {
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  }
+
+  .breed-filters label {
+    display: grid;
+    gap: 0.35rem;
+  }
+
+  .breed-filters select {
+    -webkit-appearance: none;
+    appearance: none;
+    background:
+      linear-gradient(45deg, transparent 50%, var(--color-primary-dark) 50%) calc(100% - 18px) calc(50% + 1px) / 6px 6px no-repeat,
+      linear-gradient(135deg, var(--color-primary-dark) 50%, transparent 50%) calc(100% - 13px) calc(50% + 1px) / 6px 6px no-repeat,
+      #ffffff;
+    border: 1px solid color-mix(in srgb, var(--color-primary) 24%, var(--color-border) 76%);
+    border-radius: var(--radius-sm);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+    color: var(--color-text);
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 630;
+    min-height: 42px;
+    padding: 0.5rem 2rem 0.5rem 0.7rem;
+    transition: border-color 120ms ease, box-shadow 120ms ease;
+  }
+
+  .breed-search-summary,
+  #breed-search-summary {
+    color: var(--color-primary-dark);
+    font-weight: 650;
+  }
+
+  .breed-search-empty {
+    margin-top: var(--space-3);
+  }
+
+  @media (max-width: 700px) {
+    .breed-search-head {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .breed-filter-reset {
+      width: 100%;
+    }
+  }
+</style>

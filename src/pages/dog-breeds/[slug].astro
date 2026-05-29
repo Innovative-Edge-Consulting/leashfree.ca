@@ -5,6 +5,7 @@ import ImageWithFallback from "../../components/ImageWithFallback.astro";
 import Layout from "../../components/Layout.astro";
 import RelatedLinks from "../../components/RelatedLinks.astro";
 import Section from "../../components/Section.astro";
+import SimilarBreedsCarousel from "../../components/SimilarBreedsCarousel.astro";
 import mediaMap from "../../data/media-map.json";
 import breeds from "../../data/generated/dog-breeds.json";
 import groups from "../../data/generated/breed-groups.json";
@@ -21,6 +22,30 @@ export function getStaticPaths() {
 const { breed } = Astro.props;
 const image = resolveMedia(breed, "Featured Image", mediaMap);
 const group = findByName(groups, breed.raw["Breed Group"]);
+
+function extractFaqItems(html) {
+  if (!html || typeof html !== "string") {
+    return [];
+  }
+
+  const items = [];
+  const qaPattern = /<p[^>]*>\s*<strong[^>]*>([\s\S]*?)<\/strong>\s*<br\s*\/?>\s*([\s\S]*?)<\/p>/gi;
+  let match;
+
+  while ((match = qaPattern.exec(html)) !== null) {
+    const question = match[1].replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+    const answer = match[2].trim();
+    if (question && answer) {
+      items.push({ question, answer });
+    }
+  }
+
+  return items;
+}
+
+const faqHtml = breed.raw.FAQs;
+const faqItems = extractFaqItems(faqHtml);
+
 const breadcrumbs = [
   { label: "Home", href: "/" },
   { label: "Dog Breeds", href: "/dog-breeds/" },
@@ -46,8 +71,7 @@ const sections = [
   ["Training tips", breed.raw["Training Tips"]],
   ["Nutrition and diet", breed.raw["Nutrition & Diet"]],
   ["Health concerns", breed.raw["Health Concerns"]],
-  ["Adoption and breeders", breed.raw["Adoption & Breeders"]],
-  ["FAQs", breed.raw.FAQs]
+  ["Adoption and breeders", breed.raw["Adoption & Breeders"]]
 ].filter(([, value]) => value);
 ---
 
@@ -60,7 +84,7 @@ const sections = [
         <h1>{breed.name}</h1>
         <p class="summary">{excerpt(breed.description, breed.metaDescription)}</p>
       </div>
-      <ImageWithFallback src={image.src} alt={`${breed.name} breed image`} variant="hero" loading="eager" />
+      <ImageWithFallback src={image.src} alt={`${breed.name} breed image`} variant="hero" loading="eager" imagePosition="center 20%" imageFit="contain" />
     </div>
   </section>
 
@@ -80,10 +104,28 @@ const sections = [
             <div set:html={html} />
           </section>
         ))}
+        {faqItems.length > 0 ? (
+          <section class="content-block faq-accordion">
+            <h2>FAQs</h2>
+            {faqItems.map((item) => (
+              <details class="faq-item">
+                <summary>{item.question}</summary>
+                <div class="faq-answer" set:html={item.answer} />
+              </details>
+            ))}
+          </section>
+        ) : faqHtml ? (
+          <section class="content-block">
+            <h2>FAQs</h2>
+            <div set:html={faqHtml} />
+          </section>
+        ) : null}
       </article>
       <aside class="sidebar">
         <RelatedLinks title="Breed links" links={group ? [{ href: `/dog-breeds/group/${group.slug}/`, label: `More ${group.name}` }] : []} />
       </aside>
     </div>
   </Section>
+
+  <SimilarBreedsCarousel currentBreed={breed} allBreeds={breeds} mediaMap={mediaMap} />
 </Layout>

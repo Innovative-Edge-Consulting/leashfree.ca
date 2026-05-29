@@ -6,11 +6,20 @@ interface Props {
   alt?: string;
   variant?: "hero" | "card";
   loading?: "lazy" | "eager";
+  imagePosition?: string;
+  imageFit?: "cover" | "contain";
 }
 
-const { src, alt = "", variant = "card", loading = "lazy" } = Astro.props;
+const { src, alt = "", variant = "card", loading = "lazy", imagePosition, imageFit = "cover" } = Astro.props;
 const finalSrc = src || PLACEHOLDER;
 const className = variant === "hero" ? "media hero-media" : "media card-media";
 ---
 
-<img class={className} src={finalSrc} alt={alt} loading={loading} decoding="async" />
+<img
+  class={className}
+  style={`${imagePosition ? `object-position: ${imagePosition};` : ""}${imageFit ? `object-fit: ${imageFit};` : ""}`}
+  src={finalSrc}
+  alt={alt}
+  loading={loading}
+  decoding="async"
+/>

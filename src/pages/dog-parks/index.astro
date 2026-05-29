@@ -32,8 +32,8 @@ const breadcrumbs = [
     summary="Browse dog park, city, and province guides with local details for Canadian dog owners."
     primaryHref="#provinces"
     primaryLabel="Browse provinces"
-    secondaryHref="#parks"
-    secondaryLabel="Browse parks"
+    secondaryHref="#suggest-a-park"
+    secondaryLabel="Suggest a Park"
     image="/images/blog/blog-how-to-choose-the-right-dog-park-for-your-pup-hero.jpg"
     imageAlt="Dog enjoying a leash-free park"
   />
@@ -85,5 +85,17 @@ const breadcrumbs = [
         />
       ))}
     </div>
+  </Section>
+
+  <Section
+    id="suggest-a-park"
+    title="Know a great park we missed?"
+    intro="Suggest a dog park and we will review it for inclusion in our Canada dog park directory."
+    alt
+  >
+    <div class="suggest-park-panel">
+      <div data-quizflow-embed="submit-a-dog-park-suggestion"></div>
+    </div>
+    <script async src="https://quizflowlabs.com/embed.js"></script>
   </Section>
 </Layout>

@@ -25,6 +25,8 @@
   --radius-pill: 999px;
   --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.08);
   --container: 1120px;
+  --h1-size: clamp(2.15rem, 6vw, 4.8rem);
+  --hero-h1-size: clamp(1.9rem, 4.4vw, 3.4rem);
 }
 
 * {
@@ -366,7 +368,14 @@ h1 {
   max-width: 900px;
   margin: var(--space-2) 0 var(--space-4);
   font-family: var(--font-display);
-  font-size: clamp(2.15rem, 6vw, 4.8rem);
+  font-size: var(--h1-size);
+}
+
+.hero h1,
+.page-header h1 {
+  max-width: 24ch;
+  font-size: var(--hero-h1-size);
+  line-height: 1.08;
 }
 
 h2 {
@@ -526,6 +535,149 @@ p {
   padding: var(--space-4);
 }
 
+.park-meta-list {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-3);
+  margin: var(--space-4) 0 var(--space-5);
+}
+
+.park-meta-item {
+  display: grid;
+  gap: 0.35rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-4);
+}
+
+.park-meta-item dt {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.park-meta-item dd {
+  margin: 0;
+  color: var(--color-text);
+  font-weight: 650;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.park-details-main {
+  display: grid;
+  gap: var(--space-4);
+  align-content: start;
+}
+
+.park-map-button {
+  width: fit-content;
+  min-height: 2.1rem;
+  padding: 0.3rem 0.7rem;
+}
+
+.park-rules-summary {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  margin: 0;
+  padding: var(--space-4);
+}
+
+.amenities-card {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.amenities-card h2 {
+  margin-bottom: 0;
+}
+
+.amenity-group {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.amenity-group h3 {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+.amenity-chip-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-2);
+}
+
+.amenity-chip {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  padding: 0.6rem 0.7rem;
+}
+
+@media (max-width: 720px) {
+  .amenity-chip-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.amenity-icon {
+  width: 1.1rem;
+  height: 1.1rem;
+  color: var(--color-primary-dark);
+  flex: 0 0 1.1rem;
+  margin-top: 0.1rem;
+}
+
+.amenity-text {
+  display: grid;
+  gap: 0.15rem;
+  line-height: 1.35;
+}
+
+.amenity-text strong {
+  font-size: 0.86rem;
+}
+
+.amenity-text span {
+  color: var(--color-muted);
+  font-size: 0.86rem;
+}
+
+.amenity-icon svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.split.park-details-layout {
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-5);
+}
+
+.park-details-layout .sidebar {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+@media (max-width: 980px) {
+  .park-details-layout .sidebar {
+    grid-template-columns: 1fr;
+  }
+}
+
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;
@@ -557,6 +709,113 @@ p {
 .content-block img {
   max-width: 100%;
   border-radius: var(--radius-card);
+}
+
+.faq-accordion {
+  margin-top: var(--space-7);
+}
+
+.faq-item {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+  margin-bottom: var(--space-3);
+  overflow: clip;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-5);
+  color: var(--color-text);
+  position: relative;
+  padding-right: calc(var(--space-6) + 1.2rem);
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  position: absolute;
+  right: var(--space-5);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-primary-dark);
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.faq-item[open] summary::after {
+  content: "-";
+}
+
+.faq-answer {
+  padding: 0 var(--space-5) var(--space-5);
+  color: var(--color-muted);
+}
+
+.faq-answer :where(p, ul, ol) {
+  margin: 0;
+}
+
+.similar-breeds-section h2 {
+  margin-bottom: var(--space-4);
+}
+
+.similar-breeds-carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(220px, 280px);
+  gap: var(--space-4);
+  overflow-x: auto;
+  padding-bottom: var(--space-2);
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+}
+
+.similar-breeds-card {
+  display: block;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background: var(--color-surface);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--color-text);
+  scroll-snap-align: start;
+}
+
+.similar-breeds-card:hover {
+  color: var(--color-text);
+  border-color: #c9dccd;
+}
+
+.similar-breeds-media {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: center 20%;
+  background: var(--color-primary-soft);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.similar-breeds-body {
+  padding: var(--space-4);
+}
+
+.similar-breeds-body h3 {
+  margin: 0 0 var(--space-2);
+  font-size: 1rem;
+}
+
+.similar-breeds-body p {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.92rem;
 }
 
 .review-note {
@@ -596,6 +855,15 @@ p {
 .stat strong {
   display: block;
   font-size: 1.45rem;
+}
+
+.suggest-park-panel {
+  margin-top: var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background: linear-gradient(180deg, #fffdf8 0%, #ffffff 100%);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-card);
 }
 
 .compact-row {

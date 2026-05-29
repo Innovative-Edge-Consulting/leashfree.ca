@@ -1,0 +1,121 @@
+---
+import { resolveMedia } from "../utils/media.js";
+
+interface Props {
+  currentBreed: any;
+  allBreeds: any[];
+  mediaMap: any;
+  title?: string;
+  maxItems?: number;
+}
+
+const { currentBreed, allBreeds = [], mediaMap, title = "Similar Breeds", maxItems = 8 } = Astro.props;
+
+const MISSING_VALUES = new Set(["", "n/a", "unknown"]);
+const FIELD_WEIGHTS = [
+  ["Breed Group", 5],
+  ["Size Category", 3],
+  ["Activity Level", 2],
+  ["Coat Type", 2],
+  ["Trainability", 1],
+  ["Shedding Level", 1],
+  ["Apartment Friendly", 1],
+  ["Family Friendly", 1]
+];
+
+function normalizeValue(value) {
+  if (value === null || value === undefined) return null;
+  const cleaned = String(value).trim().toLowerCase();
+  if (MISSING_VALUES.has(cleaned)) return null;
+  return cleaned;
+}
+
+function compareField(aRaw, bRaw, field) {
+  const a = normalizeValue(aRaw?.[field]);
+  const b = normalizeValue(bRaw?.[field]);
+  if (!a || !b) return false;
+  return a === b;
+}
+
+function scoreBreed(baseBreed, candidateBreed) {
+  let score = 0;
+  for (const [field, weight] of FIELD_WEIGHTS) {
+    if (compareField(baseBreed.raw, candidateBreed.raw, field)) {
+      score += weight;
+    }
+  }
+  return score;
+}
+
+function byScoreThenName(a, b) {
+  if (b.score !== a.score) return b.score - a.score;
+  return a.breed.name.localeCompare(b.breed.name);
+}
+
+const scoredCandidates = allBreeds
+  .filter((breed) => breed?.slug && breed.slug !== currentBreed?.slug)
+  .map((breed) => ({ breed, score: scoreBreed(currentBreed, breed) }))
+  .sort(byScoreThenName);
+
+const selected = [];
+const selectedSlugs = new Set();
+
+function addCandidates(items) {
+  for (const item of items) {
+    if (selected.length >= maxItems) break;
+    const slug = item?.breed?.slug;
+    if (!slug || selectedSlugs.has(slug)) continue;
+    selected.push(item);
+    selectedSlugs.add(slug);
+  }
+}
+
+addCandidates(scoredCandidates.filter((item) => item.score >= 5));
+
+const currentGroup = normalizeValue(currentBreed?.raw?.["Breed Group"]);
+const currentSize = normalizeValue(currentBreed?.raw?.["Size Category"]);
+
+if (selected.length < maxItems && currentGroup) {
+  addCandidates(
+    scoredCandidates.filter((item) => normalizeValue(item.breed?.raw?.["Breed Group"]) === currentGroup)
+  );
+}
+
+if (selected.length < maxItems && currentSize) {
+  addCandidates(
+    scoredCandidates.filter((item) => normalizeValue(item.breed?.raw?.["Size Category"]) === currentSize)
+  );
+}
+
+if (selected.length < maxItems) {
+  addCandidates(scoredCandidates.filter((item) => item.score > 0));
+}
+
+const similarBreeds = selected.slice(0, maxItems);
+---
+
+{
+  similarBreeds.length > 0 && (
+    <section class="section tight similar-breeds-section" aria-label={title}>
+      <div class="container">
+        <h2>{title}</h2>
+        <div class="similar-breeds-carousel">
+          {similarBreeds.map(({ breed }) => {
+            const image = resolveMedia(breed, "Featured Image", mediaMap);
+            const group = breed?.raw?.["Breed Group"] || "Breed Group";
+            const size = breed?.raw?.["Size Category"] || "Size";
+            return (
+              <a class="similar-breeds-card" href={`/dog-breeds/${breed.slug}/`}>
+                <img class="similar-breeds-media" src={image.src} alt={`${breed.name} dog breed`} loading="lazy" decoding="async" />
+                <div class="similar-breeds-body">
+                  <h3>{breed.name}</h3>
+                  <p>{group} · {size}</p>
+                </div>
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  )
+}

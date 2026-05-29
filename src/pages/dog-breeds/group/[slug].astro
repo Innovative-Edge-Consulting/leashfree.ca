@@ -2,11 +2,14 @@
 import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import Card from "../../../components/Card.astro";
 import ContentBlock from "../../../components/ContentBlock.astro";
+import ImageWithFallback from "../../../components/ImageWithFallback.astro";
 import Layout from "../../../components/Layout.astro";
 import Section from "../../../components/Section.astro";
+import mediaMap from "../../../data/media-map.json";
 import groups from "../../../data/generated/breed-groups.json";
 import breeds from "../../../data/generated/dog-breeds.json";
 import { breadcrumbSchema, excerpt, slugify } from "../../../utils/content.js";
+import { resolveMedia } from "../../../utils/media.js";
 
 export function getStaticPaths() {
   return groups.filter((group) => group.slug).map((group) => ({
@@ -17,6 +20,7 @@ export function getStaticPaths() {
 
 const { group } = Astro.props;
 const groupBreeds = breeds.filter((breed) => slugify(breed.raw["Breed Group"]) === slugify(group.name));
+const groupImage = resolveMedia(group, "Hero Image", mediaMap);
 const breadcrumbs = [
   { label: "Home", href: "/" },
   { label: "Dog Breeds", href: "/dog-breeds/" },
@@ -26,11 +30,14 @@ const breadcrumbs = [
 
 <Layout title={group.seoTitle || group.title || group.name} description={group.metaDescription || group.description} canonical={group.canonicalUrl} structuredData={breadcrumbSchema(breadcrumbs)}>
   <section class="page-header">
-    <div class="container">
-      <Breadcrumbs items={breadcrumbs} />
-      <div class="eyebrow">Breed group</div>
-      <h1>{group.title || group.name}</h1>
-      <p class="summary">{excerpt(group.description, group.metaDescription)}</p>
+    <div class="container detail-layout">
+      <div>
+        <Breadcrumbs items={breadcrumbs} />
+        <div class="eyebrow">Breed group</div>
+        <h1>{group.title || group.name}</h1>
+        <p class="summary">{excerpt(group.description, group.metaDescription)}</p>
+      </div>
+      <ImageWithFallback src={groupImage.src} alt={`${group.name} breed group`} variant="hero" loading="eager" imagePosition="center 20%" />
     </div>
   </section>
 
@@ -43,7 +50,15 @@ const breadcrumbs = [
   <Section title={`Breeds in ${group.name}`} intro={`${groupBreeds.length} breed profiles currently match this group.`} alt>
     <div class="grid">
       {groupBreeds.map((breed) => (
-        <Card title={breed.name} href={`/dog-breeds/${breed.slug}/`} description={excerpt(breed.metaDescription, breed.description)} ctaLabel="View breed" />
+        <Card
+          title={breed.name}
+          href={`/dog-breeds/${breed.slug}/`}
+          description={excerpt(breed.metaDescription, breed.description)}
+          image={resolveMedia(breed, "Featured Image", mediaMap).src}
+          imageAlt={`${breed.name} breed`}
+          imagePosition="center 20%"
+          ctaLabel="View breed"
+        />
       ))}
     </div>
   </Section>
