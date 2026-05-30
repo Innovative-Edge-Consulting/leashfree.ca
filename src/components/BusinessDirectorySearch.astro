@@ -164,14 +164,14 @@ const json = JSON.stringify({ items: businessItems, provinces, cities, categorie
 </div>
 
 <script type="application/json" id="business-directory-search-data" set:html={json}></script>
-<script>
-  import L from "leaflet";
-
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script is:inline>
   (() => {
+    const L = window.L;
     const root = document.querySelector("[data-business-directory-search]");
     const mapNode = document.getElementById("business-directory-map");
     const dataNode = document.getElementById("business-directory-search-data");
-    if (!root || !mapNode || !dataNode) return;
+    if (!L || !root || !mapNode || !dataNode) return;
 
     const data = JSON.parse(dataNode.textContent);
     const controls = {

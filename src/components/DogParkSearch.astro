@@ -149,14 +149,14 @@ const json = JSON.stringify({ items: parkItems, provinces, cities }).replace(/</
 </div>
 
 <script type="application/json" id="dog-park-search-data" set:html={json}></script>
-<script>
-  import L from "leaflet";
-
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script is:inline>
   (() => {
+    const L = window.L;
     const root = document.querySelector("[data-dog-park-search]");
     const mapNode = document.getElementById("dog-parks-map");
     const dataNode = document.getElementById("dog-park-search-data");
-    if (!root || !mapNode || !dataNode) return;
+    if (!L || !root || !mapNode || !dataNode) return;
 
     const data = JSON.parse(dataNode.textContent);
     const controls = {
