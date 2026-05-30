@@ -1,0 +1,194 @@
+---
+import productIndex from "../data/generated/rocky-mountain-dog-products.json";
+
+const { sponsorUrl, logoUrl, categories, products } = productIndex;
+---
+
+<div class="rmd-overlay-backdrop" data-rmd-backdrop hidden></div>
+<section
+  id="rocky-mountain-dog-sponsor"
+  class="rmd-widget"
+  aria-labelledby="rmd-widget-title"
+  data-rmd-widget
+>
+  <button
+    type="button"
+    class="rmd-expand"
+    data-rmd-expand
+    aria-label="Expand Rocky Mountain Dog sponsor widget"
+    aria-expanded="false"
+  >
+    <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+      <path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5" />
+      <path d="M3 3l7 7M21 3l-7 7M21 21l-7-7M3 21l7-7" />
+    </svg>
+  </button>
+  <button type="button" class="rmd-close" data-rmd-close aria-label="Close Rocky Mountain Dog sponsor widget">
+    <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+      <path d="M18 6 6 18M6 6l12 12" />
+    </svg>
+  </button>
+
+  <h2 id="rmd-widget-title" class="rmd-visually-hidden">Rocky Mountain Dog product picks</h2>
+  <div class="rmd-brand">
+    <a href={sponsorUrl} target="_blank" rel="noopener sponsored" aria-label="Open Rocky Mountain Dog in a new tab">
+      <img src={logoUrl} alt="Rocky Mountain Dog" loading="lazy" />
+    </a>
+  </div>
+
+  <form class="rmd-filters" data-rmd-filters>
+    <label>
+      <span>Search</span>
+      <input type="search" name="search" placeholder="Harness, leash, safety..." autocomplete="off" data-rmd-search />
+    </label>
+    <label>
+      <span>Filter</span>
+      <select name="category" data-rmd-category>
+        <option value="">All products</option>
+        {categories.map((category) => <option value={category}>{category}</option>)}
+      </select>
+    </label>
+  </form>
+
+  <div class="rmd-carousel" aria-live="polite">
+    {products.map((product, index) => (
+      <article class:list={["rmd-slide", index === 0 && "is-active"]} data-rmd-slide data-category={product.category} data-search={`${product.title} ${product.category} ${product.caption}`}>
+        <a class="rmd-image-link" href={product.sourceUrl} target="_blank" rel="noopener sponsored" aria-label={`View ${product.title} in a new tab`}>
+          <img src={product.image} alt={product.caption || `${product.title} by Rocky Mountain Dog`} loading="lazy" />
+        </a>
+        <div class="rmd-product-body">
+          <span>{product.category}</span>
+          <h3>{product.title}</h3>
+          {product.caption && <p>{product.caption}</p>}
+        </div>
+        <a class="rmd-cta" href={product.sourceUrl} target="_blank" rel="noopener sponsored">View Product</a>
+      </article>
+    ))}
+  </div>
+
+  <div class="rmd-empty" data-rmd-empty hidden>
+    <p>No products match that search.</p>
+  </div>
+
+  <div class="rmd-controls" aria-label="Rocky Mountain Dog product carousel controls">
+    <button type="button" class="rmd-arrow" data-rmd-prev aria-label="Previous product">&lsaquo;</button>
+    <span data-rmd-status>1 / {products.length}</span>
+    <button type="button" class="rmd-arrow" data-rmd-next aria-label="Next product">&rsaquo;</button>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll("[data-rmd-widget]").forEach((widget) => {
+    const backdrop = widget.previousElementSibling;
+    const slides = Array.from(widget.querySelectorAll("[data-rmd-slide]"));
+    const previous = widget.querySelector("[data-rmd-prev]");
+    const next = widget.querySelector("[data-rmd-next]");
+    const filters = widget.querySelector("[data-rmd-filters]");
+    const status = widget.querySelector("[data-rmd-status]");
+    const search = widget.querySelector("[data-rmd-search]");
+    const category = widget.querySelector("[data-rmd-category]");
+    const empty = widget.querySelector("[data-rmd-empty]");
+    const expand = widget.querySelector("[data-rmd-expand]");
+    const close = widget.querySelector("[data-rmd-close]");
+    let activeIndex = 0;
+    let visibleSlides = [...slides];
+    let previouslyFocused = null;
+
+    const updateStatus = () => {
+      if (!status) return;
+      status.textContent = visibleSlides.length > 0 ? `${activeIndex + 1} / ${visibleSlides.length}` : "0 / 0";
+    };
+
+    const showSlide = (index) => {
+      if (visibleSlides.length === 0) {
+        slides.forEach((slide) => slide.classList.remove("is-active"));
+        updateStatus();
+        return;
+      }
+
+      activeIndex = (index + visibleSlides.length) % visibleSlides.length;
+      slides.forEach((slide) => slide.classList.remove("is-active"));
+      visibleSlides[activeIndex].classList.add("is-active");
+      updateStatus();
+    };
+
+    const applyFilters = () => {
+      const query = search?.value.trim().toLowerCase() || "";
+      const selectedCategory = category?.value || "";
+      visibleSlides = slides.filter((slide) => {
+        const matchesCategory = !selectedCategory || slide.getAttribute("data-category") === selectedCategory;
+        const matchesSearch = !query || (slide.getAttribute("data-search") || "").toLowerCase().includes(query);
+        const isVisible = matchesCategory && matchesSearch;
+        slide.hidden = !isVisible;
+        return isVisible;
+      });
+
+      if (empty) {
+        empty.hidden = visibleSlides.length > 0;
+      }
+      showSlide(0);
+    };
+
+    const closeOverlay = () => {
+      widget.classList.remove("is-expanded");
+      widget.removeAttribute("role");
+      widget.removeAttribute("aria-modal");
+      document.body.classList.remove("rmd-modal-open");
+      expand?.setAttribute("aria-expanded", "false");
+      backdrop?.setAttribute("hidden", "");
+      if (previouslyFocused instanceof HTMLElement) {
+        previouslyFocused.focus();
+      }
+    };
+
+    const openOverlay = () => {
+      previouslyFocused = document.activeElement;
+      widget.classList.add("is-expanded");
+      widget.setAttribute("role", "dialog");
+      widget.setAttribute("aria-modal", "true");
+      document.body.classList.add("rmd-modal-open");
+      expand?.setAttribute("aria-expanded", "true");
+      backdrop?.removeAttribute("hidden");
+      close?.focus();
+    };
+
+    window.openRockyMountainDogSponsor = openOverlay;
+
+    previous?.addEventListener("click", () => showSlide(activeIndex - 1));
+    next?.addEventListener("click", () => showSlide(activeIndex + 1));
+    widget.addEventListener("click", (event) => {
+      if (!(event.target instanceof Element)) {
+        return;
+      }
+
+      if (event.target.closest("[data-rmd-expand]")) {
+        openOverlay();
+      }
+
+      if (event.target.closest("[data-rmd-close]")) {
+        closeOverlay();
+      }
+    });
+    backdrop?.addEventListener("click", closeOverlay);
+    filters?.addEventListener("submit", (event) => event.preventDefault());
+    search?.addEventListener("input", applyFilters);
+    category?.addEventListener("change", applyFilters);
+    document.addEventListener("click", (event) => {
+      if (!(event.target instanceof Element)) {
+        return;
+      }
+
+      const trigger = event.target.closest("[data-rmd-open]");
+      if (trigger) {
+        event.preventDefault();
+        openOverlay();
+      }
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && widget.classList.contains("is-expanded")) {
+        closeOverlay();
+      }
+    });
+    applyFilters();
+  });
+</script>

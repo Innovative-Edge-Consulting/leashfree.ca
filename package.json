@@ -8,6 +8,7 @@
     "prebuild": "node scripts/assert-production-branch.js",
     "build": "astro build",
     "preview": "astro preview",
+    "build:rocky-mountain-dog-products": "node scripts/build-rocky-mountain-dog-products.js",
     "convert:cms": "node scripts/convert-cms.js",
     "build:media-map": "node scripts/build-media-map.js",
     "media:scan": "node scripts/build-media-map.js",
