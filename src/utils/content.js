@@ -9,10 +9,10 @@ export function slugify(value) {
 }
 
 export function excerpt(value, fallback = "", maxLength = 220) {
-  const text = String(value || fallback || "")
+  const text = decodeHtmlEntities(String(value || fallback || "")
     .replace(/<[^>]*>/g, " ")
     .replace(/\s+/g, " ")
-    .trim();
+    .trim());
   if (!text) return "";
   if (text.length <= maxLength) return text;
   return `${text.slice(0, maxLength - 1).trim()}...`;
@@ -32,10 +32,34 @@ export function findByName(items, name) {
 }
 
 export function stripHtml(value) {
-  return String(value || "")
+  return decodeHtmlEntities(String(value || "")
     .replace(/<[^>]*>/g, " ")
     .replace(/\s+/g, " ")
-    .trim();
+    .trim());
+}
+
+export function decodeHtmlEntities(value) {
+  const entities = {
+    amp: "&",
+    apos: "'",
+    gt: ">",
+    lt: "<",
+    nbsp: " ",
+    quot: "\""
+  };
+
+  return String(value || "").replace(/&(#x[\da-f]+|#\d+|[a-z]+);/gi, (match, entity) => {
+    const normalized = entity.toLowerCase();
+    if (normalized.startsWith("#x")) {
+      const codePoint = Number.parseInt(normalized.slice(2), 16);
+      return Number.isFinite(codePoint) ? String.fromCodePoint(codePoint) : match;
+    }
+    if (normalized.startsWith("#")) {
+      const codePoint = Number.parseInt(normalized.slice(1), 10);
+      return Number.isFinite(codePoint) ? String.fromCodePoint(codePoint) : match;
+    }
+    return entities[normalized] || match;
+  });
 }
 
 export function firstValue(...values) {

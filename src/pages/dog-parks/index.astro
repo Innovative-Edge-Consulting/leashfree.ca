@@ -1,5 +1,6 @@
 ---
 import Card from "../../components/Card.astro";
+import DogParkSearch from "../../components/DogParkSearch.astro";
 import Hero from "../../components/Hero.astro";
 import Layout from "../../components/Layout.astro";
 import Section from "../../components/Section.astro";
@@ -44,6 +45,10 @@ const breadcrumbs = [
       <div class="stat"><strong>{cities.length}</strong><span>city guides</span></div>
       <div class="stat"><strong>{provinces.length}</strong><span>province guides</span></div>
     </div>
+  </Section>
+
+  <Section title="Search dog parks" intro="Search leash-free park records by name, city, province, address, map location, and park amenities.">
+    <DogParkSearch />
   </Section>
 
   <Section id="provinces" title="Browse by province" intro="Province pages group city guides and park records across Canada." alt>

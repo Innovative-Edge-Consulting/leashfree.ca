@@ -1,0 +1,404 @@
+---
+import "leaflet/dist/leaflet.css";
+import parks from "../data/generated/parks.json";
+import { excerpt } from "../utils/content.js";
+import { withoutRedirectedRecords } from "../utils/redirects.js";
+
+function clean(value) {
+  return typeof value === "string" ? value.trim() : "";
+}
+
+function number(value) {
+  const parsed = Number(value);
+  return Number.isFinite(parsed) ? parsed : null;
+}
+
+function hasValidCoordinates(lat, lng) {
+  if (lat === null || lng === null) return false;
+  if (Math.abs(lat) < 0.000001 && Math.abs(lng) < 0.000001) return false;
+  if (lat < -90 || lat > 90 || lng < -180 || lng > 180) return false;
+  return true;
+}
+
+function provinceName(value) {
+  const key = clean(value).toLowerCase();
+  const provinces = {
+    ab: "Alberta",
+    alberta: "Alberta",
+    bc: "British Columbia",
+    "british columbia": "British Columbia",
+    mb: "Manitoba",
+    manitoba: "Manitoba",
+    nb: "New Brunswick",
+    "new brunswick": "New Brunswick",
+    nl: "Newfoundland and Labrador",
+    "newfoundland and labrador": "Newfoundland and Labrador",
+    ns: "Nova Scotia",
+    "nova scotia": "Nova Scotia",
+    nt: "Northwest Territories",
+    "northwest territories": "Northwest Territories",
+    nu: "Nunavut",
+    on: "Ontario",
+    ontario: "Ontario",
+    pe: "Prince Edward Island",
+    "prince edward island": "Prince Edward Island",
+    qc: "Quebec",
+    quebec: "Quebec",
+    sk: "Saskatchewan",
+    saskatchewan: "Saskatchewan",
+    toronto: "Ontario",
+    yt: "Yukon",
+    yukon: "Yukon"
+  };
+
+  return provinces[key] || clean(value);
+}
+
+function parkItem(park) {
+  const lat = number(park.raw.latitude);
+  const lng = number(park.raw.longitude);
+  const hasCoords = hasValidCoordinates(lat, lng);
+
+  return {
+    name: park.name,
+    url: `/dog-parks/${park.slug}/`,
+    lat,
+    lng,
+    hasCoords,
+    city: clean(park.raw.City),
+    province: provinceName(park.raw.Province),
+    address: clean(park.raw["Street Address"]),
+    description: excerpt(park.description, park.raw["Street Address"], 150),
+    fenced: clean(park.raw.Fenced),
+    smallDog: clean(park.raw["Separate Small Dog Area"]),
+    water: clean(park.raw["Water source available"]),
+    parking: clean(park.raw["Parking Available"]),
+    surface: clean(park.raw["Surface type"]),
+    directionsUrl: hasCoords ? `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(`${lat},${lng}`)}` : ""
+  };
+}
+
+const parkItems = withoutRedirectedRecords(parks).map(parkItem);
+const provinces = [...new Set(parkItems.map((item) => item.province).filter(Boolean))].sort();
+const cities = [...new Set(parkItems.map((item) => item.city).filter(Boolean))].sort();
+const mappedCount = parkItems.filter((item) => item.hasCoords).length;
+const json = JSON.stringify({ items: parkItems, provinces, cities }).replace(/</g, "\\u003c");
+---
+
+<div class="home-map-search dog-park-search" data-dog-park-search>
+  <div class="map-search-controls dog-park-search-controls" aria-label="Dog park search filters">
+    <div class="field wide">
+      <label for="dog-park-query">Search</label>
+      <input id="dog-park-query" type="search" autocomplete="off" placeholder="Park, city, address, amenity" />
+    </div>
+
+    <div class="map-actions">
+      <button class="button primary" type="button" data-use-location>Use my location</button>
+      <button class="button secondary" type="button" data-toggle-filters aria-expanded="false" aria-controls="advanced-dog-park-filters">Filters</button>
+      <button class="button secondary" type="button" data-reset-map>Reset</button>
+    </div>
+
+    <div class="advanced-map-filters" id="advanced-dog-park-filters" hidden>
+      <div class="field">
+        <label for="dog-park-province">Province</label>
+        <select id="dog-park-province">
+          <option value="">All provinces</option>
+          {provinces.map((province) => <option value={province}>{province}</option>)}
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="dog-park-city">City</label>
+        <select id="dog-park-city">
+          <option value="">All cities</option>
+          {cities.map((city) => <option value={city}>{city}</option>)}
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="dog-park-radius">Radius</label>
+        <select id="dog-park-radius">
+          <option value="">Any distance</option>
+          <option value="10">10 km</option>
+          <option value="25">25 km</option>
+          <option value="50">50 km</option>
+          <option value="100">100 km</option>
+        </select>
+      </div>
+
+      <div class="amenity-filters" aria-label="Dog park amenities">
+        <label><input type="checkbox" value="fenced" /> Fenced</label>
+        <label><input type="checkbox" value="smallDog" /> Small dog area</label>
+        <label><input type="checkbox" value="water" /> Water</label>
+        <label><input type="checkbox" value="parking" /> Parking</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="map-search-layout">
+    <div class="map-canvas" id="dog-parks-map" aria-label="Dog park map"></div>
+    <aside class="map-results" aria-live="polite">
+      <div class="map-results-header">
+        <h3>Dog parks</h3>
+        <span data-result-count>{parkItems.length}</span>
+      </div>
+      <div class="map-location-status" data-location-status>{mappedCount} parks shown on the map</div>
+      <ol data-map-results></ol>
+    </aside>
+  </div>
+</div>
+
+<script type="application/json" id="dog-park-search-data" set:html={json}></script>
+<script>
+  import L from "leaflet";
+
+  (() => {
+    const root = document.querySelector("[data-dog-park-search]");
+    const mapNode = document.getElementById("dog-parks-map");
+    const dataNode = document.getElementById("dog-park-search-data");
+    if (!root || !mapNode || !dataNode) return;
+
+    const data = JSON.parse(dataNode.textContent);
+    const controls = {
+      query: root.querySelector("#dog-park-query"),
+      province: root.querySelector("#dog-park-province"),
+      city: root.querySelector("#dog-park-city"),
+      radius: root.querySelector("#dog-park-radius"),
+      amenities: [...root.querySelectorAll(".amenity-filters input")],
+      results: root.querySelector("[data-map-results]"),
+      count: root.querySelector("[data-result-count]"),
+      locationStatus: root.querySelector("[data-location-status]"),
+      locationButton: root.querySelector("[data-use-location]"),
+      filterToggle: root.querySelector("[data-toggle-filters]"),
+      advancedFilters: root.querySelector("#advanced-dog-park-filters"),
+      resetButton: root.querySelector("[data-reset-map]")
+    };
+
+    const canadaCenter = [56.4, -96.7];
+    const canadaBounds = L.latLngBounds([41.6, -141], [83.2, -52.6]);
+    const map = L.map(mapNode, {
+      maxBounds: canadaBounds.pad(0.35),
+      maxBoundsViscosity: 0.8,
+      scrollWheelZoom: false
+    }).setView(canadaCenter, 4);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 18,
+      attribution: "&copy; OpenStreetMap contributors"
+    }).addTo(map);
+
+    let userLocation = null;
+    const markers = new Map();
+    const markerLayer = L.layerGroup().addTo(map);
+
+    function escapeHtml(value) {
+      return String(value || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+    }
+
+    function normalize(value) {
+      return String(value || "").toLowerCase();
+    }
+
+    function hasYes(value) {
+      const normalized = normalize(value);
+      return normalized.includes("yes") || normalized.includes("available") || normalized.includes("street");
+    }
+
+    function distanceKm(a, b) {
+      const radius = 6371;
+      const lat1 = a.lat * Math.PI / 180;
+      const lat2 = b.lat * Math.PI / 180;
+      const deltaLat = (b.lat - a.lat) * Math.PI / 180;
+      const deltaLng = (b.lng - a.lng) * Math.PI / 180;
+      const h = Math.sin(deltaLat / 2) ** 2 + Math.cos(lat1) * Math.cos(lat2) * Math.sin(deltaLng / 2) ** 2;
+      return 2 * radius * Math.atan2(Math.sqrt(h), Math.sqrt(1 - h));
+    }
+
+    function activeAmenities() {
+      return controls.amenities.filter((input) => input.checked).map((input) => input.value);
+    }
+
+    function itemText(item) {
+      return [item.name, item.address, item.city, item.province, item.description, item.surface]
+        .map(normalize)
+        .join(" ");
+    }
+
+    function matchesAmenities(item, amenities) {
+      if (!amenities.length) return true;
+      return amenities.every((amenity) => hasYes(item[amenity]));
+    }
+
+    function filteredItems() {
+      const query = normalize(controls.query.value).trim();
+      const province = controls.province.value;
+      const city = controls.city.value;
+      const radius = Number(controls.radius.value);
+      const amenities = activeAmenities();
+
+      return data.items
+        .filter((item) => !province || item.province === province)
+        .filter((item) => !city || item.city === city)
+        .filter((item) => !query || itemText(item).includes(query))
+        .filter((item) => matchesAmenities(item, amenities))
+        .map((item) => ({
+          ...item,
+          distance: userLocation && item.hasCoords ? distanceKm(userLocation, item) : null
+        }))
+        .filter((item) => !radius || !userLocation || (item.distance !== null && item.distance <= radius))
+        .sort((a, b) => {
+          if (a.distance !== null && b.distance !== null) return a.distance - b.distance;
+          if (a.city !== b.city) return String(a.city).localeCompare(String(b.city));
+          return a.name.localeCompare(b.name);
+        });
+    }
+
+    function popupHtml(item) {
+      const meta = [item.city, item.province].filter(Boolean).join(", ");
+      const distance = item.distance === null ? "" : `<span>${item.distance.toFixed(1)} km</span>`;
+      return `
+        <div class="pin-popup">
+          <strong>${escapeHtml(item.name)}</strong>
+          <span>Dog park</span>
+          <small>${escapeHtml(meta)}</small>
+          ${distance}
+          <div>
+            <a href="${escapeHtml(item.url)}">Details</a>
+            ${item.directionsUrl ? `<a href="${escapeHtml(item.directionsUrl)}" target="_blank" rel="noopener noreferrer">Directions</a>` : ""}
+          </div>
+        </div>
+      `;
+    }
+
+    function markerIcon() {
+      return L.divIcon({
+        className: "map-pin park-pin",
+        html: "P",
+        iconSize: [34, 34],
+        iconAnchor: [17, 17],
+        popupAnchor: [0, -17]
+      });
+    }
+
+    function renderResults(items) {
+      controls.count.textContent = String(items.length);
+      controls.results.innerHTML = "";
+
+      if (!items.length) {
+        const li = document.createElement("li");
+        li.innerHTML = "<span>No matching dog parks</span><small>Try another city, province, or amenity filter.</small>";
+        controls.results.append(li);
+        return;
+      }
+
+      items.slice(0, 12).forEach((item) => {
+        const li = document.createElement("li");
+        const meta = [item.city, item.province].filter(Boolean).join(", ");
+        const distance = item.distance === null ? "" : `<span>${item.distance.toFixed(1)} km</span>`;
+        const address = item.address ? `<small>${escapeHtml(item.address)}</small>` : "";
+        li.innerHTML = `
+          <a href="${escapeHtml(item.url)}">${escapeHtml(item.name)}</a>
+          <span>${escapeHtml(meta || "Dog park")}</span>
+          ${address}
+          ${distance}
+        `;
+        li.addEventListener("mouseenter", () => {
+          const marker = markers.get(item.url);
+          if (marker) marker.openPopup();
+        });
+        controls.results.append(li);
+      });
+    }
+
+    function updateCityOptions(items) {
+      const current = controls.city.value;
+      const cities = [...new Set(items.map((item) => item.city).filter(Boolean))].sort();
+      controls.city.innerHTML = `<option value="">All cities</option>${cities.map((city) => `<option value="${escapeHtml(city)}">${escapeHtml(city)}</option>`).join("")}`;
+      if (cities.includes(current)) controls.city.value = current;
+    }
+
+    function renderMap() {
+      const baseItems = data.items.filter((item) => !controls.province.value || item.province === controls.province.value);
+      updateCityOptions(baseItems);
+
+      const items = filteredItems();
+      markerLayer.clearLayers();
+      markers.clear();
+
+      items.filter((item) => item.hasCoords).slice(0, 140).forEach((item) => {
+        const marker = L.marker([item.lat, item.lng], { icon: markerIcon(), title: item.name })
+          .bindPopup(popupHtml(item));
+        marker.addTo(markerLayer);
+        markers.set(item.url, marker);
+      });
+
+      const mappedItems = items.filter((item) => item.hasCoords);
+      const statusPrefix = userLocation ? "Sorted by distance" : `${mappedItems.length} parks shown on the map`;
+      controls.locationStatus.textContent = statusPrefix;
+
+      if (mappedItems.length) {
+        const canadianItems = mappedItems.filter((item) => canadaBounds.contains([item.lat, item.lng]));
+        if (canadianItems.length) {
+          const bounds = L.latLngBounds(canadianItems.slice(0, 140).map((item) => [item.lat, item.lng]));
+          map.fitBounds(bounds, { padding: [24, 24], maxZoom: 12 });
+        } else {
+          map.fitBounds(canadaBounds, { padding: [12, 12] });
+        }
+      }
+
+      renderResults(items);
+    }
+
+    function reset() {
+      controls.query.value = "";
+      controls.province.value = "";
+      controls.city.value = "";
+      controls.radius.value = "";
+      controls.amenities.forEach((input) => {
+        input.checked = false;
+      });
+      userLocation = null;
+      map.setView(canadaCenter, 4);
+      renderMap();
+    }
+
+    controls.locationButton.addEventListener("click", () => {
+      if (!navigator.geolocation) {
+        controls.locationStatus.textContent = "Location unavailable";
+        return;
+      }
+
+      controls.locationStatus.textContent = "Locating...";
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          userLocation = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude
+          };
+          renderMap();
+        },
+        () => {
+          controls.locationStatus.textContent = "Location unavailable";
+        },
+        { enableHighAccuracy: false, timeout: 8000, maximumAge: 300000 }
+      );
+    });
+
+    controls.resetButton.addEventListener("click", reset);
+    controls.filterToggle.addEventListener("click", () => {
+      const isOpen = controls.filterToggle.getAttribute("aria-expanded") === "true";
+      controls.filterToggle.setAttribute("aria-expanded", String(!isOpen));
+      controls.filterToggle.textContent = isOpen ? "Filters" : "Hide filters";
+      controls.advancedFilters.hidden = isOpen;
+    });
+
+    [controls.query, controls.province, controls.city, controls.radius, ...controls.amenities]
+      .forEach((control) => control.addEventListener("input", renderMap));
+
+    renderMap();
+  })();
+</script>

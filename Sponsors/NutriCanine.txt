@@ -1,5 +1,10 @@
-Logo first
+We have a sponsor ad to include on leashfree.ca. For the first iteration I want include this sponsor ad on a right hand column on the Dog Breed profile pages as a widget using NutruCanine brand colours. The supporting images are stored here: C:\Users\cjame\leashfree.ca\Sponsors
+
+
+Logo first and if clicked open in new tab to https://www.nutricanine.ca/LeashFree
 Real Food, Always Fresh, Never Processed
+Display the following recipe in a carousel design keeping the design compacted so that it take minimal space on the right side of the Breed Profile pages. 
+
 Recipe 1
 Chicken Recipe
 Tag: Grain Free
@@ -29,4 +34,174 @@ Crude Protein (%)	13	41
 Crude Fat (%)	11	33
 Crude Fibre (%)	1	4
 Moisture (%)	67	
+CTA (open in new tab to https://www.nutricanine.ca/LeashFree): "Get Started"
+
+
+Recipe 2
+Turkey Recipe
+Tag: Low Fat
+icon 1: Fresh Whole Turkey
+Icon 2: Butternut Squash
+Icon 3: Kale
+Accordion 1 "Description": Just like the homemade meal you make for your human family every Thanksgiving, but specially designed for your dog. This low-fat recipe is complete with locally sourced turkey, nutrient-dense superfood kale, and butternut squash for improved digestibility.
+Accordion 2 "Full Ingredients": Fresh ground turkey
+Sweet potatoes
+Whole oats
+Russet potatoes
+Carrot
+Kale
+Fresh turkey liver
+Fresh turkey heart
+Dicalcium phosphate
+Strawberries
+Vitamin & mineral supplement
+Calcium carbonate
+Fish oil
+Sunflower oil
+Sea salt
+Parsley
+Chia seeds
+Accordion 3 "Nutrional Info":
+Guaranteed Analysis:
+As Fed	Dry Matter
+Crude Protein (%)	11	26
+Crude Fat (%)	6	13
+Crude Fibre (%)	3	7
+Moisture (%)	59	
+CTA (open in new tab to https://www.nutricanine.ca/LeashFree): "Get Started"
+
+Recipe 3
+Beef Recipe
+Tag: Picky Eater Approved
+icon 1: Fresh Ground Beef
+Icon 2: Butternut Squash
+Icon 3: Strawberries
+Accordion 1 "Description": Where’s the beef? Our Gently Cooked Beef Recipe is chock-full of it, balanced with antioxidant-rich berries and highly digestible rice, making it the perfect meal for dogs who have an immune response to gluten and particularly popular with picky eaters.
+Accordion 2 "Full Ingredients": Fresh ground beef
+Whole grain rice
+Butternut squash
+Carrots
+Fresh beef liver
+Fresh beef heart
+Broccoli
+Dicalcium phosphate
+Vitamin and mineral supplement
+Strawberries
+Parsley
+Sunflower oil
+Calcium carbonate
+Fish oil
+Sea salt
+Chia seed
+Accordion 3 "Nutrional Info":
+Guaranteed Analysis:
+As Fed	Dry Matter
+Crude Protein (%)	14	38
+Crude Fat (%)	9	24
+Crude Fibre (%)	1	3
+Moisture (%)	64
+CTA (open in new tab to https://www.nutricanine.ca/LeashFree): "Get Started"
+
+Recipe 4
+Salmon Recipe
+Tag: Skin & Coat
+icon 1: Salmon
+Icon 2: Cranberries
+Icon 3: Coconut oil
+Accordion 1 "Description": Smooth, savory, and seriously good for them. Our Salmon Recipe features premium salmon paired with whole foods like pumpkin, sweet potatoes, and antioxidant-rich cranberries. Crafted to support healthy skin, a shiny coat, and everyday comfort You’ll see the difference in their coat. They’ll feel it in their joints.
+Accordion 2 "Full Ingredients": 
+Fresh salmon
+Sweet potatoes
+Russet potatoes
+Pumpkin
+Spinach
+Cranberries
+Dicalcium phosphate
+Vitamin and mineral supplement
+Sunflower oil
+Flaxseed
+Coconut oil
+Calcium carbonate
+Sea salt
+Turmeric
+Accordion 3 "Nutrional Info":
+Guaranteed Analysis:
+As Fed	Dry Matter
+Crude Protein (%)	11	30
+Crude Fat (%)	9	26
+Crude Fibre (%)	2	4
+Carbohydrates (%)	10	27
+Moisture (%)	64	
+CTA (open in new tab to https://www.nutricanine.ca/LeashFree): "Get Started"
+
+Recipe 5
+Pork Recipe
+Tag: Hypoallergenic & GI Support
+icon 1: Fresh Ground
+Whole Pork
+Icon 2: Probiotic
+Icon 3: Pumpkin
+Accordion 1 "Description": 
+Specially formulated for dogs with food sensitivities and itchy skin, featuring carefully selected ingredients enhanced with probiotics. This gentle recipe combines premium pork with nourishing sweet potato and pumpkin for a hypoallergenic meal that's easy on tummies but rich in flavour.
+Accordion 2 "Full Ingredients": 
+Fresh ground pork
+Sweet potatoes
+Pumpkin
+Butternut squash
+Whole oats
+Carrots
+Apples
+Spinach
+Fresh pork liver
+Fresh pork heart
+Dicalcium phosphate
+Sunflower oil
+Probiotic supplement
+Digestive enzyme supplement
+Fish oil
+Vitamin and mineral supplement
+Calcium carbonate
+Sea salt
+Chia seeds
+Accordion 3 "Nutrional Info":
+Guaranteed Analysis:
+As Fed	Dry Matter
+Crude Protein (%)	12	31
+Crude Fat (%)	8	21
+Crude Fibre (%)	3	7
+Moisture (%)	62	
+CTA (open in new tab to https://www.nutricanine.ca/LeashFree): "Get Started"
+
+Recipe 6
+Lamb Recipe
+Tag: Heart Healthy
+icon 1: Fresh Ground Lamb
+Icon 2: Carrots
+Icon 3: Strawberries
+Accordion 1 "Description": 
+No need to count sheep - you'll rest easy knowing your pup is staying healthy and happy with this recipe. Alongside high-quality lamb, it includes nutrient-rich green beans, carrots to support healthy skin and coat, and rice for gluten sensitivities.
+Accordion 2 "Full Ingredients": 
+Fresh ground lamb
+Whole grain rice
+Butternut squash
+Carrots
+Fresh lamb liver
+Fresh lamb heart
+Green beans
+Strawberries
+Sunflower oil
+Dicalcium phosphate
+Vitamin and mineral supplement
+Calcium carbonate
+Fish oil
+Parsley
+Sea salt
+Chia seeds
+Accordion 3 "Nutrional Info":
+Guaranteed Analysis:
+As Fed	Dry Matter
+Crude Protein (%)	13	38
+Crude Fat (%)	9	25
+Crude Fibre (%)	2	4
+Moisture (%)	65	
 CTA (open in new tab to https://www.nutricanine.ca/LeashFree): "Get Started"
