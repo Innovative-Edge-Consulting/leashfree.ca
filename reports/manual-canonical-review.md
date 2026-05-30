@@ -1,6 +1,6 @@
 # Manual Canonical Review
 
-Generated at: 2026-05-29T22:01:59.995Z
+Generated at: 2026-05-30T00:15:35.669Z
 This is planning only. It recommends title/meta cleanup and source verification for candidates that should not be redirected automatically.
 
 ## Summary

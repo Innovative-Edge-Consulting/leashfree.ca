@@ -1,0 +1,501 @@
+{
+  "total": 508,
+  "alreadyValid": 426,
+  "fixedFromGoogleUrl": 0,
+  "fixedFromGeocode": 0,
+  "unresolvedCount": 82,
+  "unresolved": [
+    {
+      "slug": "albert-park-radisson-heights-off-leash-area",
+      "name": "Albert Park/Radisson Heights Off-Leash Area",
+      "reason": "geocode no result",
+      "query": "17 Ave SE & Radcliffe Dr SE, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "andy-livingstone-dog-park",
+      "name": "Andy Livingstone",
+      "reason": "geocode no result",
+      "query": "89 Carrall St, Vancouver, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "balaclava-dog-park",
+      "name": "Andy Livingstone",
+      "reason": "geocode no result",
+      "query": "4594 Balaclava Street Vancouver, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "auburn-bay-off-leash-area",
+      "name": "Auburn Bay Off-Leash Area",
+      "reason": "geocode no result",
+      "query": "52 Ave SE & Auburn Bay Blvd SE, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "bonavista",
+      "name": "Bonavista",
+      "reason": "geocode no result",
+      "query": "Bonavista Downs Dr SE & Bow Bottom Trail SE, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "bowmont-park",
+      "name": "Bowmont Park",
+      "reason": "geocode no result",
+      "query": "85 Street NW & 48 Avenue NW, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "burrard-view-dog-park-vancouver",
+      "name": "Burrard View Park",
+      "reason": "geocode no result",
+      "query": "650 N Penticton St, Vancouver,, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "crab-park-at-portside-dog-park",
+      "name": "CRAB Park at Portside",
+      "reason": "geocode no result",
+      "query": "101 E Waterfront Road Vancouver, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "canyon-meadows-off-leash-area",
+      "name": "Canyon Meadows Off-Leash Area",
+      "reason": "geocode no result",
+      "query": "Canyon Meadows Dr SW & 14 St SW, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "charleson-dog-park",
+      "name": "Charleson Park",
+      "reason": "geocode no result",
+      "query": "999 Charleson Street Vancouver, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "coach-hill-off-leash-area",
+      "name": "Coach Hill Off-Leash Area",
+      "reason": "geocode no result",
+      "query": "Coach Hill Road SW & Coach Hill Lane SW, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "coopers-dog-park",
+      "name": "Coopers' Park",
+      "reason": "geocode no result",
+      "query": "1020 Marinaside Crescent Vancouver, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "deer-ridge-park",
+      "name": "Deer Ridge Park",
+      "reason": "geocode no result",
+      "query": "Deer Ridge Dr SE & Deer Side Dr SE, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "devonian-harbour-dog-park",
+      "name": "Devonian Harbour",
+      "reason": "geocode no result",
+      "query": "1929 W Georgia Street Vancouver, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "douglasdale-off-leash-area",
+      "name": "Douglasdale Off-Leash Area",
+      "reason": "geocode no result",
+      "query": "Douglasbank Dr SE & Douglas Shore Close SE, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "dusty-greenwell-dog-park-vancouver",
+      "name": "Dusty Greenwell Park",
+      "reason": "geocode no result",
+      "query": "2799 Wall Street Vancouver BC, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "east-village-dog-park",
+      "name": "East Village Dog Park",
+      "reason": "geocode no result",
+      "query": "7 Ave SE & 5 St SE, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "emery-barnes-dog-park",
+      "name": "Emery Barnes",
+      "reason": "geocode no result",
+      "query": "Davie Street & Richards Street, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "evanston-dog-park",
+      "name": "Evanston Dog Park",
+      "reason": "geocode no result",
+      "query": "East of Symons Valley Parkway NW, between Evansford Circle NW and Evansford Grove NW, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "everett-crowley-dog-park",
+      "name": "Everett Crowley",
+      "reason": "geocode no result",
+      "query": "8200 Kerr Street Vancouver BC, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "falaise-park-dog-park",
+      "name": "Falaise Park",
+      "reason": "geocode no result",
+      "query": "3434 Falaise Avenue Vancouver, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "falaise-dog-park",
+      "name": "Falaise Park",
+      "reason": "geocode no result",
+      "query": "3434 Falaise Avenue Vancouver, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "falaise-dog-park-vancouver",
+      "name": "Falaise Park",
+      "reason": "geocode no result",
+      "query": "3434 Falaise Avenue Vancouver, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "fish-creek-marshall-votiers",
+      "name": "Fish Creek Park – Marshall Springs & Votiers Flats",
+      "reason": "geocode no result",
+      "query": "Marshall Springs Gate SW, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "fish-creek-provincial-park-off-leash-area",
+      "name": "Fish Creek Provincial Park Off-Leash Area",
+      "reason": "geocode no result",
+      "query": "13931 Woodpath Rd SW, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "fraser-river-dog-park",
+      "name": "Fraser River Park",
+      "reason": "geocode no result",
+      "query": "8705 Angus Drive Vancouver BC, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "fraserview-golf-course-vancouver",
+      "name": "Fraserview Golf Course",
+      "reason": "geocode no result",
+      "query": "7800 Vivian St Vancouver BC, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "george-dog-park-vancouver",
+      "name": "George Park",
+      "reason": "geocode no result",
+      "query": "500 E 63rd Avenue Vancouver BC, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "glamorgan-off-leash-area",
+      "name": "Glamorgan Off-Leash Area",
+      "reason": "geocode no result",
+      "query": "4207 41 Ave SW, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "glenmore-dam-off-leash-area",
+      "name": "Glenmore Dam Off-Leash Area",
+      "reason": "geocode no result",
+      "query": "90 Ave SW & 24 St SW, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "hadden-dog-park",
+      "name": "Hadden Park",
+      "reason": "geocode no result",
+      "query": "1905 Ogden Avenue Vancouver BC, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "hidden-valley-area-2-off-leash-dog-park",
+      "name": "Hidden Valley Area 2 Off-Leash Dog Park",
+      "reason": "geocode no result",
+      "query": "9900 Hidden Valley Dr NW, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "hinge-park-dog-park",
+      "name": "Hinge Park (Southeast False Creek)",
+      "reason": "geocode no result",
+      "query": "215 West 1st Avenue Vancouver, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "john-hendry-dog-park",
+      "name": "John Hendry",
+      "reason": "geocode no result",
+      "query": "3300 Victoria Drive Vancouver, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "jones-dog-park-vancouver",
+      "name": "Jones Park",
+      "reason": "geocode no result",
+      "query": "5350 Commercial Street Vancouv, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "killarney-park-dog-park",
+      "name": "Killarney Park",
+      "reason": "geocode no result",
+      "query": "6205 Kerr Street Vancouver BC, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "kingcrest-dog-park-vancouver",
+      "name": "Kingcrest Park",
+      "reason": "geocode no result",
+      "query": "4150 Knight Street Vancouver B, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "legacy-park",
+      "name": "Legacy Park",
+      "reason": "geocode no result",
+      "query": "Legacy View SE & Legacy Blvd SE, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "locarno-beach-dog-park-vancouver",
+      "name": "Locarno Beach Park",
+      "reason": "geocode no result",
+      "query": "NW Marine Drive and Trimble St, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "mahogany-wetlands-off-leash-area",
+      "name": "Mahogany Wetlands Off-Leash Area",
+      "reason": "geocode no result",
+      "query": "Mahogany Blvd SE & Mahogany Gate SE, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "mcknight-falconridge-off-leash-area",
+      "name": "McKnight-Falconridge Off-Leash Area",
+      "reason": "geocode no result",
+      "query": "68 St NE & McKnight Blvd NE, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "musqueam-dog-park-vancouver",
+      "name": "Musqueam Park",
+      "reason": "geocode no result",
+      "query": "4000 SW Marine Drive Vancouver, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "nat-bailey-stadium-dog-park",
+      "name": "Nat Bailey Stadium Park",
+      "reason": "geocode no result",
+      "query": "4601 Ontario Street Vancouver, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "nelson-dog-park",
+      "name": "Nelson Park",
+      "reason": "geocode no result",
+      "query": "1030 Bute Street Vancouver BC, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "new-brighton-dog-park-vancouver",
+      "name": "New Brighton Park",
+      "reason": "geocode no result",
+      "query": "3201 New Brighton Road Vancouv, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "oak-meadows-dog-park",
+      "name": "Oak Meadows Park",
+      "reason": "geocode no result",
+      "query": "W 37th Avenue & Oak Street Van, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "pandora-dog-park-vancouver",
+      "name": "Pandora Park",
+      "reason": "geocode no result",
+      "query": "2325 Franklin Street, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "pearce-estate-park-off-leash-area",
+      "name": "Pearce Estate Park Off-Leash Area",
+      "reason": "geocode no result",
+      "query": "1440 17A St SE, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "pump-hill-off-leash-area",
+      "name": "Pump Hill Off-Leash Area",
+      "reason": "geocode no result",
+      "query": "Pump Hill Landing SW & Pump Hill Crescent SW, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "queen-elizabeth-dog-park",
+      "name": "Queen Elizabeth Park",
+      "reason": "geocode no result",
+      "query": "4600 Cambie Street Vancouver B, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "queensland-off-leash-area",
+      "name": "Queensland Off-Leash Area",
+      "reason": "geocode no result",
+      "query": "Queensland Dr SE & Bannister Rd SE, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "quilchena-dog-park",
+      "name": "Quilchena Park",
+      "reason": "geocode no result",
+      "query": "4590 Magnolia Street Vancouver, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "ramsay-off-leash-area",
+      "name": "Ramsay Off-Leash Area",
+      "reason": "geocode no result",
+      "query": "Spiller Rd SE & Ramsay St SE, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "regent-park",
+      "name": "Regent Park",
+      "reason": "geocode no result",
+      "query": "620 Dundas Street East, Toronto, Ontario, Canada"
+    },
+    {
+      "slug": "renfrew-community-dog-park",
+      "name": "Renfrew Community Park",
+      "reason": "geocode no result",
+      "query": "2929 E 22nd Ave, Vancouver, BC, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "renfrew-off-leash-park",
+      "name": "Renfrew Off-Leash Park",
+      "reason": "geocode no result",
+      "query": "712 St. George's Dr NE, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "river-park-off-leash-area",
+      "name": "River Park Off-Leash Area",
+      "reason": "geocode no result",
+      "query": "4500 14a St SW, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "riverdale-off-leash-area",
+      "name": "Riverdale Off-Leash Area",
+      "reason": "geocode no result",
+      "query": "Riverdale Ave SW & 5 St SW, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "rotary-park-off-leash-area",
+      "name": "Rotary Park Off-Leash Area",
+      "reason": "geocode no result",
+      "query": "617 1 St NE, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "roxboro-off-leash-area",
+      "name": "Roxboro Off-Leash Area",
+      "reason": "geocode no result",
+      "query": "3000 1 St SW, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "rushdale-park",
+      "name": "Rushdale Park",
+      "reason": "geocode no result",
+      "query": "130 Southpark Ave, Hamilton, Ontario, Canada"
+    },
+    {
+      "slug": "sandstone-area-1-off-leash-dog-park",
+      "name": "Sandstone Area 1 Off-Leash Dog Park",
+      "reason": "geocode no result",
+      "query": "28 Sanderling Close NW, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "sandy-beach-off-leash-area",
+      "name": "Sandy Beach Park Off-Leash Area",
+      "reason": "geocode no result",
+      "query": "4500 14a St SW, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "seton-off-leash-area",
+      "name": "Seton Off-Leash Area",
+      "reason": "geocode no result",
+      "query": "Seton Blvd SE & Seton Crescent SE, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "skyview-ranch-off-leash-area",
+      "name": "Skyview Ranch Off-Leash Area",
+      "reason": "geocode no result",
+      "query": "100 Skyview Shores Manor NE, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "spanish-banks-dog-park-vancouver",
+      "name": "Spanish Banks Park",
+      "reason": "geocode no result",
+      "query": "4801 NW Marine Drive Vancouver, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "sparwood-dog-park-vancouver",
+      "name": "Sparwood Park",
+      "reason": "geocode no result",
+      "query": "6998 Arlington Street Vancouver, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "st-patricks-island-off-leash-area",
+      "name": "St. Patrick's Island Off-Leash Area",
+      "reason": "geocode no result",
+      "query": "1300 Zoo Road NE, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "stanley-dog-park",
+      "name": "Stanley Park",
+      "reason": "geocode no result",
+      "query": "2000 W Georgia Street Vancouver, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "strathcona-dog-park",
+      "name": "Strathcona Park",
+      "reason": "geocode no result",
+      "query": "857 Malkin Avenue Vancouver BC, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "strathcona-park-off-leash-area",
+      "name": "Strathcona Park Off-Leash Area",
+      "reason": "geocode no result",
+      "query": "Strathcona Dr SW & Strathcona Hill SW, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "sue-higgins-park",
+      "name": "Sue Higgins Park",
+      "reason": "geocode no result",
+      "query": "Southland Dr SE & Deerfoot Trail, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "sunalta-off-leash-area",
+      "name": "Sunalta Off-Leash Area",
+      "reason": "geocode no result",
+      "query": "10 Ave SW & 16 St SW, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "sunrise-dog-park-vancouver",
+      "name": "Sunrise Park",
+      "reason": "geocode no result",
+      "query": "1950 Windermere Street Vancouv, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "sunset-beach-dog-park",
+      "name": "Sunset Beach",
+      "reason": "geocode no result",
+      "query": "1204 Beach Avenue Vancouver BC, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "sunset-dog-park-vancouver",
+      "name": "Sunset Park",
+      "reason": "geocode no result",
+      "query": "300 E 53rd Avenue Vancouver BC, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "taradale-off-leash-area",
+      "name": "Taradale Off-Leash Area",
+      "reason": "geocode no result",
+      "query": "250 Taradale Dr NE, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "tecumseh-dog-park",
+      "name": "Tecumseh Park",
+      "reason": "geocode no result",
+      "query": "1751 E 45th Avenue Vancouver B, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "tom-campbells-hill-off-leash-area",
+      "name": "Tom Campbell’s Hill Off-Leash Area",
+      "reason": "geocode no result",
+      "query": "25 St. George's Dr NE, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "valdez-dog-park",
+      "name": "Valdez Park",
+      "reason": "geocode no result",
+      "query": "3210 W 22nd Avenue Vancouver B, Vancouver, BC, Canada"
+    },
+    {
+      "slug": "varsity-estates-park",
+      "name": "Varsity Estates Park",
+      "reason": "geocode no result",
+      "query": "53 Varsity Estates Terrace NW, Calgary, Alberta, Canada"
+    },
+    {
+      "slug": "west-hillhurst-off-leash-area",
+      "name": "West Hillhurst Off-Leash Area",
+      "reason": "geocode no result",
+      "query": "1025 19 St NW, Calgary, Alberta, Canada"
+    }
+  ]
+}

@@ -2,8 +2,9 @@
 import Layout from "../../components/Layout.astro";
 import Section from "../../components/Section.astro";
 import Card from "../../components/Card.astro";
+import ImageWithFallback from "../../components/ImageWithFallback.astro";
 import dogNames from "../../data/generated/dog-names.json";
-import { excerpt, breadcrumbSchema } from "../../utils/content.js";
+import { excerpt, breadcrumbSchema, stripHtml } from "../../utils/content.js";
 
 const breadcrumbs = [
   { label: "Home", href: "/" },
@@ -11,6 +12,34 @@ const breadcrumbs = [
 ];
 
 const topCsvUrl = "/data/top-1000-dog-names-2025.csv";
+const heroImage = "/images/blog/blog-trending-dog-names-2025-hero.jpg";
+
+function normalizeText(text = "") {
+  return text
+    .replace(/â€™|Ã¢â‚¬â„¢/g, "'")
+    .replace(/â€œ|â€|Ã¢â‚¬Å“|Ã¢â‚¬Â/g, "\"")
+    .replace(/â€“|Ã¢â‚¬â€œ/g, "–")
+    .replace(/â€”|Ã¢â‚¬â€/g, "—")
+    .replace(/â€¦/g, "...")
+    .replace(/â€/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+const dogNameCards = dogNames.map((entry) => {
+  const breed = entry.references?.["Breed Name"]?.[0] || entry.raw?.["Breed Name"] || "";
+  const rawIntro = entry.raw?.["Intro Summary"] || "";
+  const cleanedIntro = normalizeText(stripHtml(rawIntro));
+  const cleanedMeta = normalizeText(entry.metaDescription || "");
+  const cleanedDesc = normalizeText(entry.description || "");
+
+  return {
+    ...entry,
+    breed,
+    cardDescription: excerpt(cleanedIntro || cleanedMeta, cleanedDesc),
+    cardBadges: breed ? [breed] : []
+  };
+});
 ---
 
 <Layout
@@ -19,17 +48,27 @@ const topCsvUrl = "/data/top-1000-dog-names-2025.csv";
   canonical="https://leashfree.ca/dog-names/"
   structuredData={breadcrumbSchema(breadcrumbs)}
 >
-  <section class="hero-heading-center">
-    <div class="container narrow">
-      <div class="eyebrow">Dog Names</div>
-      <h1>Top Dog Names (2025): 1,000 Male, Female, Cute & Unique Picks</h1>
-      <p class="summary">
-        Browse the Top 1,000 most popular dog and puppy names for 2025. Filter by category and gender,
-        search by meaning, or use our Dog Name Finder for personalized picks.
-      </p>
-      <div class="actions">
-        <a class="button" href="/dog-name-finder/">Try Dog Name Finder</a>
+  <section class="page-header">
+    <div class="container detail-layout">
+      <div>
+        <div class="eyebrow">Dog Names</div>
+        <h1>Top Dog Names (2025): 1,000 Male, Female, Cute & Unique Picks</h1>
+        <p class="summary">
+          Browse the Top 1,000 most popular dog and puppy names for 2025. Filter by category and gender,
+          search by meaning, or use our Dog Name Finder for personalized picks.
+        </p>
+        <div class="actions">
+          <a class="button" href="/dog-name-finder/">Try Dog Name Finder</a>
+        </div>
       </div>
+      <ImageWithFallback
+        src={heroImage}
+        alt="Popular dog names hero image"
+        variant="hero"
+        loading="eager"
+        imagePosition="center 20%"
+        imageFit="contain"
+      />
     </div>
   </section>
 
@@ -103,11 +142,12 @@ const topCsvUrl = "/data/top-1000-dog-names-2025.csv";
 
   <Section title="Dog name ideas by breed" intro={`${dogNames.length} breed-specific naming guides.`}>
     <div class="grid">
-      {dogNames.slice(0, 12).map((entry) => (
+      {dogNameCards.slice(0, 12).map((entry) => (
         <Card
           title={entry.title || entry.name}
           href={`/dog-names/${entry.slug}/`}
-          description={excerpt(entry.metaDescription, entry.description)}
+          description={entry.cardDescription}
+          badges={entry.cardBadges}
           ctaLabel="Read guide"
         />
       ))}

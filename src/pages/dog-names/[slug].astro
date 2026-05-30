@@ -6,6 +6,8 @@ import Layout from "../../components/Layout.astro";
 import Section from "../../components/Section.astro";
 import Card from "../../components/Card.astro";
 import mediaMap from "../../data/media-map.json";
+import breedGroups from "../../data/generated/breed-groups.json";
+import breeds from "../../data/generated/dog-breeds.json";
 import dogNames from "../../data/generated/dog-names.json";
 import { breadcrumbSchema, excerpt, stripHtml } from "../../utils/content.js";
 import { resolveMedia } from "../../utils/media.js";
@@ -25,6 +27,28 @@ const ext = (extMatch?.[1] || "jpg").toLowerCase().replace("jpeg", "jpg");
 const localHero = `/images/dog-names/dog-name-${entry.slug}-hero.${ext}`;
 const image = { ...resolveMedia(entry, "Hero Image", mediaMap), src: localHero };
 const breed = entry.references["Breed Name"]?.[0] || entry.raw["Breed Name"] || "";
+const matchedBreed = breeds.find((item) => item.name?.toLowerCase() === breed.toLowerCase());
+const matchedGroup = matchedBreed
+  ? breedGroups.find((group) => group.name?.toLowerCase() === (matchedBreed.raw?.["Breed Group"] || "").toLowerCase())
+  : null;
+const breedGroupHref = matchedGroup ? `/dog-breeds/group/${matchedGroup.slug}/` : "";
+
+function toInternalPath(value = "") {
+  const input = String(value || "").trim();
+  if (!input) return "";
+  if (input.startsWith("/")) return input;
+  const withoutProtocol = input.replace(/^https?:\/\//i, "");
+  const domainStripped = withoutProtocol.replace(/^www\./i, "").replace(/^leashfree\.ca/i, "");
+  if (domainStripped.startsWith("/")) return domainStripped;
+  if (domainStripped.includes("/")) return `/${domainStripped}`;
+  return "";
+}
+
+const breedProfileHref = toInternalPath(
+  entry.references?.["Dog Breed Profile"]?.[0] ||
+    matchedBreed?.canonicalUrl ||
+    (matchedBreed?.slug ? `/dog-breeds/${matchedBreed.slug}/` : "")
+);
 const related = dogNames.filter((candidate) => candidate.slug !== entry.slug && candidate.references["Breed Name"]?.[0] === breed).slice(0, 3);
 const breadcrumbs = [
   { label: "Home", href: "/" },
@@ -44,31 +68,205 @@ const structuredData = [
     image: image.src
   }
 ];
+
+const heading = entry.raw["H1 Header"] || entry.title || entry.name;
+const introSummary = entry.body || entry.raw["Intro Summary"] || entry.description;
+
+const listSectionTitles = new Set([
+  "Editor's picks",
+  "Male names",
+  "Female names",
+  "Cute names",
+  "Unique names",
+  "Strong names",
+  "Nature-inspired names",
+  "Canadian-inspired names"
+]);
+
+function normalizeText(text = "") {
+  return text
+    .replace(/â€™|Ã¢â‚¬â„¢/g, "'")
+    .replace(/â€œ|â€|Ã¢â‚¬Å“|Ã¢â‚¬Â/g, "\"")
+    .replace(/â€“|Ã¢â‚¬â€œ/g, "–")
+    .replace(/â€”|Ã¢â‚¬â€/g, "—")
+    .replace(/â€¦/g, "...")
+    .replace(/â€/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function decodeHtml(value = "") {
+  return value
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, "\"")
+    .replace(/&#39;/g, "'")
+    .replace(/&nbsp;/g, " ");
+}
+
+function cleanHtml(html = "") {
+  return html
+    .replace(/<p[^>]*>\s*(?:â€|&#8205;|&nbsp;|\u200D)?\s*<\/p>/gi, "")
+    .replace(/<p[^>]*>\s*<\/p>/gi, "")
+    .trim();
+}
+
+function extractListItems(html = "") {
+  const source = cleanHtml(html);
+  const matches = [...source.matchAll(/<(?:li|p)[^>]*>([\s\S]*?)<\/(?:li|p)>/gi)];
+  if (!matches.length) return [];
+  return matches
+    .map(([, block]) => {
+      const strongMatch = block.match(/<strong[^>]*>([\s\S]*?)<\/strong>/i);
+      const label = normalizeText(decodeHtml((strongMatch?.[1] || "").replace(/<[^>]+>/g, "")));
+      const rest = strongMatch ? block.replace(strongMatch[0], "") : block;
+      const note = normalizeText(decodeHtml(rest.replace(/<[^>]+>/g, "").replace(/^[-–—:\s]+/, "")));
+      const fallback = normalizeText(decodeHtml(block.replace(/<[^>]+>/g, "")));
+      return { label: label || fallback, note };
+    })
+    .filter((item) => item.label);
+}
+
+function extractColorGroups(html = "") {
+  const source = cleanHtml(html);
+  const headingPattern = /<h3[^>]*>([\s\S]*?)<\/h3>/gi;
+  const headings = [...source.matchAll(headingPattern)];
+  if (!headings.length) return [];
+
+  return headings
+    .map((match, index) => {
+      const title = normalizeText(decodeHtml(match[1].replace(/<[^>]+>/g, "")));
+      const start = match.index + match[0].length;
+      const end = index + 1 < headings.length ? headings[index + 1].index : source.length;
+      const chunk = source.slice(start, end);
+      return { title, items: extractListItems(chunk) };
+    })
+    .filter((group) => group.title && group.items.length > 0);
+}
+
+function extractFaqItems(html = "") {
+  const source = cleanHtml(html);
+  const pairs = [...source.matchAll(/<p[^>]*>\s*<strong[^>]*>([\s\S]*?)<\/strong>\s*<br\s*\/?>\s*([\s\S]*?)<\/p>/gi)];
+  if (!pairs.length) return [];
+  return pairs
+    .map(([, question, answer]) => ({
+      question: normalizeText(decodeHtml(question.replace(/<[^>]+>/g, ""))),
+      answer: normalizeText(decodeHtml(answer.replace(/<[^>]+>/g, "")))
+    }))
+    .filter((item) => item.question && item.answer);
+}
+
+const sectionCandidates = [
+  { title: "Breed snapshot", keys: ["Breed Snapshot"] },
+  { title: "Editor's picks", keys: ["Editor’s Picks (Optional)", "Editorâ€™s Picks (Optional)"] },
+  { title: "Male names", keys: ["Male Names"] },
+  { title: "Female names", keys: ["Female Names"] },
+  { title: "Cute names", keys: ["Cute Names"] },
+  { title: "Unique names", keys: ["Unique Names"] },
+  { title: "Strong names", keys: ["Strong Names"] },
+  { title: "Nature-inspired names", keys: ["Nature-Inspired Names"] },
+  { title: "Color-inspired names", keys: ["Color-Inspired Names"] },
+  { title: "Canadian-inspired names", keys: ["Canadian-Inspired Names"] },
+  { title: "Puppy naming tips", keys: ["Puppy Naming Tips"] },
+  { title: "FAQs", keys: ["FAQs"] }
+];
+
+const sections = sectionCandidates
+  .map((section) => {
+    const html = section.keys.map((key) => entry.raw[key]).find((value) => typeof value === "string" && value.trim());
+    if (!html) return null;
+    const cleanedHtml = cleanHtml(html);
+    if (section.title === "Color-inspired names") {
+      const groups = extractColorGroups(cleanedHtml);
+      return groups.length > 0 ? { title: section.title, type: "color-groups", groups } : { title: section.title, type: "html", html: cleanedHtml };
+    }
+    if (section.title === "FAQs") {
+      const items = extractFaqItems(cleanedHtml);
+      return items.length > 0 ? { title: section.title, type: "faq", items } : { title: section.title, type: "html", html: cleanedHtml };
+    }
+    if (listSectionTitles.has(section.title)) {
+      const items = extractListItems(cleanedHtml);
+      return items.length > 0 ? { title: section.title, type: "name-list", items } : { title: section.title, type: "html", html: cleanedHtml };
+    }
+    return { title: section.title, type: "html", html: cleanedHtml };
+  })
+  .filter(Boolean);
 ---
 
 <Layout title={entry.seoTitle || entry.title || entry.name} description={entry.metaDescription || entry.description} canonical={entry.canonicalUrl} ogImage={image.src} structuredData={structuredData}>
   <section class="page-header">
-    <div class="container narrow">
-      <Breadcrumbs items={breadcrumbs} />
-      <div class="eyebrow">Dog Names</div>
-      <h1>{entry.title || entry.name}</h1>
-      <p class="summary">{excerpt(entry.description, entry.metaDescription)}</p>
-      {breed && (
-        <div class="badges">
-          <span class="badge">{breed}</span>
-        </div>
-      )}
+    <div class="container detail-layout">
+      <div>
+        <Breadcrumbs items={breadcrumbs} />
+        <div class="eyebrow">Dog Names</div>
+        <h1>{heading}</h1>
+        <p class="summary">{excerpt(entry.description, entry.metaDescription)}</p>
+        {breedProfileHref && breed && (
+          <p class="summary">
+            Looking for temperament, size, and care tips? See our <a href={breedProfileHref}>{breed} breed profile</a>.
+          </p>
+        )}
+        {breed && (
+          <div class="badges">
+            <span class="badge">{breed}</span>
+          </div>
+        )}
+      </div>
+      <ImageWithFallback
+        src={image.src}
+        alt={`${entry.title || entry.name} featured image`}
+        variant="hero"
+        loading="eager"
+        imagePosition="center 20%"
+        imageFit="contain"
+      />
     </div>
   </section>
-
-  <Section tight>
-    <ImageWithFallback src={image.src} alt={`${entry.title || entry.name} featured image`} variant="hero" loading="eager" />
-  </Section>
 
   <Section>
     <div class="split">
       <article>
-        <ContentBlock html={entry.body || entry.description} />
+        <ContentBlock html={introSummary} />
+        {sections.map((section) => (
+          <section class="content-block">
+            <h2>{section.title}</h2>
+            {section.type === "name-list" ? (
+              <div class="name-grid">
+                {section.items.map((item) => (
+                  <article class="name-card">
+                    <h3>{item.label}</h3>
+                    {item.note && <p>{item.note}</p>}
+                  </article>
+                ))}
+              </div>
+            ) : section.type === "color-groups" ? (
+              <div class="color-groups">
+                {section.groups.map((group) => (
+                  <section class="color-group">
+                    <h3>{group.title}</h3>
+                    <div class="chip-list">
+                      {group.items.map((item) => (
+                        <span class="name-chip" title={item.note || item.label}>{item.label}</span>
+                      ))}
+                    </div>
+                  </section>
+                ))}
+              </div>
+            ) : section.type === "faq" ? (
+              <div class="faq-accordion">
+                {section.items.map((item) => (
+                  <details class="faq-item">
+                    <summary>{item.question}</summary>
+                    <div class="faq-answer">
+                      <p>{item.answer}</p>
+                    </div>
+                  </details>
+                ))}
+              </div>
+            ) : (
+              <div set:html={section.html} />
+            )}
+          </section>
+        ))}
       </article>
       <aside class="sidebar">
         {breed && (
@@ -78,6 +276,12 @@ const structuredData = [
               <ul>
                 <li><strong>Breed:</strong> {breed}</li>
               </ul>
+              {(breedProfileHref || breedGroupHref) && (
+                <div class="button-row">
+                  {breedProfileHref && <a class="button secondary" href={breedProfileHref}>View breed profile</a>}
+                  {breedGroupHref && <a class="button secondary" href={breedGroupHref}>Browse breed group</a>}
+                </div>
+              )}
             </div>
           </section>
         )}

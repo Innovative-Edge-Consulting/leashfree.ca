@@ -13,6 +13,13 @@ function number(value) {
   return Number.isFinite(parsed) ? parsed : null;
 }
 
+function hasValidCoordinates(lat, lng) {
+  if (lat === null || lng === null) return false;
+  if (Math.abs(lat) < 0.000001 && Math.abs(lng) < 0.000001) return false;
+  if (lat < -90 || lat > 90 || lng < -180 || lng > 180) return false;
+  return true;
+}
+
 function slugLabel(value) {
   return clean(value)
     .split("-")
@@ -58,7 +65,7 @@ function provinceName(value) {
 function parkItem(park) {
   const lat = number(park.raw.latitude);
   const lng = number(park.raw.longitude);
-  if (lat === null || lng === null) return null;
+  if (!hasValidCoordinates(lat, lng)) return null;
 
   return {
     type: "park",
@@ -82,7 +89,7 @@ function parkItem(park) {
 function businessItem(item) {
   const lat = number(item.raw.Latitude);
   const lng = number(item.raw.Longitude);
-  if (lat === null || lng === null) return null;
+  if (!hasValidCoordinates(lat, lng)) return null;
 
   const category = clean(item.raw.Category);
 

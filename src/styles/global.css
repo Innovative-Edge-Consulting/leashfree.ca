@@ -568,6 +568,24 @@ p {
   overflow-wrap: anywhere;
 }
 
+.park-mini-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.park-mini-links a {
+  color: var(--color-primary-dark);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.park-mini-links a:hover {
+  text-decoration: underline;
+}
+
 .park-details-main {
   display: grid;
   gap: var(--space-4);
@@ -668,7 +686,7 @@ p {
 }
 
 .park-details-layout .sidebar {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--space-4);
 }
 
@@ -760,6 +778,58 @@ p {
 
 .faq-answer :where(p, ul, ol) {
   margin: 0;
+}
+
+.name-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-3);
+}
+
+.name-card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  padding: var(--space-4);
+}
+
+.name-card h3 {
+  margin: 0 0 var(--space-2);
+  font-size: 1.02rem;
+}
+
+.name-card p {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.96rem;
+}
+
+.color-groups {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.color-group h3 {
+  margin: 0 0 var(--space-2);
+  font-size: 1rem;
+}
+
+.chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.name-chip {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  background: var(--color-primary-soft);
+  color: var(--color-primary-dark);
+  padding: 0.28rem 0.62rem;
+  font-size: 0.84rem;
+  font-weight: 750;
 }
 
 .similar-breeds-section h2 {

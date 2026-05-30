@@ -788,12 +788,13 @@
     ],
     "sourceStatus": "verified-official",
     "recommendedSourceUrl": "https://guelph.ca/living/recreation/parks/",
-    "reviewStatus": "pending",
+    "reviewStatus": "applied-live",
     "sourceTitle": "Parks and trails - City of Guelph",
     "sourceType": "official parks and recreation page",
     "sourceConfidenceScore": 0.95,
     "sourceNotes": "Official City of Guelph parks page includes off-leash dog parks section.",
-    "reviewedOnCandidate": "2026-05-29"
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/halton-hills-dog-parks/",
@@ -817,12 +818,13 @@
     ],
     "sourceStatus": "verified-official",
     "recommendedSourceUrl": "https://www.haltonhills.ca/en/explore-and-play/leash-free-dog-parks.aspx",
-    "reviewStatus": "pending",
+    "reviewStatus": "applied-live",
     "sourceTitle": "Leash Free Dog Parks - Halton Hills",
     "sourceType": "official dog park / off-leash area page",
     "sourceConfidenceScore": 0.98,
     "sourceNotes": "Official Town of Halton Hills leash-free dog parks page.",
-    "reviewedOnCandidate": "2026-05-29"
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/hamilton/",
@@ -846,12 +848,13 @@
     ],
     "sourceStatus": "verified-official",
     "recommendedSourceUrl": "https://www.hamilton.ca/home-neighbourhood/animals-pets/dogs/dog-parks-and-free-running-areas",
-    "reviewStatus": "pending",
+    "reviewStatus": "applied-live",
     "sourceTitle": "Dog Parks and Free Running Areas | City of Hamilton",
     "sourceType": "official dog park / off-leash area page",
     "sourceConfidenceScore": 0.99,
     "sourceNotes": "Official City of Hamilton page listing dog parks and free running areas.",
-    "reviewedOnCandidate": "2026-05-29"
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/ladysmith/",
@@ -904,12 +907,13 @@
     ],
     "sourceStatus": "verified-official",
     "recommendedSourceUrl": "https://www.lethbridge.ca/parks-leisure-recreation/parks-and-playgrounds/dog-parks/",
-    "reviewStatus": "pending",
+    "reviewStatus": "applied-live",
     "sourceTitle": "Dog Parks | City of Lethbridge",
     "sourceType": "official dog park / off-leash area page",
     "sourceConfidenceScore": 0.99,
     "sourceNotes": "Official City of Lethbridge dog parks page.",
-    "reviewedOnCandidate": "2026-05-29"
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/medicine-hat/",
@@ -933,12 +937,13 @@
     ],
     "sourceStatus": "verified-official",
     "recommendedSourceUrl": "https://www.medicinehat.ca/parks-recreation/parks-playgrounds/parks/off-leash-dog-parks/",
-    "reviewStatus": "pending",
+    "reviewStatus": "applied-live",
     "sourceTitle": "Off-Leash Dog Parks | City of Medicine Hat",
     "sourceType": "official dog park / off-leash area page",
     "sourceConfidenceScore": 0.99,
     "sourceNotes": "Official City of Medicine Hat off-leash dog parks page with rules.",
-    "reviewedOnCandidate": "2026-05-29"
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/melfort/",
@@ -962,12 +967,13 @@
     ],
     "sourceStatus": "verified-official",
     "recommendedSourceUrl": "https://www.melfort.ca/p/parks-greenspaces",
-    "reviewStatus": "pending",
+    "reviewStatus": "applied-live",
     "sourceTitle": "Parks & Greenspaces - City of Melfort",
     "sourceType": "official parks and recreation page",
     "sourceConfidenceScore": 0.91,
     "sourceNotes": "Official City of Melfort parks page includes dog park listing.",
-    "reviewedOnCandidate": "2026-05-29"
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/melville/",
@@ -991,12 +997,13 @@
     ],
     "sourceStatus": "verified-official",
     "recommendedSourceUrl": "https://melville.ca/m/tourism-melville/dog-park",
-    "reviewStatus": "pending",
+    "reviewStatus": "applied-live",
     "sourceTitle": "Tourism Melville - Dog Park",
     "sourceType": "official public facilities page",
     "sourceConfidenceScore": 0.9,
     "sourceNotes": "Official City of Melville tourism domain page for the off-leash dog park.",
-    "reviewedOnCandidate": "2026-05-29"
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/milton/",
@@ -1020,12 +1027,13 @@
     ],
     "sourceStatus": "verified-official",
     "recommendedSourceUrl": "https://www.milton.ca/en/arts-and-recreation/dog-parks.aspx",
-    "reviewStatus": "pending",
+    "reviewStatus": "applied-live",
     "sourceTitle": "Dog Parks - Town of Milton",
     "sourceType": "official dog park / off-leash area page",
     "sourceConfidenceScore": 0.99,
     "sourceNotes": "Official Town of Milton dog parks page.",
-    "reviewedOnCandidate": "2026-05-29"
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/moose-jaw/",
@@ -1078,12 +1086,13 @@
     ],
     "sourceStatus": "verified-official",
     "recommendedSourceUrl": "https://morden.ca/parks-urban-forestry/parks",
-    "reviewStatus": "pending",
+    "reviewStatus": "applied-live",
     "sourceTitle": "Parks - City of Morden",
     "sourceType": "official parks and recreation page",
     "sourceConfidenceScore": 0.93,
     "sourceNotes": "Official City of Morden parks page references off-leash dog park location.",
-    "reviewedOnCandidate": "2026-05-29"
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/nelson/",
@@ -1136,12 +1145,13 @@
     ],
     "sourceStatus": "verified-official",
     "recommendedSourceUrl": "https://www.newwestcity.ca/parks-and-recreation/parks/off-leash-dog-areas",
-    "reviewStatus": "pending",
+    "reviewStatus": "applied-live",
     "sourceTitle": "Off-Leash Dog Areas | City of New Westminster",
     "sourceType": "official dog park / off-leash area page",
     "sourceConfidenceScore": 0.99,
     "sourceNotes": "Official City of New Westminster off-leash dog areas page.",
-    "reviewedOnCandidate": "2026-05-29"
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/niagara-falls/",
@@ -1165,12 +1175,13 @@
     ],
     "sourceStatus": "verified-official",
     "recommendedSourceUrl": "https://niagarafalls.ca/recreation-culture-and-community/parks-trails-and-sports-fields/off-leash-dog-parks/",
-    "reviewStatus": "pending",
+    "reviewStatus": "applied-live",
     "sourceTitle": "Off-Leash Dog Parks | Niagara Falls",
     "sourceType": "official dog park / off-leash area page",
     "sourceConfidenceScore": 0.99,
     "sourceNotes": "Official City of Niagara Falls off-leash dog parks page.",
-    "reviewedOnCandidate": "2026-05-29"
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/nipawin/",
@@ -1194,12 +1205,13 @@
     ],
     "sourceStatus": "verified-official",
     "recommendedSourceUrl": "https://nipawin.com/animal-control/",
-    "reviewStatus": "pending",
+    "reviewStatus": "applied-live",
     "sourceTitle": "Animal Control - Town of Nipawin",
     "sourceType": "official bylaw or animal services page",
     "sourceConfidenceScore": 0.9,
     "sourceNotes": "Official Town of Nipawin animal control page with animal control bylaw references.",
-    "reviewedOnCandidate": "2026-05-29"
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/north-battleford/",
@@ -1223,12 +1235,13 @@
     ],
     "sourceStatus": "verified-official",
     "recommendedSourceUrl": "https://www.cityofnb.ca/parks-recreation-culture/parks-trails-and-sports-fields/dog-park/",
-    "reviewStatus": "pending",
+    "reviewStatus": "applied-live",
     "sourceTitle": "Dog Park | City of North Battleford",
     "sourceType": "official dog park / off-leash area page",
     "sourceConfidenceScore": 0.99,
     "sourceNotes": "Official City of North Battleford dog park page.",
-    "reviewedOnCandidate": "2026-05-29"
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/oshawa/",
@@ -1252,12 +1265,13 @@
     ],
     "sourceStatus": "verified-official",
     "recommendedSourceUrl": "https://www.oshawa.ca/en/home-property/off-leash-parks.aspx?_mid_=3344",
-    "reviewStatus": "pending",
+    "reviewStatus": "applied-live",
     "sourceTitle": "Off-Leash Parks - City of Oshawa",
     "sourceType": "official dog park / off-leash area page",
     "sourceConfidenceScore": 0.98,
     "sourceNotes": "Official City of Oshawa off-leash parks page.",
-    "reviewedOnCandidate": "2026-05-29"
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/portage-la-prairie/",
@@ -1281,12 +1295,13 @@
     ],
     "sourceStatus": "verified-official",
     "recommendedSourceUrl": "https://www.city-plap.com/media/hkqfa1q4/animalcontrolbylaw21-8721.pdf",
-    "reviewStatus": "pending",
+    "reviewStatus": "applied-live",
     "sourceTitle": "Animal Control By-Law 21-8721 - City of Portage la Prairie",
     "sourceType": "official bylaw or animal services page",
     "sourceConfidenceScore": 0.92,
     "sourceNotes": "Official city bylaw PDF includes off-leash dog park rules and city licensing requirements.",
-    "reviewedOnCandidate": "2026-05-29"
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/prince-albert/",
@@ -1339,12 +1354,13 @@
     ],
     "sourceStatus": "verified-official",
     "recommendedSourceUrl": "https://www.ville.quebec.qc.ca/citoyens/animaux/parcs-et-aires-d-exercice-canins/index.aspx",
-    "reviewStatus": "pending",
+    "reviewStatus": "applied-live",
     "sourceTitle": "Parcs et aires d?exercice canins | Ville de Qu?bec",
     "sourceType": "official dog park / off-leash area page",
     "sourceConfidenceScore": 0.99,
     "sourceNotes": "Official Ville de Qu?bec page listing dog parks and canine exercise areas.",
-    "reviewedOnCandidate": "2026-05-29"
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/quinte-west/",
@@ -1368,12 +1384,13 @@
     ],
     "sourceStatus": "verified-official",
     "recommendedSourceUrl": "https://quintewest.ca/parks-facilities/parks/hanna-park/",
-    "reviewStatus": "pending",
+    "reviewStatus": "applied-live",
     "sourceTitle": "Hanna Park - The City of Quinte West",
     "sourceType": "official public facilities page",
     "sourceConfidenceScore": 0.91,
     "sourceNotes": "Official City of Quinte West park page includes dog park rules for the site.",
-    "reviewedOnCandidate": "2026-05-29"
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/red-deer/",
@@ -1397,12 +1414,13 @@
     ],
     "sourceStatus": "verified-official",
     "recommendedSourceUrl": "https://www.reddeer.ca/recreation-and-culture/outdoor-recreation/year-round-activities/off-leash-dog-parks/",
-    "reviewStatus": "pending",
+    "reviewStatus": "applied-live",
     "sourceTitle": "Off Leash Dog Parks - The City of Red Deer",
     "sourceType": "official dog park / off-leash area page",
     "sourceConfidenceScore": 0.99,
     "sourceNotes": "Official City of Red Deer off-leash dog parks page.",
-    "reviewedOnCandidate": "2026-05-29"
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/regina/",
@@ -1426,12 +1444,13 @@
     ],
     "sourceStatus": "verified-official",
     "recommendedSourceUrl": "https://www.regina.ca/parks-recreation-culture/parks/dog-parks/index.html",
-    "reviewStatus": "pending",
+    "reviewStatus": "applied-live",
     "sourceTitle": "Dog Parks | City of Regina",
     "sourceType": "official dog park / off-leash area page",
     "sourceConfidenceScore": 0.99,
     "sourceNotes": "Official City of Regina dog parks page.",
-    "reviewedOnCandidate": "2026-05-29"
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/restoule/",
@@ -1484,12 +1503,13 @@
     ],
     "sourceStatus": "verified-official",
     "recommendedSourceUrl": "https://www.saskatoon.ca/services-residents/pet-licensing-animal-services/dog-parks",
-    "reviewStatus": "pending",
+    "reviewStatus": "applied-live",
     "sourceTitle": "Dog Parks | City of Saskatoon",
     "sourceType": "official dog park / off-leash area page",
     "sourceConfidenceScore": 0.99,
     "sourceNotes": "Official City of Saskatoon dog parks page.",
-    "reviewedOnCandidate": "2026-05-29"
+    "reviewedOnCandidate": "2026-05-29",
+    "appliedOn": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/selkirk/",
@@ -1511,9 +1531,14 @@
       "Selkirk Manitoba leash free dog park rules",
       "Selkirk municipal dog park bylaw"
     ],
-    "sourceStatus": "not-started",
-    "recommendedSourceUrl": "",
-    "reviewStatus": "pending"
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.myselkirk.ca/community-services/domesticanimals/",
+    "reviewStatus": "pending",
+    "sourceTitle": "Domestic Animal Safety and Control - City of Selkirk",
+    "sourceType": "official bylaw or animal services page",
+    "sourceConfidenceScore": 0.96,
+    "sourceNotes": "Official City of Selkirk page explicitly identifies Selkirk Park off-leash area.",
+    "reviewedOnCandidate": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/st-albert/",
@@ -1535,9 +1560,14 @@
       "St. Albert Alberta leash free dog park rules",
       "St. Albert municipal dog park bylaw"
     ],
-    "sourceStatus": "not-started",
-    "recommendedSourceUrl": "",
-    "reviewStatus": "pending"
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://stalbert.ca/city/maps/dogs/areas/",
+    "reviewStatus": "pending",
+    "sourceTitle": "Off-Leash Area Locations - City of St. Albert",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.99,
+    "sourceNotes": "Official City of St. Albert off-leash area map and policy page.",
+    "reviewedOnCandidate": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/steinbach/",
@@ -1559,9 +1589,14 @@
       "Steinbach Manitoba leash free dog park rules",
       "Steinbach municipal dog park bylaw"
     ],
-    "sourceStatus": "not-started",
-    "recommendedSourceUrl": "",
-    "reviewStatus": "pending"
+    "sourceStatus": "likely-official-needs-review",
+    "recommendedSourceUrl": "https://www.steinbach.ca/",
+    "reviewStatus": "pending",
+    "sourceTitle": "City of Steinbach",
+    "sourceType": "official city or municipality website",
+    "sourceConfidenceScore": 0.64,
+    "sourceNotes": "Official city site references seasonal dog park fountains; dedicated dog park rules/page should be manually confirmed.",
+    "reviewedOnCandidate": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/stouffville/",
@@ -1583,9 +1618,14 @@
       "Stouffville Ontario leash free dog park rules",
       "Stouffville municipal dog park bylaw"
     ],
-    "sourceStatus": "not-started",
-    "recommendedSourceUrl": "",
-    "reviewStatus": "pending"
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.townofws.ca/play/parks-and-open-spaces/leash-free-dog-park/",
+    "reviewStatus": "pending",
+    "sourceTitle": "Leash Free Dog Park - Town of Whitchurch-Stouffville",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.99,
+    "sourceNotes": "Official town leash-free dog park page with location and rules.",
+    "reviewedOnCandidate": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/surrey/",
@@ -1607,9 +1647,14 @@
       "Surrey British Columbia leash free dog park rules",
       "Surrey municipal dog park bylaw"
     ],
-    "sourceStatus": "not-started",
-    "recommendedSourceUrl": "",
-    "reviewStatus": "pending"
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.surrey.ca/activities-parks-recreation/parks/things-to-do-in-parks/dog-off-leash-areas",
+    "reviewStatus": "pending",
+    "sourceTitle": "Dog Off-leash Areas - City of Surrey",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.99,
+    "sourceNotes": "Official City of Surrey off-leash areas page.",
+    "reviewedOnCandidate": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/swift-current/",
@@ -1631,9 +1676,14 @@
       "Swift Current Saskatchewan leash free dog park rules",
       "Swift Current municipal dog park bylaw"
     ],
-    "sourceStatus": "not-started",
-    "recommendedSourceUrl": "",
-    "reviewStatus": "pending"
+    "sourceStatus": "likely-official-needs-review",
+    "recommendedSourceUrl": "https://www.swiftcurrent.ca/home/showpublisheddocument/21956/638436912860900000",
+    "reviewStatus": "pending",
+    "sourceTitle": "City of Swift Current Council Document (Off-leash Dog Park)",
+    "sourceType": "official city or municipality website",
+    "sourceConfidenceScore": 0.67,
+    "sourceNotes": "Official city-hosted document confirms off-leash park context, but a stable dedicated landing page should be confirmed.",
+    "reviewedOnCandidate": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/thompson/",
@@ -1655,9 +1705,14 @@
       "Thompson Manitoba leash free dog park rules",
       "Thompson municipal dog park bylaw"
     ],
-    "sourceStatus": "not-started",
+    "sourceStatus": "not-found",
     "recommendedSourceUrl": "",
-    "reviewStatus": "pending"
+    "reviewStatus": "pending",
+    "sourceTitle": "",
+    "sourceType": "",
+    "sourceConfidenceScore": 0.2,
+    "sourceNotes": "No clear official City of Thompson off-leash dog park source found in this pass; requires manual follow-up.",
+    "reviewedOnCandidate": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/tiny/",
@@ -1679,9 +1734,14 @@
       "Tiny Ontario leash free dog park rules",
       "Tiny municipal dog park bylaw"
     ],
-    "sourceStatus": "not-started",
-    "recommendedSourceUrl": "",
-    "reviewStatus": "pending"
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.tiny.ca/recreation-community/parks-trails",
+    "reviewStatus": "pending",
+    "sourceTitle": "Parks & Trails - Township of Tiny",
+    "sourceType": "official parks and recreation page",
+    "sourceConfidenceScore": 0.96,
+    "sourceNotes": "Official Township of Tiny page includes off-leash dog park details.",
+    "reviewedOnCandidate": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/victoria/",
@@ -1703,9 +1763,14 @@
       "Victoria British Columbia leash free dog park rules",
       "Victoria municipal dog park bylaw"
     ],
-    "sourceStatus": "not-started",
-    "recommendedSourceUrl": "",
-    "reviewStatus": "pending"
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.victoria.ca/parks-recreation/our-parks/dogs-parks",
+    "reviewStatus": "pending",
+    "sourceTitle": "Dogs in Parks - City of Victoria",
+    "sourceType": "official bylaw or animal services page",
+    "sourceConfidenceScore": 0.98,
+    "sourceNotes": "Official City of Victoria dogs in parks page with leash-optional area guidance.",
+    "reviewedOnCandidate": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/warman/",
@@ -1727,9 +1792,14 @@
       "Warman Saskatchewan leash free dog park rules",
       "Warman municipal dog park bylaw"
     ],
-    "sourceStatus": "not-started",
-    "recommendedSourceUrl": "",
-    "reviewStatus": "pending"
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://warman.ca/678/Off-Leash-Dog-Park",
+    "reviewStatus": "pending",
+    "sourceTitle": "Off-Leash Dog Park - City of Warman",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.99,
+    "sourceNotes": "Official City of Warman off-leash dog park page.",
+    "reviewedOnCandidate": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/weyburn/",
@@ -1751,9 +1821,14 @@
       "Weyburn Saskatchewan leash free dog park rules",
       "Weyburn municipal dog park bylaw"
     ],
-    "sourceStatus": "not-started",
-    "recommendedSourceUrl": "",
-    "reviewStatus": "pending"
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://weyburn.ca/weyburn-community-dog-park/",
+    "reviewStatus": "pending",
+    "sourceTitle": "Weyburn Community Dog Park - City of Weyburn",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.97,
+    "sourceNotes": "Official City of Weyburn page for community dog park.",
+    "reviewedOnCandidate": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/white-rock/",
@@ -1775,9 +1850,14 @@
       "White Rock British Columbia leash free dog park rules",
       "White Rock municipal dog park bylaw"
     ],
-    "sourceStatus": "not-started",
-    "recommendedSourceUrl": "",
-    "reviewStatus": "pending"
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.whiterockcity.ca/799/Dogs-in-White-Rock",
+    "reviewStatus": "pending",
+    "sourceTitle": "Dogs in White Rock - City of White Rock",
+    "sourceType": "official bylaw or animal services page",
+    "sourceConfidenceScore": 0.96,
+    "sourceNotes": "Official City of White Rock page linking off-leash park and dog bylaws.",
+    "reviewedOnCandidate": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/winnipeg/",
@@ -1799,9 +1879,14 @@
       "Winnipeg Manitoba leash free dog park rules",
       "Winnipeg municipal dog park bylaw"
     ],
-    "sourceStatus": "not-started",
-    "recommendedSourceUrl": "",
-    "reviewStatus": "pending"
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://legacy.winnipeg.ca/PublicWorks/Parks/off-leash-dog-areas-locations.stm",
+    "reviewStatus": "pending",
+    "sourceTitle": "Off-leash dog area locations - City of Winnipeg",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.99,
+    "sourceNotes": "Official City of Winnipeg off-leash dog area locations page.",
+    "reviewedOnCandidate": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/woodstock/",
@@ -1823,9 +1908,14 @@
       "Woodstock Ontario leash free dog park rules",
       "Woodstock municipal dog park bylaw"
     ],
-    "sourceStatus": "not-started",
-    "recommendedSourceUrl": "",
-    "reviewStatus": "pending"
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.cityofwoodstock.ca/recreation-culture/parks-trails-and-sports-fields/dog-parks/",
+    "reviewStatus": "pending",
+    "sourceTitle": "Dog Parks - City of Woodstock",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.99,
+    "sourceNotes": "Official City of Woodstock dog parks page.",
+    "reviewedOnCandidate": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/yarmouth/",
@@ -1847,9 +1937,14 @@
       "Yarmouth Nova Scotia leash free dog park rules",
       "Yarmouth municipal dog park bylaw"
     ],
-    "sourceStatus": "not-started",
-    "recommendedSourceUrl": "",
-    "reviewStatus": "pending"
+    "sourceStatus": "likely-official-needs-review",
+    "recommendedSourceUrl": "https://www.yarmouthandacadianshores.com/en/things-to-do/yarmouth-dog-park/",
+    "reviewStatus": "pending",
+    "sourceTitle": "Yarmouth Dog Park - Yarmouth & Acadian Shores",
+    "sourceType": "official public facilities page",
+    "sourceConfidenceScore": 0.68,
+    "sourceNotes": "Official tourism/public facilities source with municipal context; verify preferred municipal source URL for long-term use.",
+    "reviewedOnCandidate": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/montreal/",
@@ -1871,9 +1966,14 @@
       "Montreal Quebec leash free dog park rules",
       "Montreal municipal dog park bylaw"
     ],
-    "sourceStatus": "not-started",
-    "recommendedSourceUrl": "",
-    "reviewStatus": "pending"
+    "sourceStatus": "likely-official-needs-review",
+    "recommendedSourceUrl": "https://montreal.ca/sujets/chiens?arrondissement=AC",
+    "reviewStatus": "pending",
+    "sourceTitle": "Chiens - Ville de Montr?al",
+    "sourceType": "official bylaw or animal services page",
+    "sourceConfidenceScore": 0.7,
+    "sourceNotes": "Official Ville de Montr?al dogs regulations page; borough-level dog-park listing source should be confirmed for city page.",
+    "reviewedOnCandidate": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/bridgewater/",
@@ -1894,9 +1994,14 @@
       "Bridgewater Nova Scotia leash free dog park rules",
       "Bridgewater municipal dog park bylaw"
     ],
-    "sourceStatus": "not-started",
-    "recommendedSourceUrl": "",
-    "reviewStatus": "pending"
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.bridgewater.ca/facilities/parks-and-trails/south-shore-vet-dog-zone",
+    "reviewStatus": "pending",
+    "sourceTitle": "South Shore Vet Dog Zone - Town of Bridgewater",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.98,
+    "sourceNotes": "Official Town of Bridgewater off-leash dog zone page.",
+    "reviewedOnCandidate": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/kentville/",
@@ -1917,9 +2022,14 @@
       "Kentville Nova Scotia leash free dog park rules",
       "Kentville municipal dog park bylaw"
     ],
-    "sourceStatus": "not-started",
-    "recommendedSourceUrl": "",
-    "reviewStatus": "pending"
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://kentville.ca/dogpark",
+    "reviewStatus": "pending",
+    "sourceTitle": "Marshview Dog Park - Town of Kentville",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.99,
+    "sourceNotes": "Official Town of Kentville dog park page.",
+    "reviewedOnCandidate": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/london/",
@@ -1940,9 +2050,14 @@
       "London Ontario leash free dog park rules",
       "London municipal dog park bylaw"
     ],
-    "sourceStatus": "not-started",
-    "recommendedSourceUrl": "",
-    "reviewStatus": "pending"
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://london.ca/living-london/parks-facilities/parks/leash-dog-parks",
+    "reviewStatus": "pending",
+    "sourceTitle": "Off-leash dog parks - City of London",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.99,
+    "sourceNotes": "Official City of London off-leash dog parks page.",
+    "reviewedOnCandidate": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/sydney/",
@@ -1963,9 +2078,14 @@
       "Sydney Nova Scotia leash free dog park rules",
       "Sydney municipal dog park bylaw"
     ],
-    "sourceStatus": "not-started",
-    "recommendedSourceUrl": "",
-    "reviewStatus": "pending"
+    "sourceStatus": "likely-official-needs-review",
+    "recommendedSourceUrl": "https://cbrm.ns.ca/parks-recreation/parks-trails-green-spaces/",
+    "reviewStatus": "pending",
+    "sourceTitle": "Parks, Trails & Green Spaces - Cape Breton Regional Municipality",
+    "sourceType": "official parks and recreation page",
+    "sourceConfidenceScore": 0.66,
+    "sourceNotes": "Official CBRM parks page includes municipal dog-park references; Sydney-specific canonical page should be manually confirmed.",
+    "reviewedOnCandidate": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/truro/",
@@ -1986,9 +2106,14 @@
       "Truro Nova Scotia leash free dog park rules",
       "Truro municipal dog park bylaw"
     ],
-    "sourceStatus": "not-started",
+    "sourceStatus": "human-review-required",
     "recommendedSourceUrl": "",
-    "reviewStatus": "pending"
+    "reviewStatus": "pending",
+    "sourceTitle": "",
+    "sourceType": "",
+    "sourceConfidenceScore": 0.45,
+    "sourceNotes": "No clear current official Town of Truro off-leash dog park page found; requires manual verification against municipal records.",
+    "reviewedOnCandidate": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/charleston-lake/",
@@ -2010,9 +2135,14 @@
       "Charleston Lake Ontario leash free dog park rules",
       "Charleston Lake municipal dog park bylaw"
     ],
-    "sourceStatus": "not-started",
-    "recommendedSourceUrl": "",
-    "reviewStatus": "pending"
+    "sourceStatus": "human-review-required",
+    "recommendedSourceUrl": "https://www.ontarioparks.ca/dogsatparks",
+    "reviewStatus": "pending",
+    "sourceTitle": "Dogs at Ontario Parks",
+    "sourceType": "official public facilities page",
+    "sourceConfidenceScore": 0.52,
+    "sourceNotes": "Official Ontario Parks dog policy found, but this route may represent provincial trail content rather than a city dog-park page; manual review required.",
+    "reviewedOnCandidate": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/chilliwack/",
@@ -2034,9 +2164,14 @@
       "Chilliwack British Columbia leash free dog park rules",
       "Chilliwack municipal dog park bylaw"
     ],
-    "sourceStatus": "not-started",
-    "recommendedSourceUrl": "",
-    "reviewStatus": "pending"
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.chilliwack.com/main/page.cfm?id=2579",
+    "reviewStatus": "pending",
+    "sourceTitle": "Dog Off-Leash Areas - City of Chilliwack",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.99,
+    "sourceNotes": "Official City of Chilliwack dog off-leash areas page.",
+    "reviewedOnCandidate": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/kelowna/",
@@ -2058,9 +2193,14 @@
       "Kelowna British Columbia leash free dog park rules",
       "Kelowna municipal dog park bylaw"
     ],
-    "sourceStatus": "not-started",
-    "recommendedSourceUrl": "",
-    "reviewStatus": "pending"
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.kelowna.ca/parks-recreation/parks-beaches/dog-parks",
+    "reviewStatus": "pending",
+    "sourceTitle": "Dog parks - City of Kelowna",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.99,
+    "sourceNotes": "Official City of Kelowna dog parks page.",
+    "reviewedOnCandidate": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/st-catharines/",
@@ -2082,9 +2222,14 @@
       "St. Catharines Ontario leash free dog park rules",
       "St. Catharines municipal dog park bylaw"
     ],
-    "sourceStatus": "not-started",
-    "recommendedSourceUrl": "",
-    "reviewStatus": "pending"
+    "sourceStatus": "verified-official",
+    "recommendedSourceUrl": "https://www.stcatharines.ca/en/recreation-and-leisure/leash-free-dog-parks.aspx",
+    "reviewStatus": "pending",
+    "sourceTitle": "Leash-free Dog Parks - City of St. Catharines",
+    "sourceType": "official dog park / off-leash area page",
+    "sourceConfidenceScore": 0.99,
+    "sourceNotes": "Official City of St. Catharines leash-free dog parks page.",
+    "reviewedOnCandidate": "2026-05-29"
   },
   {
     "routePath": "/dog-parks/toronto/",

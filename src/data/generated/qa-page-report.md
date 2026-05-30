@@ -1,6 +1,6 @@
 # QA Page Report
 
-Generated at: 2026-05-29T22:01:55.963Z
+Generated at: 2026-05-30T00:15:30.881Z
 - HTML pages checked: 1070
 - Sitemap routes found: 1069
 - Missing title tags: 0

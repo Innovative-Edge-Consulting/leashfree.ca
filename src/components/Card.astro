@@ -9,9 +9,21 @@ interface Props {
   meta?: string;
   badges?: string[];
   ctaLabel?: string;
+  showCta?: boolean;
 }
 
-const { title, href, description, image, imageAlt = "", imagePosition, meta, badges = [], ctaLabel = "View details" } = Astro.props;
+const {
+  title,
+  href,
+  description,
+  image,
+  imageAlt = "",
+  imagePosition,
+  meta,
+  badges = [],
+  ctaLabel = "View details",
+  showCta = true
+} = Astro.props;
 ---
 
 <article class="card">
@@ -23,7 +35,7 @@ const { title, href, description, image, imageAlt = "", imagePosition, meta, bad
       {href ? <a class="card-link" href={href}>{title}</a> : title}
     </h3>
     {description && <p>{description}</p>}
-    {href && <a class="button secondary" href={href}>{ctaLabel}</a>}
+    {href && showCta && <a class="button secondary" href={href}>{ctaLabel}</a>}
     <slot />
   </div>
 </article>

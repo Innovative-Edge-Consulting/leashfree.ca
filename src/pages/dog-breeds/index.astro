@@ -48,7 +48,18 @@ const hypoallergenicOptions = getOptions("Hypoallergenic");
   <Section id="groups" title="Breed groups" intro="Browse similar breeds by group.">
     <div class="grid compact">
       {groups.map((group) => (
-        <Card title={group.name} href={`/dog-breeds/group/${group.slug}/`} description={excerpt(group.metaDescription, group.description)} image={resolveMedia(group, "Hero Image", mediaMap).src} imageAlt={`${group.name} breed group`} ctaLabel="View group" />
+        <Card
+          title={group.name}
+          href={`/dog-breeds/group/${group.slug}/`}
+          image={resolveMedia(group, "Hero Image", mediaMap).src}
+          imageAlt={`${group.name} breed group`}
+          showCta={false}
+        >
+          <p class="group-description" data-group-description>{excerpt(group.metaDescription, group.description)}</p>
+          <button class="group-description-toggle" type="button" data-group-description-toggle hidden aria-expanded="false">
+            Show more
+          </button>
+        </Card>
       ))}
     </div>
   </Section>
@@ -198,11 +209,60 @@ const hypoallergenicOptions = getOptions("Hypoallergenic");
         });
         update();
       });
+
+      const groupDescriptions = Array.from(document.querySelectorAll("[data-group-description]"));
+      for (const description of groupDescriptions) {
+        const toggle = description.parentElement?.querySelector("[data-group-description-toggle]");
+        if (!(toggle instanceof HTMLButtonElement)) continue;
+
+        const lineHeight = parseFloat(window.getComputedStyle(description).lineHeight) || 0;
+        const maxHeight = lineHeight > 0 ? lineHeight * 2 : 0;
+        const needsToggle = maxHeight > 0 && description.scrollHeight > maxHeight + 1;
+        if (!needsToggle) continue;
+
+        toggle.hidden = false;
+        toggle.addEventListener("click", () => {
+          const expanded = description.classList.toggle("is-expanded");
+          toggle.setAttribute("aria-expanded", expanded ? "true" : "false");
+          toggle.textContent = expanded ? "Show less" : "Show more";
+        });
+      }
     })();
   </script>
 </Layout>
 
 <style>
+  .group-description {
+    line-height: 1.65;
+    margin-bottom: var(--space-3);
+    max-height: calc(1.65em * 2);
+    overflow: hidden;
+  }
+
+  .group-description.is-expanded {
+    max-height: none;
+    overflow: visible;
+  }
+
+  .group-description-toggle {
+    align-self: flex-start;
+    background: none;
+    border: 0;
+    color: var(--color-primary-dark);
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.88rem;
+    font-weight: 750;
+    margin: calc(var(--space-3) * -1) 0 var(--space-3);
+    padding: 0;
+    text-decoration: underline;
+    text-underline-offset: 0.16em;
+  }
+
+  .group-description-toggle:hover {
+    color: var(--color-primary);
+  }
+
   .breed-search {
     background:
       linear-gradient(160deg, color-mix(in srgb, var(--color-primary-soft) 88%, #ffffff 12%) 0%, #ffffff 42%),
