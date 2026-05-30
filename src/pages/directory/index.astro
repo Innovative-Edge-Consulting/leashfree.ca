@@ -1,5 +1,6 @@
 ---
 import Card from "../../components/Card.astro";
+import BusinessDirectorySearch from "../../components/BusinessDirectorySearch.astro";
 import Hero from "../../components/Hero.astro";
 import Layout from "../../components/Layout.astro";
 import Section from "../../components/Section.astro";
@@ -29,6 +30,13 @@ const breadcrumbs = [
     image="/images/general/category-veterinarians-hero.jpg"
     imageAlt="Dog services and pet resources"
   />
+
+  <Section
+    title="Search dog businesses"
+    intro="Find dog services and pet resources by name, category, city, province, or nearby location."
+  >
+    <BusinessDirectorySearch />
+  </Section>
 
   <Section id="listings" title="Directory listings" intro={`${directories.length} dog service and pet resource listings.`}>
     <div class="grid">
