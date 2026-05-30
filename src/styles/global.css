@@ -729,6 +729,19 @@ p {
   border-radius: var(--radius-card);
 }
 
+.sponsor-context-link {
+  border-left: 3px solid var(--color-primary);
+  background: rgba(230, 241, 234, 0.72);
+  color: var(--color-muted);
+  margin-top: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+}
+
+.sponsor-context-link a {
+  color: var(--color-primary-dark);
+  font-weight: 850;
+}
+
 .faq-accordion {
   margin-top: var(--space-7);
 }
@@ -906,6 +919,339 @@ p {
 .sidebar {
   display: grid;
   gap: var(--space-4);
+}
+
+.sponsored-label {
+  margin: 0 0 calc(var(--space-4) * -0.65);
+  color: var(--color-muted);
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.nutricanine-widget {
+  --nutricanine-blue: #00a9c9;
+  --nutricanine-teal: #007e92;
+  --nutricanine-cream: #fff8ea;
+  display: grid;
+  gap: var(--space-3);
+  position: sticky;
+  top: 96px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 169, 201, 0.25);
+  border-radius: var(--radius-sm);
+  background: #ffffff;
+  box-shadow: 0 12px 28px rgba(0, 126, 146, 0.12);
+  padding: var(--space-3);
+}
+
+.nutricanine-modal-open {
+  overflow: hidden;
+}
+
+.nutricanine-overlay-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  background: rgba(23, 42, 46, 0.52);
+  backdrop-filter: blur(3px);
+}
+
+.nutricanine-brand {
+  display: grid;
+  gap: 0.45rem;
+  justify-items: center;
+  text-align: center;
+}
+
+.nutricanine-brand a {
+  display: inline-flex;
+  border-radius: var(--radius-sm);
+}
+
+.nutricanine-brand img {
+  width: min(190px, 100%);
+  height: auto;
+}
+
+.nutricanine-brand p {
+  margin: 0;
+  color: var(--nutricanine-teal);
+  font-size: 0.84rem;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.nutricanine-carousel {
+  min-width: 0;
+}
+
+.nutricanine-slide {
+  display: none;
+}
+
+.nutricanine-slide.is-active {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.nutricanine-widget.is-expanded {
+  position: fixed;
+  inset: 50% auto auto 50%;
+  z-index: 90;
+  width: min(940px, calc(100vw - 32px));
+  max-height: min(860px, calc(100vh - 32px));
+  transform: translate(-50%, -50%);
+  overflow-y: auto;
+  padding: var(--space-5);
+}
+
+.nutricanine-widget.is-expanded .nutricanine-brand img {
+  width: min(260px, 100%);
+}
+
+.nutricanine-widget.is-expanded .nutricanine-brand p {
+  font-size: 1rem;
+}
+
+.nutricanine-widget.is-expanded .nutricanine-slide.is-active {
+  grid-template-columns: minmax(260px, 0.88fr) minmax(320px, 1fr);
+  align-items: start;
+  gap: var(--space-5);
+}
+
+.nutricanine-recipe-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border: 1px solid rgba(0, 169, 201, 0.18);
+  border-radius: var(--radius-sm);
+  background: var(--nutricanine-cream);
+  object-fit: cover;
+}
+
+.nutricanine-widget.is-expanded .nutricanine-recipe-image {
+  position: sticky;
+  top: 0;
+}
+
+.nutricanine-recipe-body {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.nutricanine-recipe-heading {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.nutricanine-recipe-heading span {
+  width: fit-content;
+  border-radius: var(--radius-pill);
+  background: rgba(0, 169, 201, 0.12);
+  color: var(--nutricanine-teal);
+  font-size: 0.72rem;
+  font-weight: 900;
+  line-height: 1.1;
+  padding: 0.32rem 0.55rem;
+}
+
+.nutricanine-recipe-heading h3 {
+  margin: 0;
+  color: #172a2e;
+  font-size: 1.08rem;
+}
+
+.nutricanine-icon-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nutricanine-icon-list li {
+  display: grid;
+  place-items: center;
+  min-height: 52px;
+  border: 1px solid rgba(0, 169, 201, 0.18);
+  border-radius: var(--radius-sm);
+  background: var(--nutricanine-cream);
+  color: #2f4b50;
+  font-size: 0.68rem;
+  font-weight: 850;
+  line-height: 1.18;
+  padding: 0.35rem;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.nutricanine-widget details {
+  border: 1px solid rgba(0, 169, 201, 0.18);
+  border-radius: var(--radius-sm);
+  background: #ffffff;
+  overflow: clip;
+}
+
+.nutricanine-widget summary {
+  cursor: pointer;
+  list-style: none;
+  color: #1d3438;
+  font-size: 0.8rem;
+  font-weight: 900;
+  line-height: 1.2;
+  padding: 0.62rem 0.7rem;
+}
+
+.nutricanine-widget summary::-webkit-details-marker {
+  display: none;
+}
+
+.nutricanine-widget summary::after {
+  content: "+";
+  float: right;
+  color: var(--nutricanine-blue);
+  font-weight: 950;
+}
+
+.nutricanine-widget details[open] summary::after {
+  content: "-";
+}
+
+.nutricanine-widget details p,
+.nutricanine-ingredients {
+  margin: 0;
+  color: #516569;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  padding: 0 0.7rem 0.7rem;
+}
+
+.nutricanine-ingredients {
+  display: grid;
+  gap: 0.15rem;
+  padding-left: 1.7rem;
+}
+
+.nutricanine-widget table {
+  width: calc(100% - 1.4rem);
+  margin: 0 0.7rem 0.7rem;
+  border-collapse: collapse;
+  color: #33494d;
+  font-size: 0.72rem;
+  line-height: 1.25;
+}
+
+.nutricanine-widget caption {
+  padding-bottom: 0.35rem;
+  color: #516569;
+  font-weight: 850;
+  text-align: left;
+}
+
+.nutricanine-widget th,
+.nutricanine-widget td {
+  border-top: 1px solid rgba(0, 169, 201, 0.14);
+  padding: 0.32rem 0.2rem;
+  text-align: left;
+}
+
+.nutricanine-widget td {
+  text-align: center;
+}
+
+.nutricanine-controls {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr) 34px;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.nutricanine-controls span {
+  color: var(--nutricanine-teal);
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.nutricanine-arrow {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(0, 169, 201, 0.28);
+  border-radius: 50%;
+  background: #ffffff;
+  color: var(--nutricanine-teal);
+  cursor: pointer;
+  font: inherit;
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.nutricanine-arrow:hover {
+  border-color: var(--nutricanine-blue);
+  background: rgba(0, 169, 201, 0.08);
+}
+
+.nutricanine-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  border-radius: var(--radius-pill);
+  background: var(--nutricanine-blue);
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 950;
+  text-decoration: none;
+}
+
+.nutricanine-cta:hover {
+  background: var(--nutricanine-teal);
+  color: #ffffff;
+}
+
+.nutricanine-expand,
+.nutricanine-close {
+  position: absolute;
+  top: 0.55rem;
+  right: 0.55rem;
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(0, 169, 201, 0.28);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--nutricanine-teal);
+  cursor: pointer;
+  font: inherit;
+  font-size: 1.15rem;
+  font-weight: 950;
+  line-height: 1;
+}
+
+.nutricanine-expand:hover,
+.nutricanine-close:hover {
+  border-color: var(--nutricanine-blue);
+  background: rgba(0, 169, 201, 0.08);
+}
+
+.nutricanine-close {
+  display: none;
+  font-size: 1.45rem;
+}
+
+.nutricanine-widget.is-expanded .nutricanine-expand {
+  display: none;
+}
+
+.nutricanine-widget.is-expanded .nutricanine-close {
+  display: inline-grid;
 }
 
 .stat-strip {
@@ -1420,6 +1766,28 @@ p {
 
   .content-block {
     width: 100%;
+  }
+
+  .nutricanine-widget {
+    position: relative;
+    top: auto;
+  }
+
+  .nutricanine-widget.is-expanded {
+    position: fixed;
+    inset: 16px;
+    width: auto;
+    max-height: calc(100vh - 32px);
+    transform: none;
+    padding: var(--space-4);
+  }
+
+  .nutricanine-widget.is-expanded .nutricanine-slide.is-active {
+    grid-template-columns: 1fr;
+  }
+
+  .nutricanine-widget.is-expanded .nutricanine-recipe-image {
+    position: static;
   }
 
   .map-copy {

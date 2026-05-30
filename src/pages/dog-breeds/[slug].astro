@@ -3,6 +3,7 @@ import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import ContentBlock from "../../components/ContentBlock.astro";
 import ImageWithFallback from "../../components/ImageWithFallback.astro";
 import Layout from "../../components/Layout.astro";
+import NutriCanineSponsorWidget from "../../components/NutriCanineSponsorWidget.astro";
 import RelatedLinks from "../../components/RelatedLinks.astro";
 import Section from "../../components/Section.astro";
 import SimilarBreedsCarousel from "../../components/SimilarBreedsCarousel.astro";
@@ -102,6 +103,18 @@ const sections = [
           <section class="content-block">
             <h2>{heading}</h2>
             <div set:html={html} />
+            {heading === "Nutrition and diet" && (
+              <p class="sponsor-context-link">
+                For owners comparing fresh dog food options in Canada,{" "}
+                <a
+                  href="#nutricanine-sponsor"
+                  data-nutricanine-open
+                >
+                  NutriCanine offers real, gently cooked meals made with fresh ingredients
+                </a>
+                .
+              </p>
+            )}
           </section>
         ))}
         {faqItems.length > 0 ? (
@@ -123,9 +136,32 @@ const sections = [
       </article>
       <aside class="sidebar">
         <RelatedLinks title="Breed links" links={group ? [{ href: `/dog-breeds/group/${group.slug}/`, label: `More ${group.name}` }] : []} />
+        <p class="sponsored-label">Sponsored</p>
+        <NutriCanineSponsorWidget />
       </aside>
     </div>
   </Section>
 
   <SimilarBreedsCarousel currentBreed={breed} allBreeds={breeds} mediaMap={mediaMap} />
+
+  <script is:inline>
+    document.addEventListener("click", (event) => {
+      if (!(event.target instanceof Element)) {
+        return;
+      }
+
+      const trigger = event.target.closest("[data-nutricanine-open]");
+      if (!trigger) {
+        return;
+      }
+
+      event.preventDefault();
+      if (window.openNutriCanineSponsor) {
+        window.openNutriCanineSponsor();
+        return;
+      }
+
+      document.querySelector("[data-nutricanine-expand]")?.click();
+    });
+  </script>
 </Layout>

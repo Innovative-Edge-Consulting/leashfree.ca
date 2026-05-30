@@ -1,0 +1,32 @@
+Logo first
+Real Food, Always Fresh, Never Processed
+Recipe 1
+Chicken Recipe
+Tag: Grain Free
+icon 1: Fresh Ground Whole Chicken
+Icon 2: Broccoli
+Icon 3: Carrots
+Accordion 1 "Description": Bowl lickin' good - but we don't keep our recipe a secret! Inside, you'll find only the highest quality chicken plus fruits and veggies, like nutrient-dense broccoli and carrots to support healthy skin and coat.
+Accordion 2 "Full Ingredients": Fresh ground chicken
+Russet potatoes
+Fresh chicken liver
+Fresh chicken heart
+Butternut squash
+Carrots
+Broccoli
+Strawberries
+Dicalcium phosphate
+Vitamin and mineral supplement
+Sunflower oil
+Calcium carbonate
+Fish oil
+Sea salt
+Parsley
+Chia seeds
+Accordion 3 "Nutrional Info":  display in a table: Guaranteed Analysis:
+As Fed	Dry Matter
+Crude Protein (%)	13	41
+Crude Fat (%)	11	33
+Crude Fibre (%)	1	4
+Moisture (%)	67	
+CTA (open in new tab to https://www.nutricanine.ca/LeashFree): "Get Started"

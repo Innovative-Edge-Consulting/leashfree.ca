@@ -1,0 +1,347 @@
+---
+const sponsorUrl = "https://www.nutricanine.ca/LeashFree";
+
+const recipes = [
+  {
+    name: "Chicken Recipe",
+    tag: "Grain Free",
+    image: "/images/sponsors/nutricanine/chicken-recipe.avif",
+    icons: ["Fresh Ground Whole Chicken", "Broccoli", "Carrots"],
+    description:
+      "Bowl lickin' good - but we don't keep our recipe a secret! Inside, you'll find only the highest quality chicken plus fruits and veggies, like nutrient-dense broccoli and carrots to support healthy skin and coat.",
+    ingredients: [
+      "Fresh ground chicken",
+      "Russet potatoes",
+      "Fresh chicken liver",
+      "Fresh chicken heart",
+      "Butternut squash",
+      "Carrots",
+      "Broccoli",
+      "Strawberries",
+      "Dicalcium phosphate",
+      "Vitamin and mineral supplement",
+      "Sunflower oil",
+      "Calcium carbonate",
+      "Fish oil",
+      "Sea salt",
+      "Parsley",
+      "Chia seeds"
+    ],
+    nutrition: [
+      ["Crude Protein (%)", "13", "41"],
+      ["Crude Fat (%)", "11", "33"],
+      ["Crude Fibre (%)", "1", "4"],
+      ["Moisture (%)", "67", ""]
+    ]
+  },
+  {
+    name: "Turkey Recipe",
+    tag: "Low Fat",
+    image: "/images/sponsors/nutricanine/turkey-recipe.avif",
+    icons: ["Fresh Whole Turkey", "Butternut Squash", "Kale"],
+    description:
+      "Just like the homemade meal you make for your human family every Thanksgiving, but specially designed for your dog. This low-fat recipe is complete with locally sourced turkey, nutrient-dense superfood kale, and butternut squash for improved digestibility.",
+    ingredients: [
+      "Fresh ground turkey",
+      "Sweet potatoes",
+      "Whole oats",
+      "Russet potatoes",
+      "Carrot",
+      "Kale",
+      "Fresh turkey liver",
+      "Fresh turkey heart",
+      "Dicalcium phosphate",
+      "Strawberries",
+      "Vitamin & mineral supplement",
+      "Calcium carbonate",
+      "Fish oil",
+      "Sunflower oil",
+      "Sea salt",
+      "Parsley",
+      "Chia seeds"
+    ],
+    nutrition: [
+      ["Crude Protein (%)", "11", "26"],
+      ["Crude Fat (%)", "6", "13"],
+      ["Crude Fibre (%)", "3", "7"],
+      ["Moisture (%)", "59", ""]
+    ]
+  },
+  {
+    name: "Beef Recipe",
+    tag: "Picky Eater Approved",
+    image: "/images/sponsors/nutricanine/beef-recipe.avif",
+    icons: ["Fresh Ground Beef", "Butternut Squash", "Strawberries"],
+    description:
+      "Where's the beef? Our Gently Cooked Beef Recipe is chock-full of it, balanced with antioxidant-rich berries and highly digestible rice, making it the perfect meal for dogs who have an immune response to gluten and particularly popular with picky eaters.",
+    ingredients: [
+      "Fresh ground beef",
+      "Whole grain rice",
+      "Butternut squash",
+      "Carrots",
+      "Fresh beef liver",
+      "Fresh beef heart",
+      "Broccoli",
+      "Dicalcium phosphate",
+      "Vitamin and mineral supplement",
+      "Strawberries",
+      "Parsley",
+      "Sunflower oil",
+      "Calcium carbonate",
+      "Fish oil",
+      "Sea salt",
+      "Chia seed"
+    ],
+    nutrition: [
+      ["Crude Protein (%)", "14", "38"],
+      ["Crude Fat (%)", "9", "24"],
+      ["Crude Fibre (%)", "1", "3"],
+      ["Moisture (%)", "64", ""]
+    ]
+  },
+  {
+    name: "Salmon Recipe",
+    tag: "Skin & Coat",
+    image: "/images/sponsors/nutricanine/salmon-recipe.webp",
+    icons: ["Salmon", "Cranberries", "Coconut oil"],
+    description:
+      "Smooth, savory, and seriously good for them. Our Salmon Recipe features premium salmon paired with whole foods like pumpkin, sweet potatoes, and antioxidant-rich cranberries. Crafted to support healthy skin, a shiny coat, and everyday comfort. You'll see the difference in their coat. They'll feel it in their joints.",
+    ingredients: [
+      "Fresh salmon",
+      "Sweet potatoes",
+      "Russet potatoes",
+      "Pumpkin",
+      "Spinach",
+      "Cranberries",
+      "Dicalcium phosphate",
+      "Vitamin and mineral supplement",
+      "Sunflower oil",
+      "Flaxseed",
+      "Coconut oil",
+      "Calcium carbonate",
+      "Sea salt",
+      "Turmeric"
+    ],
+    nutrition: [
+      ["Crude Protein (%)", "11", "30"],
+      ["Crude Fat (%)", "9", "26"],
+      ["Crude Fibre (%)", "2", "4"],
+      ["Carbohydrates (%)", "10", "27"],
+      ["Moisture (%)", "64", ""]
+    ]
+  },
+  {
+    name: "Pork Recipe",
+    tag: "Hypoallergenic & GI Support",
+    image: "/images/sponsors/nutricanine/pork-recipe.webp",
+    icons: ["Fresh Ground Whole Pork", "Probiotic", "Pumpkin"],
+    description:
+      "Specially formulated for dogs with food sensitivities and itchy skin, featuring carefully selected ingredients enhanced with probiotics. This gentle recipe combines premium pork with nourishing sweet potato and pumpkin for a hypoallergenic meal that's easy on tummies but rich in flavour.",
+    ingredients: [
+      "Fresh ground pork",
+      "Sweet potatoes",
+      "Pumpkin",
+      "Butternut squash",
+      "Whole oats",
+      "Carrots",
+      "Apples",
+      "Spinach",
+      "Fresh pork liver",
+      "Fresh pork heart",
+      "Dicalcium phosphate",
+      "Sunflower oil",
+      "Probiotic supplement",
+      "Digestive enzyme supplement",
+      "Fish oil",
+      "Vitamin and mineral supplement",
+      "Calcium carbonate",
+      "Sea salt",
+      "Chia seeds"
+    ],
+    nutrition: [
+      ["Crude Protein (%)", "12", "31"],
+      ["Crude Fat (%)", "8", "21"],
+      ["Crude Fibre (%)", "3", "7"],
+      ["Moisture (%)", "62", ""]
+    ]
+  },
+  {
+    name: "Lamb Recipe",
+    tag: "Heart Healthy",
+    image: "/images/sponsors/nutricanine/lamb-recipe.avif",
+    icons: ["Fresh Ground Lamb", "Carrots", "Strawberries"],
+    description:
+      "No need to count sheep - you'll rest easy knowing your pup is staying healthy and happy with this recipe. Alongside high-quality lamb, it includes nutrient-rich green beans, carrots to support healthy skin and coat, and rice for gluten sensitivities.",
+    ingredients: [
+      "Fresh ground lamb",
+      "Whole grain rice",
+      "Butternut squash",
+      "Carrots",
+      "Fresh lamb liver",
+      "Fresh lamb heart",
+      "Green beans",
+      "Strawberries",
+      "Sunflower oil",
+      "Dicalcium phosphate",
+      "Vitamin and mineral supplement",
+      "Calcium carbonate",
+      "Fish oil",
+      "Parsley",
+      "Sea salt",
+      "Chia seeds"
+    ],
+    nutrition: [
+      ["Crude Protein (%)", "13", "38"],
+      ["Crude Fat (%)", "9", "25"],
+      ["Crude Fibre (%)", "2", "4"],
+      ["Moisture (%)", "65", ""]
+    ]
+  }
+];
+---
+
+<div class="nutricanine-overlay-backdrop" data-nutricanine-backdrop hidden></div>
+<section id="nutricanine-sponsor" class="nutricanine-widget" aria-labelledby="nutricanine-widget-title" data-nutricanine-widget>
+  <button
+    type="button"
+    class="nutricanine-expand"
+    data-nutricanine-expand
+    aria-label="Expand NutriCanine sponsor widget"
+    aria-expanded="false"
+  >
+    ⛶
+  </button>
+  <button type="button" class="nutricanine-close" data-nutricanine-close aria-label="Close NutriCanine sponsor widget">
+    ×
+  </button>
+
+  <div class="nutricanine-brand">
+    <a href={sponsorUrl} target="_blank" rel="noopener sponsored" aria-label="Open NutriCanine in a new tab">
+      <img src="/images/sponsors/nutricanine/nutricanine-logo.png" alt="NutriCanine" loading="lazy" />
+    </a>
+    <p id="nutricanine-widget-title">Real Food, Always Fresh, Never Processed</p>
+  </div>
+
+  <div class="nutricanine-carousel" aria-live="polite">
+    {recipes.map((recipe, index) => (
+      <article class:list={["nutricanine-slide", index === 0 && "is-active"]} data-nutricanine-slide>
+        <img class="nutricanine-recipe-image" src={recipe.image} alt={`${recipe.name} by NutriCanine`} loading="lazy" />
+        <div class="nutricanine-recipe-body">
+          <div class="nutricanine-recipe-heading">
+            <span>{recipe.tag}</span>
+            <h3>{recipe.name}</h3>
+          </div>
+          <ul class="nutricanine-icon-list" aria-label={`${recipe.name} featured ingredients`}>
+            {recipe.icons.map((icon) => <li>{icon}</li>)}
+          </ul>
+
+          <details open={index === 0}>
+            <summary>Description</summary>
+            <p>{recipe.description}</p>
+          </details>
+          <details>
+            <summary>Full Ingredients</summary>
+            <ul class="nutricanine-ingredients">
+              {recipe.ingredients.map((ingredient) => <li>{ingredient}</li>)}
+            </ul>
+          </details>
+          <details>
+            <summary>Nutritional Info</summary>
+            <table>
+              <caption>Guaranteed Analysis</caption>
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">As Fed</th>
+                  <th scope="col">Dry Matter</th>
+                </tr>
+              </thead>
+              <tbody>
+                {recipe.nutrition.map(([label, asFed, dryMatter]) => (
+                  <tr>
+                    <th scope="row">{label}</th>
+                    <td>{asFed}</td>
+                    <td>{dryMatter || "-"}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </details>
+        </div>
+      </article>
+    ))}
+  </div>
+
+  <div class="nutricanine-controls" aria-label="NutriCanine recipe carousel controls">
+    <button type="button" class="nutricanine-arrow" data-nutricanine-prev aria-label="Previous recipe">‹</button>
+    <span data-nutricanine-status>1 / {recipes.length}</span>
+    <button type="button" class="nutricanine-arrow" data-nutricanine-next aria-label="Next recipe">›</button>
+  </div>
+
+  <a class="nutricanine-cta" href={sponsorUrl} target="_blank" rel="noopener sponsored">Get Started</a>
+</section>
+
+<script>
+  document.querySelectorAll("[data-nutricanine-widget]").forEach((widget) => {
+    const backdrop = widget.previousElementSibling;
+    const slides = Array.from(widget.querySelectorAll("[data-nutricanine-slide]"));
+    const previous = widget.querySelector("[data-nutricanine-prev]");
+    const next = widget.querySelector("[data-nutricanine-next]");
+    const status = widget.querySelector("[data-nutricanine-status]");
+    const expand = widget.querySelector("[data-nutricanine-expand]");
+    const close = widget.querySelector("[data-nutricanine-close]");
+    let activeIndex = 0;
+
+    const showSlide = (index) => {
+      activeIndex = (index + slides.length) % slides.length;
+      slides.forEach((slide, slideIndex) => {
+        slide.classList.toggle("is-active", slideIndex === activeIndex);
+        if (slideIndex !== activeIndex) {
+          slide.querySelectorAll("details").forEach((details) => {
+            details.open = false;
+          });
+        }
+      });
+      status.textContent = `${activeIndex + 1} / ${slides.length}`;
+    };
+
+    const closeOverlay = () => {
+      widget.classList.remove("is-expanded");
+      document.body.classList.remove("nutricanine-modal-open");
+      expand?.setAttribute("aria-expanded", "false");
+      backdrop?.setAttribute("hidden", "");
+    };
+
+    const openOverlay = () => {
+      widget.classList.add("is-expanded");
+      document.body.classList.add("nutricanine-modal-open");
+      expand?.setAttribute("aria-expanded", "true");
+      backdrop?.removeAttribute("hidden");
+      close?.focus();
+    };
+
+    window.openNutriCanineSponsor = openOverlay;
+
+    previous?.addEventListener("click", () => showSlide(activeIndex - 1));
+    next?.addEventListener("click", () => showSlide(activeIndex + 1));
+    expand?.addEventListener("click", openOverlay);
+    close?.addEventListener("click", closeOverlay);
+    backdrop?.addEventListener("click", closeOverlay);
+    document.addEventListener("click", (event) => {
+      if (!(event.target instanceof Element)) {
+        return;
+      }
+
+      const trigger = event.target.closest("[data-nutricanine-open]");
+      if (trigger) {
+        event.preventDefault();
+        openOverlay();
+      }
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && widget.classList.contains("is-expanded")) {
+        closeOverlay();
+      }
+    });
+  });
+</script>

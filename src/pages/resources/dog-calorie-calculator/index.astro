@@ -2,6 +2,7 @@
 import Layout from "../../../components/Layout.astro";
 import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import ImageWithFallback from "../../../components/ImageWithFallback.astro";
+import NutriCanineSponsorWidget from "../../../components/NutriCanineSponsorWidget.astro";
 import dogBreeds from "../../../data/generated/dog-breeds.json";
 import { breadcrumbSchema } from "../../../utils/content.js";
 
@@ -14,6 +15,16 @@ const breadcrumbs = [
 const breedOptions = [...new Set(dogBreeds.map((entry) => entry.name).filter(Boolean))].sort((a, b) => a.localeCompare(b));
 const breedMeta = Object.fromEntries(
   dogBreeds.map((entry) => [entry.name, String(entry.references?.["Breed Group"]?.[0] || "").toLowerCase()])
+);
+const breedDietNotes = Object.fromEntries(
+  dogBreeds.map((entry) => [
+    entry.name,
+    {
+      size: entry.raw?.["Size Category"] || "",
+      activity: entry.raw?.["Activity Level"] || "",
+      shedding: entry.raw?.["Shedding Level"] || ""
+    }
+  ])
 );
 ---
 
@@ -36,104 +47,196 @@ const breedMeta = Object.fromEntries(
   </section>
 
   <section class="section">
-    <div class="container narrow">
-      <div class="calc-card">
-        <div class="calc-grid">
-          <label>Breed
-            <select id="breed">
-              <option value="">Select breed</option>
-              {breedOptions.map((name) => <option value={name}>{name}</option>)}
-            </select>
-          </label>
-          <label>Units
-            <select id="unit">
-              <option value="kg">kg</option>
-              <option value="lb">lb</option>
-            </select>
-          </label>
-          <label>Weight
-            <input id="weight" type="number" min="0" step="0.1" placeholder="e.g., 30" />
-          </label>
-          <label>Age
-            <select id="age">
-              <option value="1">Adult (x1.00)</option>
-              <option value="0.9">Senior (x0.90)</option>
-              <option value="3">Puppy 0-4 months (x3.00)</option>
-              <option value="2">Puppy 4 months-adult (x2.00)</option>
-            </select>
-          </label>
-          <label>Activity
-            <select id="activity">
-              <option value="1.6">Neutered Adult (x1.6)</option>
-              <option value="1.8">Intact Adult (x1.8)</option>
-              <option value="1.2">Senior / Low Activity (x1.2)</option>
-              <option value="1.4">Senior / Moderate Activity (x1.4)</option>
-              <option value="2">Active / Working (x2.0)</option>
-              <option value="3">Active / Working (x3.0)</option>
-              <option value="1">Weight Loss Target (x1.0)</option>
-            </select>
-          </label>
+    <div class="container calculator-layout">
+      <div class="calculator-main">
+        <div class="calc-card">
+          <div class="calc-grid">
+            <label>Breed
+              <select id="breed">
+                <option value="">Select breed</option>
+                {breedOptions.map((name) => <option value={name}>{name}</option>)}
+              </select>
+            </label>
+            <label>Units
+              <select id="unit">
+                <option value="kg">kg</option>
+                <option value="lb">lb</option>
+              </select>
+            </label>
+            <label>Weight
+              <input id="weight" type="number" min="0" step="0.1" placeholder="e.g., 30" />
+            </label>
+            <label>Age
+              <select id="age">
+                <option value="1">Adult (x1.00)</option>
+                <option value="0.9">Senior (x0.90)</option>
+                <option value="3">Puppy 0-4 months (x3.00)</option>
+                <option value="2">Puppy 4 months-adult (x2.00)</option>
+              </select>
+            </label>
+            <label>Activity
+              <select id="activity">
+                <option value="1.6">Neutered Adult (x1.6)</option>
+                <option value="1.8">Intact Adult (x1.8)</option>
+                <option value="1.2">Senior / Low Activity (x1.2)</option>
+                <option value="1.4">Senior / Moderate Activity (x1.4)</option>
+                <option value="2">Active / Working (x2.0)</option>
+                <option value="3">Active / Working (x3.0)</option>
+              </select>
+            </label>
+            <label>Goal
+              <select id="goal">
+                <option value="maintain">Maintain weight</option>
+                <option value="loss">Lose weight</option>
+                <option value="gain">Gain weight</option>
+              </select>
+            </label>
+            <label>Food kcal per cup
+              <input id="kcalCup" type="number" min="0" step="1" placeholder="Optional" />
+            </label>
+            <label>Food kcal per can
+              <input id="kcalCan" type="number" min="0" step="1" placeholder="Optional" />
+            </label>
+            <label>Food kcal per 100 g
+              <input id="kcalGram" type="number" min="0" step="1" placeholder="Optional" />
+            </label>
+            <label>Meals per day
+              <input id="meals" type="number" min="1" max="6" step="1" value="2" />
+            </label>
+          </div>
+          <button id="calculate" class="button" type="button">Calculate Daily Calories</button>
+          <div id="result" class="result"></div>
         </div>
-        <button id="calculate" class="button" type="button">Calculate Daily Calories</button>
-        <div id="result" class="result"></div>
+        <div class="calculator-content prose">
+          <h2>How to Use Your Result</h2>
+          <p>
+            Your result is an estimated daily calorie target in kcal/day. In pet food, "Calories" usually means
+            kilocalories (kcal). This calculator uses the common veterinary approach:
+          </p>
+          <p><strong>RER = 70 x body weight in kg^0.75</strong><br /><strong>MER = RER x life-stage/activity factor</strong></p>
+          <p>Use the number as a starting point, then adjust based on your dog's weight trend and body condition.</p>
+          <ol>
+            <li>Find your food's calorie density. Look for kcal per cup, kcal per can, or kcal per 100 g on the label.</li>
+            <li>Convert calories to food amount: cups/day = daily kcal target / kcal per cup. If the label says kcal per 100 g, grams/day = daily kcal target / kcal per 100 g x 100.</li>
+            <li>Split into meals. Most adult dogs do well with 2 meals per day. Puppies often need 3-4 smaller meals per day.</li>
+            <li>Include treats and extras. Treats, chews, toppers, peanut butter, training rewards, and table scraps all count toward the daily total.</li>
+            <li>Adjust gradually. If weight is moving the wrong way, change the daily amount by about 5-10% and reassess after 1-2 weeks.</li>
+            <li>Watch body condition. Ribs should be easy to feel, the waist should be visible from above, and there should be a slight abdominal tuck from the side.</li>
+          </ol>
+
+          <p>
+            For puppies, seniors, pregnant or nursing dogs, underweight dogs, overweight dogs, dogs with medical
+            conditions, or dogs on prescription diets, use this tool as a conversation starter with your veterinarian.
+          </p>
+
+          <h2>Example: Turning Calories Into Food</h2>
+          <p>If your dog's result is 630 kcal/day and your food is 360 kcal per cup:</p>
+          <p><strong>630 / 360 = 1.75 cups/day</strong></p>
+          <p>If feeding twice daily:</p>
+          <p><strong>1.75 / 2 = 0.875 cups per meal</strong></p>
+          <p>A kitchen scale is more accurate than a measuring cup, especially for weight-loss plans.</p>
+
+          <h2>Typical Adult Size & Calorie Examples</h2>
+          <p>
+            These are broad examples for healthy adult dogs at maintenance, not breed-specific ideal weights. Actual
+            needs vary with age, neuter status, activity, body condition, metabolism, and health.
+          </p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Dog Size</th><th>Typical Adult Weight</th><th>Approx. Maintenance Calories / Day*</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Toy</td><td>2-5 kg / 4-11 lb</td><td>190-375 kcal</td></tr>
+                <tr><td>Small</td><td>5-10 kg / 11-22 lb</td><td>375-630 kcal</td></tr>
+                <tr><td>Medium</td><td>10-25 kg / 22-55 lb</td><td>630-1,250 kcal</td></tr>
+                <tr><td>Large</td><td>25-45 kg / 55-99 lb</td><td>1,250-1,950 kcal</td></tr>
+                <tr><td>Giant</td><td>45+ kg / 99+ lb</td><td>1,950+ kcal</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="muted">*Approximate examples based on a neutered adult maintenance estimate of 1.6 x RER. Use the calculator result for your individual dog.</p>
+
+          <section class="faq-accordion" aria-labelledby="calculator-faq-heading">
+            <h2 id="calculator-faq-heading">Frequently Asked Questions</h2>
+            <details class="faq-item">
+              <summary>What is RER?</summary>
+              <div class="faq-answer">
+                <p>RER means Resting Energy Requirement. It estimates the calories your dog needs for basic body functions at rest, before adding activity, growth, or life-stage needs.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>What is MER?</summary>
+              <div class="faq-answer">
+                <p>MER means Maintenance Energy Requirement. It starts with RER, then applies a multiplier for factors such as age, neuter status, activity level, growth, or weight-loss goals.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>How do I calculate calories manually?</summary>
+              <div class="faq-answer">
+                <p>Use RER = 70 x body weight in kg^0.75, then MER = RER x activity or life-stage factor. Example: a 10 kg neutered adult dog has an RER of about 394 kcal/day and an MER of about 630 kcal/day.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Should I feed by calories or cups?</summary>
+              <div class="faq-answer">
+                <p>Calories are more precise. Cups can vary because kibble size and food density vary between brands and formulas. Use the food label's kcal value whenever possible.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Does this include treats?</summary>
+              <div class="faq-answer">
+                <p>It should. Your dog's daily calorie target includes meals, treats, chews, toppers, training rewards, and table scraps. If your dog gets a lot of treats, reduce meal calories accordingly.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Can I use this for weight loss?</summary>
+              <div class="faq-answer">
+                <p>Yes, but weight loss should be gradual and monitored. For overweight dogs, ask your veterinarian for an ideal target weight and whether a weight-management or therapeutic diet is appropriate.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Why is my result different from the food bag?</summary>
+              <div class="faq-answer">
+                <p>Pet food bag feeding guides are broad estimates. Your dog may need more or less depending on metabolism, body condition, neuter status, activity, age, and environment.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>How often should I reassess calories?</summary>
+              <div class="faq-answer">
+                <p>For most healthy adults, reassess every 1-2 weeks when changing portions, then monthly once stable. Puppies, weight-loss plans, seniors, and dogs with medical conditions may need closer monitoring.</p>
+              </div>
+            </details>
+          </section>
+
+          <h2>Scientific Basis</h2>
+          <p>
+            This calculator uses commonly accepted veterinary energy-estimation methods based on Resting Energy
+            Requirement (RER) and Maintenance Energy Requirement (MER). These formulas are useful starting points,
+            but they cannot predict every dog's exact needs. Individual dogs may need more or fewer calories than
+            calculated, so body weight, body condition score, and veterinary guidance remain important.
+          </p>
+          <ul>
+            <li><a href="https://wsava.org/global-guidelines/global-nutrition-guidelines/" target="_blank" rel="noreferrer">WSAVA Global Nutrition Guidelines</a></li>
+            <li><a href="https://www.merckvetmanual.com/management-and-nutrition/nutrition-small-animals/nutritional-requirements-of-small-animals" target="_blank" rel="noreferrer">Merck Veterinary Manual: Nutritional Requirements of Small Animals</a></li>
+            <li><a href="https://www.merckvetmanual.com/multimedia/table/daily-maintenance-energy-requirements-for-dogs-and-cats" target="_blank" rel="noreferrer">Merck Veterinary Manual: Daily Maintenance Energy Requirements for Dogs and Cats</a></li>
+            <li><a href="https://petnutritionalliance.org/wp-content/uploads/2023/03/MER.RER_.PNA_.pdf" target="_blank" rel="noreferrer">Pet Nutrition Alliance: Calculating Calories Based on Pet Needs</a></li>
+            <li>National Research Council (2006), Nutrient Requirements of Dogs and Cats.</li>
+          </ul>
+          <p>
+            Want a done-for-you meal plan? <a href="#nutricanine-sponsor" data-nutricanine-open>Compare fresh dog food recipe options</a>.
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container narrow prose">
-      <h2>How to Use Your Result</h2>
-      <p>Your number is a daily calorie target (kcal/day) using vet-standard RER to MER formulas.</p>
-      <ol>
-        <li>Convert calories to food amount using kcal per 100 g (or per cup) from your food label.</li>
-        <li>Split meals: adults usually 2 meals/day; puppies typically 3-4 meals/day.</li>
-        <li>Adjust gradually by 5-10% and reassess in 1-2 weeks.</li>
-        <li>Monitor body condition: ribs easy to feel, visible waist, slight abdominal tuck.</li>
-      </ol>
-
-      <h2>Healthy Weight Ranges by Size Class</h2>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr><th>Dog Size</th><th>Average Weight Range</th><th>Typical Calories / Day</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Toy</td><td>2-5 kg (4-11 lb)</td><td>150-350 kcal</td></tr>
-            <tr><td>Small</td><td>5-10 kg (11-22 lb)</td><td>350-550 kcal</td></tr>
-            <tr><td>Medium</td><td>10-25 kg (22-55 lb)</td><td>550-1,100 kcal</td></tr>
-            <tr><td>Large</td><td>25-45 kg (55-99 lb)</td><td>1,100-1,900 kcal</td></tr>
-            <tr><td>Giant</td><td>45+ kg (99+ lb)</td><td>1,900+ kcal</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="muted">Estimates are baseline guidance for healthy adult dogs at maintenance.</p>
-
-      <h2>Frequently Asked Questions</h2>
-      <h3>How do I calculate calories manually?</h3>
-      <p>RER = 70 × (kg^0.75), then MER = RER × activity × age × breed tendency.</p>
-      <h3>Should I feed by calories or cups?</h3>
-      <p>Calories are more precise. Cups vary by food density, so use label kcal values.</p>
-      <h3>Can I use this for weight loss?</h3>
-      <p>Yes. Use the weight-loss activity option and target gradual loss (about 1% body weight per week).</p>
-
-      <h2>Scientific Basis</h2>
-      <p>
-        This tool follows veterinary energy estimation standards used in practice, based on RER and MER with
-        lifestyle adjustments.
-      </p>
-      <ul>
-        <li><a href="https://wsava.org/global-guidelines/global-nutrition-guidelines/" target="_blank" rel="noreferrer">WSAVA Global Nutrition Guidelines</a></li>
-        <li><a href="https://www.merckvetmanual.com/dog-owners/nutrition-and-feeding-of-dogs/nutritional-requirements-of-dogs" target="_blank" rel="noreferrer">Merck Veterinary Manual</a></li>
-        <li>National Research Council (2006), Nutrient Requirements of Dogs and Cats.</li>
-      </ul>
-      <p>
-        Want a done-for-you meal plan? <a href="https://www.nutricanine.ca/LeashFree" target="_blank" rel="noreferrer">Explore NutriCanine recipes</a>.
-      </p>
+      <aside class="calculator-sidebar">
+        <p class="sponsored-label">Sponsored</p>
+        <NutriCanineSponsorWidget />
+      </aside>
     </div>
   </section>
 </Layout>
 
-<script is:inline define:vars={{ breedMeta }}>
+<script is:inline define:vars={{ breedMeta, breedDietNotes }}>
   (() => {
     const groupMultiplier = {
       sporting: 1.1,
@@ -144,6 +247,32 @@ const breedMeta = Object.fromEntries(
       "non-sporting": 0.95,
       toy: 0.9
     };
+    const goalConfig = {
+      maintain: {
+        factor: 1,
+        label: "maintenance",
+        guidance: "Use this as a starting point, then reassess body condition every 1-2 weeks."
+      },
+      loss: {
+        factor: 0.85,
+        label: "weight loss",
+        guidance: "Aim for gradual loss and confirm the target with your veterinarian, especially for puppies, seniors, or medical conditions."
+      },
+      gain: {
+        factor: 1.1,
+        label: "weight gain",
+        guidance: "Increase calories gradually and monitor stool quality, appetite, and body condition."
+      }
+    };
+    const foodSponsors = [
+      {
+        id: "nutricanine",
+        name: "NutriCanine",
+        description: "Real, gently cooked fresh meals with recipe nutrition details.",
+        action: "Compare fresh recipes",
+        triggerAttribute: "data-nutricanine-open"
+      }
+    ];
 
     const el = {
       breed: document.getElementById("breed"),
@@ -151,6 +280,11 @@ const breedMeta = Object.fromEntries(
       weight: document.getElementById("weight"),
       age: document.getElementById("age"),
       activity: document.getElementById("activity"),
+      goal: document.getElementById("goal"),
+      kcalCup: document.getElementById("kcalCup"),
+      kcalCan: document.getElementById("kcalCan"),
+      kcalGram: document.getElementById("kcalGram"),
+      meals: document.getElementById("meals"),
       button: document.getElementById("calculate"),
       result: document.getElementById("result")
     };
@@ -158,6 +292,78 @@ const breedMeta = Object.fromEntries(
     const asNumber = (value) => Number.parseFloat(value || "0");
     const toKg = (weight, unit) => (unit === "lb" ? weight * 0.45359237 : weight);
     const round = (value) => Math.round(value);
+    const formatNumber = (value, digits = 1) => Number.parseFloat(value.toFixed(digits)).toLocaleString();
+    const escapeHtml = (value) =>
+      String(value || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+
+    const renderPortionGuidance = (calories) => {
+      const kcalCup = asNumber(el.kcalCup?.value);
+      const kcalCan = asNumber(el.kcalCan?.value);
+      const kcalGram = asNumber(el.kcalGram?.value);
+      const meals = Math.max(1, Math.round(asNumber(el.meals?.value) || 2));
+      const rows = [];
+
+      if (kcalCup > 0) {
+        const cups = calories / kcalCup;
+        rows.push(`<li>${formatNumber(cups)} cups/day, or ${formatNumber(cups / meals)} cups per meal for ${meals} meals.</li>`);
+      }
+
+      if (kcalCan > 0) {
+        const cans = calories / kcalCan;
+        rows.push(`<li>${formatNumber(cans)} cans/day, or ${formatNumber(cans / meals)} cans per meal for ${meals} meals.</li>`);
+      }
+
+      if (kcalGram > 0) {
+        const grams = (calories / kcalGram) * 100;
+        rows.push(`<li>${formatNumber(grams, 0)} g/day, or ${formatNumber(grams / meals, 0)} g per meal for ${meals} meals.</li>`);
+      }
+
+      if (!rows.length) {
+        return "<p>Add kcal per cup, kcal per can, or kcal per 100 g from your food label to convert this calorie target into a daily portion.</p>";
+      }
+
+      return `<ul>${rows.join("")}</ul>`;
+    };
+
+    const renderBreedNote = (breedName) => {
+      const note = breedDietNotes[breedName];
+      if (!note) {
+        return "";
+      }
+
+      const details = [note.size, note.activity ? `${note.activity} activity` : "", note.shedding ? `${note.shedding.toLowerCase()} shedding` : ""]
+        .filter(Boolean)
+        .join(", ");
+
+      if (!details) {
+        return "";
+      }
+
+      return `<p class="result-note">${escapeHtml(breedName)} profile context: ${escapeHtml(details)}. Use the calorie estimate as a starting point and adjust based on body condition.</p>`;
+    };
+
+    const renderSponsorRecommendations = (calories) => `
+      <div class="food-sponsor-results" aria-label="Sponsored dog food options">
+        <div>
+          <span>Sponsored food options</span>
+          <p>Compare your ${round(calories).toLocaleString()} kcal/day estimate with recipe options from food partners.</p>
+        </div>
+        <div class="food-sponsor-grid">
+          ${foodSponsors.map((sponsor) => `
+            <a class="food-sponsor-card" href="#nutricanine-sponsor" ${sponsor.triggerAttribute}>
+              <strong>${escapeHtml(sponsor.name)}</strong>
+              <span>${escapeHtml(sponsor.description)}</span>
+              <em>${escapeHtml(sponsor.action)}</em>
+            </a>
+          `).join("")}
+        </div>
+      </div>
+    `;
 
     el.button?.addEventListener("click", () => {
       const weightValue = asNumber(el.weight?.value);
@@ -169,58 +375,200 @@ const breedMeta = Object.fromEntries(
       const kg = toKg(weightValue, el.unit?.value || "kg");
       const rer = 70 * Math.pow(kg, 0.75);
       const activity = asNumber(el.activity?.value || "1.6");
+      const activityLabel = el.activity?.selectedOptions?.[0]?.textContent?.replace(/\s+/g, " ").trim() || "Selected activity";
       const age = asNumber(el.age?.value || "1");
       const group = breedMeta[el.breed?.value || ""] || "";
       const breedFactor = groupMultiplier[group] || 1;
-      const mer = rer * activity * age * breedFactor;
+      const goal = goalConfig[el.goal?.value || "maintain"] || goalConfig.maintain;
+      const mer = rer * activity * age * breedFactor * goal.factor;
 
       if (el.result) {
         el.result.innerHTML =
-          `<strong>Estimated daily calories: ${round(mer)} kcal/day</strong><br>` +
-          `RER: ${round(rer)} kcal/day | Activity: x${activity.toFixed(2)} | Age: x${age.toFixed(2)} | Breed: x${breedFactor.toFixed(2)}`;
+          `<strong>Estimated daily calories: ${round(mer).toLocaleString()} kcal/day</strong>` +
+          `<p>Target: ${escapeHtml(goal.label)} | RER: ${round(rer).toLocaleString()} kcal/day | ${escapeHtml(activityLabel)} | Age: x${age.toFixed(2)} | Breed: x${breedFactor.toFixed(2)}</p>` +
+          `<p>${escapeHtml(goal.guidance)}</p>` +
+          renderBreedNote(el.breed?.value || "") +
+          `<h2>Convert Calories to Food Amount</h2>` +
+          renderPortionGuidance(mer) +
+          renderSponsorRecommendations(mer);
       }
     });
   })();
 </script>
 
 <style>
+  .calculator-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+    gap: var(--space-6);
+    align-items: start;
+  }
+  .calculator-main {
+    min-width: 0;
+  }
+  .calculator-sidebar {
+    display: grid;
+    gap: var(--space-4);
+    align-content: start;
+    min-width: 0;
+    position: sticky;
+    top: calc(var(--space-6) + 72px);
+  }
+  .calculator-content {
+    margin-top: var(--space-7);
+  }
   .calc-card {
-    background: #111;
-    color: #fff;
-    border-radius: 14px;
-    padding: 1rem;
+    border: 1px solid var(--color-border);
+    background:
+      linear-gradient(180deg, rgba(230, 241, 234, 0.74), rgba(255, 255, 255, 0.98) 36%),
+      var(--color-surface);
+    color: var(--color-text);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-card);
+    padding: var(--space-5);
   }
   .calc-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-bottom: 12px;
+    gap: var(--space-4);
+    margin-bottom: var(--space-4);
   }
   label {
     display: flex;
     flex-direction: column;
     gap: 6px;
+    color: var(--color-primary-dark);
     font-size: 0.95rem;
+    font-weight: 850;
   }
   select,
   input {
     width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #333;
-    background: #1a1a1a;
-    color: #fff;
+    min-height: 46px;
+    padding: 0.68rem 0.75rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
+    color: var(--color-text);
+    font: inherit;
+    font-weight: 650;
+  }
+  select:focus,
+  input:focus {
+    border-color: var(--color-primary);
+    outline: 3px solid rgba(73, 127, 100, 0.18);
+    outline-offset: 0;
+  }
+  .calc-card .button {
+    width: 100%;
+    justify-content: center;
   }
   .result {
-    margin-top: 12px;
-    border: 1px solid #333;
-    background: #171717;
-    border-radius: 10px;
-    padding: 12px;
+    margin-top: var(--space-4);
+    border: 1px solid rgba(73, 127, 100, 0.28);
+    background: var(--color-surface);
+    border-radius: var(--radius-sm);
+    box-shadow: 0 14px 32px rgba(49, 95, 73, 0.08);
+    color: var(--color-text);
+    padding: var(--space-4);
     min-height: 48px;
+  }
+  .result:empty {
+    display: none;
+  }
+  .result > strong {
+    display: block;
+    color: var(--color-primary-dark);
+    font-size: clamp(1.35rem, 3vw, 2rem);
+    font-weight: 950;
+    line-height: 1.18;
+  }
+  .result p {
+    color: var(--color-muted);
+    margin: 0.7rem 0 0;
+  }
+  .result h2 {
+    color: var(--color-text);
+    font-size: 1.08rem;
+    margin: 1rem 0 0.5rem;
+  }
+  .result ul {
+    color: var(--color-text);
+    margin: 0.5rem 0 0;
+  }
+  .result-note {
+    border-left: 3px solid var(--color-primary);
+    background: var(--color-primary-soft);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    padding-left: 0.75rem;
+    padding-block: 0.65rem;
+  }
+  .food-sponsor-results {
+    display: grid;
+    gap: 0.85rem;
+    margin-top: 1rem;
+    border: 1px solid rgba(73, 127, 100, 0.24);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface-alt);
+    padding: 0.9rem;
+  }
+  .food-sponsor-results span {
+    display: block;
+    color: var(--color-primary-dark);
+    font-size: 0.74rem;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  .food-sponsor-results p {
+    margin-top: 0.4rem;
+  }
+  .food-sponsor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.75rem;
+  }
+  .food-sponsor-card {
+    display: grid;
+    gap: 0.35rem;
+    min-height: 120px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    color: var(--color-text);
+    padding: 0.85rem;
+    text-decoration: none;
+  }
+  .food-sponsor-card strong {
+    color: var(--color-primary-dark);
+  }
+  .food-sponsor-card span {
+    color: var(--color-muted);
+    font-size: 0.84rem;
+    font-weight: 650;
+    line-height: 1.35;
+    text-transform: none;
+  }
+  .food-sponsor-card em {
+    align-self: end;
+    color: var(--color-primary-dark);
+    font-size: 0.82rem;
+    font-style: normal;
+    font-weight: 900;
+  }
+  .food-sponsor-card:hover {
+    border-color: var(--color-primary);
+    box-shadow: 0 10px 24px rgba(49, 95, 73, 0.14);
+    transform: translateY(-1px);
   }
   .prose h2 {
     margin-top: 1.25rem;
+  }
+  .calculator-content .faq-accordion {
+    margin-top: var(--space-6);
+  }
+  .calculator-content .faq-accordion h2 {
+    margin-top: 0;
   }
   .table-wrap {
     overflow-x: auto;
@@ -230,13 +578,21 @@ const breedMeta = Object.fromEntries(
     border-collapse: collapse;
   }
   th, td {
-    border: 1px solid var(--border);
+    border: 1px solid var(--color-border);
     padding: 0.6rem;
     text-align: left;
   }
   .muted {
-    color: var(--muted);
+    color: var(--color-muted);
     font-size: 0.95rem;
+  }
+  @media (max-width: 980px) {
+    .calculator-layout {
+      grid-template-columns: 1fr;
+    }
+    .calculator-sidebar {
+      position: static;
+    }
   }
   @media (max-width: 720px) {
     .calc-grid {
