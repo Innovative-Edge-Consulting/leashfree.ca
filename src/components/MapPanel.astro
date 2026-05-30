@@ -20,11 +20,11 @@ const location = mapLocation(Astro.props);
 {location && (
   <div class="map-panel">
     <div class="map-copy">
-      <div>
+      <div class="map-copy-main">
         <h2>{Astro.props.title}</h2>
         <p>{Astro.props.intro}</p>
       </div>
-      <div class="button-row compact-row">
+      <div class="button-row compact-row map-panel-actions">
         <a class="button primary" href={location.directionsUrl} target="_blank" rel="noopener noreferrer">Directions</a>
         <a class="button secondary" href={location.searchUrl} target="_blank" rel="noopener noreferrer">Open map</a>
       </div>
