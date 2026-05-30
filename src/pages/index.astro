@@ -1,6 +1,7 @@
 ---
 import Card from "../components/Card.astro";
 import Hero from "../components/Hero.astro";
+import HomeBreedSearch from "../components/HomeBreedSearch.astro";
 import HomeMapSearch from "../components/HomeMapSearch.astro";
 import Layout from "../components/Layout.astro";
 import Section from "../components/Section.astro";
@@ -9,8 +10,6 @@ import mediaMap from "../data/media-map.json";
 import parks from "../data/generated/parks.json";
 import cities from "../data/generated/cities.json";
 import provinces from "../data/generated/provinces.json";
-import posts from "../data/generated/blog-posts.json";
-import breeds from "../data/generated/dog-breeds.json";
 import { excerpt, websiteSchema } from "../utils/content.js";
 import { resolveMedia } from "../utils/media.js";
 import { withoutRedirectedRecords } from "../utils/redirects.js";
@@ -18,30 +17,51 @@ import { withoutRedirectedRecords } from "../utils/redirects.js";
 const featuredCities = cities.slice(0, 8);
 const activeParks = withoutRedirectedRecords(parks);
 const featuredParks = activeParks.slice(0, 6);
-const recentPosts = posts.slice(0, 3);
 const homeHeroImage = "/images/blog/blog-how-to-choose-the-right-dog-park-for-your-pup-hero.jpg";
 ---
 
 <Layout
-  title="LeashFree.ca | Discover Dog Parks, Breeds & Pet Guides Across Canada"
-  description="Find leash-free dog parks in Canada, browse dog breed profiles, and read practical guides for dog owners."
+  title="LeashFree.ca | Dog Parks, Dog Breeds & Dog Owner Resources in Canada"
+  description="Find leash-free dog parks, explore dog breed profiles, discover local pet resources, and use practical dog owner tools built for Canadians."
   canonical="https://leashfree.ca/"
   structuredData={websiteSchema()}
 >
   <Hero
-    eyebrow="Canadian dog park directory"
-    title="Find leash-free dog parks across Canada"
-    summary="Browse city and province dog park guides, check park details, and explore practical resources for Canadian dog owners."
+    eyebrow="Canadian dog owner resource hub"
+    title="Dog Parks, Dog Breeds & Resources for Canadian Dog Owners"
+    summary="Find leash-free dog parks, explore dog breed profiles, compare local pet resources, and discover helpful tools for life with your dog in Canada."
     primaryHref="/dog-parks/"
-    primaryLabel="Browse dog parks"
+    primaryLabel="Find Dog Parks Near You"
     secondaryHref="/dog-breeds/"
-    secondaryLabel="Explore dog breeds"
+    secondaryLabel="Explore Dog Breeds"
     image={homeHeroImage}
     imageAlt="Dog enjoying an off-leash park"
   />
 
-  <Section title="Search by map" intro="Find dog parks, rescues, shelters, and veterinarians across Canada.">
-    <HomeMapSearch />
+  <Section
+    title="Everything Canadian dog owners need in one place"
+    intro="LeashFree.ca helps dog owners across Canada discover safe places to play, learn about different dog breeds, explore local pet services, and access practical tools for everyday care. Whether you are planning a park visit, researching a breed, choosing a dog name, or looking for dog-friendly resources nearby, LeashFree.ca gives you a simple starting point."
+  />
+
+  <Section title="Search LeashFree.ca" intro="Find dog parks and pet businesses by map, or switch to an advanced dog breed finder.">
+    <div class="home-search-tabs" data-home-search-tabs>
+      <div class="home-search-tablist" role="tablist" aria-label="Homepage search tools">
+        <button id="home-search-map-tab" class="home-search-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="home-search-map-panel" data-search-tab="map">
+          Map search
+        </button>
+        <button id="home-search-breeds-tab" class="home-search-tab" type="button" role="tab" aria-selected="false" aria-controls="home-search-breeds-panel" data-search-tab="breeds">
+          Dog breed search
+        </button>
+      </div>
+
+      <div id="home-search-map-panel" role="tabpanel" aria-labelledby="home-search-map-tab" data-search-panel="map">
+        <HomeMapSearch />
+      </div>
+
+      <div id="home-search-breeds-panel" role="tabpanel" aria-labelledby="home-search-breeds-tab" data-search-panel="breeds" hidden>
+        <HomeBreedSearch />
+      </div>
+    </div>
   </Section>
 
   <Section title="Browse by province" intro={`Explore dog park guides across ${provinces.length} provinces.`} alt>
@@ -89,13 +109,40 @@ const homeHeroImage = "/images/blog/blog-how-to-choose-the-right-dog-park-for-yo
     </div>
   </Section>
 
-  <Section title="Helpful dog resources" intro="Breed profiles and articles support the dog park directory with practical ownership content.">
+  <Section title="Explore more dog owner resources" intro="LeashFree.ca is more than a dog park directory. Explore breed profiles, care guides, dog name ideas, calculators, and practical tools designed for Canadian dog owners.">
     <div class="grid">
-      <Card title="Dog Breeds" href="/dog-breeds/" description={`Compare ${breeds.length} breed profiles by traits, grooming, exercise, and care needs.`} image="/images/general/blog-category-dog-breeds-card.avif" imageAlt="Dog breed profiles" ctaLabel="Browse breeds" />
-      <Card title="Blog" href="/blog/" description={`${posts.length} dog care articles, park tips, and practical ownership guides.`} image="/images/general/blog-category-dog-gear-card.jpg" imageAlt="Dog care resources" ctaLabel="Read articles" />
-      {recentPosts.map((post) => (
-        <Card title={post.title || post.name} href={`/blog/${post.slug}/`} description={excerpt(post.metaDescription, post.description)} image={resolveMedia(post, "Hero Image", mediaMap).src} imageAlt={`${post.title || post.name} article`} ctaLabel="Read post" />
-      ))}
+      <Card
+        title="Find Places to Go"
+        href="/dog-parks/"
+        description="Browse leash-free dog parks, city guides, province guides, and map-based listings across Canada."
+        image="/images/general/category-dog-daycares-and-boarding-hero.jpg"
+        imageAlt="Dog-friendly places in Canada"
+        ctaLabel="Browse Dog Parks"
+      />
+      <Card
+        title="Explore Dog Breeds"
+        href="/dog-breeds/"
+        description="Compare breed profiles by size, activity level, grooming needs, temperament, family fit, and care requirements."
+        image="/images/general/blog-category-dog-breeds-card.avif"
+        imageAlt="Dog breed profiles"
+        ctaLabel="Browse Dog Breeds"
+      />
+      <Card
+        title="Use Helpful Dog Tools"
+        href="/resources/"
+        description="Try practical tools like the dog name finder, dog calorie calculator, and dog gear finder."
+        image="/images/general/category-pet-stores-and-boutiques-hero.jpg"
+        imageAlt="Dog owner tools and resources"
+        ctaLabel="Explore Tools"
+      />
+      <Card
+        title="Read Dog Care Guides"
+        href="/blog/"
+        description="Learn from practical articles about dog behaviour, park etiquette, health costs, gear, and everyday dog ownership."
+        image="/images/general/blog-category-dog-gear-card.jpg"
+        imageAlt="Dog care articles and guides"
+        ctaLabel="Read Articles"
+      />
     </div>
   </Section>
 
@@ -110,3 +157,31 @@ const homeHeroImage = "/images/blog/blog-how-to-choose-the-right-dog-park-for-yo
     />
   </Section>
 </Layout>
+
+<script is:inline>
+  (() => {
+    const root = document.querySelector("[data-home-search-tabs]");
+    if (!root) return;
+
+    const tabs = Array.from(root.querySelectorAll("[data-search-tab]"));
+    const panels = Array.from(root.querySelectorAll("[data-search-panel]"));
+
+    const activate = (name) => {
+      for (const tab of tabs) {
+        const isActive = tab.dataset.searchTab === name;
+        tab.classList.toggle("is-active", isActive);
+        tab.setAttribute("aria-selected", isActive ? "true" : "false");
+      }
+
+      for (const panel of panels) {
+        panel.hidden = panel.dataset.searchPanel !== name;
+      }
+
+      window.dispatchEvent(new Event("resize"));
+    };
+
+    for (const tab of tabs) {
+      tab.addEventListener("click", () => activate(tab.dataset.searchTab));
+    }
+  })();
+</script>

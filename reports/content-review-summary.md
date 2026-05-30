@@ -1,6 +1,6 @@
 # Content Review Summary
 
-Generated at: 2026-05-30T00:15:35.669Z
+Generated at: 2026-05-30T11:53:28.864Z
 - Total pages audited: 1069
 - Stale pages: 634
 - Thin pages: 697
@@ -25,7 +25,7 @@ Generated at: 2026-05-30T00:15:35.669Z
 | Section | URLs | Risk | Avg Score | Avg Quality | Complete | Stale | Thin | Missing Sources | Data Risk |
 | --- | ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | Core | 10 | High | 48 | 100 | 0 | 10 | 3 | 0 | 0 |
-| Dog Parks | 505 | Very high | 79 | 88 | 0 | 505 | 451 | 40 | 4 |
+| Dog Parks | 505 | Very high | 78 | 89 | 0 | 505 | 451 | 40 | 4 |
 | Dog Park Locations | 92 | High | 77 | 81 | 0 | 53 | 80 | 42 | 0 |
 | Directory | 66 | Medium-high | 47 | 100 | 0 | 66 | 16 | 0 | 6 |
 | Blog | 38 | Medium | 11 | 100 | 37 | 0 | 1 | 0 | 0 |
@@ -108,8 +108,8 @@ Generated at: 2026-05-30T00:15:35.669Z
 
 ## Major Data Issues
 
-- /dog-parks/andy-livingstone-dog-park/: possible duplicate record; possible-duplicate
 - /dog-parks/falaise-park-dog-park/: possible duplicate record; possible-duplicate
+- /dog-parks/andy-livingstone-dog-park/: possible duplicate record; possible-duplicate
 - /dog-parks/hampton-dog-park-89f0c/: fallback-looking slug suffix; possible-duplicate
 - /dog-parks/confederation-park-075b6/: fallback-looking slug suffix; possible-duplicate
 - /directory/animal-hospital-of-milton-e6f9b/: possible duplicate record; fallback-looking slug suffix; possible-duplicate
@@ -149,8 +149,8 @@ Generated at: 2026-05-30T00:15:35.669Z
 
 ## Duplicate / Canonical Cleanup Candidates
 
-- /dog-parks/andy-livingstone-dog-park/ (Andy Livingstone): keep; canonical https://leashfree.ca/dog-parks/andy-livingstone-dog-park/; title dupes 1, meta dupes 1, record dupes 2
 - /dog-parks/falaise-park-dog-park/ (Falaise Park): keep; canonical https://leashfree.ca/dog-parks/falaise-park-dog-park/; title dupes 1, meta dupes 1, record dupes 3
+- /dog-parks/andy-livingstone-dog-park/ (Andy Livingstone): keep; canonical https://leashfree.ca/dog-parks/andy-livingstone-dog-park/; title dupes 1, meta dupes 1, record dupes 2
 - /dog-parks/hampton-dog-park-89f0c/ (Hampton Dog Park): rename-title-meta; canonical https://leashfree.ca/dog-parks/hampton-dog-park-89f0c/; title dupes 1, meta dupes 1, record dupes 1
 - /dog-parks/confederation-park-075b6/ (Confederation Park): rename-title-meta; canonical https://leashfree.ca/dog-parks/confederation-park-075b6/; title dupes 1, meta dupes 1, record dupes 1
 - /directory/animal-hospital-of-milton-e6f9b/ (Animal Hospital of Milton): review; canonical n/a; title dupes 1, meta dupes 1, record dupes 2
@@ -259,17 +259,7 @@ Generated at: 2026-05-30T00:15:35.669Z
 - /dog-parks/fraser-river-dog-park/: fenced, smallDogArea, parking
 - /dog-parks/hadden-dog-park/: fenced, smallDogArea, parking
 - /dog-parks/valdez-dog-park/: fenced, smallDogArea, parking
-- /dog-parks/andy-livingstone-dog-park/: smallDogArea, parking
 - /dog-parks/falaise-park-dog-park/: smallDogArea, parking
-- /dog-parks/colin-alton-parkette/: smallDogArea, surface, parking
-- /dog-parks/burrard-view-dog-park-vancouver/: smallDogArea, parking
-- /dog-parks/charleson-dog-park/: smallDogArea, parking
-- /dog-parks/coopers-dog-park/: smallDogArea, parking
-- /dog-parks/crab-park-at-portside-dog-park/: smallDogArea, parking
-- /dog-parks/devonian-harbour-dog-park/: smallDogArea, parking
-- /dog-parks/dusty-greenwell-dog-park-vancouver/: smallDogArea, parking
-- /dog-parks/emery-barnes-dog-park/: smallDogArea, parking
-- /dog-parks/everett-crowley-dog-park/: smallDogArea, parking
 - /dog-parks/fraserview-golf-course-vancouver/: smallDogArea, parking
 - /dog-parks/george-dog-park-vancouver/: smallDogArea, parking
 - /dog-parks/hinge-park-dog-park/: smallDogArea, parking
@@ -281,6 +271,16 @@ Generated at: 2026-05-30T00:15:35.669Z
 - /dog-parks/musqueam-dog-park-vancouver/: smallDogArea, parking
 - /dog-parks/nat-bailey-stadium-dog-park/: smallDogArea, parking
 - /dog-parks/nelson-dog-park/: smallDogArea, parking
+- /dog-parks/new-brighton-dog-park-vancouver/: smallDogArea, parking
+- /dog-parks/oak-meadows-dog-park/: smallDogArea, parking
+- /dog-parks/pandora-dog-park-vancouver/: smallDogArea, parking
+- /dog-parks/queen-elizabeth-dog-park/: smallDogArea, parking
+- /dog-parks/quilchena-dog-park/: smallDogArea, parking
+- /dog-parks/renfrew-community-dog-park/: smallDogArea, parking
+- /dog-parks/sunset-dog-park-vancouver/: smallDogArea, parking
+- /dog-parks/tecumseh-dog-park/: smallDogArea, parking
+- /dog-parks/andy-livingstone-dog-park/: smallDogArea, parking
+- /dog-parks/colin-alton-parkette/: smallDogArea, surface, parking
 
 ## Stale Pages by Content Type
 

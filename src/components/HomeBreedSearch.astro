@@ -1,0 +1,249 @@
+---
+import breeds from "../data/generated/dog-breeds.json";
+import mediaMap from "../data/media-map.json";
+import { excerpt } from "../utils/content.js";
+import { resolveMedia } from "../utils/media.js";
+
+const getOptions = (field) =>
+  [...new Set(breeds.map((breed) => breed.raw[field]).filter(Boolean))].sort((a, b) =>
+    a.localeCompare(b)
+  );
+
+const options = {
+  groups: getOptions("Breed Group"),
+  sizes: getOptions("Size Category"),
+  activity: getOptions("Activity Level"),
+  trainability: getOptions("Trainability"),
+  apartment: getOptions("Apartment Friendly"),
+  hypoallergenic: getOptions("Hypoallergenic")
+};
+
+const breedItems = breeds.map((breed) => ({
+  name: breed.name,
+  slug: breed.slug,
+  url: `/dog-breeds/${breed.slug}/`,
+  description: excerpt(breed.raw["Breed Summary"], breed.metaDescription || breed.description, 145),
+  image: resolveMedia(breed, "Featured Image", mediaMap).src,
+  group: breed.raw["Breed Group"] || "",
+  size: breed.raw["Size Category"] || "",
+  activity: breed.raw["Activity Level"] || "",
+  trainability: breed.raw.Trainability || "",
+  apartment: breed.raw["Apartment Friendly"] || "",
+  hypoallergenic: breed.raw.Hypoallergenic || "",
+  shedding: breed.raw["Shedding Level"] || ""
+}));
+
+const featuredBreeds = breedItems.slice(0, 8);
+const json = JSON.stringify({ breeds: breedItems }).replace(/</g, "\\u003c");
+---
+
+<div class="home-breed-search" data-home-breed-search>
+  <div class="breed-tool-controls" aria-label="Breed search filters">
+    <div class="field wide">
+      <label for="home-breed-query">Search breeds</label>
+      <input id="home-breed-query" type="search" autocomplete="off" placeholder="Breed name, group, size, temperament" />
+    </div>
+
+    <div class="field">
+      <label for="home-breed-group">Group</label>
+      <select id="home-breed-group">
+        <option value="">All groups</option>
+        {options.groups.map((option) => <option value={option}>{option}</option>)}
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="home-breed-size">Size</label>
+      <select id="home-breed-size">
+        <option value="">All sizes</option>
+        {options.sizes.map((option) => <option value={option}>{option}</option>)}
+      </select>
+    </div>
+
+    <div class="advanced-breed-filters">
+      <div class="field">
+        <label for="home-breed-activity">Activity</label>
+        <select id="home-breed-activity">
+          <option value="">All activity levels</option>
+          {options.activity.map((option) => <option value={option}>{option}</option>)}
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="home-breed-trainability">Trainability</label>
+        <select id="home-breed-trainability">
+          <option value="">All trainability levels</option>
+          {options.trainability.map((option) => <option value={option}>{option}</option>)}
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="home-breed-apartment">Apartment</label>
+        <select id="home-breed-apartment">
+          <option value="">All options</option>
+          {options.apartment.map((option) => <option value={option}>{option}</option>)}
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="home-breed-hypoallergenic">Hypoallergenic</label>
+        <select id="home-breed-hypoallergenic">
+          <option value="">All options</option>
+          {options.hypoallergenic.map((option) => <option value={option}>{option}</option>)}
+        </select>
+      </div>
+    </div>
+
+    <div class="breed-tool-actions">
+      <a class="button secondary" href="/dog-breeds/">Browse all breeds</a>
+      <button class="button primary" type="button" data-reset-breeds>Reset</button>
+    </div>
+  </div>
+
+  <div class="breed-tool-body">
+    <div class="breed-tool-summary">
+      <div>
+        <h3>Breed matches</h3>
+        <p data-breed-summary>Showing {featuredBreeds.length} featured breeds from {breedItems.length} profiles</p>
+      </div>
+      <span data-breed-count>{breedItems.length}</span>
+    </div>
+
+    <ol class="breed-tool-results" data-breed-results>
+      {featuredBreeds.map((breed) => (
+        <li>
+          <a href={breed.url}>
+            <img src={breed.image} alt={`${breed.name} dog breed`} loading="lazy" />
+            <span>
+              <strong>{breed.name}</strong>
+              <small>{[breed.group, breed.size, breed.activity].filter(Boolean).join(" | ")}</small>
+              <em>{breed.description}</em>
+            </span>
+          </a>
+        </li>
+      ))}
+    </ol>
+
+    <p class="empty-state" data-breed-empty hidden>No breed profiles match those filters.</p>
+  </div>
+</div>
+
+<script type="application/json" id="home-breed-data" set:html={json}></script>
+<script is:inline>
+  (() => {
+    const root = document.querySelector("[data-home-breed-search]");
+    const dataNode = document.getElementById("home-breed-data");
+    if (!root || !dataNode) return;
+
+    const data = JSON.parse(dataNode.textContent || "{}");
+    const controls = {
+      query: root.querySelector("#home-breed-query"),
+      group: root.querySelector("#home-breed-group"),
+      size: root.querySelector("#home-breed-size"),
+      activity: root.querySelector("#home-breed-activity"),
+      trainability: root.querySelector("#home-breed-trainability"),
+      apartment: root.querySelector("#home-breed-apartment"),
+      hypoallergenic: root.querySelector("#home-breed-hypoallergenic"),
+      reset: root.querySelector("[data-reset-breeds]"),
+      results: root.querySelector("[data-breed-results]"),
+      summary: root.querySelector("[data-breed-summary]"),
+      count: root.querySelector("[data-breed-count]"),
+      empty: root.querySelector("[data-breed-empty]")
+    };
+
+    if (!controls.query || !controls.results || !Array.isArray(data.breeds)) return;
+
+    const normalize = (value) => String(value || "").trim().toLowerCase();
+    const searchableText = (breed) =>
+      [
+        breed.name,
+        breed.description,
+        breed.group,
+        breed.size,
+        breed.activity,
+        breed.trainability,
+        breed.apartment,
+        breed.hypoallergenic,
+        breed.shedding
+      ].map(normalize).join(" ");
+
+    const selected = () => ({
+      group: controls.group?.value || "",
+      size: controls.size?.value || "",
+      activity: controls.activity?.value || "",
+      trainability: controls.trainability?.value || "",
+      apartment: controls.apartment?.value || "",
+      hypoallergenic: controls.hypoallergenic?.value || ""
+    });
+
+    const matches = (breed, query, filters) =>
+      (!query || searchableText(breed).includes(query)) &&
+      (!filters.group || breed.group === filters.group) &&
+      (!filters.size || breed.size === filters.size) &&
+      (!filters.activity || breed.activity === filters.activity) &&
+      (!filters.trainability || breed.trainability === filters.trainability) &&
+      (!filters.apartment || breed.apartment === filters.apartment) &&
+      (!filters.hypoallergenic || breed.hypoallergenic === filters.hypoallergenic);
+
+    const rank = (breed, query) => {
+      if (!query) return 3;
+      const name = normalize(breed.name);
+      if (name === query) return 0;
+      if (name.startsWith(query)) return 1;
+      if (name.includes(query)) return 2;
+      return 3;
+    };
+
+    const escapeHtml = (value) =>
+      String(value || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+
+    const resultHtml = (breed) => {
+      const traits = [breed.group, breed.size, breed.activity].filter(Boolean).join(" | ");
+      return `
+        <li>
+          <a href="${escapeHtml(breed.url)}">
+            <img src="${escapeHtml(breed.image)}" alt="${escapeHtml(breed.name)} dog breed" loading="lazy">
+            <span>
+              <strong>${escapeHtml(breed.name)}</strong>
+              <small>${escapeHtml(traits)}</small>
+              <em>${escapeHtml(breed.description)}</em>
+            </span>
+          </a>
+        </li>
+      `;
+    };
+
+    const update = () => {
+      const query = normalize(controls.query.value);
+      const filters = selected();
+      const hasFilters = query || Object.values(filters).some(Boolean);
+      const results = data.breeds
+        .filter((breed) => matches(breed, query, filters))
+        .sort((a, b) => rank(a, query) - rank(b, query) || a.name.localeCompare(b.name));
+
+      controls.count.textContent = String(results.length);
+      controls.summary.textContent = hasFilters
+        ? `Showing ${results.length} of ${data.breeds.length} breed profiles`
+        : `Showing ${Math.min(8, data.breeds.length)} featured breeds from ${data.breeds.length} profiles`;
+      controls.results.innerHTML = results.slice(0, 8).map(resultHtml).join("");
+      controls.empty.hidden = results.length !== 0;
+    };
+
+    [controls.query, controls.group, controls.size, controls.activity, controls.trainability, controls.apartment, controls.hypoallergenic]
+      .forEach((control) => control?.addEventListener("input", update));
+
+    controls.reset?.addEventListener("click", () => {
+      controls.query.value = "";
+      [controls.group, controls.size, controls.activity, controls.trainability, controls.apartment, controls.hypoallergenic]
+        .forEach((control) => {
+          if (control) control.value = "";
+        });
+      update();
+    });
+  })();
+</script>

@@ -1,6 +1,6 @@
 # Redirect Plan
 
-Generated at: 2026-05-30T00:15:35.669Z
+Generated at: 2026-05-30T11:53:28.864Z
 This report tracks safe canonical redirects. It does not delete pages, change content, update reviewedOn, update updatedOn, or change sitemap lastmod.
 
 ## Summary

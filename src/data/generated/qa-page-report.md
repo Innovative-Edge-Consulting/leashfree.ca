@@ -1,6 +1,6 @@
 # QA Page Report
 
-Generated at: 2026-05-30T00:15:30.881Z
+Generated at: 2026-05-30T11:54:07.577Z
 - HTML pages checked: 1070
 - Sitemap routes found: 1069
 - Missing title tags: 0
@@ -9,7 +9,7 @@ Generated at: 2026-05-30T00:15:30.881Z
 - Duplicate meta description groups: 1
 - Missing H1: 0
 - Multiple H1s: 0
-- Broken internal links: 0
+- Broken internal links: 2
 - Redirect-covered internal links: 23
 - Implemented-redirect internal links: 0
 - Broken image paths: 0
@@ -27,7 +27,7 @@ Generated at: 2026-05-30T00:15:30.881Z
 
 ## Issue Page Sample
 
-- None
+- /dog-names/cavalier-king-charles-spaniel-dog-names/: 2 broken links
 
 ## Redirect Validation
 
