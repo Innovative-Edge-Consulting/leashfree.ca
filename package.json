@@ -15,14 +15,18 @@
     "media:copy:dry": "node scripts/copy-media.js --dry-run",
     "media:copy": "node scripts/copy-media.js --write",
     "validate:data": "node scripts/validate-data.js",
+    "data:audit:dog-food": "node scripts/auditDogFoodProducts.mjs",
     "migrate:prep": "npm run convert:cms && npm run build:media-map && npm run validate:data",
     "qa:pages": "node scripts/qa-pages.js",
     "content:health": "node scripts/content-health.js",
     "launch:check": "npm run build && npm run qa:pages && npm audit"
   },
   "dependencies": {
+    "@astrojs/react": "^5.0.6",
     "astro": "^6.3.8",
-    "leaflet": "^1.9.4"
+    "leaflet": "^1.9.4",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
   },
   "devDependencies": {
     "typescript": "^5.6.3"

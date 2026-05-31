@@ -1,0 +1,216 @@
+---
+import Layout from "../components/Layout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import DogFoodComparisonTool from "../components/DogFoodComparisonTool";
+import dogFoodProducts from "../data/dog-food-products.json";
+import { breadcrumbSchema } from "../utils/content.js";
+
+const heroImage = "/images/resources/dog-food-comparison-canada-hero-1600.jpg";
+
+const breadcrumbs = [
+  { label: "Home", href: "/" },
+  { label: "Resources", href: "/resources/" },
+  { label: "Dog Food Comparison Tool Canada", href: "/dog-food-comparison-canada/" }
+];
+
+const faqItems = [
+  {
+    question: "Is this dog food comparison medical advice?",
+    answer: "No. This page is a label-based comparison tool for nutrition, ingredients, calories, and estimated cost. Speak with your veterinarian about medical conditions, therapeutic diets, allergies, weight loss, or growth needs."
+  },
+  {
+    question: "Why are some prices or calorie values listed as Not listed?",
+    answer: "Some starter data fields are intentionally left blank when current label or retailer information is not available. The tool avoids guessing and only calculates costs when price, package size, and kcal/kg are available."
+  },
+  {
+    question: "Why do dry matter protein and fat differ from the bag label?",
+    answer: "Dry matter removes moisture from the comparison so foods with different water levels can be compared more fairly. It is calculated from the guaranteed analysis and listed moisture value."
+  },
+  {
+    question: "Can I choose a dog food from this page?",
+    answer: "The tool is designed for comparison, not ranking. A food may be suitable for one dog and unsuitable for another depending on age, body condition, health history, appetite, and veterinary guidance."
+  }
+];
+
+const structuredData = [
+  breadcrumbSchema(breadcrumbs),
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer
+      }
+    }))
+  }
+];
+---
+
+<Layout
+  title="Dog Food Comparison Tool Canada"
+  description="Compare dog food brands available in Canada by label-based nutrition, ingredients, calories, and estimated cost per day."
+  canonical="https://leashfree.ca/dog-food-comparison-canada/"
+  ogImage={heroImage}
+  structuredData={structuredData}
+>
+  <section class="hero dog-food-hero">
+    <div class="container hero-grid dog-food-hero-grid">
+      <div class="dog-food-hero-copy">
+        <Breadcrumbs items={breadcrumbs} />
+        <div class="eyebrow">Resources</div>
+        <h1>Dog Food Comparison Tool Canada</h1>
+        <p class="summary">
+          Compare dog food products available in Canada by label-based nutrition, ingredients, calories, and estimated
+          price. Select 2 to 4 foods to review side-by-side differences in dry matter nutrients, kcal/kg, ingredients,
+          and estimated feeding cost.
+        </p>
+        <p class="data-note">
+          Prices and label data are checked periodically and may change. Confirm current details on the brand or retailer
+          page before buying.
+        </p>
+      </div>
+      <picture class="dog-food-hero-media">
+        <source
+          type="image/avif"
+          srcset="/images/resources/dog-food-comparison-canada-hero-960.avif 960w, /images/resources/dog-food-comparison-canada-hero-1600.avif 1600w"
+          sizes="(max-width: 900px) 100vw, 48vw"
+        />
+        <source
+          type="image/webp"
+          srcset="/images/resources/dog-food-comparison-canada-hero-960.webp 960w, /images/resources/dog-food-comparison-canada-hero-1600.webp 1600w"
+          sizes="(max-width: 900px) 100vw, 48vw"
+        />
+        <img
+          src={heroImage}
+          width="1600"
+          height="901"
+          alt="Dog beside a bowl of kibble with dog food comparison cards"
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
+        />
+      </picture>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="container">
+      <DogFoodComparisonTool products={dogFoodProducts} client:only="react" />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container content-block">
+      <h2>How to compare dog food nutrition</h2>
+      <p>
+        Start with the product label and compare foods on the same basis. Protein, fat, fibre, moisture, calories, and
+        ingredients all matter, but no single number makes one food universally better. Select comparable products, then
+        look at life stage, calorie density, main protein sources, and whether the formula may be suitable for your dog's
+        age, body condition, and feeding goals.
+      </p>
+      <p>
+        Dry matter protein and fat can help compare dry, wet, and fresh-style foods because moisture levels vary. This
+        tool calculates dry matter values only when the guaranteed analysis includes enough information.
+      </p>
+
+      <h2>Why cost per 1,000 calories is better than price per bag</h2>
+      <p>
+        Bag price alone can be misleading because package sizes and calorie density vary. A larger bag is not always the
+        lower-cost option if the food has fewer calories per kilogram. Cost per 1,000 kcal gives a more useful estimate
+        of how much energy your dollar buys.
+      </p>
+      <p>
+        Estimated daily cost then applies that calorie cost to a sample daily calorie target. These figures are estimates
+        and depend on current retailer prices, package size, and the kcal/kg listed for the food.
+      </p>
+
+      <h2>What guaranteed analysis means</h2>
+      <p>
+        Guaranteed analysis is the nutrient panel on a pet food label. It usually lists minimum crude protein and fat,
+        plus maximum fibre and moisture. Some labels also list ash, calcium, phosphorus, omega fatty acids, or other
+        nutrients. Because some values are minimums or maximums, guaranteed analysis is useful for comparison but is not
+        the same as a complete nutrient profile.
+      </p>
+
+      <h2>Why calories per kg matter</h2>
+      <p>
+        Calories per kilogram show the energy density of the food. Two foods can have similar cup measurements but very
+        different kcal/kg values. Calorie density affects portion size, feeding cost, and how easily a dog may meet a
+        daily calorie target without being overfed.
+      </p>
+
+      <h2>When to speak with your veterinarian</h2>
+      <p>
+        Speak with your veterinarian before changing food for puppies, pregnant or nursing dogs, seniors with health
+        concerns, underweight dogs, overweight dogs, dogs with chronic disease, dogs with suspected allergies, or dogs on
+        prescription diets. This page is a label-based comparison resource and does not diagnose, treat, or prevent
+        disease.
+      </p>
+
+      <section class="faq-accordion" aria-labelledby="dog-food-faq-heading">
+        <h2 id="dog-food-faq-heading">Frequently Asked Questions</h2>
+        {faqItems.map((item) => (
+          <details class="faq-item">
+            <summary>{item.question}</summary>
+            <div class="faq-answer">
+              <p>{item.answer}</p>
+            </div>
+          </details>
+        ))}
+      </section>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .dog-food-hero {
+    background:
+      linear-gradient(135deg, rgba(230, 241, 234, 0.92), rgba(247, 250, 247, 0.98)),
+      var(--color-bg);
+    overflow: hidden;
+  }
+
+  .dog-food-hero-grid {
+    gap: clamp(1.5rem, 4vw, 3.25rem);
+    grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+  }
+
+  .dog-food-hero-copy {
+    min-width: 0;
+  }
+
+  .data-note {
+    border-left: 3px solid var(--color-primary);
+    color: var(--color-muted);
+    font-size: 0.95rem;
+    font-weight: 750;
+    margin: 0;
+    max-width: 58ch;
+    padding-left: var(--space-3);
+  }
+
+  .dog-food-hero-media {
+    border: 1px solid rgba(73, 127, 100, 0.18);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-card);
+    display: block;
+    overflow: hidden;
+  }
+
+  .dog-food-hero-media img {
+    aspect-ratio: 1600 / 901;
+    display: block;
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  @media (max-width: 900px) {
+    .dog-food-hero-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -1,0 +1,3742 @@
+[
+  {
+    "id": "acana-adult-dog-recipe",
+    "brand": "ACANA",
+    "productName": "Adult Dog Recipe",
+    "slug": "acana-adult-dog-recipe",
+    "dataStatus": "verified",
+    "dataQualityNotes": [
+      "Nutrition, ingredients, calories and available sizes sourced from official ACANA Canada product page.",
+      "Retail price sourced from Pet Valu listing and should be refreshed regularly."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Adult Maintenance",
+      "breedSize": [
+        "All Breeds"
+      ],
+      "formulaType": [
+        "Grain-Free"
+      ],
+      "madeInCanada": true,
+      "manufacturingClaim": null,
+      "manufacturingClaimSourceUrl": null
+    },
+    "ingredients": {
+      "fullList": "Fresh chicken (13%), chicken meal (13%), whole red lentils, whole green peas, whole chickpeas, fresh chicken giblets (liver, heart) (6.5%), turkey meal (6.5%), chicken fat (6%), fresh eggs (4%), raw hake (4%), lentil fibre, pea starch, fish oil (3%), whole green lentils, whole yellow peas, herring meal (3%), raw turkey livers (1%), salt, dried kelp, fresh whole apples, fresh whole butternut squash, fresh whole carrots, fresh whole pears, fresh whole pumpkin, fresh whole zucchini, dried chicory root, fresh beet greens, fresh kale, fresh spinach, fresh turnip greens, whole blueberries, whole cranberries, whole saskatoon berries, burdock root, lavender, marshmallow root, milk thistle, rosehips, turmeric.",
+      "firstFive": [
+        "Fresh chicken",
+        "Chicken meal",
+        "Whole red lentils",
+        "Whole green peas",
+        "Whole chickpeas"
+      ],
+      "mainProteins": [
+        "Chicken",
+        "Turkey",
+        "Fish",
+        "Egg"
+      ],
+      "containsChicken": true,
+      "containsTurkey": true,
+      "containsBeef": false,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": true,
+      "containsEgg": true,
+      "containsDairy": false,
+      "containsCorn": false,
+      "containsWheat": false,
+      "containsSoy": false,
+      "containsPeas": true,
+      "containsLentils": true,
+      "containsPotatoes": false,
+      "grainFree": true
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 29,
+      "fatMinPercent": 17,
+      "fiberMaxPercent": 5,
+      "moistureMaxPercent": 12,
+      "ashMaxPercent": 7,
+      "calciumMinPercent": 1.3,
+      "phosphorusMinPercent": 1,
+      "omega6MinPercent": 2.6,
+      "omega3MinPercent": 0.8
+    },
+    "calories": {
+      "kcalPerKg": 3510,
+      "kcalPerCup": 421,
+      "calorieCalculationMethod": "Metabolizable Energy",
+      "calorieNotes": "Per 250 ml / 120 g cup."
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 11.34,
+      "packageSizeLabel": "25 lb",
+      "priceCad": 94.99,
+      "retailerName": "Pet Valu",
+      "retailerUrl": "https://www.petvalu.ca/product/acana-adult-recipe-dog-food/FCM04349",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "regular"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Formulated to meet the nutritional levels established by the FEDIAF Dog Food Nutrient Profiles for Adult Maintenance.",
+      "method": "Formulated",
+      "lifeStageClaim": "Adult Maintenance",
+      "standard": "FEDIAF"
+    },
+    "sources": {
+      "brandProductUrl": "https://www.acana.com/en-CA/dogs/dog-food/adult-dog-recipe/ns-aca-adult.html",
+      "brandNutritionUrl": "https://www.acana.com/en-CA/dogs/dog-food/adult-dog-recipe/ns-aca-adult.html",
+      "retailerUrl": "https://www.petvalu.ca/product/acana-adult-recipe-dog-food/FCM04349",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "orijen-original-dog-food",
+    "brand": "ORIJEN",
+    "productName": "Original Dog Food",
+    "slug": "orijen-original-dog-food",
+    "dataStatus": "verified",
+    "dataQualityNotes": [
+      "Nutrition, ingredients and calories sourced from official ORIJEN Canada product page.",
+      "Retail price sourced from Pet Valu listing and should be refreshed regularly."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "All Life Stages except Great Dane puppy growth before 14 weeks",
+      "breedSize": [
+        "All Breeds"
+      ],
+      "formulaType": [
+        "Grain-Free",
+        "High Protein"
+      ],
+      "madeInCanada": true,
+      "manufacturingClaim": null,
+      "manufacturingClaimSourceUrl": null
+    },
+    "ingredients": {
+      "fullList": "Fresh chicken (25%), raw turkey (8%), fresh chicken giblets (liver, heart) (7%), raw whole herring (6%), raw whole hake (5%), fresh eggs (5%), raw turkey liver (5%), dehydrated chicken (4%), dehydrated turkey (4%), dehydrated mackerel (4%), dehydrated sardine (4%), dehydrated herring (4%), whole red lentils, whole chickpeas, whole peas, chicken fat (3%), whole green lentils, whole pinto beans, whole navy beans, lentil fibre, pollock oil (1%), pea starch, dried kelp, fresh whole pumpkin, fresh whole butternut squash, fresh whole zucchini, fresh whole carrots, fresh whole apples, fresh whole pears, dried chicory root, fresh kale, fresh spinach, fresh beet greens, fresh turnip greens, whole cranberries, whole blueberries, whole saskatoon berries, turmeric, milk thistle, burdock root, lavender, marshmallow root, rosehips.",
+      "firstFive": [
+        "Fresh chicken",
+        "Raw turkey",
+        "Fresh chicken giblets",
+        "Raw whole herring",
+        "Raw whole hake"
+      ],
+      "mainProteins": [
+        "Chicken",
+        "Turkey",
+        "Fish",
+        "Egg"
+      ],
+      "containsChicken": true,
+      "containsTurkey": true,
+      "containsBeef": false,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": true,
+      "containsEgg": true,
+      "containsDairy": false,
+      "containsCorn": false,
+      "containsWheat": false,
+      "containsSoy": false,
+      "containsPeas": true,
+      "containsLentils": true,
+      "containsPotatoes": false,
+      "grainFree": true
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 38,
+      "fatMinPercent": 18,
+      "fiberMaxPercent": 5,
+      "moistureMaxPercent": 12,
+      "ashMaxPercent": 9,
+      "calciumMinPercent": 1.4,
+      "phosphorusMinPercent": 1.1,
+      "omega6MinPercent": 3,
+      "omega3MinPercent": 1
+    },
+    "calories": {
+      "kcalPerKg": 3860,
+      "kcalPerCup": 463,
+      "calorieCalculationMethod": "Metabolizable Energy",
+      "calorieNotes": "Per 250 ml / 120 g cup."
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 11.34,
+      "packageSizeLabel": "25 lb",
+      "priceCad": 110.99,
+      "retailerName": "Pet Valu",
+      "retailerUrl": "https://www.petvalu.ca/product/orijen-original-dog-food/FCM04364",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "regular"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Formulated to meet the nutritional levels established by FEDIAF for All Life Stages, except for growth of Great Dane puppies prior to 14 weeks.",
+      "method": "Formulated",
+      "lifeStageClaim": "All Life Stages except Great Dane puppy growth before 14 weeks",
+      "standard": "FEDIAF"
+    },
+    "sources": {
+      "brandProductUrl": "https://www.orijenpetfoods.com/en-CA/dogs/dog-food/original/ns-ori-original.html",
+      "brandNutritionUrl": "https://www.orijenpetfoods.com/en-CA/dogs/dog-food/original/ns-ori-original.html",
+      "retailerUrl": "https://www.petvalu.ca/product/orijen-original-dog-food/FCM04364",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "firstmate-wild-pacific-caught-fish-oats",
+    "brand": "FirstMate",
+    "productName": "Wild Pacific Caught Fish & Oats Formula",
+    "slug": "firstmate-wild-pacific-caught-fish-oats",
+    "dataStatus": "verified",
+    "dataQualityNotes": [
+      "Product details, ingredients, guaranteed analysis, calories, available sizes and price sourced from official FirstMate product page.",
+      "Made-in-Canada manufacturing claim sourced from official FirstMate dog food page."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "All Life Stages including growth of large-size dogs",
+      "breedSize": [
+        "All Breeds",
+        "Large Breed Puppies"
+      ],
+      "formulaType": [
+        "Grain-Friendly",
+        "Single Meat Protein"
+      ],
+      "madeInCanada": true,
+      "manufacturingClaim": "FirstMate and Kasiks kibble and canned products are made at FirstMate facilities in British Columbia, Canada.",
+      "manufacturingClaimSourceUrl": "https://firstmate.com/dog-food/"
+    },
+    "ingredients": {
+      "fullList": "Ocean Fish Meal, Oatmeal, Brown Rice, Chicken Fat (preserved with mixed tocopherols), Tomato Pomace, Brewer's Dried Yeast, Dicalcium Phosphate, Calcium Propionate (a preservative), Blueberries, Raspberries, Cranberries, Minerals (Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate), Vitamins (Vitamin E Supplement, Niacin, Thiamine Mononitrate, D-pantothenic Acid, Vitamin A Supplement, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid), Rosemary extract.",
+      "firstFive": [
+        "Ocean fish meal",
+        "Oatmeal",
+        "Brown rice",
+        "Chicken fat",
+        "Tomato pomace"
+      ],
+      "mainProteins": [
+        "Fish"
+      ],
+      "containsChicken": true,
+      "containsTurkey": false,
+      "containsBeef": false,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": true,
+      "containsEgg": false,
+      "containsDairy": false,
+      "containsCorn": false,
+      "containsWheat": false,
+      "containsSoy": false,
+      "containsPeas": false,
+      "containsLentils": false,
+      "containsPotatoes": false,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 28,
+      "fatMinPercent": 12,
+      "fiberMaxPercent": 7,
+      "moistureMaxPercent": 10,
+      "ashMaxPercent": 10,
+      "calciumMinPercent": 1.2,
+      "phosphorusMinPercent": 1,
+      "omega6MinPercent": null,
+      "omega3MinPercent": null
+    },
+    "calories": {
+      "kcalPerKg": 3160,
+      "kcalPerCup": 490,
+      "calorieCalculationMethod": "ME calculated",
+      "calorieNotes": null
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 11.36,
+      "packageSizeLabel": "11.36 kg / 25 lb",
+      "priceCad": 62.99,
+      "retailerName": "FirstMate",
+      "retailerUrl": "https://firstmate.com/product/wild-pacific-caught-fish-oats-formula/",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "regular"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Formulated to meet the Nutritional Guidelines established by the AAFCO Dog Food Nutrient Profiles for All Life Stages including the growth of large size dogs (70lbs or more as an adult).",
+      "method": "Formulated",
+      "lifeStageClaim": "All Life Stages including growth of large-size dogs",
+      "standard": "AAFCO"
+    },
+    "sources": {
+      "brandProductUrl": "https://firstmate.com/product/wild-pacific-caught-fish-oats-formula/",
+      "brandNutritionUrl": "https://firstmate.com/product/wild-pacific-caught-fish-oats-formula/",
+      "retailerUrl": "https://firstmate.com/product/wild-pacific-caught-fish-oats-formula/",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "go-solutions-skin-coat-care-salmon-with-grains",
+    "brand": "GO! Solutions",
+    "productName": "Skin + Coat Care Salmon Recipe with Grains",
+    "slug": "go-solutions-skin-coat-care-salmon-with-grains",
+    "dataStatus": "verified",
+    "dataQualityNotes": [
+      "Nutrition, ingredients, calories, life stage and made-in-Canada tag sourced from official GO! Solutions Canada product page.",
+      "Retail price sourced from Pet Valu listing and should be refreshed regularly."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "All Life Stages including growth of large-size dogs",
+      "breedSize": [
+        "All Breeds"
+      ],
+      "formulaType": [
+        "With Grains",
+        "Chicken-Free"
+      ],
+      "madeInCanada": true,
+      "manufacturingClaim": "Official product page tags this product as Made in Canada.",
+      "manufacturingClaimSourceUrl": "https://go-solutions.com/en-ca/dog-food/dry/skin-coat-care-salmon-recipe-with-grains"
+    },
+    "ingredients": {
+      "fullList": "Salmon meal, oatmeal, potatoes, whole oats, de-boned salmon, canola oil (preserved with mixed tocopherols), apples, carrots, cranberries, monocalcium phosphate, calcium carbonate, natural flavour, flaxseed, salt, potassium chloride, dried chicory root, choline chloride, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (zinc proteinate, iron proteinate, manganese proteinate, copper proteinate, selenium yeast, calcium iodate), taurine, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, L-lysine, yucca schidigera extract, dried rosemary.",
+      "firstFive": [
+        "Salmon meal",
+        "Oatmeal",
+        "Potatoes",
+        "Whole oats",
+        "De-boned salmon"
+      ],
+      "mainProteins": [
+        "Salmon"
+      ],
+      "containsChicken": false,
+      "containsTurkey": false,
+      "containsBeef": false,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": true,
+      "containsEgg": false,
+      "containsDairy": false,
+      "containsCorn": false,
+      "containsWheat": false,
+      "containsSoy": false,
+      "containsPeas": false,
+      "containsLentils": false,
+      "containsPotatoes": true,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 22,
+      "fatMinPercent": 12,
+      "fiberMaxPercent": 5,
+      "moistureMaxPercent": 10,
+      "ashMaxPercent": null,
+      "calciumMinPercent": 1.2,
+      "phosphorusMinPercent": 1,
+      "omega6MinPercent": 1.8,
+      "omega3MinPercent": 0.8
+    },
+    "calories": {
+      "kcalPerKg": 3561,
+      "kcalPerCup": 427,
+      "calorieCalculationMethod": "ME calculated",
+      "calorieNotes": "Per 250 ml cup."
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 9.98,
+      "packageSizeLabel": "22 lb",
+      "priceCad": 98.99,
+      "retailerName": "Pet Valu",
+      "retailerUrl": "https://www.petvalu.ca/product/go-solutions-skin-coat-care-salmon-with-grains-recipe-dog-food/FCM02338",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "regular"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages including growth of large size dogs (70lbs or more as an adult).",
+      "method": "Formulated",
+      "lifeStageClaim": "All Life Stages including growth of large-size dogs",
+      "standard": "AAFCO"
+    },
+    "sources": {
+      "brandProductUrl": "https://go-solutions.com/en-ca/dog-food/dry/skin-coat-care-salmon-recipe-with-grains",
+      "brandNutritionUrl": "https://go-solutions.com/en-ca/dog-food/dry/skin-coat-care-salmon-recipe-with-grains",
+      "retailerUrl": "https://www.petvalu.ca/product/go-solutions-skin-coat-care-salmon-with-grains-recipe-dog-food/FCM02338",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "now-fresh-adult-turkey-salmon-duck-grain-free",
+    "brand": "NOW Fresh",
+    "productName": "Adult Turkey, Salmon & Duck Grain-Free Dry Dog Food",
+    "slug": "now-fresh-adult-turkey-salmon-duck-grain-free",
+    "dataStatus": "verified",
+    "dataQualityNotes": [
+      "Nutrition, ingredients, calories, life stage and made-in-Canada tag sourced from official NOW Fresh Canada product page.",
+      "Retail price sourced from Pet Valu listing and should be refreshed regularly."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Adult Maintenance",
+      "breedSize": [
+        "All Breeds"
+      ],
+      "formulaType": [
+        "Grain-Free",
+        "Chicken-Free"
+      ],
+      "madeInCanada": true,
+      "manufacturingClaim": "Official product page tags this product as Made in Canada.",
+      "manufacturingClaimSourceUrl": "https://nowfresh.com/en-ca/dog-food/dry/grain-free-adult-recipe-with-turkey-salmon-duck"
+    },
+    "ingredients": {
+      "fullList": "De-boned turkey, potatoes, peas, whole dried egg, potato flour, pea fibre, flaxseed, apples, natural flavour, canola oil (preserved with mixed tocopherols), de-boned salmon, de-boned duck, calcium carbonate, monocalcium phosphate, coconut oil (preserved with mixed tocopherols), suncured alfalfa, tomato, carrots, pumpkin, sweet potatoes, squash, bananas, blueberries, cranberries, blackberries, pomegranate, papayas, lentils, broccoli, cottage cheese, salt, dried chicory root, choline chloride, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), taurine, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, DL-methionine, L-lysine, potassium chloride, yucca schidigera extract, L-carnitine, dried rosemary.",
+      "firstFive": [
+        "De-boned turkey",
+        "Potatoes",
+        "Peas",
+        "Whole dried egg",
+        "Potato flour"
+      ],
+      "mainProteins": [
+        "Turkey",
+        "Salmon",
+        "Duck",
+        "Egg"
+      ],
+      "containsChicken": false,
+      "containsTurkey": true,
+      "containsBeef": false,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": true,
+      "containsEgg": true,
+      "containsDairy": true,
+      "containsCorn": false,
+      "containsWheat": false,
+      "containsSoy": false,
+      "containsPeas": true,
+      "containsLentils": true,
+      "containsPotatoes": true,
+      "grainFree": true
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 26,
+      "fatMinPercent": 16,
+      "fiberMaxPercent": 4,
+      "moistureMaxPercent": 10,
+      "ashMaxPercent": null,
+      "calciumMinPercent": 1.1,
+      "phosphorusMinPercent": 0.7,
+      "omega6MinPercent": 2.5,
+      "omega3MinPercent": 0.9
+    },
+    "calories": {
+      "kcalPerKg": 3670,
+      "kcalPerCup": 404,
+      "calorieCalculationMethod": "ME calculated",
+      "calorieNotes": "Per 250 ml cup."
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 9.98,
+      "packageSizeLabel": "22 lb",
+      "priceCad": 109.99,
+      "retailerName": "Pet Valu",
+      "retailerUrl": "https://www.petvalu.ca/product/now-fresh-grain-free-turkey-salmon-duck-recipe-adult-dog-food/FCM00181",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "regular"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for Maintenance.",
+      "method": "Formulated",
+      "lifeStageClaim": "Adult Maintenance",
+      "standard": "AAFCO"
+    },
+    "sources": {
+      "brandProductUrl": "https://nowfresh.com/en-ca/dog-food/dry/grain-free-adult-recipe-with-turkey-salmon-duck",
+      "brandNutritionUrl": "https://nowfresh.com/en-ca/dog-food/dry/grain-free-adult-recipe-with-turkey-salmon-duck",
+      "retailerUrl": "https://www.petvalu.ca/product/now-fresh-grain-free-turkey-salmon-duck-recipe-adult-dog-food/FCM00181",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "nutrience-subzero-prairie-red",
+    "brand": "Nutrience",
+    "productName": "SubZero Prairie Red High Protein Dog Food",
+    "slug": "nutrience-subzero-prairie-red",
+    "dataStatus": "verified",
+    "dataQualityNotes": [
+      "Nutrition, ingredients, calories, available sizes and made-in-Canada claim sourced from official Nutrience product page.",
+      "Retail price sourced from PetSmart Canada listing and should be refreshed regularly."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Adult Maintenance",
+      "breedSize": [
+        "All Breeds"
+      ],
+      "formulaType": [
+        "Grain-Free",
+        "High Protein",
+        "Chicken-Free"
+      ],
+      "madeInCanada": true,
+      "manufacturingClaim": "Nutrience states SubZero dog foods are proudly made in British Columbia, Canada.",
+      "manufacturingClaimSourceUrl": "https://nutrience.com/products/prairie-red-formula/"
+    },
+    "ingredients": {
+      "fullList": "Deboned beef, deboned lamb, deboned wild boar, deboned pork, deboned bison, beef liver, pork liver, pork meal, peas, pork fat (preserved with mixed tocopherols and citric acid), pea protein, lamb meal, lentils, natural flavor, freeze-dried beef liver, salmon, cod, chickpeas, sweet potatoes, fish oil, sun-cured alfalfa meal, pea fiber, salt, potassium chloride, taurine, choline chloride, inulin, DL-methionine, freeze-dried sweet potatoes, freeze-dried pumpkin, freeze-dried green mussels, freeze-dried cod liver, freeze-dried kelp, zinc proteinate, apples, blueberries, carrots, cranberries, ginger, pumpkin, glucosamine hydrochloride, chondroitin sulfate, vitamin E supplement, iron proteinate, L-ascorbyl-2-polyphosphate, niacin supplement, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Enterococcus faecium fermentation product, dried Bifidobacterium bifidum fermentation product, Yucca schidigera extract, d-calcium pantothenate, manganese proteinate, sunflower oil, copper proteinate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, menadione sodium bisulfite complex, pyridoxine hydrochloride, thiamine mononitrate, biotin, canola oil, sodium selenite, vitamin D3 supplement, calcium iodate, folic acid, rosemary extract.",
+      "firstFive": [
+        "Deboned beef",
+        "Deboned lamb",
+        "Deboned wild boar",
+        "Deboned pork",
+        "Deboned bison"
+      ],
+      "mainProteins": [
+        "Beef",
+        "Lamb",
+        "Pork",
+        "Bison",
+        "Fish"
+      ],
+      "containsChicken": false,
+      "containsTurkey": false,
+      "containsBeef": true,
+      "containsPork": true,
+      "containsLamb": true,
+      "containsFish": true,
+      "containsEgg": false,
+      "containsDairy": false,
+      "containsCorn": false,
+      "containsWheat": false,
+      "containsSoy": false,
+      "containsPeas": true,
+      "containsLentils": true,
+      "containsPotatoes": true,
+      "grainFree": true
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 38,
+      "fatMinPercent": 16,
+      "fiberMaxPercent": 5,
+      "moistureMaxPercent": 10,
+      "ashMaxPercent": null,
+      "calciumMinPercent": null,
+      "phosphorusMinPercent": null,
+      "omega6MinPercent": 2.5,
+      "omega3MinPercent": 0.5
+    },
+    "calories": {
+      "kcalPerKg": 3668,
+      "kcalPerCup": 447,
+      "calorieCalculationMethod": "Calculated ME",
+      "calorieNotes": null
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 10,
+      "packageSizeLabel": "10 kg",
+      "priceCad": 92.99,
+      "retailerName": "PetSmart Canada",
+      "retailerUrl": "https://www.petsmart.ca/dog/food/dry-food/nutrience-subzero-adult-dog-food---grain-free-prairie-red-83540.html",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "regular"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for maintenance.",
+      "method": "Formulated",
+      "lifeStageClaim": "Adult Maintenance",
+      "standard": "AAFCO"
+    },
+    "sources": {
+      "brandProductUrl": "https://nutrience.com/products/prairie-red-formula/",
+      "brandNutritionUrl": "https://nutrience.com/products/prairie-red-formula/",
+      "retailerUrl": "https://www.petsmart.ca/dog/food/dry-food/nutrience-subzero-adult-dog-food---grain-free-prairie-red-83540.html",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "canadian-naturals-chicken-brown-rice",
+    "brand": "Canadian Naturals",
+    "productName": "Chicken & Brown Rice",
+    "slug": "canadian-naturals-chicken-brown-rice",
+    "dataStatus": "verified",
+    "dataQualityNotes": [
+      "Nutrition, ingredients and calories sourced from official Canadian Naturals product page.",
+      "Retail price sourced from Woofy's listing and should be refreshed regularly."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "All Life Stages",
+      "breedSize": [
+        "All Breeds"
+      ],
+      "formulaType": [
+        "With Grains"
+      ],
+      "madeInCanada": true,
+      "manufacturingClaim": "Official product page states locally made and sourced.",
+      "manufacturingClaimSourceUrl": "https://canadiannaturals.com/team/chicken-rice/"
+    },
+    "ingredients": {
+      "fullList": "Chicken meal, ground oats, brown rice, potato, chicken fat (stabilized with mixed tocopherols, a natural source of vitamin E), millet, rye, fresh chicken, chicken cartilage (natural source of glucosamine), natural flavour, whole dried egg, flaxseed, Canadian salmon meal, Canadian salmon oil, tomato pomace, calcium carbonate, potassium chloride, dicalcium phosphate, sodium chloride, lecithin, kelp, chicory root extract, cranberry, alfalfa, spinach, sweet potato, broccoli, blueberries, apples, bananas, pears, vitamin (vitamin A, vitamin D3, vitamin E, niacin, vitamin C, inositol, d-calcium pantothenate, thiamine mononitrate, riboflavin, beta carotene, pyridoxine hydrochloride, folic acid, vitamin K, biotin, vitamin B12 supplement), minerals (zinc proteinate, ferrous sulfate, iron proteinate, zinc oxide, copper proteinate, copper sulfate, manganese proteinate, manganous oxide, calcium iodate, sodium selenite), probiotics (lactobacillus acidophilus, lactobacillus casei, enterococcus faecium, bifidobacterium thermophilum), DL methionine, yucca schidigera extract, rosemary, turmeric, paprika, garlic, cinnamon, chamomile, capsicum.",
+      "firstFive": [
+        "Chicken meal",
+        "Ground oats",
+        "Brown rice",
+        "Potato",
+        "Chicken fat"
+      ],
+      "mainProteins": [
+        "Chicken",
+        "Fish",
+        "Egg"
+      ],
+      "containsChicken": true,
+      "containsTurkey": false,
+      "containsBeef": false,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": true,
+      "containsEgg": true,
+      "containsDairy": false,
+      "containsCorn": false,
+      "containsWheat": false,
+      "containsSoy": false,
+      "containsPeas": false,
+      "containsLentils": false,
+      "containsPotatoes": true,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 24,
+      "fatMinPercent": 14,
+      "fiberMaxPercent": 3.5,
+      "moistureMaxPercent": 10,
+      "ashMaxPercent": null,
+      "calciumMinPercent": 1.6,
+      "phosphorusMinPercent": 1,
+      "omega6MinPercent": 2.1,
+      "omega3MinPercent": 0.4
+    },
+    "calories": {
+      "kcalPerKg": 3746,
+      "kcalPerCup": 400,
+      "calorieCalculationMethod": "Calorie Content",
+      "calorieNotes": null
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 13.61,
+      "packageSizeLabel": "30 lb",
+      "priceCad": 49.99,
+      "retailerName": "Woofy's",
+      "retailerUrl": "https://www.woofys.ca/canadian-naturals-chicken-brown-rice-dog-30lb.html",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "regular"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Balanced for all breeds, puppy to adult.",
+      "method": null,
+      "lifeStageClaim": "All Life Stages",
+      "standard": null
+    },
+    "sources": {
+      "brandProductUrl": "https://canadiannaturals.com/team/chicken-rice/",
+      "brandNutritionUrl": "https://canadiannaturals.com/team/chicken-rice/",
+      "retailerUrl": "https://www.woofys.ca/canadian-naturals-chicken-brown-rice-dog-30lb.html",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "boreal-proper-chicken",
+    "brand": "Boréal",
+    "productName": "Proper Chicken",
+    "slug": "boreal-proper-chicken",
+    "dataStatus": "verified",
+    "dataQualityNotes": [
+      "Guaranteed analysis and calories sourced from official Boréal product page.",
+      "Ingredients and retail price sourced from Canadian Pet Connection listing; verify against package before publishing at scale."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "All Life Stages",
+      "breedSize": [
+        "All Breeds"
+      ],
+      "formulaType": [
+        "With Grains",
+        "Single Animal Protein"
+      ],
+      "madeInCanada": true,
+      "manufacturingClaim": "Retail listing categorizes product as Made in Canada; official Boréal product page references Canadian farms for ingredient sourcing.",
+      "manufacturingClaimSourceUrl": "https://borealpetfood.com/chicken-boreal-proper-dog-food/"
+    },
+    "ingredients": {
+      "fullList": "Chicken meal, dehulled barley, green whole peas, chicken fat (preserved with mixed tocopherols), steel cut oats, northern white pea bean, whole flaxseed, dehydrated alfalfa meal, yeast extract, natural chicken flavour, sodium selenite, potassium chloride, choline chloride, DL-methionine, taurine, dried apple, dried carrot, ferrous sulfate, zinc oxide, vitamin E supplement, copper sulfate, folic acid supplement, vitamin B12 supplement, vitamin A supplement, zinc amino acid complex, niacin supplement, selenium yeast, manganous oxide, manganese amino acid complex, iron amino acid complex, calcium pantothenate, riboflavin, biotin supplement, vitamin D supplement, calcium iodate.",
+      "firstFive": [
+        "Chicken meal",
+        "Dehulled barley",
+        "Green whole peas",
+        "Chicken fat",
+        "Steel cut oats"
+      ],
+      "mainProteins": [
+        "Chicken"
+      ],
+      "containsChicken": true,
+      "containsTurkey": false,
+      "containsBeef": false,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": false,
+      "containsEgg": false,
+      "containsDairy": false,
+      "containsCorn": false,
+      "containsWheat": false,
+      "containsSoy": false,
+      "containsPeas": true,
+      "containsLentils": false,
+      "containsPotatoes": false,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 27,
+      "fatMinPercent": 15,
+      "fiberMaxPercent": 5.75,
+      "moistureMaxPercent": 10,
+      "ashMaxPercent": 7.5,
+      "calciumMinPercent": 1.58,
+      "phosphorusMinPercent": 1.2,
+      "omega6MinPercent": 2.26,
+      "omega3MinPercent": 0.47
+    },
+    "calories": {
+      "kcalPerKg": 3580,
+      "kcalPerCup": 430,
+      "calorieCalculationMethod": "Calculated ME",
+      "calorieNotes": null
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 11.33,
+      "packageSizeLabel": "11.33 kg",
+      "priceCad": 73.99,
+      "retailerName": "Canadian Pet Connection",
+      "retailerUrl": "https://www.canadianpetconnection.ca/dog-products/dog-food/dog-food-all-brands/boreal-dog-food/boreal-proper-chicken-dog-food/",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "regular"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Retail listing states suitable for dogs of all ages, sizes, and breeds.",
+      "method": null,
+      "lifeStageClaim": "All Life Stages",
+      "standard": null
+    },
+    "sources": {
+      "brandProductUrl": "https://borealpetfood.com/chicken-boreal-proper-dog-food/",
+      "brandNutritionUrl": "https://borealpetfood.com/chicken-boreal-proper-dog-food/",
+      "retailerUrl": "https://www.canadianpetconnection.ca/dog-products/dog-food/dog-food-all-brands/boreal-dog-food/boreal-proper-chicken-dog-food/",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "open-farm-homestead-turkey-chicken-grain-free",
+    "brand": "Open Farm",
+    "productName": "Homestead Turkey & Chicken Grain-Free Dog Kibble",
+    "slug": "open-farm-homestead-turkey-chicken-grain-free",
+    "dataStatus": "nutrition_verified_price_estimated",
+    "dataQualityNotes": [
+      "Nutrition, top ingredients, calories and adequacy statement sourced from official Open Farm Canada product page.",
+      "Full ingredient list is reconstructed from visible official ingredient section and should be package-verified before marking as fully verified.",
+      "Retail price sourced from Pet Valu listing and should be refreshed regularly."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "All Life Stages except growth of large-size dogs",
+      "breedSize": [
+        "Small Breed Puppies",
+        "Medium Breed Puppies",
+        "Adult Dogs",
+        "Senior Dogs"
+      ],
+      "formulaType": [
+        "Grain-Free"
+      ],
+      "madeInCanada": null,
+      "manufacturingClaim": null,
+      "manufacturingClaimSourceUrl": null
+    },
+    "ingredients": {
+      "fullList": "Humanely Raised Turkey, Humanely Raised Chicken, Ocean Whitefish Meal, Russet Potatoes, Garbanzo Beans (Chickpeas), Green Lentils, Field Peas, Coconut Oil, Ocean Menhaden Fish Meal, Pumpkin, Tomato, Natural Flavor (yeast), Flaxseed, Carrots, Apples, Dried Chicory Root, Salmon Oil, Salt. Full ingredient list should be verified against package or official nutrition label before public launch.",
+      "firstFive": [
+        "Humanely Raised Turkey",
+        "Humanely Raised Chicken",
+        "Ocean Whitefish Meal",
+        "Russet Potatoes",
+        "Garbanzo Beans"
+      ],
+      "mainProteins": [
+        "Turkey",
+        "Chicken",
+        "Fish"
+      ],
+      "containsChicken": true,
+      "containsTurkey": true,
+      "containsBeef": false,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": true,
+      "containsEgg": false,
+      "containsDairy": false,
+      "containsCorn": false,
+      "containsWheat": false,
+      "containsSoy": false,
+      "containsPeas": true,
+      "containsLentils": true,
+      "containsPotatoes": true,
+      "grainFree": true
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 30,
+      "fatMinPercent": 14,
+      "fiberMaxPercent": 4.5,
+      "moistureMaxPercent": 10,
+      "ashMaxPercent": null,
+      "calciumMinPercent": 1.2,
+      "phosphorusMinPercent": 1,
+      "omega6MinPercent": 1.25,
+      "omega3MinPercent": 0.4
+    },
+    "calories": {
+      "kcalPerKg": 3600,
+      "kcalPerCup": 436,
+      "calorieCalculationMethod": "Calorie Content",
+      "calorieNotes": null
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 9.98,
+      "packageSizeLabel": "22 lb",
+      "priceCad": 113.99,
+      "retailerName": "Pet Valu",
+      "retailerUrl": "https://www.petvalu.ca/product/open-farm-homestead-turkey-chicken-recipe-adult-dog-food/FCM01183",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "regular"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages except for growth of large size dogs (70 lb. or more as an adult).",
+      "method": "Formulated",
+      "lifeStageClaim": "All Life Stages except growth of large-size dogs",
+      "standard": "AAFCO"
+    },
+    "sources": {
+      "brandProductUrl": "https://openfarmpet.ca/products/chicken-and-turkey-dry-dog-food",
+      "brandNutritionUrl": "https://openfarmpet.ca/products/chicken-and-turkey-dry-dog-food",
+      "retailerUrl": "https://www.petvalu.ca/product/open-farm-homestead-turkey-chicken-recipe-adult-dog-food/FCM01183",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "purina-one-chicken-rice-formula",
+    "brand": "Purina ONE",
+    "productName": "Chicken & Rice Formula Dry Dog Food",
+    "slug": "purina-one-chicken-rice-formula",
+    "dataStatus": "verified",
+    "dataQualityNotes": [
+      "Nutrition, ingredients, calories and available sizes sourced from official Purina Canada product page.",
+      "Retail price sourced from PetSmart Canada listing and should be refreshed regularly."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Adult Maintenance",
+      "breedSize": [
+        "All Breeds"
+      ],
+      "formulaType": [
+        "With Grains"
+      ],
+      "madeInCanada": false,
+      "manufacturingClaim": "Made in the USA.",
+      "manufacturingClaimSourceUrl": "https://www.purina.ca/purina-one/dogs/dry-dog-food/chicken-rice"
+    },
+    "ingredients": {
+      "fullList": "Chicken, rice flour, corn protein meal, whole grain corn, chicken by-product meal, whole grain wheat, soybean meal, beef fat preserved with mixed tocopherols, natural flavours, glycerin, calcium carbonate, mono and dicalcium phosphate, dried chicory root, salt, potassium chloride, dried carrots, dried peas, vegetable juice colour, vitamin E supplement, niacin, vitamin A supplement, calcium pantothenate, thiamine mononitrate, vitamin B12 supplement, riboflavin supplement, pyridoxine hydrochloride, folic acid, vitamin D3 supplement, menadione sodium bisulphate complex, biotin, zinc sulphate, ferrous sulphate, manganese sulphate, copper sulphate, calcium iodate, sodium selenite, choline chloride, D,L-methionine, L-lysine monohydrochloride.",
+      "firstFive": [
+        "Chicken",
+        "Rice flour",
+        "Corn protein meal",
+        "Whole grain corn",
+        "Chicken by-product meal"
+      ],
+      "mainProteins": [
+        "Chicken"
+      ],
+      "containsChicken": true,
+      "containsTurkey": false,
+      "containsBeef": true,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": false,
+      "containsEgg": false,
+      "containsDairy": false,
+      "containsCorn": true,
+      "containsWheat": true,
+      "containsSoy": true,
+      "containsPeas": true,
+      "containsLentils": false,
+      "containsPotatoes": false,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 26,
+      "fatMinPercent": 16,
+      "fiberMaxPercent": 3,
+      "moistureMaxPercent": 12,
+      "ashMaxPercent": null,
+      "calciumMinPercent": 1,
+      "phosphorusMinPercent": 0.8,
+      "omega6MinPercent": 1.6,
+      "omega3MinPercent": null
+    },
+    "calories": {
+      "kcalPerKg": 4004,
+      "kcalPerCup": 383,
+      "calorieCalculationMethod": "Metabolizable Energy",
+      "calorieNotes": "Per standard 8 oz / 250 ml measuring cup, approximately 95 g."
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 14,
+      "packageSizeLabel": "14 kg",
+      "priceCad": 50.99,
+      "retailerName": "PetSmart Canada",
+      "retailerUrl": "https://www.petsmart.ca/dog/food/dry-food/purina-one-microbiome-balance-dry-dog-food---chicken-and-rice-formula-3511.html",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "current"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Animal feeding tests using AAFCO procedures substantiate that this formula provides complete and balanced nutrition for maintenance of adult dogs.",
+      "method": "Feeding Tests",
+      "lifeStageClaim": "Adult Maintenance",
+      "standard": "AAFCO"
+    },
+    "sources": {
+      "brandProductUrl": "https://www.purina.ca/purina-one/dogs/dry-dog-food/chicken-rice",
+      "brandNutritionUrl": "https://www.purina.ca/purina-one/dogs/dry-dog-food/chicken-rice",
+      "retailerUrl": "https://www.petsmart.ca/dog/food/dry-food/purina-one-microbiome-balance-dry-dog-food---chicken-and-rice-formula-3511.html",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "purina-pro-plan-complete-essentials-shredded-blend-chicken-rice",
+    "brand": "Purina Pro Plan",
+    "productName": "Adult Complete Essentials Shredded Blend Chicken & Rice Dry Dog Food",
+    "slug": "purina-pro-plan-complete-essentials-shredded-blend-chicken-rice",
+    "dataStatus": "verified",
+    "dataQualityNotes": [
+      "Nutrition, ingredients, calories and available sizes sourced from official Purina Canada product page.",
+      "Retail price sourced from PetSmart Canada listing and should be refreshed regularly."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Adult Maintenance",
+      "breedSize": [
+        "All Breeds"
+      ],
+      "formulaType": [
+        "With Grains"
+      ],
+      "madeInCanada": false,
+      "manufacturingClaim": "Made in the USA.",
+      "manufacturingClaimSourceUrl": "https://www.purina.ca/pro-plan/dogs/dry-dog-food/complete-essentials-shredded-blend-chicken-rice-probiotics"
+    },
+    "ingredients": {
+      "fullList": "Chicken, rice, whole grain wheat, poultry by-product meal, whole grain corn, soybean meal, beef fat preserved with mixed tocopherols, corn protein meal, dried egg product, natural flavours, dried beet pulp, glycerin, mono and dicalcium phosphate, wheat bran, calcium carbonate, fish meal, salt, soybean oil, potassium chloride, zinc proteinate, ferrous sulphate, manganese proteinate, copper proteinate, calcium iodate, sodium selenite, vitamin E supplement, niacin, thiamine mononitrate, calcium pantothenate, vitamin A supplement, riboflavin supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid, menadione sodium bisulphate complex, biotin, vitamin D3 supplement, choline chloride, dried Bacillus coagulans fermentation product, L-ascorbyl-2-polyphosphate, L-lysine monohydrochloride, garlic oil.",
+      "firstFive": [
+        "Chicken",
+        "Rice",
+        "Whole grain wheat",
+        "Poultry by-product meal",
+        "Whole grain corn"
+      ],
+      "mainProteins": [
+        "Chicken",
+        "Poultry",
+        "Fish",
+        "Egg"
+      ],
+      "containsChicken": true,
+      "containsTurkey": false,
+      "containsBeef": true,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": true,
+      "containsEgg": true,
+      "containsDairy": false,
+      "containsCorn": true,
+      "containsWheat": true,
+      "containsSoy": true,
+      "containsPeas": false,
+      "containsLentils": false,
+      "containsPotatoes": false,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 26,
+      "fatMinPercent": 16,
+      "fiberMaxPercent": 3,
+      "moistureMaxPercent": 12,
+      "ashMaxPercent": null,
+      "calciumMinPercent": 1,
+      "phosphorusMinPercent": 0.8,
+      "omega6MinPercent": 1.5,
+      "omega3MinPercent": null
+    },
+    "calories": {
+      "kcalPerKg": 3790,
+      "kcalPerCup": 369,
+      "calorieCalculationMethod": "Metabolizable Energy",
+      "calorieNotes": "Per standard 8 oz / 250 ml measuring cup, approximately 97 g."
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 15.88,
+      "packageSizeLabel": "35 lb",
+      "priceCad": 98.99,
+      "retailerName": "PetSmart Canada",
+      "retailerUrl": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-complete-essentials-shredded-blend-adult-dry-dog-food---chicken-and-rice-3022.html",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "current"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Animal feeding tests using AAFCO procedures substantiate that this formula provides complete and balanced nutrition for maintenance of adult dogs.",
+      "method": "Feeding Tests",
+      "lifeStageClaim": "Adult Maintenance",
+      "standard": "AAFCO"
+    },
+    "sources": {
+      "brandProductUrl": "https://www.purina.ca/pro-plan/dogs/dry-dog-food/complete-essentials-shredded-blend-chicken-rice-probiotics",
+      "brandNutritionUrl": "https://www.purina.ca/pro-plan/dogs/dry-dog-food/complete-essentials-shredded-blend-chicken-rice-probiotics",
+      "retailerUrl": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-complete-essentials-shredded-blend-adult-dry-dog-food---chicken-and-rice-3022.html",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "royal-canin-medium-adult-dry-dog-food",
+    "brand": "Royal Canin",
+    "productName": "Medium Adult Dry Dog Food",
+    "slug": "royal-canin-medium-adult-dry-dog-food",
+    "dataStatus": "verified",
+    "dataQualityNotes": [
+      "Nutrition, ingredients, calories and adequacy statement sourced from official Royal Canin Canada product page.",
+      "Retail price sourced from PetSmart Canada listing and should be refreshed regularly."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Adult Maintenance",
+      "breedSize": [
+        "Medium Breed"
+      ],
+      "formulaType": [
+        "With Grains"
+      ],
+      "madeInCanada": false,
+      "manufacturingClaim": null,
+      "manufacturingClaimSourceUrl": null
+    },
+    "ingredients": {
+      "fullList": "Brewers rice, chicken by-product meal, oat groats, wheat, corn protein meal, chicken fat, natural flavors, dried plain beet pulp, fish oil, calcium carbonate, vegetable oil, potassium chloride, monocalcium phosphate, salt, choline chloride, vitamins, rosemary extract, preserved with mixed tocopherols and citric acid, hydrolyzed yeast, trace minerals, L-lysine, magnesium oxide.",
+      "firstFive": [
+        "Brewers rice",
+        "Chicken by-product meal",
+        "Oat groats",
+        "Wheat",
+        "Corn protein meal"
+      ],
+      "mainProteins": [
+        "Chicken",
+        "Fish"
+      ],
+      "containsChicken": true,
+      "containsTurkey": false,
+      "containsBeef": false,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": true,
+      "containsEgg": false,
+      "containsDairy": false,
+      "containsCorn": true,
+      "containsWheat": true,
+      "containsSoy": false,
+      "containsPeas": false,
+      "containsLentils": false,
+      "containsPotatoes": false,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 23,
+      "fatMinPercent": 12,
+      "fiberMaxPercent": 3.4,
+      "moistureMaxPercent": 10.5,
+      "ashMaxPercent": null,
+      "calciumMinPercent": 0.85,
+      "phosphorusMinPercent": 0.56,
+      "omega6MinPercent": null,
+      "omega3MinPercent": null
+    },
+    "calories": {
+      "kcalPerKg": 3616,
+      "kcalPerCup": 340,
+      "calorieCalculationMethod": "Calculated Metabolizable Energy",
+      "calorieNotes": "As-fed basis."
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 13.61,
+      "packageSizeLabel": "30 lb",
+      "priceCad": 112.99,
+      "retailerName": "PetSmart Canada",
+      "retailerUrl": "https://www.petsmart.ca/dog/food/dry-food/royal-canin-size-health-nutrition-medium-breed-adult-dry-dog-food-2640.html",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "current"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for maintenance.",
+      "method": "Formulated",
+      "lifeStageClaim": "Adult Maintenance",
+      "standard": "AAFCO"
+    },
+    "sources": {
+      "brandProductUrl": "https://www.royalcanin.com/ca/dogs/products/retail-products/medium-adult-3004",
+      "brandNutritionUrl": "https://www.royalcanin.com/ca/dogs/products/retail-products/medium-adult-3004",
+      "retailerUrl": "https://www.petsmart.ca/dog/food/dry-food/royal-canin-size-health-nutrition-medium-breed-adult-dry-dog-food-2640.html",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "go-solutions-carnivore-chicken-turkey-duck-adult",
+    "brand": "GO! Solutions",
+    "productName": "Carnivore Grain-Free Chicken, Turkey + Duck Adult Recipe",
+    "slug": "go-solutions-carnivore-chicken-turkey-duck-adult",
+    "dataStatus": "verified",
+    "dataQualityNotes": [
+      "Nutrition, ingredients and calorie data sourced from official GO! Solutions Canada product page.",
+      "Retail price and Ontario manufacturing claim sourced from Pet Valu listing and should be refreshed regularly."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Adult Maintenance",
+      "breedSize": [
+        "All Breeds"
+      ],
+      "formulaType": [
+        "Grain-Free",
+        "High Protein"
+      ],
+      "madeInCanada": true,
+      "manufacturingClaim": "Proudly made in Ontario, Canada.",
+      "manufacturingClaimSourceUrl": "https://www.petvalu.ca/product/go-solutions-carnivore-grain-free-chicken-turkey-duck-recipe-adult-dog-food/FCM02348"
+    },
+    "ingredients": {
+      "fullList": "Chicken meal, turkey meal, salmon meal, de-boned chicken, de-boned turkey, de-boned trout, potatoes, peas, tapioca, lentils, chickpeas, chicken fat preserved with mixed tocopherols, duck meal, natural chicken flavour, whole dried egg, apples, herring meal, salmon oil, suncured alfalfa, de-boned duck, de-boned salmon, sweet potatoes, flaxseed, potassium chloride, pumpkin, carrots, bananas, blueberries, cranberries, broccoli, blackberries, squash, papayas, pomegranate, dried chicory root, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, dried Aspergillus oryzae fermentation extract, dried Bacillus subtilis fermentation extract, choline chloride, vitamins, minerals, salt, taurine, yucca schidigera extract, dried rosemary, green tea extract, peppermint, parsley, rosehips, zedoary, dandelion, chamomile, ginger, fennel, turmeric, juniper berries, licorice, cardamom, cloves.",
+      "firstFive": [
+        "Chicken meal",
+        "Turkey meal",
+        "Salmon meal",
+        "De-boned chicken",
+        "De-boned turkey"
+      ],
+      "mainProteins": [
+        "Chicken",
+        "Turkey",
+        "Salmon",
+        "Trout",
+        "Duck",
+        "Egg"
+      ],
+      "containsChicken": true,
+      "containsTurkey": true,
+      "containsBeef": false,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": true,
+      "containsEgg": true,
+      "containsDairy": false,
+      "containsCorn": false,
+      "containsWheat": false,
+      "containsSoy": false,
+      "containsPeas": true,
+      "containsLentils": true,
+      "containsPotatoes": true,
+      "grainFree": true
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 34,
+      "fatMinPercent": 16,
+      "fiberMaxPercent": 3,
+      "moistureMaxPercent": 10,
+      "ashMaxPercent": null,
+      "calciumMinPercent": 2,
+      "phosphorusMinPercent": 1.2,
+      "omega6MinPercent": 2.7,
+      "omega3MinPercent": 0.4
+    },
+    "calories": {
+      "kcalPerKg": 3951,
+      "kcalPerCup": 435,
+      "calorieCalculationMethod": "Calculated Metabolizable Energy",
+      "calorieNotes": "Per 250 ml cup."
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 9.98,
+      "packageSizeLabel": "22 lb",
+      "priceCad": 98.99,
+      "retailerName": "Pet Valu",
+      "retailerUrl": "https://www.petvalu.ca/product/go-solutions-carnivore-grain-free-chicken-turkey-duck-recipe-adult-dog-food/FCM02348",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "current"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for Maintenance.",
+      "method": "Formulated",
+      "lifeStageClaim": "Adult Maintenance",
+      "standard": "AAFCO"
+    },
+    "sources": {
+      "brandProductUrl": "https://go-solutions.com/en-ca/dog-food/dry/carnivore-grain-free-chicken-turkey-duck-adult-recipe",
+      "brandNutritionUrl": "https://go-solutions.com/en-ca/dog-food/dry/carnivore-grain-free-chicken-turkey-duck-adult-recipe",
+      "retailerUrl": "https://www.petvalu.ca/product/go-solutions-carnivore-grain-free-chicken-turkey-duck-recipe-adult-dog-food/FCM02348",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "now-fresh-small-breed-adult-turkey-salmon-duck",
+    "brand": "NOW Fresh",
+    "productName": "Small Breed Adult Turkey, Salmon & Duck Grain-Free Dry Dog Food",
+    "slug": "now-fresh-small-breed-adult-turkey-salmon-duck",
+    "dataStatus": "verified",
+    "dataQualityNotes": [
+      "Nutrition, ingredients, calories, Canadian claim and available sizes sourced from official NOW Fresh Canada product page.",
+      "Retail price sourced from PetToba listing and should be refreshed regularly."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Adult Maintenance",
+      "breedSize": [
+        "Small Breed",
+        "All Breeds Small Kibble"
+      ],
+      "formulaType": [
+        "Grain-Free",
+        "Small Kibble"
+      ],
+      "madeInCanada": true,
+      "manufacturingClaim": "Made in Canada.",
+      "manufacturingClaimSourceUrl": "https://nowfresh.com/en-ca/dog-food/dry/grain-free-small-breed-adult-recipe-with-turkey-salmon-duck"
+    },
+    "ingredients": {
+      "fullList": "De-boned turkey, whole dried egg, peas, potatoes, potato flour, pea flour, natural flavour, flaxseed, canola oil preserved with mixed tocopherols, de-boned salmon, de-boned duck, calcium carbonate, coconut oil preserved with mixed tocopherols, apples, pea fibre, monocalcium phosphate, tomato, suncured alfalfa, carrots, pumpkin, sweet potatoes, squash, bananas, blueberries, cranberries, blackberries, pomegranate, papayas, lentils, broccoli, sodium tripolyphosphate, salt, dried chicory root, choline chloride, vitamins, minerals, taurine, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, DL-methionine, L-lysine, potassium chloride, parsley, peppermint, green tea extract, yucca schidigera extract, L-carnitine, dried rosemary.",
+      "firstFive": [
+        "De-boned turkey",
+        "Whole dried egg",
+        "Peas",
+        "Potatoes",
+        "Potato flour"
+      ],
+      "mainProteins": [
+        "Turkey",
+        "Egg",
+        "Salmon",
+        "Duck"
+      ],
+      "containsChicken": false,
+      "containsTurkey": true,
+      "containsBeef": false,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": true,
+      "containsEgg": true,
+      "containsDairy": false,
+      "containsCorn": false,
+      "containsWheat": false,
+      "containsSoy": false,
+      "containsPeas": true,
+      "containsLentils": true,
+      "containsPotatoes": true,
+      "grainFree": true
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 27,
+      "fatMinPercent": 17,
+      "fiberMaxPercent": 4.5,
+      "moistureMaxPercent": 10,
+      "ashMaxPercent": null,
+      "calciumMinPercent": 1.2,
+      "phosphorusMinPercent": 0.7,
+      "omega6MinPercent": 2.6,
+      "omega3MinPercent": 1
+    },
+    "calories": {
+      "kcalPerKg": 3711,
+      "kcalPerCup": 408,
+      "calorieCalculationMethod": "Calculated Metabolizable Energy",
+      "calorieNotes": "Per 250 ml cup."
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 10,
+      "packageSizeLabel": "22 lb / 10 kg",
+      "priceCad": 107.99,
+      "retailerName": "PetToba",
+      "retailerUrl": "https://pettoba.ca/products/small-breed-adult-grain-free-turkey-salmon-duck-recipe-dry-dog-food-now-fresh",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "current"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for Maintenance.",
+      "method": "Formulated",
+      "lifeStageClaim": "Adult Maintenance",
+      "standard": "AAFCO"
+    },
+    "sources": {
+      "brandProductUrl": "https://nowfresh.com/en-ca/dog-food/dry/grain-free-small-breed-adult-recipe-with-turkey-salmon-duck",
+      "brandNutritionUrl": "https://nowfresh.com/en-ca/dog-food/dry/grain-free-small-breed-adult-recipe-with-turkey-salmon-duck",
+      "retailerUrl": "https://pettoba.ca/products/small-breed-adult-grain-free-turkey-salmon-duck-recipe-dry-dog-food-now-fresh",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "open-farm-wild-caught-salmon-ancient-grains",
+    "brand": "Open Farm",
+    "productName": "Wild-Caught Salmon & Ancient Grains Dog Kibble",
+    "slug": "open-farm-wild-caught-salmon-ancient-grains",
+    "dataStatus": "verified",
+    "dataQualityNotes": [
+      "Nutrition and calorie data sourced from official Open Farm Canada product page.",
+      "Full ingredient list and retail price sourced from Pet Valu listing; refresh price regularly.",
+      "Made-in-Canada field is left unset because the source supports Canadian brand positioning but not a product-level manufacturing claim."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "All Life Stages except growth of large-size dogs",
+      "breedSize": [
+        "Small Breed Puppies",
+        "Medium Breed Puppies",
+        "Adult Dogs",
+        "Senior Dogs"
+      ],
+      "formulaType": [
+        "With Grains",
+        "Chicken-Free"
+      ],
+      "madeInCanada": null,
+      "manufacturingClaim": null,
+      "manufacturingClaimSourceUrl": null
+    },
+    "ingredients": {
+      "fullList": "Salmon, oats, ocean whitefish meal, sorghum, quinoa, coconut oil, herring meal, pumpkin, natural flavor, millet, carrots, apples, cranberries, potassium chloride, salmon oil source of DHA, salt, vitamins, dried chicory root, choline chloride, minerals, taurine, mixed tocopherols, cinnamon, turmeric, rosemary extract.",
+      "firstFive": [
+        "Salmon",
+        "Oats",
+        "Ocean whitefish meal",
+        "Sorghum",
+        "Quinoa"
+      ],
+      "mainProteins": [
+        "Salmon",
+        "Whitefish",
+        "Herring"
+      ],
+      "containsChicken": false,
+      "containsTurkey": false,
+      "containsBeef": false,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": true,
+      "containsEgg": false,
+      "containsDairy": false,
+      "containsCorn": false,
+      "containsWheat": false,
+      "containsSoy": false,
+      "containsPeas": false,
+      "containsLentils": false,
+      "containsPotatoes": false,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 26,
+      "fatMinPercent": 15,
+      "fiberMaxPercent": 4.5,
+      "moistureMaxPercent": 10,
+      "ashMaxPercent": null,
+      "calciumMinPercent": 1.2,
+      "phosphorusMinPercent": 1,
+      "omega6MinPercent": 1.25,
+      "omega3MinPercent": 0.4
+    },
+    "calories": {
+      "kcalPerKg": 3745,
+      "kcalPerCup": 424,
+      "calorieCalculationMethod": "Calculated Metabolizable Energy",
+      "calorieNotes": "As-fed basis."
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 9.98,
+      "packageSizeLabel": "22 lb",
+      "priceCad": 103.99,
+      "retailerName": "Pet Valu",
+      "retailerUrl": "https://www.petvalu.ca/product/open-farm-wild-caught-salmon-ancient-grains-recipe-adult-dog-food/FCM04897",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "current"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Formulated to meet the nutritional levels estimated by the AAFCO Dog Food Nutrient Profiles for all life stages except for the growth of large-size dogs.",
+      "method": "Formulated",
+      "lifeStageClaim": "All Life Stages except growth of large-size dogs",
+      "standard": "AAFCO"
+    },
+    "sources": {
+      "brandProductUrl": "https://openfarmpet.ca/products/wild-caught-salmon-ancient-grains-dry-dog-food",
+      "brandNutritionUrl": "https://openfarmpet.ca/products/wild-caught-salmon-ancient-grains-dry-dog-food",
+      "retailerUrl": "https://www.petvalu.ca/product/open-farm-wild-caught-salmon-ancient-grains-recipe-adult-dog-food/FCM04897",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "canadian-naturals-lamb-brown-rice-large-breed",
+    "brand": "Canadian Naturals",
+    "productName": "Lamb & Brown Rice Recipe for Large Breed Dogs",
+    "slug": "canadian-naturals-lamb-brown-rice-large-breed",
+    "dataStatus": "verified",
+    "dataQualityNotes": [
+      "Ingredients, guaranteed analysis, size and Abbotsford manufacturing claim sourced from official Canadian Naturals product page.",
+      "Calories and retail price sourced from Homes Alive listing and should be refreshed regularly."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Adult Maintenance",
+      "breedSize": [
+        "Large Breed"
+      ],
+      "formulaType": [
+        "With Grains",
+        "Large Kibble"
+      ],
+      "madeInCanada": true,
+      "manufacturingClaim": "Made in Abbotsford, BC, Canada.",
+      "manufacturingClaimSourceUrl": "https://canadiannaturals.com/team/lamb-rice-large-breed/"
+    },
+    "ingredients": {
+      "fullList": "Lamb meal, pearled barley, peas, oatmeal, flaxseed, canola oil preserved with mixed tocopherols and citric acid, brown rice, pea protein, natural flavour, dicalcium phosphate, salt, calcium carbonate, potassium chloride, choline chloride, vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, calcium pantothenate, riboflavin, thiamine mononitrate, pyridoxine hydrochloride, folic acid, vitamin B12 supplement, zinc sulfate, ferrous sulfate, zinc proteinate, iron proteinate, copper sulfate, manganous oxide, copper proteinate, manganese proteinate, calcium iodate, sodium selenite, calcium propionate, rosemary, glucosamine hydrochloride, taurine, DL-methionine, chondroitin sulfate.",
+      "firstFive": [
+        "Lamb meal",
+        "Pearled barley",
+        "Peas",
+        "Oatmeal",
+        "Flaxseed"
+      ],
+      "mainProteins": [
+        "Lamb"
+      ],
+      "containsChicken": false,
+      "containsTurkey": false,
+      "containsBeef": false,
+      "containsPork": false,
+      "containsLamb": true,
+      "containsFish": false,
+      "containsEgg": false,
+      "containsDairy": false,
+      "containsCorn": false,
+      "containsWheat": false,
+      "containsSoy": false,
+      "containsPeas": true,
+      "containsLentils": false,
+      "containsPotatoes": false,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 24,
+      "fatMinPercent": 12,
+      "fiberMaxPercent": 3.8,
+      "moistureMaxPercent": 10,
+      "ashMaxPercent": null,
+      "calciumMinPercent": null,
+      "phosphorusMinPercent": null,
+      "omega6MinPercent": 2.8,
+      "omega3MinPercent": 2.4
+    },
+    "calories": {
+      "kcalPerKg": 3551,
+      "kcalPerCup": 378,
+      "calorieCalculationMethod": "Metabolizable Energy",
+      "calorieNotes": "Calorie data sourced from retailer listing."
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 12,
+      "packageSizeLabel": "26.5 lb / 12 kg",
+      "priceCad": 65.99,
+      "retailerName": "Homes Alive Pets",
+      "retailerUrl": "https://www.homesalive.ca/canadian-naturals-large-breed-lamb-brown-rice-recipe.html",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "current"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Nutritional adequacy statement not listed in the reviewed source data.",
+      "method": "Not Listed",
+      "lifeStageClaim": "Not Listed",
+      "standard": "Not Listed"
+    },
+    "sources": {
+      "brandProductUrl": "https://canadiannaturals.com/team/lamb-rice-large-breed/",
+      "brandNutritionUrl": "https://canadiannaturals.com/team/lamb-rice-large-breed/",
+      "retailerUrl": "https://www.homesalive.ca/canadian-naturals-large-breed-lamb-brown-rice-recipe.html",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "nutrience-original-medium-breed-chicken-meal-brown-rice",
+    "brand": "Nutrience",
+    "productName": "Original Medium Breed Adult Chicken Meal & Brown Rice",
+    "slug": "nutrience-original-medium-breed-chicken-meal-brown-rice",
+    "dataStatus": "nutrition_verified_price_estimated",
+    "dataQualityNotes": [
+      "Nutrition, ingredients, calories and Canadian sourcing claim sourced from Canadian Pet Connection listing.",
+      "Retail price sourced from PetSmart Canada listing; verify package-price pairing before marking as fully verified."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Adult Maintenance",
+      "breedSize": [
+        "Medium Breed"
+      ],
+      "formulaType": [
+        "With Grains"
+      ],
+      "madeInCanada": true,
+      "manufacturingClaim": "Made and sourced in Canada.",
+      "manufacturingClaimSourceUrl": "https://www.canadianpetconnection.ca/dog-products/dog-food/adult-dog-food/nutrience-original-chicken-with-brown-rice-adult-medium-breed-dog-food/"
+    },
+    "ingredients": {
+      "fullList": "Chicken meal, brown rice, green peas, oatmeal, chicken fat preserved with mixed tocopherols, dried beet pulp, natural chicken flavor, flaxseed, calcium carbonate, brewer’s yeast, salmon oil source of DHA, blueberries, cranberries, carrots, vitamins, minerals, potassium chloride, salt, lecithin, DL-methionine, L-lysine, choline chloride, yeast extract, chicory root extract, glucosamine hydrochloride, chondroitin sulfate, rosemary extract.",
+      "firstFive": [
+        "Chicken meal",
+        "Brown rice",
+        "Green peas",
+        "Oatmeal",
+        "Chicken fat"
+      ],
+      "mainProteins": [
+        "Chicken",
+        "Fish"
+      ],
+      "containsChicken": true,
+      "containsTurkey": false,
+      "containsBeef": false,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": true,
+      "containsEgg": false,
+      "containsDairy": false,
+      "containsCorn": false,
+      "containsWheat": false,
+      "containsSoy": false,
+      "containsPeas": true,
+      "containsLentils": false,
+      "containsPotatoes": false,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 24,
+      "fatMinPercent": 14,
+      "fiberMaxPercent": 4,
+      "moistureMaxPercent": 10,
+      "ashMaxPercent": null,
+      "calciumMinPercent": 1.2,
+      "phosphorusMinPercent": 1,
+      "omega6MinPercent": 3,
+      "omega3MinPercent": 0.3
+    },
+    "calories": {
+      "kcalPerKg": 3669,
+      "kcalPerCup": 459,
+      "calorieCalculationMethod": "Metabolizable Energy",
+      "calorieNotes": "As listed by retailer source."
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 11.5,
+      "packageSizeLabel": "11.5 kg",
+      "priceCad": 56.99,
+      "retailerName": "PetSmart Canada",
+      "retailerUrl": "https://www.petsmart.ca/dog/food/dry-food/nutrience-original-medium-breed-adult-dog-food---chicken-meal-and-brown-rice-18216.html",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "current"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Complete and balanced meal language listed by retailer source; official AAFCO method should be verified before marking fully verified.",
+      "method": "Not Verified",
+      "lifeStageClaim": "Adult Maintenance",
+      "standard": "AAFCO"
+    },
+    "sources": {
+      "brandProductUrl": "https://www.canadianpetconnection.ca/dog-products/dog-food/adult-dog-food/nutrience-original-chicken-with-brown-rice-adult-medium-breed-dog-food/",
+      "brandNutritionUrl": "https://www.canadianpetconnection.ca/dog-products/dog-food/adult-dog-food/nutrience-original-chicken-with-brown-rice-adult-medium-breed-dog-food/",
+      "retailerUrl": "https://www.petsmart.ca/dog/food/dry-food/nutrience-original-medium-breed-adult-dog-food---chicken-meal-and-brown-rice-18216.html",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "hills-science-diet-adult-chicken-barley",
+    "brand": "Hill's Science Diet",
+    "productName": "Adult Chicken & Barley Recipe Dog Food",
+    "slug": "hills-science-diet-adult-chicken-barley",
+    "dataStatus": "nutrition_verified_price_estimated",
+    "dataQualityNotes": [
+      "Ingredient list, life-stage information and calorie content sourced from official Hill's Canada product page.",
+      "As-fed protein, fat, fibre, calcium, phosphorus, omega values and retail price sourced from Pet Valu listing.",
+      "Moisture max value sourced from Canadian retailer guaranteed analysis/package-label listing; official brand page did not clearly expose this field in the accessible source data."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Adult Maintenance",
+      "breedSize": [
+        "All Breeds"
+      ],
+      "formulaType": [
+        "Grain-Inclusive"
+      ],
+      "madeInCanada": false,
+      "manufacturingClaim": null,
+      "manufacturingClaimSourceUrl": null
+    },
+    "ingredients": {
+      "fullList": "Chicken, Brown Rice, Whole Grain Oats, Chicken Meal, Cracked Pearled Barley, Chicken Fat, Pea Protein, Brewers Rice, Whole Grain Wheat, Soybean Meal, Whole Grain Corn, Chicken Liver Flavor, Ground Pecan Shells, Lactic Acid, Pork Liver Flavor, Dicalcium Phosphate, Flaxseed, Dried Beet Pulp, Fish Oil, Iodized Salt, Dried Citrus Pulp, Potassium Chloride, Choline Chloride, Pressed Cranberries, Calcium Carbonate, vitamins, DL-Methionine, L-Threonine, Taurine, minerals, L-Tryptophan, Mixed Tocopherols for freshness, Natural Flavors, L-Carnitine, Beta-Carotene.",
+      "firstFive": [
+        "Chicken",
+        "Brown Rice",
+        "Whole Grain Oats",
+        "Chicken Meal",
+        "Cracked Pearled Barley"
+      ],
+      "mainProteins": [
+        "Chicken",
+        "Pork",
+        "Fish"
+      ],
+      "containsChicken": true,
+      "containsTurkey": false,
+      "containsBeef": false,
+      "containsPork": true,
+      "containsLamb": false,
+      "containsFish": true,
+      "containsEgg": false,
+      "containsDairy": false,
+      "containsCorn": true,
+      "containsWheat": true,
+      "containsSoy": true,
+      "containsPeas": true,
+      "containsLentils": false,
+      "containsPotatoes": false,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 19,
+      "fatMinPercent": 11.3,
+      "fiberMaxPercent": 4,
+      "moistureMaxPercent": 10,
+      "ashMaxPercent": null,
+      "calciumMinPercent": 0.73,
+      "phosphorusMinPercent": 0.64,
+      "omega6MinPercent": 2.5,
+      "omega3MinPercent": 0.56
+    },
+    "calories": {
+      "kcalPerKg": 3675,
+      "kcalPerCup": 365,
+      "calorieCalculationMethod": "Metabolizable Energy",
+      "calorieNotes": "Official Hill's Canada page lists 3675 kcal/kg and 365 kcal/cup."
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 15.88,
+      "packageSizeLabel": "35 lb",
+      "priceCad": 123.99,
+      "retailerName": "Pet Valu",
+      "retailerUrl": "https://www.petvalu.ca/product/hills-science-diet-chicken-barley-recipe-adult-dog-food/FCM00564",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "regular"
+    },
+    "nutritionalAdequacy": {
+      "statement": null,
+      "method": null,
+      "lifeStageClaim": "Adult Maintenance",
+      "standard": null
+    },
+    "sources": {
+      "brandProductUrl": "https://www.hillspet.ca/en-ca/dog-food/science-diet-adult-original-dry",
+      "brandNutritionUrl": "https://www.hillspet.ca/en-ca/dog-food/science-diet-adult-original-dry",
+      "retailerUrl": "https://www.petvalu.ca/product/hills-science-diet-chicken-barley-recipe-adult-dog-food/FCM00564",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "iams-proactive-health-minichunks-chicken-whole-grains",
+    "brand": "IAMS",
+    "productName": "Proactive Health Minichunks Adult with Real Chicken & Whole Grains",
+    "slug": "iams-proactive-health-minichunks-chicken-whole-grains",
+    "dataStatus": "nutrition_verified_price_estimated",
+    "dataQualityNotes": [
+      "Official IAMS Canada page confirms the product and Canadian-market package format.",
+      "Ingredients, guaranteed analysis, calories, and retail price sourced from PetSmart Canada listing."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Adult Maintenance",
+      "breedSize": [
+        "All Breeds"
+      ],
+      "formulaType": [
+        "Grain-Inclusive"
+      ],
+      "madeInCanada": false,
+      "manufacturingClaim": null,
+      "manufacturingClaimSourceUrl": null
+    },
+    "ingredients": {
+      "fullList": "Chicken, Ground Whole Grain Corn, Ground Whole Grain Sorghum, Chicken By-Product Meal, Soybean Meal, Dried Plain Beet Pulp, Natural Flavors, Chicken Fat, Dried Egg Product, Flaxseed, Caramel Color, Carrots, Potassium Chloride, Fructooligosaccharides, Choline Chloride, vitamins, minerals, Citric Acid, Mixed Tocopherols, Rosemary Extract.",
+      "firstFive": [
+        "Chicken",
+        "Ground Whole Grain Corn",
+        "Ground Whole Grain Sorghum",
+        "Chicken By-Product Meal",
+        "Soybean Meal"
+      ],
+      "mainProteins": [
+        "Chicken",
+        "Egg"
+      ],
+      "containsChicken": true,
+      "containsTurkey": false,
+      "containsBeef": false,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": false,
+      "containsEgg": true,
+      "containsDairy": false,
+      "containsCorn": true,
+      "containsWheat": false,
+      "containsSoy": true,
+      "containsPeas": false,
+      "containsLentils": false,
+      "containsPotatoes": false,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 25,
+      "fatMinPercent": 14,
+      "fiberMaxPercent": 4,
+      "moistureMaxPercent": 10,
+      "ashMaxPercent": null,
+      "calciumMinPercent": 1.05,
+      "phosphorusMinPercent": null,
+      "omega6MinPercent": 3.25,
+      "omega3MinPercent": null
+    },
+    "calories": {
+      "kcalPerKg": 3654,
+      "kcalPerCup": 380,
+      "calorieCalculationMethod": "Metabolizable Energy",
+      "calorieNotes": "PetSmart Canada listing."
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 3.18,
+      "packageSizeLabel": "7 lb",
+      "priceCad": 21.99,
+      "retailerName": "PetSmart Canada",
+      "retailerUrl": "https://www.petsmart.ca/dog/food/dry-food/iams-proactive-health-minichunks-adult-dry-dog-food-with-real-chicken-and-whole-grains-68886.html",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "regular"
+    },
+    "nutritionalAdequacy": {
+      "statement": null,
+      "method": null,
+      "lifeStageClaim": "Adult Maintenance",
+      "standard": null
+    },
+    "sources": {
+      "brandProductUrl": "https://www.iams.ca/dog/dog-food/iams-proactive-health-minichunks",
+      "brandNutritionUrl": "https://www.petsmart.ca/dog/food/dry-food/iams-proactive-health-minichunks-adult-dry-dog-food-with-real-chicken-and-whole-grains-68886.html",
+      "retailerUrl": "https://www.petsmart.ca/dog/food/dry-food/iams-proactive-health-minichunks-adult-dry-dog-food-with-real-chicken-and-whole-grains-68886.html",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "pedigree-vitality-roasted-chicken-vegetable",
+    "brand": "Pedigree",
+    "productName": "Vitality+ Roasted Chicken & Vegetable Flavour Dry Dog Food",
+    "slug": "pedigree-vitality-roasted-chicken-vegetable",
+    "dataStatus": "nutrition_verified_price_estimated",
+    "dataQualityNotes": [
+      "Official Pedigree Canada page confirms available sizes, adult positioning, complete and balanced statement, and made-in-Canada claim.",
+      "Guaranteed analysis and calorie values sourced from Canadian retail listing; price sourced from Walmart Canada search result.",
+      "Full ingredient list should be package-verified before marking fully verified."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Adult Maintenance",
+      "breedSize": [
+        "All Breeds"
+      ],
+      "formulaType": [
+        "Grain-Inclusive"
+      ],
+      "madeInCanada": true,
+      "manufacturingClaim": "Proudly made in Canada, using ingredients from around the world.",
+      "manufacturingClaimSourceUrl": "https://www.mypedigree.ca/en-ca/products/dry/pedigree-vitality-roasted-chicken-vegetable-flavour-dry-dog-food"
+    },
+    "ingredients": {
+      "fullList": "Corn, Meat & Bone Meal, Corn Gluten Meal, Animal Fat, Soybean Meal, Natural Flavor, Chicken By-Product Meal, Dried Plain Beet Pulp, Salt, Caramel Colour, Potassium Chloride, Choline Chloride, DL-Methionine, Dried Peas, colours, zinc sulfate, vitamin E supplement, vitamins and minerals.",
+      "firstFive": [
+        "Corn",
+        "Meat & Bone Meal",
+        "Corn Gluten Meal",
+        "Animal Fat",
+        "Soybean Meal"
+      ],
+      "mainProteins": [
+        "Chicken"
+      ],
+      "containsChicken": true,
+      "containsTurkey": false,
+      "containsBeef": false,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": false,
+      "containsEgg": false,
+      "containsDairy": false,
+      "containsCorn": true,
+      "containsWheat": false,
+      "containsSoy": true,
+      "containsPeas": true,
+      "containsLentils": false,
+      "containsPotatoes": false,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 21,
+      "fatMinPercent": 11,
+      "fiberMaxPercent": 4,
+      "moistureMaxPercent": 12,
+      "ashMaxPercent": null,
+      "calciumMinPercent": null,
+      "phosphorusMinPercent": null,
+      "omega6MinPercent": 1.5,
+      "omega3MinPercent": null
+    },
+    "calories": {
+      "kcalPerKg": 3424,
+      "kcalPerCup": 316,
+      "calorieCalculationMethod": "Metabolizable Energy",
+      "calorieNotes": "Canadian retail nutrition listing."
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 8,
+      "packageSizeLabel": "8 kg",
+      "priceCad": 22.48,
+      "retailerName": "Walmart Canada",
+      "retailerUrl": "https://www.walmart.ca/en/ip/PEDIGREE-VITALITY-Dry-Food-For-Adult-Dogs-Roasted-Chicken-Vegetable-Flavour-Supports-Strong-Bones-and-Healthy-Teeth-With-Calcium-8kg/10036440",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "regular"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Specially formulated 100% complete and balanced for adult dogs.",
+      "method": null,
+      "lifeStageClaim": "Adult Maintenance",
+      "standard": null
+    },
+    "sources": {
+      "brandProductUrl": "https://www.mypedigree.ca/en-ca/products/dry/pedigree-vitality-roasted-chicken-vegetable-flavour-dry-dog-food",
+      "brandNutritionUrl": "https://www.mypedigree.ca/en-ca/products/dry/pedigree-vitality-roasted-chicken-vegetable-flavour-dry-dog-food",
+      "retailerUrl": "https://www.walmart.ca/en/ip/PEDIGREE-VITALITY-Dry-Food-For-Adult-Dogs-Roasted-Chicken-Vegetable-Flavour-Supports-Strong-Bones-and-Healthy-Teeth-With-Calcium-8kg/10036440",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "blue-buffalo-life-protection-adult-chicken-brown-rice",
+    "brand": "Blue Buffalo",
+    "productName": "Life Protection Formula Adult Chicken & Brown Rice Recipe",
+    "slug": "blue-buffalo-life-protection-adult-chicken-brown-rice",
+    "dataStatus": "nutrition_verified_price_estimated",
+    "dataQualityNotes": [
+      "Official Blue Buffalo Canada page confirms product name, available Canadian package sizes, and grain-inclusive positioning.",
+      "Ingredients, guaranteed analysis, calorie content, AAFCO statement, and retail price sourced from Canadian retail listings."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Adult Maintenance",
+      "breedSize": [
+        "All Breeds"
+      ],
+      "formulaType": [
+        "Grain-Inclusive"
+      ],
+      "madeInCanada": false,
+      "manufacturingClaim": null,
+      "manufacturingClaimSourceUrl": null
+    },
+    "ingredients": {
+      "fullList": "Deboned Chicken, Chicken Meal, Brown Rice, Barley, Oatmeal, Chicken Fat, Tomato Pomace, Peas, Flaxseed, Natural Flavor, Potatoes, Alfalfa Meal, Calcium Carbonate, Salt, Potassium Chloride, Potato Starch, Dried Chicory Root, DL-Methionine, Caramel, Mixed Tocopherols, Sweet Potatoes, Carrots, Garlic, Choline Chloride, Vitamin E Supplement, minerals, Yucca Schidigera Extract, Oil of Rosemary, L-Lysine, Parsley, Kelp, Blueberries, Cranberries, Apples, Spinach, Blackberries, Pomegranate, Pumpkin, Barley Grass, Turmeric, vitamins, Taurine, Biotin, L-Carnitine, dried fermentation products, Folic Acid, Calcium Iodate, Sodium Selenite.",
+      "firstFive": [
+        "Deboned Chicken",
+        "Chicken Meal",
+        "Brown Rice",
+        "Barley",
+        "Oatmeal"
+      ],
+      "mainProteins": [
+        "Chicken"
+      ],
+      "containsChicken": true,
+      "containsTurkey": false,
+      "containsBeef": false,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": false,
+      "containsEgg": false,
+      "containsDairy": false,
+      "containsCorn": false,
+      "containsWheat": false,
+      "containsSoy": false,
+      "containsPeas": true,
+      "containsLentils": false,
+      "containsPotatoes": true,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 24,
+      "fatMinPercent": 14,
+      "fiberMaxPercent": 5,
+      "moistureMaxPercent": 10,
+      "ashMaxPercent": null,
+      "calciumMinPercent": 1,
+      "phosphorusMinPercent": 0.7,
+      "omega6MinPercent": 3,
+      "omega3MinPercent": 0.5
+    },
+    "calories": {
+      "kcalPerKg": 3627,
+      "kcalPerCup": 378,
+      "calorieCalculationMethod": "Calculated Metabolizable Energy",
+      "calorieNotes": "Canadian retail nutrition listing."
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 11.79,
+      "packageSizeLabel": "26 lb",
+      "priceCad": 66.98,
+      "retailerName": "Petland Canada",
+      "retailerUrl": "https://www.petland.ca/products/blue-life-protection-formula-adult-dry-dog-food-chicken-brown-rice",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "regular"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for maintenance.",
+      "method": "Formulated",
+      "lifeStageClaim": "Adult Maintenance",
+      "standard": "AAFCO"
+    },
+    "sources": {
+      "brandProductUrl": "https://www.bluebuffalo.com/en-ca/dry-dog-food/life-protection-formula/chicken-brown-rice-recipe/",
+      "brandNutritionUrl": "https://www.petland.ca/products/blue-life-protection-formula-adult-dry-dog-food-chicken-brown-rice",
+      "retailerUrl": "https://www.petland.ca/products/blue-life-protection-formula-adult-dry-dog-food-chicken-brown-rice",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "performatrin-ultra-wholesome-grains-chicken-brown-rice",
+    "brand": "Performatrin Ultra",
+    "productName": "Wholesome Grains Chicken & Brown Rice Recipe Adult Dog Food",
+    "slug": "performatrin-ultra-wholesome-grains-chicken-brown-rice",
+    "dataStatus": "nutrition_verified_price_estimated",
+    "dataQualityNotes": [
+      "Pet Valu product listing provides ingredients, guaranteed analysis, price, package sizes, and kcal/cup.",
+      "kcal/kg is derived from listed kcal/cup and listed approximate cup weight; package verification should be completed before marking fully verified."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Adult Maintenance",
+      "breedSize": [
+        "All Breeds"
+      ],
+      "formulaType": [
+        "Grain-Inclusive"
+      ],
+      "madeInCanada": false,
+      "manufacturingClaim": null,
+      "manufacturingClaimSourceUrl": null
+    },
+    "ingredients": {
+      "fullList": "Chicken, Chicken Meal, Brown Rice, Oatmeal, Rice, Pearled Barley, Spray Dried Egg Product, Salmon Meal, Millet, Rye, Dried Tomato Pomace, Chicken Fat, Natural Flavour, Salmon Oil, Dehydrated Alfalfa Meal, Peas, Potassium Chloride, Salt, Flaxseed, Sweet Potatoes, Carrots, Cranberries, Chicory Root Extract, Dried Kelp, Choline Chloride, DL-Methionine, Taurine, Apples, Blueberries, Pumpkin, Dried Yeast, Blackberries, Spinach, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Parsley, Chamomile, Garlic, Rosemary Extract, dried fermentation products, vitamins and minerals.",
+      "firstFive": [
+        "Chicken",
+        "Chicken Meal",
+        "Brown Rice",
+        "Oatmeal",
+        "Rice"
+      ],
+      "mainProteins": [
+        "Chicken",
+        "Egg",
+        "Fish"
+      ],
+      "containsChicken": true,
+      "containsTurkey": false,
+      "containsBeef": false,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": true,
+      "containsEgg": true,
+      "containsDairy": false,
+      "containsCorn": false,
+      "containsWheat": false,
+      "containsSoy": false,
+      "containsPeas": true,
+      "containsLentils": false,
+      "containsPotatoes": true,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 22,
+      "fatMinPercent": 12,
+      "fiberMaxPercent": 4,
+      "moistureMaxPercent": 10,
+      "ashMaxPercent": null,
+      "calciumMinPercent": 1,
+      "phosphorusMinPercent": 0.7,
+      "omega6MinPercent": 1.5,
+      "omega3MinPercent": 0.35
+    },
+    "calories": {
+      "kcalPerKg": 3518,
+      "kcalPerCup": 387,
+      "calorieCalculationMethod": "Derived from kcal/cup and cup weight",
+      "calorieNotes": "Pet Valu lists 387 kcal/cup and approximately 110 g per cup; kcal/kg calculated as 387 / 0.110."
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 10.89,
+      "packageSizeLabel": "24 lb",
+      "priceCad": 69.99,
+      "retailerName": "Pet Valu",
+      "retailerUrl": "https://www.petvalu.ca/product/performatrin-ultra-wholesome-grains-chicken-brown-rice-recipe-adult-dog-food/FCM06323",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "regular"
+    },
+    "nutritionalAdequacy": {
+      "statement": null,
+      "method": null,
+      "lifeStageClaim": "Adult Maintenance",
+      "standard": null
+    },
+    "sources": {
+      "brandProductUrl": "https://www.petvalu.ca/product/performatrin-ultra-wholesome-grains-chicken-brown-rice-recipe-adult-dog-food/FCM06323",
+      "brandNutritionUrl": "https://www.petvalu.ca/product/performatrin-ultra-wholesome-grains-chicken-brown-rice-recipe-adult-dog-food/FCM06323",
+      "retailerUrl": "https://www.petvalu.ca/product/performatrin-ultra-wholesome-grains-chicken-brown-rice-recipe-adult-dog-food/FCM06323",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "performatrin-prime-chicken-rice-adult",
+    "brand": "Performatrin Prime",
+    "productName": "Chicken & Rice Formula Adult Dog Food",
+    "slug": "performatrin-prime-chicken-rice-adult",
+    "dataStatus": "nutrition_verified_price_estimated",
+    "dataQualityNotes": [
+      "Pet Valu product listing provides ingredients, guaranteed analysis, price, package sizes, and kcal/cup.",
+      "kcal/kg is derived from listed kcal/cup and listed approximate cup weight; package verification should be completed before marking fully verified."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Adult Maintenance",
+      "breedSize": [
+        "All Breeds"
+      ],
+      "formulaType": [
+        "Grain-Inclusive"
+      ],
+      "madeInCanada": false,
+      "manufacturingClaim": null,
+      "manufacturingClaimSourceUrl": null
+    },
+    "ingredients": {
+      "fullList": "Chicken, Chicken Meal, Rice, Ground Corn, Oatmeal, Pearled Barley, Chicken Fat, Corn Gluten Meal, Menhaden Meal, Dried Plain Beet Pulp, Natural Chicken Flavor, Sprayed Dried Egg Product, Flaxseeds, Oat Hulls, Potassium Chloride, Salt, Dried Yeast, Chicory Root Extract, Dried Kelp, Sodium Hexametaphosphate, Choline Chloride, DL-Methionine, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Parsley, Chamomile, Rosemary Extract, vitamins and minerals.",
+      "firstFive": [
+        "Chicken",
+        "Chicken Meal",
+        "Rice",
+        "Ground Corn",
+        "Oatmeal"
+      ],
+      "mainProteins": [
+        "Chicken",
+        "Fish",
+        "Egg"
+      ],
+      "containsChicken": true,
+      "containsTurkey": false,
+      "containsBeef": false,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": true,
+      "containsEgg": true,
+      "containsDairy": false,
+      "containsCorn": true,
+      "containsWheat": false,
+      "containsSoy": false,
+      "containsPeas": false,
+      "containsLentils": false,
+      "containsPotatoes": false,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 25,
+      "fatMinPercent": 15,
+      "fiberMaxPercent": 4,
+      "moistureMaxPercent": 10,
+      "ashMaxPercent": null,
+      "calciumMinPercent": 1.15,
+      "phosphorusMinPercent": 0.8,
+      "omega6MinPercent": 2.5,
+      "omega3MinPercent": 0.4
+    },
+    "calories": {
+      "kcalPerKg": 3750,
+      "kcalPerCup": 405,
+      "calorieCalculationMethod": "Derived from kcal/cup and cup weight",
+      "calorieNotes": "Pet Valu lists 405 kcal/cup and approximately 108 g per cup; kcal/kg calculated as 405 / 0.108."
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 11.79,
+      "packageSizeLabel": "26 lb",
+      "priceCad": 74.99,
+      "retailerName": "Pet Valu",
+      "retailerUrl": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-adult-dog-food/FCM06789",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "regular"
+    },
+    "nutritionalAdequacy": {
+      "statement": null,
+      "method": null,
+      "lifeStageClaim": "Adult Maintenance",
+      "standard": null
+    },
+    "sources": {
+      "brandProductUrl": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-adult-dog-food/FCM06789",
+      "brandNutritionUrl": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-adult-dog-food/FCM06789",
+      "retailerUrl": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-adult-dog-food/FCM06789",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "performatrin-prime-small-breed-chicken-rice-adult",
+    "brand": "Performatrin Prime",
+    "productName": "Chicken & Rice Formula Small Breed Adult Dog Food",
+    "slug": "performatrin-prime-small-breed-chicken-rice-adult",
+    "dataStatus": "nutrition_verified_price_estimated",
+    "dataQualityNotes": [
+      "Pet Valu product listing provides ingredients, guaranteed analysis, price, package sizes, and kcal/cup.",
+      "kcal/kg is derived from listed kcal/cup and listed approximate cup weight; package verification should be completed before marking fully verified."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Adult Maintenance",
+      "breedSize": [
+        "Small Breed"
+      ],
+      "formulaType": [
+        "Grain-Inclusive",
+        "Small Breed"
+      ],
+      "madeInCanada": false,
+      "manufacturingClaim": null,
+      "manufacturingClaimSourceUrl": null
+    },
+    "ingredients": {
+      "fullList": "Chicken, Chicken Meal, Rice, Ground Corn, Corn Gluten Meal, Pearled Barley, Chicken Fat, Oatmeal, Menhaden Meal, Dried Plain Beet Pulp, Natural Chicken Flavor, Sprayed Dried Egg Product, Flaxseeds, Oat Hulls, Potassium Chloride, Salt, Yeast Extract, Chicory Root Extract, Dried Kelp, Sodium Hexametaphosphate, Choline Chloride, DL-Methionine, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Parsley, Chamomile, Rosemary Extract, vitamins and minerals.",
+      "firstFive": [
+        "Chicken",
+        "Chicken Meal",
+        "Rice",
+        "Ground Corn",
+        "Corn Gluten Meal"
+      ],
+      "mainProteins": [
+        "Chicken",
+        "Fish",
+        "Egg"
+      ],
+      "containsChicken": true,
+      "containsTurkey": false,
+      "containsBeef": false,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": true,
+      "containsEgg": true,
+      "containsDairy": false,
+      "containsCorn": true,
+      "containsWheat": false,
+      "containsSoy": false,
+      "containsPeas": false,
+      "containsLentils": false,
+      "containsPotatoes": false,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 26,
+      "fatMinPercent": 16,
+      "fiberMaxPercent": 4.5,
+      "moistureMaxPercent": 10,
+      "ashMaxPercent": null,
+      "calciumMinPercent": 1.2,
+      "phosphorusMinPercent": 0.8,
+      "omega6MinPercent": 2.75,
+      "omega3MinPercent": 0.45
+    },
+    "calories": {
+      "kcalPerKg": 3800,
+      "kcalPerCup": 437,
+      "calorieCalculationMethod": "Derived from kcal/cup and cup weight",
+      "calorieNotes": "Pet Valu lists 437 kcal/cup and approximately 115 g per cup; kcal/kg calculated as 437 / 0.115."
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 5.99,
+      "packageSizeLabel": "13.2 lb",
+      "priceCad": 47.99,
+      "retailerName": "Pet Valu",
+      "retailerUrl": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-small-breed-adult-dog-food/FCM06788",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "regular"
+    },
+    "nutritionalAdequacy": {
+      "statement": null,
+      "method": null,
+      "lifeStageClaim": "Adult Maintenance",
+      "standard": null
+    },
+    "sources": {
+      "brandProductUrl": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-small-breed-adult-dog-food/FCM06788",
+      "brandNutritionUrl": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-small-breed-adult-dog-food/FCM06788",
+      "retailerUrl": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-small-breed-adult-dog-food/FCM06788",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "nutro-natural-choice-adult-chicken-brown-rice",
+    "brand": "Nutro",
+    "productName": "Natural Choice Adult Chicken & Brown Rice Recipe",
+    "slug": "nutro-natural-choice-adult-chicken-brown-rice",
+    "dataStatus": "nutrition_verified_price_estimated",
+    "dataQualityNotes": [
+      "Official Nutro Canada page confirms Canadian product, available sizes, and primary positioning.",
+      "Ingredients, guaranteed analysis, calorie content, and retail price sourced from PetSmart Canada listing."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Adult Maintenance",
+      "breedSize": [
+        "All Breeds"
+      ],
+      "formulaType": [
+        "Grain-Inclusive"
+      ],
+      "madeInCanada": false,
+      "manufacturingClaim": null,
+      "manufacturingClaimSourceUrl": null
+    },
+    "ingredients": {
+      "fullList": "Chicken, Chicken Meal, Brown Rice, Barley, Oatmeal, Brewers Rice, Peas, Chicken Fat, Dried Plain Beet Pulp, Natural Flavors, Potassium Chloride, Flaxseed, Salt, Choline Chloride, DL-Methionine, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid, Mixed Tocopherols, Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate, minerals, vitamins, Rosemary Extract.",
+      "firstFive": [
+        "Chicken",
+        "Chicken Meal",
+        "Brown Rice",
+        "Barley",
+        "Oatmeal"
+      ],
+      "mainProteins": [
+        "Chicken",
+        "Egg"
+      ],
+      "containsChicken": true,
+      "containsTurkey": false,
+      "containsBeef": false,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": false,
+      "containsEgg": true,
+      "containsDairy": false,
+      "containsCorn": false,
+      "containsWheat": false,
+      "containsSoy": false,
+      "containsPeas": true,
+      "containsLentils": false,
+      "containsPotatoes": false,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 24,
+      "fatMinPercent": 14,
+      "fiberMaxPercent": 3.5,
+      "moistureMaxPercent": 10,
+      "ashMaxPercent": null,
+      "calciumMinPercent": 0.5,
+      "phosphorusMinPercent": 0.4,
+      "omega6MinPercent": 2,
+      "omega3MinPercent": 0.2
+    },
+    "calories": {
+      "kcalPerKg": 3631,
+      "kcalPerCup": 357,
+      "calorieCalculationMethod": "Metabolizable Energy",
+      "calorieNotes": "PetSmart Canada listing."
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 2.27,
+      "packageSizeLabel": "5 lb",
+      "priceCad": 22.99,
+      "retailerName": "PetSmart Canada",
+      "retailerUrl": "https://www.petsmart.ca/dog/food/dry-food/nutro-natural-choice-adult-dry-dog-food---chicken-and-brown-rice-27646.html",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "regular"
+    },
+    "nutritionalAdequacy": {
+      "statement": null,
+      "method": null,
+      "lifeStageClaim": "Adult Maintenance",
+      "standard": null
+    },
+    "sources": {
+      "brandProductUrl": "https://www.nutro.ca/products/dog/natural-choice-adult-chicken-brown-rice-recipe-dry-dog-food",
+      "brandNutritionUrl": "https://www.petsmart.ca/dog/food/dry-food/nutro-natural-choice-adult-dry-dog-food---chicken-and-brown-rice-27646.html",
+      "retailerUrl": "https://www.petsmart.ca/dog/food/dry-food/nutro-natural-choice-adult-dry-dog-food---chicken-and-brown-rice-27646.html",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "wellness-complete-health-chicken-oatmeal",
+    "brand": "Wellness Complete Health",
+    "productName": "Chicken & Oatmeal Recipe",
+    "slug": "wellness-complete-health-chicken-oatmeal",
+    "dataStatus": "verified",
+    "dataQualityNotes": [
+      "Ingredients and guaranteed analysis sourced from Wellness official product page and cross-checked against PetSmart Canada listing.",
+      "Retail price and package size sourced from PetSmart Canada listing."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Adult Maintenance",
+      "breedSize": [
+        "All Breeds"
+      ],
+      "formulaType": [
+        "Grain-Inclusive"
+      ],
+      "madeInCanada": false,
+      "manufacturingClaim": "Made in USA using globally sourced ingredients.",
+      "manufacturingClaimSourceUrl": "https://www.petsmart.ca/dog/food/dry-food/wellness-complete-health-adult-dry-dog-food---chicken-and-oatmeal-5249885.html"
+    },
+    "ingredients": {
+      "fullList": "Deboned Chicken, Chicken Meal, Oatmeal, Barley, Brown Rice, Peas, Dried Plain Beet Pulp, Chicken Fat, Flaxseed, Natural Flavor, Dried Chicory Root, Potassium Chloride, Choline Chloride, Taurine, Spinach, Broccoli, Vitamin E Supplement, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols, Niacin, minerals, Vitamin A Supplement, Ascorbic Acid, Thiamine Mononitrate, vitamins, Yucca Schidigera Extract, dried fermentation products, Rosemary Extract, Green Tea Extract, Spearmint Extract.",
+      "firstFive": [
+        "Deboned Chicken",
+        "Chicken Meal",
+        "Oatmeal",
+        "Barley",
+        "Brown Rice"
+      ],
+      "mainProteins": [
+        "Chicken"
+      ],
+      "containsChicken": true,
+      "containsTurkey": false,
+      "containsBeef": false,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": false,
+      "containsEgg": false,
+      "containsDairy": false,
+      "containsCorn": false,
+      "containsWheat": false,
+      "containsSoy": false,
+      "containsPeas": true,
+      "containsLentils": false,
+      "containsPotatoes": false,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 24,
+      "fatMinPercent": 11,
+      "fiberMaxPercent": 4,
+      "moistureMaxPercent": 10,
+      "ashMaxPercent": null,
+      "calciumMinPercent": 0.8,
+      "phosphorusMinPercent": 0.6,
+      "omega6MinPercent": 2.4,
+      "omega3MinPercent": 0.6
+    },
+    "calories": {
+      "kcalPerKg": 3584,
+      "kcalPerCup": 427,
+      "calorieCalculationMethod": "Metabolizable Energy",
+      "calorieNotes": "PetSmart Canada listing."
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 2.27,
+      "packageSizeLabel": "5 lb",
+      "priceCad": 31.99,
+      "retailerName": "PetSmart Canada",
+      "retailerUrl": "https://www.petsmart.ca/dog/food/dry-food/wellness-complete-health-adult-dry-dog-food---chicken-and-oatmeal-5249885.html",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "regular"
+    },
+    "nutritionalAdequacy": {
+      "statement": null,
+      "method": null,
+      "lifeStageClaim": "Adult Maintenance",
+      "standard": null
+    },
+    "sources": {
+      "brandProductUrl": "https://www.wellnesspetfood.com/product-catalog/wellness-complete-health-grained-chicken-oatmeal/",
+      "brandNutritionUrl": "https://www.wellnesspetfood.com/product-catalog/wellness-complete-health-grained-chicken-oatmeal/",
+      "retailerUrl": "https://www.petsmart.ca/dog/food/dry-food/wellness-complete-health-adult-dry-dog-food---chicken-and-oatmeal-5249885.html",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "eukanuba-adult-medium-breed-chicken",
+    "brand": "Eukanuba",
+    "productName": "Adult Medium Breed Chicken Dry Dog Food",
+    "slug": "eukanuba-adult-medium-breed-chicken",
+    "dataStatus": "verified",
+    "dataQualityNotes": [
+      "Ingredients, guaranteed analysis, and calorie content sourced from official Eukanuba Canada product page.",
+      "Retail price and package size sourced from PetMax Canada listing."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Adult Maintenance",
+      "breedSize": [
+        "Medium Breed"
+      ],
+      "formulaType": [
+        "Grain-Inclusive",
+        "Medium Breed"
+      ],
+      "madeInCanada": false,
+      "manufacturingClaim": null,
+      "manufacturingClaimSourceUrl": null
+    },
+    "ingredients": {
+      "fullList": "Chicken, chicken by-product meal, corn, wheat, chicken fat, ground grain sorghum, natural flavors, dried plain beet pulp, egg product, potassium chloride, sodium hexametaphosphate, salt, fructooligosaccharides, calcium carbonate, fish oil, choline chloride, vitamins, glucosamine hydrochloride, trace minerals, magnesium oxide, rosemary extract, preserved with mixed tocopherols and citric acid.",
+      "firstFive": [
+        "Chicken",
+        "Chicken By-Product Meal",
+        "Corn",
+        "Wheat",
+        "Chicken Fat"
+      ],
+      "mainProteins": [
+        "Chicken",
+        "Egg",
+        "Fish"
+      ],
+      "containsChicken": true,
+      "containsTurkey": false,
+      "containsBeef": false,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": true,
+      "containsEgg": true,
+      "containsDairy": false,
+      "containsCorn": true,
+      "containsWheat": true,
+      "containsSoy": false,
+      "containsPeas": false,
+      "containsLentils": false,
+      "containsPotatoes": false,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 25,
+      "fatMinPercent": 16,
+      "fiberMaxPercent": 3.8,
+      "moistureMaxPercent": 10,
+      "ashMaxPercent": null,
+      "calciumMinPercent": null,
+      "phosphorusMinPercent": null,
+      "omega6MinPercent": null,
+      "omega3MinPercent": null
+    },
+    "calories": {
+      "kcalPerKg": 3826,
+      "kcalPerCup": 383,
+      "calorieCalculationMethod": "Calculated Metabolizable Energy",
+      "calorieNotes": "Official Eukanuba Canada product page."
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 13.6,
+      "packageSizeLabel": "13.6 kg",
+      "priceCad": 84.99,
+      "retailerName": "PetMax Canada",
+      "retailerUrl": "https://www.petmax.ca/products/eukanuba-dog-food-adult-medium-breed-chicken",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "regular"
+    },
+    "nutritionalAdequacy": {
+      "statement": null,
+      "method": null,
+      "lifeStageClaim": "Adult Maintenance",
+      "standard": null
+    },
+    "sources": {
+      "brandProductUrl": "https://www.eukanuba.com/ca/en-ca/products/adult-medium-breed-dry-dog-food",
+      "brandNutritionUrl": "https://www.eukanuba.com/ca/en-ca/products/adult-medium-breed-dry-dog-food",
+      "retailerUrl": "https://www.petmax.ca/products/eukanuba-dog-food-adult-medium-breed-chicken",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "purina-beneful-originals-real-beef",
+    "brand": "Purina Beneful",
+    "productName": "Originals with Real Beef Dry Dog Food",
+    "slug": "purina-beneful-originals-real-beef",
+    "dataStatus": "nutrition_verified_price_estimated",
+    "dataQualityNotes": [
+      "Official Purina Canada page confirms product, available Canadian sizes, ingredients and calorie content.",
+      "Guaranteed analysis sourced from Canadian Pet Connection listing; retail price sourced from Canadian Tire listing."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Adult Maintenance",
+      "breedSize": [
+        "All Breeds"
+      ],
+      "formulaType": [
+        "Grain-Inclusive"
+      ],
+      "madeInCanada": false,
+      "manufacturingClaim": null,
+      "manufacturingClaimSourceUrl": null
+    },
+    "ingredients": {
+      "fullList": "Beef, whole grain corn, barley, rice, whole grain wheat, chicken by-product meal, corn gluten meal, beef tallow preserved with mixed-tocopherols, soybean meal, oat meal, poultry by-product meal, glycerin, egg and chicken flavour, mono and dicalcium phosphate, calcium carbonate, salt, potassium chloride, poultry and pork digest, dried spinach, dried peas, dried carrots, minerals, vitamins, choline chloride, L-Lysine monohydrochloride, colours, garlic oil.",
+      "firstFive": [
+        "Beef",
+        "Whole Grain Corn",
+        "Barley",
+        "Rice",
+        "Whole Grain Wheat"
+      ],
+      "mainProteins": [
+        "Beef",
+        "Chicken",
+        "Pork",
+        "Egg"
+      ],
+      "containsChicken": true,
+      "containsTurkey": false,
+      "containsBeef": true,
+      "containsPork": true,
+      "containsLamb": false,
+      "containsFish": false,
+      "containsEgg": true,
+      "containsDairy": false,
+      "containsCorn": true,
+      "containsWheat": true,
+      "containsSoy": true,
+      "containsPeas": true,
+      "containsLentils": false,
+      "containsPotatoes": false,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 23,
+      "fatMinPercent": 12,
+      "fiberMaxPercent": 4,
+      "moistureMaxPercent": 12,
+      "ashMaxPercent": null,
+      "calciumMinPercent": 1,
+      "phosphorusMinPercent": null,
+      "omega6MinPercent": 1.2,
+      "omega3MinPercent": null
+    },
+    "calories": {
+      "kcalPerKg": 3631,
+      "kcalPerCup": 366,
+      "calorieCalculationMethod": "Metabolizable Energy",
+      "calorieNotes": "Official Purina Canada page lists calorie values; Canadian retail listing provides similar calories."
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 12.7,
+      "packageSizeLabel": "12.7 kg",
+      "priceCad": 47.99,
+      "retailerName": "Canadian Tire",
+      "retailerUrl": "https://www.canadiantire.ca/en/pdp/purina-beneful-originals-beef-adult-dry-dog-food-12-7-kg-0427927p.html",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "regular"
+    },
+    "nutritionalAdequacy": {
+      "statement": "100% complete and balanced for adult dogs.",
+      "method": null,
+      "lifeStageClaim": "Adult Maintenance",
+      "standard": null
+    },
+    "sources": {
+      "brandProductUrl": "https://www.purina.ca/beneful/dry-dog-food/originals-beef",
+      "brandNutritionUrl": "https://www.purina.ca/beneful/dry-dog-food/originals-beef",
+      "retailerUrl": "https://www.canadiantire.ca/en/pdp/purina-beneful-originals-beef-adult-dry-dog-food-12-7-kg-0427927p.html",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "hills-science-diet-puppy-chicken-brown-rice",
+    "brand": "Hill's Science Diet",
+    "productName": "Puppy Chicken & Brown Rice Recipe",
+    "slug": "hills-science-diet-puppy-chicken-brown-rice",
+    "dataStatus": "nutrition_verified_price_estimated",
+    "dataQualityNotes": [
+      "Calories and product details sourced from official Hill's Canada product page.",
+      "As-fed guaranteed analysis and package/price pairing should be rechecked from a current package or retailer listing before marking fully verified."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Puppy",
+      "breedSize": [
+        "All Breeds"
+      ],
+      "formulaType": [
+        "Grain Inclusive"
+      ],
+      "madeInCanada": false,
+      "manufacturingClaim": "Hill's states its dry dog food is made in its own U.S. facilities with ingredients from North America, Europe and New Zealand.",
+      "manufacturingClaimSourceUrl": "https://www.hillspet.ca/en-ca/dog-food/science-diet-puppy-original-dry"
+    },
+    "ingredients": {
+      "fullList": "Chicken, Brown Rice, Whole Grain Wheat, Chicken Meal, Chicken Fat, Cracked Pearled Barley, Whole Grain Oats, Whole Grain Corn, Corn Gluten Meal, Brewers Rice, Chicken Liver Flavor, Dried Beet Pulp, Soybean Oil, Flaxseed, Lactic Acid, Fish Oil, Iodized Salt, Potassium Chloride, Choline Chloride, Pork Liver Flavor, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate, Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Taurine, Minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene.",
+      "firstFive": [
+        "Chicken",
+        "Brown Rice",
+        "Whole Grain Wheat",
+        "Chicken Meal",
+        "Chicken Fat"
+      ],
+      "mainProteins": [
+        "Chicken",
+        "Fish",
+        "Pork"
+      ],
+      "containsChicken": true,
+      "containsTurkey": false,
+      "containsBeef": false,
+      "containsPork": true,
+      "containsLamb": false,
+      "containsFish": true,
+      "containsEgg": false,
+      "containsDairy": false,
+      "containsCorn": true,
+      "containsWheat": true,
+      "containsSoy": true,
+      "containsPeas": true,
+      "containsLentils": false,
+      "containsPotatoes": false,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 23,
+      "fatMinPercent": 15,
+      "fiberMaxPercent": 5,
+      "moistureMaxPercent": 10,
+      "ashMaxPercent": 10.1,
+      "calciumMinPercent": null,
+      "phosphorusMinPercent": null,
+      "omega6MinPercent": null,
+      "omega3MinPercent": null
+    },
+    "calories": {
+      "kcalPerKg": 3747,
+      "kcalPerCup": 393,
+      "calorieCalculationMethod": "Metabolizable Energy",
+      "calorieNotes": null
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 12.47,
+      "packageSizeLabel": "27.5 lb",
+      "priceCad": 115.99,
+      "retailerName": "Pet Valu",
+      "retailerUrl": "https://www.petvalu.ca/product/hills-science-diet-chicken-brown-rice-recipe-puppy-dog-food/FCM01836",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "regular"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Animal feeding tests using AAFCO procedures substantiate complete and balanced nutrition for growth, gestation and lactation.",
+      "method": "Feeding Tests",
+      "lifeStageClaim": "Growth / Gestation / Lactation",
+      "standard": "AAFCO"
+    },
+    "sources": {
+      "brandProductUrl": "https://www.hillspet.ca/en-ca/dog-food/science-diet-puppy-original-dry",
+      "brandNutritionUrl": "https://www.hillspet.ca/en-ca/dog-food/science-diet-puppy-original-dry",
+      "retailerUrl": "https://www.petvalu.ca/product/hills-science-diet-chicken-brown-rice-recipe-puppy-dog-food/FCM01836",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "hills-science-diet-adult-light-chicken-barley",
+    "brand": "Hill's Science Diet",
+    "productName": "Adult Light Chicken Meal & Barley Recipe",
+    "slug": "hills-science-diet-adult-light-chicken-barley",
+    "dataStatus": "nutrition_verified_price_estimated",
+    "dataQualityNotes": [
+      "Calories and dry-matter nutrient profile sourced from official Hill's Canada product page.",
+      "As-fed guaranteed analysis values should be package-verified before marking fully verified."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Adult Maintenance",
+      "breedSize": [
+        "All Breeds"
+      ],
+      "formulaType": [
+        "Grain Inclusive",
+        "Lower Calorie"
+      ],
+      "madeInCanada": false,
+      "manufacturingClaim": "Hill's states its dry dog food is made in its own U.S. facilities with ingredients from North America, Europe and New Zealand.",
+      "manufacturingClaimSourceUrl": "https://www.hillspet.ca/en-ca/dog-food/science-diet-adult-light-dry"
+    },
+    "ingredients": {
+      "fullList": "Chicken, Cracked Pearled Barley, Brown Rice, Brewers Rice, Whole Grain Wheat, Corn Gluten Meal, Powdered Cellulose, Chicken Meal, Chicken Liver Flavor, Pork Liver Flavor, Flaxseed, Soybean Oil, Lactic Acid, Calcium Carbonate, Dried Beet Pulp, Potassium Chloride, Choline Chloride, L-Lysine, Iodized Salt, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate, Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Taurine, Minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), L-Carnitine, Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene.",
+      "firstFive": [
+        "Chicken",
+        "Cracked Pearled Barley",
+        "Brown Rice",
+        "Brewers Rice",
+        "Whole Grain Wheat"
+      ],
+      "mainProteins": [
+        "Chicken",
+        "Pork"
+      ],
+      "containsChicken": true,
+      "containsTurkey": false,
+      "containsBeef": false,
+      "containsPork": true,
+      "containsLamb": false,
+      "containsFish": false,
+      "containsEgg": false,
+      "containsDairy": false,
+      "containsCorn": true,
+      "containsWheat": true,
+      "containsSoy": true,
+      "containsPeas": true,
+      "containsLentils": false,
+      "containsPotatoes": false,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 20,
+      "fatMinPercent": 5.5,
+      "fiberMaxPercent": 14,
+      "moistureMaxPercent": 10.5,
+      "ashMaxPercent": null,
+      "calciumMinPercent": null,
+      "phosphorusMinPercent": null,
+      "omega6MinPercent": null,
+      "omega3MinPercent": null
+    },
+    "calories": {
+      "kcalPerKg": 2961,
+      "kcalPerCup": 243,
+      "calorieCalculationMethod": "Metabolizable Energy",
+      "calorieNotes": null
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 13.61,
+      "packageSizeLabel": "30 lb",
+      "priceCad": 120.99,
+      "retailerName": "PetSmart Canada",
+      "retailerUrl": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-light-adult-dry-dog-food---chicken-and-barley-90022.html",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "regular"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Formulated for adult maintenance.",
+      "method": "Formulated",
+      "lifeStageClaim": "Adult Maintenance",
+      "standard": "AAFCO"
+    },
+    "sources": {
+      "brandProductUrl": "https://www.hillspet.ca/en-ca/dog-food/science-diet-adult-light-dry",
+      "brandNutritionUrl": "https://www.hillspet.ca/en-ca/dog-food/science-diet-adult-light-dry",
+      "retailerUrl": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-light-adult-dry-dog-food---chicken-and-barley-90022.html",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "purina-one-healthy-aging-7-plus",
+    "brand": "Purina ONE",
+    "productName": "+Plus Healthy Aging 7+ Formula Dry Dog Food",
+    "slug": "purina-one-healthy-aging-7-plus",
+    "dataStatus": "nutrition_verified_price_estimated",
+    "dataQualityNotes": [
+      "Nutrition, calories, ingredients and AAFCO statement sourced from official Purina Canada product page.",
+      "Retail price uses a Canadian Tire regular price reference and should be refreshed regularly."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Senior",
+      "breedSize": [
+        "All Breeds"
+      ],
+      "formulaType": [
+        "Grain Inclusive"
+      ],
+      "madeInCanada": false,
+      "manufacturingClaim": "Made in the USA.",
+      "manufacturingClaimSourceUrl": "https://www.purina.ca/purina-one/dogs/dry-dog-food/healthy-aging"
+    },
+    "ingredients": {
+      "fullList": "Chicken, Rice Flour, Corn Protein Meal, Chicken By-Product Meal, Soybean Meal, Whole Grain Corn, Beef Fat Preserved with Mixed Tocopherols, Wheat Bran, Whole Grain Wheat, Corn Germ Meal, Dried Egg Product, Glycerin, Vegetable Oil, Liver Flavor, Mono and Dicalcium Phosphate, Calcium Carbonate, Salt, Potassium Chloride, Choline Chloride, Zinc Sulfate, Vitamin E Supplement, Ferrous Sulfate, Manganese Sulfate, Niacin, Vitamin A Supplement, Copper Sulfate, Calcium Pantothenate, Thiamine Mononitrate, Riboflavin Supplement, Vitamin B-12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D-3 Supplement, Calcium Iodate, Sodium Selenite, Menadione Sodium Bisulfite Complex.",
+      "firstFive": [
+        "Chicken",
+        "Rice Flour",
+        "Corn Protein Meal",
+        "Chicken By-Product Meal",
+        "Soybean Meal"
+      ],
+      "mainProteins": [
+        "Chicken",
+        "Beef",
+        "Egg",
+        "Fish"
+      ],
+      "containsChicken": true,
+      "containsTurkey": false,
+      "containsBeef": true,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": false,
+      "containsEgg": true,
+      "containsDairy": false,
+      "containsCorn": true,
+      "containsWheat": true,
+      "containsSoy": true,
+      "containsPeas": false,
+      "containsLentils": false,
+      "containsPotatoes": false,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 28,
+      "fatMinPercent": 13,
+      "fiberMaxPercent": 4.5,
+      "moistureMaxPercent": 12,
+      "ashMaxPercent": null,
+      "calciumMinPercent": 1,
+      "phosphorusMinPercent": 0.8,
+      "omega6MinPercent": 1.5,
+      "omega3MinPercent": null
+    },
+    "calories": {
+      "kcalPerKg": 3674,
+      "kcalPerCup": 351,
+      "calorieCalculationMethod": "Metabolizable Energy",
+      "calorieNotes": null
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 6,
+      "packageSizeLabel": "6 kg",
+      "priceCad": 34.99,
+      "retailerName": "Canadian Tire",
+      "retailerUrl": "https://www.canadiantire.ca/en/pdp/purina-one-smartblend-healthy-aging-7-formula-adult-dry-dog-food-6-kg-1429973p.html",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "regular"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Animal feeding tests using AAFCO procedures substantiate complete and balanced nutrition for maintenance of adult dogs.",
+      "method": "Feeding Tests",
+      "lifeStageClaim": "Adult Maintenance",
+      "standard": "AAFCO"
+    },
+    "sources": {
+      "brandProductUrl": "https://www.purina.ca/purina-one/dogs/dry-dog-food/healthy-aging",
+      "brandNutritionUrl": "https://www.purina.ca/purina-one/dogs/dry-dog-food/healthy-aging",
+      "retailerUrl": "https://www.canadiantire.ca/en/pdp/purina-one-smartblend-healthy-aging-7-formula-adult-dry-dog-food-6-kg-1429973p.html",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "purina-pro-plan-weight-management-chicken-rice",
+    "brand": "Purina Pro Plan",
+    "productName": "Weight Management Chicken & Rice Formula",
+    "slug": "purina-pro-plan-weight-management-chicken-rice",
+    "dataStatus": "verified",
+    "dataQualityNotes": [
+      "Nutrition, calories, ingredients and AAFCO statement sourced from official Purina Canada product page.",
+      "Retail price sourced from PetSmart Canada and should be refreshed regularly."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Adult Maintenance",
+      "breedSize": [
+        "All Breeds"
+      ],
+      "formulaType": [
+        "Grain Inclusive",
+        "Weight Management"
+      ],
+      "madeInCanada": false,
+      "manufacturingClaim": null,
+      "manufacturingClaimSourceUrl": null
+    },
+    "ingredients": {
+      "fullList": "Chicken, Rice, Poultry By-Product Meal, Whole Grain Corn, Corn Gluten Meal, Whole Grain Wheat, Soybean Meal, Wheat Bran, Beef Fat Preserved with Mixed Tocopherols, Dried Egg Product, Fish Meal, Natural Flavor, Mono and Dicalcium Phosphate, Calcium Carbonate, Potassium Chloride, Salt, Choline Chloride, L-Lysine Monohydrochloride, Zinc Sulfate, Vitamin E Supplement, Ferrous Sulfate, Manganese Sulfate, Niacin, Vitamin A Supplement, Copper Sulfate, Calcium Pantothenate, Thiamine Mononitrate, Riboflavin Supplement, Vitamin B-12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D-3 Supplement, Calcium Iodate, Sodium Selenite, Menadione Sodium Bisulfite Complex.",
+      "firstFive": [
+        "Chicken",
+        "Rice",
+        "Poultry By-Product Meal",
+        "Whole Grain Corn",
+        "Corn Gluten Meal"
+      ],
+      "mainProteins": [
+        "Chicken",
+        "Beef",
+        "Egg",
+        "Fish"
+      ],
+      "containsChicken": true,
+      "containsTurkey": false,
+      "containsBeef": true,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": true,
+      "containsEgg": true,
+      "containsDairy": false,
+      "containsCorn": true,
+      "containsWheat": true,
+      "containsSoy": true,
+      "containsPeas": false,
+      "containsLentils": false,
+      "containsPotatoes": false,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 27,
+      "fatMinPercent": 9,
+      "fiberMaxPercent": 5.5,
+      "moistureMaxPercent": 12,
+      "ashMaxPercent": null,
+      "calciumMinPercent": 0.9,
+      "phosphorusMinPercent": 0.7,
+      "omega6MinPercent": 1.5,
+      "omega3MinPercent": null
+    },
+    "calories": {
+      "kcalPerKg": 3535,
+      "kcalPerCup": 364,
+      "calorieCalculationMethod": "Metabolizable Energy",
+      "calorieNotes": null
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 15.42,
+      "packageSizeLabel": "34 lb",
+      "priceCad": 99.99,
+      "retailerName": "PetSmart Canada",
+      "retailerUrl": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-weight-management-adult-dry-dog-food---chicken-and-rice-3026.html",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "sale"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Animal feeding tests using AAFCO procedures substantiate complete and balanced nutrition for maintenance of adult dogs.",
+      "method": "Feeding Tests",
+      "lifeStageClaim": "Adult Maintenance",
+      "standard": "AAFCO"
+    },
+    "sources": {
+      "brandProductUrl": "https://www.purina.ca/pro-plan/dogs/dry-dog-food/specialized-nutrition-weight-management-chicken-rice",
+      "brandNutritionUrl": "https://www.purina.ca/pro-plan/dogs/dry-dog-food/specialized-nutrition-weight-management-chicken-rice",
+      "retailerUrl": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-weight-management-adult-dry-dog-food---chicken-and-rice-3026.html",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "purina-pro-plan-large-breed-weight-management-chicken-rice",
+    "brand": "Purina Pro Plan",
+    "productName": "Large Breed Weight Management Chicken & Rice Formula",
+    "slug": "purina-pro-plan-large-breed-weight-management-chicken-rice",
+    "dataStatus": "verified",
+    "dataQualityNotes": [
+      "Nutrition, calories, ingredients and AAFCO statement sourced from official Purina Canada product page.",
+      "Retail price sourced from PetSmart Canada and should be refreshed regularly."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Adult Maintenance",
+      "breedSize": [
+        "Large Breed"
+      ],
+      "formulaType": [
+        "Grain Inclusive",
+        "Weight Management"
+      ],
+      "madeInCanada": false,
+      "manufacturingClaim": null,
+      "manufacturingClaimSourceUrl": null
+    },
+    "ingredients": {
+      "fullList": "Chicken, Rice, Whole Grain Wheat, Poultry By-Product Meal, Corn Gluten Meal, Soybean Meal, Whole Grain Corn, Wheat Bran, Beef Fat Preserved with Mixed Tocopherols, Fish Meal, Dried Egg Product, Natural Flavor, Mono and Dicalcium Phosphate, Calcium Carbonate, Potassium Chloride, Salt, Choline Chloride, L-Lysine Monohydrochloride, Zinc Sulfate, Vitamin E Supplement, Ferrous Sulfate, Manganese Sulfate, Niacin, Vitamin A Supplement, Copper Sulfate, Calcium Pantothenate, Thiamine Mononitrate, Riboflavin Supplement, Vitamin B-12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D-3 Supplement, Calcium Iodate, Sodium Selenite, Menadione Sodium Bisulfite Complex.",
+      "firstFive": [
+        "Chicken",
+        "Rice",
+        "Whole Grain Wheat",
+        "Poultry By-Product Meal",
+        "Corn Gluten Meal"
+      ],
+      "mainProteins": [
+        "Chicken",
+        "Beef",
+        "Egg",
+        "Fish"
+      ],
+      "containsChicken": true,
+      "containsTurkey": false,
+      "containsBeef": true,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": true,
+      "containsEgg": true,
+      "containsDairy": false,
+      "containsCorn": true,
+      "containsWheat": true,
+      "containsSoy": true,
+      "containsPeas": false,
+      "containsLentils": false,
+      "containsPotatoes": false,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 27,
+      "fatMinPercent": 9.5,
+      "fiberMaxPercent": 5.5,
+      "moistureMaxPercent": 12,
+      "ashMaxPercent": null,
+      "calciumMinPercent": 0.9,
+      "phosphorusMinPercent": 0.7,
+      "omega6MinPercent": 1.6,
+      "omega3MinPercent": 0.3
+    },
+    "calories": {
+      "kcalPerKg": 3610,
+      "kcalPerCup": 384,
+      "calorieCalculationMethod": "Metabolizable Energy",
+      "calorieNotes": null
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 15.42,
+      "packageSizeLabel": "34 lb",
+      "priceCad": 99.99,
+      "retailerName": "PetSmart Canada",
+      "retailerUrl": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-weight-management-large-breed-adult-dry-dog-food---chicken-and-rice-3032.html",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "sale"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Animal feeding tests using AAFCO procedures substantiate complete and balanced nutrition for maintenance of adult dogs.",
+      "method": "Feeding Tests",
+      "lifeStageClaim": "Adult Maintenance",
+      "standard": "AAFCO"
+    },
+    "sources": {
+      "brandProductUrl": "https://www.purina.ca/pro-plan/dogs/dry-dog-food/specialized-nutrition-weight-management-large-breed",
+      "brandNutritionUrl": "https://www.purina.ca/pro-plan/dogs/dry-dog-food/specialized-nutrition-weight-management-large-breed",
+      "retailerUrl": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-weight-management-large-breed-adult-dry-dog-food---chicken-and-rice-3032.html",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "royal-canin-medium-weight-care",
+    "brand": "Royal Canin",
+    "productName": "Medium Weight Care Dry Dog Food",
+    "slug": "royal-canin-medium-weight-care",
+    "dataStatus": "verified",
+    "dataQualityNotes": [
+      "Nutrition, ingredients, calories and adequacy statement sourced from official Royal Canin Canada product page.",
+      "Retail price sourced from Pet Valu and should be refreshed regularly."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Adult Maintenance",
+      "breedSize": [
+        "Medium Breed"
+      ],
+      "formulaType": [
+        "Grain Inclusive",
+        "Weight Care"
+      ],
+      "madeInCanada": false,
+      "manufacturingClaim": null,
+      "manufacturingClaimSourceUrl": null
+    },
+    "ingredients": {
+      "fullList": "Chicken by-product meal, wheat, corn, powdered cellulose, brewers rice, corn gluten meal, chicken fat, natural flavors, dried plain beet pulp, fish oil, vegetable oil, sodium silico aluminate, calcium carbonate, sodium tripolyphosphate, potassium chloride, fructooligosaccharides, L-lysine, salt, hydrolyzed yeast, choline chloride, DL-methionine, vitamins, trace minerals, L-carnitine, taurine, rosemary extract.",
+      "firstFive": [
+        "Chicken by-product meal",
+        "Wheat",
+        "Corn",
+        "Powdered cellulose",
+        "Brewers rice"
+      ],
+      "mainProteins": [
+        "Chicken",
+        "Fish"
+      ],
+      "containsChicken": true,
+      "containsTurkey": false,
+      "containsBeef": false,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": true,
+      "containsEgg": false,
+      "containsDairy": false,
+      "containsCorn": true,
+      "containsWheat": true,
+      "containsSoy": false,
+      "containsPeas": false,
+      "containsLentils": false,
+      "containsPotatoes": false,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 25,
+      "fatMinPercent": 9,
+      "fiberMaxPercent": 12.5,
+      "moistureMaxPercent": 10,
+      "ashMaxPercent": null,
+      "calciumMinPercent": null,
+      "phosphorusMinPercent": null,
+      "omega6MinPercent": null,
+      "omega3MinPercent": null
+    },
+    "calories": {
+      "kcalPerKg": 3200,
+      "kcalPerCup": 230,
+      "calorieCalculationMethod": "Metabolizable Energy",
+      "calorieNotes": null
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 13.61,
+      "packageSizeLabel": "30 lb",
+      "priceCad": 144.99,
+      "retailerName": "Pet Valu",
+      "retailerUrl": "https://www.petvalu.ca/product/royal-canin-canine-care-nutrition-weight-care-medium-adult-dog-food/FCM08940",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "regular"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for maintenance.",
+      "method": "Formulated",
+      "lifeStageClaim": "Adult Maintenance",
+      "standard": "AAFCO"
+    },
+    "sources": {
+      "brandProductUrl": "https://www.royalcanin.com/ca/dogs/products/retail-products/canine-care-nutrition-medium-weight-care-dry-dog-food",
+      "brandNutritionUrl": "https://www.royalcanin.com/ca/dogs/products/retail-products/canine-care-nutrition-medium-weight-care-dry-dog-food",
+      "retailerUrl": "https://www.petvalu.ca/product/royal-canin-canine-care-nutrition-weight-care-medium-adult-dog-food/FCM08940",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "royal-canin-large-weight-care",
+    "brand": "Royal Canin",
+    "productName": "Large Weight Care Dry Dog Food",
+    "slug": "royal-canin-large-weight-care",
+    "dataStatus": "verified",
+    "dataQualityNotes": [
+      "Nutrition, ingredients, calories and adequacy statement sourced from official Royal Canin Canada product page.",
+      "Retail price sourced from PetSmart Canada and should be refreshed regularly."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Adult Maintenance",
+      "breedSize": [
+        "Large Breed"
+      ],
+      "formulaType": [
+        "Grain Inclusive",
+        "Weight Care"
+      ],
+      "madeInCanada": false,
+      "manufacturingClaim": null,
+      "manufacturingClaimSourceUrl": null
+    },
+    "ingredients": {
+      "fullList": "Chicken by-product meal, wheat, corn, powdered cellulose, brewers rice, corn gluten meal, chicken fat, natural flavors, dried plain beet pulp, fish oil, vegetable oil, sodium silico aluminate, calcium carbonate, sodium tripolyphosphate, potassium chloride, fructooligosaccharides, L-lysine, salt, hydrolyzed yeast, choline chloride, DL-methionine, vitamins, trace minerals, L-carnitine, taurine, rosemary extract.",
+      "firstFive": [
+        "Chicken by-product meal",
+        "Wheat",
+        "Corn",
+        "Powdered cellulose",
+        "Brewers rice"
+      ],
+      "mainProteins": [
+        "Chicken",
+        "Fish"
+      ],
+      "containsChicken": true,
+      "containsTurkey": false,
+      "containsBeef": false,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": true,
+      "containsEgg": false,
+      "containsDairy": false,
+      "containsCorn": true,
+      "containsWheat": true,
+      "containsSoy": false,
+      "containsPeas": false,
+      "containsLentils": false,
+      "containsPotatoes": false,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 25,
+      "fatMinPercent": 9,
+      "fiberMaxPercent": 12.5,
+      "moistureMaxPercent": 10,
+      "ashMaxPercent": null,
+      "calciumMinPercent": null,
+      "phosphorusMinPercent": null,
+      "omega6MinPercent": null,
+      "omega3MinPercent": null
+    },
+    "calories": {
+      "kcalPerKg": 3182,
+      "kcalPerCup": 229,
+      "calorieCalculationMethod": "Metabolizable Energy",
+      "calorieNotes": null
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 13.61,
+      "packageSizeLabel": "30 lb",
+      "priceCad": 134.99,
+      "retailerName": "PetSmart Canada",
+      "retailerUrl": "https://www.petsmart.ca/dog/food/dry-food/royal-canin-canine-adult-dry-dog-food---large-weight-care-nutrition-30-lb-74819.html",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "sale"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for maintenance.",
+      "method": "Formulated",
+      "lifeStageClaim": "Adult Maintenance",
+      "standard": "AAFCO"
+    },
+    "sources": {
+      "brandProductUrl": "https://www.royalcanin.com/ca/dogs/products/retail-products/canine-care-nutrition-large-weight-care-dry-dog-food",
+      "brandNutritionUrl": "https://www.royalcanin.com/ca/dogs/products/retail-products/canine-care-nutrition-large-weight-care-dry-dog-food",
+      "retailerUrl": "https://www.petsmart.ca/dog/food/dry-food/royal-canin-canine-adult-dry-dog-food---large-weight-care-nutrition-30-lb-74819.html",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "royal-canin-medium-adult-7-plus",
+    "brand": "Royal Canin",
+    "productName": "Medium Adult 7+ Dry Dog Food",
+    "slug": "royal-canin-medium-adult-7-plus",
+    "dataStatus": "verified",
+    "dataQualityNotes": [
+      "Nutrition, ingredients, calories and adequacy statement sourced from official Royal Canin Canada product page.",
+      "Retail price sourced from PetSmart Canada and should be refreshed regularly."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Senior",
+      "breedSize": [
+        "Medium Breed"
+      ],
+      "formulaType": [
+        "Grain Inclusive"
+      ],
+      "madeInCanada": false,
+      "manufacturingClaim": null,
+      "manufacturingClaimSourceUrl": null
+    },
+    "ingredients": {
+      "fullList": "Chicken by-product meal, brewers rice, wheat, corn, corn gluten meal, wheat gluten, chicken fat, natural flavors, dried plain beet pulp, brown rice, fish oil, vegetable oil, psyllium seed husk, calcium carbonate, sodium silico aluminate, sodium tripolyphosphate, potassium chloride, fructooligosaccharides, hydrolyzed yeast, salt, choline chloride, vitamins, trace minerals, taurine, L-carnitine, rosemary extract.",
+      "firstFive": [
+        "Chicken by-product meal",
+        "Brewers rice",
+        "Wheat",
+        "Corn",
+        "Corn gluten meal"
+      ],
+      "mainProteins": [
+        "Chicken",
+        "Fish"
+      ],
+      "containsChicken": true,
+      "containsTurkey": false,
+      "containsBeef": false,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": true,
+      "containsEgg": false,
+      "containsDairy": false,
+      "containsCorn": true,
+      "containsWheat": true,
+      "containsSoy": false,
+      "containsPeas": false,
+      "containsLentils": false,
+      "containsPotatoes": false,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 23,
+      "fatMinPercent": 12,
+      "fiberMaxPercent": 3.7,
+      "moistureMaxPercent": 10.5,
+      "ashMaxPercent": null,
+      "calciumMinPercent": null,
+      "phosphorusMinPercent": null,
+      "omega6MinPercent": null,
+      "omega3MinPercent": null
+    },
+    "calories": {
+      "kcalPerKg": 3658,
+      "kcalPerCup": 315,
+      "calorieCalculationMethod": "Metabolizable Energy",
+      "calorieNotes": null
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 13.61,
+      "packageSizeLabel": "30 lb",
+      "priceCad": 119.99,
+      "retailerName": "PetSmart Canada",
+      "retailerUrl": "https://www.petsmart.ca/dog/food/dry-food/royal-canin-size-health-nutrition-medium-breed-senior-7-dry-dog-food---30-lb-88333.html",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "sale"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for maintenance.",
+      "method": "Formulated",
+      "lifeStageClaim": "Adult Maintenance",
+      "standard": "AAFCO"
+    },
+    "sources": {
+      "brandProductUrl": "https://www.royalcanin.com/ca/dogs/products/retail-products/medium-adult-7-3016",
+      "brandNutritionUrl": "https://www.royalcanin.com/ca/dogs/products/retail-products/medium-adult-7-3016",
+      "retailerUrl": "https://www.petsmart.ca/dog/food/dry-food/royal-canin-size-health-nutrition-medium-breed-senior-7-dry-dog-food---30-lb-88333.html",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "performatrin-prime-chicken-rice-puppy",
+    "brand": "Performatrin Prime",
+    "productName": "Chicken & Rice Formula Puppy Dog Food",
+    "slug": "performatrin-prime-chicken-rice-puppy",
+    "dataStatus": "nutrition_verified_price_estimated",
+    "dataQualityNotes": [
+      "Nutrition, ingredients, calories and price sourced from Pet Valu product page.",
+      "Price-size pairing should be rechecked because multiple package sizes are listed."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Puppy",
+      "breedSize": [
+        "All Breeds"
+      ],
+      "formulaType": [
+        "Grain Inclusive"
+      ],
+      "madeInCanada": false,
+      "manufacturingClaim": null,
+      "manufacturingClaimSourceUrl": null
+    },
+    "ingredients": {
+      "fullList": "Chicken, Chicken Meal, Rice, Ground Corn, Corn Gluten Meal, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Pearled Barley, Menhaden Meal, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Dried Plain Beet Pulp, Natural Chicken Flavour, Spray Dried Egg Product, Flaxseeds, Oat Hulls, Potassium Chloride, Monocalcium Phosphate, Salt, Dried Yeast, Chicory Root Extract, Dried Kelp, Sodium Hexametaphosphate, Taurine, Choline Chloride, DL-Methionine, Citric Acid, Ginger, Oregano, Yucca Schidigera Extract, L-Ascorbyl-2-Polyphosphate, Dandelion, Parsley, Chamomile, Rosemary Extract, Vitamins, Minerals.",
+      "firstFive": [
+        "Chicken",
+        "Chicken Meal",
+        "Rice",
+        "Ground Corn",
+        "Corn Gluten Meal"
+      ],
+      "mainProteins": [
+        "Chicken",
+        "Fish",
+        "Egg"
+      ],
+      "containsChicken": true,
+      "containsTurkey": false,
+      "containsBeef": false,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": true,
+      "containsEgg": true,
+      "containsDairy": false,
+      "containsCorn": true,
+      "containsWheat": false,
+      "containsSoy": false,
+      "containsPeas": true,
+      "containsLentils": false,
+      "containsPotatoes": false,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 28,
+      "fatMinPercent": 18,
+      "fiberMaxPercent": 3,
+      "moistureMaxPercent": 10,
+      "ashMaxPercent": null,
+      "calciumMinPercent": 1.3,
+      "phosphorusMinPercent": 0.95,
+      "omega6MinPercent": 3,
+      "omega3MinPercent": 0.8
+    },
+    "calories": {
+      "kcalPerKg": 3950,
+      "kcalPerCup": 427,
+      "calorieCalculationMethod": "Metabolizable Energy",
+      "calorieNotes": null
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 5.99,
+      "packageSizeLabel": "13.2 lb",
+      "priceCad": 47.99,
+      "retailerName": "Pet Valu",
+      "retailerUrl": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-puppy-dog-food/FCM06786",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "regular"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Formulated for growth.",
+      "method": "Formulated",
+      "lifeStageClaim": "Growth",
+      "standard": "AAFCO"
+    },
+    "sources": {
+      "brandProductUrl": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-puppy-dog-food/FCM06786",
+      "brandNutritionUrl": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-puppy-dog-food/FCM06786",
+      "retailerUrl": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-puppy-dog-food/FCM06786",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "performatrin-prime-chicken-rice-large-breed-puppy",
+    "brand": "Performatrin Prime",
+    "productName": "Chicken & Rice Formula Large Breed Puppy Dog Food",
+    "slug": "performatrin-prime-chicken-rice-large-breed-puppy",
+    "dataStatus": "nutrition_verified_price_estimated",
+    "dataQualityNotes": [
+      "Nutrition, ingredients and price sourced from Pet Valu product page.",
+      "Kcal/kg derived from listed kcal/cup and cup weight because only kcal/cup was listed."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Puppy",
+      "breedSize": [
+        "Large Breed"
+      ],
+      "formulaType": [
+        "Grain Inclusive"
+      ],
+      "madeInCanada": false,
+      "manufacturingClaim": null,
+      "manufacturingClaimSourceUrl": null
+    },
+    "ingredients": {
+      "fullList": "Chicken, Chicken Meal, Rice, Ground Corn, Oatmeal, Pearled Barley, Corn Gluten Meal, Menhaden Meal, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Dried Plain Beet Pulp, Natural Chicken Flavor, Spray Dried Egg Product, Flaxseeds, Monocalcium Phosphate, Oat Hulls, Potassium Chloride, Salt, Dried Yeast, Chicory Root Extract, Dried Kelp, Sodium Hexametaphosphate, Taurine, Choline Chloride, DL-Methionine, Citric Acid, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Parsley, Chamomile, Rosemary Extract, Vitamins, Minerals.",
+      "firstFive": [
+        "Chicken",
+        "Chicken Meal",
+        "Rice",
+        "Ground Corn",
+        "Oatmeal"
+      ],
+      "mainProteins": [
+        "Chicken",
+        "Fish",
+        "Egg"
+      ],
+      "containsChicken": true,
+      "containsTurkey": false,
+      "containsBeef": false,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": true,
+      "containsEgg": true,
+      "containsDairy": false,
+      "containsCorn": true,
+      "containsWheat": false,
+      "containsSoy": false,
+      "containsPeas": true,
+      "containsLentils": false,
+      "containsPotatoes": false,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 26,
+      "fatMinPercent": 14,
+      "fiberMaxPercent": 3,
+      "moistureMaxPercent": 10,
+      "ashMaxPercent": null,
+      "calciumMinPercent": 1.1,
+      "phosphorusMinPercent": 0.8,
+      "omega6MinPercent": 2.25,
+      "omega3MinPercent": 0.75
+    },
+    "calories": {
+      "kcalPerKg": 3769,
+      "kcalPerCup": 407,
+      "calorieCalculationMethod": "Derived from kcal/cup and listed cup weight",
+      "calorieNotes": "Pet Valu lists 407 kcal/cup and 108 g/cup; kcal/kg derived."
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 11.79,
+      "packageSizeLabel": "26 lb",
+      "priceCad": 74.99,
+      "retailerName": "Pet Valu",
+      "retailerUrl": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-large-breed-puppy-dog-food/FCM06787",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "regular"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Formulated for growth.",
+      "method": "Formulated",
+      "lifeStageClaim": "Growth",
+      "standard": "AAFCO"
+    },
+    "sources": {
+      "brandProductUrl": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-large-breed-puppy-dog-food/FCM06787",
+      "brandNutritionUrl": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-large-breed-puppy-dog-food/FCM06787",
+      "retailerUrl": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-large-breed-puppy-dog-food/FCM06787",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "performatrin-prime-chicken-rice-senior",
+    "brand": "Performatrin Prime",
+    "productName": "Chicken & Rice Formula Senior Dog Food",
+    "slug": "performatrin-prime-chicken-rice-senior",
+    "dataStatus": "nutrition_verified_price_estimated",
+    "dataQualityNotes": [
+      "Nutrition, ingredients and price sourced from Pet Valu product page.",
+      "Kcal/kg derived from listed kcal/cup and cup weight because only kcal/cup was listed."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Senior",
+      "breedSize": [
+        "All Breeds"
+      ],
+      "formulaType": [
+        "Grain Inclusive"
+      ],
+      "madeInCanada": false,
+      "manufacturingClaim": null,
+      "manufacturingClaimSourceUrl": null
+    },
+    "ingredients": {
+      "fullList": "Chicken, Chicken Meal, Rice, Oatmeal, Peas, Ground Corn, Pearled Barley, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Corn Gluten Meal, Menhaden Meal, Dried Plain Beet Pulp, Natural Chicken Flavour, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Spray Dried Egg Product, Flaxseeds, Potassium Chloride, Salt, Dried Yeast, Chicory Root Extract, Dried Kelp, Glucosamine Hydrochloride, Chondroitin Sulfate, Taurine, Choline Chloride, DL-Methionine, Citric Acid, Ginger, Oregano, Yucca Schidigera Extract, L-Ascorbyl-2-Polyphosphate, Dandelion, Parsley, Chamomile, Rosemary Extract, Vitamins, Minerals.",
+      "firstFive": [
+        "Chicken",
+        "Chicken Meal",
+        "Rice",
+        "Oatmeal",
+        "Peas"
+      ],
+      "mainProteins": [
+        "Chicken",
+        "Fish",
+        "Egg"
+      ],
+      "containsChicken": true,
+      "containsTurkey": false,
+      "containsBeef": false,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": true,
+      "containsEgg": true,
+      "containsDairy": false,
+      "containsCorn": true,
+      "containsWheat": false,
+      "containsSoy": false,
+      "containsPeas": true,
+      "containsLentils": false,
+      "containsPotatoes": false,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 25,
+      "fatMinPercent": 11,
+      "fiberMaxPercent": 4,
+      "moistureMaxPercent": 10,
+      "ashMaxPercent": null,
+      "calciumMinPercent": 0.8,
+      "phosphorusMinPercent": 0.6,
+      "omega6MinPercent": 1.75,
+      "omega3MinPercent": 0.65
+    },
+    "calories": {
+      "kcalPerKg": 3566,
+      "kcalPerCup": 378,
+      "calorieCalculationMethod": "Derived from kcal/cup and listed cup weight",
+      "calorieNotes": "Pet Valu lists 378 kcal/cup and 106 g/cup; kcal/kg derived."
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 5.99,
+      "packageSizeLabel": "13.2 lb",
+      "priceCad": 47.99,
+      "retailerName": "Pet Valu",
+      "retailerUrl": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-senior-dog-food/FCM06795",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "regular"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Formulated for adult maintenance.",
+      "method": "Formulated",
+      "lifeStageClaim": "Adult Maintenance",
+      "standard": "AAFCO"
+    },
+    "sources": {
+      "brandProductUrl": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-senior-dog-food/FCM06795",
+      "brandNutritionUrl": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-senior-dog-food/FCM06795",
+      "retailerUrl": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-senior-dog-food/FCM06795",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  },
+  {
+    "id": "performatrin-prime-chicken-rice-large-breed-senior",
+    "brand": "Performatrin Prime",
+    "productName": "Chicken & Rice Formula Large Breed Senior Dog Food",
+    "slug": "performatrin-prime-chicken-rice-large-breed-senior",
+    "dataStatus": "nutrition_verified_price_estimated",
+    "dataQualityNotes": [
+      "Nutrition, ingredients and price sourced from Pet Valu product page.",
+      "Kcal/kg derived from listed kcal/cup and cup weight because only kcal/cup was listed."
+    ],
+    "productBasics": {
+      "foodType": "Dry",
+      "lifeStage": "Senior",
+      "breedSize": [
+        "Large Breed"
+      ],
+      "formulaType": [
+        "Grain Inclusive"
+      ],
+      "madeInCanada": false,
+      "manufacturingClaim": null,
+      "manufacturingClaimSourceUrl": null
+    },
+    "ingredients": {
+      "fullList": "Chicken, Chicken Meal, Rice, Peas, Oatmeal, Ground Corn, Pearled Barley, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Corn Gluten Meal, Menhaden Meal, Dried Plain Beet Pulp, Natural Chicken Flavour, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Spray Dried Egg Product, Flaxseeds, Potassium Chloride, Salt, Dried Yeast, Chicory Root Extract, Dried Kelp, Glucosamine Hydrochloride, Chondroitin Sulfate, Taurine, Choline Chloride, DL-Methionine, Citric Acid, Ginger, Oregano, Yucca Schidigera Extract, L-Ascorbyl-2-Polyphosphate, Dandelion, Parsley, Chamomile, Rosemary Extract, Vitamins, Minerals.",
+      "firstFive": [
+        "Chicken",
+        "Chicken Meal",
+        "Rice",
+        "Peas",
+        "Oatmeal"
+      ],
+      "mainProteins": [
+        "Chicken",
+        "Fish",
+        "Egg"
+      ],
+      "containsChicken": true,
+      "containsTurkey": false,
+      "containsBeef": false,
+      "containsPork": false,
+      "containsLamb": false,
+      "containsFish": true,
+      "containsEgg": true,
+      "containsDairy": false,
+      "containsCorn": true,
+      "containsWheat": false,
+      "containsSoy": false,
+      "containsPeas": true,
+      "containsLentils": false,
+      "containsPotatoes": false,
+      "grainFree": false
+    },
+    "guaranteedAnalysisAsFed": {
+      "proteinMinPercent": 24,
+      "fatMinPercent": 10,
+      "fiberMaxPercent": 4,
+      "moistureMaxPercent": 10,
+      "ashMaxPercent": null,
+      "calciumMinPercent": 0.8,
+      "phosphorusMinPercent": 0.6,
+      "omega6MinPercent": 1.6,
+      "omega3MinPercent": 0.6
+    },
+    "calories": {
+      "kcalPerKg": 3654,
+      "kcalPerCup": 380,
+      "calorieCalculationMethod": "Derived from kcal/cup and listed cup weight",
+      "calorieNotes": "Pet Valu lists 380 kcal/cup and 104 g/cup; kcal/kg derived."
+    },
+    "packageAndPrice": {
+      "packageSizeKg": 11.79,
+      "packageSizeLabel": "26 lb",
+      "priceCad": 74.99,
+      "retailerName": "Pet Valu",
+      "retailerUrl": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-large-breed-senior-dog-food/FCM06796",
+      "priceCheckedAt": "2026-05-30",
+      "priceType": "regular"
+    },
+    "nutritionalAdequacy": {
+      "statement": "Formulated for adult maintenance.",
+      "method": "Formulated",
+      "lifeStageClaim": "Adult Maintenance",
+      "standard": "AAFCO"
+    },
+    "sources": {
+      "brandProductUrl": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-large-breed-senior-dog-food/FCM06796",
+      "brandNutritionUrl": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-large-breed-senior-dog-food/FCM06796",
+      "retailerUrl": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-large-breed-senior-dog-food/FCM06796",
+      "packageImageUrl": null,
+      "sourceCheckedAt": "2026-05-30"
+    }
+  }
+]
