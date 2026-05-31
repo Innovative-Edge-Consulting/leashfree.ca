@@ -1,0 +1,910 @@
+{
+  "totalDirectories": 580,
+  "processedTargets": 514,
+  "alreadyValid": 0,
+  "fixedFromGoogleUrl": 0,
+  "fixedFromGeocode": 364,
+  "unresolvedCount": 150,
+  "unresolved": [
+    {
+      "slug": "ancaster-animal-hospital",
+      "name": "Ancaster Animal Hospital",
+      "reason": "geocode no result",
+      "query": "110 Wilson Street West, Ancaster, Ontario, L9G 1N3, ancaster, Ontario, Canada"
+    },
+    {
+      "slug": "governors-road-animal-hospital",
+      "name": "Governors Road Animal Hospital",
+      "reason": "geocode no result",
+      "query": "2 Castlewood Boulevard, Unit 4, Dundas, Ontario, dundas, Ontario, Canada"
+    },
+    {
+      "slug": "stoney-ridge-animal-hospital",
+      "name": "Stoney Ridge Animal Hospital",
+      "reason": "geocode no result",
+      "query": "2200 Rymal Road East, Unit 6, Hannon, Ontario, L0R 1P0, hannon, Ontario, Canada"
+    },
+    {
+      "slug": "grandview-animal-hospital",
+      "name": "Grandview Animal Hospital",
+      "reason": "geocode no result",
+      "query": "1307 Hamilton Regional Road 8, Stoney Creek, Ontario, L8E 5K5, stoney creek, Ontario, Canada"
+    },
+    {
+      "slug": "beattie-pet-hospital-stoney-creek",
+      "name": "Beattie Pet Hospital - Stoney Creek",
+      "reason": "geocode no result",
+      "query": "131-135 Upper Centennial Parkway, Unit 3, Stoney Creek, Ontario, L8J 0B2, stoney creek, Ontario, Canada"
+    },
+    {
+      "slug": "dewitt-park-animal-hospital",
+      "name": "Dewitt Park Animal Hospital",
+      "reason": "geocode no result",
+      "query": "521 Highway 8, Unit 0120, Stoney Creek, Ontario, L8G 1G4, stoney creek, Ontario, Canada"
+    },
+    {
+      "slug": "barton-grays-animal-hospital",
+      "name": "Barton Grays Animal Hospital",
+      "reason": "geocode no result",
+      "query": "188 Barton Street, Unit 3, Stoney Creek, Ontario, stoney creek, Ontario, Canada"
+    },
+    {
+      "slug": "veterinary-emergency-clinic-and-referral-centre",
+      "name": "Veterinary Emergency Clinic and Referral Centre",
+      "reason": "geocode no result",
+      "query": "920 Yonge Street, Suite 117, Toronto, Ontario, M4W 3C7, toronto, Ontario, Canada"
+    },
+    {
+      "slug": "capital-city-specialty-and-emergency-animal-hospital",
+      "name": "Capital City Specialty & Emergency Animal Hospital",
+      "reason": "geocode no result",
+      "query": "747 Silver Seven Road, Units 30-35, Kanata, Ontario, K2V 0H2, kanata, Ontario, Canada"
+    },
+    {
+      "slug": "gloucester-veterinary-hospital",
+      "name": "Gloucester Veterinary Hospital",
+      "reason": "geocode no result",
+      "query": "2470 St Joseph Boulevard, Orléans, Ontario, K1C 1G1, orleans, Ontario, Canada"
+    },
+    {
+      "slug": "cumberland-veterinary-hospital",
+      "name": "Cumberland Veterinary Hospital",
+      "reason": "geocode no result",
+      "query": "Orléans, Ontario, orleans, Ontario, Canada"
+    },
+    {
+      "slug": "tenth-line-animal-hospital",
+      "name": "Tenth Line Animal Hospital",
+      "reason": "geocode no result",
+      "query": "200 Vanguard Drive, Orléans, Ontario, K4A 1A1, orleans, Ontario, Canada"
+    },
+    {
+      "slug": "london-regional-veterinary-emergency-and-referral-hospital",
+      "name": "London Regional Veterinary Emergency and Referral Hospital",
+      "reason": "geocode no result",
+      "query": "41 Adelaide Street North, Suite 45, London, Ontario, N6B 3P4, london, Ontario, Canada"
+    },
+    {
+      "slug": "london-north-animal-hospital",
+      "name": "London North Animal Hospital",
+      "reason": "geocode no result",
+      "query": "735 Wonderland Road North, Unit 22, London, Ontario, N6H 4L1, london, Ontario, Canada"
+    },
+    {
+      "slug": "hyde-park-veterinary-hospital",
+      "name": "Hyde Park Veterinary Hospital",
+      "reason": "geocode no result",
+      "query": "1422 Fanshawe Park Road West, Unit 1J, London, Ontario, N6G 0A4, london, Ontario, Canada"
+    },
+    {
+      "slug": "st-thomas-animal-clinic",
+      "name": "St. Thomas Animal Clinic",
+      "reason": "geocode no result",
+      "query": "53 Princess Avenue, St. Thomas, Ontario, N5R 3V6, st thomas, Ontario, Canada"
+    },
+    {
+      "slug": "abbeydale-animal-hospital",
+      "name": "Abbeydale Animal Hospital",
+      "reason": "geocode no result",
+      "query": "26 Sparling Road, St. Thomas, Ontario, N5P 4A7, st thomas, Ontario, Canada"
+    },
+    {
+      "slug": "elgin-animal-hospital",
+      "name": "Elgin Animal Hospital",
+      "reason": "geocode no result",
+      "query": "9789 Sunset Road, St. Thomas, Ontario, N5P 3T2, st thomas, Ontario, Canada"
+    },
+    {
+      "slug": "talbot-animal-clinic",
+      "name": "Talbot Animal Clinic",
+      "reason": "geocode no result",
+      "query": "930 Talbot Street, St. Thomas, Ontario, N5P 1E7, st thomas, Ontario, Canada"
+    },
+    {
+      "slug": "beaver-creek-animal-hospital",
+      "name": "Beaver Creek Animal Hospital",
+      "reason": "geocode no result",
+      "query": "7477 Sunset Road, St. Thomas, Ontario, N5P 3S8, st thomas, Ontario, Canada"
+    },
+    {
+      "slug": "birch-lane-veterinary-clinic",
+      "name": "Birch Lane Veterinary Clinic",
+      "reason": "geocode no result",
+      "query": "1000 Finch Drive, Unit 7, Sarnia, Ontario, N7S 6G5, sarnia, Ontario, Canada"
+    },
+    {
+      "slug": "south-sarnia-veterinary-services",
+      "name": "South Sarnia Veterinary Services",
+      "reason": "geocode no result",
+      "query": "1141 Confederation Street, Unit E, Sarnia, Ontario, N7S 3Y5, sarnia, Ontario, Canada"
+    },
+    {
+      "slug": "st-catharines-animal-hospital",
+      "name": "St. Catharines Animal Hospital",
+      "reason": "geocode no result",
+      "query": "277 Welland Avenue, Unit 14, St. Catharines, Ontario, L2R 2P7, st catharines, Ontario, Canada"
+    },
+    {
+      "slug": "hartzel-animal-hospital",
+      "name": "Hartzel Animal Hospital",
+      "reason": "geocode no result",
+      "query": "50 Hartzel Road, St. Catharines, Ontario, L2P 1M5, st catharines, Ontario, Canada"
+    },
+    {
+      "slug": "court-animal-hospital",
+      "name": "Court Animal Hospital",
+      "reason": "geocode no result",
+      "query": "61 Geneva Street, Unit 3, St. Catharines, Ontario, L2R 4M6, st catharines, Ontario, Canada"
+    },
+    {
+      "slug": "animal-health-services",
+      "name": "Animal Health Services",
+      "reason": "geocode no result",
+      "query": "298 Lake Street, St. Catharines, Ontario, st catharines, Ontario, Canada"
+    },
+    {
+      "slug": "garden-city-cat-hospital",
+      "name": "Garden City Cat Hospital",
+      "reason": "geocode no result",
+      "query": "332 Geneva Street, St. Catharines, Ontario, L2N 2G6, st catharines, Ontario, Canada"
+    },
+    {
+      "slug": "lakeside-niagara-veterinary-clinic",
+      "name": "Lakeside Niagara Veterinary Clinic",
+      "reason": "geocode no result",
+      "query": "107 Lakeshore Road, St. Catharines, Ontario, L2N 2T6, st catharines, Ontario, Canada"
+    },
+    {
+      "slug": "fairview-animal-clinic",
+      "name": "Fairview Animal Clinic",
+      "reason": "geocode no result",
+      "query": "1 Secord Drive, St. Catharines, Ontario, L2N 1K9, st catharines, Ontario, Canada"
+    },
+    {
+      "slug": "glenridge-animal-hospital",
+      "name": "Glenridge Animal Hospital",
+      "reason": "geocode no result",
+      "query": "224 Glenridge Avenue, Unit 1, St. Catharines, Ontario, L2T 3J9, st catharines, Ontario, Canada"
+    },
+    {
+      "slug": "huntington-animal-hospital",
+      "name": "Huntington Animal Hospital",
+      "reason": "geocode no result",
+      "query": "235 Martindale Road, Unit 1, St. Catharines, Ontario, L2W 1A5, st catharines, Ontario, Canada"
+    },
+    {
+      "slug": "dog-and-cat-clinic-of-niagara",
+      "name": "Dog & Cat Clinic of Niagara",
+      "reason": "geocode no result",
+      "query": "St. Catharines, Ontario, st catharines, Ontario, Canada"
+    },
+    {
+      "slug": "niagara-veterinary-emergency-clinic",
+      "name": "Niagara Veterinary Emergency Clinic",
+      "reason": "geocode no result",
+      "query": "3300 Merrittville Highway, Unit 1A, Thorold, Ontario, L2V 4Y6, thorold, Ontario, Canada"
+    },
+    {
+      "slug": "welland-animal-hospital",
+      "name": "Welland Animal Hospital",
+      "reason": "geocode no result",
+      "query": "194 Thorold Road West, Welland, Ontario, L3C 3V7, welland, Ontario, Canada"
+    },
+    {
+      "slug": "main-west-animal-hospital",
+      "name": "Main West Animal Hospital",
+      "reason": "geocode no result",
+      "query": "1 Broadway Avenue, Welland, Ontario, L3C 5L2, welland, Ontario, Canada"
+    },
+    {
+      "slug": "upper-canada-animal-hospital",
+      "name": "Upper Canada Animal Hospital",
+      "reason": "geocode no result",
+      "query": "323 Mary Street, Niagara-on-the-Lake, Ontario, L0S 1J0, niagara on the lake, Ontario, Canada"
+    },
+    {
+      "slug": "big-bay-animal-hospital",
+      "name": "Big Bay Animal Hospital",
+      "reason": "geocode no result",
+      "query": "350 Big Bay Point Road, Unit 9, Barrie, Ontario, barrie, Ontario, Canada"
+    },
+    {
+      "slug": "holly-animal-hospital",
+      "name": "Holly Animal Hospital",
+      "reason": "geocode no result",
+      "query": "494 Veterans Drive, Unit 21, Barrie, Ontario, barrie, Ontario, Canada"
+    },
+    {
+      "slug": "orillia-and-district-veterinary-services",
+      "name": "Orillia & District Veterinary Services",
+      "reason": "geocode no result",
+      "query": "3818 Line 11 North, Oro-Medonte, Ontario, L0K 1E0, oro medonte, Ontario, Canada"
+    },
+    {
+      "slug": "emergency-veterinary-hospital-collingwood-and-region",
+      "name": "Emergency Veterinary Hospital Collingwood & Region",
+      "reason": "geocode no result",
+      "query": "14 Ronell Crescent, Collingwood, Ontario, L9Y 4J7, collingwood, Ontario, Canada"
+    },
+    {
+      "slug": "collingwood-animal-referral-and-emergency-centre",
+      "name": "Collingwood Animal Referral & Emergency Centre",
+      "reason": "geocode no result",
+      "query": "100 Pretty River Parkway South, Unit 105, Collingwood, Ontario, L9Y 4M8, collingwood, Ontario, Canada"
+    },
+    {
+      "slug": "mountain-vista-veterinary-hospital",
+      "name": "Mountain Vista Veterinary Hospital",
+      "reason": "geocode no result",
+      "query": "2823 7th Concession, Collingwood, Ontario, L9Y 3Z1, collingwood, Ontario, Canada"
+    },
+    {
+      "slug": "blue-mountain-veterinary-services",
+      "name": "Blue Mountain Veterinary Services",
+      "reason": "geocode no result",
+      "query": "728380 Side Road 21, Clarksburg, Ontario, N0H 1J0, clarksburg, Ontario, Canada"
+    },
+    {
+      "slug": "centennial-animal-hospital-and-gravenhurst-veterinary-services",
+      "name": "Centennial Animal Hospital & Gravenhurst Veterinary Services",
+      "reason": "geocode no result",
+      "query": "150 Second Street South, Bracebridge, Ontario, P1P 1H4, bracebridge, Ontario, Canada"
+    },
+    {
+      "slug": "peterborough-west-animal-hospital",
+      "name": "Peterborough West Animal Hospital",
+      "reason": "geocode no result",
+      "query": "2605 Stewart Line, Cavan Monaghan, Ontario, K9J 0G5, cavan monaghan, Ontario, Canada"
+    },
+    {
+      "slug": "kawartha-veterinary-emergency-clinic",
+      "name": "Kawartha Veterinary Emergency Clinic",
+      "reason": "geocode no result",
+      "query": "20-1840 Lansdowne Street West, Peterborough, Ontario, K9K 2M9, peterborough, Ontario, Canada"
+    },
+    {
+      "slug": "highway-2-veterinary-office",
+      "name": "Highway 2 Veterinary Office",
+      "reason": "geocode no result",
+      "query": "15 Westney Road North, Unit 14, Ajax, Ontario, L1T 1P5, ajax, Ontario, Canada"
+    },
+    {
+      "slug": "whitby-animal-hospital",
+      "name": "Whitby Animal Hospital",
+      "reason": "geocode no result",
+      "query": "3050 Garden Street, Unit 112B, Whitby, Ontario, L1R 2G7, whitby, Ontario, Canada"
+    },
+    {
+      "slug": "animal-emergency-clinic-of-durham-region",
+      "name": "Animal Emergency Clinic of Durham Region",
+      "reason": "geocode no result",
+      "query": "1910 Dundas Street East, Unit B101, Whitby, Ontario, whitby, Ontario, Canada"
+    },
+    {
+      "slug": "pickering-animal-hospital",
+      "name": "Pickering Animal Hospital",
+      "reason": "geocode no result",
+      "query": "2460 Brock Road, Unit B3, Pickering, Ontario, L1X 0J1, pickering, Ontario, Canada"
+    },
+    {
+      "slug": "baxter-animal-hospital",
+      "name": "Baxter Animal Hospital",
+      "reason": "geocode no result",
+      "query": "3-1060 Lorne Street, Sudbury, Ontario, P3C 4R9, sudbury, Ontario, Canada"
+    },
+    {
+      "slug": "notre-dame-animal-hospital",
+      "name": "Notre-Dame Animal Hospital",
+      "reason": "geocode no result",
+      "query": "G-760 Notre Dame Avenue, Sudbury, Ontario, P3A 2T4, sudbury, Ontario, Canada"
+    },
+    {
+      "slug": "sudbury-regional-cat-hospital",
+      "name": "Sudbury Regional Cat Hospital",
+      "reason": "geocode no result",
+      "query": "875 Notre Dame Avenue, Unit 103, Sudbury, Ontario, P3A 2T2, sudbury, Ontario, Canada"
+    },
+    {
+      "slug": "animal-hospital",
+      "name": "Animal Hospital",
+      "reason": "geocode no result",
+      "query": "12 Tilley Road, Sault Ste. Marie, Ontario, P6B 3Y6, sault ste marie, Ontario, Canada"
+    },
+    {
+      "slug": "animal-health-clinic",
+      "name": "Animal Health Clinic",
+      "reason": "geocode no result",
+      "query": "787 Trunk Road, Sault Ste. Marie, Ontario, P6A 3T3, sault ste marie, Ontario, Canada"
+    },
+    {
+      "slug": "sault-ste-marie-animal-clinic",
+      "name": "Sault Ste. Marie Animal Clinic",
+      "reason": "geocode no result",
+      "query": "884 Third Line East, Sault Ste. Marie, Ontario, P6A 6J8, sault ste marie, Ontario, Canada"
+    },
+    {
+      "slug": "black-road-veterinary-services",
+      "name": "Black Road Veterinary Services",
+      "reason": "geocode no result",
+      "query": "804 Black Road, Sault Ste. Marie, Ontario, P6A 0C8, sault ste marie, Ontario, Canada"
+    },
+    {
+      "slug": "crossroads-veterinary-clinic",
+      "name": "Crossroads Veterinary Clinic",
+      "reason": "geocode no result",
+      "query": "3142 Arthur Street, Rosslyn, Ontario, P7K 0P3, rosslyn, Ontario, Canada"
+    },
+    {
+      "slug": "markham-veterinary-clinic",
+      "name": "Markham Veterinary Clinic",
+      "reason": "geocode no result",
+      "query": "6605 Hwy 7 East, Unit 13/14, Markham, Ontario, L3P 7P1, markham, Ontario, Canada"
+    },
+    {
+      "slug": "16th-avenue-animal-hospital",
+      "name": "16th Avenue Animal Hospital",
+      "reason": "geocode no result",
+      "query": "5970 16th Avenue, Unit 104, Markham, Ontario, L3P 7R1, markham, Ontario, Canada"
+    },
+    {
+      "slug": "animal-hospital-of-unionville",
+      "name": "Animal Hospital of Unionville",
+      "reason": "geocode no result",
+      "query": "4568 Highway 7, Unit 1, Markham, Ontario, L3R 1M5, markham, Ontario, Canada"
+    },
+    {
+      "slug": "bayview-seven-animal-hospital",
+      "name": "Bayview Seven Animal Hospital",
+      "reason": "geocode no result",
+      "query": "2 Hunters Point Drive, Richmond Hill, Ontario, L4C 9Y4, richmond hill, Ontario, Canada"
+    },
+    {
+      "slug": "centre-street-animal-hospital",
+      "name": "Centre Street Animal Hospital",
+      "reason": "geocode no result",
+      "query": "7700 Bathurst Street, Units 40-42, Thornhill, Ontario, L4J 7Y3, thornhill, Ontario, Canada"
+    },
+    {
+      "slug": "woodbridge-animal-hospital",
+      "name": "Woodbridge Animal Hospital",
+      "reason": "geocode no result",
+      "query": "5731 Highway 7, Unit 23, Woodbridge, Ontario, L4L 4Y9, woodbridge, Ontario, Canada"
+    },
+    {
+      "slug": "north-woodbridge-veterinary-hospital",
+      "name": "North Woodbridge Veterinary Hospital",
+      "reason": "geocode no result",
+      "query": "10501 Weston Road, Unit 3, Woodbridge, Ontario, L4H 4G8, woodbridge, Ontario, Canada"
+    },
+    {
+      "slug": "vaughan-veterinary-clinic",
+      "name": "Vaughan Veterinary Clinic",
+      "reason": "geocode no result",
+      "query": "2354 Major Mackenzie Drive, Unit 13, Maple, Ontario, L6A 1W2, maple, Ontario, Canada"
+    },
+    {
+      "slug": "maple-veterinary-clinic",
+      "name": "Maple Veterinary Clinic",
+      "reason": "geocode no result",
+      "query": "10040 Keele Street, Unit 1, Maple, Ontario, L6A 1G3, maple, Ontario, Canada"
+    },
+    {
+      "slug": "armitage-animal-clinic",
+      "name": "Armitage Animal Clinic",
+      "reason": "geocode no result",
+      "query": "18025 Yonge Street, Unit 6, Newmarket, Ontario, L3Y 8C9, newmarket, Ontario, Canada"
+    },
+    {
+      "slug": "animal-hospital-of-aurora",
+      "name": "Animal Hospital of Aurora",
+      "reason": "geocode no result",
+      "query": "15483 Yonge Street, Unit 6, Aurora, Ontario, L4G 1P3, aurora, Ontario, Canada"
+    },
+    {
+      "slug": "stouffville-veterinary-clinic",
+      "name": "Stouffville Veterinary Clinic",
+      "reason": "geocode no result",
+      "query": "6601 Main Street, Unit 9, Stouffville, Ontario, L4A 6A9, stouffville, Ontario, Canada"
+    },
+    {
+      "slug": "vista-park-animal-hospital",
+      "name": "Vista Park Animal Hospital",
+      "reason": "geocode no result",
+      "query": "5779 Main Street, Unit 7, Stouffville, Ontario, L4A 4R2, stouffville, Ontario, Canada"
+    },
+    {
+      "slug": "king-animal-hospital",
+      "name": "King Animal Hospital",
+      "reason": "geocode no result",
+      "query": "1265 19th Sideroad, King City, Ontario, L7B 1K5, king city, Ontario, Canada"
+    },
+    {
+      "slug": "bramalea-animal-hospital",
+      "name": "Bramalea Animal Hospital",
+      "reason": "geocode no result",
+      "query": "125 Chrysler Drive, Unit 3, Brampton, Ontario, L6S 6L1, brampton, Ontario, Canada"
+    },
+    {
+      "slug": "mayfield-animal-hospital",
+      "name": "Mayfield Animal Hospital",
+      "reason": "geocode no result",
+      "query": "11665 McVean Drive, Unit 62, Brampton, Ontario, L6P 4N5, brampton, Ontario, Canada"
+    },
+    {
+      "slug": "north-park-veterinary-hospital",
+      "name": "North Park Veterinary Hospital",
+      "reason": "geocode no result",
+      "query": "490 Chrysler Drive, Unit 52, Brampton, Ontario, L6S 0C1, brampton, Ontario, Canada"
+    },
+    {
+      "slug": "emergency-veterinary-clinic-highway-10",
+      "name": "Emergency Veterinary Clinic - Highway 10",
+      "reason": "geocode no result",
+      "query": "1 Wexford Road, Unit 10, Brampton, Ontario, L6Z 2W1, brampton, Ontario, Canada"
+    },
+    {
+      "slug": "albion-hills-veterinary-hospital",
+      "name": "Albion Hills Veterinary Hospital",
+      "reason": "geocode no result",
+      "query": "16630 Regional Road 50, Palgrave, Ontario, L7E 3E7, palgrave, Ontario, Canada"
+    },
+    {
+      "slug": "oakpark-pet-hospital",
+      "name": "Oakpark Pet Hospital",
+      "reason": "geocode no result",
+      "query": "370 Dundas Street East, C1, Oakville, Ontario, L6H 6Z9, oakville, Ontario, Canada"
+    },
+    {
+      "slug": "lakeshore-woods-animal-hospital",
+      "name": "Lakeshore Woods Animal Hospital",
+      "reason": "geocode no result",
+      "query": "3475 Rebecca Street, Unit 104, Oakville, Ontario, L6L 0H3, oakville, Ontario, Canada"
+    },
+    {
+      "slug": "mountainview-animal-hospital",
+      "name": "Mountainview Animal Hospital",
+      "reason": "geocode no result",
+      "query": "333 Mountainview Road South, Unit 12, Georgetown, Ontario, L7G 6E8, georgetown, Ontario, Canada"
+    },
+    {
+      "slug": "broadway-animal-hospital",
+      "name": "Broadway Animal Hospital",
+      "reason": "geocode no result",
+      "query": "328 Broadway, Unit 1, Orangeville, Ontario, L9W 4L7, orangeville, Ontario, Canada"
+    },
+    {
+      "slug": "high-county-veterinary-hospital",
+      "name": "High County Veterinary Hospital",
+      "reason": "geocode no result",
+      "query": "219 First Avenue East, Unit 1, Shelburne, Ontario, L9V 3J9, shelburne, Ontario, Canada"
+    },
+    {
+      "slug": "fergus-veterinary-hospital",
+      "name": "Fergus Veterinary Hospital",
+      "reason": "geocode no result",
+      "query": "100 McQueen Boulevard, Unit 3, Fergus, Ontario, N1M 3T8, fergus, Ontario, Canada"
+    },
+    {
+      "slug": "arthur-veterinary-clinic",
+      "name": "Arthur Veterinary Clinic",
+      "reason": "geocode no result",
+      "query": "15 Wells Street East, Arthur, Ontario, N0G 1A0, arthur, Ontario, Canada"
+    },
+    {
+      "slug": "st-marys-veterinary-clinic",
+      "name": "St. Marys Veterinary Clinic",
+      "reason": "geocode no result",
+      "query": "500 Water Street South, St. Marys, Ontario, N4X 1B4, st marys, Ontario, Canada"
+    },
+    {
+      "slug": "owen-sound-veterinary-clinic",
+      "name": "Owen Sound Veterinary Clinic",
+      "reason": "geocode no result",
+      "query": "102743 Grey Road 18, Owen Sound, Ontario, N4K 5N6, owen sound, Ontario, Canada"
+    },
+    {
+      "slug": "ardiel-animal-hospital",
+      "name": "Ardiel Animal Hospital",
+      "reason": "geocode no result",
+      "query": "206626 Highway 26 RR #4, Meaford, Ontario, N4L 1W7, meaford, Ontario, Canada"
+    },
+    {
+      "slug": "fairview-drive-pet-hospital",
+      "name": "Fairview Drive Pet Hospital",
+      "reason": "geocode no result",
+      "query": "403 Fairview Drive, Unit 7, Brantford, Ontario, N3R 6T2, brantford, Ontario, Canada"
+    },
+    {
+      "slug": "cobblestone-animal-hospital",
+      "name": "Cobblestone Animal Hospital",
+      "reason": "geocode no result",
+      "query": "1084 Rest Acres Road, Unit 1, Paris, Ontario, N3L 0B5, paris, Ontario, Canada"
+    },
+    {
+      "slug": "colborne-veterinary-clinic",
+      "name": "Colborne Veterinary Clinic",
+      "reason": "geocode no result",
+      "query": "2512 Highway 24 North RR4, Simcoe, Ontario, N3Y 4K3, simcoe, Ontario, Canada"
+    },
+    {
+      "slug": "rowan-veterinary-services",
+      "name": "Rowan Veterinary Services",
+      "reason": "geocode no result",
+      "query": "6 Wolven Street, Apt A, Port Rowan, Ontario, N0E 1M0, port rowan, Ontario, Canada"
+    },
+    {
+      "slug": "banner-road-veterinary-services",
+      "name": "Banner Road Veterinary Services",
+      "reason": "geocode no result",
+      "query": "154865 15th Line, Ingersoll, Ontario, N5C 3J6, ingersoll, Ontario, Canada"
+    },
+    {
+      "slug": "ostrander-veterinary-clinic",
+      "name": "Ostrander Veterinary Clinic",
+      "reason": "geocode no result",
+      "query": "332810 Plank Line, Mount Elgin, Ontario, N0J 1N0, mount elgin, Ontario, Canada"
+    },
+    {
+      "slug": "goshen-ridge-veterinary-services",
+      "name": "Goshen Ridge Veterinary Services",
+      "reason": "geocode no result",
+      "query": "946 Goshen Road, Tillsonburg, Ontario, N4G 4G7, tillsonburg, Ontario, Canada"
+    },
+    {
+      "slug": "campbell-road-veterinary-hospital",
+      "name": "Campbell Road Veterinary Hospital",
+      "reason": "geocode no result",
+      "query": "329 William Campbell Road, Smiths Falls, Ontario, smiths falls, Ontario, Canada"
+    },
+    {
+      "slug": "kemptville-animal-hospital",
+      "name": "Kemptville Animal Hospital",
+      "reason": "geocode no result",
+      "query": "4 Industrial Road, Unit 5, Kemptville, Ontario, K0G 1J0, kemptville, Ontario, Canada"
+    },
+    {
+      "slug": "perth-veterinary-clinic",
+      "name": "Perth Veterinary Clinic",
+      "reason": "geocode no result",
+      "query": "118 Christie Lake Road, Perth, Ontario, K7H 3C6, perth, Ontario, Canada"
+    },
+    {
+      "slug": "gillies-grove-animal-hospital",
+      "name": "Gillies Grove Animal Hospital",
+      "reason": "geocode no result",
+      "query": "39 Winner's Circle Drive, Arnprior, Ontario, K7S 3G9, arnprior, Ontario, Canada"
+    },
+    {
+      "slug": "deep-river-animal-services",
+      "name": "Deep River Animal Services",
+      "reason": "geocode no result",
+      "query": "33203 Highway 17 East, Deep River, Ontario, K0J 1P0, deep river, Ontario, Canada"
+    },
+    {
+      "slug": "prescott-animal-hospital",
+      "name": "Prescott Animal Hospital",
+      "reason": "geocode no result",
+      "query": "2725 Edward Street North, Prescott, Ontario, K0E 1T0, prescott, Ontario, Canada"
+    },
+    {
+      "slug": "eagleson-veterinary-clinic",
+      "name": "Eagleson Veterinary Clinic",
+      "reason": "geocode no result",
+      "query": "500 Eagleson Road, Unit 58, Kanata, Ontario, K2M 1H4, kanata, Ontario, Canada"
+    },
+    {
+      "slug": "lonsdale-place-veterinary-clinic",
+      "name": "Lonsdale Place Veterinary Clinic",
+      "reason": "geocode no result",
+      "query": "101-1200 Lonsdale Avenue, North Vancouver, British Columbia, V7M 3H6, north vancouver, British Columbia, Canada"
+    },
+    {
+      "slug": "burnaby-new-westminster-animal-hospital",
+      "name": "Burnaby New Westminster Animal Hospital",
+      "reason": "geocode no result",
+      "query": "7877 Kingsway, Unit C, Burnaby, British Columbia, V3N 3E4, burnaby, British Columbia, Canada"
+    },
+    {
+      "slug": "port-moody-animal-hospital",
+      "name": "Port Moody Animal Hospital",
+      "reason": "geocode no result",
+      "query": "2-2810 St. Johns Street, Port Moody, British Columbia, V3H 2C1, port moody, British Columbia, Canada"
+    },
+    {
+      "slug": "fleetwood-veterinary-clinic",
+      "name": "Fleetwood Veterinary Clinic",
+      "reason": "geocode no result",
+      "query": "106-17670 65A Avenue, Surrey, British Columbia, V3S 5N4, surrey, British Columbia, Canada"
+    },
+    {
+      "slug": "tsawwassen-animal-hospital",
+      "name": "Tsawwassen Animal Hospital",
+      "reason": "geocode no result",
+      "query": "1835 56 Street, Unit 1, Delta, British Columbia, V4L 2B4, delta, British Columbia, Canada"
+    },
+    {
+      "slug": "animal-emergency-clinic-of-the-fraser-valley",
+      "name": "Animal Emergency Clinic of the Fraser Valley",
+      "reason": "geocode no result",
+      "query": "6325 204 Street, Unit 302, Langley, British Columbia, V2Y 3B3, langley, British Columbia, Canada"
+    },
+    {
+      "slug": "comfort-care-animal-hospital",
+      "name": "Comfort + Care Animal Hospital",
+      "reason": "geocode no result",
+      "query": "20381 62 Avenue, Unit 206, Langley, British Columbia, V3A 5E6, langley, British Columbia, Canada"
+    },
+    {
+      "slug": "fort-langley-vet",
+      "name": "Fort Langley Vet",
+      "reason": "geocode no result",
+      "query": "9-9110 Glover Road, Fort Langley, British Columbia, V1M 2R9, fort langley, British Columbia, Canada"
+    },
+    {
+      "slug": "central-victoria-veterinary-hospital",
+      "name": "Central Victoria Veterinary Hospital",
+      "reason": "geocode no result",
+      "query": "760 Roderick Street, Victoria, British Columbia, V8X 2R3, victoria, British Columbia, Canada"
+    },
+    {
+      "slug": "royal-oak-pet-clinic",
+      "name": "Royal Oak Pet Clinic",
+      "reason": "geocode no result",
+      "query": "101-4478 West Saanich Road, Victoria, British Columbia, V8Z 3E9, victoria, British Columbia, Canada"
+    },
+    {
+      "slug": "mckenzie-veterinary-services",
+      "name": "McKenzie Veterinary Services",
+      "reason": "geocode no result",
+      "query": "3888 Carey Road, Victoria, British Columbia, V8Z 4C9, victoria, British Columbia, Canada"
+    },
+    {
+      "slug": "mahalo-veterinary-hospital",
+      "name": "Mahalo Veterinary Hospital",
+      "reason": "geocode no result",
+      "query": "3-5767 Turner Road, Nanaimo, British Columbia, V9T 6L8, nanaimo, British Columbia, Canada"
+    },
+    {
+      "slug": "fantastic-beasts-veterinary-services-nanaimo",
+      "name": "Fantastic Beasts Veterinary Services - Nanaimo",
+      "reason": "geocode no result",
+      "query": "40-1100 Princess Royal Avenue, Nanaimo, British Columbia, nanaimo, British Columbia, Canada"
+    },
+    {
+      "slug": "central-cowichan-animal-hospital",
+      "name": "Central Cowichan Animal Hospital",
+      "reason": "geocode no result",
+      "query": "Unit 10, 5777 Trans Canada Highway, Duncan, British Columbia, V9L 3R8, duncan, British Columbia, Canada"
+    },
+    {
+      "slug": "bellevue-veterinary-hospital",
+      "name": "Bellevue Veterinary Hospital",
+      "reason": "geocode no result",
+      "query": "1016 Bellevue Road, Parksville, British Columbia, V9P 2C2, parksville, British Columbia, Canada"
+    },
+    {
+      "slug": "abbotsford-veterinary-clinic",
+      "name": "Abbotsford Veterinary Clinic",
+      "reason": "geocode no result",
+      "query": "Unit 200, 33648 McDougall Avenue, Abbotsford, British Columbia, V2S 1W2, abbotsford, British Columbia, Canada"
+    },
+    {
+      "slug": "gladys-pet-hospital",
+      "name": "Gladys Pet Hospital",
+      "reason": "geocode no result",
+      "query": "110-2630 Gladys Avenue, Abbotsford, British Columbia, V2S 3X7, abbotsford, British Columbia, Canada"
+    },
+    {
+      "slug": "abby-veterinary-hospital-and-emergency",
+      "name": "Abby Veterinary Hospital and Emergency",
+      "reason": "geocode no result",
+      "query": "Unit C, 2388 McCallum Road, Abbotsford, British Columbia, V2S 3P4, abbotsford, British Columbia, Canada"
+    },
+    {
+      "slug": "allwest-animal-hospital",
+      "name": "Allwest Animal Hospital",
+      "reason": "geocode no result",
+      "query": "108-2526 Yale Court, Abbotsford, British Columbia, V2S 8G9, abbotsford, British Columbia, Canada"
+    },
+    {
+      "slug": "townline-veterinary-hospital",
+      "name": "Townline Veterinary Hospital",
+      "reason": "geocode no result",
+      "query": "Unit 7, 31205 Maclure Road, Abbotsford, British Columbia, V2T 5E5, abbotsford, British Columbia, Canada"
+    },
+    {
+      "slug": "alpha-animal-hospital",
+      "name": "Alpha Animal Hospital",
+      "reason": "geocode no result",
+      "query": "2362 Whatcom Road, Unit 125, Abbotsford, British Columbia, V3G 0C1, abbotsford, British Columbia, Canada"
+    },
+    {
+      "slug": "glenn-mountain-animal-hospital",
+      "name": "Glenn Mountain Animal Hospital",
+      "reason": "geocode no result",
+      "query": "106-2596 McMillan Road, Abbotsford, British Columbia, V3G 1C4, abbotsford, British Columbia, Canada"
+    },
+    {
+      "slug": "sardis-animal-hospital",
+      "name": "Sardis Animal Hospital",
+      "reason": "geocode no result",
+      "query": "1-7236 Vedder Road, Chilliwack, British Columbia, V2R 5K7, chilliwack, British Columbia, Canada"
+    },
+    {
+      "slug": "menzies-pet-hospital",
+      "name": "Menzies Pet Hospital",
+      "reason": "geocode no result",
+      "query": "5A-9701 Menzies Street, Chilliwack, British Columbia, V2P 5Z6, chilliwack, British Columbia, Canada"
+    },
+    {
+      "slug": "cheam-view-veterinary-hospital",
+      "name": "Cheam View Veterinary Hospital",
+      "reason": "geocode no result",
+      "query": "1-8337 Young Road South, Chilliwack, British Columbia, V2P 4N8, chilliwack, British Columbia, Canada"
+    },
+    {
+      "slug": "little-mountain-veterinary-clinic",
+      "name": "Little Mountain Veterinary Clinic",
+      "reason": "geocode no result",
+      "query": "46793 Yale Road East, Chilliwack, British Columbia, V2P 2S5, chilliwack, British Columbia, Canada"
+    },
+    {
+      "slug": "agassiz-animal-hospital",
+      "name": "Agassiz Animal Hospital",
+      "reason": "geocode no result",
+      "query": "1824 No. 9 Highway, Agassiz, British Columbia, V0M 1A0, agassiz, British Columbia, Canada"
+    },
+    {
+      "slug": "maple-ridge-veterinary-hospital",
+      "name": "Maple Ridge Veterinary Hospital",
+      "reason": "geocode no result",
+      "query": "11961 203rd Street, Maple Ridge, British Columbia, V2X 4V2, maple ridge, British Columbia, Canada"
+    },
+    {
+      "slug": "country-meadows-pet-hospital",
+      "name": "Country Meadows Pet Hospital",
+      "reason": "geocode no result",
+      "query": "20691 Lougheed Highway, Unit 16, Maple Ridge, British Columbia, V2X 2P9, maple ridge, British Columbia, Canada"
+    },
+    {
+      "slug": "dewdney-animal-hospital",
+      "name": "Dewdney Animal Hospital",
+      "reason": "geocode no result",
+      "query": "11965 228th Street, Maple Ridge, British Columbia, V2X 6M1, maple ridge, British Columbia, Canada"
+    },
+    {
+      "slug": "albion-animal-hospital",
+      "name": "Albion Animal Hospital",
+      "reason": "geocode no result",
+      "query": "11939 240 Street, Unit 160, Maple Ridge, British Columbia, V4R 1M7, maple ridge, British Columbia, Canada"
+    },
+    {
+      "slug": "westgate-animal-hospital",
+      "name": "Westgate Animal Hospital",
+      "reason": "geocode no result",
+      "query": "20395 Lougheed Highway, Unit 650, Maple Ridge, British Columbia, V2X 2P9, maple ridge, British Columbia, Canada"
+    },
+    {
+      "slug": "eastridge-animal-hospital",
+      "name": "EastRidge Animal Hospital",
+      "reason": "geocode no result",
+      "query": "102-22838 Lougheed Highway, Maple Ridge, British Columbia, V2X 2V6, maple ridge, British Columbia, Canada"
+    },
+    {
+      "slug": "haney-animal-hospital",
+      "name": "Haney Animal Hospital",
+      "reason": "geocode no result",
+      "query": "112-11865 227 Street, Maple Ridge, British Columbia, V2X 6H8, maple ridge, British Columbia, Canada"
+    },
+    {
+      "slug": "pawsitive-veterinary-care",
+      "name": "Pawsitive Veterinary Care",
+      "reason": "geocode no result",
+      "query": "1950 Harvey Avenue, Unit 500, Kelowna, British Columbia, V1Y 8J8, kelowna, British Columbia, Canada"
+    },
+    {
+      "slug": "rose-valley-veterinary-hospital",
+      "name": "Rose Valley Veterinary Hospital",
+      "reason": "geocode no result",
+      "query": "2476 Westlake Road, Suite 112, West Kelowna, British Columbia, V1Z 2V2, west kelowna, British Columbia, Canada"
+    },
+    {
+      "slug": "westbank-animal-care-hospital",
+      "name": "Westbank Animal Care Hospital",
+      "reason": "geocode no result",
+      "query": "303-3550 Carrington Road, West Kelowna, British Columbia, V4T 2Z1, west kelowna, British Columbia, Canada"
+    },
+    {
+      "slug": "tri-lake-animal-hospital-and-referral-centre",
+      "name": "Tri Lake Animal Hospital & Referral Centre",
+      "reason": "geocode no result",
+      "query": "10564 Powley Court, Winfield, British Columbia, V4V 1V5, winfield, British Columbia, Canada"
+    },
+    {
+      "slug": "aberdeen-veterinary-hospital",
+      "name": "Aberdeen Veterinary Hospital",
+      "reason": "geocode no result",
+      "query": "301-1150 Hillside Drive, Kamloops, British Columbia, V2E 2N1, kamloops, British Columbia, Canada"
+    },
+    {
+      "slug": "creekside-animal-clinic",
+      "name": "Creekside Animal Clinic",
+      "reason": "geocode no result",
+      "query": "5001 24th Street, Vernon, British Columbia, V1T 8X7, vernon, British Columbia, Canada"
+    },
+    {
+      "slug": "peach-city-animal-hospital",
+      "name": "Peach City Animal Hospital",
+      "reason": "geocode no result",
+      "query": "102-402 Industrial Avenue East, Penticton, British Columbia, V2A 3J1, penticton, British Columbia, Canada"
+    },
+    {
+      "slug": "shuswap-veterinary-clinic",
+      "name": "Shuswap Veterinary Clinic",
+      "reason": "geocode no result",
+      "query": "1050 4th Avenue SW, Salmon Arm, British Columbia, V1E 4P2, salmon arm, British Columbia, Canada"
+    },
+    {
+      "slug": "uptown-animal-hospital",
+      "name": "Uptown Animal Hospital",
+      "reason": "geocode no result",
+      "query": "51-2801 10th Avenue NE, Salmon Arm, British Columbia, V1E 2S3, salmon arm, British Columbia, Canada"
+    },
+    {
+      "slug": "animal-care-hospital-of-quesnel",
+      "name": "Animal Care Hospital of Quesnel",
+      "reason": "geocode no result",
+      "query": "1431 Jade Street, Quesnel, British Columbia, V2J 4L2, quesnel, British Columbia, Canada"
+    },
+    {
+      "slug": "terrace-animal-hospital",
+      "name": "Terrace Animal Hospital",
+      "reason": "geocode no result",
+      "query": "4620 Keith Avenue, Unit 101, Terrace, British Columbia, V8G 4K1, terrace, British Columbia, Canada"
+    },
+    {
+      "slug": "north-peace-veterinary-clinic",
+      "name": "North Peace Veterinary Clinic",
+      "reason": "geocode no result",
+      "query": "12864 Rose Prairie Road, Fort St. John, British Columbia, V1J 8C4, fort st john, British Columbia, Canada"
+    },
+    {
+      "slug": "invermere-veterinary-hospital",
+      "name": "Invermere Veterinary Hospital",
+      "reason": "geocode no result",
+      "query": "4854 Athalmer Road, Invermere, British Columbia, V0A 1K3, invermere, British Columbia, Canada"
+    },
+    {
+      "slug": "kettle-river-veterinary-services",
+      "name": "Kettle River Veterinary Services",
+      "reason": "geocode no result",
+      "query": "5-7480 4th Street, Grand Forks, British Columbia, V0H 1H0, grand forks, British Columbia, Canada"
+    },
+    {
+      "slug": "nakusp-veterinary-clinic",
+      "name": "Nakusp Veterinary Clinic",
+      "reason": "geocode no result",
+      "query": "350 Alexander Road, Nakusp, British Columbia, V0G 1R1, nakusp, British Columbia, Canada"
+    }
+  ]
+}

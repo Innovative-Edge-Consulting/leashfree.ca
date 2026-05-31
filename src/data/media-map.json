@@ -4,7 +4,31 @@
     "actualMediaSourceFolder":  "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/CMS Media",
     "publicImagesFolder":  "site/public/images/",
     "items":  [
-                  {
+                  
+{
+          "collection": "Blog Posts",
+          "itemName": "Introducing the Dog Food Comparison Tool Canada",
+          "itemSlug": "dog-food-comparison-tool-canada",
+          "fieldName": "Hero Image",
+          "originalWebflowUrl": "",
+          "localFilename": "dog-food-comparison-canada-hero-1600.jpg",
+          "currentLocalPath": "public/images/resources/dog-food-comparison-canada-hero-1600.jpg",
+          "originalSourcePath": "public/images/resources/dog-food-comparison-canada-hero-1600.jpg",
+          "cleanedFilename": "dog-food-comparison-canada-hero-1600.jpg",
+          "suggestedFilename": "dog-food-comparison-canada-hero-1600.jpg",
+          "suggestedPublicPath": "/images/resources/dog-food-comparison-canada-hero-1600.jpg",
+          "publicPath": "/images/resources/dog-food-comparison-canada-hero-1600.jpg",
+          "publicPathReady": true,
+          "priority": "High",
+          "status": "published",
+          "matchStatus": "published",
+          "confidence": "high",
+          "matchConfidence": "high",
+          "needsOwnerReview": false,
+          "notes": [
+                    "Manual mapping added for dog food comparison tool launch post."
+          ]
+},{
                       "collection":  "Blog Posts",
                       "itemName":  "How Many Calories Should My Dog Eat Per Day?",
                       "itemSlug":  "how-many-calories-should-my-dog-eat-per-day",

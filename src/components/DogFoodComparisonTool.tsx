@@ -134,6 +134,7 @@ export default function DogFoodComparisonTool({ products }: Props) {
     const selectedIndex = selectedIds.indexOf(id);
     return selectedIndex >= 0 ? `compare-color-${selectedIndex}` : "";
   };
+  const highlightColorClass = (productIds: string[]) => selectedColorClass(productIds[0] || "");
   const comparisonCellClass = (product: ComparableDogFoodProduct) =>
     [selectedColorClass(product.id), highlightedProductIds.has(product.id) ? "is-highlighted" : ""].filter(Boolean).join(" ");
 
@@ -325,7 +326,7 @@ export default function DogFoodComparisonTool({ products }: Props) {
           {summaryHighlights.length ? (
             <ul className="highlight-list">
               {summaryHighlights.map((highlight) => (
-                <li key={highlight.id} className={`highlight-item ${highlight.type}`}>
+                <li key={highlight.id} className={`highlight-item ${highlight.type} ${highlightColorClass(highlight.productIds)}`}>
                   <strong>{highlight.label}</strong>
                   <span>{highlight.detail}</span>
                 </li>
@@ -342,6 +343,7 @@ export default function DogFoodComparisonTool({ products }: Props) {
               </ul>
             </div>
           )}
+          <p className="table-scroll-note">Scroll sideways to view all selected foods.</p>
           <div className="compare-table-wrap">
             <table className="compare-table">
               <thead>
@@ -572,7 +574,7 @@ export default function DogFoodComparisonTool({ products }: Props) {
         .compare-heading p, .empty-note { margin: 0; color: var(--color-muted); }
         .highlight-list {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+          grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
           gap: var(--space-3);
           margin: 0;
           padding: var(--space-4);
@@ -581,11 +583,13 @@ export default function DogFoodComparisonTool({ products }: Props) {
         .highlight-item {
           display: grid;
           gap: 0.25rem;
-          border: 1px solid rgba(73, 127, 100, 0.24);
+          border: 1px solid var(--compare-border, rgba(73, 127, 100, 0.24));
           border-radius: var(--radius-sm);
-          background: var(--color-primary-soft);
+          background: var(--compare-bg, var(--color-primary-soft));
+          box-shadow: inset 0 4px 0 var(--compare-accent, var(--color-primary));
           padding: var(--space-3);
         }
+        .highlight-item strong { color: var(--compare-accent, var(--color-primary-dark)); }
         .highlight-item span, .warning-box li { color: var(--color-muted); font-size: 0.92rem; line-height: 1.45; }
         .empty-note { padding: var(--space-4); }
         .warning-box {
@@ -595,6 +599,15 @@ export default function DogFoodComparisonTool({ products }: Props) {
           padding: var(--space-4);
         }
         .warning-box ul { margin: 0.5rem 0 0; }
+        .table-scroll-note {
+          display: none;
+          margin: 0;
+          border-top: 1px solid var(--color-border);
+          color: var(--color-muted);
+          font-size: 0.84rem;
+          font-weight: 800;
+          padding: 0.75rem var(--space-4) 0;
+        }
         .compare-table-wrap { overflow-x: auto; border-top: 1px solid var(--color-border); }
         .compare-table { width: 100%; min-width: 920px; border-collapse: collapse; }
         .compare-table th, .compare-table td {
@@ -604,6 +617,15 @@ export default function DogFoodComparisonTool({ products }: Props) {
           vertical-align: top;
         }
         .compare-table th { color: var(--color-primary-dark); }
+        .compare-table th:first-child {
+          position: sticky;
+          left: 0;
+          z-index: 2;
+          min-width: 145px;
+          background: var(--color-surface);
+          box-shadow: 1px 0 0 var(--color-border);
+        }
+        .compare-table thead th:first-child { z-index: 3; }
         .compare-table th span { color: var(--color-muted); font-size: 0.82rem; font-weight: 700; }
         .compare-table .is-highlighted:not([class*="compare-color-"]) { background: rgba(230, 241, 234, 0.58); }
         .compare-table th[class*="compare-color-"], .compare-table td[class*="compare-color-"] {
@@ -639,7 +661,7 @@ export default function DogFoodComparisonTool({ products }: Props) {
         }
         .dog-food-results {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+          grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
           gap: var(--space-3);
           align-items: stretch;
         }
@@ -769,10 +791,14 @@ export default function DogFoodComparisonTool({ products }: Props) {
         }
         @media (max-width: 680px) {
           .dog-food-controls { grid-template-columns: 1fr; }
+          .field, .field input, .field select { min-width: 0; }
           .tool-guidance, .dog-food-summary, .selected-strip {
             align-items: stretch;
             flex-direction: column;
           }
+          .table-scroll-note { display: block; }
+          .compare-table { min-width: 760px; }
+          .compare-table th, .compare-table td { padding: 0.65rem; }
           .selected-foods { flex-basis: auto; }
           .selected-foods li { max-width: 100%; width: 100%; justify-content: space-between; }
           .dog-food-card-heading { grid-template-columns: 1fr; }

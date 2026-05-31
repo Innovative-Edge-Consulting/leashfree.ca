@@ -1,0 +1,193 @@
+---
+import Layout from "../components/Layout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import Section from "../components/Section.astro";
+import { breadcrumbSchema } from "../utils/content.js";
+
+const breadcrumbs = [
+  { label: "Home", href: "/" },
+  { label: "Terms of Use", href: "/terms-of-use/" }
+];
+---
+
+<Layout
+  title="Terms of Use | LeashFree.ca"
+  description="Review the Terms of Use for LeashFree.ca, including permitted use, content accuracy, tool limitations, advertising, affiliate links, and legal disclaimers."
+  canonical="https://leashfree.ca/terms-of-use/"
+  structuredData={breadcrumbSchema(breadcrumbs)}
+>
+  <section class="page-header">
+    <div class="container narrow">
+      <Breadcrumbs items={breadcrumbs} />
+      <div class="eyebrow">Legal</div>
+      <h1>Terms of Use</h1>
+      <p class="summary">
+        The terms that apply when you use LeashFree.ca, including our guides, directories, maps, calculators, and comparison tools.
+      </p>
+    </div>
+  </section>
+
+  <Section>
+    <div class="legal-content">
+      <p>
+        <strong>Last updated:</strong> May 31, 2026<br />
+        Welcome to <strong>LeashFree.ca</strong>. By accessing or using this website, you agree to these Terms of Use
+        and our <a href="/privacy-policy/">Privacy Policy</a>. If you do not agree, please do not use the site.
+      </p>
+
+      <h2>1. What LeashFree.ca Provides</h2>
+      <p>
+        LeashFree.ca provides informational resources for Canadian dog owners, including dog park guides, dog breed
+        profiles, local pet business directories, maps, articles, calculators, comparison tools, finder tools, sponsored
+        content, and links to external resources. The site is provided for general informational and educational
+        purposes only.
+      </p>
+
+      <h2>2. No Professional Advice</h2>
+      <p>
+        Content on LeashFree.ca is not veterinary, medical, nutritional, legal, financial, insurance, training, or other
+        professional advice. Dog food comparisons, calorie estimates, breed information, gear suggestions, insurance
+        content, park guidance, and other tools are intended to help you compare information, not to diagnose, treat,
+        prescribe, guarantee suitability, or replace advice from a qualified professional.
+      </p>
+      <p>
+        Always consult a veterinarian or other appropriate professional before making decisions involving your dog's
+        health, diet, medication, safety, behaviour, training, or medical needs.
+      </p>
+
+      <h2>3. Accuracy and Freshness of Information</h2>
+      <p>
+        We work to keep information useful and current, but <strong>LeashFree.ca does not guarantee</strong> that any
+        listing, article, map point, price, nutrition value, ingredient list, park feature, fencing status, leash rule,
+        business detail, source link, rating, or availability is complete, accurate, current, or error-free.
+      </p>
+      <p>
+        Park rules, hours, fencing, closures, leash requirements, seasonal restrictions, business details, product
+        labels, prices, package sizes, and service availability can change without notice. Verify important information
+        with municipalities, official sources, product labels, retailers, service providers, or qualified professionals
+        before relying on it.
+      </p>
+
+      <h2>4. Maps, Directions, and Location Features</h2>
+      <p>
+        Maps, pins, distances, and directions are approximate and may rely on third-party map services, coordinates,
+        public data, or source material that can contain errors. You are responsible for confirming routes, access,
+        parking, safety, leash rules, and local conditions before visiting any location.
+      </p>
+
+      <h2>5. Dog Food, Calculator, and Comparison Tools</h2>
+      <p>
+        Calculator and comparison results are estimates based on available inputs, formulas, public labels, source data,
+        and assumptions. Dog food information may include minimum or maximum guaranteed-analysis values, estimates,
+        missing fields, stale prices, or source-dependent data. Results should not be treated as a recommendation that a
+        product, calorie target, diet, service, or action is appropriate for your dog.
+      </p>
+
+      <h2>6. Sponsored Content, Ads, Affiliate Links, and Commercial Relationships</h2>
+      <p>
+        LeashFree.ca may display ads, sponsored placements, affiliate links, referral links, product links, retailer
+        links, or other commercial content. We may receive compensation when users view ads, click links, buy products,
+        or interact with sponsor or affiliate partners.
+      </p>
+      <p>
+        Sponsored or affiliate relationships do not guarantee that a product, service, business, park, food, or provider
+        is suitable for you or your dog. You are responsible for evaluating third-party products and services before
+        using or purchasing them.
+      </p>
+
+      <h2>7. Third-Party Links and Services</h2>
+      <p>
+        The site may link to or embed third-party websites, maps, municipal pages, retailers, brands, pet businesses,
+        rescue groups, veterinarians, advertisers, or service providers. We do not control and are not responsible for
+        third-party content, policies, prices, availability, accuracy, security, or practices.
+      </p>
+
+      <h2>8. User Submissions and Feedback</h2>
+      <p>
+        If you suggest a park, submit a correction, send feedback, provide listing details, or otherwise submit content,
+        you confirm that you have the right to provide it. You grant LeashFree.ca a non-exclusive, worldwide,
+        royalty-free license to use, edit, publish, display, reproduce, and adapt that submission for site operation,
+        content improvement, and related purposes. We may review, edit, reject, or remove submissions at our discretion.
+      </p>
+
+      <h2>9. Acceptable Use</h2>
+      <p>You agree not to:</p>
+      <ul>
+        <li>Use the site for unlawful, harmful, misleading, abusive, or fraudulent purposes</li>
+        <li>Copy, republish, or redistribute site content at scale without permission</li>
+        <li>Scrape, harvest, mine, or bulk-download listings, maps, datasets, images, or content</li>
+        <li>Interfere with site functionality, security, servers, analytics, ads, or third-party services</li>
+        <li>Submit false, infringing, confidential, defamatory, or otherwise inappropriate content</li>
+        <li>Use automated systems in a way that burdens or disrupts the site</li>
+      </ul>
+
+      <h2>10. Intellectual Property</h2>
+      <p>
+        The LeashFree.ca name, logo, design, text, tools, datasets, page structure, original content, and branding are
+        owned by LeashFree.ca or its licensors and are protected by copyright, trademark, and other laws. Third-party
+        names, logos, brands, photos, map data, and linked content remain the property of their respective owners.
+      </p>
+
+      <h2>11. Availability and Changes</h2>
+      <p>
+        We may update, remove, redirect, limit, suspend, or discontinue any page, feature, listing, tool, dataset, or
+        service at any time without notice. We may also update these Terms of Use by posting a revised version on this
+        page. Continued use of the site after changes are posted means you accept the updated terms.
+      </p>
+
+      <h2>12. Disclaimer of Warranties</h2>
+      <p>
+        LeashFree.ca is provided on an "as is" and "as available" basis. To the fullest extent permitted by law, we
+        disclaim all warranties, express or implied, including warranties of accuracy, reliability, availability,
+        fitness for a particular purpose, non-infringement, and merchantability.
+      </p>
+
+      <h2>13. Limitation of Liability</h2>
+      <p>
+        To the fullest extent permitted by law, LeashFree.ca, its owners, operators, contributors, affiliates, sponsors,
+        and service providers will not be liable for any direct, indirect, incidental, consequential, special, punitive,
+        or other damages arising from your use of the site, reliance on site content, visits to listed locations, use of
+        products or services, third-party links, data errors, site interruptions, or tool results.
+      </p>
+
+      <h2>14. Indemnity</h2>
+      <p>
+        You agree to defend, indemnify, and hold harmless LeashFree.ca, its owners, operators, contributors, affiliates,
+        sponsors, and service providers from claims, losses, liabilities, damages, costs, or expenses arising from your
+        use of the site, your submissions, your violation of these terms, or your violation of any law or third-party
+        right.
+      </p>
+
+      <h2>15. Governing Law</h2>
+      <p>
+        These Terms are governed by the laws of the Province of Ontario and the applicable federal laws of Canada,
+        without regard to conflict-of-law rules.
+      </p>
+
+      <h2>16. Contact Us</h2>
+      <p>
+        For questions about these Terms of Use, please contact us through the contact options available on LeashFree.ca.
+      </p>
+    </div>
+  </Section>
+</Layout>
+
+<style>
+  .legal-content {
+    max-width: 78ch;
+  }
+
+  .legal-content h2 {
+    margin-top: var(--space-6);
+  }
+
+  .legal-content p,
+  .legal-content li {
+    color: var(--color-muted);
+    line-height: 1.75;
+  }
+
+  .legal-content strong {
+    color: var(--color-text);
+  }
+</style>

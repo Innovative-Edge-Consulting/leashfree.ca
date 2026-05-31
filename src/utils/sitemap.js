@@ -87,7 +87,9 @@ export const sitemapSections = [
       entry(absoluteUrl("/resources/dog-calorie-calculator/")),
       entry(absoluteUrl("/resources/dog-gear-finder/")),
       entry(absoluteUrl("/blog/"), sectionLastmod(blogEntries)),
-      entry(absoluteUrl("/directory/"), sectionLastmod(directoryEntries))
+      entry(absoluteUrl("/directory/"), sectionLastmod(directoryEntries)),
+      entry(absoluteUrl("/privacy-policy/")),
+      entry(absoluteUrl("/terms-of-use/"))
     ])
   },
   {

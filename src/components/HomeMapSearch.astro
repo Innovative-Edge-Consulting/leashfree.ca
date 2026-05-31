@@ -204,14 +204,14 @@ const json = JSON.stringify({ items: mapItems, provinces, cities, categories }).
 </div>
 
 <script type="application/json" id="homepage-map-data" set:html={json}></script>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script is:inline>
+<script>
+  import * as L from "leaflet";
+
   (() => {
-    const L = window.L;
     const root = document.querySelector("[data-map-search]");
     const mapNode = document.getElementById("homepage-map");
     const dataNode = document.getElementById("homepage-map-data");
-    if (!L || !root || !mapNode || !dataNode) return;
+    if (!root || !mapNode || !dataNode) return;
 
     const data = JSON.parse(dataNode.textContent);
     const controls = {
