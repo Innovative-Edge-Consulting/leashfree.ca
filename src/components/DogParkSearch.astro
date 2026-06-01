@@ -277,7 +277,7 @@ const json = JSON.stringify({ items: parkItems, provinces, cities }).replace(/</
     function markerIcon() {
       return L.divIcon({
         className: "map-pin park-pin",
-        html: "P",
+        html: "<span>P</span>",
         iconSize: [34, 34],
         iconAnchor: [17, 17],
         popupAnchor: [0, -17]

@@ -1,0 +1,502 @@
+---
+import Breadcrumbs from "../../../components/Breadcrumbs.astro";
+import Card from "../../../components/Card.astro";
+import Hero from "../../../components/Hero.astro";
+import HomeBreedSearch from "../../../components/HomeBreedSearch.astro";
+import Layout from "../../../components/Layout.astro";
+import Section from "../../../components/Section.astro";
+import mediaMap from "../../../data/media-map.json";
+import groups from "../../../data/generated/breed-groups.json";
+import { breadcrumbSchema, excerpt } from "../../../utils/content.js";
+import { resolveMedia } from "../../../utils/media.js";
+
+const breadcrumbs = [
+  { label: "Home", href: "/" },
+  { label: "Dog Breeds", href: "/dog-breeds/" },
+  { label: "Breed Groups" }
+];
+const editorialMeta = {
+  updatedLabel: "June 1, 2026",
+  editor: "LeashFree.ca Editorial Team"
+};
+
+const groupComparison = [
+  { name: "Sporting", energy: "High", trainability: "High", grooming: "Moderate", apartment: "Lower", climate: "Good in cool weather" },
+  { name: "Herding", energy: "High", trainability: "High", grooming: "Moderate", apartment: "Lower", climate: "Good with structured activity" },
+  { name: "Working", energy: "Medium-High", trainability: "Medium-High", grooming: "Moderate-High", apartment: "Lower", climate: "Often cold-tolerant" },
+  { name: "Hound", energy: "Medium", trainability: "Medium", grooming: "Low-Moderate", apartment: "Medium", climate: "Varies by coat type" },
+  { name: "Terrier", energy: "High", trainability: "Medium", grooming: "Moderate", apartment: "Medium", climate: "Needs winter layering for short coats" },
+  { name: "Non-Sporting", energy: "Low-Medium", trainability: "Medium", grooming: "Moderate-High", apartment: "Medium-High", climate: "Varies widely by breed" },
+  { name: "Toy", energy: "Low-Medium", trainability: "Medium", grooming: "Moderate", apartment: "High", climate: "Needs cold-weather protection" },
+  { name: "Miscellaneous", energy: "Medium", trainability: "Medium", grooming: "Medium", apartment: "Varies", climate: "Varies by developing breed type" },
+  { name: "Hybrid & Designer Mixes", energy: "Medium", trainability: "Medium", grooming: "Moderate-High", apartment: "Varies", climate: "Depends on parent breeds" }
+];
+
+const topBreedsByGroup = [
+  {
+    group: "Sporting Dogs",
+    groupHref: "/dog-breeds/group/sporting-dogs/",
+    breeds: [
+      { name: "Labrador Retriever", href: "/dog-breeds/labrador-retriever/", summary: "Highly social and biddable, with consistent trainability for active families who can commit to daily physical and mental exercise." },
+      { name: "Golden Retriever", href: "/dog-breeds/golden-retriever/", summary: "Reliable family temperament with strong people focus; does best in homes that can handle regular brushing and structured activity." }
+    ]
+  },
+  {
+    group: "Herding Dogs",
+    groupHref: "/dog-breeds/group/herding-dogs/",
+    breeds: [
+      { name: "Border Collie", href: "/dog-breeds/border-collie/", summary: "Elite working drive and problem-solving ability that suits experienced owners with time for training games and advanced enrichment." },
+      { name: "Australian Shepherd", href: "/dog-breeds/australian-shepherd/", summary: "Versatile, athletic, and handler-oriented, but typically needs clear routines and frequent outlets for intensity." }
+    ]
+  },
+  {
+    group: "Hound Dogs",
+    groupHref: "/dog-breeds/group/hound-dogs/",
+    breeds: [
+      { name: "Beagle", href: "/dog-breeds/beagle/", summary: "Friendly and food-motivated with a strong nose, making scent-based enrichment and recall practice especially important." },
+      { name: "Dachshund", href: "/dog-breeds/dachshund/", summary: "Compact but bold, with independent streaks and specific management needs around back health and controlled exercise." }
+    ]
+  },
+  {
+    group: "Terrier Dogs",
+    groupHref: "/dog-breeds/group/terrier-dogs/",
+    breeds: [
+      { name: "Boston Terrier", href: "/dog-breeds/boston-terrier/", summary: "Urban-friendly and people-focused, with moderate exercise needs and generally easier apartment adaptation." },
+      { name: "West Highland White Terrier", href: "/dog-breeds/west-highland-white-terrier/", summary: "Confident small terrier temperament with steady play drive and grooming needs that owners should budget for upfront." }
+    ]
+  },
+  {
+    group: "Toy Dogs",
+    groupHref: "/dog-breeds/group/toy-dogs/",
+    breeds: [
+      { name: "Cavalier King Charles Spaniel", href: "/dog-breeds/cavalier-king-charles-spaniel/", summary: "Companion-first profile with adaptable exercise demands, ideal for households prioritizing close daily interaction." },
+      { name: "Pomeranian", href: "/dog-breeds/pomeranian/", summary: "Alert and expressive in a small package, with grooming commitment and training consistency needed to maintain good manners." }
+    ]
+  },
+  {
+    group: "Working Dogs",
+    groupHref: "/dog-breeds/group/working-dogs/",
+    breeds: [
+      { name: "Bernese Mountain Dog", href: "/dog-breeds/bernese-mountain-dog/", summary: "Calm family presence with substantial size and coat-management demands, best for homes prepared for large-breed logistics." },
+      { name: "Boxer", href: "/dog-breeds/boxer/", summary: "Playful and powerful with strong owner engagement needs, thriving with structured exercise and consistent boundaries." }
+    ]
+  },
+  {
+    group: "Non-Sporting Dogs",
+    groupHref: "/dog-breeds/group/non-sporting-dogs/",
+    breeds: [
+      { name: "French Bulldog", href: "/dog-breeds/french-bulldog/", summary: "Low-endurance companion profile that can suit city living, but requires heat management and thoughtful health planning." },
+      { name: "Bichon Frise", href: "/dog-breeds/bichon-frise/", summary: "Friendly and adaptable with strong household fit for many routines, provided owners keep up professional-style grooming cadence." }
+    ]
+  },
+  {
+    group: "Hybrid & Designer Mixes",
+    groupHref: "/dog-breeds/group/hybrid-designer-mixes/",
+    breeds: [
+      { name: "Goldendoodle", href: "/dog-breeds/goldendoodle/", summary: "Often social and trainable, but coat type and energy can vary widely, so matching line characteristics is essential." },
+      { name: "Bernedoodle", href: "/dog-breeds/bernedoodle/", summary: "Typically family-oriented with moderate-to-high grooming needs; temperament and maintenance depend heavily on parental lines." }
+    ]
+  },
+  {
+    group: "Miscellaneous",
+    groupHref: "/dog-breeds/group/miscellaneous/",
+    breeds: [
+      { name: "Alaskan Klee Kai", href: "/dog-breeds/alaskan-klee-kai/", summary: "Small northern-type profile with alert temperament and sensitivity, often better for experienced handlers." },
+      { name: "Appenzeller Sennenhund", href: "/dog-breeds/appenzeller-sennenhund/", summary: "Driven and intelligent developing-breed profile that rewards active households with strong training consistency." }
+    ]
+  }
+];
+
+const internalLinkModules = [
+  {
+    title: "Best for apartments",
+    links: [
+      { label: "Toy group overview", href: "/dog-breeds/group/toy-dogs/" },
+      { label: "Non-Sporting group overview", href: "/dog-breeds/group/non-sporting-dogs/" },
+      { label: "French Bulldog profile", href: "/dog-breeds/french-bulldog/" },
+      { label: "Cavalier King Charles Spaniel profile", href: "/dog-breeds/cavalier-king-charles-spaniel/" },
+      { label: "Apartment-friendly blog list", href: "/blog/best-dogs-for-apartment-living-in-canada/" }
+    ]
+  },
+  {
+    title: "Best for families",
+    links: [
+      { label: "Sporting group overview", href: "/dog-breeds/group/sporting-dogs/" },
+      { label: "Working group overview", href: "/dog-breeds/group/working-dogs/" },
+      { label: "Labrador Retriever profile", href: "/dog-breeds/labrador-retriever/" },
+      { label: "Golden Retriever profile", href: "/dog-breeds/golden-retriever/" },
+      { label: "Family-dog blog list", href: "/blog/best-family-dogs-in-canada/" }
+    ]
+  },
+  {
+    title: "Low-shedding by group",
+    links: [
+      { label: "Terrier group overview", href: "/dog-breeds/group/terrier-dogs/" },
+      { label: "Hybrid & Designer Mixes group", href: "/dog-breeds/group/hybrid-designer-mixes/" },
+      { label: "Bichon Frise profile", href: "/dog-breeds/bichon-frise/" },
+      { label: "Poodle profile", href: "/dog-breeds/poodle/" },
+      { label: "Low-shedding blog list", href: "/blog/low-shedding-dog-breeds-for-allergy-sufferers/" }
+    ]
+  }
+];
+
+const faqItems = [
+  {
+    question: "What is a dog breed group?",
+    answer:
+      "A breed group is a category of dogs that share similar working history, temperament patterns, and care demands. It helps you shortlist options before comparing individual breeds."
+  },
+  {
+    question: "Is choosing by group better than choosing by breed?",
+    answer:
+      "Use group first, breed second. Group-level filtering helps you avoid mismatches in energy and lifestyle, then breed pages help you compare grooming, health concerns, and training specifics."
+  },
+  {
+    question: "Which breed groups are easiest for first-time dog owners in Canada?",
+    answer:
+      "There is no single best group, but many first-time owners start with lower-to-moderate energy breeds in Non-Sporting or Toy categories, then validate fit against daily schedule, budget, and winter exercise plans."
+  },
+  {
+    question: "Can apartment owners still consider high-energy groups?",
+    answer:
+      "Yes, but only with a clear exercise plan. For Herding, Sporting, and many Terrier breeds, apartment success usually depends on structured daily activity, enrichment, and consistent training."
+  }
+];
+
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Dog Breed Groups",
+    description: "Breed-group hub for comparing temperament patterns, care load, and lifestyle fit for Canadian dog owners.",
+    url: "https://leashfree.ca/dog-breeds/group/"
+  },
+  breadcrumbSchema(breadcrumbs),
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: groups.map((group, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: group.name,
+      url: `https://leashfree.ca/dog-breeds/group/${group.slug}/`
+    }))
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer
+      }
+    }))
+  }
+];
+---
+
+<Layout
+  title="Dog Breed Groups"
+  description="Browse dog breed groups on LeashFree.ca to compare shared temperament, care needs, and activity levels."
+  canonical="https://leashfree.ca/dog-breeds/group/"
+  structuredData={structuredData}
+>
+  <Hero
+    eyebrow="Dog breeds"
+    title="Breed groups"
+    summary="Explore dog breeds by group to quickly compare similar temperaments, training styles, and care needs."
+    primaryHref="#all-groups"
+    primaryLabel="Browse groups"
+    secondaryHref="#breed-search"
+    secondaryLabel="Search breeds"
+    image="/images/general/blog-category-dog-breeds-card.avif"
+    imageAlt="Dog breed profiles"
+  >
+    <Fragment slot="pretitle">
+      <Breadcrumbs items={breadcrumbs} />
+      <p class="small editorial-note">
+        Last updated: {editorialMeta.updatedLabel} | Reviewed by: {editorialMeta.editor}
+      </p>
+    </Fragment>
+  </Hero>
+
+  <Section title="How to use breed groups" intro="Use groups to narrow your shortlist, then compare individual breed profiles.">
+    <div class="card">
+      <div class="card-body">
+        <p>
+          Breed groups are the best first filter when you are choosing a dog in Canada because they reduce a very large decision into a practical shortlist. Instead of jumping between hundreds of individual profiles,
+          you can start by matching your household constraints to predictable behavioural patterns. Sporting and herding dogs, for example, usually have higher daily movement and training needs than many toy or non-sporting
+          dogs. Hounds often bring scent-drive or independent decision-making. Working breeds can be calmer indoors than people expect, but their size and strength still require planning. These patterns are not absolute,
+          but they are useful enough that group-first planning avoids many mismatches.
+        </p>
+        <p>
+          Canadian conditions add another layer that group browsing helps surface early. Winter duration, sidewalk salt, indoor time, and shorter daylight windows all change how realistic your routine is from November
+          through March. A high-output dog can do well in winter climates when owners maintain structured exercise, indoor enrichment, and weather management. A smaller companion breed can be a better fit for dense urban
+          schedules, but still needs daily training reps, social exposure, and grooming maintenance. Climate fit is less about a single temperature threshold and more about whether your weekly routine is sustainable year-round.
+        </p>
+        <p>
+          The most effective process is to use groups as a funnel, then move to breeds. Start by removing categories that conflict with your non-negotiables: noise tolerance, schedule flexibility, grooming budget,
+          and home size. Then compare two or three groups that still fit. After that, review individual breed pages for health considerations, coat workload, trainability, and social tendencies. If two breeds look close,
+          lean on routine realism: who handles weekday mornings, who handles winter walks, and how much budget you can dedicate to grooming or training support.
+        </p>
+        <p>
+          This hub is built for that workflow. The comparison table gives directional scoring so you can move quickly. Group pages show similar options in one place. The breed search tool below lets you pressure-test your
+          shortlist using activity, apartment fit, and hypoallergenic filters. Finally, the internal modules and top-breed snapshots help you jump directly into high-intent research paths without restarting from scratch.
+          If you use the page in that order, you are far less likely to choose a breed based only on appearance or trend momentum.
+        </p>
+        <p>
+          One final note: no group label guarantees personality. Ethical breeding, early socialization, training consistency, and each dog’s individual temperament still matter. Treat group guidance as a planning framework,
+          not a promise. The goal is not to predict every behaviour perfectly; the goal is to make a better first decision, faster, and then validate it with deeper breed-level research.
+        </p>
+      </div>
+    </div>
+  </Section>
+
+  <Section title="Group comparison snapshot" intro="Editorial benchmark for lifestyle fit across major breed groups.">
+    <p>
+      Scoring method: each group is scored on a 1-5 directional scale where <strong>1</strong> is lowest demand/fit and <strong>5</strong> is highest demand/fit for that category. We combine historical purpose,
+      common modern companion patterns, and care burden signals from our breed dataset. Scores are editorial, not clinical, and should be validated against individual breed profiles.
+    </p>
+    <figure class="group-visual">
+      <svg viewBox="0 0 640 220" role="img" aria-labelledby="group-visual-title group-visual-desc" xmlns="http://www.w3.org/2000/svg">
+        <title id="group-visual-title">Breed group comparison wheel</title>
+        <desc id="group-visual-desc">A five-axis wheel showing comparison categories: energy, trainability, grooming load, apartment fit, and climate tolerance for breed group shortlisting.</desc>
+        <rect width="640" height="220" fill="#f8fbf9" />
+        <circle cx="110" cy="110" r="72" fill="#e3f0e9" />
+        <circle cx="110" cy="110" r="52" fill="#cbe2d4" />
+        <circle cx="110" cy="110" r="33" fill="#a6ceb7" />
+        <text x="82" y="24" font-size="11" fill="#294c3e">Energy</text>
+        <text x="166" y="74" font-size="11" fill="#294c3e">Trainability</text>
+        <text x="149" y="164" font-size="11" fill="#294c3e">Climate</text>
+        <text x="40" y="192" font-size="11" fill="#294c3e">Apartment</text>
+        <text x="8" y="74" font-size="11" fill="#294c3e">Grooming</text>
+        <line x1="110" y1="110" x2="110" y2="38" stroke="#315f49" />
+        <line x1="110" y1="110" x2="172" y2="74" stroke="#315f49" />
+        <line x1="110" y1="110" x2="156" y2="166" stroke="#315f49" />
+        <line x1="110" y1="110" x2="64" y2="166" stroke="#315f49" />
+        <line x1="110" y1="110" x2="48" y2="74" stroke="#315f49" />
+        <text x="230" y="58" font-size="14" fill="#294c3e">How to read it</text>
+        <text x="230" y="82" font-size="12" fill="#294c3e">Outer rings indicate higher demand or stronger fit.</text>
+        <text x="230" y="102" font-size="12" fill="#294c3e">Use with the table below to compare groups quickly.</text>
+        <text x="230" y="122" font-size="12" fill="#294c3e">Validate assumptions on each breed profile.</text>
+      </svg>
+      <figcaption class="small">Breed-group comparison wheel used for quick category-level screening before breed-level validation.</figcaption>
+    </figure>
+    <div class="table-wrap">
+      <table class="group-comparison">
+        <thead>
+          <tr>
+            <th>Group</th>
+            <th>Typical Energy</th>
+            <th>Trainability</th>
+            <th>Grooming Load</th>
+            <th>Apartment Fit</th>
+            <th>Canadian Climate Fit</th>
+          </tr>
+        </thead>
+        <tbody>
+          {groupComparison.map((row) => (
+            <tr>
+              <td>{row.name}</td>
+              <td>{row.energy}</td>
+              <td>{row.trainability}</td>
+              <td>{row.grooming}</td>
+              <td>{row.apartment}</td>
+              <td>{row.climate}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="small">Comparisons are directional guides, not guarantees. Individual breed lines and individual dogs can differ significantly.</p>
+  </Section>
+
+  <Section title="Top breeds by group" intro="Quick-entry shortlist examples with original editorial summaries.">
+    <div class="top-breed-grid">
+      {topBreedsByGroup.map((entry) => (
+        <article class="top-breed-card">
+          <h3><a href={entry.groupHref}>{entry.group}</a></h3>
+          <ul>
+            {entry.breeds.map((breed) => (
+              <li>
+                <a href={breed.href}><strong>{breed.name}</strong></a>: {breed.summary}
+              </li>
+            ))}
+          </ul>
+        </article>
+      ))}
+    </div>
+  </Section>
+
+  <Section title="Popular Research Paths" intro="Jump to curated internal paths by household goal.">
+    <div class="module-grid">
+      {internalLinkModules.map((module) => (
+        <article class="link-module card">
+          <div class="card-body">
+            <h3>{module.title}</h3>
+            <ul>
+              {module.links.map((link) => (
+                <li><a href={link.href}>{link.label}</a></li>
+              ))}
+            </ul>
+          </div>
+        </article>
+      ))}
+    </div>
+  </Section>
+
+  <Section id="all-groups" title="All breed groups" intro={`${groups.length} groups currently available.`}>
+    <div class="grid compact">
+      {groups.map((group) => (
+        <Card
+          title={group.name}
+          href={`/dog-breeds/group/${group.slug}/`}
+          description={excerpt(group.metaDescription, group.description)}
+          image={resolveMedia(group, "Hero Image", mediaMap).src}
+          imageAlt={`${group.name} breed group`}
+          showCta={false}
+        />
+      ))}
+    </div>
+  </Section>
+
+  <Section id="breed-search" title="Search breed profiles" intro="Filter by group, size, activity, and more to find matching breed profiles.">
+    <HomeBreedSearch />
+  </Section>
+
+  <Section title="Frequently asked questions">
+    <div class="faq-accordion">
+      {faqItems.map((item) => (
+        <details class="faq-item">
+          <summary>{item.question}</summary>
+          <div class="faq-answer">
+            <p>{item.answer}</p>
+          </div>
+        </details>
+      ))}
+    </div>
+  </Section>
+</Layout>
+
+<style>
+  .table-wrap {
+    overflow-x: auto;
+  }
+
+  .group-comparison {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .group-comparison th,
+  .group-comparison td {
+    border: 1px solid var(--color-border);
+    padding: 0.65rem 0.75rem;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .group-comparison th {
+    background: color-mix(in srgb, var(--color-primary-soft) 80%, #ffffff 20%);
+    color: var(--color-primary-dark);
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+  }
+
+  .faq-accordion {
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .faq-item {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: 0.85rem 1rem;
+  }
+
+  .faq-item summary {
+    cursor: pointer;
+    font-weight: 700;
+  }
+
+  .faq-answer p {
+    margin: 0.65rem 0 0;
+  }
+
+  .editorial-note {
+    margin-top: 0.6rem;
+  }
+
+  .group-visual {
+    margin: 0 0 var(--space-3);
+  }
+
+  .group-visual svg {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .top-breed-grid {
+    display: grid;
+    gap: 0.85rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  .top-breed-card {
+    background: #ffffff;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: 0.8rem 0.9rem;
+  }
+
+  .top-breed-card h3 {
+    margin: 0 0 0.45rem;
+  }
+
+  .top-breed-card ul {
+    margin: 0;
+    padding-left: 1.1rem;
+  }
+
+  .top-breed-card li + li {
+    margin-top: 0.4rem;
+  }
+
+  .module-grid {
+    display: grid;
+    gap: 0.85rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .link-module h3 {
+    margin-top: 0;
+  }
+
+  .link-module ul {
+    margin: 0;
+    padding-left: 1.1rem;
+  }
+
+  .link-module li + li {
+    margin-top: 0.38rem;
+  }
+
+  @media (max-width: 980px) {
+    .module-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 680px) {
+    .module-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

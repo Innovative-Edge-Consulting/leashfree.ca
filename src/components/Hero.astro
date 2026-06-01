@@ -19,6 +19,7 @@ const { eyebrow, title, summary, image, imageAlt, primaryHref, primaryLabel, sec
 <section class="hero">
   <div class="container hero-grid">
     <div>
+      <slot name="pretitle" />
       {eyebrow && <div class="eyebrow">{eyebrow}</div>}
       <h1>{title}</h1>
       {summary && <p class="lead">{summary}</p>}

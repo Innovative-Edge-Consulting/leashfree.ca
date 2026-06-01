@@ -50,6 +50,7 @@ const faqItems = extractFaqItems(faqHtml);
 const breadcrumbs = [
   { label: "Home", href: "/" },
   { label: "Dog Breeds", href: "/dog-breeds/" },
+  { label: "Breed Groups", href: "/dog-breeds/group/" },
   group ? { label: group.name, href: `/dog-breeds/group/${group.slug}/` } : null,
   { label: breed.name }
 ].filter(Boolean);
