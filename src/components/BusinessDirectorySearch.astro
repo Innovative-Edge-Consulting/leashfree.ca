@@ -275,10 +275,31 @@ const json = JSON.stringify({ items: businessItems, provinces, cities, categorie
       `;
     }
 
-    function markerIcon() {
+    function hashString(value) {
+      let hash = 0;
+      const text = String(value || "");
+      for (let i = 0; i < text.length; i += 1) {
+        hash = ((hash << 5) - hash) + text.charCodeAt(i);
+        hash |= 0;
+      }
+      return Math.abs(hash);
+    }
+
+    function categoryPinMeta(categoryKey, categoryLabel) {
+      const palette = ["#0f766e", "#1d4ed8", "#9333ea", "#b45309", "#be123c", "#166534", "#0ea5e9", "#a16207", "#7c3aed", "#c2410c"];
+      const source = String(categoryKey || categoryLabel || "business").trim().toLowerCase();
+      const match = String(categoryLabel || source).match(/[a-z0-9]/i);
+      return {
+        letter: (match ? match[0] : "B").toUpperCase(),
+        color: palette[hashString(source) % palette.length]
+      };
+    }
+
+    function markerIcon(item) {
+      const meta = categoryPinMeta(item.categoryKey, item.category);
       return L.divIcon({
         className: "map-pin business-pin",
-        html: "B",
+        html: `<span style="--pin-color:${meta.color}">${meta.letter}</span>`,
         iconSize: [34, 34],
         iconAnchor: [17, 17],
         popupAnchor: [0, -17]
@@ -333,7 +354,7 @@ const json = JSON.stringify({ items: businessItems, provinces, cities, categorie
       markers.clear();
 
       items.filter((item) => item.hasCoords).slice(0, 140).forEach((item) => {
-        const marker = L.marker([item.lat, item.lng], { icon: markerIcon(), title: item.name })
+        const marker = L.marker([item.lat, item.lng], { icon: markerIcon(item), title: item.name })
           .bindPopup(popupHtml(item));
         marker.addTo(markerLayer);
         markers.set(item.url, marker);

@@ -1,9 +1,12 @@
 ---
+import { normalizeMojibake } from "../utils/content.js";
+
 interface Props {
   html?: string;
 }
 
 const { html } = Astro.props;
+const normalizedHtml = normalizeMojibake(html || "");
 ---
 
-{html && <section class="content-block" set:html={html} />}
+{normalizedHtml && <section class="content-block" set:html={normalizedHtml} />}

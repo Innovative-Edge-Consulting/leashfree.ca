@@ -2,7 +2,6 @@
 import Layout from "../components/Layout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import DogFoodComparisonTool from "../components/DogFoodComparisonTool";
-import dogFoodProducts from "../data/dog-food-products.json";
 import { breadcrumbSchema } from "../utils/content.js";
 
 const heroImage = "/images/resources/dog-food-comparison-canada-hero-1600.jpg";
@@ -98,7 +97,7 @@ const structuredData = [
 
   <section class="section tight">
     <div class="container">
-      <DogFoodComparisonTool products={dogFoodProducts} client:only="react" />
+      <DogFoodComparisonTool client:load />
     </div>
   </section>
 

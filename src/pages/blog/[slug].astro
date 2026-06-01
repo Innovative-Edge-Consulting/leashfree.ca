@@ -46,24 +46,25 @@ const structuredData = [
 
 <Layout title={post.seoTitle || post.title || post.name} description={post.metaDescription || post.description} canonical={post.canonicalUrl} ogImage={image.src} structuredData={structuredData}>
   <section class="page-header">
-    <div class="container narrow">
-      <Breadcrumbs items={breadcrumbs} />
-      <div class="eyebrow">Blog</div>
-      <h1>{post.title || post.name}</h1>
-      <p class="summary">{excerpt(post.description, post.metaDescription)}</p>
-      {(category || published || updated) && (
-        <div class="badges">
-          {category && <span class="badge">{category}</span>}
-          {published && <span class="badge">Published {published}</span>}
-          {updated && updated !== published && <span class="badge">Updated {updated}</span>}
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <Breadcrumbs items={breadcrumbs} />
+          <div class="eyebrow">Blog</div>
+          <h1>{post.title || post.name}</h1>
+          <p class="summary">{excerpt(post.description, post.metaDescription)}</p>
+          {(category || published || updated) && (
+            <div class="badges">
+              {category && <span class="badge">{category}</span>}
+              {published && <span class="badge">Published {published}</span>}
+              {updated && updated !== published && <span class="badge">Updated {updated}</span>}
+            </div>
+          )}
         </div>
-      )}
+        <ImageWithFallback src={image.src} alt={`${post.title || post.name} featured image`} variant="hero" loading="eager" />
+      </div>
     </div>
   </section>
-
-  <Section tight>
-    <ImageWithFallback src={image.src} alt={`${post.title || post.name} featured image`} variant="hero" loading="eager" />
-  </Section>
 
   <Section>
     <div class="split">

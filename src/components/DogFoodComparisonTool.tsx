@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import DogFoodProductDetailModal from "./DogFoodProductDetailModal";
 import { calculateRER } from "../utils/dogFoodCalculations";
+import dogFoodProducts from "../data/dog-food-products.json";
 import {
   enrichDogFoodProduct,
   generateDogFoodComparisonHighlights,
@@ -8,10 +9,6 @@ import {
   type DogFoodProductForComparison
 } from "../utils/dogFoodComparisonHighlights";
 import { validateAndNormalizeDogFoodProducts } from "../utils/dogFoodProductSchema";
-
-type Props = {
-  products: unknown[];
-};
 
 const dailyKcalBySize = {
   small: 400,
@@ -43,7 +40,18 @@ const trackDogFoodEvent = (eventName: string, params: Record<string, unknown> = 
   });
 };
 
-export default function DogFoodComparisonTool({ products }: Props) {
+type Props = {
+  products?: unknown[];
+};
+
+const getProductsSource = (products?: unknown[]) => {
+  if (Array.isArray(products)) return products;
+  if (Array.isArray(dogFoodProducts)) return dogFoodProducts as unknown[];
+  const maybeDefault = (dogFoodProducts as { default?: unknown }).default;
+  return Array.isArray(maybeDefault) ? maybeDefault : [];
+};
+
+export default function DogFoodComparisonTool({ products }: Props = {}) {
   const [query, setQuery] = useState("");
   const [brand, setBrand] = useState("");
   const [foodType, setFoodType] = useState("");
@@ -60,7 +68,14 @@ export default function DogFoodComparisonTool({ products }: Props) {
 
   const dailyKcal = dogSize === "custom" ? customDailyKcal : dailyKcalBySize[dogSize];
 
-  const validatedData = useMemo(() => validateAndNormalizeDogFoodProducts(products), [products]);
+  const sourceProducts = useMemo(() => getProductsSource(products), [products]);
+  const validatedData = useMemo(() => {
+    try {
+      return validateAndNormalizeDogFoodProducts(sourceProducts);
+    } catch {
+      return { products: [], blocked: [] };
+    }
+  }, [sourceProducts]);
   const publicProducts = validatedData.products;
 
   const enriched = useMemo(

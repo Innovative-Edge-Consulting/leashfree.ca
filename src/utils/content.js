@@ -9,7 +9,7 @@ export function slugify(value) {
 }
 
 export function excerpt(value, fallback = "", maxLength = 220) {
-  const text = decodeHtmlEntities(String(value || fallback || "")
+  const text = decodeHtmlEntities(normalizeMojibake(String(value || fallback || ""))
     .replace(/<[^>]*>/g, " ")
     .replace(/\s+/g, " ")
     .trim());
@@ -32,7 +32,7 @@ export function findByName(items, name) {
 }
 
 export function stripHtml(value) {
-  return decodeHtmlEntities(String(value || "")
+  return decodeHtmlEntities(normalizeMojibake(String(value || ""))
     .replace(/<[^>]*>/g, " ")
     .replace(/\s+/g, " ")
     .trim());
@@ -60,6 +60,52 @@ export function decodeHtmlEntities(value) {
     }
     return entities[normalized] || match;
   });
+}
+
+export function normalizeMojibake(value) {
+  const input = String(value || "");
+  if (!input) return "";
+
+  const replacements = [
+    [/Ã¢â‚¬â„¢/g, "'"],
+    [/Ã¢â‚¬Ëœ/g, "'"],
+    [/Ã¢â‚¬Å“/g, "\""],
+    [/Ã¢â‚¬Â/g, "\""],
+    [/Ã¢â‚¬â€œ/g, "–"],
+    [/Ã¢â‚¬â€/g, "—"],
+    [/Ã¢â‚¬Â¦/g, "..."],
+    [/Ã‚Â°/g, "°"],
+    [/Ã‚Â/g, ""],
+    [/Ã¢Ë†â€™/g, "−"],
+    [/Ã¢Å“â€Ã¯Â¸Â/g, "•"],
+    [/Ã¢â‚¬Â/g, ""],
+    [/Ã°Å¸ÂÂ¾/g, ""],
+    [/Ã°Å¸â€™Â¡/g, "💡"],
+    [/Ã°Å¸â€˜â€°/g, "👉"],
+    [/Ã¢Å“â€¦/g, "✅"]
+  ];
+
+  let current = input;
+  for (const [pattern, replacement] of replacements) {
+    current = current.replace(pattern, replacement);
+  }
+
+  const suspicious = /[ÃÂâ]/;
+  const replacementCount = (text) => (text.match(/\uFFFD/g) || []).length;
+
+  for (let index = 0; index < 3; index += 1) {
+    if (!suspicious.test(current)) break;
+    try {
+      const repaired = Buffer.from(current, "latin1").toString("utf8");
+      if (!repaired || repaired === current) break;
+      if (replacementCount(repaired) > replacementCount(current)) break;
+      current = repaired;
+    } catch {
+      break;
+    }
+  }
+
+  return current;
 }
 
 export function firstValue(...values) {

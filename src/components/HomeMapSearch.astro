@@ -140,6 +140,7 @@ const json = JSON.stringify({ items: mapItems, provinces, cities, categories }).
     </div>
 
     <div class="map-actions">
+      <button class="button secondary" type="button" data-expand-map aria-pressed="false">Full map</button>
       <button class="button primary" type="button" data-use-location>Use my location</button>
       <button class="button secondary" type="button" data-toggle-filters aria-expanded="false" aria-controls="advanced-map-filters">Filters</button>
       <button class="button secondary" type="button" data-reset-map>Reset</button>
@@ -226,6 +227,7 @@ const json = JSON.stringify({ items: mapItems, provinces, cities, categories }).
       count: root.querySelector("[data-result-count]"),
       locationStatus: root.querySelector("[data-location-status]"),
       locationButton: root.querySelector("[data-use-location]"),
+      expandButton: root.querySelector("[data-expand-map]"),
       filterToggle: root.querySelector("[data-toggle-filters]"),
       advancedFilters: root.querySelector("#advanced-map-filters"),
       resetButton: root.querySelector("[data-reset-map]")
@@ -246,6 +248,7 @@ const json = JSON.stringify({ items: mapItems, provinces, cities, categories }).
     let userLocation = null;
     const markers = new Map();
     const markerLayer = L.layerGroup().addTo(map);
+    let isExpanded = false;
 
     function normalize(value) {
       return String(value || "").toLowerCase();
@@ -323,10 +326,33 @@ const json = JSON.stringify({ items: mapItems, provinces, cities, categories }).
       `;
     }
 
-    function markerIcon(type) {
+    function hashString(value) {
+      let hash = 0;
+      const text = String(value || "");
+      for (let i = 0; i < text.length; i += 1) {
+        hash = ((hash << 5) - hash) + text.charCodeAt(i);
+        hash |= 0;
+      }
+      return Math.abs(hash);
+    }
+
+    function categoryPinMeta(categoryKey, categoryLabel) {
+      const palette = ["#0f766e", "#1d4ed8", "#9333ea", "#b45309", "#be123c", "#166534", "#0ea5e9", "#a16207", "#7c3aed", "#c2410c"];
+      const source = String(categoryKey || categoryLabel || "business").trim().toLowerCase();
+      const match = String(categoryLabel || source).match(/[a-z0-9]/i);
+      return {
+        letter: (match ? match[0] : "B").toUpperCase(),
+        color: palette[hashString(source) % palette.length]
+      };
+    }
+
+    function markerIcon(type, categoryKey, categoryLabel) {
+      const businessMeta = categoryPinMeta(categoryKey, categoryLabel);
+      const label = type === "park" ? "P" : businessMeta.letter;
+      const color = type === "park" ? "var(--color-primary-dark)" : businessMeta.color;
       return L.divIcon({
         className: `map-pin ${type === "park" ? "park-pin" : "business-pin"}`,
-        html: type === "park" ? "P" : "B",
+        html: `<span style="--pin-color:${color}">${label}</span>`,
         iconSize: [34, 34],
         iconAnchor: [17, 17],
         popupAnchor: [0, -17]
@@ -337,7 +363,7 @@ const json = JSON.stringify({ items: mapItems, provinces, cities, categories }).
       controls.count.textContent = String(items.length);
       controls.results.innerHTML = "";
 
-      items.slice(0, 8).forEach((item) => {
+      items.slice(0, isExpanded ? 24 : 8).forEach((item) => {
         const li = document.createElement("li");
         const meta = [item.city, item.province].filter(Boolean).join(", ");
         const distance = item.distance === null ? "" : `<span>${item.distance.toFixed(1)} km</span>`;
@@ -373,7 +399,7 @@ const json = JSON.stringify({ items: mapItems, provinces, cities, categories }).
       markers.clear();
 
       items.slice(0, 120).forEach((item) => {
-        const marker = L.marker([item.lat, item.lng], { icon: markerIcon(item.type), title: item.name })
+        const marker = L.marker([item.lat, item.lng], { icon: markerIcon(item.type, item.categoryKey, item.category), title: item.name })
           .bindPopup(popupHtml(item));
         marker.addTo(markerLayer);
         markers.set(item.url, marker);
@@ -408,6 +434,22 @@ const json = JSON.stringify({ items: mapItems, provinces, cities, categories }).
       renderMap();
     }
 
+    function refreshMapSize() {
+      window.setTimeout(() => {
+        map.invalidateSize();
+        renderMap();
+      }, 180);
+    }
+
+    function setExpanded(nextExpanded) {
+      isExpanded = nextExpanded;
+      root.classList.toggle("is-full-page-map", isExpanded);
+      document.body.classList.toggle("has-full-page-map", isExpanded);
+      controls.expandButton.setAttribute("aria-pressed", String(isExpanded));
+      controls.expandButton.textContent = isExpanded ? "Close map" : "Full map";
+      refreshMapSize();
+    }
+
     controls.locationButton.addEventListener("click", () => {
       if (!navigator.geolocation) {
         controls.locationStatus.textContent = "Location unavailable";
@@ -432,6 +474,7 @@ const json = JSON.stringify({ items: mapItems, provinces, cities, categories }).
     });
 
     controls.resetButton.addEventListener("click", reset);
+    controls.expandButton.addEventListener("click", () => setExpanded(!isExpanded));
     controls.filterToggle.addEventListener("click", () => {
       const isOpen = controls.filterToggle.getAttribute("aria-expanded") === "true";
       controls.filterToggle.setAttribute("aria-expanded", String(!isOpen));
@@ -441,6 +484,10 @@ const json = JSON.stringify({ items: mapItems, provinces, cities, categories }).
 
     [controls.query, controls.type, controls.province, controls.city, controls.category, controls.radius, ...controls.amenities]
       .forEach((control) => control.addEventListener("input", renderMap));
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && isExpanded) setExpanded(false);
+    });
 
     renderMap();
   })();

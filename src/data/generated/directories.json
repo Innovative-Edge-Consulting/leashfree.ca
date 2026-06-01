@@ -6185,8 +6185,8 @@
       "Province": "on",
       "City": "stoney creek",
       "Street Address": "521 Highway 8, Unit 0120, Stoney Creek, Ontario, L8G 1G4",
-      "Latitude": "",
-      "Longitude": "",
+      "Latitude": "43.2161694",
+      "Longitude": "-79.7139546",
       "Primary Website URL": "https://www.dewittparkanimalhospital.com/",
       "Affiliate URL": "",
       "Phone": "(905) 662-7387",
@@ -6205,7 +6205,8 @@
       "SEO Title": "Dewitt Park Animal Hospital - Veterinarian in Stoney Creek, Ontario",
       "Meta Description": "Dewitt Park Animal Hospital provides veterinary care for dogs and cats in Stoney Creek, Ontario.",
       "OG Title": "",
-      "OG Description": ""
+      "OG Description": "",
+      "Coordinate Source": "nominatim-pass3:521 Highway 8, Stoney Creek, Ontario,, stoney creek, Ontario, Canada"
     },
     "warnings": []
   },
@@ -6249,8 +6250,8 @@
       "Province": "on",
       "City": "stoney creek",
       "Street Address": "188 Barton Street, Unit 3, Stoney Creek, Ontario",
-      "Latitude": "",
-      "Longitude": "",
+      "Latitude": "43.2127311",
+      "Longitude": "-79.6527559",
       "Primary Website URL": "https://www.bartongraysanimalhospital.ca/",
       "Affiliate URL": "",
       "Phone": "(905) 664-8387",
@@ -6269,7 +6270,8 @@
       "SEO Title": "Barton Grays Animal Hospital - Veterinarian in Stoney Creek, Ontario",
       "Meta Description": "Barton Grays Animal Hospital provides veterinary care for dogs and cats in Stoney Creek, Ontario.",
       "OG Title": "",
-      "OG Description": ""
+      "OG Description": "",
+      "Coordinate Source": "nominatim-pass3:188 Barton Street, Stoney Creek, Ontario, stoney creek, Ontario, Canada"
     },
     "warnings": []
   },
@@ -8588,8 +8590,8 @@
       "Province": "on",
       "City": "kanata",
       "Street Address": "747 Silver Seven Road, Units 30-35, Kanata, Ontario, K2V 0H2",
-      "Latitude": "",
-      "Longitude": "",
+      "Latitude": "45.3008227",
+      "Longitude": "-75.9140832",
       "Primary Website URL": "https://capcityvet.com/",
       "Affiliate URL": "",
       "Phone": "(613) 244-7387",
@@ -8608,7 +8610,8 @@
       "SEO Title": "Capital City Specialty & Emergency Animal Hospital - Veterinarian in Kanata, Ontario",
       "Meta Description": "Capital City Specialty & Emergency Animal Hospital provides veterinary care for dogs and cats in Kanata, Ontario.",
       "OG Title": "",
-      "OG Description": ""
+      "OG Description": "",
+      "Coordinate Source": "nominatim-pass3:Capital City Specialty & Emergency Animal Hospital, kanata, Ontario, Canada"
     },
     "warnings": []
   },
@@ -12810,8 +12813,8 @@
       "Province": "on",
       "City": "welland",
       "Street Address": "194 Thorold Road West, Welland, Ontario, L3C 3V7",
-      "Latitude": "",
-      "Longitude": "",
+      "Latitude": "43.0040164",
+      "Longitude": "-79.2627339",
       "Primary Website URL": "https://wellandanimalhosp.com/",
       "Affiliate URL": "",
       "Phone": "(905) 735-7410",
@@ -12830,7 +12833,8 @@
       "SEO Title": "Welland Animal Hospital - Veterinarian in Welland, Ontario",
       "Meta Description": "Welland Animal Hospital provides veterinary care for dogs and cats in Welland, Ontario.",
       "OG Title": "",
-      "OG Description": ""
+      "OG Description": "",
+      "Coordinate Source": "nominatim-pass3:Welland Animal Hospital, welland, Ontario, Canada"
     },
     "warnings": []
   },
@@ -17157,8 +17161,8 @@
       "Province": "on",
       "City": "sudbury",
       "Street Address": "G-760 Notre Dame Avenue, Sudbury, Ontario, P3A 2T4",
-      "Latitude": "",
-      "Longitude": "",
+      "Latitude": "46.5096474",
+      "Longitude": "-80.9858805",
       "Primary Website URL": "https://notredamevet.com/",
       "Affiliate URL": "",
       "Phone": "(705) 586-2010",
@@ -17177,7 +17181,8 @@
       "SEO Title": "Notre-Dame Animal Hospital - Veterinarian in Sudbury, Ontario",
       "Meta Description": "Notre-Dame Animal Hospital provides veterinary care for dogs and cats in Sudbury, Ontario.",
       "OG Title": "",
-      "OG Description": ""
+      "OG Description": "",
+      "Coordinate Source": "nominatim-pass3:Notre-Dame Animal Hospital, sudbury, Ontario, Canada"
     },
     "warnings": []
   },
@@ -18585,8 +18590,8 @@
       "Province": "on",
       "City": "markham",
       "Street Address": "6605 Hwy 7 East, Unit 13/14, Markham, Ontario, L3P 7P1",
-      "Latitude": "",
-      "Longitude": "",
+      "Latitude": "43.8782496",
+      "Longitude": "-79.2385617",
       "Primary Website URL": "https://markhamvetclinic.ca/",
       "Affiliate URL": "",
       "Phone": "(905) 294-0522",
@@ -18605,7 +18610,8 @@
       "SEO Title": "Markham Veterinary Clinic - Veterinarian in Markham, Ontario",
       "Meta Description": "Markham Veterinary Clinic provides veterinary care for dogs and cats in Markham, Ontario.",
       "OG Title": "",
-      "OG Description": ""
+      "OG Description": "",
+      "Coordinate Source": "nominatim-pass3:Markham Veterinary Clinic, markham, Ontario, Canada"
     },
     "warnings": []
   },
@@ -18974,8 +18980,8 @@
       "Province": "on",
       "City": "richmond hill",
       "Street Address": "2 Hunters Point Drive, Richmond Hill, Ontario, L4C 9Y4",
-      "Latitude": "",
-      "Longitude": "",
+      "Latitude": "43.8323483",
+      "Longitude": "-79.4402031",
       "Primary Website URL": "https://bayviewsevenanimalhospital.ca/",
       "Affiliate URL": "",
       "Phone": "(905) 764-1144",
@@ -18994,7 +19000,8 @@
       "SEO Title": "Bayview Seven Animal Hospital - Veterinarian in Richmond Hill, Ontario",
       "Meta Description": "Bayview Seven Animal Hospital provides veterinary care for dogs and cats in Richmond Hill, Ontario.",
       "OG Title": "",
-      "OG Description": ""
+      "OG Description": "",
+      "Coordinate Source": "nominatim-pass3:Bayview Seven Animal Hospital, richmond hill, Ontario, Canada"
     },
     "warnings": []
   },
@@ -23579,8 +23586,8 @@
       "Province": "on",
       "City": "meaford",
       "Street Address": "206626 Highway 26 RR #4, Meaford, Ontario, N4L 1W7",
-      "Latitude": "",
-      "Longitude": "",
+      "Latitude": "44.5897277",
+      "Longitude": "-80.5663049",
       "Primary Website URL": "https://aahospital.ca/",
       "Affiliate URL": "",
       "Phone": "(519) 538-4898",
@@ -23599,7 +23606,8 @@
       "SEO Title": "Ardiel Animal Hospital - Veterinarian in Meaford, Ontario",
       "Meta Description": "Ardiel Animal Hospital provides veterinary care for dogs and cats in Meaford, Ontario.",
       "OG Title": "",
-      "OG Description": ""
+      "OG Description": "",
+      "Coordinate Source": "nominatim-pass3:Ardiel Animal Hospital, meaford, Ontario, Canada"
     },
     "warnings": []
   },
@@ -25203,8 +25211,8 @@
       "Province": "on",
       "City": "simcoe",
       "Street Address": "2512 Highway 24 North RR4, Simcoe, Ontario, N3Y 4K3",
-      "Latitude": "",
-      "Longitude": "",
+      "Latitude": "42.876276",
+      "Longitude": "-80.3178127",
       "Primary Website URL": "https://colbornevet.com/",
       "Affiliate URL": "",
       "Phone": "519-428-0721",
@@ -25223,7 +25231,8 @@
       "SEO Title": "Colborne Veterinary Clinic - Veterinarian in Simcoe, Ontario",
       "Meta Description": "Colborne Veterinary Clinic provides veterinary care for dogs and cats in Simcoe, Ontario.",
       "OG Title": "",
-      "OG Description": ""
+      "OG Description": "",
+      "Coordinate Source": "nominatim-pass3:Colborne Veterinary Clinic, simcoe, Ontario, Canada"
     },
     "warnings": []
   },
@@ -31040,8 +31049,8 @@
       "Province": "bc",
       "City": "duncan",
       "Street Address": "Unit 10, 5777 Trans Canada Highway, Duncan, British Columbia, V9L 3R8",
-      "Latitude": "",
-      "Longitude": "",
+      "Latitude": "48.7806677",
+      "Longitude": "-123.6979543",
       "Primary Website URL": "https://www.centralcowichanvet.com/",
       "Affiliate URL": "",
       "Phone": "(250) 746-7700",
@@ -31060,7 +31069,8 @@
       "SEO Title": "Central Cowichan Animal Hospital - Veterinarian in Duncan, BC",
       "Meta Description": "Central Cowichan Animal Hospital provides veterinary care for dogs and cats in Duncan, BC.",
       "OG Title": "",
-      "OG Description": ""
+      "OG Description": "",
+      "Coordinate Source": "nominatim-pass3:Central Cowichan Animal Hospital, duncan, British Columbia, Canada"
     },
     "warnings": []
   },
@@ -33117,8 +33127,8 @@
       "Province": "bc",
       "City": "chilliwack",
       "Street Address": "1-8337 Young Road South, Chilliwack, British Columbia, V2P 4N8",
-      "Latitude": "",
-      "Longitude": "",
+      "Latitude": "49.1536275",
+      "Longitude": "-121.9522146",
       "Primary Website URL": "https://cheamviewveterinaryhospital.weebly.com/",
       "Affiliate URL": "",
       "Phone": "604-795-5721",
@@ -33137,7 +33147,8 @@
       "SEO Title": "Cheam View Veterinary Hospital - Veterinarian in Chilliwack, BC",
       "Meta Description": "Cheam View Veterinary Hospital provides veterinary care for dogs and cats in Chilliwack, BC.",
       "OG Title": "",
-      "OG Description": ""
+      "OG Description": "",
+      "Coordinate Source": "nominatim-pass3:Cheam View Veterinary Hospital, chilliwack, British Columbia, Canada"
     },
     "warnings": []
   },
@@ -33827,8 +33838,8 @@
       "Province": "bc",
       "City": "maple ridge",
       "Street Address": "112-11865 227 Street, Maple Ridge, British Columbia, V2X 6H8",
-      "Latitude": "",
-      "Longitude": "",
+      "Latitude": "49.2161914",
+      "Longitude": "-122.594522",
       "Primary Website URL": "https://haneyanimalhospital.com/",
       "Affiliate URL": "",
       "Phone": "(604) 476-2525",
@@ -33847,7 +33858,8 @@
       "SEO Title": "Haney Animal Hospital - Veterinarian in Maple Ridge, BC",
       "Meta Description": "Haney Animal Hospital provides veterinary care for dogs and cats in Maple Ridge, BC.",
       "OG Title": "",
-      "OG Description": ""
+      "OG Description": "",
+      "Coordinate Source": "nominatim-pass3:11865 227 Street, Maple Ridge, British Columbia,, maple ridge, British Columbia, Canada"
     },
     "warnings": []
   },
@@ -35385,8 +35397,8 @@
       "Province": "bc",
       "City": "vernon",
       "Street Address": "5001 24th Street, Vernon, British Columbia, V1T 8X7",
-      "Latitude": "",
-      "Longitude": "",
+      "Latitude": "50.2835794",
+      "Longitude": "-119.2628437",
       "Primary Website URL": "https://www.creeksideanimalclinic.com/",
       "Affiliate URL": "",
       "Phone": "250-549-3533",
@@ -35405,7 +35417,8 @@
       "SEO Title": "Creekside Animal Clinic - Veterinarian in Vernon, BC",
       "Meta Description": "Creekside Animal Clinic provides veterinary care for dogs and cats in Vernon, BC.",
       "OG Title": "",
-      "OG Description": ""
+      "OG Description": "",
+      "Coordinate Source": "nominatim-pass3:Creekside Animal Clinic, vernon, British Columbia, Canada"
     },
     "warnings": []
   },
@@ -37005,8 +37018,8 @@
       "Province": "bc",
       "City": "invermere",
       "Street Address": "4854 Athalmer Road, Invermere, British Columbia, V0A 1K3",
-      "Latitude": "",
-      "Longitude": "",
+      "Latitude": "50.5153672",
+      "Longitude": "-116.0223343",
       "Primary Website URL": "https://www.invermereveterinaryhospital.com/",
       "Affiliate URL": "",
       "Phone": "(250) 342-7007",
@@ -37025,7 +37038,8 @@
       "SEO Title": "Invermere Veterinary Hospital - Veterinarian in Invermere, BC",
       "Meta Description": "Invermere Veterinary Hospital provides veterinary care for dogs and cats in Invermere, BC.",
       "OG Title": "",
-      "OG Description": ""
+      "OG Description": "",
+      "Coordinate Source": "nominatim-pass3:4854 Athalmer Road, Invermere, British Columbia,, invermere, Canada"
     },
     "warnings": []
   },
