@@ -2173,6 +2173,32 @@ body.has-full-page-map {
   -webkit-line-clamp: 2;
 }
 
+.breed-match-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  border: 1px solid rgba(73, 127, 100, 0.24);
+  border-radius: var(--radius-sm);
+  background: var(--color-primary-soft);
+  margin: 0 0 var(--space-5);
+  padding: var(--space-5);
+}
+
+.breed-match-cta h2 {
+  margin-bottom: var(--space-2);
+}
+
+.breed-match-cta p:last-child {
+  max-width: 720px;
+  margin-bottom: 0;
+  color: var(--color-muted);
+}
+
+.breed-match-cta .button {
+  flex: 0 0 auto;
+}
+
 .empty-state {
   border: 1px dashed var(--color-border);
   border-radius: var(--radius-card);
@@ -2400,5 +2426,14 @@ body.has-full-page-map {
 
   .breed-tool-results img {
     width: 88px;
+  }
+
+  .breed-match-cta {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .breed-match-cta .button {
+    width: 100%;
   }
 }

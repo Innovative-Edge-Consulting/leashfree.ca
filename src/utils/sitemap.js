@@ -84,6 +84,7 @@ export const sitemapSections = [
       entry(absoluteUrl("/dog-names/"), sectionLastmod(dogNameEntries)),
       entry(absoluteUrl("/dog-name-finder/"), sectionLastmod(dogNameEntries)),
       entry(absoluteUrl("/resources/")),
+      entry(absoluteUrl("/resources/dog-breed-match-quiz/"), sectionLastmod(breedEntries)),
       entry(absoluteUrl("/resources/dog-calorie-calculator/")),
       entry(absoluteUrl("/resources/dog-gear-finder/")),
       entry(absoluteUrl("/blog/"), sectionLastmod(blogEntries)),

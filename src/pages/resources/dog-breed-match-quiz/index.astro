@@ -1,0 +1,1068 @@
+---
+import Layout from "../../../components/Layout.astro";
+import Breadcrumbs from "../../../components/Breadcrumbs.astro";
+import ImageWithFallback from "../../../components/ImageWithFallback.astro";
+import Section from "../../../components/Section.astro";
+import mediaMap from "../../../data/media-map.json";
+import breeds from "../../../data/generated/dog-breeds.json";
+import { breadcrumbSchema, excerpt, stripHtml } from "../../../utils/content.js";
+import { resolveMedia } from "../../../utils/media.js";
+
+const breadcrumbs = [
+  { label: "Home", href: "/" },
+  { label: "Resources", href: "/resources/" },
+  { label: "Dog Breed Match Quiz", href: "/resources/dog-breed-match-quiz/" }
+];
+
+const quizQuestions = [
+  {
+    id: "home",
+    label: "Home type",
+    prompt: "What kind of home will the dog live in?",
+    options: [
+      { value: "apartment", label: "Apartment or condo" },
+      { value: "townhouse", label: "Townhouse or small home" },
+      { value: "house", label: "House with yard" },
+      { value: "rural", label: "Rural home or acreage" }
+    ]
+  },
+  {
+    id: "activity",
+    label: "Daily activity",
+    prompt: "How much daily activity can you reliably provide?",
+    options: [
+      { value: "low", label: "Short walks and indoor play" },
+      { value: "moderate", label: "Regular walks and weekend outings" },
+      { value: "high", label: "Long walks, hikes, or runs" },
+      { value: "very-high", label: "Very active working or sport lifestyle" }
+    ]
+  },
+  {
+    id: "size",
+    label: "Dog size",
+    prompt: "What size dog are you most comfortable with?",
+    options: [
+      { value: "small", label: "Small" },
+      { value: "medium", label: "Medium" },
+      { value: "large", label: "Large" },
+      { value: "extra-large", label: "Extra large" },
+      { value: "any", label: "No preference" }
+    ]
+  },
+  {
+    id: "shedding",
+    label: "Shedding",
+    prompt: "How much shedding or coat upkeep works for your home?",
+    options: [
+      { value: "minimal", label: "Minimal shedding preferred" },
+      { value: "low-moderate", label: "Low to moderate shedding is fine" },
+      { value: "flexible", label: "Grooming effort is fine if the fit is right" }
+    ]
+  },
+  {
+    id: "household",
+    label: "Household",
+    prompt: "Which household profile is closest?",
+    options: [
+      { value: "adults", label: "Adults only" },
+      { value: "older-kids", label: "Family with older kids" },
+      { value: "young-kids", label: "Family with young kids" },
+      { value: "other-pets", label: "Other pets in the home" }
+    ]
+  },
+  {
+    id: "training",
+    label: "Training experience",
+    prompt: "How much dog training experience do you have?",
+    options: [
+      { value: "first-time", label: "First-time owner" },
+      { value: "some", label: "Some experience" },
+      { value: "experienced", label: "Experienced owner" },
+      { value: "challenging", label: "Comfortable with challenging breeds" }
+    ]
+  },
+  {
+    id: "allergies",
+    label: "Allergies",
+    prompt: "Are allergies or lower-shedding traits important?",
+    options: [
+      { value: "need", label: "Need hypoallergenic-leaning options" },
+      { value: "helpful", label: "Helpful but not required" },
+      { value: "none", label: "Not a concern" }
+    ]
+  },
+  {
+    id: "breedType",
+    label: "Breed type",
+    prompt: "Do you have a breed type preference?",
+    options: [
+      { value: "purebred", label: "Purebred" },
+      { value: "designer-mixed", label: "Designer or mixed breeds" },
+      { value: "any", label: "No preference" }
+    ]
+  }
+];
+
+const faqItems = [
+  {
+    question: "How does the Dog Breed Match Quiz work?",
+    answer: "The quiz compares your answers with structured breed traits such as size, activity level, trainability, shedding, family friendliness, apartment friendliness, hypoallergenic status, and breed type."
+  },
+  {
+    question: "Can this quiz guarantee the perfect breed?",
+    answer: "No. Breed traits are useful patterns, but individual dogs vary. Use the results as a research starting point and talk with reputable breeders, rescues, shelters, trainers, or veterinarians before choosing a dog."
+  },
+  {
+    question: "Does the quiz include mixed breeds?",
+    answer: "Yes. The current breed database includes purebred, designer, and some mixed-breed profiles where available."
+  },
+  {
+    question: "What should first-time dog owners prioritize?",
+    answer: "First-time owners should usually prioritize manageable activity needs, trainability, grooming expectations, household fit, and access to local training support."
+  },
+  {
+    question: "What dog breeds are best for apartments?",
+    answer: "Apartment fit depends on more than size. Activity level, barking tendency, exercise routine, training, and time alone all matter. The quiz weighs apartment friendliness and size together."
+  }
+];
+
+const structuredData = [
+  breadcrumbSchema(breadcrumbs),
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: "Dog Breed Match Quiz",
+    url: "https://leashfree.ca/resources/dog-breed-match-quiz/",
+    applicationCategory: "LifestyleApplication",
+    operatingSystem: "Any",
+    description: "Find dog breeds that may fit your lifestyle, space, activity level, and household preferences.",
+    inLanguage: "en-CA"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer
+      }
+    }))
+  }
+];
+
+const quizBreeds = breeds
+  .filter((breed) => breed.slug && breed.name)
+  .map((breed) => ({
+    name: breed.name,
+    slug: breed.slug,
+    href: `/dog-breeds/${breed.slug}/`,
+    image: resolveMedia(breed, "Featured Image", mediaMap).src,
+    description: excerpt(breed.description, breed.metaDescription, 190),
+    summary: excerpt(breed.raw?.["Breed Summary"], breed.description, 190),
+    exercise: stripHtml(breed.raw?.["Exercise Needs"]),
+    trainingText: stripHtml(breed.raw?.["Training Tips"]),
+    groomingText: stripHtml(breed.raw?.Grooming),
+    group: breed.raw?.["Breed Group"] || "",
+    size: breed.raw?.["Size Category"] || "",
+    activity: breed.raw?.["Activity Level"] || "",
+    trainability: breed.raw?.Trainability || "",
+    shedding: breed.raw?.["Shedding Level"] || "",
+    family: breed.raw?.["Family Friendly"] || "",
+    apartment: breed.raw?.["Apartment Friendly"] || "",
+    hypoallergenic: breed.raw?.Hypoallergenic || "",
+    breedType: breed.raw?.["Dog Breed Type"] || ""
+  }));
+---
+
+<Layout
+  title="Dog Breed Match Quiz: Find the Best Dog Breed for Your Lifestyle | LeashFree.ca"
+  description="Answer 8 quick questions about your home, schedule, activity level, and preferences to find dog breeds that may fit your lifestyle."
+  canonical="https://leashfree.ca/resources/dog-breed-match-quiz/"
+  structuredData={structuredData}
+>
+  <section class="page-header">
+    <div class="container detail-layout">
+      <div>
+        <Breadcrumbs items={breadcrumbs} />
+        <div class="eyebrow">Breed matching tool</div>
+        <h1>Dog Breed Match Quiz</h1>
+        <p class="summary">
+          Answer 8 quick questions about your home, activity level, household, and preferences to find dog breeds that may fit your lifestyle.
+        </p>
+        <div class="button-row">
+          <a class="button primary" href="#breed-quiz">Start quiz</a>
+          <a class="button secondary" href="/dog-breeds/">Browse all breeds</a>
+        </div>
+      </div>
+      <ImageWithFallback src="/images/general/blog-category-dog-breeds-card.avif" alt="Dog breed match quiz" variant="hero" loading="eager" />
+    </div>
+  </section>
+
+  <section id="breed-quiz" class="section">
+    <div class="container breed-match-layout">
+      <div class="breed-match-main">
+        <section class="breed-match-tool" aria-labelledby="breed-match-heading">
+          <div class="breed-match-head">
+            <div>
+              <p class="eyebrow">8-question matcher</p>
+              <h2 id="breed-match-heading">Find your breed shortlist</h2>
+              <p class="summary">Results are based on structured traits from {quizBreeds.length} breed profiles.</p>
+            </div>
+            <div class="breed-match-count">
+              <strong>{quizBreeds.length}</strong>
+              <span>breeds indexed</span>
+            </div>
+          </div>
+
+          <form class="breed-match-form" data-breed-match-form novalidate>
+            <div class="breed-quiz-progress" aria-live="polite">
+              <span data-breed-step-label>Question 1 of {quizQuestions.length}</span>
+              <div class="breed-quiz-meter" aria-hidden="true">
+                <span data-breed-step-meter style={`width: ${100 / quizQuestions.length}%`}></span>
+              </div>
+            </div>
+            {quizQuestions.map((question, index) => (
+              <fieldset class="breed-question" data-breed-question data-question-index={index} hidden={index !== 0}>
+                <legend>
+                  <span>{index + 1}</span>
+                  <strong>{question.prompt}</strong>
+                </legend>
+                <div class="breed-options">
+                  {question.options.map((option) => (
+                    <label>
+                      <input type="radio" name={question.id} value={option.value} required />
+                      <span>{option.label}</span>
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
+            ))}
+            <p class="breed-step-error" data-breed-step-error hidden>Please choose an answer to continue.</p>
+            <div class="breed-match-actions">
+              <button class="button secondary" type="button" data-breed-match-back hidden>Back</button>
+              <button class="button primary" type="submit" data-breed-match-next>Next Question</button>
+              <button class="button secondary" type="button" data-breed-match-reset>Reset</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="breed-results-panel" aria-labelledby="breed-results-heading" data-breed-results-panel hidden>
+          <div class="breed-results-heading">
+            <div>
+              <p class="eyebrow">Your results</p>
+              <h2 id="breed-results-heading">Best breed matches</h2>
+            </div>
+            <p data-breed-results-summary aria-live="polite">Choose your answers to generate matches.</p>
+          </div>
+          <div class="breed-results-grid" data-breed-results></div>
+          <div class="breed-results-more" data-breed-results-more hidden>
+            <button class="button secondary" type="button" data-breed-show-more>Show 6 More Matches</button>
+          </div>
+          <p class="breed-results-note">
+            These matches are a research starting point. Individual dogs vary, and adoption, training, health, and temperament details should be reviewed before choosing a breed.
+          </p>
+        </section>
+      </div>
+
+      <aside class="breed-match-sidebar">
+        <div class="breed-side-panel">
+          <h2>How matching works</h2>
+          <p>
+            The scoring gives the most weight to activity fit, home setup, size preference, and shedding or allergy concerns.
+            Family fit, trainability, and breed type preference refine the shortlist.
+          </p>
+          <ul>
+            <li>Close matches receive partial credit.</li>
+            <li>Major lifestyle mismatches reduce the score.</li>
+            <li>Each result links to the full breed profile.</li>
+          </ul>
+        </div>
+        <div class="breed-side-panel">
+          <h2>Useful next steps</h2>
+          <ul>
+            <li><a href="/dog-breeds/">Browse all dog breeds</a></li>
+            <li><a href="/blog/best-dogs-for-apartment-living-in-canada/">Best dogs for apartment living</a></li>
+            <li><a href="/blog/top-10-dog-breeds-for-canadian-families/">Dog breeds for Canadian families</a></li>
+            <li><a href="/blog/low-shedding-dog-breeds-for-allergy-sufferers/">Low-shedding dog breeds</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <Section title="Choosing a Breed Takes More Than a Score">
+    <div class="breed-content">
+      <p>
+        A breed quiz can narrow the search, but it should not make the final decision for you. A good match depends on your daily routine,
+        home setup, training support, budget, grooming tolerance, and the individual dog's temperament.
+      </p>
+      <p>
+        Use your results to compare breed profiles, then speak with reputable breeders, rescues, shelters, veterinarians, or qualified trainers.
+        If you are adopting, ask about the individual dog's history, energy level, social comfort, and support needs.
+      </p>
+    </div>
+  </Section>
+
+  <Section title="Frequently Asked Questions">
+    <div class="faq-accordion">
+      {faqItems.map((item) => (
+        <details class="faq-item">
+          <summary>{item.question}</summary>
+          <div class="faq-answer">
+            <p>{item.answer}</p>
+          </div>
+        </details>
+      ))}
+    </div>
+  </Section>
+</Layout>
+
+<script is:inline define:vars={{ quizBreeds }}>
+  (() => {
+    const form = document.querySelector("[data-breed-match-form]");
+    const reset = document.querySelector("[data-breed-match-reset]");
+    const back = document.querySelector("[data-breed-match-back]");
+    const next = document.querySelector("[data-breed-match-next]");
+    const stepLabel = document.querySelector("[data-breed-step-label]");
+    const stepMeter = document.querySelector("[data-breed-step-meter]");
+    const stepError = document.querySelector("[data-breed-step-error]");
+    const questions = Array.from(document.querySelectorAll("[data-breed-question]"));
+    const resultsPanel = document.querySelector("[data-breed-results-panel]");
+    const results = document.querySelector("[data-breed-results]");
+    const resultsMore = document.querySelector("[data-breed-results-more]");
+    const showMore = document.querySelector("[data-breed-show-more]");
+    const summary = document.querySelector("[data-breed-results-summary]");
+    if (!form || !results || !summary) return;
+    let currentStep = 0;
+    let rankedMatches = [];
+    let visibleMatchCount = 6;
+    const matchBatchSize = 6;
+    let hasTrackedStart = false;
+
+    const escapeHtml = (value) =>
+      String(value || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+
+    const trackBreedQuizEvent = (eventName, params = {}) => {
+      if (typeof window.gtag !== "function") return;
+      window.gtag("event", eventName, {
+        event_category: "dog_breed_match_quiz",
+        ...params
+      });
+    };
+
+    const normalize = (value) => String(value || "").toLowerCase().replace(/\s+/g, "-");
+    const valueIndex = (order, value) => {
+      const index = order.indexOf(normalize(value));
+      return index === -1 ? null : index;
+    };
+    const closeScore = (order, wanted, actual, max) => {
+      if (wanted === "any") return max;
+      const wantedIndex = valueIndex(order, wanted);
+      const actualIndex = valueIndex(order, actual);
+      if (wantedIndex === null || actualIndex === null) return Math.round(max * 0.35);
+      const distance = Math.abs(wantedIndex - actualIndex);
+      if (distance === 0) return max;
+      if (distance === 1) return Math.round(max * 0.62);
+      if (distance === 2) return Math.round(max * 0.25);
+      return 0;
+    };
+
+    const getAnswers = () => Object.fromEntries(new FormData(form).entries());
+    const currentQuestion = () => questions[currentStep];
+    const hasCurrentAnswer = () => {
+      const question = currentQuestion();
+      const name = question?.querySelector("input[type='radio']")?.getAttribute("name");
+      return Boolean(name && form.querySelector(`input[name="${name}"]:checked`));
+    };
+
+    const renderStep = () => {
+      const total = questions.length;
+      questions.forEach((question, index) => {
+        question.hidden = index !== currentStep;
+      });
+      if (stepLabel) stepLabel.textContent = `Question ${currentStep + 1} of ${total}`;
+      if (stepMeter) stepMeter.style.width = `${((currentStep + 1) / total) * 100}%`;
+      if (back) back.hidden = currentStep === 0;
+      if (next) next.textContent = currentStep === total - 1 ? "Show Matches" : "Next Question";
+      if (stepError) stepError.hidden = true;
+    };
+
+    const scoreHome = (breed, home) => {
+      const apartment = normalize(breed.apartment);
+      const size = normalize(breed.size);
+      if (home === "apartment") {
+        let score = apartment === "yes" ? 14 : apartment === "with-caveats" ? 9 : 1;
+        if (size === "small") score += 6;
+        else if (size === "medium") score += 4;
+        else if (size === "large") score += 1;
+        return score;
+      }
+      if (home === "townhouse") {
+        let score = apartment === "yes" ? 12 : apartment === "with-caveats" ? 10 : 5;
+        if (size === "small" || size === "medium") score += 6;
+        else if (size === "large") score += 3;
+        return score;
+      }
+      if (home === "house") {
+        let score = 12;
+        if (size === "medium" || size === "large") score += 6;
+        else if (size === "small" || size === "extra-large") score += 4;
+        return score;
+      }
+      let score = 13;
+      if (size === "large" || size === "extra-large") score += 7;
+      else if (size === "medium") score += 5;
+      return score;
+    };
+
+    const scoreShedding = (breed, preference) => {
+      const shedding = normalize(breed.shedding);
+      const hypoallergenic = normalize(breed.hypoallergenic);
+      if (preference === "minimal") {
+        let score = shedding === "minimal" ? 10 : shedding === "low" ? 8 : shedding === "moderate" ? 3 : 0;
+        if (hypoallergenic === "yes") score += 5;
+        return score;
+      }
+      if (preference === "low-moderate") {
+        if (shedding === "minimal" || shedding === "low") return 14;
+        if (shedding === "moderate") return 11;
+        return 4;
+      }
+      return 15;
+    };
+
+    const scoreFamily = (breed, household) => {
+      const family = normalize(breed.family);
+      if (household === "young-kids") {
+        if (family === "yes") return 10;
+        if (family === "with-older-kids") return 4;
+        return 0;
+      }
+      if (household === "older-kids") {
+        if (family === "yes" || family === "with-older-kids") return 10;
+        return 2;
+      }
+      if (household === "other-pets") {
+        if (family === "yes") return 9;
+        if (family === "with-older-kids") return 5;
+        return 2;
+      }
+      if (family === "no") return 6;
+      return 9;
+    };
+
+    const scoreTraining = (breed, experience) => {
+      const trainability = normalize(breed.trainability);
+      if (experience === "first-time") {
+        if (trainability === "very-high" || trainability === "high") return 10;
+        if (trainability === "moderate") return 6;
+        return 1;
+      }
+      if (experience === "some") {
+        if (trainability === "very-high" || trainability === "high") return 10;
+        if (trainability === "moderate") return 8;
+        return 3;
+      }
+      if (experience === "experienced") {
+        if (trainability === "expert-required") return 5;
+        if (trainability === "low") return 6;
+        return 9;
+      }
+      if (trainability === "expert-required") return 10;
+      if (trainability === "low" || trainability === "moderate") return 8;
+      return 7;
+    };
+
+    const scoreAllergies = (breed, preference) => {
+      const shedding = normalize(breed.shedding);
+      const hypoallergenic = normalize(breed.hypoallergenic);
+      if (preference === "none") return 15;
+      if (preference === "helpful") {
+        let score = hypoallergenic === "yes" ? 7 : 4;
+        if (shedding === "minimal" || shedding === "low") score += 8;
+        else if (shedding === "moderate") score += 4;
+        return score;
+      }
+      let score = hypoallergenic === "yes" ? 9 : 0;
+      if (shedding === "minimal") score += 6;
+      else if (shedding === "low") score += 4;
+      else if (shedding === "moderate") score += 1;
+      return score;
+    };
+
+    const scoreBreedType = (breed, preference) => {
+      if (preference === "any") return 5;
+      const type = normalize(breed.breedType);
+      if (preference === "purebred") return type === "purebred" ? 5 : 1;
+      return type === "designer" || type === "mixed" ? 5 : 2;
+    };
+
+    const reasonFromMatch = (breed, answers) => {
+      const reasons = [];
+      const considerations = [];
+      const activity = normalize(breed.activity);
+      const apartment = normalize(breed.apartment);
+      const shedding = normalize(breed.shedding);
+      const family = normalize(breed.family);
+      const trainability = normalize(breed.trainability);
+      const size = normalize(breed.size);
+
+      if (answers.home === "apartment" && apartment === "yes") reasons.push("A practical fit for apartment or condo living.");
+      if ((answers.home === "house" || answers.home === "rural") && (size === "large" || size === "extra-large")) reasons.push("A better fit for homes with more space.");
+      if (activity === normalize(answers.activity)) reasons.push(`Activity level aligns with your ${answers.activity.replace("-", " ")} routine.`);
+      if (answers.shedding !== "flexible" && (shedding === "minimal" || shedding === "low")) reasons.push("A stronger option if shedding is a concern.");
+      if (answers.household === "young-kids" && family === "yes") reasons.push("Generally marked as family friendly in the breed database.");
+      if ((answers.training === "first-time" || answers.training === "some") && (trainability === "high" || trainability === "very-high")) reasons.push("Trainability profile is friendlier for guided practice.");
+      if (answers.breedType !== "any" && normalize(breed.breedType)) reasons.push(`Matches your ${breed.breedType.toLowerCase()} preference.`);
+
+      if (answers.home === "apartment" && apartment === "no") considerations.push("May need more space or a stronger daily exercise routine than many apartments provide.");
+      if ((answers.activity === "low" || answers.activity === "moderate") && (activity === "high" || activity === "very-high")) considerations.push("Exercise needs may be higher than your selected routine.");
+      if (answers.shedding === "minimal" && (shedding === "moderate" || shedding === "high")) considerations.push("Shedding may be higher than preferred.");
+      if (answers.household === "young-kids" && family === "with-older-kids") considerations.push("May be better suited to older children who respect boundaries.");
+      if (answers.training === "first-time" && (trainability === "low" || trainability === "expert-required")) considerations.push("May be better for experienced, consistent handlers.");
+
+      return {
+        reasons: reasons.slice(0, 3),
+        consideration: considerations[0] || "Review the full breed profile before deciding, especially temperament, exercise, grooming, and health notes."
+      };
+    };
+
+    const scoreBreed = (breed, answers) => {
+      const activityScore = closeScore(["low", "moderate", "high", "very-high"], answers.activity, breed.activity, 25);
+      const homeScore = scoreHome(breed, answers.home);
+      const sizeScore = closeScore(["small", "medium", "large", "extra-large"], answers.size, breed.size, 15);
+      const baseCoatScore = scoreShedding(breed, answers.shedding);
+      const allergyScore = scoreAllergies(breed, answers.allergies);
+      const sheddingScore = answers.allergies === "none"
+        ? baseCoatScore
+        : Math.round(baseCoatScore * 0.55 + allergyScore * 0.45);
+      const familyScore = scoreFamily(breed, answers.household);
+      const trainingScore = scoreTraining(breed, answers.training);
+      const typeScore = scoreBreedType(breed, answers.breedType);
+      const score = activityScore + homeScore + sizeScore + sheddingScore + familyScore + trainingScore + typeScore;
+      const detail = reasonFromMatch(breed, answers);
+      return { breed, score, detail };
+    };
+
+    const renderResult = ({ breed, score, detail }, index) => {
+      const percent = Math.max(1, Math.min(99, Math.round(score)));
+      const badges = [breed.size, breed.activity, breed.shedding].filter(Boolean).slice(0, 3);
+      const reasons = detail.reasons.length ? detail.reasons : [breed.summary || breed.description || "This breed shares several traits with your selected lifestyle profile."];
+      return `
+        <article class="breed-result-card">
+          <a class="breed-result-media" href="${escapeHtml(breed.href)}">
+            <img src="${escapeHtml(breed.image)}" alt="${escapeHtml(breed.name)} breed" loading="${index === 0 ? "eager" : "lazy"}" />
+            <span class="breed-score-badge"><strong>${escapeHtml(percent)}%</strong><em>match</em></span>
+          </a>
+          <div class="breed-result-body">
+            <div class="breed-result-title">
+              <div>
+                <span>#${index + 1} match</span>
+                <h3><a href="${escapeHtml(breed.href)}">${escapeHtml(breed.name)}</a></h3>
+              </div>
+            </div>
+            <div class="badges">${badges.map((badge) => `<span class="badge">${escapeHtml(badge)}</span>`).join("")}</div>
+            <ul>${reasons.map((reason) => `<li>${escapeHtml(reason)}</li>`).join("")}</ul>
+            <p><strong>Consider:</strong> ${escapeHtml(detail.consideration)}</p>
+            <a class="button secondary" href="${escapeHtml(breed.href)}">View Breed Profile</a>
+          </div>
+        </article>
+      `;
+    };
+
+    const renderResults = () => {
+      const visibleMatches = rankedMatches.slice(0, visibleMatchCount);
+      const remainingMatches = Math.max(0, rankedMatches.length - visibleMatches.length);
+
+      results.innerHTML = visibleMatches.map(renderResult).join("");
+      summary.textContent = `Showing ${visibleMatches.length} of ${rankedMatches.length} ranked breed matches.`;
+      if (resultsMore && showMore) {
+        resultsMore.hidden = remainingMatches === 0;
+        const nextCount = Math.min(matchBatchSize, remainingMatches);
+        showMore.textContent = `Show ${nextCount} More ${nextCount === 1 ? "Match" : "Matches"}`;
+      }
+    };
+
+    const updateResults = () => {
+      const answers = getAnswers();
+      rankedMatches = quizBreeds
+        .map((breed) => scoreBreed(breed, answers))
+        .sort((a, b) => b.score - a.score || a.breed.name.localeCompare(b.breed.name));
+      visibleMatchCount = Math.min(matchBatchSize, rankedMatches.length);
+
+      renderResults();
+      if (resultsPanel) resultsPanel.hidden = false;
+      trackBreedQuizEvent("dog_breed_quiz_complete", {
+        result_count: rankedMatches.length,
+        top_match: rankedMatches[0]?.breed?.slug || "",
+        top_score: Math.round(rankedMatches[0]?.score || 0)
+      });
+    };
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      if (!hasCurrentAnswer()) {
+        if (stepError) stepError.hidden = false;
+        return;
+      }
+
+      if (!hasTrackedStart) {
+        hasTrackedStart = true;
+        trackBreedQuizEvent("dog_breed_quiz_start", {
+          first_question: currentQuestion()?.querySelector("input[type='radio']")?.getAttribute("name") || ""
+        });
+      }
+
+      if (currentStep < questions.length - 1) {
+        currentStep += 1;
+        renderStep();
+        currentQuestion()?.scrollIntoView({ behavior: "smooth", block: "center" });
+        return;
+      }
+
+      updateResults();
+      document.getElementById("breed-results-heading")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+
+    form.addEventListener("change", () => {
+      if (stepError) stepError.hidden = true;
+    });
+
+    back?.addEventListener("click", () => {
+      if (currentStep > 0) {
+        currentStep -= 1;
+        renderStep();
+        currentQuestion()?.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    });
+
+    reset?.addEventListener("click", () => {
+      form.reset();
+      currentStep = 0;
+      rankedMatches = [];
+      visibleMatchCount = matchBatchSize;
+      hasTrackedStart = false;
+      results.innerHTML = "";
+      summary.textContent = "Choose your answers to generate matches.";
+      if (resultsMore) resultsMore.hidden = true;
+      if (resultsPanel) resultsPanel.hidden = true;
+      renderStep();
+    });
+
+    showMore?.addEventListener("click", () => {
+      visibleMatchCount = Math.min(visibleMatchCount + matchBatchSize, rankedMatches.length);
+      renderResults();
+      trackBreedQuizEvent("dog_breed_quiz_show_more", {
+        visible_count: visibleMatchCount,
+        result_count: rankedMatches.length
+      });
+    });
+
+    results.addEventListener("click", (event) => {
+      const link = event.target instanceof Element ? event.target.closest("a[href^='/dog-breeds/']") : null;
+      if (!link) return;
+      const card = link.closest(".breed-result-card");
+      const rank = card ? Array.from(results.querySelectorAll(".breed-result-card")).indexOf(card) + 1 : 0;
+      trackBreedQuizEvent("dog_breed_quiz_profile_click", {
+        breed_path: link.getAttribute("href") || "",
+        result_rank: rank
+      });
+    });
+
+    renderStep();
+  })();
+</script>
+
+<style>
+  .breed-match-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 340px);
+    gap: var(--space-6);
+    align-items: start;
+  }
+
+  .breed-match-main {
+    display: grid;
+    gap: var(--space-5);
+    min-width: 0;
+  }
+
+  .breed-match-sidebar {
+    display: grid;
+    gap: var(--space-4);
+    position: sticky;
+    top: calc(var(--space-6) + 72px);
+  }
+
+  .breed-match-tool,
+  .breed-results-panel,
+  .breed-side-panel {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-card);
+    padding: clamp(1rem, 2vw, 1.5rem);
+  }
+
+  .breed-match-tool {
+    background:
+      linear-gradient(180deg, rgba(230, 241, 234, 0.8), rgba(255, 255, 255, 0.98) 34%),
+      var(--color-surface);
+  }
+
+  .breed-match-head,
+  .breed-results-heading,
+  .breed-result-title {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-4);
+    align-items: start;
+  }
+
+  .breed-match-head {
+    margin-bottom: var(--space-5);
+  }
+
+  .breed-match-head h2,
+  .breed-results-heading h2,
+  .breed-side-panel h2 {
+    margin-bottom: var(--space-2);
+  }
+
+  .breed-match-count {
+    display: grid;
+    justify-items: end;
+    min-width: 130px;
+    color: var(--color-primary-dark);
+    line-height: 1.15;
+    text-align: right;
+  }
+
+  .breed-match-count strong {
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  .breed-match-count span,
+  .breed-result-title span {
+    color: var(--color-muted);
+    font-size: 0.74rem;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  .breed-match-form {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  .breed-quiz-progress {
+    display: grid;
+    gap: var(--space-2);
+    color: var(--color-primary-dark);
+    font-size: 0.84rem;
+    font-weight: 900;
+  }
+
+  .breed-quiz-meter {
+    overflow: hidden;
+    height: 0.62rem;
+    border: 1px solid rgba(73, 127, 100, 0.2);
+    border-radius: var(--radius-pill);
+    background: var(--color-surface);
+  }
+
+  .breed-quiz-meter span {
+    display: block;
+    height: 100%;
+    border-radius: inherit;
+    background: var(--color-primary-dark);
+    transition: width 180ms ease;
+  }
+
+  .breed-question {
+    min-width: 0;
+    border: 1px solid rgba(73, 127, 100, 0.2);
+    border-radius: var(--radius-sm);
+    background: rgba(255, 255, 255, 0.82);
+    margin: 0;
+    padding: var(--space-4);
+  }
+
+  .breed-question[hidden],
+  .breed-results-panel[hidden],
+  .breed-step-error[hidden] {
+    display: none;
+  }
+
+  .breed-question legend {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    color: var(--color-text);
+    padding: 0 var(--space-2);
+  }
+
+  .breed-question legend span {
+    display: inline-grid;
+    place-items: center;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    background: var(--color-primary-dark);
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 900;
+  }
+
+  .breed-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: var(--space-2);
+    margin-top: var(--space-3);
+  }
+
+  .breed-options label {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    min-height: 48px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    color: var(--color-text);
+    cursor: pointer;
+    font-weight: 750;
+    line-height: 1.25;
+    padding: 0.65rem 0.75rem;
+  }
+
+  .breed-options label:has(input:checked) {
+    border-color: var(--color-primary);
+    background: var(--color-primary-soft);
+    color: var(--color-primary-dark);
+  }
+
+  .breed-options input {
+    accent-color: var(--color-primary-dark);
+    flex: 0 0 auto;
+  }
+
+  .breed-step-error {
+    border: 1px solid #ead9a8;
+    border-radius: var(--radius-sm);
+    background: #fff8df;
+    color: var(--color-warning);
+    margin: 0;
+    padding: 0.65rem 0.85rem;
+    font-weight: 800;
+  }
+
+  .breed-match-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+  }
+
+  .breed-match-actions [hidden] {
+    display: none;
+  }
+
+  .breed-results-heading {
+    align-items: end;
+    border-bottom: 1px solid var(--color-border);
+    margin: calc(var(--space-2) * -1) 0 var(--space-4);
+    padding-bottom: var(--space-3);
+  }
+
+  .breed-results-heading p {
+    max-width: 260px;
+    color: var(--color-muted);
+    font-size: 0.92rem;
+    font-weight: 750;
+    line-height: 1.35;
+    margin: 0;
+    text-align: right;
+  }
+
+  .breed-results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-4);
+  }
+
+  .breed-results-more {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--space-5);
+  }
+
+  .breed-results-more[hidden] {
+    display: none;
+  }
+
+  .breed-result-card {
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+  }
+
+  .breed-result-media {
+    position: relative;
+    display: block;
+    background: var(--color-primary-soft);
+  }
+
+  .breed-result-media img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    object-position: center 20%;
+  }
+
+  .breed-score-badge {
+    position: absolute;
+    right: var(--space-3);
+    bottom: var(--space-3);
+    display: grid;
+    place-items: center;
+    width: 4.7rem;
+    min-height: 4.7rem;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    background: var(--color-primary-dark);
+    color: #ffffff;
+    box-shadow: 0 10px 24px rgba(31, 41, 51, 0.24);
+    line-height: 1;
+    text-align: center;
+  }
+
+  .breed-score-badge strong {
+    font-size: 1.28rem;
+    font-weight: 950;
+  }
+
+  .breed-score-badge em {
+    font-size: 0.68rem;
+    font-style: normal;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .breed-result-body {
+    display: grid;
+    align-content: start;
+    min-width: 0;
+    min-height: 100%;
+    padding: var(--space-4);
+  }
+
+  .breed-result-title h3 {
+    margin-bottom: var(--space-2);
+  }
+
+  .breed-result-title h3 a {
+    color: var(--color-text);
+    text-decoration: none;
+  }
+
+  .breed-result-title h3 a:hover {
+    color: var(--color-primary-dark);
+  }
+
+  .breed-result-body ul {
+    display: grid;
+    gap: 0.45rem;
+    margin: 0 0 var(--space-3);
+    padding-left: 1.1rem;
+  }
+
+  .breed-result-body p {
+    color: var(--color-muted);
+    font-size: 0.94rem;
+  }
+
+  .breed-result-body .button {
+    align-self: end;
+    width: fit-content;
+    margin-top: auto;
+  }
+
+  .breed-results-note {
+    margin: var(--space-4) 0 0;
+    color: var(--color-muted);
+    font-size: 0.92rem;
+  }
+
+  .breed-side-panel {
+    box-shadow: none;
+  }
+
+  .breed-side-panel p,
+  .breed-side-panel li {
+    color: var(--color-muted);
+  }
+
+  .breed-side-panel ul {
+    margin-bottom: 0;
+    padding-left: 1.1rem;
+  }
+
+  .breed-content {
+    max-width: 860px;
+  }
+
+  @media (max-width: 980px) {
+    .breed-match-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .breed-match-sidebar {
+      position: static;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .breed-match-head,
+    .breed-results-heading,
+    .breed-result-title {
+      display: grid;
+    }
+
+    .breed-match-count,
+    .breed-results-heading p {
+      justify-items: start;
+      text-align: left;
+    }
+
+    .breed-options {
+      grid-template-columns: 1fr;
+    }
+
+    .breed-match-actions .button {
+      flex: 1 1 150px;
+    }
+
+    .breed-results-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .breed-score-badge {
+      width: 4.2rem;
+      min-height: 4.2rem;
+    }
+  }
+</style>
