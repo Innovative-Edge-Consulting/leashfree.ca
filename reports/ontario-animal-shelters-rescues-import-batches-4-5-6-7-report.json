@@ -1,0 +1,258 @@
+{
+  "sourceFiles": [
+    "C:\\Users\\cjame\\Downloads\\ontario_animal_shelters_rescues_batch_4.json",
+    "C:\\Users\\cjame\\Downloads\\ontario_animal_shelters_rescues_batch_5.json",
+    "C:\\Users\\cjame\\Downloads\\ontario_animal_shelters_rescues_batch_6.json",
+    "C:\\Users\\cjame\\Downloads\\ontario_animal_shelters_rescues_batch_7.json"
+  ],
+  "incomingCount": 48,
+  "duplicatesSkipped": [],
+  "existingUpdated": [],
+  "added": [
+    {
+      "name": "Lakefield Animal Welfare Society",
+      "slug": "lakefield-animal-welfare-society",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Simcoe and District Humane Society",
+      "slug": "simcoe-and-district-humane-society",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Animal Aide of St. Thomas-Elgin",
+      "slug": "animal-aide-of-st-thomas-elgin",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Little RES Q",
+      "slug": "little-res-q",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Foundation for Animal Rescue and Education",
+      "slug": "foundation-for-animal-rescue-and-education",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Animal Care Centre Lobo",
+      "slug": "animal-care-centre-lobo",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Brock Dench Animal Shelter",
+      "slug": "brock-dench-animal-shelter",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Animal Adoptions of Flamborough",
+      "slug": "animal-adoptions-of-flamborough",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Glencoe Animal Shelter",
+      "slug": "glencoe-animal-shelter",
+      "hasCoordinates": true
+    },
+    {
+      "name": "The Donkey Sanctuary of Canada",
+      "slug": "the-donkey-sanctuary-of-canada",
+      "hasCoordinates": true
+    },
+    {
+      "name": "London Animal Care Centre",
+      "slug": "london-animal-care-centre",
+      "hasCoordinates": true
+    },
+    {
+      "name": "City of Hamilton Animal Services",
+      "slug": "city-of-hamilton-animal-services",
+      "hasCoordinates": true
+    },
+    {
+      "name": "City of Burlington Animal Shelter",
+      "slug": "city-of-burlington-animal-shelter",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Hillside Kennels Animal Control",
+      "slug": "hillside-kennels-animal-control",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Bonfield Township Animal Control",
+      "slug": "bonfield-township-animal-control",
+      "hasCoordinates": true
+    },
+    {
+      "name": "PrimRose Donkey Sanctuary",
+      "slug": "primrose-donkey-sanctuary",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Sweet Acres Pig Sanctuary",
+      "slug": "sweet-acres-pig-sanctuary",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Heaven Can Wait Equine Rescue",
+      "slug": "heaven-can-wait-equine-rescue",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Cedar Row Farm Sanctuary",
+      "slug": "cedar-row-farm-sanctuary",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Aspen Valley Wildlife Sanctuary",
+      "slug": "aspen-valley-wildlife-sanctuary",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Carter's Forever Rescue and Sanctuary",
+      "slug": "carter-s-forever-rescue-and-sanctuary",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Ralphy's Retreat Animal Sanctuary",
+      "slug": "ralphy-s-retreat-animal-sanctuary",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Procyon Wildlife Rehabilitation and Education Centre",
+      "slug": "procyon-wildlife-rehabilitation-and-education-centre",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Sandy Pines Wildlife Centre",
+      "slug": "sandy-pines-wildlife-centre",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Toronto Wildlife Centre",
+      "slug": "toronto-wildlife-centre",
+      "hasCoordinates": true
+    },
+    {
+      "name": "The Catty Shack",
+      "slug": "the-catty-shack",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Soper Creek Wildlife Rescue",
+      "slug": "soper-creek-wildlife-rescue",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Story Book Farm Primate Sanctuary",
+      "slug": "story-book-farm-primate-sanctuary",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Woodlands Wildlife Sanctuary",
+      "slug": "woodlands-wildlife-sanctuary",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Shades of Hope Wildlife Refuge",
+      "slug": "shades-of-hope-wildlife-refuge",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Cats Anonymous Rescue & Adoption",
+      "slug": "cats-anonymous-rescue-adoption",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Second Chance Wildlife Sanctuary",
+      "slug": "second-chance-wildlife-sanctuary",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Urban Wildlife Care",
+      "slug": "urban-wildlife-care",
+      "hasCoordinates": true
+    },
+    {
+      "name": "The Owl Foundation",
+      "slug": "the-owl-foundation",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Happy Days Sanctuary",
+      "slug": "happy-days-sanctuary",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Last Chance Horse and Pony Rescue and Sanctuary",
+      "slug": "last-chance-horse-and-pony-rescue-and-sanctuary",
+      "hasCoordinates": true
+    },
+    {
+      "name": "The Comfie Cat Shelter",
+      "slug": "the-comfie-cat-shelter",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Whispering Hearts Horse Rescue",
+      "slug": "whispering-hearts-horse-rescue",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Hobbitstee Wildlife Refuge",
+      "slug": "hobbitstee-wildlife-refuge",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Ontario Turtle Conservation Centre",
+      "slug": "ontario-turtle-conservation-centre",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Wings Wildlife Rehabilitation Centre",
+      "slug": "wings-wildlife-rehabilitation-centre",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Farmhouse Garden Animal Home",
+      "slug": "farmhouse-garden-animal-home",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Silver Willow Farm Rescue",
+      "slug": "silver-willow-farm-rescue",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Bear Creek Exotic Wildlife Sanctuary",
+      "slug": "bear-creek-exotic-wildlife-sanctuary",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Best for Kitty Rescue Rainy River District",
+      "slug": "best-for-kitty-rescue-rainy-river-district",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Ottawa Valley Wild Bird Care Centre",
+      "slug": "ottawa-valley-wild-bird-care-centre",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Erie Wildlife Rescue",
+      "slug": "erie-wildlife-rescue",
+      "hasCoordinates": true
+    },
+    {
+      "name": "Skunk Haven",
+      "slug": "skunk-haven",
+      "hasCoordinates": true
+    }
+  ],
+  "unresolvedCoordinates": [],
+  "finalDirectoryCount": 1011,
+  "addedCount": 48,
+  "updatedCount": 0,
+  "unresolvedCount": 0
+}

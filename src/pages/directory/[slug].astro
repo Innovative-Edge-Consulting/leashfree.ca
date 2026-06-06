@@ -10,6 +10,10 @@ import directories from "../../data/generated/directories.json";
 import { breadcrumbSchema, excerpt } from "../../utils/content.js";
 import { resolveMedia } from "../../utils/media.js";
 
+function clean(value) {
+  return typeof value === "string" ? value.trim() : "";
+}
+
 export function getStaticPaths() {
   return directories.filter((item) => item.slug).map((item) => ({
     params: { slug: item.slug },
@@ -19,6 +23,17 @@ export function getStaticPaths() {
 
 const { item } = Astro.props;
 const image = resolveMedia(item, "Featured Image", mediaMap);
+const affiliateUrl = clean(item.raw["Affiliate URL"]);
+const primaryWebsiteUrl = clean(item.raw["Primary Website URL"]);
+const websiteUrl = affiliateUrl || primaryWebsiteUrl;
+const hours = clean(item.raw.Hours);
+const streetAddress = clean(item.raw["Street Address"]);
+const facebookUrl = clean(item.raw["Facebook URL"]);
+const instagramUrl = clean(item.raw["Instagram URL"]);
+const socialLinks = [
+  { label: "Facebook", href: facebookUrl, icon: "facebook" },
+  { label: "Instagram", href: instagramUrl, icon: "instagram" }
+].filter((link) => link.href);
 const breadcrumbs = [
   { label: "Home", href: "/" },
   { label: "Directory", href: "/directory/" },
@@ -44,9 +59,49 @@ const breadcrumbs = [
       {item.raw.Category && <li><strong>Category</strong><br />{item.raw.Category}</li>}
       {item.raw.City && <li><strong>City</strong><br />{item.raw.City}</li>}
       {item.raw.Province && <li><strong>Province</strong><br />{item.raw.Province}</li>}
+      {streetAddress && <li><strong>Street address</strong><br />{streetAddress}</li>}
       {item.raw.Phone && <li><strong>Phone</strong><br />{item.raw.Phone}</li>}
       {item.raw.Email && <li><strong>Email</strong><br />{item.raw.Email}</li>}
+      {hours && <li><strong>Hours</strong><div set:html={hours}></div></li>}
+      {websiteUrl && (
+        <li>
+          <strong>Website</strong><br />
+          <a href={websiteUrl} target="_blank" rel="noopener noreferrer">Visit website</a>
+        </li>
+      )}
     </ul>
+    {socialLinks.length > 0 && (
+      <div class="directory-social-links" aria-label="Social links">
+        {socialLinks.map((link) => (
+          <a
+            class="directory-social-link"
+            href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={link.label}
+            title={link.label}
+          >
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              focusable="false"
+              class:list={{ "is-facebook": link.icon === "facebook", "is-instagram": link.icon === "instagram" }}
+            >
+              {link.icon === "facebook" ? (
+                <path d="M13.5 22v-8.2h2.8l.4-3.2h-3.2V8.5c0-.9.3-1.6 1.7-1.6H17V4c-.3 0-.9-.1-1.9-.1-3 0-4.9 1.8-4.9 5.1v1.6H7.5v3.2h2.7V22h3.3Z"></path>
+              ) : (
+                <>
+                  <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Z"></path>
+                  <path d="M8.8 12a3.2 3.2 0 1 0 6.4 0 3.2 3.2 0 0 0-6.4 0Z"></path>
+                  <path d="M17.3 6.7h.01"></path>
+                </>
+              )}
+            </svg>
+            <span>{link.label}</span>
+          </a>
+        ))}
+      </div>
+    )}
     <ContentBlock html={item.body || item.raw["Long Description"] || item.description} />
   </Section>
 
@@ -55,7 +110,7 @@ const breadcrumbs = [
       title="Location and directions"
       intro={`Find ${item.name} on the map, check the surrounding area, and open directions from your current location.`}
       name={item.name}
-      address={item.raw["Street Address"]}
+      address={streetAddress}
       city={item.raw.City}
       province={item.raw.Province}
       latitude={item.raw.Latitude}

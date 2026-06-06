@@ -551,6 +551,53 @@ p {
   padding: var(--space-4);
 }
 
+.meta-list li :where(p, ul, ol) {
+  margin: 0;
+}
+
+.directory-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin: 0 0 var(--space-5);
+}
+
+.directory-social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-weight: 800;
+  padding: 0.65rem 0.95rem;
+  text-decoration: none;
+}
+
+.directory-social-link:hover {
+  color: var(--color-primary-dark);
+  border-color: color-mix(in srgb, var(--color-primary) 42%, var(--color-border) 58%);
+  background: var(--color-primary-soft);
+}
+
+.directory-social-link svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.directory-social-link svg.is-facebook {
+  fill: currentColor;
+}
+
+.directory-social-link svg.is-instagram {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
 .park-meta-list {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: var(--space-3);

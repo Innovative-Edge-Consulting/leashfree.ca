@@ -260,6 +260,17 @@ const quizBreeds = breeds
           <div class="breed-results-more" data-breed-results-more hidden>
             <button class="button secondary" type="button" data-breed-show-more>Show 6 More Matches</button>
           </div>
+          <div class="breed-share-panel" data-breed-share-panel hidden>
+            <div>
+              <h3>Share your results</h3>
+              <p data-breed-share-status aria-live="polite">Copy or share your top matches with someone helping you choose.</p>
+            </div>
+            <div class="breed-share-actions">
+              <button class="button primary" type="button" data-breed-share>Share Results</button>
+              <button class="button secondary" type="button" data-breed-copy-results>Copy Results</button>
+              <a class="button secondary" href="/resources/dog-breed-match-quiz/" data-breed-email-results>Email Results</a>
+            </div>
+          </div>
           <p class="breed-results-note">
             These matches are a research starting point. Individual dogs vary, and adoption, training, health, and temperament details should be reviewed before choosing a breed.
           </p>
@@ -334,6 +345,11 @@ const quizBreeds = breeds
     const resultsMore = document.querySelector("[data-breed-results-more]");
     const showMore = document.querySelector("[data-breed-show-more]");
     const summary = document.querySelector("[data-breed-results-summary]");
+    const sharePanel = document.querySelector("[data-breed-share-panel]");
+    const shareButton = document.querySelector("[data-breed-share]");
+    const copyResults = document.querySelector("[data-breed-copy-results]");
+    const emailResults = document.querySelector("[data-breed-email-results]");
+    const shareStatus = document.querySelector("[data-breed-share-status]");
     if (!form || !results || !summary) return;
     let currentStep = 0;
     let rankedMatches = [];
@@ -357,6 +373,9 @@ const quizBreeds = breeds
       });
     };
 
+    const answerKeys = questions
+      .map((question) => question.querySelector("input[type='radio']")?.getAttribute("name"))
+      .filter(Boolean);
     const normalize = (value) => String(value || "").toLowerCase().replace(/\s+/g, "-");
     const valueIndex = (order, value) => {
       const index = order.indexOf(normalize(value));
@@ -375,11 +394,71 @@ const quizBreeds = breeds
     };
 
     const getAnswers = () => Object.fromEntries(new FormData(form).entries());
+    const hasCompleteAnswers = (answers) => answerKeys.every((key) => Boolean(answers[key]));
     const currentQuestion = () => questions[currentStep];
     const hasCurrentAnswer = () => {
       const question = currentQuestion();
       const name = question?.querySelector("input[type='radio']")?.getAttribute("name");
       return Boolean(name && form.querySelector(`input[name="${name}"]:checked`));
+    };
+
+    const resultsShareUrl = (answers = getAnswers()) => {
+      const url = new URL(window.location.href);
+      answerKeys.forEach((key) => {
+        if (answers[key]) url.searchParams.set(key, answers[key]);
+        else url.searchParams.delete(key);
+      });
+      url.hash = "breed-results-heading";
+      return url.toString();
+    };
+
+    const updateResultsUrl = (answers = getAnswers()) => {
+      if (!hasCompleteAnswers(answers)) return;
+      window.history.replaceState({}, "", resultsShareUrl(answers));
+    };
+
+    const shareText = () => {
+      const topMatches = rankedMatches.slice(0, 3);
+      const lines = topMatches.map(({ breed, score }, index) => `${index + 1}. ${breed.name} - ${Math.max(1, Math.min(99, Math.round(score)))}% match`);
+      return [
+        "My top dog breed matches from LeashFree.ca:",
+        ...lines,
+        "",
+        "Take the quiz or view these results:",
+        resultsShareUrl()
+      ].join("\n");
+    };
+
+    const updateSharePanel = () => {
+      if (!sharePanel) return;
+      const hasResults = rankedMatches.length > 0;
+      sharePanel.hidden = !hasResults;
+      if (!hasResults) return;
+      const text = shareText();
+      if (emailResults) {
+        emailResults.href = `mailto:?subject=${encodeURIComponent("My Dog Breed Match Quiz Results")}&body=${encodeURIComponent(text)}`;
+      }
+    };
+
+    const copyText = async (text) => {
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(text);
+        return true;
+      }
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      textarea.setAttribute("readonly", "");
+      textarea.style.position = "fixed";
+      textarea.style.left = "-9999px";
+      document.body.append(textarea);
+      textarea.select();
+      const copied = document.execCommand("copy");
+      textarea.remove();
+      return copied;
+    };
+
+    const setShareStatus = (message) => {
+      if (shareStatus) shareStatus.textContent = message;
     };
 
     const renderStep = () => {
@@ -588,9 +667,10 @@ const quizBreeds = breeds
         const nextCount = Math.min(matchBatchSize, remainingMatches);
         showMore.textContent = `Show ${nextCount} More ${nextCount === 1 ? "Match" : "Matches"}`;
       }
+      updateSharePanel();
     };
 
-    const updateResults = () => {
+    const updateResults = ({ track = true, updateUrl = true } = {}) => {
       const answers = getAnswers();
       rankedMatches = quizBreeds
         .map((breed) => scoreBreed(breed, answers))
@@ -599,11 +679,33 @@ const quizBreeds = breeds
 
       renderResults();
       if (resultsPanel) resultsPanel.hidden = false;
-      trackBreedQuizEvent("dog_breed_quiz_complete", {
-        result_count: rankedMatches.length,
-        top_match: rankedMatches[0]?.breed?.slug || "",
-        top_score: Math.round(rankedMatches[0]?.score || 0)
+      if (updateUrl) updateResultsUrl(answers);
+      if (track) {
+        trackBreedQuizEvent("dog_breed_quiz_complete", {
+          result_count: rankedMatches.length,
+          top_match: rankedMatches[0]?.breed?.slug || "",
+          top_score: Math.round(rankedMatches[0]?.score || 0)
+        });
+      }
+    };
+
+    const restoreResultsFromUrl = () => {
+      const params = new URLSearchParams(window.location.search);
+      const restoredAnswers = {};
+      answerKeys.forEach((key) => {
+        const value = params.get(key);
+        const input = value ? form.querySelector(`input[name="${CSS.escape(key)}"][value="${CSS.escape(value)}"]`) : null;
+        if (input instanceof HTMLInputElement) {
+          input.checked = true;
+          restoredAnswers[key] = value;
+        }
       });
+      if (!hasCompleteAnswers(restoredAnswers)) return false;
+      currentStep = questions.length - 1;
+      renderStep();
+      updateResults({ track: false, updateUrl: false });
+      setShareStatus("These results were restored from a shared quiz link.");
+      return true;
     };
 
     form.addEventListener("submit", (event) => {
@@ -652,7 +754,12 @@ const quizBreeds = breeds
       results.innerHTML = "";
       summary.textContent = "Choose your answers to generate matches.";
       if (resultsMore) resultsMore.hidden = true;
+      if (sharePanel) sharePanel.hidden = true;
       if (resultsPanel) resultsPanel.hidden = true;
+      const url = new URL(window.location.href);
+      answerKeys.forEach((key) => url.searchParams.delete(key));
+      url.hash = "";
+      window.history.replaceState({}, "", url.toString());
       renderStep();
     });
 
@@ -662,6 +769,56 @@ const quizBreeds = breeds
       trackBreedQuizEvent("dog_breed_quiz_show_more", {
         visible_count: visibleMatchCount,
         result_count: rankedMatches.length
+      });
+    });
+
+    copyResults?.addEventListener("click", async () => {
+      try {
+        await copyText(shareText());
+        setShareStatus("Results copied. You can paste them into a message, email, or social post.");
+        trackBreedQuizEvent("dog_breed_quiz_copy_results", {
+          result_count: rankedMatches.length,
+          top_match: rankedMatches[0]?.breed?.slug || ""
+        });
+      } catch {
+        setShareStatus("Copy failed. You can still use the email button or copy the page URL.");
+      }
+    });
+
+    shareButton?.addEventListener("click", async () => {
+      const text = shareText();
+      const url = resultsShareUrl();
+      try {
+        if (navigator.share) {
+          await navigator.share({
+            title: "My Dog Breed Match Quiz Results",
+            text,
+            url
+          });
+          setShareStatus("Share sheet opened for your results.");
+          trackBreedQuizEvent("dog_breed_quiz_share_results", {
+            method: "native",
+            result_count: rankedMatches.length,
+            top_match: rankedMatches[0]?.breed?.slug || ""
+          });
+          return;
+        }
+        await copyText(text);
+        setShareStatus("Sharing is not available in this browser, so the results were copied instead.");
+        trackBreedQuizEvent("dog_breed_quiz_share_results", {
+          method: "copy_fallback",
+          result_count: rankedMatches.length,
+          top_match: rankedMatches[0]?.breed?.slug || ""
+        });
+      } catch {
+        setShareStatus("Share was cancelled or unavailable.");
+      }
+    });
+
+    emailResults?.addEventListener("click", () => {
+      trackBreedQuizEvent("dog_breed_quiz_email_results", {
+        result_count: rankedMatches.length,
+        top_match: rankedMatches[0]?.breed?.slug || ""
       });
     });
 
@@ -677,6 +834,7 @@ const quizBreeds = breeds
     });
 
     renderStep();
+    restoreResultsFromUrl();
   })();
 </script>
 
@@ -909,6 +1067,38 @@ const quizBreeds = breeds
     display: none;
   }
 
+  .breed-share-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    border: 1px solid rgba(73, 127, 100, 0.24);
+    border-radius: var(--radius-sm);
+    background: var(--color-primary-soft);
+    margin-top: var(--space-5);
+    padding: var(--space-4);
+  }
+
+  .breed-share-panel[hidden] {
+    display: none;
+  }
+
+  .breed-share-panel h3 {
+    margin-bottom: var(--space-1);
+  }
+
+  .breed-share-panel p {
+    color: var(--color-muted);
+    margin: 0;
+  }
+
+  .breed-share-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    justify-content: flex-end;
+  }
+
   .breed-result-card {
     display: grid;
     grid-template-rows: auto minmax(0, 1fr);
@@ -1063,6 +1253,19 @@ const quizBreeds = breeds
     .breed-score-badge {
       width: 4.2rem;
       min-height: 4.2rem;
+    }
+
+    .breed-share-panel {
+      align-items: stretch;
+      flex-direction: column;
+    }
+
+    .breed-share-actions {
+      justify-content: stretch;
+    }
+
+    .breed-share-actions .button {
+      flex: 1 1 150px;
     }
   }
 </style>

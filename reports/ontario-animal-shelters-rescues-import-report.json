@@ -1,0 +1,686 @@
+{
+  "sourceFiles": [
+    "C:/Users/cjame/Downloads/ontario_animal_shelters_rescues_batch_1.json",
+    "C:/Users/cjame/Downloads/ontario_animal_shelters_rescues_batch_2.json",
+    "C:/Users/cjame/Downloads/ontario_animal_shelters_rescues_batch_3.json"
+  ],
+  "incomingCount": 108,
+  "duplicatesSkipped": [
+    {
+      "name": "Toronto Humane Society",
+      "slug": "toronto-humane-society"
+    },
+    {
+      "name": "Toronto Animal Services - West Shelter",
+      "slug": "toronto-animal-services-west-shelter"
+    },
+    {
+      "name": "Toronto Animal Services - North Shelter",
+      "slug": "toronto-animal-services-north-shelter"
+    },
+    {
+      "name": "Toronto Animal Services - East Shelter",
+      "slug": "toronto-animal-services-east-shelter"
+    },
+    {
+      "name": "Ottawa Humane Society",
+      "slug": "ottawa-humane-society"
+    },
+    {
+      "name": "Hamilton/Burlington SPCA",
+      "slug": "hamilton-burlington-spca"
+    },
+    {
+      "name": "Humane Society of Oakville, Milton & Halton",
+      "slug": "humane-society-of-oakville-milton-halton"
+    },
+    {
+      "name": "Burlington Humane Society",
+      "slug": "burlington-humane-society"
+    },
+    {
+      "name": "Guelph Humane Society",
+      "slug": "guelph-humane-society"
+    },
+    {
+      "name": "Humane Society of Kitchener Waterloo & Stratford Perth - Kitchener Waterloo Animal Centre",
+      "slug": "humane-society-of-kitchener-waterloo-stratford-perth-kitchener-waterloo-animal-centre"
+    },
+    {
+      "name": "Humane Society of Kitchener Waterloo & Stratford Perth - Stratford Perth Animal Centre",
+      "slug": "humane-society-of-kitchener-waterloo-stratford-perth-stratford-perth-animal-centre"
+    },
+    {
+      "name": "Cambridge & District Humane Society",
+      "slug": "cambridge-district-humane-society"
+    },
+    {
+      "name": "Humane Society London & Middlesex",
+      "slug": "humane-society-london-middlesex"
+    },
+    {
+      "name": "Windsor/Essex County Humane Society",
+      "slug": "windsor-essex-county-humane-society"
+    },
+    {
+      "name": "Niagara SPCA and Humane Society - Welland Shelter",
+      "slug": "niagara-spca-and-humane-society-welland-shelter"
+    },
+    {
+      "name": "Niagara SPCA and Humane Society - Niagara Falls Shelter",
+      "slug": "niagara-spca-and-humane-society-niagara-falls-shelter"
+    },
+    {
+      "name": "Niagara SPCA and Humane Society - Port Colborne Shelter",
+      "slug": "niagara-spca-and-humane-society-port-colborne-shelter"
+    },
+    {
+      "name": "Humane Society of Greater Niagara",
+      "slug": "humane-society-of-greater-niagara"
+    },
+    {
+      "name": "Brant County SPCA",
+      "slug": "brant-county-spca"
+    },
+    {
+      "name": "Humane Society Hastings Prince Edward",
+      "slug": "humane-society-hastings-prince-edward"
+    },
+    {
+      "name": "Peterborough Humane Society",
+      "slug": "peterborough-humane-society"
+    },
+    {
+      "name": "Humane Society of Kawartha Lakes",
+      "slug": "humane-society-of-kawartha-lakes"
+    },
+    {
+      "name": "Georgian Triangle Humane Society",
+      "slug": "georgian-triangle-humane-society"
+    },
+    {
+      "name": "North Bay Humane Society",
+      "slug": "north-bay-humane-society"
+    },
+    {
+      "name": "Sault Ste. Marie Humane Society",
+      "slug": "sault-ste-marie-humane-society"
+    },
+    {
+      "name": "Kingston Humane Society",
+      "slug": "kingston-humane-society"
+    },
+    {
+      "name": "Ontario SPCA and Humane Society - Barrie and District Animal Centre",
+      "slug": "ontario-spca-and-humane-society-barrie-and-district-animal-centre"
+    },
+    {
+      "name": "Ontario SPCA and Humane Society - Cornwall and Region Animal Centre",
+      "slug": "ontario-spca-and-humane-society-cornwall-and-region-animal-centre"
+    },
+    {
+      "name": "Ontario SPCA and Humane Society - Durham Region Animal Centre",
+      "slug": "ontario-spca-and-humane-society-durham-region-animal-centre"
+    },
+    {
+      "name": "Ontario SPCA and Humane Society - Greater Sudbury Animal Centre",
+      "slug": "ontario-spca-and-humane-society-greater-sudbury-animal-centre"
+    },
+    {
+      "name": "Ontario SPCA and Humane Society - Leeds and Grenville Animal Centre",
+      "slug": "ontario-spca-and-humane-society-leeds-and-grenville-animal-centre"
+    },
+    {
+      "name": "Ontario SPCA and Humane Society - Lennox and Addington Animal Centre",
+      "slug": "ontario-spca-and-humane-society-lennox-and-addington-animal-centre"
+    },
+    {
+      "name": "Ontario SPCA and Humane Society - Midland and District Animal Centre",
+      "slug": "ontario-spca-and-humane-society-midland-and-district-animal-centre"
+    },
+    {
+      "name": "Ontario SPCA and Humane Society - Muskoka Animal Centre",
+      "slug": "ontario-spca-and-humane-society-muskoka-animal-centre"
+    },
+    {
+      "name": "Ontario SPCA and Humane Society - Northwest Animal Centre",
+      "slug": "ontario-spca-and-humane-society-northwest-animal-centre"
+    },
+    {
+      "name": "Ontario SPCA and Humane Society - Orangeville and District Animal Centre",
+      "slug": "ontario-spca-and-humane-society-orangeville-and-district-animal-centre"
+    },
+    {
+      "name": "Ontario SPCA and Humane Society - Orillia and District Animal Centre",
+      "slug": "ontario-spca-and-humane-society-orillia-and-district-animal-centre"
+    },
+    {
+      "name": "Ontario SPCA and Humane Society - Renfrew County Animal Centre",
+      "slug": "ontario-spca-and-humane-society-renfrew-county-animal-centre"
+    },
+    {
+      "name": "Ontario SPCA and Humane Society - York Region Animal Centre",
+      "slug": "ontario-spca-and-humane-society-york-region-animal-centre"
+    },
+    {
+      "name": "Alliston & District Humane Society",
+      "slug": "alliston-district-humane-society"
+    },
+    {
+      "name": "Etobicoke Humane Society",
+      "slug": "etobicoke-humane-society"
+    },
+    {
+      "name": "Toronto Cat Rescue",
+      "slug": "toronto-cat-rescue"
+    },
+    {
+      "name": "Annex Cat Rescue",
+      "slug": "annex-cat-rescue"
+    },
+    {
+      "name": "Fetch + Releash Dog Rescue",
+      "slug": "fetch-releash-dog-rescue"
+    },
+    {
+      "name": "Dog Tales Rescue and Sanctuary",
+      "slug": "dog-tales-rescue-and-sanctuary"
+    },
+    {
+      "name": "Speaking of Dogs Rescue",
+      "slug": "speaking-of-dogs-rescue"
+    },
+    {
+      "name": "Save Our Scruff",
+      "slug": "save-our-scruff"
+    },
+    {
+      "name": "Redemption Paws",
+      "slug": "redemption-paws"
+    },
+    {
+      "name": "Mississauga Animal Services Shelter",
+      "slug": "mississauga-animal-services-shelter"
+    },
+    {
+      "name": "Brampton Animal Services",
+      "slug": "brampton-animal-services"
+    },
+    {
+      "name": "Vaughan Animal Services",
+      "slug": "vaughan-animal-services"
+    },
+    {
+      "name": "Caledon Animal Shelter",
+      "slug": "caledon-animal-shelter"
+    },
+    {
+      "name": "Pickering Animal Shelter",
+      "slug": "pickering-animal-shelter"
+    },
+    {
+      "name": "Clarington Animal Shelter",
+      "slug": "clarington-animal-shelter"
+    },
+    {
+      "name": "Uxbridge-Scugog Animal Shelter",
+      "slug": "uxbridge-scugog-animal-shelter"
+    },
+    {
+      "name": "Oshawa Animal Services",
+      "slug": "oshawa-animal-services"
+    },
+    {
+      "name": "Whitby Animal Services Centre",
+      "slug": "whitby-animal-services-centre"
+    },
+    {
+      "name": "Georgina Animal Shelter and Adoption Centre",
+      "slug": "georgina-animal-shelter-and-adoption-centre"
+    },
+    {
+      "name": "Fort Erie SPCA",
+      "slug": "fort-erie-spca"
+    },
+    {
+      "name": "Sarnia & District Humane Society",
+      "slug": "sarnia-district-humane-society"
+    },
+    {
+      "name": "St. Thomas City Animal Services",
+      "slug": "st-thomas-city-animal-services"
+    },
+    {
+      "name": "Pet and Wildlife Rescue",
+      "slug": "pet-and-wildlife-rescue"
+    },
+    {
+      "name": "CK Animal Rescue",
+      "slug": "ck-animal-rescue"
+    },
+    {
+      "name": "Oxford County Animal Rescue",
+      "slug": "oxford-county-animal-rescue"
+    },
+    {
+      "name": "Grey Bruce Animal Shelter",
+      "slug": "grey-bruce-animal-shelter"
+    },
+    {
+      "name": "Upper Credit Humane Society",
+      "slug": "upper-credit-humane-society"
+    },
+    {
+      "name": "Lanark Animal Welfare Society",
+      "slug": "lanark-animal-welfare-society"
+    },
+    {
+      "name": "Arnprior & District Humane Society",
+      "slug": "arnprior-district-humane-society"
+    },
+    {
+      "name": "Gananoque & District Humane Society",
+      "slug": "gananoque-district-humane-society"
+    },
+    {
+      "name": "Mississauga Humane Society",
+      "slug": "mississauga-humane-society"
+    },
+    {
+      "name": "Peel Animal Rescue Society",
+      "slug": "peel-animal-rescue-society"
+    },
+    {
+      "name": "Just Paws Animal Rescue",
+      "slug": "just-paws-animal-rescue"
+    },
+    {
+      "name": "Bark at the Moon Animal Rescue",
+      "slug": "bark-at-the-moon-animal-rescue"
+    },
+    {
+      "name": "Hopeful Tails Dog Rescue",
+      "slug": "hopeful-tails-dog-rescue"
+    },
+    {
+      "name": "Pound Dog Rescue",
+      "slug": "pound-dog-rescue"
+    },
+    {
+      "name": "Bullies In Need Dog Rescue",
+      "slug": "bullies-in-need-dog-rescue"
+    },
+    {
+      "name": "Save Me Dog Rescue",
+      "slug": "save-me-dog-rescue"
+    },
+    {
+      "name": "UDR Pet Rescue Canada",
+      "slug": "udr-pet-rescue-canada"
+    },
+    {
+      "name": "Northumberland Humane Society",
+      "slug": "northumberland-humane-society"
+    },
+    {
+      "name": "Thunder Bay & District Humane Society",
+      "slug": "thunder-bay-district-humane-society"
+    },
+    {
+      "name": "Timmins and District Humane Society",
+      "slug": "timmins-and-district-humane-society"
+    },
+    {
+      "name": "Second Chance Pet Network",
+      "slug": "second-chance-pet-network"
+    },
+    {
+      "name": "Muskoka Animal Rescue",
+      "slug": "muskoka-animal-rescue"
+    },
+    {
+      "name": "Animal Assistance Group",
+      "slug": "animal-assistance-group"
+    },
+    {
+      "name": "Owen Sound Animal Shelter",
+      "slug": "owen-sound-animal-shelter"
+    },
+    {
+      "name": "It's a Dog's Life",
+      "slug": "it-s-a-dog-s-life"
+    },
+    {
+      "name": "TLC Animal Aid",
+      "slug": "tlc-animal-aid"
+    },
+    {
+      "name": "Animal Guardian Society",
+      "slug": "animal-guardian-society"
+    },
+    {
+      "name": "Animal Rescue Krew",
+      "slug": "animal-rescue-krew"
+    },
+    {
+      "name": "Precious Paws Rescue",
+      "slug": "precious-paws-rescue"
+    },
+    {
+      "name": "Ninth Life Cat Rescue",
+      "slug": "ninth-life-cat-rescue"
+    },
+    {
+      "name": "Second Chance Animal Rescue of Windsor-Essex County",
+      "slug": "second-chance-animal-rescue-of-windsor-essex-county"
+    },
+    {
+      "name": "Kiera's Hope Dog Rescue and Sanctuary",
+      "slug": "kiera-s-hope-dog-rescue-and-sanctuary"
+    },
+    {
+      "name": "Ottawa Stray Cat Rescue",
+      "slug": "ottawa-stray-cat-rescue"
+    },
+    {
+      "name": "Pets Alive Niagara Animal Rescue",
+      "slug": "pets-alive-niagara-animal-rescue"
+    },
+    {
+      "name": "Pet Save",
+      "slug": "pet-save"
+    },
+    {
+      "name": "Furry Friends Animal Shelter",
+      "slug": "furry-friends-animal-shelter"
+    },
+    {
+      "name": "Street Cats Rescue",
+      "slug": "street-cats-rescue"
+    },
+    {
+      "name": "Rainbow District Animal Services and By-Law Enforcement",
+      "slug": "rainbow-district-animal-services-and-by-law-enforcement"
+    },
+    {
+      "name": "Kitty Kare Thunder Bay",
+      "slug": "kitty-kare-thunder-bay"
+    },
+    {
+      "name": "New Hope Dog Rescue",
+      "slug": "new-hope-dog-rescue"
+    },
+    {
+      "name": "Loyalist Humane Society",
+      "slug": "loyalist-humane-society"
+    },
+    {
+      "name": "Furever Homes and Lodging - Society for Animals in Distress",
+      "slug": "furever-homes-and-lodging-society-for-animals-in-distress"
+    },
+    {
+      "name": "North Toronto Cat Rescue",
+      "slug": "north-toronto-cat-rescue"
+    },
+    {
+      "name": "Forgotten Ones Cat Rescue & Adoption",
+      "slug": "forgotten-ones-cat-rescue-adoption"
+    },
+    {
+      "name": "Niagara Dog Rescue",
+      "slug": "niagara-dog-rescue"
+    },
+    {
+      "name": "Lost Boys Hope Dog Rescue",
+      "slug": "lost-boys-hope-dog-rescue"
+    },
+    {
+      "name": "Sit With Me Rescue",
+      "slug": "sit-with-me-rescue"
+    }
+  ],
+  "existingUpdated": [
+    {
+      "name": "Ontario SPCA and Humane Society - Leeds and Grenville Animal Centre",
+      "slug": "ontario-spca-and-humane-society-leeds-and-grenville-animal-centre",
+      "source": "nominatim:800 Centennial Road, Brockville, ON, K6V 5T4, Canada"
+    },
+    {
+      "name": "Annex Cat Rescue",
+      "slug": "annex-cat-rescue",
+      "source": "nominatim:360A Bloor Street West, Toronto, ON, Canada"
+    },
+    {
+      "name": "Vaughan Animal Services",
+      "slug": "vaughan-animal-services",
+      "source": "nominatim:70 Tigi Court, Vaughan, ON, L4K 5E4, Canada"
+    },
+    {
+      "name": "Mississauga Humane Society",
+      "slug": "mississauga-humane-society",
+      "source": "nominatim:3353 Credit Woodlands, Mississauga, ON, Canada"
+    },
+    {
+      "name": "Muskoka Animal Rescue",
+      "slug": "muskoka-animal-rescue",
+      "source": "nominatim:2 Main Street West, Huntsville, ON, P1H 1A0, Canada"
+    },
+    {
+      "name": "TLC Animal Aid",
+      "slug": "tlc-animal-aid",
+      "source": "nominatim:230 Strabane Avenue, Windsor, ON, N8Y 4V2, Canada"
+    },
+    {
+      "name": "Ninth Life Cat Rescue",
+      "slug": "ninth-life-cat-rescue",
+      "source": "nominatim:2525 Prince Michael Drive, Oakville, ON, L6H 0E0, Canada"
+    },
+    {
+      "name": "Furry Friends Animal Shelter",
+      "slug": "furry-friends-animal-shelter",
+      "source": "nominatim:25 Hart Drive, Barrie, ON, L4N 5R8, Canada"
+    },
+    {
+      "name": "Kitty Kare Thunder Bay",
+      "slug": "kitty-kare-thunder-bay",
+      "source": "nominatim:745 James Street North, Thunder Bay, ON, P7C 5M7, Canada"
+    }
+  ],
+  "added": [],
+  "unresolvedCoordinates": [
+    {
+      "name": "Humane Society of Kawartha Lakes",
+      "slug": "humane-society-of-kawartha-lakes",
+      "kind": "existing"
+    },
+    {
+      "name": "Ontario SPCA and Humane Society - Lennox and Addington Animal Centre",
+      "slug": "ontario-spca-and-humane-society-lennox-and-addington-animal-centre",
+      "kind": "existing"
+    },
+    {
+      "name": "Ontario SPCA and Humane Society - Midland and District Animal Centre",
+      "slug": "ontario-spca-and-humane-society-midland-and-district-animal-centre",
+      "kind": "existing"
+    },
+    {
+      "name": "Ontario SPCA and Humane Society - Renfrew County Animal Centre",
+      "slug": "ontario-spca-and-humane-society-renfrew-county-animal-centre",
+      "kind": "existing"
+    },
+    {
+      "name": "Alliston & District Humane Society",
+      "slug": "alliston-district-humane-society",
+      "kind": "existing"
+    },
+    {
+      "name": "Toronto Cat Rescue",
+      "slug": "toronto-cat-rescue",
+      "kind": "existing"
+    },
+    {
+      "name": "Fetch + Releash Dog Rescue",
+      "slug": "fetch-releash-dog-rescue",
+      "kind": "existing"
+    },
+    {
+      "name": "Speaking of Dogs Rescue",
+      "slug": "speaking-of-dogs-rescue",
+      "kind": "existing"
+    },
+    {
+      "name": "Save Our Scruff",
+      "slug": "save-our-scruff",
+      "kind": "existing"
+    },
+    {
+      "name": "Georgina Animal Shelter and Adoption Centre",
+      "slug": "georgina-animal-shelter-and-adoption-centre",
+      "kind": "existing"
+    },
+    {
+      "name": "St. Thomas City Animal Services",
+      "slug": "st-thomas-city-animal-services",
+      "kind": "existing"
+    },
+    {
+      "name": "Grey Bruce Animal Shelter",
+      "slug": "grey-bruce-animal-shelter",
+      "kind": "existing"
+    },
+    {
+      "name": "Lanark Animal Welfare Society",
+      "slug": "lanark-animal-welfare-society",
+      "kind": "existing"
+    },
+    {
+      "name": "Gananoque & District Humane Society",
+      "slug": "gananoque-district-humane-society",
+      "kind": "existing"
+    },
+    {
+      "name": "Peel Animal Rescue Society",
+      "slug": "peel-animal-rescue-society",
+      "kind": "existing"
+    },
+    {
+      "name": "Just Paws Animal Rescue",
+      "slug": "just-paws-animal-rescue",
+      "kind": "existing"
+    },
+    {
+      "name": "Bark at the Moon Animal Rescue",
+      "slug": "bark-at-the-moon-animal-rescue",
+      "kind": "existing"
+    },
+    {
+      "name": "Hopeful Tails Dog Rescue",
+      "slug": "hopeful-tails-dog-rescue",
+      "kind": "existing"
+    },
+    {
+      "name": "Pound Dog Rescue",
+      "slug": "pound-dog-rescue",
+      "kind": "existing"
+    },
+    {
+      "name": "Bullies In Need Dog Rescue",
+      "slug": "bullies-in-need-dog-rescue",
+      "kind": "existing"
+    },
+    {
+      "name": "Save Me Dog Rescue",
+      "slug": "save-me-dog-rescue",
+      "kind": "existing"
+    },
+    {
+      "name": "UDR Pet Rescue Canada",
+      "slug": "udr-pet-rescue-canada",
+      "kind": "existing"
+    },
+    {
+      "name": "Second Chance Pet Network",
+      "slug": "second-chance-pet-network",
+      "kind": "existing"
+    },
+    {
+      "name": "It's a Dog's Life",
+      "slug": "it-s-a-dog-s-life",
+      "kind": "existing"
+    },
+    {
+      "name": "Animal Guardian Society",
+      "slug": "animal-guardian-society",
+      "kind": "existing"
+    },
+    {
+      "name": "Animal Rescue Krew",
+      "slug": "animal-rescue-krew",
+      "kind": "existing"
+    },
+    {
+      "name": "Precious Paws Rescue",
+      "slug": "precious-paws-rescue",
+      "kind": "existing"
+    },
+    {
+      "name": "Second Chance Animal Rescue of Windsor-Essex County",
+      "slug": "second-chance-animal-rescue-of-windsor-essex-county",
+      "kind": "existing"
+    },
+    {
+      "name": "Kiera's Hope Dog Rescue and Sanctuary",
+      "slug": "kiera-s-hope-dog-rescue-and-sanctuary",
+      "kind": "existing"
+    },
+    {
+      "name": "Ottawa Stray Cat Rescue",
+      "slug": "ottawa-stray-cat-rescue",
+      "kind": "existing"
+    },
+    {
+      "name": "Pets Alive Niagara Animal Rescue",
+      "slug": "pets-alive-niagara-animal-rescue",
+      "kind": "existing"
+    },
+    {
+      "name": "Street Cats Rescue",
+      "slug": "street-cats-rescue",
+      "kind": "existing"
+    },
+    {
+      "name": "Rainbow District Animal Services and By-Law Enforcement",
+      "slug": "rainbow-district-animal-services-and-by-law-enforcement",
+      "kind": "existing"
+    },
+    {
+      "name": "New Hope Dog Rescue",
+      "slug": "new-hope-dog-rescue",
+      "kind": "existing"
+    },
+    {
+      "name": "North Toronto Cat Rescue",
+      "slug": "north-toronto-cat-rescue",
+      "kind": "existing"
+    },
+    {
+      "name": "Forgotten Ones Cat Rescue & Adoption",
+      "slug": "forgotten-ones-cat-rescue-adoption",
+      "kind": "existing"
+    },
+    {
+      "name": "Lost Boys Hope Dog Rescue",
+      "slug": "lost-boys-hope-dog-rescue",
+      "kind": "existing"
+    },
+    {
+      "name": "Sit With Me Rescue",
+      "slug": "sit-with-me-rescue",
+      "kind": "existing"
+    }
+  ],
+  "finalDirectoryCount": 963,
+  "addedCount": 0,
+  "updatedCount": 9,
+  "unresolvedCount": 38
+}
