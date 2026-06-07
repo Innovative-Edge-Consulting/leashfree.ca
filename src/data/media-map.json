@@ -7,6 +7,52 @@
                   
 {
           "collection": "Blog Posts",
+          "itemName": "Emergency Vet Costs in Canada: What Dog Owners Should Know Before a Crisis",
+          "itemSlug": "emergency-vet-costs-canada",
+          "fieldName": "Hero Image",
+          "originalWebflowUrl": "",
+          "localFilename": "blog-emergency-vet-costs-canada-hero.png",
+          "currentLocalPath": "public/images/blog/blog-emergency-vet-costs-canada-hero.png",
+          "originalSourcePath": "C:/Users/cjame/Downloads/ChatGPT Image Jun 6, 2026, 11_57_35 AM.png",
+          "cleanedFilename": "blog-emergency-vet-costs-canada-hero.png",
+          "suggestedFilename": "blog-emergency-vet-costs-canada-hero.png",
+          "suggestedPublicPath": "/images/blog/blog-emergency-vet-costs-canada-hero.png",
+          "publicPath": "/images/blog/blog-emergency-vet-costs-canada-hero.png",
+          "publicPathReady": true,
+          "priority": "High",
+          "status": "published",
+          "matchStatus": "published",
+          "confidence": "high",
+          "matchConfidence": "high",
+          "needsOwnerReview": false,
+          "notes": [
+                    "Manual mapping added for emergency vet costs Canada post hero image."
+          ]
+},{
+          "collection": "Blog Posts",
+          "itemName": "What Dog Breed Is Right for Me? Try Our Dog Breed Match Quiz",
+          "itemSlug": "what-dog-breed-is-right-for-me-dog-breed-match-quiz",
+          "fieldName": "Hero Image",
+          "originalWebflowUrl": "",
+          "localFilename": "blog-dog-breed-match-quiz-hero.png",
+          "currentLocalPath": "public/images/blog/blog-dog-breed-match-quiz-hero.png",
+          "originalSourcePath": "public/images/blog/blog-dog-breed-match-quiz-hero.png",
+          "cleanedFilename": "blog-dog-breed-match-quiz-hero.png",
+          "suggestedFilename": "blog-dog-breed-match-quiz-hero.png",
+          "suggestedPublicPath": "/images/blog/blog-dog-breed-match-quiz-hero.png",
+          "publicPath": "/images/blog/blog-dog-breed-match-quiz-hero.png",
+          "publicPathReady": true,
+          "priority": "High",
+          "status": "published",
+          "matchStatus": "published",
+          "confidence": "high",
+          "matchConfidence": "high",
+          "needsOwnerReview": false,
+          "notes": [
+                    "Manual mapping added for Dog Breed Match Quiz launch post hero image."
+          ]
+},{
+          "collection": "Blog Posts",
           "itemName": "Introducing the Dog Food Comparison Tool Canada",
           "itemSlug": "dog-food-comparison-tool-canada",
           "fieldName": "Hero Image",
@@ -7297,7 +7343,7 @@
                   },
                   {
                       "collection":  "Directories",
-                      "itemName":  "BC SPCA â€“ Vancouver Branch",
+                      "itemName":  "BC SPCA – Vancouver Branch",
                       "itemSlug":  "bc-spca-vancouver-branch",
                       "fieldName":  "Featured Image",
                       "originalWebflowUrl":  "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68f7e28696eb1c4f585ec2f7_volunteer-playing-with-rescue-dog-vancouver-shelter-canada.jpg",
@@ -9347,7 +9393,7 @@
                   },
                   {
                       "collection":  "Dog Breeds",
-                      "itemName":  "Cirneco dellâ€™Etna",
+                      "itemName":  "Cirneco dell’Etna",
                       "itemSlug":  "cirneco-delletna",
                       "fieldName":  "Featured Image",
                       "originalWebflowUrl":  "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68a389c29ebcea565d7678de_cirneco-dell-etna-dog-forest-trail.avif",
@@ -11564,7 +11610,7 @@
                   },
                   {
                       "collection":  "Dog Breeds",
-                      "itemName":  "LÃ¶wchen",
+                      "itemName":  "Löwchen",
                       "itemSlug":  "l-wchen",
                       "fieldName":  "Featured Image",
                       "originalWebflowUrl":  "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68d723371d086704a4947376_lowchen-forest-trail-portrait-leashfree.avif",
@@ -17428,9 +17474,9 @@
                       "itemSlug":  "grand-basset-griffon-vendeen",
                       "fieldName":  "Featured Image",
                       "originalWebflowUrl":  "",
-                      "localFilename":  "Grand Basset Griffon VendÃ©en.png",
-                      "currentLocalPath":  "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/Missing Breed Profile Images/Grand Basset Griffon VendÃ©en.png",
-                      "originalSourcePath":  "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/Missing Breed Profile Images/Grand Basset Griffon VendÃ©en.png",
+                      "localFilename":  "Grand Basset Griffon Vendéen.png",
+                      "currentLocalPath":  "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/Missing Breed Profile Images/Grand Basset Griffon Vendéen.png",
+                      "originalSourcePath":  "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/Missing Breed Profile Images/Grand Basset Griffon Vendéen.png",
                       "cleanedFilename":  "breed-grand-basset-griffon-vendeen-featured.avif",
                       "suggestedFilename":  "breed-grand-basset-griffon-vendeen-featured.avif",
                       "suggestedPublicPath":  "/images/breeds/breed-grand-basset-griffon-vendeen-featured.avif",

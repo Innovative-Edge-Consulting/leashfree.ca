@@ -1,0 +1,67 @@
+---
+import Layout from "../../components/Layout.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import Card from "../../components/Card.astro";
+import Hero from "../../components/Hero.astro";
+import Section from "../../components/Section.astro";
+import { breadcrumbSchema } from "../../utils/content.js";
+
+const breadcrumbs = [
+  { label: "Home", href: "/" },
+  { label: "Games", href: "/games/" }
+];
+
+const structuredData = [
+  breadcrumbSchema(breadcrumbs),
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Dog Games",
+    url: "https://leashfree.ca/games/",
+    description: "Free dog games and activities for Canadian dog owners, families, and breed fans.",
+    inLanguage: "en-CA"
+  }
+];
+---
+
+<Layout
+  title="Free Dog Games & Activities | LeashFree.ca"
+  description="Play free dog games from LeashFree.ca, including our photo-based Dog Breed Guessing Game."
+  canonical="https://leashfree.ca/games/"
+  structuredData={structuredData}
+>
+  <Hero
+    eyebrow="Games"
+    title="Free Dog Games & Activities"
+    summary="Quick, replayable dog activities built around LeashFree.ca's breed guides and owner resources."
+    image="/images/general/blog-category-dog-breeds-card.avif"
+    imageAlt="Dogs for breed games and activities"
+    primaryHref="/games/dog-breed-guessing-game/"
+    primaryLabel="Play the breed game"
+    secondaryHref="/dog-breeds/"
+    secondaryLabel="Browse breeds"
+  >
+    <Breadcrumbs slot="pretitle" items={breadcrumbs} />
+  </Hero>
+
+  <Section title="Featured Game" intro="Start with a 20-question photo challenge, then learn more about every breed you meet.">
+    <div class="grid">
+      <Card
+        title="Dog Breed Guessing Game"
+        href="/games/dog-breed-guessing-game/"
+        description="Guess the breed from a photo, choose from four options, and see how many you can identify across a 20-question round."
+        image="/images/general/blog-category-dog-breeds-card.avif"
+        imageAlt="Dog breed guessing game"
+        badges={["20 questions", "Photo quiz", "Breed profiles"]}
+        ctaLabel="Play now"
+      />
+    </div>
+  </Section>
+
+  <Section title="More Games Coming Soon" intro="The games section can grow into daily challenges, breed recognition levels, and family-friendly dog trivia.">
+    <p>
+      The first release focuses on dog breed recognition because it connects directly to the breed profile library. Future games can reuse the same
+      inventory for rare breed challenges, similar-looking breed quizzes, and daily dog trivia.
+    </p>
+  </Section>
+</Layout>

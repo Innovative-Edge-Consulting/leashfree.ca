@@ -7,11 +7,13 @@ import Section from "../../components/Section.astro";
 import Card from "../../components/Card.astro";
 import mediaMap from "../../data/media-map.json";
 import posts from "../../data/generated/blog-posts.json";
-import { breadcrumbSchema, dateLabel, excerpt, stripHtml } from "../../utils/content.js";
+import { breadcrumbSchema, dateLabel, excerpt, isPublishedNow, normalizeMojibake, stripHtml } from "../../utils/content.js";
 import { resolveMedia } from "../../utils/media.js";
 
+const publishedPosts = posts.filter((post) => isPublishedNow(post));
+
 export function getStaticPaths() {
-  return posts.filter((post) => post.slug).map((post) => ({
+  return posts.filter((post) => post.slug && isPublishedNow(post)).map((post) => ({
     params: { slug: post.slug },
     props: { post }
   }));
@@ -23,7 +25,9 @@ const tags = post.references["Blog Tags"] || [];
 const category = post.references.Category?.[0] || "";
 const published = dateLabel(post.raw["Published On"]);
 const updated = dateLabel(post.raw["Updated On"]);
-const related = posts.filter((candidate) => candidate.slug !== post.slug && candidate.references.Category?.[0] === category).slice(0, 3);
+const pageTitle = normalizeMojibake(post.seoTitle || post.title || post.name);
+const pageDescription = normalizeMojibake(post.metaDescription || post.description);
+const related = publishedPosts.filter((candidate) => candidate.slug !== post.slug && candidate.references.Category?.[0] === category).slice(0, 3);
 const breadcrumbs = [
   { label: "Home", href: "/" },
   { label: "Blog", href: "/blog/" },
@@ -44,7 +48,7 @@ const structuredData = [
 ];
 ---
 
-<Layout title={post.seoTitle || post.title || post.name} description={post.metaDescription || post.description} canonical={post.canonicalUrl} ogImage={image.src} structuredData={structuredData}>
+<Layout title={pageTitle} description={pageDescription} canonical={post.canonicalUrl} ogImage={image.src} structuredData={structuredData}>
   <section class="page-header">
     <div class="container">
       <div class="hero-grid">

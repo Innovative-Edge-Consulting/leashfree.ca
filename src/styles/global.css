@@ -1848,6 +1848,10 @@ body.has-full-page-map {
   grid-template-columns: minmax(260px, 1fr) minmax(290px, auto);
 }
 
+.business-directory-search .map-search-controls {
+  grid-template-columns: minmax(280px, 1fr) minmax(440px, auto);
+}
+
 .field {
   display: grid;
   gap: 0.35rem;
@@ -1917,6 +1921,7 @@ body.has-full-page-map {
 
 .map-actions {
   display: flex;
+  flex-wrap: wrap;
   align-items: end;
   justify-content: flex-end;
   gap: var(--space-2);

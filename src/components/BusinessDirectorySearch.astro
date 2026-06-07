@@ -107,6 +107,7 @@ const json = JSON.stringify({ items: businessItems, provinces, cities, categorie
     </div>
 
     <div class="map-actions">
+      <button class="button secondary" type="button" data-expand-map aria-pressed="false">Full map</button>
       <button class="button primary" type="button" data-use-location>Use my location</button>
       <button class="button secondary" type="button" data-toggle-filters aria-expanded="false" aria-controls="advanced-business-directory-filters">Filters</button>
       <button class="button secondary" type="button" data-reset-map>Reset</button>
@@ -184,6 +185,7 @@ const json = JSON.stringify({ items: businessItems, provinces, cities, categorie
       count: root.querySelector("[data-result-count]"),
       locationStatus: root.querySelector("[data-location-status]"),
       locationButton: root.querySelector("[data-use-location]"),
+      expandButton: root.querySelector("[data-expand-map]"),
       filterToggle: root.querySelector("[data-toggle-filters]"),
       advancedFilters: root.querySelector("#advanced-business-directory-filters"),
       resetButton: root.querySelector("[data-reset-map]")
@@ -204,6 +206,7 @@ const json = JSON.stringify({ items: businessItems, provinces, cities, categorie
     let userLocation = null;
     const markers = new Map();
     const markerLayer = L.layerGroup().addTo(map);
+    let isExpanded = false;
 
     function escapeHtml(value) {
       return String(value || "")
@@ -317,7 +320,7 @@ const json = JSON.stringify({ items: businessItems, provinces, cities, categorie
         return;
       }
 
-      items.slice(0, 12).forEach((item) => {
+      items.slice(0, isExpanded ? 24 : 12).forEach((item) => {
         const li = document.createElement("li");
         const meta = [item.city, item.province].filter(Boolean).join(", ");
         const distance = item.distance === null ? "" : `<span>${item.distance.toFixed(1)} km</span>`;
@@ -389,6 +392,22 @@ const json = JSON.stringify({ items: businessItems, provinces, cities, categorie
       renderMap();
     }
 
+    function refreshMapSize() {
+      window.setTimeout(() => {
+        map.invalidateSize();
+        renderMap();
+      }, 180);
+    }
+
+    function setExpanded(nextExpanded) {
+      isExpanded = nextExpanded;
+      root.classList.toggle("is-full-page-map", isExpanded);
+      document.body.classList.toggle("has-full-page-map", isExpanded);
+      controls.expandButton.setAttribute("aria-pressed", String(isExpanded));
+      controls.expandButton.textContent = isExpanded ? "Close map" : "Full map";
+      refreshMapSize();
+    }
+
     controls.locationButton.addEventListener("click", () => {
       if (!navigator.geolocation) {
         controls.locationStatus.textContent = "Location unavailable";
@@ -412,16 +431,21 @@ const json = JSON.stringify({ items: businessItems, provinces, cities, categorie
     });
 
     controls.resetButton.addEventListener("click", reset);
+    controls.expandButton.addEventListener("click", () => setExpanded(!isExpanded));
     controls.filterToggle.addEventListener("click", () => {
       const isOpen = controls.filterToggle.getAttribute("aria-expanded") === "true";
       controls.filterToggle.setAttribute("aria-expanded", String(!isOpen));
       controls.filterToggle.textContent = isOpen ? "Filters" : "Hide filters";
       controls.advancedFilters.hidden = isOpen;
-      window.dispatchEvent(new Event("resize"));
+      refreshMapSize();
     });
 
     [controls.query, controls.category, controls.province, controls.city, controls.radius]
       .forEach((control) => control.addEventListener("input", renderMap));
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && isExpanded) setExpanded(false);
+    });
 
     renderMap();
   })();

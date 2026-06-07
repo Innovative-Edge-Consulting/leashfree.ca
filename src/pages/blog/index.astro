@@ -5,9 +5,10 @@ import Layout from "../../components/Layout.astro";
 import Section from "../../components/Section.astro";
 import mediaMap from "../../data/media-map.json";
 import posts from "../../data/generated/blog-posts.json";
-import { dateLabel, excerpt, breadcrumbSchema } from "../../utils/content.js";
+import { dateLabel, excerpt, breadcrumbSchema, isPublishedNow } from "../../utils/content.js";
 import { resolveMedia } from "../../utils/media.js";
 
+const publishedPosts = posts.filter((post) => isPublishedNow(post));
 const breadcrumbs = [
   { label: "Home", href: "/" },
   { label: "Blog", href: "/blog/" }
@@ -32,9 +33,9 @@ const breadcrumbs = [
     imageAlt="Dog care and park resources"
   />
 
-  <Section id="articles" title="Latest articles" intro={`${posts.length} dog care articles and practical guides.`}>
+  <Section id="articles" title="Latest articles" intro={`${publishedPosts.length} dog care articles and practical guides.`}>
     <div class="grid">
-      {posts.map((post) => (
+      {publishedPosts.map((post) => (
         <Card
           title={post.title || post.name}
           href={`/blog/${post.slug}/`}

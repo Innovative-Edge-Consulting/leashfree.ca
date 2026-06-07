@@ -1,0 +1,767 @@
+---
+import Layout from "../../../components/Layout.astro";
+import Breadcrumbs from "../../../components/Breadcrumbs.astro";
+import Section from "../../../components/Section.astro";
+import mediaMap from "../../../data/media-map.json";
+import breeds from "../../../data/generated/dog-breeds.json";
+import { breadcrumbSchema, excerpt, stripHtml } from "../../../utils/content.js";
+import { resolveMedia } from "../../../utils/media.js";
+
+const breadcrumbs = [
+  { label: "Home", href: "/" },
+  { label: "Games", href: "/games/" },
+  { label: "Dog Breed Guessing Game", href: "/games/dog-breed-guessing-game/" }
+];
+
+const faqItems = [
+  {
+    question: "How does the Dog Breed Guessing Game work?",
+    answer: "Each round shows 20 dog breed photos. For every photo, choose the correct breed from four options, earn a point for each correct answer, and keep your place while opening breed profiles in a new tab."
+  },
+  {
+    question: "Where do the dog breed photos come from?",
+    answer: "The game uses LeashFree.ca's dog breed profile inventory and local featured breed images."
+  },
+  {
+    question: "Can I replay the game?",
+    answer: "Yes. Each new round randomly selects 20 breeds from the available breed profile inventory."
+  },
+  {
+    question: "Is this game meant to help choose a dog breed?",
+    answer: "It is primarily a recognition game, but every answer links to the matching breed profile so you can learn about temperament, grooming, activity needs, and owner fit."
+  }
+];
+
+const gameBreeds = breeds
+  .map((breed) => {
+    const image = resolveMedia(breed, "Featured Image", mediaMap);
+    const summary =
+      excerpt(breed.raw?.["Breed Summary"], breed.description, 150) ||
+      excerpt(breed.raw?.["Physical Characteristics"], breed.description, 150) ||
+      `${breed.name} is one of the breeds in the LeashFree.ca dog breed guide.`;
+
+    return {
+      name: breed.name,
+      slug: breed.slug,
+      href: `/dog-breeds/${breed.slug}/`,
+      image: image.src,
+      imageStatus: image.status,
+      group: breed.references?.["Breed Group"]?.[0] || breed.raw?.["Breed Group"] || "",
+      size: breed.raw?.["Size Category"] || "",
+      coat: breed.raw?.["Coat Type"] || "",
+      activity: breed.raw?.["Activity Level"] || "",
+      fact: stripHtml(summary)
+    };
+  })
+  .filter((breed) => breed.name && breed.slug && breed.image && breed.imageStatus === "mapped");
+
+const structuredData = [
+  breadcrumbSchema(breadcrumbs),
+  {
+    "@context": "https://schema.org",
+    "@type": "Game",
+    name: "Dog Breed Guessing Game",
+    url: "https://leashfree.ca/games/dog-breed-guessing-game/",
+    description: "Guess dog breeds from photos in a 20-question breed recognition game.",
+    inLanguage: "en-CA",
+    numberOfPlayers: {
+      "@type": "QuantitativeValue",
+      minValue: 1
+    },
+    educationalUse: "Breed recognition"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer
+      }
+    }))
+  }
+];
+---
+
+<Layout
+  title="Dog Breed Guessing Game: Guess the Breed from a Photo"
+  description="Test your dog breed knowledge with 20 photo-based questions. Guess each breed, track your score, and learn more from LeashFree.ca's dog breed profiles."
+  canonical="https://leashfree.ca/games/dog-breed-guessing-game/"
+  ogImage="/images/general/blog-category-dog-breeds-card.avif"
+  structuredData={structuredData}
+>
+  <section class="breed-game-hero">
+    <div class="container">
+      <Breadcrumbs items={breadcrumbs} />
+      <div class="breed-game-hero-grid">
+        <div>
+          <div class="eyebrow">Dog games</div>
+          <h1>Dog Breed Guessing Game</h1>
+          <p class="summary">
+            Guess 20 dog breeds from photos. Choose from four options, earn points for correct answers, and open any breed profile in a new tab when you want to learn more.
+          </p>
+          <div class="button-row">
+            <a class="button primary" href="#breed-game">Start playing</a>
+            <a class="button secondary" href="/dog-breeds/">Browse breed profiles</a>
+          </div>
+        </div>
+        <div class="breed-game-preview" aria-hidden="true">
+          <div class="preview-card">
+            <img src={gameBreeds[0]?.image} alt="" loading="eager" decoding="async" />
+            <div class="preview-options">
+              <span>{gameBreeds[0]?.name}</span>
+              <span>{gameBreeds[1]?.name}</span>
+              <span>{gameBreeds[2]?.name}</span>
+              <span>{gameBreeds[3]?.name}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="breed-game" class="breed-game-section" data-breed-game>
+    <div class="container">
+      <div class="game-shell">
+        <div class="game-topbar">
+          <div>
+            <span class="game-label">Question</span>
+            <strong data-progress>1 of 20</strong>
+          </div>
+          <div>
+            <span class="game-label">Score</span>
+            <strong data-score>0</strong>
+          </div>
+          <div>
+            <span class="game-label">Inventory</span>
+            <strong>{gameBreeds.length} breeds</strong>
+          </div>
+        </div>
+
+        <div class="game-progress" aria-hidden="true">
+          <span data-progress-bar></span>
+        </div>
+
+        <div class="game-board" data-game-board>
+          <div class="game-image-wrap">
+            <img data-breed-image src={gameBreeds[0]?.image} alt="Dog breed quiz image" loading="eager" decoding="async" />
+          </div>
+
+          <div class="game-panel">
+            <p class="game-kicker" data-round-status>Pick the breed shown in the photo.</p>
+            <h2 data-question-title>Which breed is this?</h2>
+            <div class="answer-grid" data-answer-grid></div>
+            <div class="answer-feedback" data-feedback hidden></div>
+            <div class="game-actions">
+              <a class="button secondary" data-learn-link href="/dog-breeds/" target="_blank" rel="noopener noreferrer" hidden>Learn about this breed</a>
+              <button class="button primary" type="button" data-next-button hidden>Next breed</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="game-results" data-results hidden>
+          <p class="game-kicker">Round complete</p>
+          <h2 data-result-title>Nice round.</h2>
+          <p data-result-copy></p>
+          <div class="result-actions">
+            <button class="button primary" type="button" data-play-again>Play again</button>
+            <a class="button secondary" href="/dog-breeds/">Explore all breeds</a>
+          </div>
+          <div data-missed-wrap hidden>
+            <h3>Breeds to review</h3>
+            <div class="missed-grid" data-missed-grid></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Section title="How the Dog Breed Guessing Game Works" intro="Each round is randomized, but the learning loop stays simple.">
+    <div class="info-grid">
+      <article>
+        <h3>1. Look at the photo</h3>
+        <p>The game chooses a breed image from LeashFree.ca's mapped breed profile inventory.</p>
+      </article>
+      <article>
+        <h3>2. Choose from four breeds</h3>
+        <p>Wrong answers are weighted toward similar breeds where possible, using breed group, size, coat, and activity traits.</p>
+      </article>
+      <article>
+        <h3>3. Learn as you play</h3>
+        <p>After each answer, you can open the matching breed profile in a new tab without losing your game progress.</p>
+      </article>
+    </div>
+  </Section>
+
+  <Section title="Tips for Recognizing Dog Breeds">
+    <ul class="tips-list">
+      <li><strong>Start with body shape:</strong> size, leg length, muzzle shape, and ear position narrow the field quickly.</li>
+      <li><strong>Look at coat clues:</strong> curl, wire texture, feathering, double coats, and common colors are strong signals.</li>
+      <li><strong>Compare breed groups:</strong> herding, sporting, hound, terrier, toy, and working breeds often share visual patterns.</li>
+      <li><strong>Watch for close cousins:</strong> some breeds look similar because they share jobs, ancestry, or regional development.</li>
+    </ul>
+  </Section>
+
+  <Section title="Dog Breed Guessing Game FAQ">
+    <div class="faq-list">
+      {faqItems.map((item) => (
+        <details>
+          <summary>{item.question}</summary>
+          <p>{item.answer}</p>
+        </details>
+      ))}
+    </div>
+  </Section>
+
+  <script type="application/json" id="breed-game-data" set:html={JSON.stringify(gameBreeds)}></script>
+
+  <script>
+  const gameRoot = document.querySelector("[data-breed-game]");
+  const dataNode = document.getElementById("breed-game-data");
+
+  if (gameRoot && dataNode) {
+    const breeds = JSON.parse(dataNode.textContent || "[]");
+    const roundSize = Math.min(20, breeds.length);
+    const state = {
+      round: [],
+      currentIndex: 0,
+      score: 0,
+      answered: false,
+      misses: []
+    };
+
+    const els = {
+      board: gameRoot.querySelector("[data-game-board]"),
+      image: gameRoot.querySelector("[data-breed-image]"),
+      progress: gameRoot.querySelector("[data-progress]"),
+      progressBar: gameRoot.querySelector("[data-progress-bar]"),
+      score: gameRoot.querySelector("[data-score]"),
+      status: gameRoot.querySelector("[data-round-status]"),
+      answerGrid: gameRoot.querySelector("[data-answer-grid]"),
+      feedback: gameRoot.querySelector("[data-feedback]"),
+      learnLink: gameRoot.querySelector("[data-learn-link]"),
+      nextButton: gameRoot.querySelector("[data-next-button]"),
+      results: gameRoot.querySelector("[data-results]"),
+      resultTitle: gameRoot.querySelector("[data-result-title]"),
+      resultCopy: gameRoot.querySelector("[data-result-copy]"),
+      missedWrap: gameRoot.querySelector("[data-missed-wrap]"),
+      missedGrid: gameRoot.querySelector("[data-missed-grid]"),
+      playAgain: gameRoot.querySelector("[data-play-again]")
+    };
+
+    function shuffle(items) {
+      return [...items].sort(() => Math.random() - 0.5);
+    }
+
+    function similarityScore(a, b) {
+      let score = 0;
+      if (a.group && a.group === b.group) score += 4;
+      if (a.size && a.size === b.size) score += 2;
+      if (a.coat && a.coat === b.coat) score += 1;
+      if (a.activity && a.activity === b.activity) score += 1;
+      return score;
+    }
+
+    function buildOptions(answer) {
+      const ranked = breeds
+        .filter((breed) => breed.slug !== answer.slug)
+        .map((breed) => ({ breed, score: similarityScore(answer, breed), random: Math.random() }))
+        .sort((a, b) => b.score - a.score || a.random - b.random)
+        .slice(0, 12)
+        .map((item) => item.breed);
+
+      const distractors = shuffle(ranked).slice(0, 3);
+      while (distractors.length < 3) {
+        const candidate = breeds[Math.floor(Math.random() * breeds.length)];
+        if (candidate.slug !== answer.slug && !distractors.some((breed) => breed.slug === candidate.slug)) {
+          distractors.push(candidate);
+        }
+      }
+
+      return shuffle([answer, ...distractors]);
+    }
+
+    function startRound() {
+      state.round = shuffle(breeds).slice(0, roundSize);
+      state.currentIndex = 0;
+      state.score = 0;
+      state.answered = false;
+      state.misses = [];
+      els.score.textContent = "0";
+      els.results.hidden = true;
+      els.board.hidden = false;
+      renderQuestion();
+    }
+
+    function renderQuestion() {
+      const answer = state.round[state.currentIndex];
+      const options = buildOptions(answer);
+
+      state.answered = false;
+      els.image.src = answer.image;
+      els.image.alt = "Dog breed quiz image";
+      els.progress.textContent = `${state.currentIndex + 1} of ${roundSize}`;
+      els.progressBar.style.width = `${((state.currentIndex + 1) / roundSize) * 100}%`;
+      els.status.textContent = "Pick the breed shown in the photo.";
+      els.feedback.hidden = true;
+      els.feedback.textContent = "";
+      els.learnLink.hidden = true;
+      els.learnLink.href = answer.href;
+      els.learnLink.textContent = `Learn about the ${answer.name}`;
+      els.nextButton.hidden = true;
+      els.nextButton.textContent = state.currentIndex + 1 === roundSize ? "See results" : "Next breed";
+      els.answerGrid.innerHTML = "";
+
+      for (const [index, option] of options.entries()) {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "answer-option";
+        button.dataset.optionName = option.name;
+        button.innerHTML = `<span class="answer-letter" aria-hidden="true">${String.fromCharCode(65 + index)}</span><span class="answer-name">${option.name}</span>`;
+        button.addEventListener("click", () => handleAnswer(option, answer));
+        els.answerGrid.append(button);
+      }
+    }
+
+    function handleAnswer(selection, answer) {
+      if (state.answered) return;
+
+      state.answered = true;
+      const correct = selection.slug === answer.slug;
+      if (correct) {
+        state.score += 1;
+        els.score.textContent = String(state.score);
+      } else {
+        state.misses.push(answer);
+      }
+
+      for (const button of els.answerGrid.querySelectorAll("button")) {
+        const optionName = button.dataset.optionName || "";
+        const isSelected = optionName === selection.name;
+        const isCorrect = optionName === answer.name;
+        button.disabled = true;
+        if (isCorrect) button.classList.add("is-correct");
+        if (isSelected && !correct) button.classList.add("is-wrong");
+      }
+
+      els.status.textContent = correct ? "Correct answer." : "Not quite.";
+      els.feedback.hidden = false;
+      els.feedback.innerHTML = `<strong>${answer.name}</strong><span>${answer.fact}</span>`;
+      els.learnLink.hidden = false;
+      els.nextButton.hidden = false;
+    }
+
+    function showResults() {
+      const percent = Math.round((state.score / roundSize) * 100);
+      els.board.hidden = true;
+      els.results.hidden = false;
+      els.resultTitle.textContent = `You scored ${state.score} out of ${roundSize}.`;
+      els.resultCopy.textContent =
+        percent >= 85
+          ? "Strong breed recognition. Try another round to see a fresh set of photos."
+          : percent >= 60
+            ? "Solid round. Review the breeds you missed, then play again with a new mix."
+            : "A useful practice round. The missed breed links are a good place to sharpen your eye.";
+
+      els.missedGrid.innerHTML = "";
+      els.missedWrap.hidden = state.misses.length === 0;
+      for (const breed of state.misses) {
+        const link = document.createElement("a");
+        link.href = breed.href;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.className = "missed-link";
+        link.textContent = breed.name;
+        els.missedGrid.append(link);
+      }
+    }
+
+    els.nextButton.addEventListener("click", () => {
+      if (state.currentIndex + 1 >= roundSize) {
+        showResults();
+        return;
+      }
+      state.currentIndex += 1;
+      renderQuestion();
+    });
+
+    els.playAgain.addEventListener("click", startRound);
+
+    startRound();
+  }
+</script>
+
+  <style is:global>
+  .breed-game-hero {
+    padding: var(--space-8) 0 var(--space-6);
+    background: linear-gradient(180deg, #f7faf7 0%, #eef5ef 100%);
+  }
+
+  .breed-game-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.02fr) minmax(320px, 0.98fr);
+    gap: var(--space-7);
+    align-items: center;
+    margin-top: var(--space-4);
+  }
+
+  .breed-game-preview {
+    min-width: 0;
+  }
+
+  .preview-card {
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-card);
+  }
+
+  .preview-card img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+  }
+
+  .preview-options {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+
+  .preview-options span {
+    min-height: 44px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: 0.65rem;
+    background: #ffffff;
+    font-weight: 800;
+    line-height: 1.25;
+  }
+
+  .breed-game-section {
+    padding: clamp(1.25rem, 3vw, var(--space-6)) 0;
+  }
+
+  .breed-game-section [hidden] {
+    display: none !important;
+  }
+
+  .game-shell {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+  }
+
+  .game-topbar {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1px;
+    background: var(--color-border);
+  }
+
+  .game-topbar > div {
+    padding: 0.75rem 1rem;
+    background: #ffffff;
+  }
+
+  .game-label,
+  .game-kicker {
+    display: block;
+    margin-bottom: 0.2rem;
+    color: var(--color-muted);
+    font-size: 0.82rem;
+    font-weight: 850;
+    letter-spacing: 0;
+    text-transform: uppercase;
+  }
+
+  .game-progress {
+    height: 8px;
+    background: var(--color-primary-soft);
+  }
+
+  .game-progress span {
+    display: block;
+    width: 0;
+    height: 100%;
+    background: var(--color-primary);
+    transition: width 0.2s ease;
+  }
+
+  .game-board {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 0.88fr);
+    gap: 0;
+    min-height: 0;
+  }
+
+  .game-image-wrap {
+    height: clamp(360px, 42vw, 540px);
+    min-height: 0;
+    background:
+      radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0) 32%),
+      linear-gradient(135deg, #edf6f0 0%, #dcebe1 100%);
+  }
+
+  .game-image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+    padding: clamp(0.5rem, 1.5vw, 1rem);
+  }
+
+  .game-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(1rem, 2.4vw, 1.5rem);
+  }
+
+  .game-panel h2,
+  .game-results h2 {
+    margin-bottom: 1rem;
+  }
+
+  .answer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+
+  .answer-option {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2.05rem minmax(0, 1fr);
+    align-items: center;
+    gap: 0.85rem;
+    width: 100%;
+    min-height: 46px;
+    border: 1px solid #d5e3d8;
+    border-radius: var(--radius-sm);
+    background: linear-gradient(180deg, #ffffff 0%, #f8fbf8 100%);
+    color: var(--color-text);
+    cursor: pointer;
+    font: inherit;
+    font-weight: 850;
+    line-height: 1.25;
+    padding: 0.65rem 0.9rem;
+    text-align: left;
+    box-shadow: 0 1px 0 rgba(31, 41, 51, 0.04), 0 8px 20px rgba(49, 95, 73, 0.06);
+    transition: border-color 0.16s ease, box-shadow 0.16s ease, transform 0.16s ease, background 0.16s ease;
+  }
+
+  .answer-letter {
+    display: inline-grid;
+    width: 2.05rem;
+    height: 2.05rem;
+    place-items: center;
+    border: 1px solid #cfe0d3;
+    border-radius: 50%;
+    background: #eef6f0;
+    color: var(--color-primary-dark);
+    font-size: 0.86rem;
+    font-weight: 900;
+  }
+
+  .answer-name {
+    min-width: 0;
+  }
+
+  .answer-option:hover:not(:disabled) {
+    border-color: var(--color-primary);
+    background: #ffffff;
+    box-shadow: 0 1px 0 rgba(31, 41, 51, 0.04), 0 12px 26px rgba(49, 95, 73, 0.12);
+    transform: translateY(-1px);
+  }
+
+  .answer-option:disabled {
+    cursor: default;
+    opacity: 0.92;
+  }
+
+  .answer-option.is-correct {
+    border-color: var(--color-primary);
+    background: linear-gradient(180deg, #eef8f1 0%, #dff0e5 100%);
+    box-shadow: inset 0 0 0 1px rgba(73, 127, 100, 0.22);
+  }
+
+  .answer-option.is-correct .answer-letter {
+    border-color: var(--color-primary);
+    background: var(--color-primary);
+    color: #ffffff;
+  }
+
+  .answer-option.is-wrong {
+    border-color: #c66a5a;
+    background: linear-gradient(180deg, #fff7f5 0%, #ffecea 100%);
+    box-shadow: inset 0 0 0 1px rgba(198, 106, 90, 0.22);
+  }
+
+  .answer-option.is-wrong .answer-letter {
+    border-color: #c66a5a;
+    background: #c66a5a;
+    color: #ffffff;
+  }
+
+  .answer-feedback {
+    display: grid;
+    gap: 0.35rem;
+    margin-top: 0.75rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: 0.85rem;
+    background: #f8fbf8;
+  }
+
+  .answer-feedback span {
+    color: var(--color-muted);
+  }
+
+  .game-actions,
+  .result-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.85rem;
+  }
+
+  .game-actions button,
+  .result-actions button {
+    cursor: pointer;
+  }
+
+  .game-results {
+    padding: clamp(1.25rem, 3vw, 2rem);
+  }
+
+  @media (max-height: 760px) and (min-width: 861px) {
+    .breed-game-section {
+      padding: 1rem 0;
+    }
+
+    .game-topbar > div {
+      padding: 0.55rem 0.85rem;
+    }
+
+    .game-label,
+    .game-kicker {
+      font-size: 0.72rem;
+    }
+
+    .game-image-wrap {
+      height: clamp(320px, 52vh, 430px);
+    }
+
+    .game-panel {
+      padding: 1rem;
+    }
+
+    .game-panel h2,
+    .game-results h2 {
+      margin-bottom: 0.75rem;
+      font-size: 1.35rem;
+    }
+
+    .answer-option {
+      min-height: 42px;
+      padding: 0.55rem 0.75rem;
+    }
+
+    .answer-feedback {
+      max-height: 6.8rem;
+      overflow: auto;
+    }
+  }
+
+  .missed-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin-top: 0.75rem;
+  }
+
+  .missed-link {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    padding: 0.55rem 0.8rem;
+    background: #ffffff;
+    font-weight: 800;
+    text-decoration: none;
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .info-grid article,
+  .faq-list details {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    padding: 1rem;
+  }
+
+  .info-grid p,
+  .faq-list p {
+    color: var(--color-muted);
+  }
+
+  .tips-list {
+    display: grid;
+    gap: 0.75rem;
+    padding-left: 1.2rem;
+  }
+
+  .faq-list {
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .faq-list summary {
+    cursor: pointer;
+    font-weight: 850;
+  }
+
+  .faq-list p {
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 860px) {
+    .breed-game-hero-grid,
+    .game-board,
+    .info-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .game-image-wrap {
+      height: auto;
+      min-height: 0;
+    }
+
+    .game-image-wrap img {
+      min-height: 260px;
+      aspect-ratio: 16 / 10;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .game-topbar {
+      grid-template-columns: 1fr;
+    }
+
+    .preview-options {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</Layout>

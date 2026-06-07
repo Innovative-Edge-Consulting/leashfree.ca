@@ -6,6 +6,7 @@ import cities from "../data/generated/cities.json";
 import provinces from "../data/generated/provinces.json";
 import directories from "../data/generated/directories.json";
 import dogNames from "../data/generated/dog-names.json";
+import { isPublishedNow } from "./content.js";
 import { withoutRedirectedRecords } from "./redirects.js";
 
 export const SITE = "https://leashfree.ca";
@@ -70,7 +71,7 @@ const parkEntries = uniqueEntries(activeParks.map(itemEntry));
 const locationEntries = uniqueEntries([...provinces.map(itemEntry), ...cities.map(itemEntry)]);
 const breedEntries = uniqueEntries([...breeds.map(itemEntry), ...groups.map(itemEntry)]);
 const directoryEntries = uniqueEntries(directories.map(itemEntry));
-const blogEntries = uniqueEntries(posts.map(itemEntry));
+const blogEntries = uniqueEntries(posts.filter((post) => isPublishedNow(post)).map(itemEntry));
 const dogNameEntries = uniqueEntries(dogNames.map(itemEntry));
 
 export const sitemapSections = [
@@ -83,6 +84,8 @@ export const sitemapSections = [
       entry(absoluteUrl("/dog-breeds/"), sectionLastmod(breedEntries)),
       entry(absoluteUrl("/dog-names/"), sectionLastmod(dogNameEntries)),
       entry(absoluteUrl("/dog-name-finder/"), sectionLastmod(dogNameEntries)),
+      entry(absoluteUrl("/games/"), sectionLastmod(breedEntries)),
+      entry(absoluteUrl("/games/dog-breed-guessing-game/"), sectionLastmod(breedEntries)),
       entry(absoluteUrl("/resources/")),
       entry(absoluteUrl("/resources/dog-breed-match-quiz/"), sectionLastmod(breedEntries)),
       entry(absoluteUrl("/resources/dog-calorie-calculator/")),
