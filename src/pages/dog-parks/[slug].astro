@@ -1,5 +1,6 @@
 ---
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import AdSenseDisplay from "../../components/AdSenseDisplay.astro";
 import Card from "../../components/Card.astro";
 import ContentBlock from "../../components/ContentBlock.astro";
 import EmptyState from "../../components/EmptyState.astro";
@@ -462,6 +463,7 @@ const structuredData = [
             <p class="park-rules-summary"><strong>Park Rules:</strong> {parkRulesText}</p>
           )}
           {notesText && <p>{notesText}</p>}
+          <AdSenseDisplay slot="2445869045" className="park-profile-ad" />
           {amenityGroups.length > 0 && (
             <section class="card">
               <div class="card-body amenities-card">

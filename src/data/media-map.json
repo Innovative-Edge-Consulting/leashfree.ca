@@ -7,6 +7,29 @@
                   
 {
           "collection": "Blog Posts",
+          "itemName": "What to Know About Living With and Owning a Weimaraner",
+          "itemSlug": "living-with-a-weimaraner",
+          "fieldName": "Hero Image",
+          "originalWebflowUrl": "",
+          "localFilename": "blog-living-with-a-weimaraner-hero.png",
+          "currentLocalPath": "public/images/blog/blog-living-with-a-weimaraner-hero.png",
+          "originalSourcePath": "C:/Users/cjame/Downloads/ChatGPT Image Jun 6, 2026, 12_19_52 PM.png",
+          "cleanedFilename": "blog-living-with-a-weimaraner-hero.png",
+          "suggestedFilename": "blog-living-with-a-weimaraner-hero.png",
+          "suggestedPublicPath": "/images/blog/blog-living-with-a-weimaraner-hero.png",
+          "publicPath": "/images/blog/blog-living-with-a-weimaraner-hero.png",
+          "publicPathReady": true,
+          "priority": "High",
+          "status": "published",
+          "matchStatus": "published",
+          "confidence": "high",
+          "matchConfidence": "high",
+          "needsOwnerReview": false,
+          "notes": [
+                    "Manual mapping added for living with a Weimaraner post hero image."
+          ]
+},{
+          "collection": "Blog Posts",
           "itemName": "Emergency Vet Costs in Canada: What Dog Owners Should Know Before a Crisis",
           "itemSlug": "emergency-vet-costs-canada",
           "fieldName": "Hero Image",

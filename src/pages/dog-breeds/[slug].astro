@@ -1,5 +1,6 @@
 ---
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import AdSenseDisplay from "../../components/AdSenseDisplay.astro";
 import ContentBlock from "../../components/ContentBlock.astro";
 import ImageWithFallback from "../../components/ImageWithFallback.astro";
 import Layout from "../../components/Layout.astro";
@@ -100,6 +101,7 @@ const sections = [
     <div class="split">
       <article>
         <ContentBlock html={breed.body || breed.raw["Breed Summary"] || breed.description} />
+        <AdSenseDisplay slot="4285089896" className="breed-profile-ad" />
         {sections.map(([heading, html]) => (
           <section class="content-block">
             <h2>{heading}</h2>

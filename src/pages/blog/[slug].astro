@@ -1,5 +1,6 @@
 ---
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import AdSenseDisplay from "../../components/AdSenseDisplay.astro";
 import ContentBlock from "../../components/ContentBlock.astro";
 import ImageWithFallback from "../../components/ImageWithFallback.astro";
 import Layout from "../../components/Layout.astro";
@@ -28,6 +29,10 @@ const updated = dateLabel(post.raw["Updated On"]);
 const pageTitle = normalizeMojibake(post.seoTitle || post.title || post.name);
 const pageDescription = normalizeMojibake(post.metaDescription || post.description);
 const related = publishedPosts.filter((candidate) => candidate.slug !== post.slug && candidate.references.Category?.[0] === category).slice(0, 3);
+const articleHtml = post.body || post.description;
+const firstHeadingMatch = articleHtml.match(/<h2\b/i);
+const articleIntroHtml = firstHeadingMatch ? articleHtml.slice(0, firstHeadingMatch.index) : articleHtml;
+const articleRemainderHtml = firstHeadingMatch ? articleHtml.slice(firstHeadingMatch.index) : "";
 const breadcrumbs = [
   { label: "Home", href: "/" },
   { label: "Blog", href: "/blog/" },
@@ -73,7 +78,16 @@ const structuredData = [
   <Section>
     <div class="split">
       <article>
-        <ContentBlock html={post.body || post.description} />
+        <ContentBlock html={articleIntroHtml} />
+        <AdSenseDisplay
+          slot="2975877653"
+          className="blog-post-ad"
+          format="fluid"
+          layout="in-article"
+          fullWidthResponsive={false}
+          centered
+        />
+        <ContentBlock html={articleRemainderHtml} />
       </article>
       <aside class="sidebar">
         {(category || tags.length > 0) && (

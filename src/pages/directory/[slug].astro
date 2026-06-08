@@ -1,5 +1,6 @@
 ---
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import AdSenseDisplay from "../../components/AdSenseDisplay.astro";
 import ContentBlock from "../../components/ContentBlock.astro";
 import ImageWithFallback from "../../components/ImageWithFallback.astro";
 import Layout from "../../components/Layout.astro";
@@ -102,6 +103,7 @@ const breadcrumbs = [
         ))}
       </div>
     )}
+    <AdSenseDisplay slot="3653821509" className="directory-profile-ad" />
     <ContentBlock html={item.body || item.raw["Long Description"] || item.description} />
   </Section>
 

@@ -1,0 +1,38 @@
+---
+interface Props {
+  slot: string;
+  label?: string;
+  className?: string;
+  format?: string;
+  layout?: string;
+  fullWidthResponsive?: boolean;
+  centered?: boolean;
+}
+
+const {
+  slot,
+  label = "Advertisement",
+  className = "",
+  format = "auto",
+  layout,
+  fullWidthResponsive = true,
+  centered = false
+} = Astro.props;
+const classes = ["ad-container", className].filter(Boolean).join(" ");
+const adStyle = centered ? "display:block; text-align:center;" : "display:block";
+---
+
+<aside class={classes} aria-label={label}>
+  <ins
+    class="adsbygoogle"
+    style={adStyle}
+    data-ad-layout={layout}
+    data-ad-client="ca-pub-4513742006008959"
+    data-ad-slot={slot}
+    data-ad-format={format}
+    data-full-width-responsive={fullWidthResponsive ? "true" : undefined}
+  ></ins>
+  <script is:inline>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</aside>

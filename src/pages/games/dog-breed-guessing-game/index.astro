@@ -1,5 +1,6 @@
 ---
 import Layout from "../../../components/Layout.astro";
+import AdSenseDisplay from "../../../components/AdSenseDisplay.astro";
 import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import Section from "../../../components/Section.astro";
 import mediaMap from "../../../data/media-map.json";
@@ -119,6 +120,7 @@ const structuredData = [
           </div>
         </div>
       </div>
+      <AdSenseDisplay slot="2812756353" className="breed-game-ad" />
     </div>
   </section>
 
@@ -456,6 +458,12 @@ const structuredData = [
     background: var(--color-surface);
     box-shadow: var(--shadow-card);
     overflow: hidden;
+  }
+
+  .breed-game-ad {
+    max-width: 970px;
+    min-height: 90px;
+    margin: var(--space-5) auto 0;
   }
 
   .game-topbar {
