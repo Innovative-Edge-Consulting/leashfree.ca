@@ -7,6 +7,29 @@
                   
 {
           "collection": "Blog Posts",
+          "itemName": "Is It Too Hot, Smoky, or Tick-Risky for the Dog Park? A Canadian Summer Safety Guide for Dog Owners",
+          "itemSlug": "summer-dog-park-safety-canada",
+          "fieldName": "Hero Image",
+          "originalWebflowUrl": "",
+          "localFilename": "blog-summer-dog-park-safety-canada-hero.webp",
+          "currentLocalPath": "public/images/blog/blog-summer-dog-park-safety-canada-hero.webp",
+          "originalSourcePath": "C:/Users/cjame/Downloads/ChatGPT Image Jun 9, 2026, 08_11_30 AM.png",
+          "cleanedFilename": "blog-summer-dog-park-safety-canada-hero.webp",
+          "suggestedFilename": "blog-summer-dog-park-safety-canada-hero.webp",
+          "suggestedPublicPath": "/images/blog/blog-summer-dog-park-safety-canada-hero.webp",
+          "publicPath": "/images/blog/blog-summer-dog-park-safety-canada-hero.webp",
+          "publicPathReady": true,
+          "priority": "High",
+          "status": "published",
+          "matchStatus": "published",
+          "confidence": "high",
+          "matchConfidence": "high",
+          "needsOwnerReview": false,
+          "notes": [
+                    "Manual mapping added for summer dog park safety Canada post hero image."
+          ]
+},{
+          "collection": "Blog Posts",
           "itemName": "What to Know About Living With and Owning a Weimaraner",
           "itemSlug": "living-with-a-weimaraner",
           "fieldName": "Hero Image",
