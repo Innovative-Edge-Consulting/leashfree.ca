@@ -1,4 +1,7 @@
-const allowedProductionBranch = process.env.PRODUCTION_BRANCH || "master";
+const allowedProductionBranches = (process.env.PRODUCTION_BRANCH || "master,production")
+  .split(",")
+  .map((branch) => branch.trim())
+  .filter(Boolean);
 const legacyBranch = "webflow-static-build-phase-6-launch-readiness";
 
 const detectedBranch =
@@ -26,14 +29,14 @@ if (process.env.ALLOW_LEGACY_DEPLOY_BRANCH === "1") {
 
 if (detectedBranch === legacyBranch) {
   console.error(
-    `Refusing to build production from legacy branch "${legacyBranch}". Use "${allowedProductionBranch}" instead.`
+    `Refusing to build production from legacy branch "${legacyBranch}". Use one of: ${allowedProductionBranches.join(", ")}.`
   );
   process.exit(1);
 }
 
-if (detectedBranch !== allowedProductionBranch) {
+if (!allowedProductionBranches.includes(detectedBranch)) {
   console.error(
-    `Refusing to build production from "${detectedBranch}". Expected "${allowedProductionBranch}".`
+    `Refusing to build production from "${detectedBranch}". Expected one of: ${allowedProductionBranches.join(", ")}.`
   );
   process.exit(1);
 }
