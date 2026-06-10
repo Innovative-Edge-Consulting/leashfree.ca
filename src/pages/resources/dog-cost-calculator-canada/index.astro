@@ -1,0 +1,1048 @@
+---
+import Layout from "../../../components/Layout.astro";
+import Breadcrumbs from "../../../components/Breadcrumbs.astro";
+import ImageWithFallback from "../../../components/ImageWithFallback.astro";
+import Section from "../../../components/Section.astro";
+import dogBreeds from "../../../data/generated/dog-breeds.json";
+import { breadcrumbSchema } from "../../../utils/content.js";
+
+const breadcrumbs = [
+  { label: "Home", href: "/" },
+  { label: "Resources", href: "/resources/" },
+  { label: "Dog Cost Calculator Canada", href: "/resources/dog-cost-calculator-canada/" }
+];
+
+const breedOptions = dogBreeds
+  .filter((breed) => breed.name)
+  .map((breed) => ({
+    name: breed.name,
+    size: String(breed.raw?.["Size Category"] || "").toLowerCase(),
+    activity: String(breed.raw?.["Activity Level"] || ""),
+    shedding: String(breed.raw?.["Shedding Level"] || ""),
+    grooming: String(breed.raw?.Grooming || "")
+  }))
+  .sort((a, b) => a.name.localeCompare(b.name));
+
+const faqItems = [
+  {
+    question: "How much does a dog cost per month in Canada?",
+    answer: "Monthly dog costs vary by size, age, health, food, insurance, grooming, and lifestyle. This calculator starts with published Canadian pet-care cost categories, then adjusts food, veterinary care, insurance, grooming, training, care services, and savings assumptions separately."
+  },
+  {
+    question: "How much does a puppy cost in the first year?",
+    answer: "Puppies usually cost more in year one because of setup supplies, vaccines, early veterinary visits, spay or neuter planning, training, and insurance. This tool keeps puppy first-year costs separate from ongoing annual ownership costs."
+  },
+  {
+    question: "Is pet insurance included?",
+    answer: "Yes, if you choose to include it. You can select no insurance, basic, standard, premium, or not sure. Actual premiums depend on provider, breed, age, postal code, deductible, reimbursement rate, annual limit, exclusions, and pre-existing condition rules."
+  },
+  {
+    question: "Are emergency vet bills included?",
+    answer: "Emergency veterinary care is not fully predictable. The calculator lets you include a monthly emergency fund as a planning reserve, but it is labelled separately from expected spending."
+  },
+  {
+    question: "Do large dogs cost more than small dogs?",
+    answer: "Often, yes. Larger dogs usually eat more, need larger gear, may have higher medication costs, and can cost more to board or groom. The calculator adjusts food, insurance, and some optional care categories by size."
+  },
+  {
+    question: "Is this veterinary or financial advice?",
+    answer: "No. This calculator is an educational planning tool only. Use it as a starting point, then confirm medical, insurance, food, and financial decisions with qualified professionals."
+  }
+];
+
+const structuredData = [
+  breadcrumbSchema(breadcrumbs),
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: "Dog Cost Calculator Canada",
+    url: "https://leashfree.ca/resources/dog-cost-calculator-canada/",
+    applicationCategory: "FinanceApplication",
+    operatingSystem: "Any",
+    description: "Estimate monthly, yearly, first-year, and lifetime dog ownership costs in Canada.",
+    inLanguage: "en-CA"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer
+      }
+    }))
+  }
+];
+
+const calculatorData = {
+  adultDogBaseCosts: {
+    vetRoutine: 2137,
+    food: 1418,
+    insurance: 1402,
+    essentials: 136,
+    licence: 25
+  },
+  puppyFirstYearBaseCosts: {
+    veterinaryCareMale: 2206,
+    veterinaryCareFemale: 2308,
+    nutrition: 910,
+    essentials: 394,
+    obedienceClasses: 555,
+    licence: 25,
+    insurance: 1402
+  },
+  sizeFoodMultipliers: {
+    small: 0.72,
+    medium: 1,
+    large: 1.25,
+    giant: 1.55
+  },
+  sizeInsuranceMultipliers: {
+    small: 0.9,
+    medium: 1,
+    large: 1.12,
+    giant: 1.25
+  },
+  sizeCareMultipliers: {
+    small: 0.85,
+    medium: 1,
+    large: 1.12,
+    giant: 1.25
+  },
+  lifeStageVetMultipliers: {
+    puppy: 1.08,
+    adult: 1,
+    senior: 1.35
+  },
+  lifeStageInsuranceMultipliers: {
+    puppy: 0.95,
+    adult: 1,
+    senior: 1.45
+  },
+  foodTierMultipliers: {
+    budget: 0.72,
+    standard: 1,
+    premium: 1.35,
+    fresh: 1.85,
+    prescription: 1.65
+  },
+  insuranceOptionMultipliers: {
+    none: 0,
+    basic: 0.55,
+    standard: 1,
+    premium: 1.35,
+    unsure: 1
+  },
+  groomingAnnual: {
+    low: 120,
+    moderate: 520,
+    high: 980,
+    unsure: 360
+  },
+  trainingAnnual: {
+    none: 0,
+    occasional: 300,
+    regular: 900,
+    behaviour: 1800
+  },
+  careServicesAnnual: {
+    none: 0,
+    occasional: 600,
+    regular: 2400,
+    frequent: 5200
+  },
+  startupCosts: {
+    none: 0,
+    basic: 350,
+    fuller: 700
+  }
+};
+---
+
+<Layout
+  title="Dog Cost Calculator Canada | Monthly, Yearly & First-Year Costs"
+  description="Estimate the monthly, yearly, first-year, and lifetime cost of owning a dog in Canada. Adjust for size, age, food, grooming, insurance, training, and care needs."
+  canonical="https://leashfree.ca/resources/dog-cost-calculator-canada/"
+  structuredData={structuredData}
+>
+  <section class="page-header">
+    <div class="container detail-layout">
+      <div>
+        <Breadcrumbs items={breadcrumbs} />
+        <div class="eyebrow">Dog budget planner</div>
+        <h1>Dog Cost Calculator Canada</h1>
+        <p class="summary">
+          Estimate the real monthly, first-year, and lifetime cost of owning a dog in Canada, with transparent assumptions you can adjust.
+        </p>
+        <div class="button-row">
+          <a class="button primary" href="#dog-cost-calculator">Start estimate</a>
+          <a class="button secondary" href="#cost-sources">View sources</a>
+        </div>
+      </div>
+      <ImageWithFallback src="/images/resources/dog-cost-calculator-hero.png" alt="Dog with pet care budgeting tools and a cost chart" variant="hero" loading="eager" />
+    </div>
+  </section>
+
+  <section id="dog-cost-calculator" class="section">
+    <div class="container cost-tool-layout">
+      <div class="cost-tool-main">
+        <section class="cost-tool" aria-labelledby="cost-tool-heading">
+          <div class="cost-tool-heading">
+            <div>
+              <p class="eyebrow">Interactive estimate</p>
+              <h2 id="cost-tool-heading">Build your dog budget</h2>
+              <p class="summary">Answer a few questions and the estimate updates automatically.</p>
+            </div>
+            <div class="cost-source-badge">
+              <strong>$5,118</strong>
+              <span>adult baseline</span>
+            </div>
+          </div>
+
+          <form class="cost-form" data-cost-form>
+            <fieldset class="cost-filter-group">
+              <legend>
+                <span>1</span>
+                <strong>Dog profile</strong>
+              </legend>
+              <div class="cost-filter-grid">
+                <label>
+                  Life stage
+                  <select name="lifeStage">
+                    <option value="puppy">Puppy</option>
+                    <option value="adult" selected>Adult dog</option>
+                    <option value="senior">Senior dog</option>
+                  </select>
+                </label>
+                <label>
+                  Dog size
+                  <select name="size">
+                    <option value="small">Small</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="large">Large</option>
+                    <option value="giant">Giant</option>
+                  </select>
+                </label>
+                <label class="wide">
+                  Breed
+                  <select name="breed">
+                    <option value="">Not sure yet</option>
+                    {breedOptions.map((breed) => (
+                      <option value={breed.name}>{breed.name}</option>
+                    ))}
+                  </select>
+                </label>
+                <label>
+                  Province
+                  <select name="province">
+                    <option value="">Choose province or territory</option>
+                    <option>Alberta</option>
+                    <option>British Columbia</option>
+                    <option>Manitoba</option>
+                    <option>New Brunswick</option>
+                    <option>Newfoundland and Labrador</option>
+                    <option>Nova Scotia</option>
+                    <option>Ontario</option>
+                    <option>Prince Edward Island</option>
+                    <option>Quebec</option>
+                    <option>Saskatchewan</option>
+                    <option>Northwest Territories</option>
+                    <option>Nunavut</option>
+                    <option>Yukon</option>
+                  </select>
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="cost-filter-group">
+              <legend>
+                <span>2</span>
+                <strong>Care choices</strong>
+              </legend>
+              <div class="cost-filter-grid">
+                <label>
+                  Food budget
+                  <select name="foodTier">
+                    <option value="budget">Budget kibble</option>
+                    <option value="standard" selected>Standard</option>
+                    <option value="premium">Premium</option>
+                    <option value="fresh">Fresh or raw</option>
+                    <option value="prescription">Prescription diet</option>
+                  </select>
+                </label>
+                <label>
+                  Grooming level
+                  <select name="grooming">
+                    <option value="low">Low</option>
+                    <option value="moderate" selected>Moderate</option>
+                    <option value="high">High</option>
+                    <option value="unsure">Not sure</option>
+                  </select>
+                </label>
+                <label>
+                  Pet insurance
+                  <select name="insurance">
+                    <option value="none">No insurance</option>
+                    <option value="basic">Basic</option>
+                    <option value="standard" selected>Standard</option>
+                    <option value="premium">Premium</option>
+                    <option value="unsure">Not sure</option>
+                  </select>
+                </label>
+                <label>
+                  Training support
+                  <select name="training">
+                    <option value="none">None</option>
+                    <option value="occasional" selected>Group class or occasional help</option>
+                    <option value="regular">Regular private sessions</option>
+                    <option value="behaviour">Behaviour support</option>
+                  </select>
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="cost-filter-group">
+              <legend>
+                <span>3</span>
+                <strong>Planning add-ons</strong>
+              </legend>
+              <div class="cost-filter-grid">
+                <label>
+                  Walking, daycare, or boarding
+                  <select name="careServices">
+                    <option value="none" selected>Rarely or never</option>
+                    <option value="occasional">Occasionally</option>
+                    <option value="regular">Weekly</option>
+                    <option value="frequent">Frequently</option>
+                  </select>
+                </label>
+                <label>
+                  New dog setup
+                  <select name="startup">
+                    <option value="none">Do not include</option>
+                    <option value="basic" selected>Basic starter supplies</option>
+                    <option value="fuller">Fuller setup</option>
+                  </select>
+                </label>
+                <label>
+                  Emergency fund
+                  <select name="emergencyFund" data-emergency-select>
+                    <option value="0">Do not include</option>
+                    <option value="25">$25/month</option>
+                    <option value="50" selected>$50/month</option>
+                    <option value="100">$100/month</option>
+                    <option value="custom">Custom</option>
+                  </select>
+                </label>
+                <label data-custom-emergency hidden>
+                  Custom emergency fund/month
+                  <input name="customEmergencyFund" type="number" min="0" step="5" placeholder="e.g., 75" />
+                </label>
+              </div>
+            </fieldset>
+          </form>
+        </section>
+
+        <section class="cost-results" aria-labelledby="cost-results-heading" data-cost-results>
+          <div class="cost-results-top">
+            <div>
+              <p class="eyebrow">Your estimate</p>
+              <h2 id="cost-results-heading">Estimated dog ownership cost</h2>
+            </div>
+            <div class="cost-view-control">
+              <span>View as</span>
+              <div class="cost-view-toggle" aria-label="Cost view">
+                <button type="button" data-cost-view="daily">Daily</button>
+                <button type="button" data-cost-view="monthly" aria-pressed="true">Monthly</button>
+                <button type="button" data-cost-view="yearly">Yearly</button>
+                <button type="button" data-cost-view="lifetime">Lifetime</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="cost-stat-grid">
+            <article class="cost-stat primary">
+              <span data-primary-label>Estimated monthly cost</span>
+              <strong data-primary-value>$0</strong>
+              <em data-primary-note>Monthly view includes selected recurring categories.</em>
+            </article>
+            <article class="cost-stat">
+              <span>Daily cost</span>
+              <strong data-daily-cost>$0</strong>
+            </article>
+            <article class="cost-stat">
+              <span>Annual cost</span>
+              <strong data-annual-cost>$0</strong>
+            </article>
+            <article class="cost-stat">
+              <span>First-year estimate</span>
+              <strong data-first-year-cost>$0</strong>
+            </article>
+            <article class="cost-stat">
+              <span>10-year estimate</span>
+              <strong data-ten-year-cost>$0</strong>
+            </article>
+            <article class="cost-stat">
+              <span>15-year estimate</span>
+              <strong data-fifteen-year-cost>$0</strong>
+            </article>
+          </div>
+
+          <div class="cost-breakdown-wrap">
+            <h3>Dog ownership cost breakdown</h3>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Category</th>
+                    <th>Monthly</th>
+                    <th>Yearly</th>
+                  </tr>
+                </thead>
+                <tbody data-cost-breakdown></tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="cost-guidance-grid" data-cost-guidance></div>
+          <p class="cost-note" data-cost-note></p>
+        </section>
+      </div>
+
+      <aside class="cost-sidebar">
+        <section class="cost-side-panel">
+          <h2>How this estimate works</h2>
+          <p>
+            The calculator uses source-backed adult and puppy categories, then adjusts food, insurance, grooming,
+            training, care services, startup costs, and emergency savings separately.
+          </p>
+          <p>
+            Emergency fund amounts are planning reserves. They are shown in totals when selected, but they are not guaranteed spending.
+          </p>
+        </section>
+        <section class="cost-side-panel">
+          <h2>Useful next steps</h2>
+          <ul>
+            <li><a href="/resources/dog-breed-match-quiz/">Find breeds that fit your lifestyle</a></li>
+            <li><a href="/dog-food-comparison-canada/">Compare dog food costs</a></li>
+            <li><a href="/blog/is-dog-insurance-worth-it-canada/">Learn about dog insurance</a></li>
+            <li><a href="/directory/">Find local dog services</a></li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+  </section>
+
+  <Section title="First-Year Dog Costs vs Ongoing Annual Costs">
+    <div class="cost-content">
+      <p>
+        A first-year dog budget is different from an ongoing annual budget. Puppies often need early veterinary care,
+        setup supplies, training, and spay or neuter planning. Adult and senior dogs may also need starter supplies when
+        they are new to your home, but those costs should not be repeated every year.
+      </p>
+      <p>
+        This calculator keeps one-time and recurring categories separate so the monthly estimate does not hide the real
+        first-year cost of bringing home a dog.
+      </p>
+    </div>
+  </Section>
+
+  <Section id="cost-sources" title="Sources and Assumptions">
+    <div class="cost-content">
+      <p>
+        The default adult dog baseline uses OVMA 2025 cost categories for veterinary care, food, pet insurance,
+        essentials, toys, and licensing. Puppy first-year defaults are kept separate from ongoing adult costs.
+      </p>
+      <ul>
+        <li><a href="https://www.ovma.org/" target="_blank" rel="noreferrer">Ontario Veterinary Medical Association: 2025 canine cost-of-care data</a></li>
+        <li><a href="https://www.rover.com/ca/blog/" target="_blank" rel="noreferrer">Rover Canada pet parent cost guides</a></li>
+        <li><a href="https://agriculture.canada.ca/en" target="_blank" rel="noreferrer">Agriculture and Agri-Food Canada: Canadian pet food industry reporting</a></li>
+      </ul>
+      <p class="muted">
+        This calculator provides an estimate only. It is not veterinary, financial, insurance, or legal advice. Actual
+        dog ownership costs vary by breed, size, age, health, location, food choice, veterinary clinic, insurance
+        provider, grooming needs, and lifestyle. Emergency veterinary care can vary widely and is not fully predictable.
+      </p>
+    </div>
+  </Section>
+
+  <Section title="Dog Cost Calculator FAQs">
+    <div class="faq-accordion">
+      {faqItems.map((item) => (
+        <details class="faq-item">
+          <summary>{item.question}</summary>
+          <div class="faq-answer">
+            <p>{item.answer}</p>
+          </div>
+        </details>
+      ))}
+    </div>
+  </Section>
+</Layout>
+
+<script is:inline define:vars={{ calculatorData, breedOptions }}>
+  (() => {
+    const form = document.querySelector("[data-cost-form]");
+    const breakdown = document.querySelector("[data-cost-breakdown]");
+    const guidance = document.querySelector("[data-cost-guidance]");
+    const note = document.querySelector("[data-cost-note]");
+    const emergencySelect = document.querySelector("[data-emergency-select]");
+    const customEmergency = document.querySelector("[data-custom-emergency]");
+    const viewButtons = Array.from(document.querySelectorAll("[data-cost-view]"));
+    if (!form || !breakdown || !guidance) return;
+
+    let currentView = "monthly";
+
+    const breedMeta = Object.fromEntries(breedOptions.map((breed) => [breed.name, breed]));
+    const currency = (value) =>
+      Math.round(Number(value || 0)).toLocaleString("en-CA", {
+        style: "currency",
+        currency: "CAD",
+        maximumFractionDigits: 0
+      });
+    const escapeHtml = (value) =>
+      String(value || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    const valueFor = (name) => new FormData(form).get(name) || "";
+    const base = calculatorData.adultDogBaseCosts;
+    const puppyBase = calculatorData.puppyFirstYearBaseCosts;
+    const multiplier = (group, key, fallback = 1) => calculatorData[group]?.[key] ?? fallback;
+
+    const annualEmergencyFund = () => {
+      const selected = valueFor("emergencyFund");
+      if (selected === "custom") {
+        return Math.max(0, Number.parseFloat(valueFor("customEmergencyFund") || "0") || 0) * 12;
+      }
+      return Math.max(0, Number.parseFloat(selected || "0") || 0) * 12;
+    };
+
+    const calculate = () => {
+      const lifeStage = valueFor("lifeStage") || "adult";
+      const size = valueFor("size") || "medium";
+      const foodTier = valueFor("foodTier") || "standard";
+      const insurance = valueFor("insurance") || "standard";
+      const grooming = valueFor("grooming") || "moderate";
+      const training = valueFor("training") || "none";
+      const careServices = valueFor("careServices") || "none";
+      const startup = valueFor("startup") || "none";
+      const emergencyFund = annualEmergencyFund();
+
+      const costs = {
+        "Food": base.food * multiplier("sizeFoodMultipliers", size) * multiplier("foodTierMultipliers", foodTier),
+        "Routine veterinary care": base.vetRoutine * multiplier("lifeStageVetMultipliers", lifeStage),
+        "Pet insurance": base.insurance * multiplier("insuranceOptionMultipliers", insurance, 0) * multiplier("sizeInsuranceMultipliers", size) * multiplier("lifeStageInsuranceMultipliers", lifeStage),
+        "Essentials and toys": base.essentials,
+        "Licence planning amount": base.licence,
+        "Grooming": calculatorData.groomingAnnual[grooming] ?? calculatorData.groomingAnnual.unsure,
+        "Training": calculatorData.trainingAnnual[training] ?? 0,
+        "Walking, daycare, or boarding": (calculatorData.careServicesAnnual[careServices] ?? 0) * multiplier("sizeCareMultipliers", size),
+        "Emergency fund reserve": emergencyFund
+      };
+
+      const recurringAnnual = Object.values(costs).reduce((sum, value) => sum + value, 0);
+      const startupCost = calculatorData.startupCosts[startup] ?? 0;
+      const puppyFirstYearBase = puppyBase.veterinaryCareMale + puppyBase.nutrition + puppyBase.essentials + puppyBase.obedienceClasses + puppyBase.licence + (insurance === "none" ? 0 : puppyBase.insurance * multiplier("insuranceOptionMultipliers", insurance, 1));
+      const firstYear = lifeStage === "puppy"
+        ? puppyFirstYearBase + costs.Grooming + costs["Walking, daycare, or boarding"] + emergencyFund + startupCost
+        : recurringAnnual + startupCost;
+
+      return {
+        costs,
+        lifeStage,
+        size,
+        foodTier,
+        insurance,
+        grooming,
+        training,
+        careServices,
+        startupCost,
+        emergencyFund,
+        recurringAnnual,
+        firstYear,
+        tenYear: lifeStage === "puppy" ? firstYear + recurringAnnual * 9 : recurringAnnual * 10,
+        fifteenYear: lifeStage === "puppy" ? firstYear + recurringAnnual * 14 : recurringAnnual * 15
+      };
+    };
+
+    const guidanceCards = (result) => {
+      const cards = [];
+      if (result.size === "large" || result.size === "giant") {
+        cards.push(["Large dog planning", "Plan for higher food costs, larger gear, possible higher medication costs, and long-term joint or mobility care."]);
+      }
+      if (result.grooming === "high") {
+        cards.push(["High grooming needs", "Budget for recurring professional grooming. Low-shedding does not always mean low-maintenance."]);
+      }
+      if (result.insurance === "none") {
+        cards.push(["No insurance selected", "Consider building a dedicated emergency fund so unexpected vet bills do not become a crisis."]);
+      }
+      if (result.lifeStage === "puppy") {
+        cards.push(["Puppy first year", "First-year costs are usually higher because of setup supplies, vaccines, training, spay or neuter planning, and early vet care."]);
+      }
+      if (result.lifeStage === "senior") {
+        cards.push(["Senior dog planning", "Plan for more frequent vet visits, bloodwork, medications, mobility support, and possible special diets."]);
+      }
+      if (result.foodTier === "fresh" || result.foodTier === "prescription") {
+        cards.push(["Food budget", "Fresh, raw, or prescription diets can materially change monthly costs. Compare foods by daily feeding cost, not only bag price."]);
+      }
+      if (!cards.length) {
+        cards.push(["Planning note", "Use this estimate as a starting point, then confirm local licence fees, clinic pricing, insurance quotes, and grooming rates."]);
+      }
+      return cards;
+    };
+
+    const render = () => {
+      if (customEmergency && emergencySelect) {
+        customEmergency.hidden = emergencySelect.value !== "custom";
+      }
+
+      const result = calculate();
+      const monthly = result.recurringAnnual / 12;
+      const daily = result.recurringAnnual / 365;
+      const viewConfig = {
+        daily: ["Estimated daily cost", currency(daily), "Daily view spreads recurring yearly costs across 365 days."],
+        monthly: ["Estimated monthly cost", currency(monthly), "Monthly view includes selected recurring categories."],
+        yearly: ["Estimated annual cost", currency(result.recurringAnnual), "Yearly view shows ongoing recurring ownership costs."],
+        lifetime: ["Estimated 15-year cost", currency(result.fifteenYear), "Lifetime view uses the selected first-year and ongoing annual assumptions."]
+      };
+      const [primaryLabel, primaryValue, primaryNote] = viewConfig[currentView] || viewConfig.monthly;
+
+      document.querySelector("[data-primary-label]").textContent = primaryLabel;
+      document.querySelector("[data-primary-value]").textContent = primaryValue;
+      document.querySelector("[data-primary-note]").textContent = primaryNote;
+      document.querySelector("[data-daily-cost]").textContent = currency(daily);
+      document.querySelector("[data-annual-cost]").textContent = currency(result.recurringAnnual);
+      document.querySelector("[data-first-year-cost]").textContent = currency(result.firstYear);
+      document.querySelector("[data-ten-year-cost]").textContent = currency(result.tenYear);
+      document.querySelector("[data-fifteen-year-cost]").textContent = currency(result.fifteenYear);
+
+      breakdown.innerHTML = Object.entries(result.costs)
+        .map(([label, yearly]) => `
+          <tr>
+            <td>${escapeHtml(label)}</td>
+            <td>${currency(yearly / 12)}</td>
+            <td>${currency(yearly)}</td>
+          </tr>
+        `)
+        .join("");
+
+      guidance.innerHTML = guidanceCards(result)
+        .map(([title, body]) => `
+          <article class="cost-guidance-card">
+            <h3>${escapeHtml(title)}</h3>
+            <p>${escapeHtml(body)}</p>
+          </article>
+        `)
+        .join("");
+
+      const breedName = valueFor("breed");
+      const breed = breedName ? breedMeta[breedName] : null;
+      const province = valueFor("province");
+      const breedText = breed ? `${breedName} profile context: ${[breed.size, breed.activity, breed.shedding].filter(Boolean).join(", ")}. ` : "";
+      const provinceText = province ? `Dog licence fees vary by municipality in ${province}; this estimate uses a general planning amount. ` : "Dog licence fees vary by municipality; this estimate uses a general planning amount. ";
+      note.textContent = `${breedText}${provinceText}Emergency fund amounts are savings reserves, not guaranteed spending.`;
+    };
+
+    form.addEventListener("input", render);
+    form.addEventListener("change", (event) => {
+      const target = event.target;
+      if (!(target instanceof HTMLSelectElement) || target.name !== "breed") {
+        render();
+        return;
+      }
+      const breed = breedMeta[target.value];
+      const sizeSelect = form.querySelector("select[name='size']");
+      if (breed?.size && sizeSelect instanceof HTMLSelectElement) {
+        if (breed.size.includes("giant") || breed.size.includes("extra")) sizeSelect.value = "giant";
+        else if (breed.size.includes("large")) sizeSelect.value = "large";
+        else if (breed.size.includes("small") || breed.size.includes("toy")) sizeSelect.value = "small";
+        else if (breed.size.includes("medium")) sizeSelect.value = "medium";
+      }
+      render();
+    });
+
+    viewButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        currentView = button.getAttribute("data-cost-view") || "monthly";
+        viewButtons.forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
+        render();
+      });
+    });
+
+    render();
+  })();
+</script>
+
+<style>
+  .cost-tool-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 340px);
+    gap: var(--space-6);
+    align-items: start;
+  }
+
+  .cost-tool-main,
+  .cost-sidebar {
+    display: grid;
+    gap: var(--space-5);
+    min-width: 0;
+  }
+
+  .cost-sidebar {
+    position: sticky;
+    top: calc(var(--space-6) + 72px);
+  }
+
+  .cost-tool,
+  .cost-results,
+  .cost-side-panel {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-card);
+    padding: clamp(1rem, 2vw, 1.5rem);
+  }
+
+  .cost-tool {
+    background:
+      linear-gradient(180deg, rgba(230, 241, 234, 0.82), rgba(255, 255, 255, 0.98) 34%),
+      var(--color-surface);
+  }
+
+  .cost-tool-heading,
+  .cost-results-top {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-4);
+    align-items: start;
+    margin-bottom: var(--space-5);
+  }
+
+  .cost-source-badge {
+    display: grid;
+    justify-items: end;
+    min-width: 130px;
+    color: var(--color-primary-dark);
+    line-height: 1.15;
+    text-align: right;
+  }
+
+  .cost-source-badge strong {
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  .cost-source-badge span,
+  .cost-stat span {
+    color: var(--color-muted);
+    font-size: 0.74rem;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  .cost-form {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  .cost-filter-group {
+    min-width: 0;
+    border: 1px solid rgba(73, 127, 100, 0.2);
+    border-radius: var(--radius-sm);
+    background: rgba(255, 255, 255, 0.78);
+    margin: 0;
+    padding: var(--space-4);
+  }
+
+  .cost-filter-group legend {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    color: var(--color-text);
+    padding: 0 var(--space-2);
+  }
+
+  .cost-filter-group legend span {
+    display: inline-grid;
+    place-items: center;
+    width: 1.65rem;
+    height: 1.65rem;
+    border-radius: 50%;
+    background: var(--color-primary-dark);
+    color: #ffffff;
+    font-size: 0.78rem;
+    font-weight: 950;
+  }
+
+  .cost-filter-group legend strong {
+    font-size: 0.98rem;
+  }
+
+  .cost-filter-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-3);
+    margin-top: var(--space-3);
+  }
+
+  .cost-form label {
+    display: grid;
+    gap: 0.4rem;
+    color: var(--color-primary-dark);
+    font-size: 0.95rem;
+    font-weight: 850;
+  }
+
+  .cost-form label.wide {
+    grid-column: 1 / -1;
+  }
+
+  .cost-form select,
+  .cost-form input {
+    width: 100%;
+    min-height: 44px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    color: var(--color-text);
+    font: inherit;
+    font-weight: 650;
+    padding: 0.58rem 0.7rem;
+  }
+
+  .cost-form select:focus,
+  .cost-form input:focus {
+    border-color: var(--color-primary);
+    outline: 3px solid rgba(73, 127, 100, 0.18);
+    outline-offset: 0;
+  }
+
+  .cost-form [hidden] {
+    display: none;
+  }
+
+  .cost-view-toggle {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    justify-content: flex-end;
+  }
+
+  .cost-view-control {
+    display: grid;
+    gap: 0.4rem;
+    justify-items: end;
+  }
+
+  .cost-view-control > span {
+    color: var(--color-muted);
+    font-size: 0.74rem;
+    font-weight: 900;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  .cost-view-toggle button {
+    min-height: 36px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    color: var(--color-text);
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.84rem;
+    font-weight: 850;
+    padding: 0.4rem 0.65rem;
+  }
+
+  .cost-view-toggle button[aria-pressed="true"] {
+    border-color: var(--color-primary-dark);
+    background: var(--color-primary-dark);
+    color: #ffffff;
+  }
+
+  .cost-stat-grid {
+    display: grid;
+    grid-template-columns: minmax(260px, 1.35fr) repeat(2, minmax(150px, 0.8fr));
+    gap: var(--space-3);
+    align-items: stretch;
+  }
+
+  .cost-stat {
+    display: grid;
+    gap: 0.45rem;
+    min-height: 108px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface-alt);
+    padding: var(--space-3);
+  }
+
+  .cost-stat.primary {
+    grid-row: span 2;
+    min-height: 228px;
+    border-color: rgba(73, 127, 100, 0.28);
+    background:
+      linear-gradient(180deg, rgba(230, 241, 234, 0.9), rgba(255, 255, 255, 0.96)),
+      var(--color-primary-soft);
+  }
+
+  .cost-stat strong {
+    color: var(--color-primary-dark);
+    font-size: clamp(1.3rem, 2.2vw, 1.9rem);
+    line-height: 1;
+  }
+
+  .cost-stat.primary strong {
+    font-size: clamp(2.7rem, 6vw, 4.2rem);
+    letter-spacing: 0;
+  }
+
+  .cost-stat em {
+    align-self: end;
+    color: var(--color-muted);
+    font-size: 0.86rem;
+    font-style: normal;
+    font-weight: 650;
+    line-height: 1.35;
+  }
+
+  .cost-breakdown-wrap {
+    margin-top: var(--space-5);
+  }
+
+  .cost-breakdown-wrap h3 {
+    margin-bottom: var(--space-3);
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    border: 1px solid var(--color-border);
+    padding: 0.68rem;
+    text-align: left;
+  }
+
+  th {
+    color: var(--color-primary-dark);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+  }
+
+  .cost-guidance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-3);
+    margin-top: var(--space-5);
+  }
+
+  .cost-guidance-card {
+    border: 1px solid rgba(73, 127, 100, 0.24);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    padding: var(--space-3);
+  }
+
+  .cost-guidance-card h3 {
+    color: var(--color-primary-dark);
+    font-size: 1rem;
+    margin-bottom: var(--space-2);
+  }
+
+  .cost-guidance-card p,
+  .cost-note,
+  .cost-side-panel p,
+  .cost-side-panel li,
+  .muted {
+    color: var(--color-muted);
+  }
+
+  .cost-note {
+    border-left: 3px solid var(--color-primary);
+    background: var(--color-primary-soft);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    margin: var(--space-5) 0 0;
+    padding: var(--space-3);
+    font-size: 0.94rem;
+    font-weight: 650;
+  }
+
+  .cost-side-panel {
+    box-shadow: none;
+  }
+
+  .cost-side-panel h2 {
+    font-size: 1.15rem;
+  }
+
+  .cost-side-panel ul {
+    margin-bottom: 0;
+    padding-left: 1.1rem;
+  }
+
+  .cost-content {
+    max-width: 860px;
+  }
+
+  @media (max-width: 980px) {
+    .cost-tool-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .cost-sidebar {
+      position: static;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .cost-tool-heading,
+    .cost-results-top {
+      display: grid;
+    }
+
+    .cost-source-badge {
+      justify-items: start;
+      text-align: left;
+    }
+
+    .cost-filter-grid,
+    .cost-stat-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .cost-stat.primary {
+      grid-column: auto;
+      grid-row: auto;
+      min-height: 176px;
+    }
+
+    .cost-view-control {
+      justify-items: stretch;
+    }
+
+    .cost-view-toggle {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      justify-content: stretch;
+    }
+
+    .cost-view-toggle button {
+      width: 100%;
+    }
+  }
+</style>

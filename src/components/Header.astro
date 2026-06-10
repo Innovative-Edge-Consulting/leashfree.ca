@@ -7,15 +7,33 @@ const links = [
 ];
 
 const resourceLinks = [
-  { href: "/resources/", label: "All Resources" },
-  { href: "/games/", label: "Dog Games" },
-  { href: "/games/dog-breed-guessing-game/", label: "Dog Breed Guessing Game" },
-  { href: "/resources/dog-breed-match-quiz/", label: "Dog Breed Match Quiz" },
-  { href: "/dog-names/", label: "Dog Names" },
-  { href: "/dog-name-finder/", label: "Dog Name Finder" },
-  { href: "/dog-food-comparison-canada/", label: "Dog Food Comparison Tool" },
-  { href: "/resources/dog-calorie-calculator/", label: "Dog Calorie Calculator" },
-  { href: "/resources/dog-gear-finder/", label: "Dog Gear Finder" }
+  {
+    title: "Tools",
+    links: [
+      { href: "/resources/", label: "All Resources" },
+      { href: "/resources/dog-breed-match-quiz/", label: "Dog Breed Match Quiz" },
+      { href: "/resources/dog-calorie-calculator/", label: "Dog Calorie Calculator" },
+      { href: "/resources/dog-cost-calculator-canada/", label: "Dog Cost Calculator" },
+      { href: "/dog-food-comparison-canada/", label: "Dog Food Comparison" },
+      { href: "/resources/dog-gear-finder/", label: "Dog Gear Finder" }
+    ]
+  },
+  {
+    title: "Explore",
+    links: [
+      { href: "/dog-names/", label: "Dog Names" },
+      { href: "/dog-name-finder/", label: "Dog Name Finder" },
+      { href: "/blog/", label: "Dog Care Guides" },
+      { href: "/directory/", label: "Dog Services Directory" }
+    ]
+  },
+  {
+    title: "Games",
+    links: [
+      { href: "/games/", label: "All Dog Games" },
+      { href: "/games/dog-breed-guessing-game/", label: "Dog Breed Guessing Game" }
+    ]
+  }
 ];
 ---
 
@@ -30,7 +48,12 @@ const resourceLinks = [
       <details class="nav-dropdown">
         <summary>Resources</summary>
         <div class="nav-dropdown-panel">
-          {resourceLinks.map((link) => <a href={link.href}>{link.label}</a>)}
+          {resourceLinks.map((group) => (
+            <div class="nav-dropdown-group">
+              <p>{group.title}</p>
+              {group.links.map((link) => <a href={link.href}>{link.label}</a>)}
+            </div>
+          ))}
         </div>
       </details>
       {links.slice(2).map((link) => <a href={link.href}>{link.label}</a>)}
@@ -42,7 +65,12 @@ const resourceLinks = [
         <details class="mobile-nav-group">
           <summary>Resources</summary>
           <div class="mobile-nav-submenu">
-            {resourceLinks.map((link) => <a href={link.href}>{link.label}</a>)}
+            {resourceLinks.map((group) => (
+              <div class="mobile-nav-resource-group">
+                <p>{group.title}</p>
+                {group.links.map((link) => <a href={link.href}>{link.label}</a>)}
+              </div>
+            ))}
           </div>
         </details>
         {links.slice(2).map((link) => <a href={link.href}>{link.label}</a>)}
