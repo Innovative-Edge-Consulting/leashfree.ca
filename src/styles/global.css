@@ -826,6 +826,59 @@ p {
   border-radius: var(--radius-card);
 }
 
+.content-block .lf-cost-table-wrap {
+  margin: var(--space-5) 0;
+  overflow-x: auto;
+  border: 1px solid rgba(73, 127, 100, 0.28);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  box-shadow: 0 10px 24px rgba(32, 52, 42, 0.08);
+}
+
+.content-block .lf-cost-table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+  font-size: 0.94rem;
+  line-height: 1.45;
+}
+
+.content-block .lf-cost-table th,
+.content-block .lf-cost-table td {
+  padding: 0.9rem 1rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.content-block .lf-cost-table th {
+  background: var(--color-primary-dark);
+  color: #ffffff;
+  font-weight: 850;
+}
+
+.content-block .lf-cost-table tbody tr:nth-child(even) {
+  background: var(--color-primary-soft);
+}
+
+.content-block .lf-cost-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.content-block .lf-cost-table td:first-child {
+  color: var(--color-primary-dark);
+  font-weight: 850;
+}
+
+.content-block .lf-cost-table td:nth-last-child(-n + 3) {
+  white-space: nowrap;
+}
+
+.content-block .lf-cost-table strong {
+  color: var(--color-primary-dark);
+  font-weight: 900;
+}
+
 .sponsor-context-link {
   border-left: 3px solid var(--color-primary);
   background: rgba(230, 241, 234, 0.72);
@@ -2316,6 +2369,48 @@ body.has-full-page-map {
 
   .content-block {
     width: 100%;
+  }
+
+  .content-block .lf-cost-table {
+    min-width: 0;
+  }
+
+  .content-block .lf-cost-table thead {
+    display: none;
+  }
+
+  .content-block .lf-cost-table,
+  .content-block .lf-cost-table tbody,
+  .content-block .lf-cost-table tr,
+  .content-block .lf-cost-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .content-block .lf-cost-table tr {
+    padding: var(--space-3) var(--space-4);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .content-block .lf-cost-table tr:last-child {
+    border-bottom: 0;
+  }
+
+  .content-block .lf-cost-table td {
+    display: grid;
+    gap: 0.15rem;
+    padding: 0.35rem 0;
+    border-bottom: 0;
+    white-space: normal;
+  }
+
+  .content-block .lf-cost-table td::before {
+    content: attr(data-label);
+    color: var(--color-muted);
+    font-size: 0.76rem;
+    font-weight: 850;
+    letter-spacing: 0;
+    text-transform: uppercase;
   }
 
   .nutricanine-widget,

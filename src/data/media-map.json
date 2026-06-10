@@ -7,6 +7,29 @@
                   
 {
           "collection": "Blog Posts",
+          "itemName": "The Real Cost of Owning a Dog in Canada in 2026",
+          "itemSlug": "real-cost-of-owning-a-dog-canada",
+          "fieldName": "Hero Image",
+          "originalWebflowUrl": "",
+          "localFilename": "blog-real-cost-of-owning-a-dog-canada-hero.png",
+          "currentLocalPath": "public/images/blog/blog-real-cost-of-owning-a-dog-canada-hero.png",
+          "originalSourcePath": "C:/Users/cjame/Downloads/ChatGPT Image Jun 10, 2026, 08_31_21 AM.png",
+          "cleanedFilename": "blog-real-cost-of-owning-a-dog-canada-hero.png",
+          "suggestedFilename": "blog-real-cost-of-owning-a-dog-canada-hero.png",
+          "suggestedPublicPath": "/images/blog/blog-real-cost-of-owning-a-dog-canada-hero.png",
+          "publicPath": "/images/blog/blog-real-cost-of-owning-a-dog-canada-hero.png",
+          "publicPathReady": true,
+          "priority": "High",
+          "status": "published",
+          "matchStatus": "published",
+          "confidence": "high",
+          "matchConfidence": "high",
+          "needsOwnerReview": false,
+          "notes": [
+                    "Manual mapping added for real cost of owning a dog Canada post hero image."
+          ]
+},{
+          "collection": "Blog Posts",
           "itemName": "Is It Too Hot, Smoky, or Tick-Risky for the Dog Park? A Canadian Summer Safety Guide for Dog Owners",
           "itemSlug": "summer-dog-park-safety-canada",
           "fieldName": "Hero Image",
