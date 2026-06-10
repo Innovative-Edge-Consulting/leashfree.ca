@@ -27,6 +27,8 @@ const breadcrumbs = [
     summary="Find rescues, clinics, pet stores, trainers, groomers, and other dog-related services."
     primaryHref="#listings"
     primaryLabel="Browse listings"
+    secondaryHref="#add-business"
+    secondaryLabel="Add a Business"
     image="/images/general/category-veterinarians-hero.jpg"
     imageAlt="Dog services and pet resources"
   />
@@ -36,6 +38,18 @@ const breadcrumbs = [
     intro="Find dog services and pet resources by name, category, city, province, or nearby location."
   >
     <BusinessDirectorySearch />
+  </Section>
+
+  <Section
+    id="add-business"
+    title="Add a business listing"
+    intro="Submit a Canadian dog service, pet business, rescue, shelter, or veterinary clinic for review in the LeashFree.ca directory."
+    alt
+  >
+    <div class="add-business-listing-panel">
+      <div data-quizflow-embed="add-a-business-listing-leashfree-ca" data-quizflow-mode="fullpage"></div>
+    </div>
+    <script async src="https://quizflowlabs.com/embed.js"></script>
   </Section>
 
   <Section id="listings" title="Directory listings" intro={`${directories.length} dog service and pet resource listings.`}>
