@@ -22,6 +22,8 @@
 /parks/queen-elizabeth-park /dog-parks/queen-elizabeth-dog-park/ 301
 /parks/spanish-banks-beach-park /dog-parks/spanish-banks-dog-park-vancouver/ 301
 /parks/sunset-beach-park /dog-parks/sunset-beach-dog-park/ 301
+/city/:slug /dog-parks/:slug/ 301
+/city/:slug/ /dog-parks/:slug/ 301
 /dog-parks/charleson-dog-park-8fc05/ /dog-parks/charleson-dog-park/ 301
 /dog-parks/lee-street-park-202b1/ /dog-parks/lee-street-park/ 301
 /dog-parks/new-brighton-dog-park-vancouver-65262/ /dog-parks/new-brighton-dog-park-vancouver/ 301
