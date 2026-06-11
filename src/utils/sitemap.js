@@ -16,8 +16,15 @@ function absoluteUrl(path) {
   return `${SITE}${path}`;
 }
 
+function sitemapUrl(value) {
+  if (!value) return absoluteUrl("/");
+  if (/^https?:\/\//i.test(value)) return value;
+  if (value.startsWith("/")) return absoluteUrl(value);
+  return absoluteUrl(`/${value}`);
+}
+
 function itemUrl(item) {
-  return item.canonicalUrl || absoluteUrl(item.routePath || "/");
+  return sitemapUrl(item.canonicalUrl || item.routePath || "/");
 }
 
 function xmlEscape(value) {
