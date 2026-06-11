@@ -1,6 +1,7 @@
 ---
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import ContentBlock from "../../components/ContentBlock.astro";
+import DogNamesTable from "../../components/DogNamesTable.astro";
 import ImageWithFallback from "../../components/ImageWithFallback.astro";
 import Layout from "../../components/Layout.astro";
 import Section from "../../components/Section.astro";
@@ -9,17 +10,20 @@ import mediaMap from "../../data/media-map.json";
 import breedGroups from "../../data/generated/breed-groups.json";
 import breeds from "../../data/generated/dog-breeds.json";
 import dogNames from "../../data/generated/dog-names.json";
+import manualDogNameGuides from "../../data/manual-dog-name-guides.json";
 import { breadcrumbSchema, excerpt, stripHtml } from "../../utils/content.js";
 import { resolveMedia } from "../../utils/media.js";
 
 export function getStaticPaths() {
-  return dogNames.filter((entry) => entry.slug).map((entry) => ({
+  const allDogNames = [...manualDogNameGuides, ...dogNames];
+  return allDogNames.filter((entry) => entry.slug).map((entry) => ({
     params: { slug: entry.slug },
     props: { entry }
   }));
 }
 
 const { entry } = Astro.props;
+const allDogNames = [...manualDogNameGuides, ...dogNames];
 const media = (entry.media || []).find((item) => item.fieldName === "Hero Image") || (entry.media || [])[0];
 const url = media?.originalUrls?.[0] || "";
 const extMatch = url.match(/\.(jpg|jpeg|png|webp|avif|gif|svg)(?:$|[?#])/i);
@@ -49,7 +53,9 @@ const breedProfileHref = toInternalPath(
     matchedBreed?.canonicalUrl ||
     (matchedBreed?.slug ? `/dog-breeds/${matchedBreed.slug}/` : "")
 );
-const related = dogNames.filter((candidate) => candidate.slug !== entry.slug && candidate.references["Breed Name"]?.[0] === breed).slice(0, 3);
+const related = allDogNames
+  .filter((candidate) => candidate.slug !== entry.slug && candidate.references?.["Breed Name"]?.[0] === breed)
+  .slice(0, 3);
 const breadcrumbs = [
   { label: "Home", href: "/" },
   { label: "Dog Names", href: "/dog-names/" },
@@ -71,6 +77,7 @@ const structuredData = [
 
 const heading = entry.raw["H1 Header"] || entry.title || entry.name;
 const introSummary = entry.body || entry.raw["Intro Summary"] || entry.description;
+const defaultNameCategory = entry.raw["Default Name Category"] || "";
 
 const listSectionTitles = new Set([
   "Editor's picks",
@@ -157,7 +164,7 @@ function extractFaqItems(html = "") {
 
 const sectionCandidates = [
   { title: "Breed snapshot", keys: ["Breed Snapshot"] },
-  { title: "Editor's picks", keys: ["Editor’s Picks (Optional)", "Editorâ€™s Picks (Optional)"] },
+  { title: "Editor's picks", keys: ["Editor's Picks (Optional)", "Editor’s Picks (Optional)", "Editorâ€™s Picks (Optional)"] },
   { title: "Male names", keys: ["Male Names"] },
   { title: "Female names", keys: ["Female Names"] },
   { title: "Cute names", keys: ["Cute Names"] },
@@ -226,6 +233,13 @@ const sections = sectionCandidates
     <div class="split">
       <article>
         <ContentBlock html={introSummary} />
+        {defaultNameCategory && (
+          <DogNamesTable
+            title="Top 1,000 Dog & Puppy Names"
+            intro="Browse the same Top 1,000 dog name database used on the main dog names page."
+            defaultCategory={defaultNameCategory}
+          />
+        )}
         {sections.map((section) => (
           <section class="content-block">
             <h2>{section.title}</h2>

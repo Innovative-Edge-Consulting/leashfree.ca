@@ -1,23 +1,23 @@
 # QA Page Report
 
-Generated at: 2026-05-30T11:54:07.577Z
-- HTML pages checked: 1070
-- Sitemap routes found: 1069
+Generated at: 2026-06-11T14:57:23.751Z
+- HTML pages checked: 2034
+- Sitemap routes found: 2029
 - Missing title tags: 0
 - Missing meta descriptions: 0
 - Duplicate title groups: 1
-- Duplicate meta description groups: 1
+- Duplicate meta description groups: 3
 - Missing H1: 0
 - Multiple H1s: 0
-- Broken internal links: 2
-- Redirect-covered internal links: 23
+- Broken internal links: 0
+- Redirect-covered internal links: 29
 - Implemented-redirect internal links: 0
 - Broken image paths: 0
 - Pages using placeholder images: 0
 - Empty or very short pages: 0
-- Canonical mismatches: 0
+- Canonical mismatches: 1
 - Pages missing Open Graph title/description: 0
-- Routes missing from sitemap: 0
+- Routes missing from sitemap: 4
 - Implemented safe redirects: 3
 - Redirect source routes still built as active pages: 0
 - Redirect source routes still in sitemap: 0
@@ -27,7 +27,10 @@ Generated at: 2026-05-30T11:54:07.577Z
 
 ## Issue Page Sample
 
-- /dog-names/cavalier-king-charles-spaniel-dog-names/: 2 broken links
+- /blog/dog-food-comparison-tool-canada/: canonical mismatch, missing sitemap
+- /dog-breeds/group/: missing sitemap
+- /dog-food-comparison-canada/: missing sitemap
+- /resources/dog-cost-calculator-canada/: missing sitemap
 
 ## Redirect Validation
 
@@ -46,4 +49,6 @@ Generated at: 2026-05-30T11:54:07.577Z
 
 ## Duplicate Meta Description Groups Sample
 
+- Queen (2)
+- City of Toronto animal shelter providing adoption, pet redemption, surrender support, fostering and care for stray or protective-care animals. (3)
 - Lion (2)

@@ -111,6 +111,7 @@ const json = JSON.stringify({ items: businessItems, provinces, cities, categorie
       <button class="button primary" type="button" data-use-location>Use my location</button>
       <button class="button secondary" type="button" data-toggle-filters aria-expanded="false" aria-controls="advanced-business-directory-filters">Filters</button>
       <button class="button secondary" type="button" data-reset-map>Reset</button>
+      <button class="button primary map-add-business-button" type="button" data-add-business>Add a Business</button>
     </div>
 
     <div class="advanced-map-filters" id="advanced-business-directory-filters" hidden>
@@ -186,6 +187,7 @@ const json = JSON.stringify({ items: businessItems, provinces, cities, categorie
       locationStatus: root.querySelector("[data-location-status]"),
       locationButton: root.querySelector("[data-use-location]"),
       expandButton: root.querySelector("[data-expand-map]"),
+      addBusinessButton: root.querySelector("[data-add-business]"),
       filterToggle: root.querySelector("[data-toggle-filters]"),
       advancedFilters: root.querySelector("#advanced-business-directory-filters"),
       resetButton: root.querySelector("[data-reset-map]")
@@ -432,6 +434,12 @@ const json = JSON.stringify({ items: businessItems, provinces, cities, categorie
 
     controls.resetButton.addEventListener("click", reset);
     controls.expandButton.addEventListener("click", () => setExpanded(!isExpanded));
+    controls.addBusinessButton.addEventListener("click", () => {
+      setExpanded(false);
+      window.requestAnimationFrame(() => {
+        document.getElementById("add-business")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    });
     controls.filterToggle.addEventListener("click", () => {
       const isOpen = controls.filterToggle.getAttribute("aria-expanded") === "true";
       controls.filterToggle.setAttribute("aria-expanded", String(!isOpen));

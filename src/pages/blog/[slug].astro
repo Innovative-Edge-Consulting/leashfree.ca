@@ -56,9 +56,9 @@ const structuredData = [
 <Layout title={pageTitle} description={pageDescription} canonical={post.canonicalUrl} ogImage={image.src} structuredData={structuredData}>
   <section class="page-header">
     <div class="container">
+      <Breadcrumbs items={breadcrumbs} />
       <div class="hero-grid">
         <div>
-          <Breadcrumbs items={breadcrumbs} />
           <div class="eyebrow">Blog</div>
           <h1>{post.title || post.name}</h1>
           <p class="summary">{excerpt(post.description, post.metaDescription)}</p>

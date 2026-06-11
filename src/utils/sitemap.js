@@ -6,6 +6,7 @@ import cities from "../data/generated/cities.json";
 import provinces from "../data/generated/provinces.json";
 import directories from "../data/generated/directories.json";
 import dogNames from "../data/generated/dog-names.json";
+import manualDogNameGuides from "../data/manual-dog-name-guides.json";
 import { isPublishedNow } from "./content.js";
 import { withoutRedirectedRecords } from "./redirects.js";
 
@@ -72,7 +73,7 @@ const locationEntries = uniqueEntries([...provinces.map(itemEntry), ...cities.ma
 const breedEntries = uniqueEntries([...breeds.map(itemEntry), ...groups.map(itemEntry)]);
 const directoryEntries = uniqueEntries(directories.map(itemEntry));
 const blogEntries = uniqueEntries(posts.filter((post) => isPublishedNow(post)).map(itemEntry));
-const dogNameEntries = uniqueEntries(dogNames.map(itemEntry));
+const dogNameEntries = uniqueEntries([...manualDogNameGuides, ...dogNames].map(itemEntry));
 
 export const sitemapSections = [
   {

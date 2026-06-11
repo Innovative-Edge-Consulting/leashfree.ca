@@ -10,40 +10,97 @@ import mediaMap from "../data/media-map.json";
 import parks from "../data/generated/parks.json";
 import cities from "../data/generated/cities.json";
 import provinces from "../data/generated/provinces.json";
+import breeds from "../data/generated/dog-breeds.json";
+import directories from "../data/generated/directories.json";
+import blogPosts from "../data/generated/blog-posts.json";
 import { excerpt, websiteSchema } from "../utils/content.js";
 import { resolveMedia } from "../utils/media.js";
 import { withoutRedirectedRecords } from "../utils/redirects.js";
 
-const featuredCities = cities.slice(0, 8);
+const featuredCities = cities.slice(0, 4);
 const activeParks = withoutRedirectedRecords(parks);
 const featuredParks = activeParks.slice(0, 6);
 const homeHeroImage = "/images/blog/blog-how-to-choose-the-right-dog-park-for-your-pup-hero.jpg";
+
+const resourceCards = [
+  {
+    title: "Dog Breed Match Quiz",
+    href: "/resources/dog-breed-match-quiz/",
+    description: `Get matched with breeds from our ${breeds.length}-profile dog breed library based on your home, routine, activity level, and preferences.`,
+    image: "/images/blog/blog-dog-breed-match-quiz-hero.png",
+    imageAlt: "Dog breed match quiz",
+    ctaLabel: "Start quiz"
+  },
+  {
+    title: "Dog Food Comparison Canada",
+    href: "/dog-food-comparison-canada/",
+    description: "Compare dog food products by label-based nutrition, ingredients, calories, and estimated cost for Canadian shoppers.",
+    image: "/images/resources/dog-food-comparison-canada-hero-1600.jpg",
+    imageAlt: "Dog food comparison tool",
+    ctaLabel: "Compare food"
+  },
+  {
+    title: "Dog Cost Calculator",
+    href: "/resources/dog-cost-calculator-canada/",
+    description: "Estimate monthly, first-year, annual, and lifetime dog ownership costs using transparent Canadian assumptions.",
+    image: "/images/blog/blog-real-cost-of-owning-a-dog-canada-hero.png",
+    imageAlt: "Dog ownership cost calculator",
+    ctaLabel: "Estimate costs"
+  },
+  {
+    title: "Dog Name Finder",
+    href: "/dog-name-finder/",
+    description: "Find personalized dog name ideas, then browse the Top 1,000 dog and puppy names for 2025.",
+    image: "/images/blog/blog-trending-dog-names-2025-hero.jpg",
+    imageAlt: "Dog name ideas",
+    ctaLabel: "Find names"
+  },
+  {
+    title: "Dog Services Directory",
+    href: "/directory/",
+    description: `Browse ${directories.length} Canadian dog service and pet resource listings, including rescues, clinics, stores, trainers, and groomers.`,
+    image: "/images/general/directory-services-hero.png",
+    imageAlt: "Dog services directory",
+    ctaLabel: "Browse directory"
+  },
+  {
+    title: "Dog Care Guides",
+    href: "/blog/",
+    description: `Read ${blogPosts.length} practical dog care articles covering behaviour, park etiquette, health costs, gear, names, breeds, and everyday ownership.`,
+    image: "/images/general/blog-category-dog-gear-card.jpg",
+    imageAlt: "Dog care guides",
+    ctaLabel: "Read guides"
+  }
+];
 ---
 
 <Layout
-  title="LeashFree.ca | Dog Parks, Dog Breeds & Dog Owner Resources in Canada"
-  description="Find leash-free dog parks, explore dog breed profiles, discover local pet resources, and use practical dog owner tools built for Canadians."
+  title="LeashFree.ca | Dog Parks, Breeds, Tools & Dog Owner Resources in Canada"
+  description="Find leash-free dog parks, compare dog breeds, use dog owner calculators, explore dog names, browse local pet services, and read Canadian dog care guides."
   canonical="https://leashfree.ca/"
   structuredData={websiteSchema()}
 >
   <Hero
     eyebrow="Canadian dog owner resource hub"
-    title="Dog Parks, Dog Breeds & Resources for Canadian Dog Owners"
-    summary="Find leash-free dog parks, explore dog breed profiles, compare local pet resources, and discover helpful tools for life with your dog in Canada."
-    primaryHref="/dog-parks/"
-    primaryLabel="Find Dog Parks Near You"
-    secondaryHref="/dog-breeds/"
-    secondaryLabel="Explore Dog Breeds"
+    title="Dog Parks, Breeds, Tools & Resources for Canadian Dog Owners"
+    summary="Find leash-free dog parks, compare dog breeds, browse local pet services, explore dog names, and use practical tools for life with your dog in Canada."
+    primaryHref="/resources/"
+    primaryLabel="Explore Dog Owner Tools"
+    secondaryHref="/dog-parks/"
+    secondaryLabel="Find Dog Parks Near You"
     image={homeHeroImage}
     imageAlt="Dog enjoying an off-leash park"
   />
 
   <Section
-    title="Everything Canadian dog owners need in one place"
-    intro="LeashFree.ca helps dog owners across Canada discover safe places to play, learn about different dog breeds, explore local pet services, and access practical tools for everyday care. Whether you are planning a park visit, researching a breed, choosing a dog name, or looking for dog-friendly resources nearby, LeashFree.ca gives you a simple starting point."
+    title="Everything Canadian dog owners need in one starting point"
+    intro="LeashFree.ca helps dog owners across Canada discover safe places to play, research breeds, estimate care costs, compare food, choose names, find local services, and read practical dog care guidance. The map is still here when you need a place to go, and the rest of the site helps with the decisions that come before and after the walk."
   />
 
-  <Section title="Search LeashFree.ca" intro="Find dog parks and pet businesses by map, or switch to an advanced dog breed finder.">
+  <Section
+    title="Find dog-friendly places near you"
+    intro="Search leash-free parks and local pet services across Canada, or switch to the breed finder when you are researching the right dog for your home."
+  >
     <div class="home-search-tabs" data-home-search-tabs>
       <div class="home-search-tablist" role="tablist" aria-label="Homepage search tools">
         <button id="home-search-map-tab" class="home-search-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="home-search-map-panel" data-search-tab="map">
@@ -64,7 +121,70 @@ const homeHeroImage = "/images/blog/blog-how-to-choose-the-right-dog-park-for-yo
     </div>
   </Section>
 
-  <Section title="Browse by province" intro={`Explore dog park guides across ${provinces.length} provinces.`} alt>
+  <Section
+    title="Dog owner tools and resources"
+    intro="Use LeashFree.ca for the practical dog ownership questions that go beyond finding a park."
+    alt
+  >
+    <div class="grid">
+      {resourceCards.map((card) => (
+        <Card
+          title={card.title}
+          href={card.href}
+          description={card.description}
+          image={card.image}
+          imageAlt={card.imageAlt}
+          ctaLabel={card.ctaLabel}
+        />
+      ))}
+    </div>
+  </Section>
+
+  <Section
+    title="Explore dog breeds, names, and care topics"
+    intro="Start with the research path that fits your next decision, whether you are choosing a breed, naming a puppy, planning expenses, or learning everyday care."
+  >
+    <div class="grid">
+      <Card
+        title="Explore Dog Breeds"
+        href="/dog-breeds/"
+        description={`Compare ${breeds.length} breed profiles by size, activity level, grooming needs, temperament, family fit, trainability, and care requirements.`}
+        image="/images/general/blog-category-dog-breeds-card.avif"
+        imageAlt="Dog breed profiles"
+        ctaLabel="Browse breeds"
+      />
+      <Card
+        title="Browse Dog Names"
+        href="/dog-names/"
+        description="Search popular, cute, unique, strong, nature-inspired, colour-inspired, Canadian-inspired, and breed-specific dog name ideas."
+        image="/images/blog/blog-trending-dog-names-2025-hero.jpg"
+        imageAlt="Popular dog names"
+        ctaLabel="Browse names"
+      />
+      <Card
+        title="Use Dog Calculators"
+        href="/resources/"
+        description="Open calculators and tools for calories, ownership costs, breed matching, food comparison, names, and dog gear decisions."
+        image="/images/general/category-pet-stores-and-boutiques-hero.jpg"
+        imageAlt="Dog owner calculators and tools"
+        ctaLabel="View tools"
+      />
+      <Card
+        title="Read Dog Care Guides"
+        href="/blog/"
+        description="Learn from practical Canadian articles about behaviour, training, park safety, seasonal care, health costs, gear, food, and breed fit."
+        image="/images/blog/blog-how-to-socialize-your-puppy-hero.jpg"
+        imageAlt="Dog care article library"
+        ctaLabel="Read articles"
+      />
+    </div>
+  </Section>
+
+  <Section
+    title="Find off-leash dog parks across Canada"
+    intro={`Browse ${activeParks.length} dog park pages, city guides, and province guides with locations, amenities, and local details.`}
+    alt
+  >
     <div class="grid compact">
       {provinces.map((province) => (
         <Card
@@ -75,9 +195,7 @@ const homeHeroImage = "/images/blog/blog-how-to-choose-the-right-dog-park-for-yo
         />
       ))}
     </div>
-  </Section>
 
-  <Section title="Popular city guides" intro="Start with city landing pages that group nearby leash-free parks.">
     <div class="grid">
       {featuredCities.map((city) => (
         <Card
@@ -90,11 +208,6 @@ const homeHeroImage = "/images/blog/blog-how-to-choose-the-right-dog-park-for-yo
           ctaLabel="View city"
         />
       ))}
-    </div>
-  </Section>
-
-  <Section title="Dog park guides" intro={`Browse ${activeParks.length} dog park pages with locations, amenities, and local details.`} alt>
-    <div class="grid">
       {featuredParks.map((park) => (
         <Card
           title={park.name}
@@ -109,51 +222,14 @@ const homeHeroImage = "/images/blog/blog-how-to-choose-the-right-dog-park-for-yo
     </div>
   </Section>
 
-  <Section title="Explore more dog owner resources" intro="LeashFree.ca is more than a dog park directory. Explore breed profiles, care guides, dog name ideas, calculators, and practical tools designed for Canadian dog owners.">
-    <div class="grid">
-      <Card
-        title="Find Places to Go"
-        href="/dog-parks/"
-        description="Browse leash-free dog parks, city guides, province guides, and map-based listings across Canada."
-        image="/images/general/category-dog-daycares-and-boarding-hero.jpg"
-        imageAlt="Dog-friendly places in Canada"
-        ctaLabel="Browse Dog Parks"
-      />
-      <Card
-        title="Explore Dog Breeds"
-        href="/dog-breeds/"
-        description="Compare breed profiles by size, activity level, grooming needs, temperament, family fit, and care requirements."
-        image="/images/general/blog-category-dog-breeds-card.avif"
-        imageAlt="Dog breed profiles"
-        ctaLabel="Browse Dog Breeds"
-      />
-      <Card
-        title="Use Helpful Dog Tools"
-        href="/resources/"
-        description="Try practical tools like the dog name finder, dog calorie calculator, and dog gear finder."
-        image="/images/general/category-pet-stores-and-boutiques-hero.jpg"
-        imageAlt="Dog owner tools and resources"
-        ctaLabel="Explore Tools"
-      />
-      <Card
-        title="Read Dog Care Guides"
-        href="/blog/"
-        description="Learn from practical articles about dog behaviour, park etiquette, health costs, gear, and everyday dog ownership."
-        image="/images/general/blog-category-dog-gear-card.jpg"
-        imageAlt="Dog care articles and guides"
-        ctaLabel="Read Articles"
-      />
-    </div>
-  </Section>
-
-  <Section title="Plan a better outing" intro="Use LeashFree.ca to compare local park options, discover breed-specific care guidance, and find dog-friendly resources nearby.">
+  <Section title="Start with the tool you need" intro="Use the map when you are heading out, or jump into breed research, dog names, food comparison, cost planning, and care guides when you are making ownership decisions.">
     <CTA
-      title="Start with dog parks near you"
-      text="Browse park pages by province and city, then check rules, amenities, and local details before heading out."
-      primaryHref="/dog-parks/"
-      primaryLabel="Browse dog parks"
-      secondaryHref="/blog/"
-      secondaryLabel="Read dog care guides"
+      title="Choose the right next step for you and your dog"
+      text="LeashFree.ca brings Canadian dog parks, breed research, pet service listings, calculators, dog names, food comparison, and care guides into one practical starting point."
+      primaryHref="/resources/"
+      primaryLabel="Explore dog owner tools"
+      secondaryHref="/dog-parks/"
+      secondaryLabel="Find dog parks"
     />
   </Section>
 </Layout>

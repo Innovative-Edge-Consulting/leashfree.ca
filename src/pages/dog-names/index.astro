@@ -4,6 +4,7 @@ import Section from "../../components/Section.astro";
 import Card from "../../components/Card.astro";
 import ImageWithFallback from "../../components/ImageWithFallback.astro";
 import dogNames from "../../data/generated/dog-names.json";
+import manualDogNameGuides from "../../data/manual-dog-name-guides.json";
 import { excerpt, breadcrumbSchema, stripHtml } from "../../utils/content.js";
 
 const breadcrumbs = [
@@ -11,8 +12,9 @@ const breadcrumbs = [
   { label: "Dog Names", href: "/dog-names/" }
 ];
 
-const topCsvUrl = "/data/top-1000-dog-names-2025.csv";
-const heroImage = "/images/blog/blog-trending-dog-names-2025-hero.jpg";
+const topCsvUrl = "/data/top-1000-dog-names-2026.csv";
+const heroImage = "/images/blog/blog-trending-dog-names-2026-hero.jpg";
+const allDogNames = [...manualDogNameGuides, ...dogNames];
 
 function normalizeText(text = "") {
   return text
@@ -26,7 +28,7 @@ function normalizeText(text = "") {
     .trim();
 }
 
-const dogNameCards = dogNames.map((entry) => {
+const dogNameCards = allDogNames.map((entry) => {
   const breed = entry.references?.["Breed Name"]?.[0] || entry.raw?.["Breed Name"] || "";
   const rawIntro = entry.raw?.["Intro Summary"] || "";
   const cleanedIntro = normalizeText(stripHtml(rawIntro));
@@ -43,8 +45,8 @@ const dogNameCards = dogNames.map((entry) => {
 ---
 
 <Layout
-  title="Top Dog Names (2025): 1,000 Popular Dog & Puppy Names | LeashFree.ca"
-  description="Discover the 1,000 most popular dog and puppy names of 2025: male, female, cute, unique, strong, nature, colour, and Canadian-inspired."
+  title="Top Dog Names (2026): 1,000 Popular Dog & Puppy Names | LeashFree.ca"
+  description="Discover the 1,000 most popular dog and puppy names of 2026: male, female, cute, unique, strong, nature, colour, and Canadian-inspired."
   canonical="https://leashfree.ca/dog-names/"
   structuredData={breadcrumbSchema(breadcrumbs)}
 >
@@ -52,9 +54,9 @@ const dogNameCards = dogNames.map((entry) => {
     <div class="container detail-layout">
       <div>
         <div class="eyebrow">Dog Names</div>
-        <h1>Top Dog Names (2025): 1,000 Male, Female, Cute & Unique Picks</h1>
+        <h1>Top Dog Names (2026): 1,000 Male, Female, Cute & Unique Picks</h1>
         <p class="summary">
-          Browse the Top 1,000 most popular dog and puppy names for 2025. Filter by category and gender,
+          Browse the Top 1,000 most popular dog and puppy names for 2026. Filter by category and gender,
           search by meaning, or use our Dog Name Finder for personalized picks.
         </p>
         <div class="actions">
@@ -140,7 +142,7 @@ const dogNameCards = dogNames.map((entry) => {
     </section>
   </Section>
 
-  <Section title="Dog name ideas by breed" intro={`${dogNames.length} breed-specific naming guides.`}>
+  <Section title="Dog name guides" intro={`${allDogNames.length} breed-specific and theme-based naming guides.`}>
     <div class="grid">
       {dogNameCards.slice(0, 12).map((entry) => (
         <Card

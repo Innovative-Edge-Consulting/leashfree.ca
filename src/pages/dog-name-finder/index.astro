@@ -1,5 +1,7 @@
 ---
 import Layout from "../../components/Layout.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import ImageWithFallback from "../../components/ImageWithFallback.astro";
 import Section from "../../components/Section.astro";
 import { breadcrumbSchema } from "../../utils/content.js";
 
@@ -7,35 +9,351 @@ const breadcrumbs = [
   { label: "Home", href: "/" },
   { label: "Dog Name Finder", href: "/dog-name-finder/" }
 ];
+
+const heroImage = "/images/general/dog-name-finder-hero.png";
+const faqItems = [
+  {
+    question: "How does the Dog Name Finder work?",
+    answer:
+      "The tool uses your preferences, including breed, style, gender, personality, and naming vibe, to suggest dog names that fit the profile you describe."
+  },
+  {
+    question: "Can I use it for a puppy or an adopted adult dog?",
+    answer:
+      "Yes. The same naming prompts work for puppies, newly adopted adult dogs, and dogs whose shelter name does not feel like the right long-term fit."
+  },
+  {
+    question: "What makes a good dog name?",
+    answer:
+      "A good dog name is easy to say, clear in everyday conversation, and comfortable to repeat at home, outdoors, and at the dog park."
+  },
+  {
+    question: "Should I choose a short dog name?",
+    answer:
+      "Short names are often easier for recall and training, but longer names can work well if they have a simple nickname you will use every day."
+  },
+  {
+    question: "Can I save or regenerate name ideas?",
+    answer:
+      "Use the finder to build a shortlist, then regenerate when you want a different style, theme, or personality direction."
+  }
+];
+
+const structuredData = [
+  breadcrumbSchema(breadcrumbs),
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: "Dog Name Finder",
+    url: "https://leashfree.ca/dog-name-finder/",
+    applicationCategory: "LifestyleApplication",
+    operatingSystem: "Any",
+    description:
+      "Personalized dog name generator for finding puppy and dog name ideas by breed, personality, style, and vibe.",
+    inLanguage: "en-CA"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer
+      }
+    }))
+  }
+];
 ---
 
 <Layout
   title="AI Dog Name Finder | Personalized Dog Name Generator | LeashFree.ca"
-  description="Find the perfect name for your dog with our AI-powered name generator. Get personalized ideas based on breed, style, and vibe."
+  description="Find personalized dog name ideas by breed, personality, style, and vibe with the free LeashFree.ca Dog Name Finder."
   canonical="https://leashfree.ca/dog-name-finder/"
-  structuredData={breadcrumbSchema(breadcrumbs)}
+  ogImage={heroImage}
+  structuredData={structuredData}
 >
-  <section class="hero-heading-center">
-    <div class="container narrow">
-      <div class="eyebrow">Dog Name Finder</div>
-      <h1>AI Dog Name Finder</h1>
-      <p class="summary">
-        Find the perfect dog name with personalized suggestions based on breed, personality, and style.
-      </p>
+  <section class="page-header dog-name-finder-hero">
+    <div class="container detail-layout">
+      <div>
+        <Breadcrumbs items={breadcrumbs} />
+        <div class="eyebrow">Personalized naming tool</div>
+        <h1>Dog Name Finder</h1>
+        <p class="summary">
+          Get name ideas that fit your dog's breed, personality, look, and the style you actually want to say every day.
+        </p>
+        <div class="button-row">
+          <a class="button primary" href="#dog-name-finder-tool">Start finding names</a>
+          <a class="button secondary" href="/dog-names/">Browse dog name guides</a>
+        </div>
+      </div>
+      <ImageWithFallback
+        src={heroImage}
+        alt="Happy dog beside a tablet showing a dog name finder interface"
+        variant="hero"
+        loading="eager"
+      />
     </div>
   </section>
 
-  <Section>
-    <div data-quizflow-embed="dog-name-finder"></div>
+  <section id="dog-name-finder-tool" class="section">
+    <div class="container dog-name-tool-layout">
+      <div class="dog-name-tool-main">
+        <section class="dog-name-tool-card" aria-labelledby="dog-name-tool-heading">
+          <div class="dog-name-tool-head">
+            <div>
+              <p class="eyebrow">Free name generator</p>
+              <h2 id="dog-name-tool-heading">Build a name shortlist</h2>
+              <p>
+                Answer a few prompts and get names tuned to your dog instead of scrolling a generic list.
+              </p>
+            </div>
+          </div>
+          <div class="dog-name-embed">
+            <div data-quizflow-embed="dog-name-finder"></div>
+          </div>
+        </section>
+      </div>
+      <aside class="dog-name-sidebar">
+        <div class="dog-name-side-panel">
+          <h2>Best results come from details</h2>
+          <ul>
+            <li>Breed or mix</li>
+            <li>Size, colour, or markings</li>
+            <li>Personality and energy level</li>
+            <li>Preferred style, theme, or sound</li>
+          </ul>
+        </div>
+        <div class="dog-name-side-panel">
+          <h2>Useful next steps</h2>
+          <ul>
+            <li><a href="/dog-names/">Browse all dog name guides</a></li>
+            <li><a href="/blog/trending-dog-names-2025/">Trending dog names</a></li>
+            <li><a href="/dog-breeds/">Explore dog breeds</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <Section title="How to Choose a Dog Name That Sticks">
+    <div class="dog-name-content-grid">
+      <article class="dog-name-info-card">
+        <span>1</span>
+        <h3>Say it out loud</h3>
+        <p>Test the name the way you will use it on walks, at the vet, and when calling your dog back.</p>
+      </article>
+      <article class="dog-name-info-card">
+        <span>2</span>
+        <h3>Match the dog, not just the trend</h3>
+        <p>A popular name is fine if it fits, but personality, appearance, and breed traits usually make a name feel more personal.</p>
+      </article>
+      <article class="dog-name-info-card">
+        <span>3</span>
+        <h3>Keep training clear</h3>
+        <p>Avoid names that sound too close to common cues or household words your dog hears often.</p>
+      </article>
+    </div>
   </Section>
 
-  <Section title="How It Works" intro="Get fast name ideas tailored to your pup.">
-    <ul>
-      <li>Tell us your dog's breed, personality, and vibe.</li>
-      <li>Get curated personalized name ideas.</li>
-      <li>Save your favorites or regenerate new options.</li>
-    </ul>
+  <section class="section alt">
+    <div class="container dog-name-split">
+      <div>
+        <p class="eyebrow">Name inspiration</p>
+        <h2>When a finder beats a list</h2>
+        <p>
+          Big name lists are useful for browsing, but they rarely know whether you want something outdoorsy, classic,
+          cute, Canadian, strong, food-inspired, or easy for a young child to say. The Dog Name Finder gives you a
+          focused shortlist first, then you can use the broader dog name library to compare styles.
+        </p>
+      </div>
+      <div class="dog-name-link-grid">
+        <a href="/dog-names/canadian-dog-names/">Canadian dog names</a>
+        <a href="/dog-names/unique-dog-names/">Unique dog names</a>
+        <a href="/dog-names/cute-dog-names/">Cute dog names</a>
+        <a href="/dog-names/nature-dog-names/">Nature dog names</a>
+      </div>
+    </div>
+  </section>
+
+  <Section title="Frequently Asked Questions">
+    <div class="faq-accordion dog-name-faq">
+      {faqItems.map((item) => (
+        <details class="faq-item">
+          <summary>{item.question}</summary>
+          <div class="faq-answer">
+            <p>{item.answer}</p>
+          </div>
+        </details>
+      ))}
+    </div>
   </Section>
 </Layout>
 
 <script async src="https://quizflowlabs.com/embed.js"></script>
+
+<style>
+  .dog-name-finder-hero :global(.media.hero-media img) {
+    object-position: center center;
+  }
+
+  .dog-name-tool-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 340px);
+    gap: var(--space-6);
+    align-items: start;
+  }
+
+  .dog-name-tool-main {
+    min-width: 0;
+  }
+
+  .dog-name-sidebar {
+    display: grid;
+    gap: var(--space-4);
+    position: sticky;
+    top: calc(var(--space-6) + 72px);
+  }
+
+  .dog-name-tool-card,
+  .dog-name-side-panel,
+  .dog-name-info-card {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-card);
+  }
+
+  .dog-name-tool-card {
+    overflow: hidden;
+  }
+
+  .dog-name-tool-head {
+    border-bottom: 1px solid rgba(73, 127, 100, 0.18);
+    background:
+      linear-gradient(180deg, rgba(230, 241, 234, 0.82), rgba(255, 255, 255, 0.96)),
+      var(--color-surface);
+    padding: clamp(1rem, 2vw, 1.5rem);
+  }
+
+  .dog-name-tool-head h2,
+  .dog-name-side-panel h2 {
+    margin-bottom: var(--space-2);
+  }
+
+  .dog-name-tool-head p,
+  .dog-name-side-panel li,
+  .dog-name-info-card p,
+  .dog-name-split p {
+    color: var(--color-muted);
+  }
+
+  .dog-name-embed {
+    min-height: 520px;
+    background: #ffffff;
+    padding: clamp(0.75rem, 2vw, 1.25rem);
+  }
+
+  .dog-name-side-panel {
+    padding: var(--space-4);
+    box-shadow: none;
+  }
+
+  .dog-name-side-panel ul {
+    display: grid;
+    gap: 0.55rem;
+    margin-bottom: 0;
+    padding-left: 1.1rem;
+  }
+
+  .dog-name-content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-4);
+  }
+
+  .dog-name-info-card {
+    display: grid;
+    align-content: start;
+    gap: var(--space-2);
+    padding: var(--space-4);
+  }
+
+  .dog-name-info-card span {
+    display: inline-grid;
+    place-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: var(--color-primary-dark);
+    color: #ffffff;
+    font-weight: 900;
+  }
+
+  .dog-name-info-card h3 {
+    margin: 0;
+  }
+
+  .dog-name-info-card p {
+    margin: 0;
+  }
+
+  .dog-name-split {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 420px);
+    gap: var(--space-6);
+    align-items: center;
+  }
+
+  .dog-name-link-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3);
+  }
+
+  .dog-name-link-grid a {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    color: var(--color-text);
+    font-weight: 850;
+    padding: 0.9rem 1rem;
+    text-decoration: none;
+  }
+
+  .dog-name-link-grid a:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary-dark);
+    box-shadow: 0 10px 24px rgba(49, 95, 73, 0.12);
+  }
+
+  .dog-name-faq {
+    max-width: 860px;
+  }
+
+  @media (max-width: 980px) {
+    .dog-name-tool-layout,
+    .dog-name-split {
+      grid-template-columns: 1fr;
+    }
+
+    .dog-name-sidebar {
+      position: static;
+    }
+
+    .dog-name-content-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .dog-name-link-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .dog-name-embed {
+      min-height: 600px;
+    }
+  }
+</style>
