@@ -7,13 +7,40 @@ interface Props {
   summary?: string;
   image?: string;
   imageAlt?: string;
+  imageWidth?: number;
+  imageHeight?: number;
+  imageSizes?: string;
+  imageSrcset?: string;
+  imageSourceSets?: {
+    type: string;
+    srcset: string;
+  }[];
+  imageFetchPriority?: "high" | "low" | "auto";
+  imagePosition?: string;
   primaryHref?: string;
   primaryLabel?: string;
   secondaryHref?: string;
   secondaryLabel?: string;
 }
 
-const { eyebrow, title, summary, image, imageAlt, primaryHref, primaryLabel, secondaryHref, secondaryLabel } = Astro.props;
+const {
+  eyebrow,
+  title,
+  summary,
+  image,
+  imageAlt,
+  imageWidth,
+  imageHeight,
+  imageSizes,
+  imageSrcset,
+  imageSourceSets,
+  imageFetchPriority,
+  imagePosition,
+  primaryHref,
+  primaryLabel,
+  secondaryHref,
+  secondaryLabel
+} = Astro.props;
 ---
 
 <section class="hero">
@@ -28,6 +55,18 @@ const { eyebrow, title, summary, image, imageAlt, primaryHref, primaryLabel, sec
         {secondaryHref && <a class="button secondary" href={secondaryHref}>{secondaryLabel || "Learn more"}</a>}
       </div>
     </div>
-    <ImageWithFallback src={image} alt={imageAlt || ""} variant="hero" loading="eager" />
+    <ImageWithFallback
+      src={image}
+      srcset={imageSrcset}
+      sourceSets={imageSourceSets}
+      sizes={imageSizes}
+      width={imageWidth}
+      height={imageHeight}
+      alt={imageAlt || ""}
+      variant="hero"
+      loading="eager"
+      fetchPriority={imageFetchPriority}
+      imagePosition={imagePosition}
+    />
   </div>
 </section>

@@ -6,20 +6,69 @@ interface Props {
   alt?: string;
   variant?: "hero" | "card";
   loading?: "lazy" | "eager";
+  fetchPriority?: "high" | "low" | "auto";
+  width?: number;
+  height?: number;
+  sizes?: string;
+  srcset?: string;
+  sourceSets?: {
+    type: string;
+    srcset: string;
+  }[];
   imagePosition?: string;
   imageFit?: "cover" | "contain";
 }
 
-const { src, alt = "", variant = "card", loading = "lazy", imagePosition, imageFit = "cover" } = Astro.props;
+const {
+  src,
+  alt = "",
+  variant = "card",
+  loading = "lazy",
+  fetchPriority,
+  width,
+  height,
+  sizes,
+  srcset,
+  sourceSets = [],
+  imagePosition,
+  imageFit = "cover"
+} = Astro.props;
 const finalSrc = src || PLACEHOLDER;
 const className = variant === "hero" ? "media hero-media" : "media card-media";
+const style = `${imagePosition ? `object-position: ${imagePosition};` : ""}${imageFit ? `object-fit: ${imageFit};` : ""}`;
 ---
 
-<img
-  class={className}
-  style={`${imagePosition ? `object-position: ${imagePosition};` : ""}${imageFit ? `object-fit: ${imageFit};` : ""}`}
-  src={finalSrc}
-  alt={alt}
-  loading={loading}
-  decoding="async"
-/>
+{
+  sourceSets.length > 0 ? (
+    <picture>
+      {sourceSets.map((source) => <source type={source.type} srcset={source.srcset} sizes={sizes} />)}
+      <img
+        class={className}
+        style={style}
+        src={finalSrc}
+        srcset={srcset}
+        sizes={sizes}
+        width={width}
+        height={height}
+        alt={alt}
+        loading={loading}
+        fetchpriority={fetchPriority}
+        decoding="async"
+      />
+    </picture>
+  ) : (
+    <img
+      class={className}
+      style={style}
+      src={finalSrc}
+      srcset={srcset}
+      sizes={sizes}
+      width={width}
+      height={height}
+      alt={alt}
+      loading={loading}
+      fetchpriority={fetchPriority}
+      decoding="async"
+    />
+  )
+}

@@ -7,6 +7,30 @@
                   
 {
           "collection": "Blog Posts",
+          "itemName": "Canada Day Fireworks and Dogs: How to Keep Your Dog Calm and Safe Before July 1",
+          "itemSlug": "canada-day-fireworks-dog-safety",
+          "fieldName": "Hero Image",
+          "originalWebflowUrl": "",
+          "localFilename": "blog-canada-day-fireworks-dog-safety-hero.png",
+          "currentLocalPath": "public/images/blog/blog-canada-day-fireworks-dog-safety-hero.png",
+          "originalSourcePath": "C:/Users/cjame/Downloads/ChatGPT Image Jun 11, 2026, 11_14_24 AM.png",
+          "cleanedFilename": "blog-canada-day-fireworks-dog-safety-hero.png",
+          "suggestedFilename": "blog-canada-day-fireworks-dog-safety-hero.png",
+          "suggestedPublicPath": "/images/blog/blog-canada-day-fireworks-dog-safety-hero.png",
+          "publicPath": "/images/blog/blog-canada-day-fireworks-dog-safety-hero.png",
+          "publicPathReady": true,
+          "priority": "High",
+          "status": "published",
+          "matchStatus": "published",
+          "confidence": "high",
+          "matchConfidence": "high",
+          "needsOwnerReview": false,
+          "notes": [
+                    "Manual mapping added for Canada Day fireworks dog safety post hero image."
+          ]
+},
+{
+          "collection": "Blog Posts",
           "itemName": "The Real Cost of Owning a Dog in Canada in 2026",
           "itemSlug": "real-cost-of-owning-a-dog-canada",
           "fieldName": "Hero Image",

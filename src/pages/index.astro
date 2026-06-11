@@ -20,7 +20,32 @@ import { withoutRedirectedRecords } from "../utils/redirects.js";
 const featuredCities = cities.slice(0, 4);
 const activeParks = withoutRedirectedRecords(parks);
 const featuredParks = activeParks.slice(0, 6);
-const homeHeroImage = "/images/blog/blog-how-to-choose-the-right-dog-park-for-your-pup-hero.jpg";
+const homeHeroImage = "/images/home/leashfree-canada-dog-parks-hero-1600.jpg";
+const homeHeroAlt = "Dogs walking off leash in a Toronto park with the city skyline, representing Canadian dog parks and LeashFree.ca resources";
+const homeHeroSizes = "(min-width: 960px) 44vw, 100vw";
+const homeHeroSrcset = [
+  "/images/home/leashfree-canada-dog-parks-hero-800.jpg 800w",
+  "/images/home/leashfree-canada-dog-parks-hero-1200.jpg 1200w",
+  "/images/home/leashfree-canada-dog-parks-hero-1600.jpg 1600w"
+].join(", ");
+const homeHeroSourceSets = [
+  {
+    type: "image/avif",
+    srcset: [
+      "/images/home/leashfree-canada-dog-parks-hero-800.avif 800w",
+      "/images/home/leashfree-canada-dog-parks-hero-1200.avif 1200w",
+      "/images/home/leashfree-canada-dog-parks-hero-1600.avif 1600w"
+    ].join(", ")
+  },
+  {
+    type: "image/webp",
+    srcset: [
+      "/images/home/leashfree-canada-dog-parks-hero-800.webp 800w",
+      "/images/home/leashfree-canada-dog-parks-hero-1200.webp 1200w",
+      "/images/home/leashfree-canada-dog-parks-hero-1600.webp 1600w"
+    ].join(", ")
+  }
+];
 
 const resourceCards = [
   {
@@ -78,6 +103,7 @@ const resourceCards = [
   title="LeashFree.ca | Dog Parks, Breeds, Tools & Dog Owner Resources in Canada"
   description="Find leash-free dog parks, compare dog breeds, use dog owner calculators, explore dog names, browse local pet services, and read Canadian dog care guides."
   canonical="https://leashfree.ca/"
+  ogImage="/images/home/leashfree-canada-dog-parks-social.jpg"
   structuredData={websiteSchema()}
 >
   <Hero
@@ -89,7 +115,13 @@ const resourceCards = [
     secondaryHref="/dog-parks/"
     secondaryLabel="Find Dog Parks Near You"
     image={homeHeroImage}
-    imageAlt="Dog enjoying an off-leash park"
+    imageAlt={homeHeroAlt}
+    imageWidth={1600}
+    imageHeight={900}
+    imageSizes={homeHeroSizes}
+    imageSrcset={homeHeroSrcset}
+    imageSourceSets={homeHeroSourceSets}
+    imageFetchPriority="high"
   />
 
   <Section
