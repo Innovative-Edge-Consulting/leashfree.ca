@@ -3,6 +3,7 @@ import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import AdSenseDisplay from "../../components/AdSenseDisplay.astro";
 import Card from "../../components/Card.astro";
 import ContentBlock from "../../components/ContentBlock.astro";
+import DogParkSearch from "../../components/DogParkSearch.astro";
 import EmptyState from "../../components/EmptyState.astro";
 import ImageWithFallback from "../../components/ImageWithFallback.astro";
 import Layout from "../../components/Layout.astro";
@@ -37,10 +38,59 @@ const { matches } = Astro.props;
 const primary = matches[0];
 const activeParks = withoutRedirectedRecords(parks);
 const pageType = primary.collection;
-const image = resolveMedia(primary, undefined, mediaMap);
 const isPark = pageType === "Dog Parks";
 const isCity = pageType === "City Pages";
 const isProvince = pageType === "Provinces";
+const enhancedProvinceConfig = {
+  ab: {
+    shortName: "Alberta",
+    shortLabel: "AB",
+    heroImage: "/images/dog-parks/alberta-dog-parks-hero.jpg",
+    seoTitle: "Alberta Dog Parks: Map, City Guides, and Off-Leash Areas",
+    description: (count) => `Explore ${count} Alberta dog park records with an interactive map, city guides, fenced park picks, water availability, parking details, and visit planning tips.`,
+    terrainIntro: "Alberta dog parks range from fenced neighbourhood runs to open prairie, river valley, foothill, and mountain-adjacent spaces. Use these checks before you go.",
+    rulesCopy: "Alberta municipalities manage off-leash rules locally. Confirm posted leash boundaries, seasonal trail restrictions, dog licensing requirements, and wildlife notices before entering.",
+    terrainCopy: "Snow, ice, mud, dry summer heat, and exposed wind can change a visit quickly. Bring waste bags, water, a leash for transitions, and towels for the ride home.",
+    terrainBadges: ["Water", "Towels", "Leash"]
+  },
+  bc: {
+    shortName: "British Columbia",
+    shortLabel: "BC",
+    heroImage: "/images/dog-parks/british-columbia-dog-parks-hero.jpg",
+    seoTitle: "British Columbia Dog Parks: Map, City Guides, and Off-Leash Areas",
+    description: (count) => `Explore ${count} British Columbia dog park records with an interactive map, city guides, fenced park picks, water availability, parking details, and visit planning tips.`,
+    terrainIntro: "British Columbia dog parks range from compact fenced neighbourhood areas to larger coastal, forest, and lake-adjacent spaces. Use these checks before you go.",
+    rulesCopy: "BC municipalities manage off-leash rules locally. Confirm posted leash boundaries, seasonal beach restrictions, dog licensing requirements, and wildlife notices before entering.",
+    terrainCopy: "Wet trails, rocky waterfronts, mud, and summer heat can change a visit quickly. Bring waste bags, water, a leash for transitions, and towels for the ride home.",
+    terrainBadges: ["Water", "Towels", "Leash"]
+  },
+  on: {
+    shortName: "Ontario",
+    shortLabel: "ON",
+    seoTitle: "Ontario Dog Parks: Map, City Guides, and Off-Leash Areas",
+    description: (count) => `Explore ${count} Ontario dog park records with an interactive map, city guides, fenced park picks, water availability, parking details, and visit planning tips.`,
+    terrainIntro: "Ontario dog parks range from fenced neighbourhood runs to waterfront, ravine, woodland, and community park spaces. Use these checks before you go.",
+    rulesCopy: "Ontario municipalities manage off-leash rules locally. Confirm posted leash boundaries, seasonal trail or beach restrictions, dog licensing requirements, and park-specific notices before entering.",
+    terrainCopy: "Snow, ice, spring mud, summer heat, ticks, and busy waterfront paths can change a visit quickly. Bring waste bags, water, a leash for transitions, and towels for the ride home.",
+    terrainBadges: ["Water", "Towels", "Leash"]
+  },
+  qc: {
+    shortName: "Quebec",
+    shortLabel: "QC",
+    heroImage: "/images/dog-parks/quebec-dog-parks-hero.jpg",
+    seoTitle: "Quebec Dog Parks: Map, City Guides, and Off-Leash Areas",
+    description: (count) => `Explore ${count} Quebec dog park records with an interactive map, city guides, fenced park picks, water availability, parking details, and visit planning tips.`,
+    terrainIntro: "Quebec dog parks range from fenced neighbourhood enclosures to riverside, lakeside, mountain-adjacent, and urban community park spaces. Use these checks before you go.",
+    rulesCopy: "Quebec municipalities manage dog park and off-leash rules locally. Confirm posted leash boundaries, seasonal park restrictions, licensing requirements, and any borough-specific notices before entering.",
+    terrainCopy: "Snow, ice, spring mud, summer heat, ticks, and busy waterfront paths can change a visit quickly. Bring waste bags, water, a leash for transitions, and towels for the ride home.",
+    terrainBadges: ["Water", "Towels", "Leash"]
+  }
+};
+const enhancedProvince = isProvince ? enhancedProvinceConfig[primary.slug] : null;
+const resolvedImage = resolveMedia(primary, undefined, mediaMap);
+const image = enhancedProvince
+  ? { ...resolvedImage, ...(enhancedProvince.heroImage ? { src: enhancedProvince.heroImage } : {}) }
+  : resolvedImage;
 const city = isPark ? findByName(cities, primary.raw.City) : null;
 const province = isPark || isCity ? findByName(provinces, primary.raw.Province) : primary;
 const sourceUrl = primary.raw["Park Website or Source"] || "";
@@ -90,6 +140,8 @@ const isAffirmative = (value) => {
   const normalized = value.trim().toLowerCase();
   return ["yes", "true", "y", "available", "open"].includes(normalized);
 };
+const matchesProvinceRecord = (value, provinceItem) =>
+  slugify(value) === slugify(provinceItem.name) || slugify(value) === slugify(provinceItem.slug);
 const cityParks = isCity
   ? activeParks.filter((park) => slugify(park.raw.City) === slugify(primary.name)).slice(0, 120)
   : [];
@@ -130,10 +182,62 @@ const cityFilteredGroups = isCity
     ].filter((group) => group.parks.length > 0)
   : [];
 const provinceCities = isProvince
-  ? cities.filter((cityItem) => slugify(cityItem.raw.Province) === slugify(primary.name)).slice(0, 120)
+  ? cities.filter((cityItem) => matchesProvinceRecord(cityItem.raw.Province, primary)).slice(0, 120)
   : [];
 const provinceParks = isProvince
-  ? activeParks.filter((park) => slugify(park.raw.Province) === slugify(primary.name)).slice(0, 120)
+  ? activeParks.filter((park) => matchesProvinceRecord(park.raw.Province, primary)).slice(0, 120)
+  : [];
+const allProvinceParks = isProvince
+  ? activeParks.filter((park) => matchesProvinceRecord(park.raw.Province, primary))
+  : [];
+const provinceParkCities = isProvince
+  ? [...new Set(allProvinceParks.map((park) => park.raw.City).filter(Boolean))].sort()
+  : [];
+const provinceStats = isProvince
+  ? {
+      parks: allProvinceParks.length,
+      cityGuides: provinceCities.length,
+      citiesWithParks: provinceParkCities.length,
+      fenced: allProvinceParks.filter((park) => isAffirmative(park.raw.Fenced)).length,
+      smallDog: allProvinceParks.filter((park) => isAffirmative(park.raw["Separate Small Dog Area"])).length,
+      water: allProvinceParks.filter((park) => isAffirmative(park.raw["Water source available"])).length,
+      parking: allProvinceParks.filter((park) => isAffirmative(park.raw["Parking Available"])).length
+    }
+  : null;
+const provinceCityHighlights = isProvince
+  ? provinceCities
+      .map((cityItem) => {
+        const parksForCity = allProvinceParks.filter((park) => slugify(park.raw.City) === slugify(cityItem.name));
+        return {
+          city: cityItem,
+          count: parksForCity.length,
+          fenced: parksForCity.filter((park) => isAffirmative(park.raw.Fenced)).length,
+          water: parksForCity.filter((park) => isAffirmative(park.raw["Water source available"])).length,
+          parking: parksForCity.filter((park) => isAffirmative(park.raw["Parking Available"])).length
+        };
+      })
+      .filter((entry) => entry.count > 0)
+      .sort((a, b) => b.count - a.count || a.city.name.localeCompare(b.city.name))
+      .slice(0, 8)
+  : [];
+const provinceFeatureGroups = isProvince
+  ? [
+      {
+        title: `Fenced dog parks in ${primary.name}`,
+        intro: `${provinceStats?.fenced || 0} listed parks indicate fenced off-leash space.`,
+        parks: allProvinceParks.filter((park) => isAffirmative(park.raw.Fenced)).slice(0, 8)
+      },
+      {
+        title: `Dog parks with water in ${primary.name}`,
+        intro: `${provinceStats?.water || 0} listed parks indicate an available water source.`,
+        parks: allProvinceParks.filter((park) => isAffirmative(park.raw["Water source available"])).slice(0, 8)
+      },
+      {
+        title: `Dog parks with parking in ${primary.name}`,
+        intro: `${provinceStats?.parking || 0} listed parks indicate parking nearby or on site.`,
+        parks: allProvinceParks.filter((park) => isAffirmative(park.raw["Parking Available"])).slice(0, 8)
+      }
+    ].filter((group) => group.parks.length > 0)
   : [];
 const breadcrumbs = [
   { label: "Home", href: "/" },
@@ -161,11 +265,15 @@ const seoAmenityLabels = amenityDefs
 const fallbackTitle = isPark && city && province
   ? `${primary.name} Off-Leash Dog Park in ${city.name}, ${province.name} | LeashFree.ca`
   : primary.title || primary.name;
-const title = primary.seoTitle || fallbackTitle;
+const title = enhancedProvince
+  ? enhancedProvince.seoTitle
+  : primary.seoTitle || fallbackTitle;
 const fallbackDescription = isPark
   ? `${primary.name} dog park profile${city ? ` in ${city.name}` : ""}${province ? `, ${province.name}` : ""}. ${seoAmenityLabels.length > 0 ? `Highlights: ${seoAmenityLabels.join(", ")}. ` : ""}Check map, rules, and visit details.`
   : isCity
   ? `${primary.name} dog park guide with ${cityParks.length} off-leash park listings, including fenced parks, small dog areas, parking, and water availability. Compare parks and plan your visit.`
+  : enhancedProvince
+  ? enhancedProvince.description(provinceStats?.parks || 0)
   : `${primary.name} on LeashFree.ca.`;
 const description = primary.metaDescription || fallbackDescription;
 const locationLinks = [
@@ -390,11 +498,14 @@ const structuredData = [
       <div>
         <Breadcrumbs items={breadcrumbs} />
         <div class="eyebrow">{isPark ? "Dog park" : isCity ? "City guide" : "Province guide"}</div>
-        <h1>{primary.title || primary.name}</h1>
+        <h1>{enhancedProvince ? `${enhancedProvince.shortName} dog parks` : primary.title || primary.name}</h1>
         <p class="summary">{excerpt(description)}</p>
         {freshnessText && <p class="summary">{freshnessText}</p>}
         <div class="button-row">
-          <a class="button primary" href="/dog-parks/">Back to dog parks</a>
+          <a class="button primary" href={enhancedProvince ? `#${primary.slug}-dog-park-map` : "/dog-parks/"}>
+            {enhancedProvince ? `Open ${enhancedProvince.shortLabel} map` : "Back to dog parks"}
+          </a>
+          {enhancedProvince && <a class="button secondary" href={`#${primary.slug}-cities`}>Browse cities</a>}
           {city && <a class="button secondary" href={`/dog-parks/${city.slug}/`}>More in {city.name}</a>}
         </div>
       </div>
@@ -639,6 +750,88 @@ const structuredData = [
 
   {isProvince && (
     <>
+      {enhancedProvince && (
+        <>
+          <Section title={`${enhancedProvince.shortLabel} dog park coverage`} tight>
+            <div class="stat-strip">
+              <div class="stat"><strong>{provinceStats.parks}</strong><span>{enhancedProvince.shortLabel} park records</span></div>
+              <div class="stat"><strong>{provinceStats.cityGuides}</strong><span>city guides</span></div>
+              <div class="stat"><strong>{provinceStats.fenced}</strong><span>fenced parks listed</span></div>
+              <div class="stat"><strong>{provinceStats.parking}</strong><span>parks with parking</span></div>
+            </div>
+          </Section>
+
+          <Section
+            id={`${primary.slug}-dog-park-map`}
+            title={`Search ${enhancedProvince.shortLabel} dog parks on the map`}
+            intro={`Use the interactive map to compare ${enhancedProvince.shortName} off-leash areas by city, address, amenities, and distance from your location.`}
+            alt
+          >
+            <DogParkSearch initialProvince={enhancedProvince.shortName} />
+          </Section>
+
+          <Section title={`Plan a better ${enhancedProvince.shortLabel} park visit`} intro={enhancedProvince.terrainIntro}>
+            <div class="grid compact">
+              <Card
+                title="Choose the right park type"
+                description="For high-energy play, start with fenced parks. For heat or longer outings, compare water availability, shade, and parking before driving across town."
+                badges={[`${provinceStats.fenced} fenced`, `${provinceStats.water} with water`]}
+                showCta={false}
+              />
+              <Card
+                title="Check local rules"
+                description={enhancedProvince.rulesCopy}
+                badges={["Local bylaws", "Seasonal rules"]}
+                showCta={false}
+              />
+              <Card
+                title="Prepare for terrain"
+                description={enhancedProvince.terrainCopy}
+                badges={enhancedProvince.terrainBadges}
+                showCta={false}
+              />
+            </div>
+          </Section>
+
+          {provinceCityHighlights.length > 0 && (
+            <Section
+              id={`${primary.slug}-cities`}
+              title={`Popular ${enhancedProvince.shortLabel} city guides`}
+              intro={`Start with cities that currently have the most matching ${enhancedProvince.shortLabel} park records in the LeashFree directory.`}
+              alt
+            >
+              <div class="grid compact">
+                {provinceCityHighlights.map(({ city: cityItem, count, fenced, water, parking }) => (
+                  <Card
+                    title={`${cityItem.name} dog parks`}
+                    href={`/dog-parks/${cityItem.slug}/`}
+                    description={`${count} listed park${count === 1 ? "" : "s"} in ${cityItem.name}, including ${fenced} fenced, ${water} with water, and ${parking} with parking where data is available.`}
+                    badges={[cityItem.raw.Province].filter(Boolean)}
+                    ctaLabel="View city guide"
+                  />
+                ))}
+              </div>
+            </Section>
+          )}
+
+          {provinceFeatureGroups.map((group) => (
+            <Section title={group.title} intro={group.intro}>
+              <div class="grid compact">
+                {group.parks.map((park) => (
+                  <Card
+                    title={park.name}
+                    href={`/dog-parks/${park.slug}/`}
+                    description={excerpt(park.description, park.raw["Street Address"])}
+                    meta={[park.raw.City, park.raw["Street Address"]].filter(Boolean).join(" - ")}
+                    ctaLabel="View park"
+                  />
+                ))}
+              </div>
+            </Section>
+          ))}
+        </>
+      )}
+
       <Section title={`Cities in ${primary.name}`} intro={`${provinceCities.length} city guides currently match this province.`}>
         <div class="grid">
           {provinceCities.map((cityItem) => (

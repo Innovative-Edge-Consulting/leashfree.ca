@@ -7,6 +7,30 @@
                   
 {
           "collection": "Blog Posts",
+          "itemName": "Blue-Green Algae and Dogs: What Canadian Dog Owners Should Know Before Letting Their Dog Swim",
+          "itemSlug": "blue-green-algae-dogs-canada",
+          "fieldName": "Hero Image",
+          "originalWebflowUrl": "",
+          "localFilename": "blog-blue-green-algae-dogs-canada-hero.png",
+          "currentLocalPath": "public/images/blog/blog-blue-green-algae-dogs-canada-hero.png",
+          "originalSourcePath": "C:/Users/cjame/Downloads/ChatGPT Image Jun 12, 2026, 11_23_43 AM.png",
+          "cleanedFilename": "blog-blue-green-algae-dogs-canada-hero.png",
+          "suggestedFilename": "blog-blue-green-algae-dogs-canada-hero.png",
+          "suggestedPublicPath": "/images/blog/blog-blue-green-algae-dogs-canada-hero.png",
+          "publicPath": "/images/blog/blog-blue-green-algae-dogs-canada-hero.png",
+          "publicPathReady": true,
+          "priority": "High",
+          "status": "published",
+          "matchStatus": "published",
+          "confidence": "high",
+          "matchConfidence": "high",
+          "needsOwnerReview": false,
+          "notes": [
+                    "Manual mapping added for blue-green algae dogs Canada post hero image."
+          ]
+},                  
+{
+          "collection": "Blog Posts",
           "itemName": "Canada Day Fireworks and Dogs: How to Keep Your Dog Calm and Safe Before July 1",
           "itemSlug": "canada-day-fireworks-dog-safety",
           "fieldName": "Hero Image",

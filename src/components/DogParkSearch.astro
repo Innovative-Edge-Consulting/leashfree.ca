@@ -4,6 +4,12 @@ import parks from "../data/generated/parks.json";
 import { excerpt } from "../utils/content.js";
 import { withoutRedirectedRecords } from "../utils/redirects.js";
 
+interface Props {
+  initialProvince?: string;
+}
+
+const { initialProvince = "" } = Astro.props;
+
 function clean(value) {
   return typeof value === "string" ? value.trim() : "";
 }
@@ -82,7 +88,7 @@ const parkItems = withoutRedirectedRecords(parks).map(parkItem);
 const provinces = [...new Set(parkItems.map((item) => item.province).filter(Boolean))].sort();
 const cities = [...new Set(parkItems.map((item) => item.city).filter(Boolean))].sort();
 const mappedCount = parkItems.filter((item) => item.hasCoords).length;
-const json = JSON.stringify({ items: parkItems, provinces, cities }).replace(/</g, "\\u003c");
+const json = JSON.stringify({ items: parkItems, provinces, cities, initialProvince }).replace(/</g, "\\u003c");
 ---
 
 <div class="home-map-search dog-park-search" data-dog-park-search>
@@ -173,6 +179,7 @@ const json = JSON.stringify({ items: parkItems, provinces, cities }).replace(/</
       advancedFilters: root.querySelector("#advanced-dog-park-filters"),
       resetButton: root.querySelector("[data-reset-map]")
     };
+    if (data.initialProvince) controls.province.value = data.initialProvince;
 
     const canadaCenter = [56.4, -96.7];
     const canadaBounds = L.latLngBounds([41.6, -141], [83.2, -52.6]);
