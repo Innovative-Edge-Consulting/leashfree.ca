@@ -1,0 +1,118 @@
+---
+import Card from "../../../components/Card.astro";
+import Hero from "../../../components/Hero.astro";
+import Layout from "../../../components/Layout.astro";
+import Section from "../../../components/Section.astro";
+import mediaMap from "../../../data/media-map.json";
+import directories from "../../../data/generated/directories.json";
+import { excerpt, breadcrumbSchema } from "../../../utils/content.js";
+import {
+  directoryCategory,
+  directoryCategoryCopy,
+  directoryLocationLabel
+} from "../../../utils/directory.js";
+import { resolveMedia } from "../../../utils/media.js";
+
+const category = "animal-shelters-and-rescues";
+const copy = directoryCategoryCopy(category);
+const listings = directories
+  .filter((item) => directoryCategory(item) === category)
+  .sort((a, b) => directoryLocationLabel(a).localeCompare(directoryLocationLabel(b)) || a.name.localeCompare(b.name));
+
+const cityGroups = new Map();
+for (const listing of listings) {
+  const city = listing.raw.City;
+  if (!city) continue;
+  const key = directoryLocationLabel(listing);
+  cityGroups.set(key, (cityGroups.get(key) || 0) + 1);
+}
+
+const topCities = [...cityGroups.entries()]
+  .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+  .slice(0, 18);
+
+const featuredListings = listings.slice(0, 24);
+const topCitySections = topCities.map(([city, count]) => ({
+  city,
+  count,
+  id: city.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, ""),
+  listings: listings.filter((item) => directoryLocationLabel(item) === city).slice(0, 6)
+}));
+const breadcrumbs = [
+  { label: "Home", href: "/" },
+  { label: "Directory", href: "/directory/" },
+  { label: "Animal Shelters & Rescues" }
+];
+---
+
+<Layout
+  title={copy.title}
+  description={copy.description}
+  canonical="https://leashfree.ca/directory/animal-shelters-and-rescues/"
+  ogImage={copy.image}
+  structuredData={breadcrumbSchema(breadcrumbs)}
+>
+  <Hero
+    eyebrow="Directory"
+    title={copy.title}
+    summary={copy.summary}
+    primaryHref="#listings"
+    primaryLabel="Browse shelters"
+    secondaryHref="/directory/"
+    secondaryLabel="All directory listings"
+    image={copy.image}
+    imageAlt="Volunteer with a rescue dog"
+  />
+
+  <Section
+    title="Find shelters and rescues by city"
+    intro={`${listings.length} shelters, rescues, humane societies, and adoption organizations are listed across Canada.`}
+  >
+    <div class="directory-city-links">
+      {topCities.map(([city, count]) => (
+        <a href={`#${city.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "")}`}>
+          <strong>{city}</strong>
+          <span>{count} listings</span>
+        </a>
+      ))}
+    </div>
+  </Section>
+
+  <Section
+    id="listings"
+    title="Shelter and rescue listings"
+    intro="Browse Canadian shelters and rescues. Each profile includes location details, contact information, map links, and related resources where available."
+    alt
+  >
+    <div class="grid">
+      {featuredListings.map((item) => (
+        <Card
+          title={item.name}
+          href={`/directory/${item.slug}/`}
+          description={excerpt(item.metaDescription, item.description)}
+          image={resolveMedia(item, "Featured Image", mediaMap).src}
+          imageAlt={`${item.name} listing`}
+          meta={directoryLocationLabel(item)}
+          badges={["Shelter & Rescue"]}
+          ctaLabel="View shelter"
+        />
+      ))}
+    </div>
+  </Section>
+
+  <Section title="Top cities for shelters and rescues">
+    <div class="directory-city-section-grid">
+      {topCitySections.map((section) => (
+        <article class="directory-city-section" id={section.id}>
+          <h3>{section.city}</h3>
+          <p>{section.count} shelter and rescue listings</p>
+          <ul>
+            {section.listings.map((item) => (
+              <li><a href={`/directory/${item.slug}/`}>{item.name}</a></li>
+            ))}
+          </ul>
+        </article>
+      ))}
+    </div>
+  </Section>
+</Layout>

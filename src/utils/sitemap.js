@@ -90,6 +90,7 @@ export const sitemapSections = [
       entry(absoluteUrl("/"), maxDate([sectionLastmod(parkEntries), sectionLastmod(breedEntries), sectionLastmod(blogEntries)])),
       entry(absoluteUrl("/dog-parks/"), maxDate([sectionLastmod(parkEntries), sectionLastmod(locationEntries)])),
       entry(absoluteUrl("/dog-breeds/"), sectionLastmod(breedEntries)),
+      entry(absoluteUrl("/dog-breeds/group/"), sectionLastmod(breedEntries)),
       entry(absoluteUrl("/dog-names/"), sectionLastmod(dogNameEntries)),
       entry(absoluteUrl("/dog-name-finder/"), sectionLastmod(dogNameEntries)),
       entry(absoluteUrl("/games/"), sectionLastmod(breedEntries)),
@@ -97,9 +98,13 @@ export const sitemapSections = [
       entry(absoluteUrl("/resources/")),
       entry(absoluteUrl("/resources/dog-breed-match-quiz/"), sectionLastmod(breedEntries)),
       entry(absoluteUrl("/resources/dog-calorie-calculator/")),
+      entry(absoluteUrl("/resources/dog-cost-calculator-canada/")),
       entry(absoluteUrl("/resources/dog-gear-finder/")),
+      entry(absoluteUrl("/dog-food-comparison-canada/")),
       entry(absoluteUrl("/blog/"), sectionLastmod(blogEntries)),
       entry(absoluteUrl("/directory/"), sectionLastmod(directoryEntries)),
+      entry(absoluteUrl("/directory/animal-shelters-and-rescues/"), sectionLastmod(directoryEntries)),
+      entry(absoluteUrl("/directory/veterinarians/"), sectionLastmod(directoryEntries)),
       entry(absoluteUrl("/privacy-policy/")),
       entry(absoluteUrl("/terms-of-use/"))
     ])

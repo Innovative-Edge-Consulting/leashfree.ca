@@ -8,11 +8,158 @@ import MapPanel from "../../components/MapPanel.astro";
 import Section from "../../components/Section.astro";
 import mediaMap from "../../data/media-map.json";
 import directories from "../../data/generated/directories.json";
-import { breadcrumbSchema, excerpt } from "../../utils/content.js";
+import cities from "../../data/generated/cities.json";
+import { breadcrumbSchema, excerpt, stripHtml } from "../../utils/content.js";
+import { directoryCityLabel, directoryLocationLabel } from "../../utils/directory.js";
 import { resolveMedia } from "../../utils/media.js";
 
 function clean(value) {
   return typeof value === "string" ? value.trim() : "";
+}
+
+function normalize(value) {
+  return clean(value).toLowerCase();
+}
+
+function titleCaseSlug(value) {
+  return clean(value)
+    .split("-")
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(" ");
+}
+
+function categoryLabel(value) {
+  const labels = {
+    "animal-shelters-and-rescues": "Animal Shelters & Rescues",
+    veterinarians: "Veterinarians"
+  };
+  return labels[clean(value)] || titleCaseSlug(value);
+}
+
+function categoryPath(value) {
+  const slug = clean(value);
+  return slug ? `/directory/${slug}/` : "/directory/";
+}
+
+function number(value) {
+  const parsed = Number(value);
+  return Number.isFinite(parsed) ? parsed : null;
+}
+
+function distanceKm(a, b) {
+  const radius = 6371;
+  const lat1 = a.lat * Math.PI / 180;
+  const lat2 = b.lat * Math.PI / 180;
+  const deltaLat = (b.lat - a.lat) * Math.PI / 180;
+  const deltaLng = (b.lng - a.lng) * Math.PI / 180;
+  const h = Math.sin(deltaLat / 2) ** 2 + Math.cos(lat1) * Math.cos(lat2) * Math.sin(deltaLng / 2) ** 2;
+  return 2 * radius * Math.atan2(Math.sqrt(h), Math.sqrt(1 - h));
+}
+
+function listingMeta(listing) {
+  return directoryLocationLabel(listing);
+}
+
+function listingCategory(listing) {
+  return clean(listing.raw.Category || listing.references.Category?.[0]);
+}
+
+function relatedByCity(current, limit = 4) {
+  const city = normalize(current.raw.City);
+  const province = normalize(current.raw.Province);
+  if (!city) return [];
+
+  return directories
+    .filter((listing) => listing.slug !== current.slug)
+    .filter((listing) => normalize(listing.raw.City) === city)
+    .filter((listing) => !province || normalize(listing.raw.Province) === province)
+    .slice(0, limit);
+}
+
+function relatedByDistance(current, limit = 4) {
+  const lat = number(current.raw.Latitude);
+  const lng = number(current.raw.Longitude);
+  if (lat === null || lng === null) return [];
+
+  const category = listingCategory(current);
+  return directories
+    .filter((listing) => listing.slug !== current.slug)
+    .map((listing) => {
+      const nextLat = number(listing.raw.Latitude);
+      const nextLng = number(listing.raw.Longitude);
+      if (nextLat === null || nextLng === null) return null;
+      return {
+        listing,
+        distance: distanceKm({ lat, lng }, { lat: nextLat, lng: nextLng })
+      };
+    })
+    .filter(Boolean)
+    .filter((entry) => !category || listingCategory(entry.listing) === category)
+    .sort((a, b) => a.distance - b.distance)
+    .slice(0, limit)
+    .map((entry) => ({
+      ...entry.listing,
+      distanceLabel: `${entry.distance.toFixed(1)} km away`
+    }));
+}
+
+function matchingCityPage(current) {
+  const city = normalize(current.raw.City);
+  if (!city) return null;
+  return cities.find((candidate) => candidate.slug === city || normalize(candidate.name) === city);
+}
+
+function businessSchema(current, imageSrc, siteUrl) {
+  const category = listingCategory(current);
+  const lat = number(current.raw.Latitude);
+  const lng = number(current.raw.Longitude);
+  const addressParts = [
+    clean(current.raw["Street Address"]),
+    clean(current.raw.City),
+    clean(current.raw.Province)
+  ].filter(Boolean);
+  const type = category === "veterinarians"
+    ? "VeterinaryCare"
+    : category === "animal-shelters-and-rescues"
+      ? "AnimalShelter"
+      : "LocalBusiness";
+
+  const sameAs = [
+    clean(current.raw["Facebook URL"]),
+    clean(current.raw["Instagram URL"])
+  ].filter(Boolean);
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": type,
+    "@id": current.canonicalUrl || `${siteUrl}/directory/${current.slug}/`,
+    name: current.name,
+    url: current.canonicalUrl || `${siteUrl}/directory/${current.slug}/`,
+    description: stripHtml(current.metaDescription || current.description || current.body),
+    image: imageSrc?.startsWith("http") ? imageSrc : `${siteUrl}${imageSrc}`,
+    telephone: clean(current.raw.Phone) || undefined,
+    email: clean(current.raw.Email).replace(/^mailto:/i, "") || undefined,
+    address: addressParts.length
+      ? {
+          "@type": "PostalAddress",
+          streetAddress: clean(current.raw["Street Address"]) || undefined,
+          addressLocality: clean(current.raw.City) || undefined,
+          addressRegion: clean(current.raw.Province) || undefined,
+          addressCountry: "CA"
+        }
+      : undefined,
+    geo: lat !== null && lng !== null
+      ? {
+          "@type": "GeoCoordinates",
+          latitude: lat,
+          longitude: lng
+        }
+      : undefined,
+    sameAs: sameAs.length ? sameAs : undefined
+  };
+
+  return Object.fromEntries(Object.entries(schema).filter(([, value]) => value !== undefined));
 }
 
 export function getStaticPaths() {
@@ -24,6 +171,7 @@ export function getStaticPaths() {
 
 const { item } = Astro.props;
 const image = resolveMedia(item, "Featured Image", mediaMap);
+const siteUrl = "https://leashfree.ca";
 const affiliateUrl = clean(item.raw["Affiliate URL"]);
 const primaryWebsiteUrl = clean(item.raw["Primary Website URL"]);
 const websiteUrl = affiliateUrl || primaryWebsiteUrl;
@@ -40,9 +188,59 @@ const breadcrumbs = [
   { label: "Directory", href: "/directory/" },
   { label: item.name }
 ];
+const category = listingCategory(item);
+const categoryName = categoryLabel(category);
+const cityName = directoryCityLabel(item.raw.City);
+const sameCityListings = relatedByCity(item);
+const nearbyListings = relatedByDistance(item).filter((listing) => !sameCityListings.some((cityListing) => cityListing.slug === listing.slug));
+const cityPage = matchingCityPage(item);
+const categoryImage = category === "veterinarians"
+  ? "/images/general/category-veterinarians-hero.jpg"
+  : category === "animal-shelters-and-rescues"
+    ? "/images/general/category-animal-shelters-and-rescues-hero.jpg"
+    : "/images/general/directory-services-hero.png";
+const guideLinks = category === "veterinarians"
+  ? [
+      {
+        href: "/blog/average-vet-costs-in-canada/",
+        label: "Average vet costs in Canada",
+        image: "/images/blog/blog-average-vet-costs-in-canada-hero.jpg"
+      },
+      {
+        href: "/blog/emergency-vet-costs-canada/",
+        label: "Emergency vet costs in Canada",
+        image: "/images/blog/blog-emergency-vet-costs-canada-hero.png"
+      },
+      {
+        href: "/resources/dog-cost-calculator-canada/",
+        label: "Dog cost calculator",
+        image: "/images/resources/dog-cost-calculator-hero.png"
+      }
+    ]
+  : [
+      {
+        href: "/blog/how-to-socialize-your-puppy/",
+        label: "How to socialize your puppy",
+        image: "/images/blog/blog-how-to-socialize-your-puppy-hero.jpg"
+      },
+      {
+        href: "/blog/real-cost-of-owning-a-dog-canada/",
+        label: "Real cost of owning a dog in Canada",
+        image: "/images/blog/blog-real-cost-of-owning-a-dog-canada-hero.png"
+      },
+      {
+        href: "/resources/dog-breed-match-quiz/",
+        label: "Dog breed match quiz",
+        image: "/images/blog/blog-dog-breed-match-quiz-hero.png"
+      }
+    ];
+const structuredData = [
+  breadcrumbSchema(breadcrumbs),
+  businessSchema(item, image.src, siteUrl)
+];
 ---
 
-<Layout title={item.seoTitle || item.title || item.name} description={item.metaDescription || item.description} canonical={item.canonicalUrl} ogImage={image.src} structuredData={breadcrumbSchema(breadcrumbs)}>
+<Layout title={item.seoTitle || item.title || item.name} description={item.metaDescription || item.description} canonical={item.canonicalUrl} ogImage={image.src} structuredData={structuredData}>
   <section class="page-header">
     <div class="container detail-layout">
       <div>
@@ -119,5 +317,61 @@ const breadcrumbs = [
       longitude={item.raw.Longitude}
       googleMapsLink={item.raw["Google Maps Link"]}
     />
+  </Section>
+
+  {(sameCityListings.length > 0 || nearbyListings.length > 0) && (
+    <Section title={`More ${categoryName.toLowerCase()} near ${cityName || "this listing"}`} intro="Compare nearby dog services and pet resources in the LeashFree.ca directory." alt>
+      {sameCityListings.length > 0 && (
+        <div class="related-directory-group">
+          <h3>{`More listings in ${cityName}`}</h3>
+          <div class="grid compact">
+            {sameCityListings.map((listing) => (
+              <article class="related-listing-card">
+                <h4><a href={`/directory/${listing.slug}/`}>{listing.name}</a></h4>
+                <p>{[categoryLabel(listingCategory(listing)), listingMeta(listing)].filter(Boolean).join(" in ")}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {nearbyListings.length > 0 && (
+        <div class="related-directory-group">
+          <h3>Nearby listings</h3>
+          <div class="grid compact">
+            {nearbyListings.map((listing) => (
+              <article class="related-listing-card">
+                <h4><a href={`/directory/${listing.slug}/`}>{listing.name}</a></h4>
+                <p>{[listing.distanceLabel, listingMeta(listing)].filter(Boolean).join(" - ")}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      )}
+    </Section>
+  )}
+
+  <Section title="Explore related dog resources">
+    <div class="related-resource-grid">
+      <article class="related-listing-card">
+        <img class="related-card-image" src={categoryImage} alt={`${categoryName} directory`} loading="lazy" decoding="async" />
+        <h3><a href={categoryPath(category)}>{categoryName} directory</a></h3>
+        <p>{`Browse more ${categoryName.toLowerCase()} in the LeashFree.ca business directory.`}</p>
+      </article>
+      {cityPage && (
+        <article class="related-listing-card">
+          <img class="related-card-image" src="/images/blog/blog-how-to-choose-the-right-dog-park-for-your-pup-hero.jpg" alt={`${cityPage.name} dog parks`} loading="lazy" decoding="async" />
+          <h3><a href={`/dog-parks/${cityPage.slug}/`}>{cityPage.name} dog parks</a></h3>
+          <p>{`Find leash-free parks and dog-friendly spaces near ${cityPage.name}.`}</p>
+        </article>
+      )}
+      {guideLinks.map((link) => (
+        <article class="related-listing-card">
+          <img class="related-card-image" src={link.image} alt={link.label} loading="lazy" decoding="async" />
+          <h3><a href={link.href}>{link.label}</a></h3>
+          <p>Helpful reading for Canadian dog owners planning local pet care.</p>
+        </article>
+      ))}
+    </div>
   </Section>
 </Layout>

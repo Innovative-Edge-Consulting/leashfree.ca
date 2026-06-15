@@ -58,6 +58,21 @@ function allAttrs(html, tagName, attrName) {
   return results;
 }
 
+function tagAttr(tag, attrName) {
+  const attr = tag.match(new RegExp(`\\b${attrName}\\s*=\\s*(["'])(.*?)\\1`, "i"));
+  return decodeHtml(attr?.[2] || "");
+}
+
+function firstTagAttr(html, tagName, matchAttrName, matchAttrValue, returnAttrName) {
+  const tagPattern = new RegExp(`<${tagName}\\b[^>]*>`, "gi");
+  for (const tag of html.match(tagPattern) || []) {
+    if (tagAttr(tag, matchAttrName).toLowerCase() === matchAttrValue.toLowerCase()) {
+      return tagAttr(tag, returnAttrName);
+    }
+  }
+  return "";
+}
+
 function fileForPublicPath(src) {
   const clean = src.split("#")[0].split("?")[0];
   if (!clean.startsWith("/")) return null;
@@ -179,10 +194,10 @@ const pages = htmlFiles.map((file) => {
   const html = fs.readFileSync(file, "utf8");
   const route = routeFromHtmlFile(file);
   const title = firstMatch(html, /<title>([\s\S]*?)<\/title>/i);
-  const metaDescription = firstMatch(html, /<meta\s+name=["']description["']\s+content=["']([^"']*)["']/i);
-  const canonical = firstMatch(html, /<link\s+rel=["']canonical["']\s+href=["']([^"']*)["']/i);
-  const ogTitle = firstMatch(html, /<meta\s+property=["']og:title["']\s+content=["']([^"']*)["']/i);
-  const ogDescription = firstMatch(html, /<meta\s+property=["']og:description["']\s+content=["']([^"']*)["']/i);
+  const metaDescription = firstTagAttr(html, "meta", "name", "description", "content");
+  const canonical = firstTagAttr(html, "link", "rel", "canonical", "href");
+  const ogTitle = firstTagAttr(html, "meta", "property", "og:title", "content");
+  const ogDescription = firstTagAttr(html, "meta", "property", "og:description", "content");
   const h1Count = (html.match(/<h1\b/gi) || []).length;
   const textLength = stripTags(html).length;
   const internalLinks = allAttrs(html, "a", "href").filter(isInternalLink);

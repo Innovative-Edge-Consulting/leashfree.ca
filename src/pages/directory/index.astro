@@ -7,12 +7,44 @@ import Section from "../../components/Section.astro";
 import mediaMap from "../../data/media-map.json";
 import directories from "../../data/generated/directories.json";
 import { excerpt, breadcrumbSchema } from "../../utils/content.js";
+import {
+  DIRECTORY_CATEGORY_LABELS,
+  directoryCategory,
+  directoryCategoryCopy,
+  directoryCategoryPath
+} from "../../utils/directory.js";
 import { resolveMedia } from "../../utils/media.js";
 
 const breadcrumbs = [
   { label: "Home", href: "/" },
   { label: "Directory", href: "/directory/" }
 ];
+
+const activeCategoryPaths = new Set([
+  "/directory/animal-shelters-and-rescues/",
+  "/directory/veterinarians/"
+]);
+const categoryCounts = directories.reduce((counts, item) => {
+  const category = directoryCategory(item);
+  if (!category) return counts;
+  counts.set(category, (counts.get(category) || 0) + 1);
+  return counts;
+}, new Map());
+const categories = Object.keys(DIRECTORY_CATEGORY_LABELS).map((slug) => {
+  const copy = directoryCategoryCopy(slug);
+  const count = categoryCounts.get(slug) || 0;
+  const href = directoryCategoryPath(slug);
+  return {
+    slug,
+    title: DIRECTORY_CATEGORY_LABELS[slug],
+    href: activeCategoryPaths.has(href) ? href : "#add-business",
+    image: copy.image,
+    summary: copy.summary,
+    count,
+    status: count > 0 ? `${count} listings` : "Coming soon",
+    cta: activeCategoryPaths.has(href) ? "Browse category" : "Add a business"
+  };
+});
 ---
 
 <Layout
@@ -32,6 +64,25 @@ const breadcrumbs = [
     image="/images/general/directory-services-hero.png"
     imageAlt="Dog services and pet resources"
   />
+
+  <Section
+    title="Browse by business type"
+    intro="Start with a dog service category, then search by business name, city, province, or nearby location."
+  >
+    <div class="directory-category-grid">
+      {categories.map((category) => (
+        <article class="directory-category-card">
+          <img src={category.image} alt={`${category.title} category`} loading="lazy" decoding="async" />
+          <div class="directory-category-card-body">
+            <p class="small">{category.status}</p>
+            <h3><a href={category.href}>{category.title}</a></h3>
+            <p>{category.summary}</p>
+            <a class="button secondary" href={category.href}>{category.cta}</a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </Section>
 
   <Section
     title="Search dog businesses"
