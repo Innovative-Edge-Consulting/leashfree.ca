@@ -7,6 +7,32 @@
                   
 {
           "collection": "Blog Posts",
+          "itemName": "Foxtails and Dogs: What Canadian Dog Owners Should Know About Grass Awns",
+          "itemSlug": "foxtails-grass-awns-dogs-canada",
+          "fieldName": "Hero Image",
+          "originalWebflowUrl": "",
+          "localFilename": "blog-foxtails-grass-awns-dogs-canada-hero.png",
+          "currentLocalPath": "public/images/blog/blog-foxtails-grass-awns-dogs-canada-hero.png",
+          "originalSourcePath": "C:/Users/cjame/.codex/generated_images/019eccb8-e3da-7383-9b06-0a16cb4899f5/ig_0c5c9b27ef26236d016a305048de7081949c6c9e06b68f9b82.png",
+          "cleanedFilename": "blog-foxtails-grass-awns-dogs-canada-hero.png",
+          "suggestedFilename": "blog-foxtails-grass-awns-dogs-canada-hero.png",
+          "suggestedPublicPath": "/images/blog/blog-foxtails-grass-awns-dogs-canada-hero.png",
+          "publicPath": "/images/blog/blog-foxtails-grass-awns-dogs-canada-hero.png",
+          "publicPathReady": true,
+          "priority": "High",
+          "status": "published",
+          "matchStatus": "published",
+          "confidence": "high",
+          "matchConfidence": "high",
+          "needsOwnerReview": false,
+          "notes": [
+                    "Manual mapping added for foxtails and grass awns dogs Canada post hero image."
+          ]
+},                  
+                  
+                  
+{
+          "collection": "Blog Posts",
           "itemName": "Blue-Green Algae and Dogs: What Canadian Dog Owners Should Know Before Letting Their Dog Swim",
           "itemSlug": "blue-green-algae-dogs-canada",
           "fieldName": "Hero Image",
