@@ -38,6 +38,35 @@ export function stripHtml(value) {
     .trim());
 }
 
+export function cleanText(value) {
+  return stripHtml(value)
+    .replace(/\*\*([^*]+)\*\*/g, "$1")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+export function cleanHtml(value) {
+  const normalized = normalizeMojibake(value || "");
+  return normalized
+    .replace(/\*\*([^*<]+)\*\*/g, "<strong>$1</strong>")
+    .replace(/<p>\s*((?:-\s*<strong[^>]*>[\s\S]*?<\/strong>[\s\S]*?)+)\s*<\/p>/gi, (_match, listText) => {
+      const items = String(listText)
+        .split(/(?=-\s*<strong[^>]*>)/g)
+        .map((item) => item.replace(/^-\s*/, "").trim())
+        .filter(Boolean);
+      if (items.length < 1) return `<p>${listText}</p>`;
+      return `<ul>${items.map((item) => `<li>${item}</li>`).join("")}</ul>`;
+    });
+}
+
+export function absoluteUrl(path, site = "https://leashfree.ca") {
+  if (!path) return "";
+  if (/^https?:\/\//i.test(path)) return path;
+  const base = String(site || "https://leashfree.ca").replace(/\/+$/, "");
+  const route = String(path).startsWith("/") ? path : `/${path}`;
+  return `${base}${route}`;
+}
+
 export function decodeHtmlEntities(value) {
   const entities = {
     amp: "&",
@@ -106,7 +135,19 @@ export function normalizeMojibake(value) {
     current = current.replace(pattern, replacement);
   }
 
-  return current;
+  return current
+    .replace(/\u00c2\u00b7/g, "-")
+    .replace(/\u00c2\u00a0/g, " ")
+    .replace(/\u00c2/g, "")
+    .replace(/\u00e2\u20ac\u2122/g, "'")
+    .replace(/\u00e2\u20ac\u02dc/g, "'")
+    .replace(/\u00e2\u20ac\u0153/g, "\"")
+    .replace(/\u00e2\u20ac\ufffd/g, "\"")
+    .replace(/\u00e2\u20ac\u201c/g, "-")
+    .replace(/\u00e2\u20ac\u009d/g, "-")
+    .replace(/\u00e2\u20ac\u00a6/g, "...")
+    .replace(/\u00e2\u20ac\u008d/g, "")
+    .replace(/\s+/g, " ");
 }
 
 function decodeWindows1252Mojibake(value) {

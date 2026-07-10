@@ -12,6 +12,8 @@ interface Props {
   showCta?: boolean;
 }
 
+import { cleanText } from "../utils/content.js";
+
 const {
   title,
   href,
@@ -24,15 +26,19 @@ const {
   ctaLabel = "View details",
   showCta = true
 } = Astro.props;
+
+const cleanTitle = cleanText(title);
+const cleanImageAlt = cleanText(imageAlt);
+const cleanBadges = badges.map((badge) => cleanText(badge)).filter(Boolean);
 ---
 
 <article class="card">
-  {image && <img class="card-media" style={imagePosition ? `object-position: ${imagePosition};` : undefined} src={image} alt={imageAlt} loading="lazy" decoding="async" />}
+  {image && <img class="card-media" style={imagePosition ? `object-position: ${imagePosition};` : undefined} src={image} alt={cleanImageAlt} loading="lazy" decoding="async" />}
   <div class="card-body">
-    {badges.length > 0 && <div class="badges">{badges.map((badge) => <span class="badge">{badge}</span>)}</div>}
+    {cleanBadges.length > 0 && <div class="badges">{cleanBadges.map((badge) => <span class="badge">{badge}</span>)}</div>}
     {meta && <p class="small">{meta}</p>}
     <h3>
-      {href ? <a class="card-link" href={href}>{title}</a> : title}
+      {href ? <a class="card-link" href={href}>{cleanTitle}</a> : cleanTitle}
     </h3>
     {description && <p>{description}</p>}
     {href && showCta && <a class="button secondary" href={href}>{ctaLabel}</a>}

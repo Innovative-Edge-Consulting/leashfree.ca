@@ -8,7 +8,7 @@ import Section from "../../components/Section.astro";
 import Card from "../../components/Card.astro";
 import mediaMap from "../../data/media-map.json";
 import posts from "../../data/generated/blog-posts.json";
-import { breadcrumbSchema, dateLabel, excerpt, isPublishedNow, normalizeMojibake, stripHtml } from "../../utils/content.js";
+import { breadcrumbSchema, cleanText, dateLabel, excerpt, isPublishedNow } from "../../utils/content.js";
 import { resolveMedia } from "../../utils/media.js";
 
 const publishedPosts = posts.filter((post) => isPublishedNow(post));
@@ -26,8 +26,9 @@ const tags = post.references["Blog Tags"] || [];
 const category = post.references.Category?.[0] || "";
 const published = dateLabel(post.raw["Published On"]);
 const updated = dateLabel(post.raw["Updated On"]);
-const pageTitle = normalizeMojibake(post.seoTitle || post.title || post.name);
-const pageDescription = normalizeMojibake(post.metaDescription || post.description);
+const postTitle = cleanText(post.title || post.name);
+const pageTitle = cleanText(post.seoTitle || post.title || post.name);
+const pageDescription = cleanText(post.metaDescription || post.description);
 const related = publishedPosts.filter((candidate) => candidate.slug !== post.slug && candidate.references.Category?.[0] === category).slice(0, 3);
 const articleHtml = post.body || post.description;
 const firstHeadingMatch = articleHtml.match(/<h2\b/i);
@@ -36,15 +37,15 @@ const articleRemainderHtml = firstHeadingMatch ? articleHtml.slice(firstHeadingM
 const breadcrumbs = [
   { label: "Home", href: "/" },
   { label: "Blog", href: "/blog/" },
-  { label: post.title || post.name }
+  { label: postTitle }
 ];
 const structuredData = [
   breadcrumbSchema(breadcrumbs),
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: post.title || post.name,
-    description: stripHtml(post.metaDescription || post.description),
+    headline: postTitle,
+    description: cleanText(post.metaDescription || post.description),
     datePublished: post.raw["Published On"] || undefined,
     dateModified: post.raw["Updated On"] || undefined,
     url: post.canonicalUrl,
@@ -60,7 +61,7 @@ const structuredData = [
       <div class="hero-grid">
         <div>
           <div class="eyebrow">Blog</div>
-          <h1>{post.title || post.name}</h1>
+          <h1>{postTitle}</h1>
           <p class="summary">{excerpt(post.description, post.metaDescription)}</p>
           {(category || published || updated) && (
             <div class="badges">
@@ -70,7 +71,7 @@ const structuredData = [
             </div>
           )}
         </div>
-        <ImageWithFallback src={image.src} alt={`${post.title || post.name} featured image`} variant="hero" loading="eager" />
+        <ImageWithFallback src={image.src} alt={`${postTitle} featured image`} variant="hero" loading="eager" />
       </div>
     </div>
   </section>
@@ -109,7 +110,14 @@ const structuredData = [
     <Section title="Related articles" alt>
       <div class="grid">
         {related.map((item) => (
-          <Card title={item.title || item.name} href={`/blog/${item.slug}/`} description={excerpt(item.metaDescription, item.description)} ctaLabel="Read article" />
+          <Card
+            title={item.title || item.name}
+            href={`/blog/${item.slug}/`}
+            description={excerpt(item.metaDescription, item.description)}
+            image={resolveMedia(item, "Hero Image", mediaMap).src}
+            imageAlt={`${item.title || item.name} featured image`}
+            ctaLabel="Read article"
+          />
         ))}
       </div>
     </Section>

@@ -6,9 +6,10 @@ import { withoutRedirectedRecords } from "../utils/redirects.js";
 
 interface Props {
   initialProvince?: string;
+  initialCity?: string;
 }
 
-const { initialProvince = "" } = Astro.props;
+const { initialProvince = "", initialCity = "" } = Astro.props;
 
 function clean(value) {
   return typeof value === "string" ? value.trim() : "";
@@ -88,7 +89,7 @@ const parkItems = withoutRedirectedRecords(parks).map(parkItem);
 const provinces = [...new Set(parkItems.map((item) => item.province).filter(Boolean))].sort();
 const cities = [...new Set(parkItems.map((item) => item.city).filter(Boolean))].sort();
 const mappedCount = parkItems.filter((item) => item.hasCoords).length;
-const json = JSON.stringify({ items: parkItems, provinces, cities, initialProvince }).replace(/</g, "\\u003c");
+const json = JSON.stringify({ items: parkItems, provinces, cities, initialProvince, initialCity }).replace(/</g, "\\u003c");
 ---
 
 <div class="home-map-search dog-park-search" data-dog-park-search>
@@ -180,6 +181,7 @@ const json = JSON.stringify({ items: parkItems, provinces, cities, initialProvin
       resetButton: root.querySelector("[data-reset-map]")
     };
     if (data.initialProvince) controls.province.value = data.initialProvince;
+    if (data.initialCity) controls.city.value = data.initialCity;
 
     const canadaCenter = [56.4, -96.7];
     const canadaBounds = L.latLngBounds([41.6, -141], [83.2, -52.6]);
@@ -326,6 +328,7 @@ const json = JSON.stringify({ items: parkItems, provinces, cities, initialProvin
       const cities = [...new Set(items.map((item) => item.city).filter(Boolean))].sort();
       controls.city.innerHTML = `<option value="">All cities</option>${cities.map((city) => `<option value="${escapeHtml(city)}">${escapeHtml(city)}</option>`).join("")}`;
       if (cities.includes(current)) controls.city.value = current;
+      if (!controls.city.value && cities.includes(data.initialCity)) controls.city.value = data.initialCity;
     }
 
     function renderMap() {

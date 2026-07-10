@@ -14,7 +14,7 @@ import mediaMap from "../../data/media-map.json";
 import cities from "../../data/generated/cities.json";
 import parks from "../../data/generated/parks.json";
 import provinces from "../../data/generated/provinces.json";
-import { breadcrumbSchema, excerpt, findByName, slugify, stripHtml } from "../../utils/content.js";
+import { absoluteUrl, breadcrumbSchema, cleanText, excerpt, findByName, slugify } from "../../utils/content.js";
 import { resolveMedia } from "../../utils/media.js";
 import { isRedirectSourceRoute, withoutRedirectedRecords } from "../../utils/redirects.js";
 
@@ -107,7 +107,14 @@ const updatedAt = parseDateValue(primary.raw["Updated On"]);
 const publishedAt = parseDateValue(primary.raw["Published On"]) || parseDateValue(primary.raw["Created On"]);
 const updatedIso = toIsoDate(updatedAt);
 const publishedIso = toIsoDate(publishedAt);
-const normalizeText = (value) => stripHtml(String(value || "")).replace(/\s+/g, " ").trim();
+const normalizeText = (value) => cleanText(value);
+const siteUrl = Astro.site || "https://leashfree.ca";
+const pageUrl = absoluteUrl(primary.canonicalUrl || `/dog-parks/${primary.slug}/`, siteUrl);
+const parkUrl = (park) => absoluteUrl(`/dog-parks/${park.slug}/`, siteUrl);
+const primaryName = cleanText(primary.name);
+const cityName = cleanText(city?.name || primary.raw.City);
+const provinceName = cleanText(province?.name || primary.raw.Province);
+const fieldText = (field) => cleanText(primary.raw[field]);
 const notesText = normalizeText(primary.raw["Notes / Comments"]);
 const parseFaqHtml = (html) => {
   if (!html || typeof html !== "string") return [];
@@ -157,25 +164,25 @@ const cityFilteredGroups = isCity
   ? [
       {
         key: "fenced",
-        title: `Fenced dog parks in ${primary.name}`,
-        intro: `${cityIntentCounts?.fenced || 0} fenced off-leash parks in ${primary.name}. These are useful for dogs that need a more enclosed play space and for owners building recall consistency.`,
+        title: `Fenced dog parks in ${primaryName}`,
+        intro: `${cityIntentCounts?.fenced || 0} fenced off-leash parks in ${primaryName}. These are useful for dogs that need a more enclosed play space and for owners building recall consistency.`,
         parks: cityParks.filter((park) => isAffirmative(park.raw.Fenced)).slice(0, 12)
       },
       {
         key: "small-dog-area",
-        title: `Small dog area parks in ${primary.name}`,
-        intro: `${cityIntentCounts?.smallDog || 0} parks with separate small dog areas in ${primary.name}. Prioritize these locations if your dog is more comfortable in lower-intensity play zones.`,
+        title: `Small dog area parks in ${primaryName}`,
+        intro: `${cityIntentCounts?.smallDog || 0} parks with separate small dog areas in ${primaryName}. Prioritize these locations if your dog is more comfortable in lower-intensity play zones.`,
         parks: cityParks.filter((park) => isAffirmative(park.raw["Separate Small Dog Area"])).slice(0, 12)
       },
       {
         key: "parking",
-        title: `Dog parks with parking in ${primary.name}`,
+        title: `Dog parks with parking in ${primaryName}`,
         intro: `${cityIntentCounts?.parking || 0} parks that indicate nearby or on-site parking. This helps compare quick-access options for weekday visits and longer weekend trips.`,
         parks: cityParks.filter((park) => isAffirmative(park.raw["Parking Available"])).slice(0, 12)
       },
       {
         key: "water",
-        title: `Dog parks with water in ${primary.name}`,
+        title: `Dog parks with water in ${primaryName}`,
         intro: `${cityIntentCounts?.water || 0} parks that indicate a water source is available. Use this list when planning warm-weather outings or longer off-leash sessions.`,
         parks: cityParks.filter((park) => isAffirmative(park.raw["Water source available"])).slice(0, 12)
       }
@@ -243,7 +250,7 @@ const breadcrumbs = [
   { label: "Home", href: "/" },
   { label: "Dog Parks", href: "/dog-parks/" },
   city && isPark ? { label: city.name, href: `/dog-parks/${city.slug}/` } : null,
-  { label: primary.name }
+  { label: primaryName }
 ].filter(Boolean);
 const amenityDefs = [
   { label: "Fenced area", icon: "fence", field: "Fenced" },
@@ -263,24 +270,24 @@ const seoAmenityLabels = amenityDefs
   .map((item) => item.label.toLowerCase())
   .slice(0, 2);
 const fallbackTitle = isPark && city && province
-  ? `${primary.name} Off-Leash Dog Park in ${city.name}, ${province.name} | LeashFree.ca`
-  : primary.title || primary.name;
+  ? `${primaryName} Off-Leash Dog Park in ${cityName}, ${provinceName} | LeashFree.ca`
+  : cleanText(primary.title || primary.name);
 const title = enhancedProvince
   ? enhancedProvince.seoTitle
-  : primary.seoTitle || fallbackTitle;
+  : cleanText(primary.seoTitle) || fallbackTitle;
 const fallbackDescription = isPark
-  ? `${primary.name} dog park profile${city ? ` in ${city.name}` : ""}${province ? `, ${province.name}` : ""}. ${seoAmenityLabels.length > 0 ? `Highlights: ${seoAmenityLabels.join(", ")}. ` : ""}Check map, rules, and visit details.`
+  ? `${primaryName} dog park profile${cityName ? ` in ${cityName}` : ""}${provinceName ? `, ${provinceName}` : ""}. ${seoAmenityLabels.length > 0 ? `Highlights: ${seoAmenityLabels.join(", ")}. ` : ""}Check map, rules, and visit details.`
   : isCity
-  ? `${primary.name} dog park guide with ${cityParks.length} off-leash park listings, including fenced parks, small dog areas, parking, and water availability. Compare parks and plan your visit.`
+  ? `${primaryName} dog park guide with ${cityParks.length} off-leash park listings, including fenced parks, small dog areas, parking, and water availability. Compare parks and plan your visit.`
   : enhancedProvince
   ? enhancedProvince.description(provinceStats?.parks || 0)
-  : `${primary.name} on LeashFree.ca.`;
-const description = primary.metaDescription || fallbackDescription;
+  : `${primaryName} on LeashFree.ca.`;
+const description = cleanText(primary.metaDescription) || fallbackDescription;
 const locationLinks = [
   city ? { href: `/dog-parks/${city.slug}/`, label: `Dog parks in ${city.name}` } : null,
   province ? { href: `/dog-parks/${province.slug}/`, label: `Dog parks in ${province.name}` } : null
 ].filter(Boolean);
-const parkRulesText = primary.raw["Park Rules"] ? stripHtml(primary.raw["Park Rules"]).trim() : "";
+const parkRulesText = primary.raw["Park Rules"] ? cleanText(primary.raw["Park Rules"]) : "";
 const parkFaqField =
   primary.raw["Dog Park FAQs"] ||
   primary.raw["FAQs"] ||
@@ -311,7 +318,7 @@ const parkFaqEntities = [
       ? [
           {
             "@type": "Question",
-            name: `What are the rules at ${primary.name}?`,
+            name: `What are the rules at ${primaryName}?`,
             acceptedAnswer: {
               "@type": "Answer",
               text: parkRulesText
@@ -324,6 +331,16 @@ const parkFaqEntities = [
 const mapLink = primary.raw["Google Maps Link"] || (primary.raw.latitude && primary.raw.longitude
   ? `https://www.google.com/maps?q=${primary.raw.latitude},${primary.raw.longitude}`
   : "");
+const atAGlanceItems = isPark
+  ? [
+      { label: "Fenced", value: fieldText("Fenced") || "Not listed" },
+      { label: "Small dog area", value: fieldText("Separate Small Dog Area") || "Not listed" },
+      { label: "Parking", value: fieldText("Parking Available") || "Not listed" },
+      { label: "Water", value: fieldText("Water source available") || "Not listed" },
+      { label: "Hours", value: fieldText("Operating hours") || "Check posted signs" },
+      { label: "Surface", value: fieldText("Surface type") || "Not listed" }
+    ]
+  : [];
 const amenityIcons = {
   fence: "M4 6h16M4 12h16M4 18h16M8 4v16M16 4v16",
   paw: "M8 12a2 2 0 1 0 0-4a2 2 0 0 0 0 4Zm8 0a2 2 0 1 0 0-4a2 2 0 0 0 0 4Zm-4 8c2.8 0 5-1.4 5-3.3S14.8 13 12 13s-5 1.8-5 3.7S9.2 20 12 20ZM6 8a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3Zm12 0a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3Z",
@@ -364,7 +381,7 @@ const bestFor = bestForParts.length > 0
   : "This park supports general off-leash visits; check posted guidance before entering.";
 const visitTips = [
   primary.raw["Operating hours"] ? `Operating hours: ${primary.raw["Operating hours"]}.` : "",
-  primary.raw["Seasonal Restrictions"] ? stripHtml(primary.raw["Seasonal Restrictions"]).trim() : "",
+  primary.raw["Seasonal Restrictions"] ? cleanText(primary.raw["Seasonal Restrictions"]) : "",
   parkRulesText ? `Park rules: ${parkRulesText}` : "Check posted signage for temporary restrictions and leash requirements."
 ].filter(Boolean).join(" ");
 const whatToBring = [
@@ -433,15 +450,30 @@ const relatedParks = isPark
       .sort((a, b) => b.score - a.score)
       .slice(0, 6)
   : [];
+const parkFeatureBadges = (park, { includeCity = false, includeDistance } = {}) => [
+  includeDistance ? `${includeDistance.toFixed(1)} km away` : "",
+  includeCity ? cleanText(park.raw.City) : "",
+  park.raw.Fenced ? `Fenced: ${cleanText(park.raw.Fenced)}` : "",
+  park.raw["Separate Small Dog Area"] ? `Small dogs: ${cleanText(park.raw["Separate Small Dog Area"])}` : "",
+  park.raw["Water source available"] ? `Water: ${cleanText(park.raw["Water source available"])}` : "",
+  park.raw["Parking Available"] ? `Parking: ${cleanText(park.raw["Parking Available"])}` : ""
+].filter(Boolean).slice(0, 4);
 const structuredData = [
   breadcrumbSchema(breadcrumbs),
   isPark && primary.raw.latitude && primary.raw.longitude
     ? {
         "@context": "https://schema.org",
         "@type": "Park",
-        name: primary.name,
-        description: stripHtml(description),
-        address: [primary.raw["Street Address"], primary.raw.City, primary.raw.Province, primary.raw["Postal Code"]].filter(Boolean).join(", "),
+        name: primaryName,
+        description: cleanText(description),
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: fieldText("Street Address") || undefined,
+          addressLocality: cityName || undefined,
+          addressRegion: provinceName || undefined,
+          postalCode: fieldText("Postal Code") || undefined,
+          addressCountry: "CA"
+        },
         hasMap: mapLink || undefined,
         sameAs: sourceUrl || undefined,
         dateModified: updatedIso,
@@ -458,7 +490,7 @@ const structuredData = [
           latitude: primary.raw.latitude,
           longitude: primary.raw.longitude
         },
-        url: primary.canonicalUrl
+        url: pageUrl
       }
     : null,
   isPark && parkFaqEntities.length > 0
@@ -483,8 +515,8 @@ const structuredData = [
           itemListElement: group.parks.map((park, index) => ({
             "@type": "ListItem",
             position: index + 1,
-            url: `${Astro.site || ""}/dog-parks/${park.slug}/`,
-            name: park.name
+            url: parkUrl(park),
+            name: cleanText(park.name)
           }))
         }))
       : []
@@ -492,24 +524,29 @@ const structuredData = [
 ].filter(Boolean);
 ---
 
-<Layout title={title} description={excerpt(description)} canonical={primary.canonicalUrl} ogImage={image.src} structuredData={structuredData}>
+<Layout title={title} description={excerpt(description)} canonical={primary.canonicalUrl} ogImage={image.src} ogType={isPark ? "place" : "website"} structuredData={structuredData}>
   <section class="page-header">
     <div class="container detail-layout">
       <div>
         <Breadcrumbs items={breadcrumbs} />
         <div class="eyebrow">{isPark ? "Dog park" : isCity ? "City guide" : "Province guide"}</div>
-        <h1>{enhancedProvince ? `${enhancedProvince.shortName} dog parks` : primary.title || primary.name}</h1>
+        <h1>{enhancedProvince ? `${enhancedProvince.shortName} dog parks` : isCity ? `${primaryName} dog parks` : cleanText(primary.title || primary.name)}</h1>
         <p class="summary">{excerpt(description)}</p>
         {freshnessText && <p class="summary">{freshnessText}</p>}
         <div class="button-row">
-          <a class="button primary" href={enhancedProvince ? `#${primary.slug}-dog-park-map` : "/dog-parks/"}>
-            {enhancedProvince ? `Open ${enhancedProvince.shortLabel} map` : "Back to dog parks"}
-          </a>
+          {isPark ? (
+            <a class="button primary" href="#park-map">Map and directions</a>
+          ) : (
+            <a class="button primary" href={enhancedProvince ? `#${primary.slug}-dog-park-map` : "/dog-parks/"}>
+              {enhancedProvince ? `Open ${enhancedProvince.shortLabel} map` : "Back to dog parks"}
+            </a>
+          )}
+          {isPark && <a class="button secondary" href="/dog-parks/">Back to dog parks</a>}
           {enhancedProvince && <a class="button secondary" href={`#${primary.slug}-cities`}>Browse cities</a>}
-          {city && <a class="button secondary" href={`/dog-parks/${city.slug}/`}>More in {city.name}</a>}
+          {city && <a class="button secondary" href={`/dog-parks/${city.slug}/`}>More in {cityName}</a>}
         </div>
       </div>
-      <ImageWithFallback src={image.src} alt={`${primary.name} image`} variant="hero" loading="eager" />
+      <ImageWithFallback src={image.src} alt={isPark ? `Dog park guide for ${primaryName}` : `${primaryName} dog parks`} variant="hero" loading="eager" />
     </div>
   </section>
 
@@ -525,29 +562,40 @@ const structuredData = [
     <Section title="Park details">
       <div class="split park-details-layout">
         <div class="park-details-main">
+          <section class="park-at-a-glance" aria-labelledby="park-at-a-glance-title">
+            <h2 id="park-at-a-glance-title">At a glance</h2>
+            <dl>
+              {atAGlanceItems.map((item) => (
+                <div>
+                  <dt>{item.label}</dt>
+                  <dd>{item.value}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
           <dl class="meta-list park-meta-list">
             {primary.raw["Street Address"] && (
               <div class="park-meta-item">
                 <dt>Address</dt>
-                <dd>{primary.raw["Street Address"]}</dd>
+                <dd>{fieldText("Street Address")}</dd>
               </div>
             )}
             {primary.raw.City && (
               <div class="park-meta-item">
                 <dt>City</dt>
-                <dd>{primary.raw.City}</dd>
+                <dd>{cityName}</dd>
               </div>
             )}
             {primary.raw.Province && (
               <div class="park-meta-item">
                 <dt>Province</dt>
-                <dd>{primary.raw.Province}</dd>
+                <dd>{provinceName}</dd>
               </div>
             )}
             {primary.raw["Operating hours"] && (
               <div class="park-meta-item">
                 <dt>Hours</dt>
-                <dd>{primary.raw["Operating hours"]}</dd>
+                <dd>{fieldText("Operating hours")}</dd>
               </div>
             )}
             {mapLink && (
@@ -574,7 +622,6 @@ const structuredData = [
             <p class="park-rules-summary"><strong>Park Rules:</strong> {parkRulesText}</p>
           )}
           {notesText && <p>{notesText}</p>}
-          <AdSenseDisplay slot="2445869045" className="park-profile-ad" />
           {amenityGroups.length > 0 && (
             <section class="card">
               <div class="card-body amenities-card">
@@ -599,12 +646,30 @@ const structuredData = [
               </div>
             </section>
           )}
+          <AdSenseDisplay slot="2445869045" className="park-profile-ad" />
         </div>
         <aside class="sidebar">
           <p class="sponsored-label">Sponsored</p>
           <RockyMountainDogSponsorWidget />
         </aside>
       </div>
+    </Section>
+  )}
+
+  {isPark && (
+    <Section tight id="park-map">
+      <MapPanel
+        title="Map and directions"
+        intro={`Use the map to confirm the location for ${primaryName}, then open directions in your device map before you leave.`}
+        name={primaryName}
+        address={fieldText("Street Address")}
+        city={cityName}
+        province={provinceName}
+        postalCode={primary.raw["Postal Code"]}
+        latitude={primary.raw.latitude}
+        longitude={primary.raw.longitude}
+        googleMapsLink={primary.raw["Google Maps Link"]}
+      />
     </Section>
   )}
 
@@ -621,7 +686,7 @@ const structuredData = [
               <strong>Explore by feature:</strong>{" "}
               {parkIntentLinks.map((link, index) => (
                 <>
-                  {index > 0 && " · "}
+                  {index > 0 && " - "}
                   <a href={link.href}>{link.label}</a>
                 </>
               ))}
@@ -636,14 +701,14 @@ const structuredData = [
   )}
 
   {isPark && relatedParks.length > 0 && (
-    <Section title={`Related parks in ${primary.raw.City}`} intro="Parks with similar amenities in the same city.">
+    <Section title={`Related parks in ${cityName}`} intro="Parks with similar amenities in the same city.">
       <div class="grid">
         {relatedParks.map(({ park }) => (
           <Card
             title={park.name}
             href={`/dog-parks/${park.slug}/`}
             description={excerpt(park.description, park.raw["Street Address"])}
-            badges={[park.raw.Fenced ? `Fenced: ${park.raw.Fenced}` : ""].filter(Boolean)}
+            badges={parkFeatureBadges(park)}
             ctaLabel="View park"
           />
         ))}
@@ -652,7 +717,7 @@ const structuredData = [
   )}
 
   {isPark && parkFaqEntries.length > 0 && (
-    <Section title={`FAQs about ${primary.name}`} intro="Common questions and answers for this park.">
+    <Section title={`FAQs about ${primaryName}`} intro="Common questions and answers for this park.">
       <div class="card">
         <div class="card-body faq-accordion">
           {parkFaqEntries.map((item) => (
@@ -674,32 +739,11 @@ const structuredData = [
             title={park.name}
             href={`/dog-parks/${park.slug}/`}
             description={excerpt(park.description, park.raw["Street Address"])}
-            badges={[
-              `${distance.toFixed(1)} km away`,
-              park.raw.City || "",
-              park.raw.Fenced ? `Fenced: ${park.raw.Fenced}` : ""
-            ].filter(Boolean)}
+            badges={parkFeatureBadges(park, { includeCity: true, includeDistance: distance })}
             ctaLabel="View park"
           />
         ))}
       </div>
-    </Section>
-  )}
-
-  {isPark && (
-    <Section tight id="park-map">
-      <MapPanel
-        title="Map and directions"
-        intro={`Use the map to confirm the location for ${primary.name}, then open directions in your device map before you leave.`}
-        name={primary.name}
-        address={primary.raw["Street Address"]}
-        city={primary.raw.City}
-        province={primary.raw.Province}
-        postalCode={primary.raw["Postal Code"]}
-        latitude={primary.raw.latitude}
-        longitude={primary.raw.longitude}
-        googleMapsLink={primary.raw["Google Maps Link"]}
-      />
     </Section>
   )}
 
@@ -710,7 +754,13 @@ const structuredData = [
         {primary.raw["Park Rules"] && <ContentBlock html={primary.raw["Park Rules"]} />}
         {primary.raw["Seasonal Tips"] && <ContentBlock html={primary.raw["Seasonal Tips"]} />}
       </Section>
-      <Section title={`Dog parks in ${primary.name}`} intro={`${cityParks.length} park records currently match this city.`}>
+      <Section
+        title={`Map of dog parks in ${primaryName}`}
+        intro={`Use the map to compare ${primaryName} parks by location, address, amenities, and distance from your location.`}
+      >
+        <DogParkSearch initialProvince={provinceName} initialCity={primaryName} />
+      </Section>
+      <Section title={`Dog parks in ${primaryName}`} intro={`${cityParks.length} park records currently match this city.`}>
         {cityParks.length > 0 ? (
           <div class="grid">
             {cityParks.map((park) => (
@@ -718,7 +768,7 @@ const structuredData = [
                 title={park.name}
                 href={`/dog-parks/${park.slug}/`}
                 description={excerpt(park.description, park.raw["Street Address"])}
-                badges={[park.raw.Fenced ? `Fenced: ${park.raw.Fenced}` : ""].filter(Boolean)}
+                badges={parkFeatureBadges(park)}
                 ctaLabel="View park"
               />
             ))}
@@ -736,8 +786,8 @@ const structuredData = [
                 href={`/dog-parks/${park.slug}/`}
                 description={excerpt(park.description, park.raw["Street Address"])}
                 badges={[
-                  park.raw["Street Address"] || "",
-                  park.raw["Operating hours"] ? `Hours: ${park.raw["Operating hours"]}` : ""
+                  cleanText(park.raw["Street Address"]) || "",
+                  park.raw["Operating hours"] ? `Hours: ${cleanText(park.raw["Operating hours"])}` : ""
                 ].filter(Boolean)}
                 ctaLabel="View park"
               />
@@ -863,13 +913,75 @@ const structuredData = [
   <Section title="Before you visit" tight>
     <div class="card">
       <div class="card-body">
-        <p>Confirm current rules, hours, seasonal restrictions, and leash requirements with the municipality or park operator before visiting.</p>
+        {isPark ? (
+          <>
+            <ul class="visit-checklist">
+              <li>Confirm current hours, posted leash boundaries, and seasonal restrictions before entering.</li>
+              <li>Bring waste bags, water, and a leash for parking lots, paths, entrances, and exits.</li>
+              <li>Check the map and directions before leaving, especially when coordinates or addresses are approximate.</li>
+            </ul>
+            {sourceUrl && <p><a href={sourceUrl} target="_blank" rel="noreferrer">Check the official park source</a></p>}
+          </>
+        ) : (
+          <p>Confirm current rules, hours, seasonal restrictions, and leash requirements with the municipality or park operator before visiting.</p>
+        )}
       </div>
     </div>
   </Section>
 </Layout>
 
 <style>
+  .park-at-a-glance {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-card);
+    padding: var(--space-5);
+  }
+
+  .park-at-a-glance h2 {
+    margin-bottom: var(--space-4);
+    font-size: 1.25rem;
+  }
+
+  .park-at-a-glance dl {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--space-3);
+    margin: 0;
+  }
+
+  .park-at-a-glance div {
+    display: grid;
+    gap: 0.22rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-primary-soft);
+    padding: var(--space-3);
+  }
+
+  .park-at-a-glance dt {
+    color: var(--color-primary-dark);
+    font-size: 0.76rem;
+    font-weight: 850;
+    text-transform: uppercase;
+  }
+
+  .park-at-a-glance dd {
+    margin: 0;
+    font-weight: 750;
+    line-height: 1.35;
+  }
+
+  .visit-checklist {
+    margin: 0 0 var(--space-4);
+    padding-left: 1.1rem;
+  }
+
+  .visit-checklist li + li {
+    margin-top: 0.45rem;
+  }
+
   .faq-accordion {
     display: grid;
     gap: 0.65rem;

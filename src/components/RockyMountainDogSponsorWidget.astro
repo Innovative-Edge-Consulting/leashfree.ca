@@ -2,6 +2,7 @@
 import productIndex from "../data/generated/rocky-mountain-dog-products.json";
 
 const { sponsorUrl, logoUrl, categories, products } = productIndex;
+const featuredProducts = products.slice(0, 12);
 ---
 
 <div class="rmd-overlay-backdrop" data-rmd-backdrop hidden></div>
@@ -51,7 +52,7 @@ const { sponsorUrl, logoUrl, categories, products } = productIndex;
   </form>
 
   <div class="rmd-carousel" aria-live="polite">
-    {products.map((product, index) => (
+    {featuredProducts.map((product, index) => (
       <article class:list={["rmd-slide", index === 0 && "is-active"]} data-rmd-slide data-category={product.category} data-search={`${product.title} ${product.category} ${product.caption}`}>
         <a class="rmd-image-link" href={product.sourceUrl} target="_blank" rel="noopener sponsored" aria-label={`View ${product.title} in a new tab`}>
           <img src={product.image} alt={product.caption || `${product.title} by Rocky Mountain Dog`} loading="lazy" />
@@ -72,7 +73,7 @@ const { sponsorUrl, logoUrl, categories, products } = productIndex;
 
   <div class="rmd-controls" aria-label="Rocky Mountain Dog product carousel controls">
     <button type="button" class="rmd-arrow" data-rmd-prev aria-label="Previous product">&lsaquo;</button>
-    <span data-rmd-status>1 / {products.length}</span>
+    <span data-rmd-status>1 / {featuredProducts.length}</span>
     <button type="button" class="rmd-arrow" data-rmd-next aria-label="Next product">&rsaquo;</button>
   </div>
 </section>

@@ -19,6 +19,12 @@ class HeadInjector {
 
 export default {
   async fetch(request, env) {
+    const url = new URL(request.url);
+    if (url.hostname === "www.leashfree.ca") {
+      url.hostname = "leashfree.ca";
+      return Response.redirect(url.toString(), 301);
+    }
+
     const response = await env.ASSETS.fetch(request);
     const contentType = response.headers.get("content-type") || "";
     const gaId =

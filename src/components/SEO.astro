@@ -6,6 +6,7 @@ interface Props {
   ogTitle?: string;
   ogDescription?: string;
   ogImage?: string;
+  ogType?: string;
   robots?: string;
   structuredData?: Record<string, unknown> | Record<string, unknown>[];
 }
@@ -17,12 +18,20 @@ const {
   ogTitle,
   ogDescription,
   ogImage,
+  ogType = "website",
   robots,
   structuredData
 } = Astro.props;
 
 const pageTitle = title.includes("LeashFree") ? title : `${title} | LeashFree.ca`;
-const finalOgImage = ogImage || "/images/blog/blog-how-to-choose-the-right-dog-park-for-your-pup-hero.jpg";
+const site = Astro.site || "https://leashfree.ca";
+const toAbsoluteUrl = (path: string) => {
+  if (/^https?:\/\//i.test(path)) return path;
+  const base = String(site).replace(/\/+$/, "");
+  const route = path.startsWith("/") ? path : `/${path}`;
+  return `${base}${route}`;
+};
+const finalOgImage = toAbsoluteUrl(ogImage || "/images/dog-parks/alberta-dog-parks-hero.jpg");
 ---
 
 <title>{pageTitle}</title>
@@ -31,7 +40,7 @@ const finalOgImage = ogImage || "/images/blog/blog-how-to-choose-the-right-dog-p
 {robots && <meta name="robots" content={robots} />}
 <meta property="og:title" content={ogTitle || pageTitle} />
 <meta property="og:description" content={ogDescription || description} />
-<meta property="og:type" content="website" />
+<meta property="og:type" content={ogType} />
 {canonical && <meta property="og:url" content={canonical} />}
 <meta property="og:image" content={finalOgImage} />
 <meta name="twitter:card" content="summary_large_image" />
