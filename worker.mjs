@@ -1,20 +1,9 @@
-class HeadInjector {
-  constructor(gaId) {
-    this.gaId = gaId;
-  }
-
-  element(head) {
-    if (!this.gaId) return;
-    const escapedId = String(this.gaId).replace(/'/g, "\\'");
-    head.append(
-      `<script async src="https://www.googletagmanager.com/gtag/js?id=${escapedId}"></script>`,
-      { html: true }
-    );
-    head.append(
-      `<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${escapedId}');</script>`,
-      { html: true }
-    );
-  }
+function gaSnippet(gaId) {
+  const escapedId = String(gaId).replace(/'/g, "\\'");
+  return [
+    `<script async src="https://www.googletagmanager.com/gtag/js?id=${escapedId}"></script>`,
+    `<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${escapedId}');</script>`
+  ].join("");
 }
 
 export default {
@@ -23,6 +12,15 @@ export default {
     if (url.hostname === "www.leashfree.ca") {
       url.hostname = "leashfree.ca";
       return Response.redirect(url.toString(), 301);
+    }
+
+    if (url.pathname === "/26d88966f7a74cddaf13e59cc8015171.txt") {
+      return new Response("26d88966f7a74cddaf13e59cc8015171\n", {
+        headers: {
+          "Content-Type": "text/plain; charset=utf-8",
+          "Cache-Control": "public, max-age=3600"
+        }
+      });
     }
 
     const response = await env.ASSETS.fetch(request);
@@ -35,8 +33,22 @@ export default {
       return response;
     }
 
-    return new HTMLRewriter()
-      .on("head", new HeadInjector(gaId))
-      .transform(response);
+    const fallback = response.clone();
+    try {
+      const html = await response.text();
+      const snippet = gaSnippet(gaId);
+      const body = html.includes("</head>")
+        ? html.replace("</head>", `${snippet}</head>`)
+        : `${snippet}${html}`;
+      const headers = new Headers(response.headers);
+      headers.delete("content-length");
+      return new Response(body, {
+        status: response.status,
+        statusText: response.statusText,
+        headers
+      });
+    } catch {
+      return fallback;
+    }
   }
 };

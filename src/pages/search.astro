@@ -1,0 +1,17 @@
+---
+import Layout from "../components/Layout.astro";
+import SiteSearch from "../components/SiteSearch.astro";
+---
+
+<Layout title="Search LeashFree.ca" description="Search dog parks, breeds, dog care guides, names, services, and tools across LeashFree.ca.">
+  <section class="search-page-hero">
+    <div class="container narrow">
+      <p class="eyebrow">Site-wide search</p>
+      <h1>Find the right dog resource, faster.</h1>
+      <p>Search more than a thousand Canadian park listings, breed profiles, care guides, local services, dog name ideas, and practical tools.</p>
+    </div>
+  </section>
+  <section class="container search-page-content">
+    <SiteSearch mode="page" />
+  </section>
+</Layout>

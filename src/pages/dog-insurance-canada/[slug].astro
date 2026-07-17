@@ -1,0 +1,89 @@
+---
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import Layout from "../../components/Layout.astro";
+import Section from "../../components/Section.astro";
+import providers from "../../data/generated/pet-insurance-providers.json";
+import { breadcrumbSchema, cleanText } from "../../utils/content.js";
+
+export function getStaticPaths() {
+  return providers.filter((provider) => provider.slug).map((provider) => ({
+    params: { slug: provider.slug },
+    props: { provider }
+  }));
+}
+
+const { provider } = Astro.props;
+const raw = provider.raw || {};
+const breadcrumbs = [
+  { label: "Home", href: "/" },
+  { label: "Dog Insurance Canada", href: "/dog-insurance-canada/" },
+  { label: cleanText(provider.name) }
+];
+
+const rows = [
+  ["Parent or underwriter", raw["Parent/Underwriter"]],
+  ["Plan types", raw.PlanTypes],
+  ["Annual limit", raw.AnnualLimit],
+  ["Reimbursement", raw.ReimbursementPercents],
+  ["Deductible options", raw.DeductibleOptions],
+  ["Accident waiting period", raw.WaitingPeriodAccident],
+  ["Illness waiting period", raw.WaitingPeriodIllness],
+  ["Dental", raw.Dental],
+  ["Alternative, rehab, or behavioural care", raw.AlternativeRehabBehavioral],
+  ["Claims notes", raw.ClaimsNotes],
+  ["Exclusions summary", raw.ExclusionsSummary],
+  ["Availability", raw.ProvincesAvailable],
+  ["Last verified", raw.LastVerified]
+].map(([label, value]) => [label, cleanText(value)]).filter(([, value]) => value);
+---
+
+<Layout
+  title={`${cleanText(provider.name)} | Dog Insurance Canada | LeashFree.ca`}
+  description={cleanText(provider.metaDescription || `${provider.name} pet insurance provider information for Canadian dog owners.`)}
+  canonical={provider.canonicalUrl}
+  structuredData={breadcrumbSchema(breadcrumbs)}
+>
+  <section class="page-header">
+    <div class="container">
+      <Breadcrumbs items={breadcrumbs} />
+      <div class="eyebrow">Dog Insurance Provider</div>
+      <h1>{cleanText(provider.name)}</h1>
+      <p class="summary">
+        Review plan structure, limits, reimbursement, waiting periods, claims notes, and source links before requesting a quote.
+      </p>
+      <div class="button-row">
+        {raw.SourceURL && <a class="button" href={raw.SourceURL} rel="nofollow noopener">Visit provider</a>}
+        <a class="button secondary" href="/blog/pet-insurance-canada-dog-owners-guide/">Read comparison guide</a>
+      </div>
+    </div>
+  </section>
+
+  <Section title="Provider Details">
+    <div class="table-wrap">
+      <table>
+        <tbody>
+          {rows.map(([label, value]) => (
+            <tr>
+              <th scope="row">{label}</th>
+              <td>{value}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </Section>
+
+  <Section title="Before You Buy" alt>
+    <p>
+      Provider information can change. Confirm current policy wording, exclusions, waiting periods, deductibles,
+      reimbursement rates, taxes, exam-fee coverage, and renewal terms directly with the insurer before enrolling.
+    </p>
+    <ul>
+      <li><a href="/dog-insurance-canada/">Compare all dog insurance providers</a></li>
+      <li><a href="/blog/dog-insurance-waiting-periods-canada/">Understand dog insurance waiting periods</a></li>
+      <li><a href="/blog/unlimited-vs-10000-annual-limit/">Compare unlimited vs $10,000 annual limits</a></li>
+      <li><a href="/resources/dog-cost-calculator-canada/">Estimate dog ownership costs</a></li>
+    </ul>
+  </Section>
+</Layout>
+

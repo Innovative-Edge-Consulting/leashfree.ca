@@ -1,4 +1,6 @@
 ---
+import HeaderSearch from "./HeaderSearch.astro";
+
 const links = [
   { href: "/dog-parks/", label: "Dog Parks" },
   { href: "/dog-breeds/", label: "Dog Breeds" },
@@ -58,9 +60,11 @@ const resourceLinks = [
       </details>
       {links.slice(2).map((link) => <a href={link.href}>{link.label}</a>)}
     </nav>
-    <details class="mobile-nav">
-      <summary>Menu</summary>
-      <nav class="mobile-nav-panel" aria-label="Mobile navigation">
+    <div class="nav-actions">
+      <HeaderSearch />
+      <details class="mobile-nav">
+        <summary>Menu</summary>
+        <nav class="mobile-nav-panel" aria-label="Mobile navigation">
         {links.slice(0, 2).map((link) => <a href={link.href}>{link.label}</a>)}
         <details class="mobile-nav-group">
           <summary>Resources</summary>
@@ -74,7 +78,8 @@ const resourceLinks = [
           </div>
         </details>
         {links.slice(2).map((link) => <a href={link.href}>{link.label}</a>)}
-      </nav>
-    </details>
+        </nav>
+      </details>
+    </div>
   </div>
 </header>

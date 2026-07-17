@@ -50,7 +50,7 @@
   {
     "collection": "Dog Parks",
     "file": "parks.json",
-    "itemCount": 511,
+    "itemCount": 512,
     "routePrefix": "/dog-parks/"
   },
   {

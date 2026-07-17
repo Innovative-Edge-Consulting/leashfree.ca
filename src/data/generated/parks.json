@@ -1,5 +1,75 @@
 [
   {
+    "id": "mission-centennial-park-20260716",
+    "name": "Centennial Park",
+    "slug": "centennial-park-mission",
+    "title": "Centennial Park Off-Leash Dog Area",
+    "seoTitle": "Centennial Park Off-Leash Dog Area",
+    "metaDescription": "The City of Mission lists Centennial Park's off-leash dog area along with parking, paved trails, benches, picnic tables, washrooms, fencing, and waste receptacles. Planned improve...",
+    "description": "<p>The City of Mission lists Centennial Park's off-leash dog area along with parking, paved trails, benches, picnic tables, washrooms, fencing, and waste receptacles. Planned improvements should not be treated as current amenities until completed.</p>",
+    "body": "<p>Centennial Park is Mission's designated off-leash dog destination, located at 11th Avenue and Taulbut Street within a larger community park.</p>",
+    "collection": "Dog Parks",
+    "sourceFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Dog Parks - 683758b0a3f8a696dfc417b0.csv",
+    "canonicalUrl": "https://leashfree.ca/dog-parks/centennial-park-mission/",
+    "routePath": "/dog-parks/centennial-park-mission/",
+    "media": [],
+    "references": {
+      "City": [
+        "Mission"
+      ],
+      "Province": [
+        "British Columbia"
+      ],
+      "Tags": [
+        "leash-free",
+        "fenced",
+        "community park",
+        "trails"
+      ]
+    },
+    "raw": {
+      "Park Name": "Centennial Park",
+      "slug": "centennial-park-mission",
+      "Collection ID": "683758b0a3f8a696dfc417b0",
+      "Locale ID": "683758b09dd1e3ac2e4e9809",
+      "Item ID": "mission-centennial-park-20260716",
+      "Archived": "false",
+      "Draft": "false",
+      "Created On": "Thu Jul 16 2026 12:00:00 GMT+0000 (Coordinated Universal Time)",
+      "Updated On": "Thu Jul 16 2026 12:00:00 GMT+0000 (Coordinated Universal Time)",
+      "Published On": "Thu Jul 16 2026 12:00:00 GMT+0000 (Coordinated Universal Time)",
+      "Park Header": "Centennial Park Off-Leash Dog Area",
+      "Park type": "Leash Free",
+      "Description": "<p>Centennial Park is Mission's designated off-leash dog destination, located at 11th Avenue and Taulbut Street within a larger community park.</p>",
+      "Street Address": "11th Avenue and Taulbut Street",
+      "latitude": "",
+      "longitude": "",
+      "City": "Mission",
+      "Province": "British Columbia",
+      "Postal Code": "",
+      "Fenced": "Yes",
+      "Separate Small Dog Area": "Unknown",
+      "Surface type": "Unknown",
+      "Size": "Unknown",
+      "Water source available": "Unknown",
+      "Benches": "Yes",
+      "Shaded area": "Unknown",
+      "Waste bins": "Yes",
+      "Bag Dispensers": "Unknown",
+      "Parking Available": "Yes",
+      "Washrooms nearby": "Yes",
+      "Operating hours": "Unknown",
+      "Seasonal Restrictions": "Dogs should be leashed outside the designated off-leash area; verify posted signage and current City of Mission guidance before visiting.",
+      "Park Website or Source": "https://www.mission.ca/parks-recreation/parks-trails/centennial-park",
+      "Google Maps Link": "",
+      "Tags": "leash-free, fenced, community park, trails",
+      "Notes / Comments": "",
+      "Intro Paragraph": "<p>The City of Mission lists Centennial Park's off-leash dog area along with parking, paved trails, benches, picnic tables, washrooms, fencing, and waste receptacles. Planned improvements should not be treated as current amenities until completed.</p>",
+      "Media": ""
+    },
+    "warnings": []
+  },
+  {
     "id": "68705619cce7d0ad22b006fc",
     "name": "Adams Park",
     "slug": "adams-park-cornwall",
@@ -599,8 +669,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Andy Livingstone stands out as one of Vancouver's designated off-leash parks in BC. Covering 1125 square meters, it has a grass base that supports active dog activities. Visitors can enjoy 6 AM to 10 PM access, and the park includes comfortable benches, offers shady spots, and has accessible washrooms nearby. Does not include water access, so bring your furry friend for a refreshing outdoor experience.</p>",
       "Street Address": "89 Carrall St, Vancouver",
-      "latitude": "49.278457",
-      "longitude": "-123.103763",
+      "latitude": "",
+      "longitude": "",
       "City": "Vancouver",
       "Province": "BC",
       "Postal Code": "",
@@ -624,9 +694,7 @@
       "Intro Paragraph": "<p>Andy Livingstone is a well-loved off-leash dog park in Vancouver. This park features a grass surface and an open space for dogs to roam freely. It provides no water access, minimal shade, and limited seating, making it a great destination for local dog owners to relax and let their pets socialize.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6838bf8248d43e4eb440ee42_golden-retriever-in-forest-edge-dog-park.png"
     },
-    "warnings": [],
-    "latitude": 49.278457,
-    "longitude": -123.103763
+    "warnings": []
   },
   {
     "id": "6838bee6e03210dd8f955200",
@@ -673,8 +741,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Balaclava Park is a fantastic leash-free zone for dogs located in Vancouver, BC. Covering 7738 square meters, it has a grass base that supports active dog activities. Dog owners will appreciate the park’s 7AM to 10AM &amp; 5PM to 10PM access and how it includes comfortable benches, offers shady spots, and has accessible washrooms nearby. Does not include water access. It’s a great space to let your pup roam and meet other dogs.</p>",
       "Street Address": "4594 Balaclava Street Vancouve",
-      "latitude": "49.278457",
-      "longitude": "-123.103763",
+      "latitude": "",
+      "longitude": "",
       "City": "Vancouver",
       "Province": "BC",
       "Postal Code": "",
@@ -698,9 +766,7 @@
       "Intro Paragraph": "<p>Balaclava Park is a well-loved off-leash dog park in Vancouver. This park features a grass surface and an open space for dogs to roam freely. It provides no water access, minimal shade, and limited seating, making it a great destination for local dog owners to relax and let their pets socialize.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6838bf6da378932f0d55bef8_border-collie-in-open-grassy-dog-park.png"
     },
-    "warnings": [],
-    "latitude": 49.278457,
-    "longitude": -123.103763
+    "warnings": []
   },
   {
     "id": "68b8a1f45865382ed6374a31",
@@ -2139,8 +2205,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Bayview Park Leash-Free Dog Park in Burlington’s Aldershot community is a spacious and scenic off-leash area designed for dogs to run, play, and socialize freely. The park features a combination of grassy areas and wood chip surfaces, providing a comfortable environment for dogs of all sizes. Fully fenced and well-maintained, Bayview Park is a local favourite among pet owners who value safe, natural settings with room to roam. With convenient parking nearby and plenty of open space, this dog park is ideal for daily exercise and playdates in a relaxed, community-friendly atmosphere.</p>",
       "Street Address": "1800 King Rd",
-      "latitude": "43.3329562",
-      "longitude": "-79.8550574",
+      "latitude": "",
+      "longitude": "",
       "City": "Burlington ",
       "Province": "Ontario",
       "Postal Code": "",
@@ -2164,9 +2230,7 @@
       "Intro Paragraph": "<p id=\"\">Located in the Aldershot area, Bayview Park features a spacious leash-free area with grass and wood chip surfaces. A great spot for dogs to socialize and exercise in a natural setting.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6839fed3cc1d4f6c27cc82b4_bayview-park-burlington-on.png"
     },
-    "warnings": [],
-    "latitude": 43.3329562,
-    "longitude": -79.8550574
+    "warnings": []
   },
   {
     "id": "6871ad754dfab47ef4f4f5e6",
@@ -2420,8 +2484,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Located in the Beddington Heights community, this off-leash area offers open grassy spaces and natural trails for dogs to explore. The park provides a serene environment for both dogs and their owners.</p>",
       "Street Address": "735 Berkshire Blvd NW",
-      "latitude": "51.1321332",
-      "longitude": "-114.0991484",
+      "latitude": "",
+      "longitude": "",
       "City": "Calgary",
       "Province": "Alberta",
       "Postal Code": "T3K 1Z9",
@@ -2445,9 +2509,7 @@
       "Intro Paragraph": "<p>Beddington Heights Off-Leash Area provides a spacious and natural setting for dogs to roam freely in Calgary's northwest community.</p>",
       "Media": ""
     },
-    "warnings": [],
-    "latitude": 51.1321332,
-    "longitude": -114.0991484
+    "warnings": []
   },
   {
     "id": "6871b756d5a705d6ac714b3f",
@@ -2916,8 +2978,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Nestled between Lake Bonavista and Bonavista Downs, this off-leash park offers large open grassy fields and tree-lined trails perfect for dog walking and socialization.</p>",
       "Street Address": "Bonavista Downs Dr SE & Bow Bottom Trail SE",
-      "latitude": "50.9399872",
-      "longitude": "-114.0514755",
+      "latitude": "",
+      "longitude": "",
       "City": "Calgary",
       "Province": "Alberta",
       "Postal Code": "T2J 6Z8",
@@ -2941,9 +3003,7 @@
       "Intro Paragraph": "<p>Bonavista Off-Leash Area is a neighborhood favorite with open grassy fields and ample tree cover, offering dogs a delightful place to play and explore.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/683b1ddd99d4134a28d49bb1_bonavista-off-leash-area-calgary-leash-free-dog-park.jpg"
     },
-    "warnings": [],
-    "latitude": 50.9399872,
-    "longitude": -114.0514755
+    "warnings": []
   },
   {
     "id": "6871c3a9d937b75cef243484",
@@ -3275,8 +3335,8 @@
       "Park type": "",
       "Description": "<p>Bowmont Park features extensive natural trails and open spaces along the Bow River. The park includes designated off-leash areas with river access, perfect for dogs who love to swim and explore rugged terrain.</p>",
       "Street Address": "85 Street NW & 48 Avenue NW",
-      "latitude": "51.0988347",
-      "longitude": "-114.2025168",
+      "latitude": "",
+      "longitude": "",
       "City": "Calgary",
       "Province": "Alberta",
       "Postal Code": "T3B 2B9",
@@ -3300,9 +3360,7 @@
       "Intro Paragraph": "<p>Bowmont Park is a favorite for Calgary dog owners who want variety—open trails, river swims, and shady paths all in one off-leash zone.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/683a5d67de0a388c0cb03029_bowmont-dog-park.png"
     },
-    "warnings": [],
-    "latitude": 51.0988347,
-    "longitude": -114.2025168
+    "warnings": []
   },
   {
     "id": "683b175e69d0908984486bfa",
@@ -3347,8 +3405,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Braeside’s off-leash space features rolling grassy fields, a few trees, and a well-used trail that loops through the area. It’s a popular south Calgary spot for daily dog walks.</p>",
       "Street Address": "10120 14 St SW",
-      "latitude": "51.0390804",
-      "longitude": "-114.0947163",
+      "latitude": "",
+      "longitude": "",
       "City": "Calgary",
       "Province": "Alberta",
       "Postal Code": "T2V 1P6",
@@ -3372,9 +3430,7 @@
       "Intro Paragraph": "<p>Braeside Off-Leash Area in South Calgary provides a large grassy space with walking paths where dogs can run freely and explore year-round.</p>",
       "Media": ""
     },
-    "warnings": [],
-    "latitude": 51.0390804,
-    "longitude": -114.0947163
+    "warnings": []
   },
   {
     "id": "685a0057685ef2e57f7977cd",
@@ -3627,8 +3683,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Bridgeland Riverside Off-Leash Area offers a unique urban off-leash experience in Calgary. Located near 7 Street and McDougall Road NE, this park provides convenient access for local residents and visitors alike. Its elevated position boasts views of the downtown Calgary skyline, creating an engaging backdrop for dog walks.</p>",
       "Street Address": "50 7 St NE",
-      "latitude": "51.0729413",
-      "longitude": "-114.046936",
+      "latitude": "",
+      "longitude": "",
       "City": "Calgary",
       "Province": "Alberta",
       "Postal Code": "T2E 8W2",
@@ -3652,9 +3708,7 @@
       "Intro Paragraph": "<p>Nestled in the vibrant heart of Bridgeland-Riverside, this off-leash area offers an urban retreat for dogs and their owners, with stunning views of downtown Calgary and a mix of natural and paved terrains.</p>",
       "Media": ""
     },
-    "warnings": [],
-    "latitude": 51.0729413,
-    "longitude": -114.046936
+    "warnings": []
   },
   {
     "id": "683b175d55ff6da7f9a9de4e",
@@ -3700,8 +3754,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Britannia Slopes offers a peaceful, grassy hillside for off-leash play, with scenic views overlooking the Elbow River valley. It's a quieter alternative to River Park, frequented by locals.</p>",
       "Street Address": "50 Britannia Dr SW",
-      "latitude": "51.0145342",
-      "longitude": "-114.0871845",
+      "latitude": "",
+      "longitude": "",
       "City": "Calgary",
       "Province": "Alberta",
       "Postal Code": "T2S 1C7",
@@ -3725,9 +3779,7 @@
       "Intro Paragraph": "<p>Britannia Slopes Off-Leash Area offers a quiet, grassy hillside with sweeping river views — ideal for dogs who enjoy exploring in a more relaxed setting.</p>",
       "Media": ""
     },
-    "warnings": [],
-    "latitude": 51.0145342,
-    "longitude": -114.0871845
+    "warnings": []
   },
   {
     "id": "684048d4bae72fccbf653978",
@@ -3781,8 +3833,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Bronte Creek Provincial Park offers two expansive, unfenced leash-free areas where dogs can explore natural trails and open fields. The Day Use Area features a 0.5 km loop with open fields and gentle trails, while the Campground Area boasts a 2 km wooded trail loop. Both areas provide ample space for dogs to roam, though reliable recall is essential due to the lack of fencing. The park also includes amenities such as washrooms, picnic areas, and scenic trails, making it a popular destination for dog owners seeking a natural setting.</p>",
       "Street Address": "1219 Burloak Drive",
-      "latitude": "43.3991357",
-      "longitude": "-79.7579112",
+      "latitude": "",
+      "longitude": "",
       "City": "Oakville",
       "Province": "Ontario",
       "Postal Code": "L6M 4J7",
@@ -3806,9 +3858,7 @@
       "Intro Paragraph": "<p>Bronte Creek Provincial Park provides dog owners with two distinct leash-free areas set amidst natural landscapes. Whether strolling through the open fields of the Day Use Area or exploring the wooded trails of the Campground Area, dogs can enjoy a sense of freedom while remaining under their owner's supervision. The park's combination of natural beauty and dedicated amenities makes it a favored spot for those seeking a more rustic off-leash experience.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68404b340b29131142ce3cf5_bronte-creek-provincial-park.jpg"
     },
-    "warnings": [],
-    "latitude": 43.3991357,
-    "longitude": -79.7579112
+    "warnings": []
   },
   {
     "id": "684dea53a78aa3ada9ec13cb",
@@ -4282,8 +4332,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Burrard View Park stands out as one of Vancouver's designated off-leash parks in BC. Covering 12136 square meters, it has a grass base that supports active dog activities. Its open from 6AM to 10PM, and includes comfortable benches, offers shady spots, and has accessible washrooms nearby. Plus, it does not include water access, making it a top destination for canine fun and exercise.</p>",
       "Street Address": "650 N Penticton St, Vancouver,",
-      "latitude": "49.2913562",
-      "longitude": "-123.0506384",
+      "latitude": "",
+      "longitude": "",
       "City": "Vancouver",
       "Province": "BC",
       "Postal Code": "",
@@ -4307,9 +4357,7 @@
       "Intro Paragraph": "<p>Burrard View Park is a well-loved off-leash dog park in Vancouver. This park features a grass surface and an open space for dogs to roam freely. It provides no water access, minimal shade, and limited seating, making it a great destination for local dog owners to relax and let their pets socialize.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6838bf9fe489f2f6a3b7d375_dog-park-open-space-with-dog-on-grass.png"
     },
-    "warnings": [],
-    "latitude": 49.2913562,
-    "longitude": -123.0506384
+    "warnings": []
   },
   {
     "id": "6838bee61a97c8e7d0220ebf",
@@ -4356,8 +4404,8 @@
       "Park type": "Leash Free",
       "Description": "<p>CRAB Park at Portside is a fantastic leash-free zone for dogs located in Vancouver, BC. Covering 5056 square meters, it has a grass base that supports active dog activities. CRAB Park at Portside operates 6AM to 10 AM &amp; 5 PM to 10 PM, where the environment includes comfortable benches, offers shady spots, and is close to limited facilities. Don’t forget that it does not include water access, which is ideal for dogs on warmer days.</p>",
       "Street Address": "101 E Waterfront Road Vancouve",
-      "latitude": "49.285417",
-      "longitude": "-123.100346",
+      "latitude": "",
+      "longitude": "",
       "City": "Vancouver",
       "Province": "BC",
       "Postal Code": "",
@@ -4381,9 +4429,7 @@
       "Intro Paragraph": "<p>CRAB Park at Portside is a well-loved off-leash dog park in Vancouver. This park features a grass surface and an open space for dogs to roam freely. It provides no water access, minimal shade, and limited seating, making it a great destination for local dog owners to relax and let their pets socialize.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6838bfcb959daf711b63b8f2_spacious-dog-park-with-trees-and-grass.jpg.png"
     },
-    "warnings": [],
-    "latitude": 49.285417,
-    "longitude": -123.100346
+    "warnings": []
   },
   {
     "id": "68e56a6f7a3e8d7c70696937",
@@ -4920,8 +4966,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Located in southeast Calgary along the Bow River, Carburn Park features gravel trails and wide-open green space for off-leash activities. It provides peaceful natural surroundings, ponds, and river access.</p>",
       "Street Address": "67 Riverview Dr SE",
-      "latitude": "50.9740961",
-      "longitude": "-114.0250978",
+      "latitude": "",
+      "longitude": "",
       "City": "Calgary",
       "Province": "Alberta",
       "Postal Code": "T2C 4H8",
@@ -4945,9 +4991,7 @@
       "Intro Paragraph": "<p>Carburn Park offers scenic, peaceful riverside trails and green space in southeast Calgary for dogs to roam freely and safely off leash.</p>",
       "Media": ""
     },
-    "warnings": [],
-    "latitude": 50.9740961,
-    "longitude": -114.0250978
+    "warnings": []
   },
   {
     "id": "68710978de573dc6f2014ef9",
@@ -5840,8 +5884,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Nestled within Burlington's Central Park, this leash-free area offers a secure environment for dogs to play and socialize. The facility features a fully fenced 0.17-hectare space with a six-foot-high chain-link fence, ensuring safety for all canine visitors. A double-gated entry/exit enclosure enhances security, and an accessible park bench provides comfort for pet owners.</p>",
       "Street Address": "2299 New Street",
-      "latitude": "43.3342962",
-      "longitude": "-79.7899711",
+      "latitude": "",
+      "longitude": "",
       "City": "Burlington",
       "Province": "Ontario",
       "Postal Code": "L7R 1J4",
@@ -5865,9 +5909,7 @@
       "Intro Paragraph": "<p>Central Park's leash-free area in Burlington provides a safe and welcoming space for dogs to enjoy off-leash play. With its secure fencing and convenient location, it's a favorite spot for local dog owners seeking a reliable and accessible dog park.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6838bf8248d43e4eb440ee42_golden-retriever-in-forest-edge-dog-park.png"
     },
-    "warnings": [],
-    "latitude": 43.3342962,
-    "longitude": -79.7899711
+    "warnings": []
   },
   {
     "id": "6838bee6c705a35db2aca48a",
@@ -5914,8 +5956,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Charleson Park is a fantastic leash-free zone for dogs located in Vancouver, BC. Covering 4251 square meters, it has a grass base that supports active dog activities. Charleson Park operates 6 AM to 10 PM, where the environment offers wide-open green space, offers shady spots, and is close to limited facilities. Don’t forget that it does not include water access, which is ideal for dogs on warmer days.</p>",
       "Street Address": "999 Charleson Street Vancouver",
-      "latitude": "49.2674267",
-      "longitude": "-123.1242431",
+      "latitude": "",
+      "longitude": "",
       "City": "Vancouver",
       "Province": "BC",
       "Postal Code": "",
@@ -5939,9 +5981,71 @@
       "Intro Paragraph": "<p>Charleson Park is a well-loved off-leash dog park in Vancouver. This park features a grass surface and an open space for dogs to roam freely. It provides no water access, minimal shade, and limited seating, making it a great destination for local dog owners to relax and let their pets socialize.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6838bfb0649f9ed0a87de7c1_dog-park-daytime-with-dog-and-grassy-field.png"
     },
-    "warnings": [],
-    "latitude": 49.2674267,
-    "longitude": -123.1242431
+    "warnings": []
+  },
+  {
+    "id": "6838bee83e3c59bfa08678bd",
+    "name": "Charleson Park",
+    "slug": "charleson-dog-park-8fc05",
+    "title": "Charleson Park (off-leash dog park)",
+    "seoTitle": "Charleson Park (off-leash dog park)",
+    "metaDescription": "Charleson Park is a well-loved off-leash dog park in Vancouver. This park features a grass surface and an open space for dogs to roam freely. It provides no water access, minimal...",
+    "description": "<p>Charleson Park is a well-loved off-leash dog park in Vancouver. This park features a grass surface and an open space for dogs to roam freely. It provides no water access, minimal shade, and limited seating, making it a great destination for local dog owners to relax and let their pets socialize.</p>",
+    "body": "<p>If you're in Vancouver, BC, and looking for a great off-leash dog park, check out Charleson Park. The park’s grass surface and 8094 square meters make it a wonderful space for dogs to burn energy. Visitors can enjoy 6 AM to 10 PM access, and the park includes comfortable benches, offers shady spots, and is close to limited facilities. Plus, it does not include water access, making it a top destination for canine fun and exercise.</p>",
+    "collection": "Dog Parks",
+    "sourceFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Dog Parks - 683758b0a3f8a696dfc417b0.csv",
+    "canonicalUrl": "https://leashfree.ca/dog-parks/charleson-dog-park-8fc05/",
+    "routePath": "/dog-parks/charleson-dog-park-8fc05/",
+    "media": [],
+    "references": {
+      "City": [
+        "Vancouver"
+      ],
+      "Province": [
+        "BC"
+      ]
+    },
+    "raw": {
+      "Park Name": "Charleson Park",
+      "slug": "charleson-dog-park-8fc05",
+      "Collection ID": "683758b0a3f8a696dfc417b0",
+      "Locale ID": "683758b09dd1e3ac2e4e9809",
+      "Item ID": "6838bee83e3c59bfa08678bd",
+      "Archived": "false",
+      "Draft": "false",
+      "Created On": "Thu May 29 2025 20:09:12 GMT+0000 (Coordinated Universal Time)",
+      "Updated On": "Thu May 29 2025 23:37:10 GMT+0000 (Coordinated Universal Time)",
+      "Published On": "Thu May 29 2025 23:38:18 GMT+0000 (Coordinated Universal Time)",
+      "Park Header": "Charleson Park (off-leash dog park)",
+      "Park type": "Leash Free",
+      "Description": "<p>If you're in Vancouver, BC, and looking for a great off-leash dog park, check out Charleson Park. The park’s grass surface and 8094 square meters make it a wonderful space for dogs to burn energy. Visitors can enjoy 6 AM to 10 PM access, and the park includes comfortable benches, offers shady spots, and is close to limited facilities. Plus, it does not include water access, making it a top destination for canine fun and exercise.</p>",
+      "Street Address": "999 Charleson Street Vancouver",
+      "latitude": "",
+      "longitude": "",
+      "City": "Vancouver",
+      "Province": "BC",
+      "Postal Code": "",
+      "Fenced": "No",
+      "Separate Small Dog Area": "",
+      "Surface type": "Grass",
+      "Size": "",
+      "Water source available": "No",
+      "Benches": "Yes",
+      "Shaded area": "Yes",
+      "Waste bins": "Yes",
+      "Bag Dispensers": "",
+      "Parking Available": "",
+      "Washrooms nearby": "No",
+      "Operating hours": "6 AM to 10 PM",
+      "Seasonal Restrictions": "",
+      "Park Website or Source": "",
+      "Google Maps Link": "",
+      "Tags": "",
+      "Notes / Comments": "",
+      "Intro Paragraph": "<p>Charleson Park is a well-loved off-leash dog park in Vancouver. This park features a grass surface and an open space for dogs to roam freely. It provides no water access, minimal shade, and limited seating, making it a great destination for local dog owners to relax and let their pets socialize.</p>",
+      "Media": ""
+    },
+    "warnings": []
   },
   {
     "id": "68705ce1e5a24de1e9a7c8d7",
@@ -6762,8 +6866,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Colin Alton Parkette, situated in Burlington's Alton West Village, offers a compact yet fully equipped leash-free area for dogs. The park features a fully fenced enclosure with double-gated access, ensuring safety and security for canine visitors. Additional amenities include an accessible 200-meter looped paved path, outdoor fitness equipment, shaded seating areas, and a drinking fountain with a ground-level dog bowl.</p>",
       "Street Address": "3925 Leonardo Street",
-      "latitude": "43.3928849",
-      "longitude": "-79.8284064",
+      "latitude": "",
+      "longitude": "",
       "City": "Burlington",
       "Province": "ON",
       "Postal Code": "L7M 0Z2",
@@ -6787,9 +6891,7 @@
       "Intro Paragraph": "<p>Colin Alton Parkette provides a thoughtfully designed leash-free area in Burlington's Alton West Village. With its secure fencing, accessible pathways, and additional amenities, it offers a welcoming space for dogs and their owners to enjoy.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/683a01d98e772167f18a4d16_Colin%20Alton%20Parkette%20%E2%80%93%20Leash-Free%20Dog%20Area.png"
     },
-    "warnings": [],
-    "latitude": 43.3928849,
-    "longitude": -79.8284064
+    "warnings": []
   },
   {
     "id": "684cb8028fa4e16ec13fe90a",
@@ -7082,9 +7184,9 @@
     "id": "683b175c53773d9881e3fdac",
     "name": "Confederation Park",
     "slug": "confederation-park",
-    "title": "Confederation Park Dog Park in Calgary, Alberta | LeashFree.ca",
-    "seoTitle": "Confederation Park Dog Park in Calgary, Alberta | LeashFree.ca",
-    "metaDescription": "Confederation Park Dog Park in Calgary, Alberta is a leash-free dog park with open green space and walking paths for everyday off-leash exercise.",
+    "title": "Confederation Park (Leash-Free Dog Area)",
+    "seoTitle": "Confederation Park (Leash-Free Dog Area)",
+    "metaDescription": "Confederation Park is a charming off-leash destination in northwest Calgary, where dogs can explore scenic trails surrounded by mature trees and green space.",
     "description": "<p>Confederation Park is a charming off-leash destination in northwest Calgary, where dogs can explore scenic trails surrounded by mature trees and green space.</p>",
     "body": "<p>Confederation Park offers a spacious leash-free zone in Calgary’s northwest. While not fenced, the off-leash area runs through scenic natural trails with tall trees, grassy sections, and a peaceful atmosphere.</p>",
     "collection": "Dog Parks",
@@ -7122,8 +7224,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Confederation Park offers a spacious leash-free zone in Calgary’s northwest. While not fenced, the off-leash area runs through scenic natural trails with tall trees, grassy sections, and a peaceful atmosphere.</p>",
       "Street Address": "2800 10 St NW",
-      "latitude": "51.0703163",
-      "longitude": "-114.0849003",
+      "latitude": "",
+      "longitude": "",
       "City": "Calgary",
       "Province": "Alberta",
       "Postal Code": "T2K 1H3",
@@ -7147,24 +7249,28 @@
       "Intro Paragraph": "<p>Confederation Park is a charming off-leash destination in northwest Calgary, where dogs can explore scenic trails surrounded by mature trees and green space.</p>",
       "Media": ""
     },
-    "warnings": [],
-    "latitude": 51.0703163,
-    "longitude": -114.0849003
+    "warnings": []
   },
   {
     "id": "68434ad235b7f7bac7d37f4f",
     "name": "Confederation Park",
     "slug": "confederation-park-075b6",
-    "title": "Confederation Park Dog Park in Toronto, Ontario | LeashFree.ca",
-    "seoTitle": "Confederation Park Dog Park in Toronto, Ontario | LeashFree.ca",
-    "metaDescription": "Confederation Park Dog Park in Toronto, Ontario is a leash-free dog park featuring fenced off-leash space, shade, and seating for local dog owners.",
-    "description": "<p>Confederation Park features a spacious, fenced leash-free zone with benches and shade, making it a great gathering spot for local dog owners.</p>",
-    "body": "<p>Confederation Park features a large, fully fenced off-leash area for dogs to roam freely. With trees, gravel surface, and benches, it's a neighborhood favorite for dog owners seeking a secure and social space.</p>",
+    "title": "Confederation Park (Leash-Free Dog Area)",
+    "seoTitle": "Confederation Park (Leash-Free Dog Area)",
+    "metaDescription": "Confederation Park is a fenced off-leash option in Scarborough for dogs that need secure room to play. It sits within a broader recreation park, so visitors should keep dogs leash...",
+    "description": "<p>Confederation Park is a fenced off-leash option in Scarborough for dogs that need secure room to play. It sits within a broader recreation park, so visitors should keep dogs leashed until they reach the signed off-leash area.</p>",
+    "body": "<p>Confederation Park in Scarborough has a designated fenced off-leash area within a larger city park. The City of Toronto’s off-leash area study lists the site in Ward 24 and records it as fenced, with no separate small-dog area.</p>",
     "collection": "Dog Parks",
     "sourceFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Dog Parks - 683758b0a3f8a696dfc417b0.csv",
     "canonicalUrl": "https://leashfree.ca/dog-parks/confederation-park-075b6/",
     "routePath": "/dog-parks/confederation-park-075b6/",
-    "media": [],
+    "media": [
+      {
+        "fieldName": "Media",
+        "value": "/images/dog-parks/confederation-park-toronto-original.png",
+        "originalUrls": []
+      }
+    ],
     "references": {
       "City": [
         "Toronto"
@@ -7175,8 +7281,8 @@
       "Tags": [
         "leash-free",
         "fenced",
-        "benches",
-        "gravel"
+        "gravel",
+        "Scarborough"
       ]
     },
     "raw": {
@@ -7188,11 +7294,11 @@
       "Archived": "false",
       "Draft": "false",
       "Created On": "Fri Jun 06 2025 20:08:50 GMT+0000 (Coordinated Universal Time)",
-      "Updated On": "Fri Jun 13 2025 23:12:21 GMT+0000 (Coordinated Universal Time)",
+      "Updated On": "Thu Jul 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "Published On": "Sat Jun 14 2025 00:09:21 GMT+0000 (Coordinated Universal Time)",
       "Park Header": "Confederation Park (Leash-Free Dog Area)",
       "Park type": "Leash Free",
-      "Description": "<p>Confederation Park features a large, fully fenced off-leash area for dogs to roam freely. With trees, gravel surface, and benches, it's a neighborhood favorite for dog owners seeking a secure and social space.</p>",
+      "Description": "<p>Confederation Park in Scarborough has a designated fenced off-leash area within a larger city park. The City of Toronto’s off-leash area study lists the site in Ward 24 and records it as fenced, with no separate small-dog area.</p>",
       "Street Address": "200 Markham Rd",
       "latitude": "43.77447641723238",
       "longitude": "-79.23488866756675",
@@ -7203,21 +7309,21 @@
       "Separate Small Dog Area": "No",
       "Surface type": "Gravel and dirt",
       "Size": "Approx. 1 acre",
-      "Water source available": "No",
-      "Benches": "Yes",
+      "Water source available": "Unknown",
+      "Benches": "Unknown",
       "Shaded area": "Partial",
-      "Waste bins": "Yes",
-      "Bag Dispensers": "Yes",
+      "Waste bins": "Unknown",
+      "Bag Dispensers": "Unknown",
       "Parking Available": "Yes",
       "Washrooms nearby": "Yes",
-      "Operating hours": "7:00 AM – 9:00 PM",
+      "Operating hours": "Unknown — confirm current hours on site",
       "Seasonal Restrictions": "None",
-      "Park Website or Source": "",
+      "Park Website or Source": "https://www.toronto.ca/legdocs/mmis/2025/ie/bgrd/backgroundfile-254206.pdf",
       "Google Maps Link": "https://www.google.com/maps/place/Confederation+Dog+Park/@43.7682946,-79.2415099,15.68z/data=!4m10!1m2!2m1!1sconfederation+park!3m6!1s0x89d4d16b7c2dd367:0xe255db7eae02b586!8m2!3d43.7739402!4d-79.235004!15sChJjb25mZWRlcmF0aW9uIHBhcmtaFCISY29uZmVkZXJhdGlvbiBwYXJrkgEIZG9nX3BhcmuaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVUktObVpxVTBOM0VBRaoBUhABKhYiEmNvbmZlZGVyYXRpb24gcGFyaygAMh4QASIaOXYMuPZ6VFy3VJDBtjPVG5B9XF3YPh4iUq0yFhACIhJjb25mZWRlcmF0aW9uIHBhcmvgAQD6AQQIABAl!16s%2Fg%2F11h3q04jr1!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D",
-      "Tags": "leash-free, fenced, benches, gravel",
-      "Notes / Comments": "<p>Located within a multi-use park with sports fields and parking.</p>",
-      "Intro Paragraph": "<p>Confederation Park features a spacious, fenced leash-free zone with benches and shade, making it a great gathering spot for local dog owners.</p>",
-      "Media": ""
+      "Tags": "leash-free, fenced, gravel, Scarborough",
+      "Notes / Comments": "<p>The off-leash area is part of a multi-use park. Check Toronto signage for current boundaries, hours, and any temporary closures.</p>",
+      "Intro Paragraph": "<p>Confederation Park is a fenced off-leash option in Scarborough for dogs that need secure room to play. It sits within a broader recreation park, so visitors should keep dogs leashed until they reach the signed off-leash area.</p>",
+      "Media": "/images/dog-parks/confederation-park-toronto-original.png"
     },
     "warnings": []
   },
@@ -7333,8 +7439,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Tucked between residential buildings, the Connaught Off-Leash Area offers a small fenced space with grassy patches and waste stations for quick dog play and relief.</p>",
       "Street Address": "12 Ave SW & 11 St SW",
-      "latitude": "51.0420725",
-      "longitude": "-114.0714082",
+      "latitude": "",
+      "longitude": "",
       "City": "Calgary",
       "Province": "Alberta",
       "Postal Code": "T3C 1W7",
@@ -7358,9 +7464,7 @@
       "Intro Paragraph": "<p>Connaught’s off-leash pocket park provides a practical green space in the Beltline for urban dog owners looking for a quick and convenient outing.</p>",
       "Media": ""
     },
-    "warnings": [],
-    "latitude": 51.0420725,
-    "longitude": -114.0714082
+    "warnings": []
   },
   {
     "id": "68b855524f7f4a062a0f8bdc",
@@ -7545,8 +7649,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Coopers' Park stands out as one of Vancouver's designated off-leash parks in BC. Covering 4344 square meters, it has a mulch, gravel &amp; lawn base that supports active dog activities. Visitors can enjoy 6 AM to 10 PM access, and the park includes comfortable benches, offers shady spots, and has accessible washrooms nearby. Plus, it has on-site water access for pets, making it a top destination for canine fun and exercise.</p>",
       "Street Address": "1020 Marinaside Crescent Vanco",
-      "latitude": "49.2733337",
-      "longitude": "-123.1134687",
+      "latitude": "",
+      "longitude": "",
       "City": "Vancouver",
       "Province": "BC",
       "Postal Code": "",
@@ -7570,9 +7674,7 @@
       "Intro Paragraph": "<p>Coopers' Park is a well-loved off-leash dog park in Vancouver. This park features a mulch, gravel &amp; lawn surface and an open space for dogs to roam freely. It provides no water access, minimal shade, and limited seating, making it a great destination for local dog owners to relax and let their pets socialize.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6838bf6130c1a241f2ffa462_weimaraners-in-sunny-dog-park-grassy-field.png"
     },
-    "warnings": [],
-    "latitude": 49.2733337,
-    "longitude": -123.1134687
+    "warnings": []
   },
   {
     "id": "68655ff8ffa08a0d3fa8a032",
@@ -8109,8 +8211,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Currie Bark Park is a fully fenced off-leash dog park in the Currie neighborhood, complete with gravel surface and agility equipment. It’s designed for safe play and socializing for dogs of all sizes.</p>",
       "Street Address": "295 Dieppe Dr SW",
-      "latitude": "51.0171985",
-      "longitude": "-114.1304981",
+      "latitude": "",
+      "longitude": "",
       "City": "Calgary",
       "Province": "Alberta",
       "Postal Code": "T3E 7L4",
@@ -8134,9 +8236,7 @@
       "Intro Paragraph": "<p>Currie Bark Park offers a secure, urban-friendly off-leash zone with agility structures and lighting, perfect for dogs to play safely day or night.</p>",
       "Media": ""
     },
-    "warnings": [],
-    "latitude": 51.0171985,
-    "longitude": -114.1304981
+    "warnings": []
   },
   {
     "id": "683a55758ab2b6e9ce3989c5",
@@ -8190,8 +8290,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Dale Hodges Park is a scenic 40-hectare natural park that integrates stormwater wetlands and public art. Its leash-free areas provide a unique off-leash experience across open meadows and natural trails along the Bow River.</p>",
       "Street Address": "2123 52 St NW",
-      "latitude": "51.0779694",
-      "longitude": "-114.1695858",
+      "latitude": "",
+      "longitude": "",
       "City": "Calgary",
       "Province": "Alberta",
       "Postal Code": "T3B 1C4",
@@ -8215,9 +8315,7 @@
       "Intro Paragraph": "<p>Dale Hodges Park offers Calgary dog owners a stunning mix of art, nature, and off-leash adventure along the Bow River’s edge.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/683a5eb23c874a2bf97a52b0_dale-hodges-park-sign-with-dog.png"
     },
-    "warnings": [],
-    "latitude": 51.0779694,
-    "longitude": -114.1695858
+    "warnings": []
   },
   {
     "id": "68b8555280f8ec3ff3afe0cf",
@@ -8759,8 +8857,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Devonian Harbour is a fantastic leash-free zone for dogs located in Vancouver, BC. With an area of approximately 3760 square meters, this park offers a grass environment for pets to explore. Devonian Harbour operates 6 AM to 10 PM, where the environment includes comfortable benches, is primarily sun-exposed, and is close to limited facilities. Does not include water access, so bring your furry friend for a refreshing outdoor experience.</p>",
       "Street Address": "1929 W Georgia Street Vancouve",
-      "latitude": "49.2940279",
-      "longitude": "-123.1342629",
+      "latitude": "",
+      "longitude": "",
       "City": "Vancouver",
       "Province": "BC",
       "Postal Code": "",
@@ -8784,9 +8882,7 @@
       "Intro Paragraph": "<p>Devonian Harbour is a well-loved off-leash dog park in Vancouver. This park features a grass surface and an open space for dogs to roam freely. It provides no water access, minimal shade, and limited seating, making it a great destination for local dog owners to relax and let their pets socialize.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6838bfcb959daf711b63b8f2_spacious-dog-park-with-trees-and-grass.jpg.png"
     },
-    "warnings": [],
-    "latitude": 49.2940279,
-    "longitude": -123.1342629
+    "warnings": []
   },
   {
     "id": "6859f1a1799d6566ba9e5d54",
@@ -10148,8 +10244,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Pet lovers in Vancouver love spending time at Dusty Greenwell Park, an off-leash area perfect for daily visits. The parks grass surface and 5313 square meters make it a wonderful space for dogs to burn energy. Dog owners will appreciate the parks 5 AM to 10 AM &amp; 5 PM to 10 PM access and how it includes comfortable benches, is primarily sun-exposed, and is close to limited facilities. Does not include water access. Its a great space to let your pup roam and meet other dogs.</p>",
       "Street Address": "2799 Wall Street Vancouver BC",
-      "latitude": "49.2921134",
-      "longitude": "-123.0476566",
+      "latitude": "",
+      "longitude": "",
       "City": "Vancouver",
       "Province": "BC",
       "Postal Code": "",
@@ -10173,9 +10269,7 @@
       "Intro Paragraph": "<p>Dusty Greenwell Park is a well-loved off-leash dog park in Vancouver. This park features a grass surface and an open space for dogs to roam freely. It provides no water access, minimal shade, and limited seating, making it a great destination for local dog owners to relax and let their pets socialize.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6838bf9fe489f2f6a3b7d375_dog-park-open-space-with-dog-on-grass.png"
     },
-    "warnings": [],
-    "latitude": 49.2921134,
-    "longitude": -123.0476566
+    "warnings": []
   },
   {
     "id": "68434c36067b38e53f825833",
@@ -10643,8 +10737,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Edgemont Area 1 Off-Leash Dog Park is a large hillside green space connecting through ravines and natural paths. This area features wide open views of the city, gentle slopes, and plenty of room for dogs to burn energy.</p>",
       "Street Address": "91 Edgeview Rd NW",
-      "latitude": "51.1276209",
-      "longitude": "-114.1484768",
+      "latitude": "",
+      "longitude": "",
       "City": "Calgary",
       "Province": "Alberta",
       "Postal Code": "T3A 4T7",
@@ -10668,9 +10762,7 @@
       "Intro Paragraph": "<p>Edgemont Area 1 Off-Leash Dog Park provides northwest Calgary dog owners with a serene trail network and sloped green spaces perfect for off-leash adventures.</p>",
       "Media": ""
     },
-    "warnings": [],
-    "latitude": 51.1276209,
-    "longitude": -114.1484768
+    "warnings": []
   },
   {
     "id": "683a557595d7db301cb0eb93",
@@ -10724,8 +10816,8 @@
       "Park type": "",
       "Description": "<p>Edworthy Park lies in a scenic river valley and offers both on-leash and designated off-leash areas. The park includes forested paths, picnic spots, and access to the Bow River, making it ideal for dogs and owners alike.</p>",
       "Street Address": "5050 Spruce Dr SW",
-      "latitude": "51.0512511",
-      "longitude": "-114.136094",
+      "latitude": "",
+      "longitude": "",
       "City": "Calgary",
       "Province": "Alberta",
       "Postal Code": "T3C 3B2",
@@ -10749,9 +10841,7 @@
       "Intro Paragraph": "<p>Edworthy Park is a popular destination for Calgary families and their dogs, offering a blend of river walks, wooded trails, and leash-free adventure.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/683a5cabcca84f4da818e8d3_Edworthy%20Park.png"
     },
-    "warnings": [],
-    "latitude": 51.0512511,
-    "longitude": -114.136094
+    "warnings": []
   },
   {
     "id": "683b175d0ff68ecf10b90630",
@@ -10796,8 +10886,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Nestled in one of Calgary's historic neighborhoods, Elbow Park provides a charming off-leash area near the river with grassy fields and walking paths. It's frequented by families and dog owners alike.</p>",
       "Street Address": "800 34 Ave SW",
-      "latitude": "51.0235824",
-      "longitude": "-114.0822403",
+      "latitude": "",
+      "longitude": "",
       "City": "Calgary",
       "Province": "Alberta",
       "Postal Code": "T2T 2A3",
@@ -10821,9 +10911,7 @@
       "Intro Paragraph": "<p>Elbow Park’s off-leash area blends inner-city charm with accessible green space, making it a convenient and scenic spot for daily dog walks.</p>",
       "Media": ""
     },
-    "warnings": [],
-    "latitude": 51.0235824,
-    "longitude": -114.0822403
+    "warnings": []
   },
   {
     "id": "683b175da804e6cddf2ae91f",
@@ -10867,8 +10955,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Elboya offers an open green space near Stanley Park where dogs can run freely. It's not fenced but has natural boundaries from surrounding residential areas.</p>",
       "Street Address": "4808 Elbow Dr SW",
-      "latitude": "51.0110885",
-      "longitude": "-114.0809837",
+      "latitude": "",
+      "longitude": "",
       "City": "Calgary",
       "Province": "Alberta",
       "Postal Code": "T2S 2J6",
@@ -10892,9 +10980,7 @@
       "Intro Paragraph": "<p>Located near Stanley Park, Elboya Off-Leash Area provides a convenient, open green space for dogs to explore off-leash in Calgary’s southwest.</p>",
       "Media": ""
     },
-    "warnings": [],
-    "latitude": 51.0110885,
-    "longitude": -114.0809837
+    "warnings": []
   },
   {
     "id": "6871a19465c37327d31f265c",
@@ -11079,8 +11165,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Pet lovers in Vancouver love spending time at Emery Barnes, an off-leash area perfect for daily visits. This park spans about 856 square meters and features gravel surfaces ideal for running and play. Emery Barnes operates 6 AM to 10 PM, where the environment includes comfortable benches, is primarily sun-exposed, and is close to limited facilities. Don’t forget that it does not include water access, which is ideal for dogs on warmer days.</p>",
       "Street Address": "Davie Street & Richards Street",
-      "latitude": "49.2766634",
-      "longitude": "-123.1240496",
+      "latitude": "",
+      "longitude": "",
       "City": "Vancouver",
       "Province": "BC",
       "Postal Code": "",
@@ -11104,9 +11190,7 @@
       "Intro Paragraph": "<p>Emery Barnes is a well-loved off-leash dog park in Vancouver. This park features a gravel surface and an open space for dogs to roam freely. It provides no water access, minimal shade, and limited seating, making it a great destination for local dog owners to relax and let their pets socialize.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6838bfb0649f9ed0a87de7c1_dog-park-daytime-with-dog-and-grassy-field.png"
     },
-    "warnings": [],
-    "latitude": 49.2766634,
-    "longitude": -123.1240496
+    "warnings": []
   },
   {
     "id": "68409f0d2661071b60873901",
@@ -11303,8 +11387,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Pet lovers in Vancouver love spending time at Everett Crowley, an off-leash area perfect for daily visits. Covering 117020 square meters, it has a gravel trails base that supports active dog activities. Visitors can enjoy 6 AM to 10 PM access, and the park offers wide-open green space, is primarily sun-exposed, and has accessible washrooms nearby. Does not include water access, so bring your furry friend for a refreshing outdoor experience.</p>",
       "Street Address": "8200 Kerr Street Vancouver BC",
-      "latitude": "49.2107694",
-      "longitude": "-123.0360978",
+      "latitude": "",
+      "longitude": "",
       "City": "Vancouver",
       "Province": "BC",
       "Postal Code": "",
@@ -11328,9 +11412,7 @@
       "Intro Paragraph": "<p>Everett Crowley is a well-loved off-leash dog park in Vancouver. This park features a gravel trails surface and an open space for dogs to roam freely. It provides no water access, minimal shade, and limited seating, making it a great destination for local dog owners to relax and let their pets socialize.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6838bf6da378932f0d55bef8_border-collie-in-open-grassy-dog-park.png"
     },
-    "warnings": [],
-    "latitude": 49.2107694,
-    "longitude": -123.0360978
+    "warnings": []
   },
   {
     "id": "687106348688c481f8a40f2d",
@@ -12809,8 +12891,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Glenashton Park in Oakville is a community favorite offering a fully fenced, leash-free area for dogs to exercise and play off-leash in a secure environment. The park includes picnic tables, a wheelchair-accessible entrance, and is surrounded by amenities such as a splash pad, playground, and sports fields.</p>",
       "Street Address": "1051 Glenashton Drive",
-      "latitude": "43.4889834",
-      "longitude": "-79.7009195",
+      "latitude": "",
+      "longitude": "",
       "City": "Oakville",
       "Province": "Ontario",
       "Postal Code": "L6H 5M1",
@@ -12834,9 +12916,7 @@
       "Intro Paragraph": "<p>Located in the heart of Oakville, Glenashton Park offers a secure and friendly leash-free zone for dogs to roam freely. Its accessible layout, nearby amenities, and community appeal make it a favorite for dog owners and families alike.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/684045e99232f0bf0d68412f_glenashton-park.jpg"
     },
-    "warnings": [],
-    "latitude": 43.4889834,
-    "longitude": -79.7009195
+    "warnings": []
   },
   {
     "id": "683b175ede0a388c0c10853e",
@@ -13161,8 +13241,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Grand Valley Park in Pickering features a large, fully fenced off-leash dog area with open grass and forest trails.</p>",
       "Street Address": "2650 Brock Rd",
-      "latitude": "43.8605154",
-      "longitude": "-79.1026315",
+      "latitude": "4343.86497105401944",
+      "longitude": "-79.10434811650602.8765",
       "City": "Pickering",
       "Province": "Ontario",
       "Postal Code": "L1X 0K3",
@@ -13186,9 +13266,7 @@
       "Intro Paragraph": "<p>Grand Valley Park is one of Pickering’s premier off-leash dog parks, featuring a large fenced area and forest trails for dogs to explore safely.</p>",
       "Media": ""
     },
-    "warnings": [],
-    "latitude": 43.8605154,
-    "longitude": -79.1026315
+    "warnings": []
   },
   {
     "id": "68434ad2b10f95c362a018bf",
@@ -13893,16 +13971,22 @@
     "id": "6871caa3ce61908dfb0e77d2",
     "name": "Hampton Dog Park",
     "slug": "hampton-dog-park-89f0c",
-    "title": "Hampton Dog Park in Saskatoon, Saskatchewan | LeashFree.ca",
-    "seoTitle": "Hampton Dog Park in Saskatoon, Saskatchewan | LeashFree.ca",
-    "metaDescription": "Hampton Dog Park in Saskatoon, Saskatchewan is a leash-free dog park with open grassy space suited to daily off-leash play and neighborhood walks.",
-    "description": "<p>Hampton Dog Park in Saskatoon provides an unfenced grassy space for dogs to play and run freely in a calm neighbourhood.</p>",
-    "body": "<p>Hampton Dog Park is an open unfenced space in Saskatoon for dogs to enjoy off-leash freedom in a relaxed suburban setting.</p>",
+    "title": "Hampton Dog Park Leash-Free Dog Park",
+    "seoTitle": "Hampton Dog Park Leash-Free Dog Park",
+    "metaDescription": "Hampton Dog Park gives Saskatoon owners a spacious, naturalized setting for off-leash exercise. The City’s current information highlights upgraded fencing, parking, signage, and w...",
+    "description": "<p>Hampton Dog Park gives Saskatoon owners a spacious, naturalized setting for off-leash exercise. The City’s current information highlights upgraded fencing, parking, signage, and waste bins; bring a leash for the route to and from the designated area.</p>",
+    "body": "<p>Hampton Dog Park is a naturalized off-leash area in Saskatoon’s Hampton Village area, near Junor Avenue and Hampton Circle. The City reports completed upgrades to fencing, signage, waste bins, and parking, with the parking lot now supporting up to 25 vehicles.</p>",
     "collection": "Dog Parks",
     "sourceFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Dog Parks - 683758b0a3f8a696dfc417b0.csv",
     "canonicalUrl": "https://leashfree.ca/dog-parks/hampton-dog-park-89f0c/",
     "routePath": "/dog-parks/hampton-dog-park-89f0c/",
-    "media": [],
+    "media": [
+      {
+        "fieldName": "Media",
+        "value": "/images/dog-parks/hampton-dog-park-saskatoon-original.png",
+        "originalUrls": []
+      }
+    ],
     "references": {
       "City": [
         "Saskatoon"
@@ -13912,7 +13996,9 @@
       ],
       "Tags": [
         "leash-free",
-        "unfenced"
+        "naturalized",
+        "parking",
+        "fencing upgrades"
       ]
     },
     "raw": {
@@ -13924,36 +14010,36 @@
       "Archived": "false",
       "Draft": "false",
       "Created On": "Sat Jul 12 2025 02:38:27 GMT+0000 (Coordinated Universal Time)",
-      "Updated On": "Sat Jul 12 2025 02:38:51 GMT+0000 (Coordinated Universal Time)",
+      "Updated On": "Thu Jul 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "Published On": "Sat Jul 12 2025 03:27:49 GMT+0000 (Coordinated Universal Time)",
       "Park Header": "Hampton Dog Park Leash-Free Dog Park",
       "Park type": "Leash Free",
-      "Description": "<p>Hampton Dog Park is an open unfenced space in Saskatoon for dogs to enjoy off-leash freedom in a relaxed suburban setting.</p>",
-      "Street Address": "Hampton Circle",
+      "Description": "<p>Hampton Dog Park is a naturalized off-leash area in Saskatoon’s Hampton Village area, near Junor Avenue and Hampton Circle. The City reports completed upgrades to fencing, signage, waste bins, and parking, with the parking lot now supporting up to 25 vehicles.</p>",
+      "Street Address": "North of 33rd Street along Junor Avenue, around Hampton Circle and north on Dawson Way",
       "latitude": "52.1515",
       "longitude": "-106.7387",
       "City": "Saskatoon",
       "Province": "Saskatchewan",
       "Postal Code": "S7R 0H3",
-      "Fenced": "No",
-      "Separate Small Dog Area": "No",
-      "Surface type": "grass",
+      "Fenced": "Partial",
+      "Separate Small Dog Area": "Unknown",
+      "Surface type": "Grass and naturalized terrain",
       "Size": "Medium",
-      "Water source available": "No",
-      "Benches": "Limited",
-      "Shaded area": "Minimal",
+      "Water source available": "Unknown",
+      "Benches": "Unknown",
+      "Shaded area": "Unknown",
       "Waste bins": "Yes",
-      "Bag Dispensers": "No",
-      "Parking Available": "Street Parking",
-      "Washrooms nearby": "No",
-      "Operating hours": "5 am – 11 pm",
+      "Bag Dispensers": "Yes",
+      "Parking Available": "Yes",
+      "Washrooms nearby": "Unknown",
+      "Operating hours": "Unknown — confirm current hours on site",
       "Seasonal Restrictions": "None",
-      "Park Website or Source": "https://www.saskatoon.ca/parks-recreation-attractions/parks/dog-parks",
+      "Park Website or Source": "https://www.saskatoon.ca/services-residents/pet-licensing-animal-services/dog-parks",
       "Google Maps Link": "https://maps.google.com/?q=Hampton+Dog+Park,+Saskatoon,+SK",
-      "Tags": "leash-free,unfenced",
-      "Notes / Comments": "",
-      "Intro Paragraph": "<p>Hampton Dog Park in Saskatoon provides an unfenced grassy space for dogs to play and run freely in a calm neighbourhood.</p>",
-      "Media": ""
+      "Tags": "leash-free, naturalized, parking, fencing upgrades",
+      "Notes / Comments": "<p>The City describes the park as a naturalized off-leash space and notes recent improvements. Follow current posted signs and keep your dog within sight and under control.</p>",
+      "Intro Paragraph": "<p>Hampton Dog Park gives Saskatoon owners a spacious, naturalized setting for off-leash exercise. The City’s current information highlights upgraded fencing, parking, signage, and waste bins; bring a leash for the route to and from the designated area.</p>",
+      "Media": "/images/dog-parks/hampton-dog-park-saskatoon-original.png"
     },
     "warnings": []
   },
@@ -14916,8 +15002,8 @@
       "Park type": "Leash Free",
       "Description": "<p id=\"\">Hidden Valley Park, nestled in Burlington's Aldershot community, offers a serene leash-free area for dogs. The facility features a fully fenced 0.15-hectare space with a six-foot-high chain-link fence and a double-gated entry/exit enclosure. Accessible park benches are available for pet owners. The park is adjacent to the Burlington Model Railway Club and provides ample parking.</p>",
       "Street Address": "1137 Hidden Valley Road",
-      "latitude": "43.3049162",
-      "longitude": "-79.8622622",
+      "latitude": "",
+      "longitude": "",
       "City": "Burlington",
       "Province": "Ontario",
       "Postal Code": "L7P 0T5",
@@ -14941,9 +15027,7 @@
       "Intro Paragraph": "<p>Hidden Valley Park provides a tranquil setting for dogs to enjoy off-leash play in Burlington's Aldershot community. With its secure fencing and natural surroundings, it's an ideal spot for dog owners seeking a peaceful environment for their pets.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/683a035efa039308d622d1c1_Hidden%20Valley%20Park%20%E2%80%93%20Leash-Free%20Dog%20Area.png"
     },
-    "warnings": [],
-    "latitude": 43.3049162,
-    "longitude": -79.8622622
+    "warnings": []
   },
   {
     "id": "684336ea39e7af0fcd7a630e",
@@ -15754,8 +15838,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Idlewood Park features an off-leash dog zone with beautiful trails and mature trees, offering a scenic environment for walking and canine exercise. This park is well-loved for its forested charm.</p>",
       "Street Address": "5 Thaler Avenue",
-      "latitude": "43.437625",
-      "longitude": "-80.435113",
+      "latitude": "",
+      "longitude": "",
       "City": "Kitchener",
       "Province": "Ontario",
       "Postal Code": "",
@@ -15779,9 +15863,7 @@
       "Intro Paragraph": "<p>Idlewood Park in Kitchener features a lush, wooded trail where dogs can roam leash-free in a natural setting.</p>",
       "Media": ""
     },
-    "warnings": [],
-    "latitude": 43.437625,
-    "longitude": -80.435113
+    "warnings": []
   },
   {
     "id": "68b8a1f4764482d97bd00e22",
@@ -16820,8 +16902,8 @@
       "Park type": "Leash Free",
       "Description": "<p>This compact inner-city off-leash area in Killarney provides a convenient green space for locals. Though not fenced, it's bordered by trees and open space, giving dogs room to run.</p>",
       "Street Address": "2623 28 St SW",
-      "latitude": "51.0257906",
-      "longitude": "-114.1279678",
+      "latitude": "",
+      "longitude": "",
       "City": "Calgary",
       "Province": "Alberta",
       "Postal Code": "T3E 2H5",
@@ -16845,9 +16927,7 @@
       "Intro Paragraph": "<p>The Killarney Off-Leash Area is a cozy neighborhood park in Calgary’s inner west, providing a welcoming space for dogs and owners looking for a quick outdoor break.</p>",
       "Media": ""
     },
-    "warnings": [],
-    "latitude": 51.0257906,
-    "longitude": -114.1279678
+    "warnings": []
   },
   {
     "id": "6838bee75a8b7bbc73af0f36",
@@ -17470,8 +17550,8 @@
       "Park type": "",
       "Description": "<p>Kingsford Gardens is a well-maintained, fully fenced leash-free dog park located in Oakville. The park offers a safe and spacious environment for dogs to play and socialize off-leash. The surface consists of grass and wood chips, providing a comfortable terrain for dogs. Shaded areas and benches are available for owners to relax while their pets enjoy the park. Additionally, there are walking trails nearby for extended walks.</p>",
       "Street Address": "2480 Sherwood Heights Drive",
-      "latitude": "43.4965139",
-      "longitude": "-79.6679276",
+      "latitude": "",
+      "longitude": "",
       "City": "Oakville",
       "Province": "Ontario",
       "Postal Code": "L6J 7E3",
@@ -17495,9 +17575,7 @@
       "Intro Paragraph": "<p>Kingsford Gardens provides Oakville residents with a secure and tranquil leash-free area for their dogs. Its combination of natural shade, comfortable surfaces, and nearby walking trails makes it an ideal spot for both dogs and their owners to enjoy some quality outdoor time.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6840599c74e4cc86ef8305ff_Kingsford%20Gardens%20(Leash-Free%20Dog%20Area).jpg"
     },
-    "warnings": [],
-    "latitude": 43.4965139,
-    "longitude": -79.6679276
+    "warnings": []
   },
   {
     "id": "68706c92185f343f3a76f06c",
@@ -18312,8 +18390,8 @@
       "Park type": "Leash Free",
       "Description": "<p>This off-leash area is tucked beside the established Lake Bonavista neighborhood and provides a calm, natural space for off-leash walks. While not fenced, it remains a valued space among locals.</p>",
       "Street Address": "Lake Huron Crescent SE",
-      "latitude": "50.9469326",
-      "longitude": "-114.0314313",
+      "latitude": "",
+      "longitude": "",
       "City": "Calgary",
       "Province": "Alberta",
       "Postal Code": "T2J 5H6",
@@ -18337,9 +18415,7 @@
       "Intro Paragraph": "<p>Lake Bonavista Off-Leash Area is a peaceful green space nestled in one of Calgary’s most iconic neighborhoods, great for quiet strolls with your dog.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/683b1b8891ec2f6888a679d6_lake-bonavista-off-leash-area-calgary-leash-free-dog-park.jpg"
     },
-    "warnings": [],
-    "latitude": 50.9469326,
-    "longitude": -114.0314313
+    "warnings": []
   },
   {
     "id": "6871b41f6ac49eb5cacd495a",
@@ -18694,14 +18770,20 @@
     "slug": "lee-street-park",
     "title": "Lee Street Park (Leash-Free Dog Area)",
     "seoTitle": "Lee Street Park (Leash-Free Dog Area)",
-    "metaDescription": "Lee Street Park in Guelph offers a scenic leash-free zone where dogs can explore open grassy areas and trails. Though the space is not fenced, it provides ample room for dogs unde...",
-    "description": "<p>Lee Street Park in Guelph offers a scenic leash-free zone where dogs can explore open grassy areas and trails. Though the space is not fenced, it provides ample room for dogs under control to enjoy nature.</p>",
-    "body": "<p>Lee Street Park features an open, leash-free dog area surrounded by a mix of grassy and wooded terrain. The space is not fenced, so dogs should be under voice control at all times.</p>",
+    "metaDescription": "Lee Street Park offers an unfenced leash-free area in Guelph’s Ward 1. It is a shared neighbourhood park with asphalt trails and other recreation features, so keep your dog under...",
+    "description": "<p>Lee Street Park offers an unfenced leash-free area in Guelph’s Ward 1. It is a shared neighbourhood park with asphalt trails and other recreation features, so keep your dog under control and follow the marked area and posted rules.</p>",
+    "body": "<p>Lee Street Park is a designated unfenced leash-free area at 71 Lee Street in Guelph. The City lists asphalt trails, a basketball court, a picnic table, and play equipment among the park’s features.</p>",
     "collection": "Dog Parks",
     "sourceFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Dog Parks - 683758b0a3f8a696dfc417b0.csv",
     "canonicalUrl": "https://leashfree.ca/dog-parks/lee-street-park/",
     "routePath": "/dog-parks/lee-street-park/",
-    "media": [],
+    "media": [
+      {
+        "fieldName": "Media",
+        "value": "/images/dog-parks/lee-street-park-guelph-original.png",
+        "originalUrls": []
+      }
+    ],
     "references": {
       "City": [
         "Guelph"
@@ -18711,9 +18793,9 @@
       ],
       "Tags": [
         "unfenced",
-        "grassy",
-        "wooded",
-        "street-parking"
+        "asphalt trails",
+        "picnic table",
+        "Guelph"
       ]
     },
     "raw": {
@@ -18725,12 +18807,12 @@
       "Archived": "false",
       "Draft": "false",
       "Created On": "Sat Jun 21 2025 00:18:18 GMT+0000 (Coordinated Universal Time)",
-      "Updated On": "Sat Jun 21 2025 01:17:26 GMT+0000 (Coordinated Universal Time)",
+      "Updated On": "Thu Jul 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "Published On": "Sat Jun 21 2025 01:54:30 GMT+0000 (Coordinated Universal Time)",
       "Park Header": "Lee Street Park (Leash-Free Dog Area)",
       "Park type": "Leash Free",
-      "Description": "<p>Lee Street Park features an open, leash-free dog area surrounded by a mix of grassy and wooded terrain. The space is not fenced, so dogs should be under voice control at all times.</p>",
-      "Street Address": "160 Lee St",
+      "Description": "<p>Lee Street Park is a designated unfenced leash-free area at 71 Lee Street in Guelph. The City lists asphalt trails, a basketball court, a picnic table, and play equipment among the park’s features.</p>",
+      "Street Address": "71 Lee Street",
       "latitude": "43.56513531822163",
       "longitude": "-80.22004137495615",
       "City": "Guelph",
@@ -18738,22 +18820,92 @@
       "Postal Code": "N1E 7E6",
       "Fenced": "No",
       "Separate Small Dog Area": "No",
-      "Surface type": "Grass, Natural",
+      "Surface type": "Grass and asphalt paths",
+      "Size": "Unknown",
+      "Water source available": "Unknown",
+      "Benches": "Unknown",
+      "Shaded area": "Unknown",
+      "Waste bins": "Unknown",
+      "Bag Dispensers": "Unknown",
+      "Parking Available": "Unknown",
+      "Washrooms nearby": "Unknown",
+      "Operating hours": "Dawn to dusk",
+      "Seasonal Restrictions": "Confirm current boundaries on site",
+      "Park Website or Source": "https://guelph.ca/park/lee-street-park/",
+      "Google Maps Link": "https://www.google.com/maps/place/Lee+Street+Park/@43.5649678,-80.2207214,18.82z/data=!4m6!3m5!1s0x882b9ba7b9fa56b7:0x2cddc985724a736d!8m2!3d43.5650959!4d-80.2200742!16s%2Fg%2F1tks6yzr!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D",
+      "Tags": "unfenced, asphalt trails, picnic table, Guelph",
+      "Notes / Comments": "<p>The City’s off-leash page directs visitors to its map for the exact designated area. The current corporate policy lists Lee Street Park as a leash-free area from dawn to dusk.</p>",
+      "Intro Paragraph": "<p>Lee Street Park offers an unfenced leash-free area in Guelph’s Ward 1. It is a shared neighbourhood park with asphalt trails and other recreation features, so keep your dog under control and follow the marked area and posted rules.</p>",
+      "Media": "/images/dog-parks/lee-street-park-guelph-original.png"
+    },
+    "warnings": []
+  },
+  {
+    "id": "6856066068b9445fd19f6370",
+    "name": "Lee Street Park",
+    "slug": "lee-street-park-202b1",
+    "title": "Lee Street Park (Leash-Free Dog Area)",
+    "seoTitle": "Lee Street Park (Leash-Free Dog Area)",
+    "metaDescription": "Lee Street Park serves Guelph’s east end as a neighborhood leash-free area, providing a welcoming space for dogs and their owners to enjoy off-leash time in a calm setting.",
+    "description": "<p>Lee Street Park serves Guelph’s east end as a neighborhood leash-free area, providing a welcoming space for dogs and their owners to enjoy off-leash time in a calm setting.</p>",
+    "body": "<p>Lee Street Park provides a smaller, community-based leash-free zone ideal for local dog walkers. While modest in scale, it’s a reliable spot for off-leash play within Guelph’s east side.</p>",
+    "collection": "Dog Parks",
+    "sourceFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Dog Parks - 683758b0a3f8a696dfc417b0.csv",
+    "canonicalUrl": "https://leashfree.ca/dog-parks/lee-street-park-202b1/",
+    "routePath": "/dog-parks/lee-street-park-202b1/",
+    "media": [],
+    "references": {
+      "City": [
+        "Guelph"
+      ],
+      "Province": [
+        "Ontario"
+      ],
+      "Tags": [
+        "leash-free",
+        "fenced",
+        "grass",
+        "residential"
+      ]
+    },
+    "raw": {
+      "Park Name": "Lee Street Park",
+      "slug": "lee-street-park-202b1",
+      "Collection ID": "683758b0a3f8a696dfc417b0",
+      "Locale ID": "683758b09dd1e3ac2e4e9809",
+      "Item ID": "6856066068b9445fd19f6370",
+      "Archived": "false",
+      "Draft": "false",
+      "Created On": "Sat Jun 21 2025 01:09:52 GMT+0000 (Coordinated Universal Time)",
+      "Updated On": "Sat Jun 21 2025 01:10:48 GMT+0000 (Coordinated Universal Time)",
+      "Published On": "Sat Jun 21 2025 01:54:30 GMT+0000 (Coordinated Universal Time)",
+      "Park Header": "Lee Street Park (Leash-Free Dog Area)",
+      "Park type": "Leash Free",
+      "Description": "<p>Lee Street Park provides a smaller, community-based leash-free zone ideal for local dog walkers. While modest in scale, it’s a reliable spot for off-leash play within Guelph’s east side.</p>",
+      "Street Address": "20 Lee Street",
+      "latitude": "43.56515382870256",
+      "longitude": "-80.22007336244504",
+      "City": "Guelph",
+      "Province": "Ontario",
+      "Postal Code": "N1E 5P6",
+      "Fenced": "Yes",
+      "Separate Small Dog Area": "No",
+      "Surface type": "Grass",
       "Size": "Unknown",
       "Water source available": "No",
-      "Benches": "No",
+      "Benches": "Yes",
       "Shaded area": "Yes",
       "Waste bins": "Yes",
-      "Bag Dispensers": "Unknown",
+      "Bag Dispensers": "Yes",
       "Parking Available": "Street Parking",
       "Washrooms nearby": "No",
-      "Operating hours": "5:00 AM – 11:00 PM",
+      "Operating hours": "6:00 AM – 11:00 PM",
       "Seasonal Restrictions": "None",
       "Park Website or Source": "https://guelph.ca/living/recreation/parks/leash-free-zones-for-dogs/",
-      "Google Maps Link": "https://www.google.com/maps/place/Lee+Street+Park/@43.5649678,-80.2207214,18.82z/data=!4m6!3m5!1s0x882b9ba7b9fa56b7:0x2cddc985724a736d!8m2!3d43.5650959!4d-80.2200742!16s%2Fg%2F1tks6yzr!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D",
-      "Tags": "unfenced, grassy, wooded, street-parking",
-      "Notes / Comments": "<p>Park area is shared with other amenities; leash-free zone boundaries may not be clearly marked.</p>",
-      "Intro Paragraph": "<p>Lee Street Park in Guelph offers a scenic leash-free zone where dogs can explore open grassy areas and trails. Though the space is not fenced, it provides ample room for dogs under control to enjoy nature.</p>",
+      "Google Maps Link": "https://www.google.com/maps/place/Lee+Street+Park/@43.5648849,-80.2201084,18.82z/data=!4m14!1m7!3m6!1s0x882b9ba7b9fa56b7:0x2cddc985724a736d!2sLee+Street+Park!8m2!3d43.5650959!4d-80.2200742!16s%2Fg%2F1tks6yzr!3m5!1s0x882b9ba7b9fa56b7:0x2cddc985724a736d!8m2!3d43.5650959!4d-80.2200742!16s%2Fg%2F1tks6yzr!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D",
+      "Tags": "leash-free, fenced, grass, residential",
+      "Notes / Comments": "<p>Tucked in a residential area. Offers benches and waste stations for convenience.</p>",
+      "Intro Paragraph": "<p>Lee Street Park serves Guelph’s east end as a neighborhood leash-free area, providing a welcoming space for dogs and their owners to enjoy off-leash time in a calm setting.</p>",
       "Media": ""
     },
     "warnings": []
@@ -20145,8 +20297,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Martindale Off-Leash Area is a fully fenced park featuring flat grass fields with gentle slopes. The park includes gravel paths and multiple entry gates, providing a secure environment for dogs to run and play.</p>",
       "Street Address": "703 Martindale Blvd NE",
-      "latitude": "51.1218835",
-      "longitude": "-113.9644727",
+      "latitude": "",
+      "longitude": "",
       "City": "Calgary",
       "Province": "Alberta",
       "Postal Code": "T3J 3W3",
@@ -20170,9 +20322,7 @@
       "Intro Paragraph": "<p>Martindale Off-Leash Area offers a secure and spacious environment for dogs to enjoy off-leash activities in Calgary's northeast.</p>",
       "Media": ""
     },
-    "warnings": [],
-    "latitude": 51.1218835,
-    "longitude": -113.9644727
+    "warnings": []
   },
   {
     "id": "6840af14d9ee839b1c9de0e3",
@@ -20294,8 +20444,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Mayland Heights Off-Leash Area features a partially fenced space with natural grass and gravel pathways. The park is situated in a residential neighborhood, providing a convenient location for local dog owners.</p>",
       "Street Address": "1919 Matheson Dr NE",
-      "latitude": "51.0556103",
-      "longitude": "-114.0135906",
+      "latitude": "",
+      "longitude": "",
       "City": "Calgary",
       "Province": "Alberta",
       "Postal Code": "T2E 5V5",
@@ -20319,9 +20469,7 @@
       "Intro Paragraph": "<p>Nestled in Calgary's Mayland Heights neighborhood, this off-leash area provides a local space for dogs to play and socialize.</p>",
       "Media": ""
     },
-    "warnings": [],
-    "latitude": 51.0556103,
-    "longitude": -114.0135906
+    "warnings": []
   },
   {
     "id": "6871c46f169399105de5a7db",
@@ -20435,8 +20583,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Located near the McCall Lake Golf Course, this off-leash area features flat, open terrain bordered by tall trees and walking paths. It is a convenient option for local residents looking for an accessible off-leash zone.</p>",
       "Street Address": "1440 32 Ave NE",
-      "latitude": "51.0815833",
-      "longitude": "-113.9406087",
+      "latitude": "",
+      "longitude": "",
       "City": "Calgary",
       "Province": "Alberta",
       "Postal Code": "T2E 6V3",
@@ -20460,9 +20608,7 @@
       "Intro Paragraph": "<p>McCall Lake Off-Leash Area provides a convenient green space near the golf course for dogs to enjoy some freedom in northeast Calgary.</p>",
       "Media": ""
     },
-    "warnings": [],
-    "latitude": 51.0815833,
-    "longitude": -113.9406087
+    "warnings": []
   },
   {
     "id": "684343e1dfc489a4894b6d64",
@@ -21001,8 +21147,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Memorial Park features a fully fenced, leash-free area divided into two sections: one for large dogs and another for small breeds under 25 lbs. Each section includes picnic tables, providing a comfortable spot for owners to relax while their dogs play. The park also boasts two large ponds, an active playground, and a community space, making it a versatile destination for families and their canine companions.</p>",
       "Street Address": "120 Oak Park Boulevard",
-      "latitude": "43.4813657",
-      "longitude": "-79.7211527",
+      "latitude": "",
+      "longitude": "",
       "City": "Oakville",
       "Province": "Ontario",
       "Postal Code": "L6H 7S8",
@@ -21026,9 +21172,7 @@
       "Intro Paragraph": "<p>Memorial Park in Oakville offers a spacious and secure environment for dogs of all sizes to play off-leash. With its divided areas catering to both large and small breeds, along with family-friendly amenities, it's a perfect destination for pet owners seeking a comprehensive outdoor experience.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68405b6ebe714937906fc5bf_Memorial%20Park.jpg"
     },
-    "warnings": [],
-    "latitude": 43.4813657,
-    "longitude": -79.7211527
+    "warnings": []
   },
   {
     "id": "6871a7886a7b909538cdf021",
@@ -22370,6 +22514,78 @@
     "warnings": []
   },
   {
+    "id": "6838bee9c6506381a06525f6",
+    "name": "New Brighton Park",
+    "slug": "new-brighton-dog-park-vancouver-65262",
+    "title": "New Brighton Park (off-leash dog park)",
+    "seoTitle": "New Brighton Park (off-leash dog park)",
+    "metaDescription": "New Brighton Park is a well-loved off-leash dog park in Vancouver. This park features a grass surface and an open space for dogs to roam freely. It provides no water access, minim...",
+    "description": "<p>New Brighton Park is a well-loved off-leash dog park in Vancouver. This park features a grass surface and an open space for dogs to roam freely. It provides no water access, minimal shade, and limited seating, making it a great destination for local dog owners to relax and let their pets socialize.</p>",
+    "body": "<p>New Brighton Park stands out as one of Vancouver's designated off-leash parks in BC. Covering 7004 square meters, it has a grass base that supports active dog activities. Its open from 5AM to 10 PM, and includes comfortable benches, is primarily sun-exposed, and has accessible washrooms nearby. Does not include water access, so bring your furry friend for a refreshing outdoor experience.</p>",
+    "collection": "Dog Parks",
+    "sourceFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Dog Parks - 683758b0a3f8a696dfc417b0.csv",
+    "canonicalUrl": "https://leashfree.ca/dog-parks/new-brighton-dog-park-vancouver-65262/",
+    "routePath": "/dog-parks/new-brighton-dog-park-vancouver-65262/",
+    "media": [
+      {
+        "fieldName": "Media",
+        "value": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6838bf6130c1a241f2ffa462_weimaraners-in-sunny-dog-park-grassy-field.png",
+        "originalUrls": [
+          "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6838bf6130c1a241f2ffa462_weimaraners-in-sunny-dog-park-grassy-field.png"
+        ]
+      }
+    ],
+    "references": {
+      "City": [
+        "Vancouver"
+      ],
+      "Province": [
+        "BC"
+      ]
+    },
+    "raw": {
+      "Park Name": "New Brighton Park ",
+      "slug": "new-brighton-dog-park-vancouver-65262",
+      "Collection ID": "683758b0a3f8a696dfc417b0",
+      "Locale ID": "683758b09dd1e3ac2e4e9809",
+      "Item ID": "6838bee9c6506381a06525f6",
+      "Archived": "false",
+      "Draft": "false",
+      "Created On": "Thu May 29 2025 20:09:13 GMT+0000 (Coordinated Universal Time)",
+      "Updated On": "Thu May 29 2025 23:37:11 GMT+0000 (Coordinated Universal Time)",
+      "Published On": "Thu May 29 2025 23:38:18 GMT+0000 (Coordinated Universal Time)",
+      "Park Header": "New Brighton Park (off-leash dog park)",
+      "Park type": "Leash Free",
+      "Description": "<p>New Brighton Park stands out as one of Vancouver's designated off-leash parks in BC. Covering 7004 square meters, it has a grass base that supports active dog activities. Its open from 5AM to 10 PM, and includes comfortable benches, is primarily sun-exposed, and has accessible washrooms nearby. Does not include water access, so bring your furry friend for a refreshing outdoor experience.</p>",
+      "Street Address": "3201 New Brighton Road Vancouv",
+      "latitude": "",
+      "longitude": "",
+      "City": "Vancouver",
+      "Province": "BC",
+      "Postal Code": "",
+      "Fenced": "Yes",
+      "Separate Small Dog Area": "",
+      "Surface type": "Grass",
+      "Size": "",
+      "Water source available": "No",
+      "Benches": "Yes",
+      "Shaded area": "No",
+      "Waste bins": "No",
+      "Bag Dispensers": "",
+      "Parking Available": "",
+      "Washrooms nearby": "Yes",
+      "Operating hours": "5AM to 10 PM",
+      "Seasonal Restrictions": "",
+      "Park Website or Source": "",
+      "Google Maps Link": "",
+      "Tags": "",
+      "Notes / Comments": "",
+      "Intro Paragraph": "<p>New Brighton Park is a well-loved off-leash dog park in Vancouver. This park features a grass surface and an open space for dogs to roam freely. It provides no water access, minimal shade, and limited seating, making it a great destination for local dog owners to relax and let their pets socialize.</p>",
+      "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6838bf6130c1a241f2ffa462_weimaraners-in-sunny-dog-park-grassy-field.png"
+    },
+    "warnings": []
+  },
+  {
     "id": "686583ae42522a9ff072475e",
     "name": "Niagara Falls Bark Park",
     "slug": "niagara-falls-bark-park",
@@ -22906,8 +23122,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Norton Park, located in Burlington's Alton Village, offers a spacious and secure leash-free area for dogs. The park features separate enclosures for large and small dogs, both fully fenced with double-gated entries. Amenities include seating areas for pet owners, waste bins, and ample parking. The park is part of a larger community space that includes artificial turf fields, a basketball court, a skateboard park, and a playground with a splash pad.</p>",
       "Street Address": "3035 Tim Dobbie Drive",
-      "latitude": "43.3988947",
-      "longitude": "-79.8190006",
+      "latitude": "",
+      "longitude": "",
       "City": "Burlington",
       "Province": "Ontario",
       "Postal Code": "L7M 0M3",
@@ -22931,9 +23147,7 @@
       "Intro Paragraph": "<p>Norton Park provides a well-equipped and secure environment for dogs to enjoy off-leash play in Burlington's Alton Village. With separate areas for different dog sizes and a range of amenities, it's a popular destination for local dog owners.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/683a0441047625cebdeaa6de_Norton%20Park%20%E2%80%93%20Leash-Free%20Dog%20Area.png"
     },
-    "warnings": [],
-    "latitude": 43.3988947,
-    "longitude": -79.8190006
+    "warnings": []
   },
   {
     "id": "6842dd7129f25565707dc42e",
@@ -23057,8 +23271,8 @@
       "Park type": "",
       "Description": "<p>Nose Hill Park is one of Calgary’s largest natural environment parks, with extensive off-leash areas that span across open prairie and scenic trails. Dogs can explore freely through multiple access points while enjoying sweeping views of the city.</p>",
       "Street Address": "5620 14 St NW",
-      "latitude": "51.1692813",
-      "longitude": "-114.0903356",
+      "latitude": "",
+      "longitude": "",
       "City": "Calgary",
       "Province": "Alberta",
       "Postal Code": "T3B 1K2",
@@ -23082,9 +23296,7 @@
       "Intro Paragraph": "<p>Nose Hill Park offers Calgary dog owners a vast open space to roam. Its leash-free zones stretch across prairie grasslands and winding trails with views of the Rockies and city skyline.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/683a5bfde0b90cfb6b0ce67e_nose-hill-park.png"
     },
-    "warnings": [],
-    "latitude": 51.1692813,
-    "longitude": -114.0903356
+    "warnings": []
   },
   {
     "id": "6838bee8acb49bfb680d2a93",
@@ -23777,8 +23989,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Palermo Park is a spacious 18-acre community park in Oakville featuring a fully fenced, leash-free dog area. The off-leash zone includes a double-gated entrance for added safety and ample seating for owners. While the park lacks shaded areas and a water fountain, it offers a walking trail that surrounds the park, providing additional exercise opportunities for both dogs and their owners. The park also features two baseball/softball diamonds and is known for its beautiful sunsets.</p>",
       "Street Address": "2345 Dundas Street West",
-      "latitude": "43.4417613",
-      "longitude": "-79.7742366",
+      "latitude": "",
+      "longitude": "",
       "City": "Oakville",
       "Province": "Ontario",
       "Postal Code": "L6M 4J3",
@@ -23802,9 +24014,7 @@
       "Intro Paragraph": "<p>Palermo Park offers Oakville residents a generous off-leash area within a larger multi-use park. With its expansive space, safety features, and surrounding walking trails, it's a great spot for dogs to exercise and socialize. While amenities are basic, the park's natural setting and additional recreational facilities make it a valuable community asset.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/684076d71ab44f790a326243_Palermo%20Park.jpg"
     },
-    "warnings": [],
-    "latitude": 43.4417613,
-    "longitude": -79.7742366
+    "warnings": []
   },
   {
     "id": "6838bee968b0ef7f9732bfda",
@@ -24623,8 +24833,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Pathfinder Park, located in Burlington's Orchard neighborhood, features a compact yet secure leash-free area for dogs. The 0.05-hectare space is fully enclosed with a six-foot-high chain-link fence and includes a double-gated entry/exit enclosure for added safety. An accessible park bench is available for pet owners to relax while their dogs play.</p>",
       "Street Address": "3365 Pathfinder Drive",
-      "latitude": "43.4063232",
-      "longitude": "-79.8004069",
+      "latitude": "",
+      "longitude": "",
       "City": "Burlington",
       "Province": "Ontario",
       "Postal Code": "L7L 7B6",
@@ -24648,9 +24858,7 @@
       "Intro Paragraph": "<p>Pathfinder Park offers a dedicated leash-free area in Burlington's Orchard neighborhood, providing a safe and convenient space for dogs to enjoy off-leash play. With its secure fencing and accessible amenities, it's a welcome addition for local dog owners.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/683a055df5ba14b9bfccd231_Pathfinder%20Park.png"
     },
-    "warnings": [],
-    "latitude": 43.4063232,
-    "longitude": -79.8004069
+    "warnings": []
   },
   {
     "id": "6840af136c20aedff3c76c1d",
@@ -25541,8 +25749,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Post Park is a family-friendly, fully fenced leash-free dog park nestled among mature trees in Oakville. The park features separate sections for large and small dogs, providing a safe environment for all sizes to play and socialize. Amenities include benches, picnic tables, waste bins, and a water station. The surrounding area offers additional recreational facilities such as a children's playground, soccer field, and walking trails, making it an ideal spot for the entire family.</p>",
       "Street Address": "512 Macdonald Road",
-      "latitude": "43.4596859",
-      "longitude": "-79.6689993",
+      "latitude": "",
+      "longitude": "",
       "City": "Oakville",
       "Province": "Ontario",
       "Postal Code": "L6J 2B7",
@@ -25566,9 +25774,7 @@
       "Intro Paragraph": "<p>Post Park offers Oakville residents a serene and secure environment for off-leash dog play. With its shaded areas, separate sections for different dog sizes, and additional family-friendly amenities, it's a perfect destination for both dogs and their owners to enjoy quality outdoor time.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/684079a0afaf0bcbff6abae8_post-park.jpg"
     },
-    "warnings": [],
-    "latitude": 43.4596859,
-    "longitude": -79.6689993
+    "warnings": []
   },
   {
     "id": "68e56a6f2462bcbf46884b3c",
@@ -27101,8 +27307,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Renfrew Off-Leash Park offers a spacious, gently sloped terrain with natural grass and maintained pathways. The park provides mountain views and mature trees, creating a pleasant environment for dogs and their owners.</p>",
       "Street Address": "712 St. George's Dr NE",
-      "latitude": "51.0570429",
-      "longitude": "-114.025186",
+      "latitude": "",
+      "longitude": "",
       "City": "Calgary",
       "Province": "Alberta",
       "Postal Code": "T2E 4S4",
@@ -27126,9 +27332,7 @@
       "Intro Paragraph": "<p>Renfrew Off-Leash Park is a spacious area in Calgary's northeast, offering natural terrain and scenic views for dogs and their owners to enjoy.</p>",
       "Media": ""
     },
-    "warnings": [],
-    "latitude": 51.0570429,
-    "longitude": -114.025186
+    "warnings": []
   },
   {
     "id": "68b8a1f48e2eba0cd5aed9ff",
@@ -27883,8 +28087,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Roly Bird Park, named after Burlington’s longest-serving mayor, offers a medium-sized, fully fenced leash-free area with a double-gated entry system. The park features a wood chip surface to keep dogs clean, and amenities include benches, picnic tables, and mature trees providing shade. Additional facilities in the park include a baseball diamond, two sports fields, a playground, and ample parking.</p>",
       "Street Address": "2203 Industrial Street",
-      "latitude": "43.3470634",
-      "longitude": "-79.8174178",
+      "latitude": "",
+      "longitude": "",
       "City": "Burlington",
       "Province": "Ontario",
       "Postal Code": "L7P 1A1",
@@ -27908,9 +28112,7 @@
       "Intro Paragraph": "<p>Roly Bird Park provides a welcoming leash-free environment for dogs in Burlington. With its secure fencing, wood chip surface, and shaded seating areas, it's an ideal spot for dogs to play and for families to enjoy the park's additional amenities.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/683a06353c1b5af014f731c6_Roly%20Bird%20Park%20%E2%80%93%20Leash-Free%20Dog%20Area.png"
     },
-    "warnings": [],
-    "latitude": 43.3470634,
-    "longitude": -79.8174178
+    "warnings": []
   },
   {
     "id": "68719f71a71840d162ae01e2",
@@ -28581,8 +28783,8 @@
       "Park type": "Dogs Allowed",
       "Description": "<p>Rushdale Park is a large community park featuring open fields, play areas, and paved paths where dogs are welcome on-leash. It's a great spot for longer neighborhood walks with dogs.</p>",
       "Street Address": "130 Southpark Ave",
-      "latitude": "43.2094075",
-      "longitude": "-79.863078",
+      "latitude": "",
+      "longitude": "",
       "City": "Hamilton",
       "Province": "Ontario",
       "Postal Code": "L8V 4Z9",
@@ -28606,9 +28808,7 @@
       "Intro Paragraph": "<p>Rushdale Park offers open space and paved paths for relaxing on-leash walks with your dog in Hamilton's neighborhoods.</p>",
       "Media": ""
     },
-    "warnings": [],
-    "latitude": 43.2094075,
-    "longitude": -79.863078
+    "warnings": []
   },
   {
     "id": "6871a6594a09925467738488",
@@ -30369,8 +30569,8 @@
       "Park type": "Leash Free",
       "Description": "<p>The Sixteen Mile Sports Complex features a leash-free dog park that provides a spacious, open area for dogs to play and socialize off-leash. The park is fully fenced, ensuring a secure environment for pets. Amenities include benches for owners and waste bins for convenience. The surrounding complex offers additional recreational facilities, making it a versatile destination for families.</p>",
       "Street Address": "3070 Neyagawa Boulevard",
-      "latitude": "43.4694656",
-      "longitude": "-79.7512056",
+      "latitude": "",
+      "longitude": "",
       "City": "Oakville",
       "Province": "Ontario",
       "Postal Code": "L6M 4L6",
@@ -30394,9 +30594,7 @@
       "Intro Paragraph": "<p>Located within the expansive Sixteen Mile Sports Complex, this leash-free dog park offers a secure and welcoming environment for dogs to enjoy off-leash play. With ample space, convenient amenities, and proximity to other recreational facilities, it's a popular spot for Oakville's dog-owning community.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/68405db71d5f8193ff7f7474_Sixteen%20Mile%20Sports%20Complex.jpg"
     },
-    "warnings": [],
-    "latitude": 43.4694656,
-    "longitude": -79.7512056
+    "warnings": []
   },
   {
     "id": "683b175dde0a388c0c1084af",
@@ -31002,8 +31200,8 @@
       "Park type": "Leash Free",
       "Description": "<p>If you're in Vancouver, BC, and looking for a great off-leash dog park, check out Spanish Banks Park. Covering 50374 square meters, it has a grass base that supports active dog activities. It is open from 6 AM to 10 PM, and includes comfortable benches, is primarily sun-exposed, and has accessible washrooms nearby. Has on-site water access for pets. It is a great space to let your pup roam and meet other dogs.</p>",
       "Street Address": "4801 NW Marine Drive Vancouver",
-      "latitude": "49.2770716",
-      "longitude": "-123.2188975",
+      "latitude": "",
+      "longitude": "",
       "City": "Vancouver",
       "Province": "BC",
       "Postal Code": "",
@@ -31027,9 +31225,7 @@
       "Intro Paragraph": "<p>Spanish Banks Park is a well-loved off-leash dog park in Vancouver. This park features a grass surface and an open space for dogs to roam freely. It provides no water access, minimal shade, and limited seating, making it a great destination for local dog owners to relax and let their pets socialize.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6838bf9fe489f2f6a3b7d375_dog-park-open-space-with-dog-on-grass.png"
     },
-    "warnings": [],
-    "latitude": 49.2770716,
-    "longitude": -123.2188975
+    "warnings": []
   },
   {
     "id": "6838bee9316e08613842d1f9",
@@ -31076,8 +31272,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Sparwood Park is a fantastic leash-free zone for dogs located in Vancouver, BC. With an area of approximately 35233 square meters, this park offers a grass environment for pets to explore. Dog owners will appreciate the parks 5 AM to 10 AM &amp; 5 PM to 10 PM access and how it offers wide-open green space, offers shady spots, and is close to limited facilities. Does not include water access. It is a great space to let your pup roam and meet other dogs.</p>",
       "Street Address": "6998 Arlington Street Vancouve",
-      "latitude": "49.2206078",
-      "longitude": "-123.0292862",
+      "latitude": "",
+      "longitude": "",
       "City": "Vancouver",
       "Province": "BC",
       "Postal Code": "",
@@ -31101,9 +31297,7 @@
       "Intro Paragraph": "<p>Sparwood Park is a well-loved off-leash dog park in Vancouver. This park features a grass surface and an open space for dogs to roam freely. It provides no water access, minimal shade, and limited seating, making it a great destination for local dog owners to relax and let their pets socialize.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6838bf8248d43e4eb440ee42_golden-retriever-in-forest-edge-dog-park.png"
     },
-    "warnings": [],
-    "latitude": 49.2206078,
-    "longitude": -123.0292862
+    "warnings": []
   },
   {
     "id": "6871cbfc8f3b51d80bb2817c",
@@ -31438,8 +31632,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Stanley Park is a fantastic leash-free zone for dogs located in Vancouver, BC. Covering 450 square meters, it has a gravel base that supports active dog activities. Dog owners will appreciate the park’s 7 AM to 9 PM access and how it includes comfortable benches, offers shady spots, and has accessible washrooms nearby. Does not include water access, so bring your furry friend for a refreshing outdoor experience.</p>",
       "Street Address": "2000 W Georgia Street Vancouve",
-      "latitude": "49.3020684",
-      "longitude": "-123.1413263",
+      "latitude": "",
+      "longitude": "",
       "City": "Vancouver",
       "Province": "BC",
       "Postal Code": "",
@@ -31463,9 +31657,7 @@
       "Intro Paragraph": "<p>Stanley Park is a well-loved off-leash dog park in Vancouver. This park features a gravel surface and an open space for dogs to roam freely. It provides no water access, minimal shade, and limited seating, making it a great destination for local dog owners to relax and let their pets socialize.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6838bf905e0c4fbbb9bdd02a_dog-park-pathway-with-dog-and-trees.png"
     },
-    "warnings": [],
-    "latitude": 49.3020684,
-    "longitude": -123.1413263
+    "warnings": []
   },
   {
     "id": "68434db1314914781dd252de",
@@ -31931,8 +32123,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Pet lovers in Vancouver love spending time at Strathcona Park, an off-leash area perfect for daily visits. With an area of approximately 6255 square meters, this park offers a grass environment for pets to explore. Strathcona Park operates 5 AM to 10 AM &amp; 5 PM to 10 PM, where the environment offers wide-open green space, offers shady spots, and has accessible washrooms nearby. Does not include water access, so bring your furry friend for a refreshing outdoor experience.</p>",
       "Street Address": "857 Malkin Avenue Vancouver BC",
-      "latitude": "49.2752663",
-      "longitude": "-123.0850568",
+      "latitude": "",
+      "longitude": "",
       "City": "Vancouver",
       "Province": "BC",
       "Postal Code": "",
@@ -31956,9 +32148,7 @@
       "Intro Paragraph": "<p>Strathcona Park is a well-loved off-leash dog park in Vancouver. This park features a grass surface and an open space for dogs to roam freely. It provides no water access, minimal shade, and limited seating, making it a great destination for local dog owners to relax and let their pets socialize.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6838bf8248d43e4eb440ee42_golden-retriever-in-forest-edge-dog-park.png"
     },
-    "warnings": [],
-    "latitude": 49.2752663,
-    "longitude": -123.0850568
+    "warnings": []
   },
   {
     "id": "683b175f1b3190fc20bfc3e1",
@@ -32075,8 +32265,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Sue Higgins Park is Calgary’s premier and largest off-leash area. Spanning over 62 hectares along the Bow River, it offers expansive trails, water access, varied terrain, and multiple fenced enclosures for small dogs.</p>",
       "Street Address": "Southland Dr SE & Deerfoot Trail",
-      "latitude": "50.9674875",
-      "longitude": "-114.0265312",
+      "latitude": "",
+      "longitude": "",
       "City": "Calgary",
       "Province": "Alberta",
       "Postal Code": "T2J 5H5",
@@ -32100,9 +32290,7 @@
       "Intro Paragraph": "<p>Sue Higgins Park offers Calgary’s most expansive off-leash experience, with open space, riverside trails, and dedicated areas for small and large dogs alike.</p>",
       "Media": ""
     },
-    "warnings": [],
-    "latitude": 50.9674875,
-    "longitude": -114.0265312
+    "warnings": []
   },
   {
     "id": "683b175ee9f8fcb34112465e",
@@ -32432,8 +32620,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Sunrise Park is a fantastic leash-free zone for dogs located in Vancouver, BC. This park spans about 21215 square meters and features grass surfaces ideal for running and play. Visitors can enjoy 5 AM to 10 AM &amp; 5 PM to 10 PM access, and the park offers wide-open green space, offers shady spots, and has accessible washrooms nearby. Does not include water access, so bring your furry friend for a refreshing outdoor experience.</p>",
       "Street Address": "1950 Windermere Street Vancouv",
-      "latitude": "49.2666188",
-      "longitude": "-123.0351391",
+      "latitude": "",
+      "longitude": "",
       "City": "Vancouver",
       "Province": "BC",
       "Postal Code": "",
@@ -32457,9 +32645,7 @@
       "Intro Paragraph": "<p>Sunrise Park is a well-loved off-leash dog park in Vancouver. This park features a grass surface and an open space for dogs to roam freely. It provides no water access, minimal shade, and limited seating, making it a great destination for local dog owners to relax and let their pets socialize.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6838bf6130c1a241f2ffa462_weimaraners-in-sunny-dog-park-grassy-field.png"
     },
-    "warnings": [],
-    "latitude": 49.2666188,
-    "longitude": -123.0351391
+    "warnings": []
   },
   {
     "id": "6838bee7a0b74e66448a948e",
@@ -32506,8 +32692,8 @@
       "Park type": "Leash Free",
       "Description": "<p>Pet lovers in Vancouver love spending time at Sunset Beach, an off-leash area perfect for daily visits. Covering 1049 square meters, it has a sand base that supports active dog activities. Dog owners will appreciate the park’s 6 AM to 10 PM access and how it offers wide-open green space, offers shady spots, and is close to limited facilities. Don’t forget that it has on-site water access for pets, which is ideal for dogs on warmer days.</p>",
       "Street Address": "1204 Beach Avenue Vancouver BC",
-      "latitude": "49.2783744",
-      "longitude": "-123.1381712",
+      "latitude": "",
+      "longitude": "",
       "City": "Vancouver",
       "Province": "BC",
       "Postal Code": "",
@@ -32531,9 +32717,7 @@
       "Intro Paragraph": "<p>Sunset Beach is a well-loved off-leash dog park in Vancouver. This park features a sand surface and an open space for dogs to roam freely. It provides no water access, minimal shade, and limited seating, making it a great destination for local dog owners to relax and let their pets socialize.</p>",
       "Media": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6838bf905e0c4fbbb9bdd02a_dog-park-pathway-with-dog-and-trees.png"
     },
-    "warnings": [],
-    "latitude": 49.2783744,
-    "longitude": -123.1381712
+    "warnings": []
   },
   {
     "id": "6838bee9c46658af5c5f7a05",
@@ -34670,9 +34854,9 @@
     "id": "6871083c71d01574929d6159",
     "name": "Westview Park",
     "slug": "westview-park-chilliwack",
-    "title": "Westview Park Dog Park in Chilliwack, British Columbia | LeashFree.ca",
-    "seoTitle": "Westview Park Dog Park in Chilliwack, British Columbia | LeashFree.ca",
-    "metaDescription": "Westview Park Dog Park in Chilliwack, British Columbia is a leash-free dog park with simple open space for neighborhood dogs and routine outings.",
+    "title": "Westview Park Leash-Free Dog Park",
+    "seoTitle": "Westview Park Leash-Free Dog Park",
+    "metaDescription": "Westview Park is a simple neighbourhood park in Chilliwack offering off-leash space for nearby dog owners.",
     "description": "<p>Westview Park is a simple neighbourhood park in Chilliwack offering off-leash space for nearby dog owners.</p>",
     "body": "<p>Westview Park in Chilliwack provides a small green space for dogs to enjoy some off-leash time.</p>",
     "collection": "Dog Parks",
@@ -34738,9 +34922,9 @@
     "id": "6871b9a0576deb1775bdfd6a",
     "name": "Westview Park",
     "slug": "westview-park-maple-ridge",
-    "title": "Westview Park Dog Park in Maple Ridge, British Columbia | LeashFree.ca",
-    "seoTitle": "Westview Park Dog Park in Maple Ridge, British Columbia | LeashFree.ca",
-    "metaDescription": "Westview Park Dog Park in Maple Ridge, British Columbia is a leash-free dog park with a fenced off-leash area for quick local exercise sessions.",
+    "title": "Westview Park Leash-Free Dog Park",
+    "seoTitle": "Westview Park Leash-Free Dog Park",
+    "metaDescription": "Westview Park in Maple Ridge offers a small, fully fenced off-leash area ideal for nearby residents looking for quick dog outings.",
     "description": "<p>Westview Park in Maple Ridge offers a small, fully fenced off-leash area ideal for nearby residents looking for quick dog outings.</p>",
     "body": "<p>Westview Park features a fenced off-leash dog park in a quiet neighborhood, offering a convenient space for local dog owners.</p>",
     "collection": "Dog Parks",
@@ -34807,9 +34991,9 @@
     "id": "6871c46f3c8cc2c16ecb4cdf",
     "name": "Westview Park",
     "slug": "westview-park",
-    "title": "Westview Park Dog Park in Winnipeg, Manitoba | LeashFree.ca",
-    "seoTitle": "Westview Park Dog Park in Winnipeg, Manitoba | LeashFree.ca",
-    "metaDescription": "Westview Park Dog Park in Winnipeg, Manitoba is a leash-free dog park with open terrain and elevated views for active off-leash walks.",
+    "title": "Westview Park Leash-Free Dog Park",
+    "seoTitle": "Westview Park Leash-Free Dog Park",
+    "metaDescription": "Westview Park in Winnipeg, also known as Garbage Hill, offers a unique off-leash experience with panoramic views and open space.",
     "description": "<p>Westview Park in Winnipeg, also known as Garbage Hill, offers a unique off-leash experience with panoramic views and open space.</p>",
     "body": "<p>Westview Park, also known as Garbage Hill, features a wide off-leash area with scenic views and open green space.</p>",
     "collection": "Dog Parks",

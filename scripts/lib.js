@@ -3,7 +3,9 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 export const SITE_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-export const ROOT_DIR = path.resolve(SITE_DIR, "..");
+export const ROOT_DIR = fs.existsSync(path.join(SITE_DIR, "migration-prep"))
+  ? SITE_DIR
+  : path.resolve(SITE_DIR, "..");
 export const GENERATED_DIR = path.join(SITE_DIR, "src", "data", "generated");
 export const MEDIA_MAP_PATH = path.join(SITE_DIR, "src", "data", "media-map.json");
 export const CMS_SCHEMA_PATH = path.join(ROOT_DIR, "migration-prep", "cms-schema-summary.json");

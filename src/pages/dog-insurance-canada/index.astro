@@ -1,0 +1,79 @@
+---
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import Card from "../../components/Card.astro";
+import Layout from "../../components/Layout.astro";
+import Section from "../../components/Section.astro";
+import providers from "../../data/generated/pet-insurance-providers.json";
+import { breadcrumbSchema, cleanText } from "../../utils/content.js";
+
+const breadcrumbs = [
+  { label: "Home", href: "/" },
+  { label: "Dog Insurance Canada", href: "/dog-insurance-canada/" }
+];
+
+const sortedProviders = [...providers].sort((a, b) => {
+  const aRank = Number(a.raw?.DisplayRank || 999);
+  const bRank = Number(b.raw?.DisplayRank || 999);
+  return aRank - bRank;
+});
+
+const describe = (provider) => {
+  const planTypes = cleanText(provider.raw?.PlanTypes);
+  const annualLimit = cleanText(provider.raw?.AnnualLimit);
+  const reimbursement = cleanText(provider.raw?.ReimbursementPercents);
+  return [planTypes, annualLimit && `Annual limit: ${annualLimit}`, reimbursement && `Reimbursement: ${reimbursement}`]
+    .filter(Boolean)
+    .join(". ");
+};
+---
+
+<Layout
+  title="Dog Insurance Canada: Compare Pet Insurance Providers | LeashFree.ca"
+  description="Compare Canadian dog insurance providers by plan type, annual limit, reimbursement, deductible options, waiting periods, claims notes, and source links."
+  canonical="https://leashfree.ca/dog-insurance-canada/"
+  structuredData={breadcrumbSchema(breadcrumbs)}
+>
+  <section class="page-header">
+    <div class="container">
+      <Breadcrumbs items={breadcrumbs} />
+      <div class="eyebrow">Dog Insurance Canada</div>
+      <h1>Compare Dog Insurance Providers in Canada</h1>
+      <p class="summary">
+        Review Canadian pet insurance providers by plan type, annual limit, reimbursement, deductible options,
+        waiting periods, claims notes, and source links before you request quotes.
+      </p>
+      <div class="button-row">
+        <a class="button" href="/blog/pet-insurance-canada-dog-owners-guide/">Read the buyer guide</a>
+        <a class="button secondary" href="/resources/dog-cost-calculator-canada/">Estimate dog costs</a>
+      </div>
+    </div>
+  </section>
+
+  <Section
+    title="Provider Comparison"
+    intro="Use these listings as a starting point. Always confirm current pricing, policy wording, exclusions, and waiting periods directly with the provider before buying."
+  >
+    <div class="grid">
+      {sortedProviders.map((provider) => (
+        <Card
+          title={provider.name}
+          href={`/dog-insurance-canada/${provider.slug}/`}
+          description={describe(provider)}
+          badges={[cleanText(provider.raw?.ProvincesAvailable)].filter(Boolean)}
+          ctaLabel="View provider"
+        />
+      ))}
+    </div>
+  </Section>
+
+  <Section title="How to Compare Policies" alt>
+    <ul>
+      <li>Compare annual limits, deductibles, reimbursement rates, and waiting periods together.</li>
+      <li>Read exclusions for pre-existing, hereditary, dental, orthopedic, behavioural, and bilateral conditions.</li>
+      <li>Confirm whether exam fees, taxes, prescription medication, rehab, and alternative therapies are eligible.</li>
+      <li>Ask whether your vet can be paid directly or whether you must pay first and wait for reimbursement.</li>
+      <li>Revisit the policy at renewal as your dog ages, your budget changes, or your dog's health history grows.</li>
+    </ul>
+  </Section>
+</Layout>
+

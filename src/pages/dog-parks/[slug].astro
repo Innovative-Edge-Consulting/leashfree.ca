@@ -88,8 +88,15 @@ const enhancedProvinceConfig = {
 };
 const enhancedProvince = isProvince ? enhancedProvinceConfig[primary.slug] : null;
 const resolvedImage = resolveMedia(primary, undefined, mediaMap);
+const originalParkHeroImages = {
+  "confederation-park-075b6": "/images/dog-parks/confederation-park-toronto-original.png",
+  "hampton-dog-park-89f0c": "/images/dog-parks/hampton-dog-park-saskatoon-original.png",
+  "lee-street-park": "/images/dog-parks/lee-street-park-guelph-original.png"
+};
 const image = enhancedProvince
   ? { ...resolvedImage, ...(enhancedProvince.heroImage ? { src: enhancedProvince.heroImage } : {}) }
+  : isPark && originalParkHeroImages[primary.slug]
+    ? { ...resolvedImage, src: originalParkHeroImages[primary.slug] }
   : resolvedImage;
 const city = isPark ? findByName(cities, primary.raw.City) : null;
 const province = isPark || isCity ? findByName(provinces, primary.raw.Province) : primary;
@@ -754,6 +761,25 @@ const structuredData = [
         {primary.raw["Park Rules"] && <ContentBlock html={primary.raw["Park Rules"]} />}
         {primary.raw["Seasonal Tips"] && <ContentBlock html={primary.raw["Seasonal Tips"]} />}
       </Section>
+      {primary.raw["Dog Park Etiquettes"] && (
+        <Section title={`Dog park etiquette in ${primaryName}`}>
+          <ContentBlock html={primary.raw["Dog Park Etiquettes"]} />
+        </Section>
+      )}
+      {primary.raw["Dog Park FAQs"] && (
+        <Section title={`FAQs about dog parks in ${primaryName}`} alt>
+          <div class="card">
+            <div class="card-body faq-accordion">
+              {parseFaqHtml(primary.raw["Dog Park FAQs"]).map((item) => (
+                <details class="faq-item">
+                  <summary>{item.question}</summary>
+                  <p>{item.answer}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </Section>
+      )}
       <Section
         title={`Map of dog parks in ${primaryName}`}
         intro={`Use the map to compare ${primaryName} parks by location, address, amenities, and distance from your location.`}

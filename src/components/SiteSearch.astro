@@ -1,0 +1,44 @@
+---
+const categories = ["All", "Guides", "Breeds", "Parks", "Locations", "Services", "Dog names", "Tools"];
+const { mode = "overlay" } = Astro.props;
+const isPage = mode === "page";
+---
+
+<div class:list={["site-search", isPage && "site-search-page"]} data-site-search-root data-search-page={String(isPage)} data-search-limit={isPage ? "40" : "8"}>
+  <div class="site-search-field">
+    <span class="site-search-field-icon" aria-hidden="true"></span>
+    <input
+      type="search"
+      placeholder='Try “dog friendly parks Toronto” or “low shedding breed”'
+      aria-label="Search LeashFree.ca"
+      aria-describedby={isPage ? "search-page-help" : "header-search-help"}
+      autocomplete="off"
+      data-site-search-input
+    />
+    {!isPage && <kbd>/</kbd>}
+  </div>
+  <p id={isPage ? "search-page-help" : "header-search-help"} class="site-search-help">
+    Use multiple keywords for more precise results. Put an exact phrase in quotation marks.
+  </p>
+  <div class="site-search-filters" aria-label="Filter search results by category">
+    {categories.map((category) => (
+      <button type="button" data-site-search-filter={category} aria-pressed={category === "All"}>{category}</button>
+    ))}
+  </div>
+  <p class="site-search-status" aria-live="polite" data-site-search-status>Loading search…</p>
+  <div class="site-search-results" role="listbox" aria-label="Search results" data-site-search-results></div>
+  <template>
+    <div class="site-search-starters">
+      <strong>Popular searches</strong>
+      <a href="/search/?q=off-leash+parks">Off-leash parks</a>
+      <a href="/search/?q=apartment+dog+breeds">Apartment dog breeds</a>
+      <a href="/search/?q=dog+cost+calculator">Dog cost calculator</a>
+      <a href="/search/?q=puppy+names">Puppy names</a>
+    </div>
+  </template>
+</div>
+
+<script>
+  import { initializeSiteSearch } from "../scripts/site-search.js";
+  initializeSiteSearch();
+</script>

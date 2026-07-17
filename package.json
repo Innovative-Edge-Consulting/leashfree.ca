@@ -8,6 +8,7 @@
     "prebuild": "node scripts/assert-production-branch.js",
     "build": "astro build",
     "preview": "astro preview",
+    "deploy": "npm run build && npx wrangler deploy && npm run indexnow:submit",
     "build:rocky-mountain-dog-products": "node scripts/build-rocky-mountain-dog-products.js",
     "convert:cms": "node scripts/convert-cms.js",
     "build:media-map": "node scripts/build-media-map.js",
@@ -21,6 +22,8 @@
     "migrate:prep": "npm run convert:cms && npm run dedupe:directories && npm run dedupe:dog-breeds && npm run build:media-map && npm run validate:data",
     "qa:pages": "node scripts/qa-pages.js",
     "content:health": "node scripts/content-health.js",
+    "backlog:thin-pages": "node scripts/build-thin-page-backlog.mjs",
+    "indexnow:submit": "node scripts/submit-indexnow.mjs",
     "launch:check": "npm run build && npm run qa:pages && npm audit"
   },
   "dependencies": {

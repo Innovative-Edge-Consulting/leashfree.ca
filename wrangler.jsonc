@@ -3,7 +3,12 @@
   "name": "leashfree",
   "main": "worker.mjs",
   "compatibility_date": "2026-05-28",
+  "vars": {
+    "EDGE_GA_MEASUREMENT_ID": "G-2G3NCSNPFC"
+  },
   "assets": {
-    "directory": "./dist"
+    "binding": "ASSETS",
+    "directory": "./dist",
+    "run_worker_first": true
   }
 }
