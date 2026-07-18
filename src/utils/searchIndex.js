@@ -1,4 +1,4 @@
-import posts from "../data/generated/blog-posts.json";
+import posts from "../data/blog-posts.js";
 import breeds from "../data/generated/dog-breeds.json";
 import groups from "../data/generated/breed-groups.json";
 import parks from "../data/generated/parks.json";

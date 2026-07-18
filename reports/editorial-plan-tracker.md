@@ -1,6 +1,6 @@
 # LeashFree.ca Editorial Plan Tracker
 
-Last updated: 2026-07-16
+Last updated: 2026-07-17
 
 Source strategy report: `reports/editorial-backlog-2026-07-11.md`
 
@@ -33,9 +33,9 @@ Statuses:
 
 | Slot | Item | Status | Decision |
 | --- | --- | --- | --- |
-| Next article | Tick Prevention for Dogs in Canada: Month-by-Month Guide by Region | Proposed | Seasonal safety article is now the next ranked priority after publishing the dog food cost guide. |
-| Next cluster | Insurance and emergency vet costs | Proposed | Build a decision path from cost awareness to policy comparison to vet directory. |
-| Seasonal backup | Dog Park Safety Checklist Canada | Backlog | Strong fallback if we decide to lean into summer park traffic first. |
+| Next article | Dog Park Safety Checklist Canada: Heat, Smoke, Ticks, Water, Fights, and Recall | Proposed | Seasonal safety hub is now the next ranked priority after publishing the tick prevention guide. |
+| Next cluster | Dog parks and seasonal safety | Proposed | Build a stronger internal path from park discovery to practical safety and local vet support. |
+| Seasonal backup | Wildfire Smoke and Dogs in Canada: When To Skip the Walk | Backlog | Strong fallback during active smoke periods or AQHI spikes. |
 
 ## Working Board
 
@@ -44,8 +44,8 @@ Statuses:
 | 1 | Published | 24 | Pet Insurance in Canada: What Dog Owners Should Compare Before They Buy | `pet-insurance-canada-dog-owners-guide` | Insurance / cost | Dog Insurance Finder, dog cost calculator, vet directory | NAPHIA, Canadian insurance consumer guidance, provider policy examples, vet-cost sources | Monitor performance and add more internal links after related posts are updated | Published at /blog/pet-insurance-canada-dog-owners-guide/ on 2026-07-12. |
 | 2 | Published | 23 | Emergency Vet Bill Checklist Canada: What To Do Before, During, and After a Crisis | `emergency-vet-bill-checklist-canada` | Vet costs / urgent care | Veterinarian directory, emergency vet costs post | Veterinary emergency guidance, clinic billing examples, insurance claim guidance | Monitor performance and add links from vet directory surfaces | Published at /blog/emergency-vet-bill-checklist-canada/ on 2026-07-14. |
 | 3 | Published | 23 | Dog Food Cost Per Day Canada: How To Compare Kibble, Fresh, Raw, and Wet Food Fairly | `dog-food-cost-per-day-canada` | Dog food / cost | Dog food comparison tool, dog cost calculator | Dog food product data, label calorie sources, CFIA labelling references | Monitor performance and add more links from food and calculator surfaces | Published at /blog/dog-food-cost-per-day-canada/ on 2026-07-16. |
-| 4 | Proposed | 22 | Tick Prevention for Dogs in Canada: Month-by-Month Guide by Region | `tick-prevention-dogs-canada` | Seasonal safety | Dog parks, vet directory, safety articles | PHAC Lyme/tick guidance, provincial tick resources, veterinary parasite guidance | Confirm regional structure and seasonality | Best for spring/summer timing. |
-| 5 | Backlog | 22 | Dog Park Safety Checklist Canada: Heat, Smoke, Ticks, Water, Fights, and Recall | `dog-park-safety-checklist-canada` | Dog parks / safety | Dog parks directory, summer safety posts | Heat, smoke, ticks, algae, recall, and dog-park etiquette sources | Map checklist to park pages and existing safety posts | Could become canonical park safety hub. |
+| 4 | Published | 22 | Tick Prevention for Dogs in Canada: Month-by-Month Guide by Region | `tick-prevention-dogs-canada` | Seasonal safety | Dog parks, vet directory, safety articles | PHAC Lyme/tick guidance, provincial tick resources, veterinary parasite guidance | Monitor performance and add more park-page links | Published at /blog/tick-prevention-dogs-canada/ on 2026-07-17. |
+| 5 | Proposed | 22 | Dog Park Safety Checklist Canada: Heat, Smoke, Ticks, Water, Fights, and Recall | `dog-park-safety-checklist-canada` | Dog parks / safety | Dog parks directory, summer safety posts | Heat, smoke, ticks, algae, recall, and dog-park etiquette sources | Map checklist to park pages and existing safety posts | Could become canonical park safety hub. |
 | 6 | Backlog | 21 | How To Read a Dog Food Label in Canada | `how-to-read-dog-food-label-canada` | Dog food | Dog food comparison tool | CFIA labelling resources, AAFCO/FEDIAF context, vet nutrition sources | Define label examples and claims to avoid | Must stay educational, not medical. |
 | 7 | Backlog | 21 | Best Dog Breeds for First-Time Owners in Canada | `best-dog-breeds-first-time-owners-canada` | Breeds | Breed match quiz, breed profiles | Breed data, activity/grooming/trainability criteria, Canadian lifestyle examples | Build transparent ranking rubric | Avoid generic listicle framing. |
 | 8 | Backlog | 20 | Puppy First-Year Cost Canada: Budget, Timeline, and Mistakes To Avoid | `puppy-first-year-cost-canada` | Cost / puppy | Dog cost calculator, vet directory, trainer directory | Vet visit cost ranges, food assumptions, training/grooming estimates | Build month-by-month cost table | Good follow-up to insurance guide. |
@@ -66,7 +66,7 @@ Statuses:
 
 ### Proposed
 
-- Rank 4: Tick Prevention for Dogs in Canada: Month-by-Month Guide by Region
+- Rank 5: Dog Park Safety Checklist Canada: Heat, Smoke, Ticks, Water, Fights, and Recall
 
 ### In Research
 
@@ -93,6 +93,7 @@ Statuses:
 - Rank 1: Pet Insurance in Canada: What Dog Owners Should Compare Before They Buy - /blog/pet-insurance-canada-dog-owners-guide/
 - Rank 2: Emergency Vet Bill Checklist Canada: What To Do Before, During, and After a Crisis - /blog/emergency-vet-bill-checklist-canada/
 - Rank 3: Dog Food Cost Per Day Canada: How To Compare Kibble, Fresh, Raw, and Wet Food Fairly - /blog/dog-food-cost-per-day-canada/
+- Rank 4: Tick Prevention for Dogs in Canada: Month-by-Month Guide by Region - /blog/tick-prevention-dogs-canada/
 
 ### Parked
 
@@ -165,6 +166,7 @@ Use this checklist before marking an article `Ready To Publish`.
 
 | Date | Change |
 | --- | --- |
+| 2026-07-17 | Published Rank 4 at /blog/tick-prevention-dogs-canada/; moved Rank 5 to proposed next article. |
 | 2026-07-16 | Published Rank 3 at /blog/dog-food-cost-per-day-canada/; moved Rank 4 to proposed next article. |
 | 2026-07-14 | Published Rank 2 at /blog/emergency-vet-bill-checklist-canada/; moved Rank 3 to proposed next article. |
 | 2026-07-12 | Published Rank 1 at /blog/pet-insurance-canada-dog-owners-guide/; moved Rank 2 to proposed next article. |

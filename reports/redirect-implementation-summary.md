@@ -1,26 +1,19 @@
 # Redirect Implementation Summary
 
-Generated at: 2026-07-17T02:46:45.528Z
+Generated at: 2026-07-18T02:15:04.762Z
 This report confirms the safe redirect plan has been implemented as permanent static redirects while keeping source records available in the data for later review.
 
 ## Summary
 
-- Implemented redirects: 6
-- Redirect source routes excluded from active content audit: 6
-- Remaining manual canonical review candidates: 7
-- Remaining blocked cleanup candidates: 7
+- Implemented redirects: 0
+- Redirect source routes excluded from active content audit: 10
+- Remaining manual canonical review candidates: 4
+- Remaining blocked cleanup candidates: 4
 - Page count reconciliation: QA counts built HTML files and includes /404.html. Content health counts active indexable content entries and excludes /404.html plus implemented redirect source routes.
 
 ## Implemented Permanent Redirects
 
-| Source Route | Target Route | Confidence | Status |
-| --- | --- | ---: | --- |
-| /dog-parks/charleson-dog-park-8fc05/ | /dog-parks/charleson-dog-park/ | 95 | 301 implemented |
-| /dog-parks/lee-street-park-202b1/ | /dog-parks/lee-street-park/ | 95 | 301 implemented |
-| /dog-parks/new-brighton-dog-park-vancouver-65262/ | /dog-parks/new-brighton-dog-park-vancouver/ | 95 | 301 implemented |
-| /dog-parks/balaclava-dog-park/ | /dog-parks/andy-livingstone-dog-park/ | 80 | 301 implemented |
-| /dog-parks/falaise-dog-park-vancouver/ | /dog-parks/falaise-park-dog-park/ | 80 | 301 implemented |
-| /dog-parks/falaise-dog-park/ | /dog-parks/falaise-park-dog-park/ | 80 | 301 implemented |
+- None
 
 ## Controls
 

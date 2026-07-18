@@ -6,6 +6,30 @@
   "items": [
     {
       "collection": "Blog Posts",
+      "itemName": "Tick Prevention for Dogs in Canada: Month-by-Month Guide by Region",
+      "itemSlug": "tick-prevention-dogs-canada",
+      "fieldName": "Hero Image",
+      "originalWebflowUrl": "",
+      "localFilename": "blog-summer-dog-park-safety-canada-hero.webp",
+      "currentLocalPath": "public/images/blog/blog-summer-dog-park-safety-canada-hero.webp",
+      "originalSourcePath": "public/images/blog/blog-summer-dog-park-safety-canada-hero.webp",
+      "cleanedFilename": "blog-summer-dog-park-safety-canada-hero.webp",
+      "suggestedFilename": "blog-summer-dog-park-safety-canada-hero.webp",
+      "suggestedPublicPath": "/images/blog/blog-summer-dog-park-safety-canada-hero.webp",
+      "publicPath": "/images/blog/blog-summer-dog-park-safety-canada-hero.webp",
+      "publicPathReady": true,
+      "priority": "High",
+      "status": "published",
+      "matchStatus": "published",
+      "confidence": "high",
+      "matchConfidence": "high",
+      "needsOwnerReview": false,
+      "notes": [
+        "Manual mapping added for tick prevention dogs Canada using the existing summer dog park safety hero image."
+      ]
+    },
+    {
+      "collection": "Blog Posts",
       "itemName": "Dog Food Cost Per Day Canada: Compare Kibble, Fresh, Raw, and Wet",
       "itemSlug": "dog-food-cost-per-day-canada",
       "fieldName": "Hero Image",

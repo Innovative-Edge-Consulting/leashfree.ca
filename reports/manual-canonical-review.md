@@ -1,37 +1,30 @@
 # Manual Canonical Review
 
-Generated at: 2026-07-17T02:46:45.528Z
+Generated at: 2026-07-18T02:15:04.762Z
 This is planning only. It recommends title/meta cleanup and source verification for candidates that should not be redirected automatically.
 
 ## Summary
 
-- Manual review candidates: 7
-- Same-name-different-city pages: 6
-- Generated slug candidates not safe to redirect: 3
+- Manual review candidates: 4
+- Same-name-different-city pages: 0
+- Generated slug candidates not safe to redirect: 4
 
 ## Same-Name Different-City Pages
 
-- Confederation Park in Toronto, Ontario: Confederation Park Dog Park in Toronto, Ontario \| LeashFree.ca
-- Confederation Park in Calgary, Alberta: Confederation Park Dog Park in Calgary, Alberta \| LeashFree.ca
-- Hampton Dog Park in Saskatoon, Saskatchewan: Hampton Dog Park in Saskatoon, Saskatchewan \| LeashFree.ca
-- Westview Park in Chilliwack, British Columbia: Westview Park Dog Park in Chilliwack, British Columbia \| LeashFree.ca
-- Westview Park in Maple Ridge, British Columbia: Westview Park Dog Park in Maple Ridge, British Columbia \| LeashFree.ca
-- Westview Park in Winnipeg, Manitoba: Westview Park Dog Park in Winnipeg, Manitoba \| LeashFree.ca
+- None
 
 ## Generated Slug Candidates Not Safe To Redirect
 
-- /dog-parks/confederation-park-075b6/ (30/100): Same park name appears in multiple cities, so this should stay separate and receive unique location-specific title/meta.
+- /dog-parks/charleson-dog-park-8fc05/ (55/100): Generated-looking slug does not meet the safe redirect threshold or lacks a high-confidence duplicate target.
 - /dog-parks/dog-friendly-beach-island-22/ (55/100): Generated-looking slug does not meet the safe redirect threshold or lacks a high-confidence duplicate target.
-- /dog-parks/hampton-dog-park-89f0c/ (30/100): Same park name appears in multiple cities, so this should stay separate and receive unique location-specific title/meta.
+- /dog-parks/lee-street-park-202b1/ (55/100): Generated-looking slug does not meet the safe redirect threshold or lacks a high-confidence duplicate target.
+- /dog-parks/new-brighton-dog-park-vancouver-65262/ (55/100): Generated-looking slug does not meet the safe redirect threshold or lacks a high-confidence duplicate target.
 
 ## Title / Meta Review Recommendations
 
 | Route | Risk | Recommendation | Suggested SEO Title | Meta Description Direction | Why Manual |
 | --- | --- | --- | --- | --- | --- |
-| /dog-parks/confederation-park-075b6/ | same-name-different-city, generated-slug-risk | rename-title-meta | Confederation Park Dog Park in Toronto, Ontario \| LeashFree.ca | Write a source-backed, location-specific description for Confederation Park in Toronto, Ontario that distinguishes this page, confirms park type, rules, and notable amenities, and avoids reusing duplicate template copy. | Same park name appears in multiple cities, so this should stay separate and receive unique location-specific title/meta. |
-| /dog-parks/confederation-park/ | same-name-different-city | rename-title-meta | Confederation Park Dog Park in Calgary, Alberta \| LeashFree.ca | Write a source-backed, location-specific description for Confederation Park in Calgary, Alberta that distinguishes this page, confirms park type, rules, and notable amenities, and avoids reusing duplicate template copy. | Same park name appears in multiple cities, so this should stay separate and receive unique location-specific title/meta. |
+| /dog-parks/charleson-dog-park-8fc05/ | generated-slug-risk | human-review | Charleson Park Dog Park in Vancouver, BC \| LeashFree.ca | Write a source-backed, location-specific description for Charleson Park in Vancouver, BC that distinguishes this page, confirms park type, rules, and notable amenities, and avoids reusing duplicate template copy. | Generated-looking slug does not meet the safe redirect threshold or lacks a high-confidence duplicate target. |
 | /dog-parks/dog-friendly-beach-island-22/ | generated-slug-risk | human-review | Dog-Friendly Beach (Island 22 Riverside) Dog Park in Chilliwack, British Columbia \| LeashFree.ca | Write a source-backed, location-specific description for Dog-Friendly Beach (Island 22 Riverside) in Chilliwack, British Columbia that distinguishes this page, confirms park type, rules, and notable amenities, and avoids reusing duplicate template copy. | Generated-looking slug does not meet the safe redirect threshold or lacks a high-confidence duplicate target. |
-| /dog-parks/hampton-dog-park-89f0c/ | same-name-different-city, generated-slug-risk | rename-title-meta | Hampton Dog Park in Saskatoon, Saskatchewan \| LeashFree.ca | Write a source-backed, location-specific description for Hampton Dog Park in Saskatoon, Saskatchewan that distinguishes this page, confirms park type, rules, and notable amenities, and avoids reusing duplicate template copy. | Same park name appears in multiple cities, so this should stay separate and receive unique location-specific title/meta. |
-| /dog-parks/westview-park-chilliwack/ | same-name-different-city | rename-title-meta | Westview Park Dog Park in Chilliwack, British Columbia \| LeashFree.ca | Write a source-backed, location-specific description for Westview Park in Chilliwack, British Columbia that distinguishes this page, confirms park type, rules, and notable amenities, and avoids reusing duplicate template copy. | Same park name appears in multiple cities, so this should stay separate and receive unique location-specific title/meta. |
-| /dog-parks/westview-park-maple-ridge/ | same-name-different-city | rename-title-meta | Westview Park Dog Park in Maple Ridge, British Columbia \| LeashFree.ca | Write a source-backed, location-specific description for Westview Park in Maple Ridge, British Columbia that distinguishes this page, confirms park type, rules, and notable amenities, and avoids reusing duplicate template copy. | Same park name appears in multiple cities, so this should stay separate and receive unique location-specific title/meta. |
-| /dog-parks/westview-park/ | same-name-different-city | rename-title-meta | Westview Park Dog Park in Winnipeg, Manitoba \| LeashFree.ca | Write a source-backed, location-specific description for Westview Park in Winnipeg, Manitoba that distinguishes this page, confirms park type, rules, and notable amenities, and avoids reusing duplicate template copy. | Same park name appears in multiple cities, so this should stay separate and receive unique location-specific title/meta. |
+| /dog-parks/lee-street-park-202b1/ | generated-slug-risk | human-review | Lee Street Park Dog Park in Guelph, Ontario \| LeashFree.ca | Write a source-backed, location-specific description for Lee Street Park in Guelph, Ontario that distinguishes this page, confirms park type, rules, and notable amenities, and avoids reusing duplicate template copy. | Generated-looking slug does not meet the safe redirect threshold or lacks a high-confidence duplicate target. |
+| /dog-parks/new-brighton-dog-park-vancouver-65262/ | generated-slug-risk | human-review | New Brighton Park Dog Park in Vancouver, BC \| LeashFree.ca | Write a source-backed, location-specific description for New Brighton Park in Vancouver, BC that distinguishes this page, confirms park type, rules, and notable amenities, and avoids reusing duplicate template copy. | Generated-looking slug does not meet the safe redirect threshold or lacks a high-confidence duplicate target. |

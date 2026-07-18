@@ -1,23 +1,16 @@
 # Redirect Plan
 
-Generated at: 2026-07-17T02:46:45.528Z
+Generated at: 2026-07-18T02:15:04.762Z
 This report tracks safe canonical redirects. It does not delete pages, change content, update reviewedOn, update updatedOn, or change sitemap lastmod.
 
 ## Summary
 
-- Redirect-ready candidates: 6
-- Implemented redirects: 6
+- Redirect-ready candidates: 0
+- Implemented redirects: 0
 - Remaining planned redirects: 0
 - Minimum confidence threshold: 80
 - Included only when recommendedAction is redirect-to-canonical, safeCleanup is true, humanReviewRequired is false, and canonicalConfidenceScore is 80 or higher.
 
 ## Planned Redirects
 
-| Source Route | Target Route | Confidence | Reason | Status |
-| --- | --- | ---: | --- | --- |
-| /dog-parks/charleson-dog-park-8fc05/ | /dog-parks/charleson-dog-park/ | 95 | High-confidence duplicate with generated-looking slug; risks: exact-duplicate, generated-slug-risk, title-only-duplicate, meta-only-duplicate | implemented |
-| /dog-parks/lee-street-park-202b1/ | /dog-parks/lee-street-park/ | 95 | High-confidence duplicate with generated-looking slug; risks: exact-duplicate, generated-slug-risk, title-only-duplicate | implemented |
-| /dog-parks/new-brighton-dog-park-vancouver-65262/ | /dog-parks/new-brighton-dog-park-vancouver/ | 95 | High-confidence duplicate with generated-looking slug; risks: exact-duplicate, generated-slug-risk, title-only-duplicate | implemented |
-| /dog-parks/balaclava-dog-park/ | /dog-parks/andy-livingstone-dog-park/ | 80 | High-confidence exact duplicate; risks: exact-duplicate, title-only-duplicate | implemented |
-| /dog-parks/falaise-dog-park-vancouver/ | /dog-parks/falaise-park-dog-park/ | 80 | High-confidence exact duplicate; risks: exact-duplicate, title-only-duplicate, meta-only-duplicate | implemented |
-| /dog-parks/falaise-dog-park/ | /dog-parks/falaise-park-dog-park/ | 80 | High-confidence exact duplicate; risks: exact-duplicate, title-only-duplicate, meta-only-duplicate | implemented |
+- None

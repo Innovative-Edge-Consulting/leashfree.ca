@@ -37,6 +37,8 @@
 /city/:slug/ /dog-parks/:slug/ 301
 /dog-parks/charleson-dog-park-8fc05/ /dog-parks/charleson-dog-park/ 301
 /dog-parks/lee-street-park-202b1/ /dog-parks/lee-street-park/ 301
+/dog-parks/dog-friendly-beach-island-22/ /dog-parks/island-22-dog-park/ 301
+/dog-parks/westview-park-chilliwack/ /dog-parks/chilliwack/ 301
 /dog-parks/new-brighton-dog-park-vancouver-65262/ /dog-parks/new-brighton-dog-park-vancouver/ 301
 /dog-parks/balaclava-dog-park/ /dog-parks/andy-livingstone-dog-park/ 301
 /dog-parks/falaise-dog-park-vancouver/ /dog-parks/falaise-park-dog-park/ 301

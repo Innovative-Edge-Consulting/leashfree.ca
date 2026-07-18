@@ -1,6 +1,6 @@
 # CMS Conversion Report
 
-Generated at: 2026-07-17T02:46:35.754Z
+Generated at: 2026-07-18T02:12:11.434Z
 
 The conversion preserves every source CSV column under each item's `raw` field.
 
@@ -73,7 +73,7 @@ The conversion preserves every source CSV column under each item's `raw` field.
 - Duplicate slugs: 0
 - Missing title/name values: 0
 - Fields mapped: City Name, Slug, SEO Title Tag, Meta Description, Dog Park Etiquettes, Dog Park FAQs, Hero Image, Province, Featured Park 1, Featured Park 2, Featured Park 3, Province Page, Nearby Cities
-- Fields left raw only: Collection ID, Locale ID, Item ID, Archived, Draft, Created On, Updated On, Published On, Intro Paragraph, About Section, Seasonal Tips, Park Rules, City Website
+- Fields left raw only: Collection ID, Locale ID, Item ID, Archived, Draft, Created On, Updated On, Published On, Intro Paragraph, About Section, Seasonal Tips, Park Rules, City Website, Reviewed On
 - Rows with warnings: 0
 
 ## Directories
@@ -104,12 +104,12 @@ The conversion preserves every source CSV column under each item's `raw` field.
 
 - Source: `LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Dog Parks - 683758b0a3f8a696dfc417b0.csv`
 - Output: `parks.json`
-- Items converted: 512
+- Items converted: 519
 - Missing slugs: 0
 - Duplicate slugs: 0
 - Missing title/name values: 0
 - Fields mapped: Park Name, slug, Separate Small Dog Area, Media, City, Province, Tags
-- Fields left raw only: Collection ID, Locale ID, Item ID, Archived, Draft, Created On, Updated On, Published On, Park Header, Park type, Description, Street Address, latitude, longitude, Postal Code, Fenced, Surface type, Size, Water source available, Benches, Shaded area, Waste bins, Bag Dispensers, Parking Available, Washrooms nearby, Operating hours, Seasonal Restrictions, Park Website or Source, Google Maps Link, Notes / Comments, Intro Paragraph
+- Fields left raw only: Collection ID, Locale ID, Item ID, Archived, Draft, Created On, Updated On, Published On, Park Header, Park type, Description, Street Address, latitude, longitude, Postal Code, Fenced, Surface type, Size, Water source available, Benches, Shaded area, Waste bins, Bag Dispensers, Parking Available, Washrooms nearby, Operating hours, Seasonal Restrictions, Park Website or Source, Google Maps Link, Notes / Comments, Intro Paragraph, Reviewed On, Meta Title, Meta Description
 - Rows with warnings: 0
 
 ## Pet Insurance Providers

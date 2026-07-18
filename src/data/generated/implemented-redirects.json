@@ -12,6 +12,30 @@
     "duplicateGroupKey": "park-name-city|lee street park|guelph|ontario"
   },
   {
+    "sourceRoute": "/dog-parks/confederation-park-075b6/",
+    "targetRoute": "/dog-parks/confederation-park-toronto/",
+    "status": 301,
+    "duplicateGroupKey": "park-name-city|confederation park|toronto|ontario"
+  },
+  {
+    "sourceRoute": "/dog-parks/hampton-dog-park-89f0c/",
+    "targetRoute": "/dog-parks/hampton-dog-park-saskatoon/",
+    "status": 301,
+    "duplicateGroupKey": "park-name-city|hampton dog park|saskatoon|saskatchewan"
+  },
+  {
+    "sourceRoute": "/dog-parks/westview-park-chilliwack/",
+    "targetRoute": "/dog-parks/chilliwack/",
+    "status": 301,
+    "duplicateGroupKey": "invalid-dog-park|westview park|chilliwack|british columbia"
+  },
+  {
+    "sourceRoute": "/dog-parks/dog-friendly-beach-island-22/",
+    "targetRoute": "/dog-parks/island-22-dog-park/",
+    "status": 301,
+    "duplicateGroupKey": "same-park-split-record|island 22 dog park|chilliwack|british columbia"
+  },
+  {
     "sourceRoute": "/dog-parks/new-brighton-dog-park-vancouver-65262/",
     "targetRoute": "/dog-parks/new-brighton-dog-park-vancouver/",
     "status": 301,

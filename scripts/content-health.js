@@ -9,8 +9,23 @@ const REPORTS_DIR = path.join(SITE_DIR, "reports");
 const now = new Date();
 const reportWriteWarnings = [];
 
+function mergeManualPosts(generatedPosts, ...manualSources) {
+  const manualPosts = manualSources.flat();
+  const manualSlugs = new Set(manualPosts.map((post) => post.slug).filter(Boolean));
+  return [
+    ...manualPosts.filter((post, index) =>
+      manualPosts.findIndex((candidate) => candidate.slug === post.slug) === index),
+    ...generatedPosts.filter((post) => !manualSlugs.has(post.slug))
+  ];
+}
+
 const data = {
-  posts: readJson(path.join(GENERATED_DIR, "blog-posts.json")),
+  posts: mergeManualPosts(
+    readJson(path.join(GENERATED_DIR, "blog-posts.json")),
+    readJson(path.join(SITE_DIR, "src", "data", "current-blog-posts.json")),
+    readJson(path.join(SITE_DIR, "src", "data", "cloudflare-recovered-blog-posts.json")),
+    readJson(path.join(SITE_DIR, "src", "data", "manual-blog-posts.json"))
+  ),
   breeds: readJson(path.join(GENERATED_DIR, "dog-breeds.json")),
   groups: readJson(path.join(GENERATED_DIR, "breed-groups.json")),
   parks: readJson(path.join(GENERATED_DIR, "parks.json")),
@@ -909,7 +924,7 @@ function writeReport(file, content) {
 const allEntries = sectionConfigs.flatMap((config) => config.entries);
 const activeEntries = allEntries.filter((entry) => !implementedRedirectSourceRoutes.has(normalizeRoutePath(entry.routePath)));
 const duplicates = duplicateMaps(activeEntries);
-const possibleDuplicateCounts = allEntries.reduce((acc, entry) => {
+const possibleDuplicateCounts = activeEntries.reduce((acc, entry) => {
   const key = duplicateDataKey(entry);
   acc.set(key, (acc.get(key) || 0) + 1);
   return acc;
