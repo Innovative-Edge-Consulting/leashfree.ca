@@ -17,9 +17,53 @@ import { excerpt, websiteSchema } from "../utils/content.js";
 import { resolveMedia } from "../utils/media.js";
 import { withoutRedirectedRecords } from "../utils/redirects.js";
 
-const featuredCities = cities.slice(0, 4);
 const activeParks = withoutRedirectedRecords(parks);
-const featuredParks = activeParks.slice(0, 6);
+const featuredCitySlugs = ["toronto", "vancouver", "calgary", "montreal"];
+const featuredCities = featuredCitySlugs
+  .map((slug) => cities.find((city) => city.slug === slug))
+  .filter(Boolean);
+
+const parkActivityDate = (park) => {
+  const rawDate = park.raw["Reviewed On"] || park.raw["Updated On"] || park.raw["Published On"];
+  const timestamp = Date.parse(rawDate || "");
+  return Number.isNaN(timestamp) ? 0 : timestamp;
+};
+
+const parkActivityLabel = (park) => {
+  const reviewedOn = park.raw["Reviewed On"];
+  const rawDate = reviewedOn || park.raw["Updated On"] || park.raw["Published On"];
+  const timestamp = Date.parse(rawDate || "");
+  if (Number.isNaN(timestamp)) return "";
+
+  const date = new Intl.DateTimeFormat("en-CA", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+    timeZone: "UTC"
+  }).format(timestamp);
+
+  return `${reviewedOn ? "Verified" : "Updated"} ${date}`;
+};
+
+const featuredParks = [...activeParks]
+  .sort((a, b) => parkActivityDate(b) - parkActivityDate(a) || a.name.localeCompare(b.name))
+  .slice(0, 6);
+const originalParkHeroImages = {
+  "battleford-off-leash-dog-park": "/images/dog-parks/battleford-off-leash-dog-park-original.png",
+  "confederation-park-toronto": "/images/dog-parks/confederation-park-toronto-original.png",
+  "hampton-dog-park-saskatoon": "/images/dog-parks/hampton-dog-park-saskatoon-original.png",
+  "humboldt-off-leash-dog-park": "/images/dog-parks/humboldt-off-leash-dog-park-original.png",
+  "king-city-off-leash-dog-park": "/images/dog-parks/king-city-off-leash-dog-park-original.png",
+  "island-22-dog-park": "/images/dog-parks/island-22-dog-park-original.png",
+  "lee-street-park": "/images/dog-parks/lee-street-park-guelph-original.png",
+  "lloydminster-off-leash-dog-park": "/images/dog-parks/lloydminster-off-leash-dog-park-original.png",
+  "martensville-dog-park": "/images/dog-parks/martensville-dog-park-original.png",
+  "meadow-lake-off-leash-dog-park": "/images/dog-parks/meadow-lake-off-leash-dog-park-original.png",
+  "r-h-brekko-lake-off-leash-area": "/images/dog-parks/r-h-brekko-lake-off-leash-area-original.png",
+  "wiggly-field-off-leash-dog-park": "/images/dog-parks/wiggly-field-off-leash-dog-park-original.png",
+  "westview-park-maple-ridge": "/images/dog-parks/westview-park-maple-ridge-original.png",
+  "westview-park": "/images/dog-parks/westview-park-winnipeg-original.png"
+};
 const homeHeroImage = "/images/home/leashfree-canada-dog-parks-hero-1600.jpg";
 const homeHeroAlt = "Dogs walking off leash in a Toronto park with the city skyline, representing Canadian dog parks and LeashFree.ca resources";
 const homeHeroSizes = "(min-width: 960px) 44vw, 100vw";
@@ -214,7 +258,7 @@ const resourceCards = [
 
   <Section
     title="Find off-leash dog parks across Canada"
-    intro={`Browse ${activeParks.length} dog park pages, city guides, and province guides with locations, amenities, and local details.`}
+    intro={`Browse ${activeParks.length} dog park pages, city guides, and province guides, including our most recently added and verified local information.`}
     alt
   >
     <div class="grid compact">
@@ -245,9 +289,12 @@ const resourceCards = [
           title={park.name}
           href={`/dog-parks/${park.slug}/`}
           description={excerpt(park.description, park.raw["Street Address"])}
-          image={resolveMedia(park, undefined, mediaMap).src}
+          image={originalParkHeroImages[park.slug] || resolveMedia(park, undefined, mediaMap).src}
           imageAlt={`${park.name} dog park`}
-          meta={[park.raw.City, park.raw.Province].filter(Boolean).join(", ")}
+          meta={[
+            [park.raw.City, park.raw.Province].filter(Boolean).join(", "),
+            parkActivityLabel(park)
+          ].filter(Boolean).join(" · ")}
           ctaLabel="View park"
         />
       ))}

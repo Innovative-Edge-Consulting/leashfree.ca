@@ -2398,10 +2398,10 @@
     "name": "Meadow Lake",
     "slug": "meadow-lake",
     "title": "Meadow Lake",
-    "seoTitle": "Off-Leash Dog Park in Meadow Lake SK | LeashFree.ca",
-    "metaDescription": "Visit the fenced off-leash dog park in Meadow Lake, SK — a safe and friendly space where dogs can run free and socialize in northwest Saskatchewan.",
-    "description": "Visit the fenced off-leash dog park in Meadow Lake, SK — a safe and friendly space where dogs can run free and socialize in northwest Saskatchewan.",
-    "body": "<p>Meadow Lake is home to a <strong id=\"\">fenced off-leash dog park</strong> situated in the southern part of the city near Lions Park. This dog-friendly space includes a grassy open field, perimeter fencing, and basic waste disposal amenities. It’s a popular gathering place for local dog owners and their pets. The City encourages responsible pet ownership and expects all park users to clean up after their dogs and ensure they are under control.</p>",
+    "seoTitle": "Dog Parks in Meadow Lake, Saskatchewan | Off-Leash Guide",
+    "metaDescription": "Source-backed guide to dog parks in Meadow Lake, Saskatchewan, focused on dog licensing, city animal-control expectations, and conservative off-leash park planning notes.",
+    "description": "Source-backed guide to dog parks in Meadow Lake, Saskatchewan, focused on dog licensing, city animal-control expectations, and conservative off-leash park planning notes.",
+    "body": "<p>The City of Meadow Lake currently says dog licences are required for dogs whose primary residence is within city limits and must be renewed each calendar year by February 28. The city's urban wildlife and animal-control guidance also makes clear that control of domestic pets, especially dogs, is a city service delivered in cooperation with the Humane Society. That is much stronger than generic prose because it gives owners a real municipal compliance checklist before they ever head to an off-leash area.</p><p>For park context, the city parks page identifies Lions Park as a major community recreation space with a walking path, public shelter, amphitheatre, and large-event role, but the reviewed official city pages do not clearly list a dedicated dog park there. A separate community source from the Meadow Lake & District Humane Society is more specific about off-leash park history: in 2013 the group reported that the City had donated land on the far east side of Meadow Lake, near the compost site, for the off-leash dog park project, and in 2017 the Society referred to that effort as having resulted in an off-leash dog park for the City of Meadow Lake. Because that evidence is partly historical and partly community-based rather than a current official city park page, this guide stays intentionally conservative about the exact site layout and features.</p>",
     "collection": "City Pages",
     "sourceFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - City Pages - 68419a1c56454ae93923d2e4.csv",
     "canonicalUrl": "https://leashfree.ca/dog-parks/meadow-lake/",
@@ -2411,8 +2411,15 @@
       "Province": [
         "Saskatchewan"
       ],
+      "Featured Park 1": [
+        "meadow-lake-off-leash-dog-park"
+      ],
       "Province Page": [
         "https://leashfree.ca/saskatchewan-dog-parks"
+      ],
+      "Nearby Cities": [
+        "Lloydminster",
+        "North Battleford"
       ]
     },
     "raw": {
@@ -2424,25 +2431,25 @@
       "Archived": "false",
       "Draft": "false",
       "Created On": "Sun Jul 13 2025 01:38:56 GMT+0000 (Coordinated Universal Time)",
-      "Updated On": "Mon Sep 08 2025 13:21:13 GMT+0000 (Coordinated Universal Time)",
-      "Published On": "Mon Sep 08 2025 13:27:50 GMT+0000 (Coordinated Universal Time)",
+      "Updated On": "Sat Jul 18 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "Published On": "Sat Jul 18 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "Province": "Saskatchewan",
-      "SEO Title Tag": "Off-Leash Dog Park in Meadow Lake SK | LeashFree.ca",
-      "Meta Description": "Visit the fenced off-leash dog park in Meadow Lake, SK — a safe and friendly space where dogs can run free and socialize in northwest Saskatchewan.",
+      "SEO Title Tag": "Dog Parks in Meadow Lake, Saskatchewan | Off-Leash Guide",
+      "Meta Description": "Source-backed guide to dog parks in Meadow Lake, Saskatchewan, focused on dog licensing, city animal-control expectations, and conservative off-leash park planning notes.",
       "Hero Image": "",
-      "Intro Paragraph": "<p>Located in Saskatchewan’s northwest, <strong id=\"\">Meadow Lake’s off-leash dog park</strong> offers a fenced area where dogs can roam safely and enjoy outdoor exercise year-round.</p>",
-      "About Section": "<p>Meadow Lake is home to a <strong id=\"\">fenced off-leash dog park</strong> situated in the southern part of the city near Lions Park. This dog-friendly space includes a grassy open field, perimeter fencing, and basic waste disposal amenities. It’s a popular gathering place for local dog owners and their pets. The City encourages responsible pet ownership and expects all park users to clean up after their dogs and ensure they are under control.</p>",
-      "Featured Park 1": "",
+      "Intro Paragraph": "<p>Meadow Lake has enough real source material to improve this page substantially, but not enough to support the old generic claims about fencing, hours, and park amenities. The stronger approach is to build the city guide around what the City of Meadow Lake clearly publishes today: dog licensing, public animal-control expectations, park context, and cautious location guidance for the community off-leash park history.</p>",
+      "About Section": "<p>The City of Meadow Lake currently says dog licences are required for dogs whose primary residence is within city limits and must be renewed each calendar year by February 28. The city's urban wildlife and animal-control guidance also makes clear that control of domestic pets, especially dogs, is a city service delivered in cooperation with the Humane Society. That is much stronger than generic prose because it gives owners a real municipal compliance checklist before they ever head to an off-leash area.</p><p>For park context, the city parks page identifies Lions Park as a major community recreation space with a walking path, public shelter, amphitheatre, and large-event role, but the reviewed official city pages do not clearly list a dedicated dog park there. A separate community source from the Meadow Lake & District Humane Society is more specific about off-leash park history: in 2013 the group reported that the City had donated land on the far east side of Meadow Lake, near the compost site, for the off-leash dog park project, and in 2017 the Society referred to that effort as having resulted in an off-leash dog park for the City of Meadow Lake. Because that evidence is partly historical and partly community-based rather than a current official city park page, this guide stays intentionally conservative about the exact site layout and features.</p>",
+      "Featured Park 1": "meadow-lake-off-leash-dog-park",
       "Featured Park 2": "",
       "Featured Park 3": "",
-      "Seasonal Tips": "<p id=\"\">- Winter: Bring traction gear if icy; snow may pile near entrances.<br>- Spring: Expect wet grass and mud—plan ahead.<br>- Summer: Mornings and evenings are cooler for play.<br>- Fall: Crisp air and dry leaves make it ideal for longer visits.</p>",
-      "Park Rules": "",
-      "City Website": "",
+      "Seasonal Tips": "<ul><li><strong>Winter:</strong> Northwest Saskatchewan cold, wind, and snowdrift can change access quickly, so keep dogs leashed until you are fully inside any confirmed off-leash area.</li><li><strong>Spring:</strong> Thaw conditions can make east-side utility and compost-adjacent ground soft or muddy, so bring towels and manage exits carefully.</li><li><strong>Summer:</strong> Bring your own water unless you verify a safe on-site source. Open-sky exposure and insects can affect longer visits.</li><li><strong>Fall:</strong> Cooler temperatures are often best for longer outings, but shorter daylight means you should confirm footing and visibility before late-day visits.</li></ul>",
+      "Park Rules": "<p><strong>Dog licensing:</strong> The City of Meadow Lake says dogs whose primary residence is within city limits must be licensed and renewed annually by February 28.</p><p><strong>Public control:</strong> The city says domestic pet control, especially regarding dogs, is part of municipal service delivery in cooperation with the Humane Society.</p><p><strong>Wildlife-aware handling:</strong> Meadow Lake's urban-wildlife guidance warns that off-leash dogs in on-leash areas can trigger conflict with coyotes and other wildlife, so leash discipline outside designated off-leash use matters.</p><p><strong>Conservative park use:</strong> Because the reviewed source set does not include a current official city dog-park rules board, visitors should follow any posted signage on arrival and default to conservative leash control outside the designated off-leash area.</p>",
+      "City Website": "https://www.meadowlake.ca/permits-and-licensing",
       "Province Page": "https://leashfree.ca/saskatchewan-dog-parks",
-      "Dog Park Etiquettes": "<p id=\"\"><strong id=\"\">1. Is the dog park fenced?</strong></p><p id=\"\">Yes. The off-leash area in Meadow Lake is **fully enclosed** with a gated entrance.</p><p id=\"\"><strong id=\"\">2. Do I need to pick up after my dog?</strong></p><p id=\"\">Absolutely. Waste bags are not always provided, so **please bring your own**.</p><p id=\"\"><strong id=\"\">3. Are dogs allowed off-leash elsewhere?</strong></p><p id=\"\">No. Dogs must remain **on-leash in all other public parks**.</p><p id=\"\"><strong id=\"\">4. Can children enter the dog park?</strong></p><p id=\"\">Yes, but they must be **supervised by an adult**.</p><p id=\"\"><strong id=\"\">5. What types of dogs are welcome?</strong></p><p id=\"\">All sizes and breeds are welcome, but **aggressive dogs are not allowed**.</p>",
-      "Dog Park FAQs": "<p id=\"\"><strong id=\"\">1. Where is the dog park located?</strong></p><p id=\"\">Near **Lions Park**, south of the city centre in Meadow Lake.</p><p id=\"\"><strong id=\"\">2. Is the park open year-round?</strong></p><p id=\"\">Yes. It is **accessible in all seasons**, but conditions vary.</p><p id=\"\"><strong id=\"\">3. Is it safe for small dogs?</strong></p><p id=\"\">Yes. It’s a **shared space**, so owners should ensure their dogs are comfortable.</p><p id=\"\"><strong id=\"\">4. Are there water or washroom facilities?</strong></p><p id=\"\">No on-site water—**bring your own for your pet**.</p><p id=\"\"><strong id=\"\">5. Are there dog events or meetups?</strong></p><p id=\"\">Occasionally. Check local community boards for updates.</p><p id=\"\"><strong id=\"\">6. What are the hours?</strong></p><p id=\"\">The park is open **from sunrise to sunset**.</p>",
-      "Nearby Cities": "",
-      "Reviewed On": ""
+      "Dog Park Etiquettes": "<p><strong>1. Start with licensing, not assumptions.</strong></p><p>Meadow Lake clearly publishes annual dog-licensing requirements, so responsible off-leash use starts with municipal compliance.</p><p><strong>2. Treat area context carefully.</strong></p><p>The strongest reviewed location history points to the far east side near the municipal compost site on 9th Avenue East, but current official city park-detail pages do not clearly publish a detailed dog-park amenity sheet.</p><p><strong>3. Bring your own essentials.</strong></p><p>Because current source material does not clearly confirm water, benches, bins, or washrooms for the off-leash site, plan as if you need to be self-sufficient.</p><p><strong>4. Respect wildlife realities.</strong></p><p>The city explicitly warns that off-leash dogs in the wrong setting can increase conflict with coyotes and other wildlife.</p><p><strong>5. Keep transitions controlled.</strong></p><p>If the park approach is in a light-service or edge-of-town area, calm entries and exits matter as much as recall inside the off-leash space.</p>",
+      "Dog Park FAQs": "<p><strong>1. Does Meadow Lake require dog licences?</strong></p><p>Yes. The City says dogs whose primary residence is within city limits must be licensed and renewed each year by February 28.</p><p><strong>2. Does Meadow Lake have an off-leash dog park?</strong></p><p>Community historical material from the Meadow Lake & District Humane Society says the City's dog-park fundraising effort resulted in an off-leash dog park, but the reviewed current official city pages do not provide a full dedicated dog-park detail page.</p><p><strong>3. Where is the off-leash area believed to be?</strong></p><p>The strongest reviewed location history places the project on the far east side of Meadow Lake near the municipal compost site. The city separately confirms that its compost site is on 9th Avenue East.</p><p><strong>4. Why is this guide conservative about amenities?</strong></p><p>Because the current city source set supports licensing, pet-control expectations, and general area context more clearly than it supports specific claims about fencing, hours, benches, or water.</p><p><strong>5. What should I do before visiting?</strong></p><p>Make sure your dog is licensed, bring your own supplies, and verify current signage and site conditions on arrival.</p>",
+      "Nearby Cities": "Lloydminster, North Battleford",
+      "Reviewed On": "Sat Jul 18 2026 00:00:00 GMT+0000 (Coordinated Universal Time)"
     },
     "warnings": []
   },

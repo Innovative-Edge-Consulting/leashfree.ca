@@ -1,10 +1,10 @@
 # Content Review Summary
 
-Generated at: 2026-07-18T02:15:04.762Z
-- Total pages audited: 1090
-- Stale pages: 653
-- Thin pages: 681
-- Missing source URLs: 114
+Generated at: 2026-07-18T15:23:38.079Z
+- Total pages audited: 1093
+- Stale pages: 652
+- Thin pages: 680
+- Missing source URLs: 113
 - Duplicate title groups: 1
 - Duplicate meta description groups: 0
 - Missing updatedOn: 0
@@ -25,26 +25,26 @@ Generated at: 2026-07-18T02:15:04.762Z
 | Section | URLs | Risk | Avg Score | Avg Quality | Complete | Stale | Thin | Missing Sources | Data Risk |
 | --- | ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | Core | 10 | High | 40 | 100 | 0 | 10 | 0 | 0 | 0 |
-| Dog Parks | 511 | Very high | 77 | 88 | 7 | 496 | 444 | 40 | 0 |
-| Dog Park Locations | 92 | High | 93 | 78 | 6 | 81 | 74 | 74 | 0 |
+| Dog Parks | 512 | Very high | 77 | 88 | 7 | 496 | 444 | 40 | 0 |
+| Dog Park Locations | 92 | High | 92 | 78 | 7 | 80 | 73 | 73 | 0 |
 | Directory | 66 | Medium-high | 47 | 100 | 0 | 66 | 16 | 0 | 6 |
-| Blog | 53 | Medium | 12 | 100 | 48 | 0 | 1 | 0 | 4 |
+| Blog | 55 | Medium | 12 | 100 | 50 | 0 | 1 | 0 | 4 |
 | Dog Breeds | 319 | Medium-low | 17 | 100 | 210 | 0 | 107 | 0 | 2 |
 | Dog Names | 39 | Low | 29 | 100 | 0 | 0 | 39 | 0 | 0 |
 
 ## Quality Status Counts
 
 - thin-content: 615
-- complete: 271
-- missing-source: 114
-- needs-review: 78
+- complete: 274
+- missing-source: 113
+- needs-review: 79
 - data-quality-risk: 12
 
 ## Issue Classification Counts
 
-- needs-content-expansion: 727
+- needs-content-expansion: 726
 - needs-human-review: 668
-- needs-source-research: 114
+- needs-source-research: 113
 - possible-duplicate: 12
 - safe-technical-fix: 10
 
@@ -55,7 +55,6 @@ Generated at: 2026-07-18T02:15:04.762Z
 | 110 | 64 | missing-source | Dog Park Locations | /dog-parks/estevan/ | stale 313 days; thin content 377 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn, parkListingGrid |
 | 110 | 64 | missing-source | Dog Park Locations | /dog-parks/gatineau/ | stale 313 days; thin content 364 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn, parkListingGrid |
 | 110 | 64 | missing-source | Dog Park Locations | /dog-parks/laval/ | stale 313 days; thin content 364 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn, parkListingGrid |
-| 110 | 64 | missing-source | Dog Park Locations | /dog-parks/meadow-lake/ | stale 313 days; thin content 357 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn, parkListingGrid |
 | 107 | 73 | missing-source | Dog Park Locations | /dog-parks/amherst/ | stale 313 days; thin content 323 words; missing official/source URL; missing city fields: officialSource, reviewedOn, parkListingGrid |
 | 107 | 73 | missing-source | Dog Park Locations | /dog-parks/barrie/ | stale 313 days; thin content 435 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
 | 107 | 73 | missing-source | Dog Park Locations | /dog-parks/belleville/ | stale 313 days; thin content 384 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
@@ -77,6 +76,7 @@ Generated at: 2026-07-18T02:15:04.762Z
 | 107 | 73 | missing-source | Dog Park Locations | /dog-parks/lethbridge/ | stale 313 days; thin content 430 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
 | 107 | 73 | missing-source | Dog Park Locations | /dog-parks/medicine-hat/ | stale 313 days; thin content 409 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
 | 107 | 73 | missing-source | Dog Park Locations | /dog-parks/melfort/ | stale 313 days; thin content 299 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
+| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/melville/ | stale 313 days; thin content 354 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
 
 ## Top Pages Closest to Completion
 
@@ -174,7 +174,6 @@ Generated at: 2026-07-18T02:15:04.762Z
 - /dog-parks/estevan/ (377/450 words)
 - /dog-parks/gatineau/ (364/450 words)
 - /dog-parks/laval/ (364/450 words)
-- /dog-parks/meadow-lake/ (357/450 words)
 - /dog-parks/amherst/ (323/450 words)
 - /dog-parks/barrie/ (435/450 words)
 - /dog-parks/belleville/ (384/450 words)
@@ -196,13 +195,13 @@ Generated at: 2026-07-18T02:15:04.762Z
 - /dog-parks/lethbridge/ (430/450 words)
 - /dog-parks/medicine-hat/ (409/450 words)
 - /dog-parks/melfort/ (299/450 words)
+- /dog-parks/melville/ (354/450 words)
 
 ## Missing Source URL Sample
 
 - /dog-parks/estevan/ (City Pages)
 - /dog-parks/gatineau/ (City Pages)
 - /dog-parks/laval/ (City Pages)
-- /dog-parks/meadow-lake/ (City Pages)
 - /dog-parks/amherst/ (City Pages)
 - /dog-parks/barrie/ (City Pages)
 - /dog-parks/belleville/ (City Pages)
@@ -224,13 +223,13 @@ Generated at: 2026-07-18T02:15:04.762Z
 - /dog-parks/lethbridge/ (City Pages)
 - /dog-parks/medicine-hat/ (City Pages)
 - /dog-parks/melfort/ (City Pages)
+- /dog-parks/melville/ (City Pages)
 
 ## City Pages Missing Official Sources
 
 - /dog-parks/estevan/ (110)
 - /dog-parks/gatineau/ (110)
 - /dog-parks/laval/ (110)
-- /dog-parks/meadow-lake/ (110)
 - /dog-parks/amherst/ (107)
 - /dog-parks/barrie/ (107)
 - /dog-parks/belleville/ (107)
@@ -252,6 +251,7 @@ Generated at: 2026-07-18T02:15:04.762Z
 - /dog-parks/lethbridge/ (107)
 - /dog-parks/medicine-hat/ (107)
 - /dog-parks/melfort/ (107)
+- /dog-parks/melville/ (107)
 
 ## Park Pages Missing Key Amenity Fields
 
@@ -284,6 +284,6 @@ Generated at: 2026-07-18T02:15:04.762Z
 ## Stale Pages by Content Type
 
 - Dog Parks: 496
-- City Pages: 81
+- City Pages: 80
 - Directories: 66
 - Core: 10

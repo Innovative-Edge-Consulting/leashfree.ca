@@ -6,6 +6,25 @@
   "items": [
     {
       "collection": "Blog Posts",
+      "itemName": "Wildfire Smoke and Dogs in Ontario: When to Skip the Walk",
+      "itemSlug": "wildfire-smoke-dogs-canada",
+      "fieldName": "Hero Image",
+      "localFilename": "blog-wildfire-smoke-dogs-ontario-hero.png",
+      "currentLocalPath": "public/images/blog/blog-wildfire-smoke-dogs-ontario-hero.png",
+      "publicPath": "/images/blog/blog-wildfire-smoke-dogs-ontario-hero.png?v=20260718",
+      "publicPathReady": true,
+      "priority": "High",
+      "status": "published",
+      "matchStatus": "published",
+      "confidence": "high",
+      "matchConfidence": "high",
+      "needsOwnerReview": false,
+      "notes": [
+        "Generated dedicated wildfire-smoke hero image added 2026-07-18."
+      ]
+    },
+    {
+      "collection": "Blog Posts",
       "itemName": "Tick Prevention for Dogs in Canada: Month-by-Month Guide by Region",
       "itemSlug": "tick-prevention-dogs-canada",
       "fieldName": "Hero Image",
