@@ -6,7 +6,7 @@ import Section from "../components/Section.astro";
 const quickLinks = [
   { href: "/dog-parks/", label: "Dog parks by city and province" },
   { href: "/dog-breeds/", label: "Dog breed profiles" },
-  { href: "/dog-breeds/", label: "Breed groups" },
+  { href: "/dog-breeds/group/", label: "Breed groups" },
   { href: "/dog-names/", label: "Dog name ideas" },
   { href: "/resources/", label: "Resources and tools" },
   { href: "/blog/", label: "Blog articles" },
@@ -14,7 +14,7 @@ const quickLinks = [
 ];
 ---
 
-<Layout title="Page Not Found" description="The requested LeashFree.ca page was not found." canonical="https://leashfree.ca/404/">
+<Layout title="Page Not Found" description="The requested LeashFree.ca page was not found." robots="noindex, follow">
   <section class="page-header">
     <div class="container narrow">
       <div class="eyebrow">404</div>

@@ -1,4 +1,5 @@
 ---
+import OptimizedImage from "./OptimizedImage.astro";
 import { resolveMedia } from "../utils/media.js";
 
 interface Props {
@@ -106,7 +107,7 @@ const similarBreeds = selected.slice(0, maxItems);
             const size = breed?.raw?.["Size Category"] || "Size";
             return (
               <a class="similar-breeds-card" href={`/dog-breeds/${breed.slug}/`}>
-                <img class="similar-breeds-media" src={image.src} alt={`${breed.name} dog breed`} loading="lazy" decoding="async" />
+                <OptimizedImage class="similar-breeds-media" src={image.src} alt={`${breed.name} dog breed`} loading="lazy" decoding="async" sizes="240px" />
                 <div class="similar-breeds-body">
                   <h3>{breed.name}</h3>
                   <p>{group} · {size}</p>

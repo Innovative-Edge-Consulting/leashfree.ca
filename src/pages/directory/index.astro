@@ -3,6 +3,7 @@ import Card from "../../components/Card.astro";
 import BusinessDirectorySearch from "../../components/BusinessDirectorySearch.astro";
 import Hero from "../../components/Hero.astro";
 import Layout from "../../components/Layout.astro";
+import OptimizedImage from "../../components/OptimizedImage.astro";
 import Section from "../../components/Section.astro";
 import mediaMap from "../../data/media-map.json";
 import directories from "../../data/generated/directories.json";
@@ -72,7 +73,7 @@ const categories = Object.keys(DIRECTORY_CATEGORY_LABELS).map((slug) => {
     <div class="directory-category-grid">
       {categories.map((category) => (
         <article class="directory-category-card">
-          <img src={category.image} alt={`${category.title} category`} loading="lazy" decoding="async" />
+          <OptimizedImage src={category.image} alt={`${category.title} category`} loading="lazy" decoding="async" sizes="(min-width: 1200px) 280px, (min-width: 720px) 50vw, 100vw" />
           <div class="directory-category-card-body">
             <p class="small">{category.status}</p>
             <h3><a href={category.href}>{category.title}</a></h3>

@@ -1,5 +1,6 @@
 ---
 import HeaderSearch from "./HeaderSearch.astro";
+import OptimizedImage from "./OptimizedImage.astro";
 
 const links = [
   { href: "/dog-parks/", label: "Dog Parks" },
@@ -42,7 +43,7 @@ const resourceLinks = [
 <header class="site-header">
   <div class="container nav">
     <a class="brand" href="/" aria-label="LeashFree.ca home">
-      <img class="brand-logo" src="/images/general/leashfree-logo.png" alt="" width="42" height="42" />
+      <OptimizedImage class="brand-logo" src="/images/general/leashfree-logo.png" alt="" width={42} height={42} />
       <span>LeashFree.ca</span>
     </a>
     <nav class="nav-links" aria-label="Main navigation">

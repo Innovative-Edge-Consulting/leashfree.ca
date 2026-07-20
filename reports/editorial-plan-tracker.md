@@ -1,6 +1,6 @@
 # LeashFree.ca Editorial Plan Tracker
 
-Last updated: 2026-07-18
+Last updated: 2026-07-20
 
 Source strategy report: `reports/editorial-backlog-2026-07-11.md`
 
@@ -33,8 +33,8 @@ Statuses:
 
 | Slot | Item | Status | Decision |
 | --- | --- | --- | --- |
-| Next article | How To Read a Dog Food Label in Canada | Backlog | Next ranked opportunity after publishing the dog-park safety hub. |
-| Next cluster | Dog food and nutrition decisions | Backlog | Use the comparison tool to turn label literacy into a practical Canadian shopping workflow. |
+| Next article | Puppy First-Year Cost Canada: Budget, Timeline, and Mistakes To Avoid | Backlog | Rank 7 is published; the next priority extends the cost and ownership-planning cluster with a month-by-month puppy budget. |
+| Next cluster | Puppy ownership costs | Backlog | Route puppy-intent readers into the dog cost calculator, insurance guide, vet directory, and trainer directory. |
 | Seasonal backup | Wildfire Smoke and Dogs in Canada: When To Skip the Walk | Backlog | Strong fallback during active smoke periods or AQHI spikes. |
 
 ## Working Board
@@ -46,8 +46,8 @@ Statuses:
 | 3 | Published | 23 | Dog Food Cost Per Day Canada: How To Compare Kibble, Fresh, Raw, and Wet Food Fairly | `dog-food-cost-per-day-canada` | Dog food / cost | Dog food comparison tool, dog cost calculator | Dog food product data, label calorie sources, CFIA labelling references | Monitor performance and add more links from food and calculator surfaces | Published at /blog/dog-food-cost-per-day-canada/ on 2026-07-16. |
 | 4 | Published | 22 | Tick Prevention for Dogs in Canada: Month-by-Month Guide by Region | `tick-prevention-dogs-canada` | Seasonal safety | Dog parks, vet directory, safety articles | PHAC Lyme/tick guidance, provincial tick resources, veterinary parasite guidance | Monitor performance and add more park-page links | Published at /blog/tick-prevention-dogs-canada/ on 2026-07-17. |
 | 5 | Published | 22 | Dog Park Safety Checklist Canada: Heat, Smoke, Ticks, Water, Fights, and Recall | `dog-park-safety-checklist-canada` | Dog parks / safety | Dog parks directory, summer safety posts | Heat, smoke, ticks, algae, recall, and dog-park etiquette sources | Monitor performance and add park-page links | Published at /blog/dog-park-safety-checklist-canada/ on 2026-07-18. |
-| 6 | Backlog | 21 | How To Read a Dog Food Label in Canada | `how-to-read-dog-food-label-canada` | Dog food | Dog food comparison tool | CFIA labelling resources, AAFCO/FEDIAF context, vet nutrition sources | Define label examples and claims to avoid | Must stay educational, not medical. |
-| 7 | Backlog | 21 | Best Dog Breeds for First-Time Owners in Canada | `best-dog-breeds-first-time-owners-canada` | Breeds | Breed match quiz, breed profiles | Breed data, activity/grooming/trainability criteria, Canadian lifestyle examples | Build transparent ranking rubric | Avoid generic listicle framing. |
+| 6 | Published | 21 | How To Read a Dog Food Label in Canada | `how-to-read-dog-food-label-canada` | Dog food | Dog food comparison tool | CFIA labelling resources, AAFCO/FEDIAF context, vet nutrition sources | Monitor performance and add links from food and calculator surfaces | Published at /blog/how-to-read-dog-food-label-canada/ on 2026-07-19. |
+| 7 | Published | 21 | Best Dog Breeds for First-Time Owners in Canada | `best-dog-breeds-first-time-owners-canada` | Breeds | Breed match quiz, breed profiles | CKC breed profiles, activity/grooming/trainability criteria, Canadian lifestyle examples | Monitor performance and add links from breed directory and quiz surfaces | Published at /blog/best-dog-breeds-first-time-owners-canada/ on 2026-07-20 with a dedicated generated hero image. |
 | 8 | Backlog | 20 | Puppy First-Year Cost Canada: Budget, Timeline, and Mistakes To Avoid | `puppy-first-year-cost-canada` | Cost / puppy | Dog cost calculator, vet directory, trainer directory | Vet visit cost ranges, food assumptions, training/grooming estimates | Build month-by-month cost table | Good follow-up to insurance guide. |
 | 9 | Backlog | 20 | When Should You Go to the Emergency Vet? Symptom Guide for Canadian Dog Owners | `when-to-go-emergency-vet-dog-canada` | Health / urgent care | Veterinarian directory | Veterinary emergency symptom sources | Draft medically conservative symptom matrix | Needs careful disclaimers. |
 | 10 | Backlog | 19 | Best Dog Food for Sensitive Stomachs in Canada: What To Ask Your Vet and How To Compare Labels | `best-dog-food-sensitive-stomachs-canada` | Dog food / health | Dog food comparison tool, vet directory | Vet nutrition sources, product label examples, exclusion diet caveats | Decide whether to avoid "best" in final title | High intent but higher medical-risk. |
@@ -96,6 +96,8 @@ Statuses:
 - Rank 4: Tick Prevention for Dogs in Canada: Month-by-Month Guide by Region - /blog/tick-prevention-dogs-canada/
 - Rank 5: Dog Park Safety Checklist Canada: Heat, Smoke, Ticks, Water, Fights, and Recall - /blog/dog-park-safety-checklist-canada/
 - Rank 13: Wildfire Smoke and Dogs in Ontario: When To Skip the Walk - /blog/wildfire-smoke-dogs-canada/
+- Rank 6: How To Read a Dog Food Label in Canada - /blog/how-to-read-dog-food-label-canada/
+- Rank 7: Best Dog Breeds for First-Time Owners in Canada - /blog/best-dog-breeds-first-time-owners-canada/
 
 ### Parked
 
@@ -135,7 +137,6 @@ Goal: Strengthen LeashFree's dog-park authority with safety content that can lin
 
 Goal: Route breed-intent readers into the breed quiz, breed directory, and ownership planning tools.
 
-- Rank 7: Best Dog Breeds for First-Time Owners in Canada
 - Rank 11: How Much Exercise Does My Dog Need?
 - Rank 12: Apartment Puppy Survival Guide Canada
 
@@ -168,6 +169,8 @@ Use this checklist before marking an article `Ready To Publish`.
 
 | Date | Change |
 | --- | --- |
+| 2026-07-20 | Published Rank 7 at /blog/best-dog-breeds-first-time-owners-canada/ with a dedicated generated hero image; moved Rank 8 to the next backlog focus. |
+| 2026-07-19 | Published Rank 6 at /blog/how-to-read-dog-food-label-canada/ with a dedicated generated hero image; moved Rank 7 to the next backlog focus. |
 | 2026-07-18 | Published Rank 13 at /blog/wildfire-smoke-dogs-canada/ in response to current Ontario wildfire and smoke conditions; kept Rank 6 as the next evergreen backlog article. |
 | 2026-07-18 | Published Rank 5 at /blog/dog-park-safety-checklist-canada/; moved Rank 6 to the next backlog focus. |
 | 2026-07-17 | Published Rank 4 at /blog/tick-prevention-dogs-canada/; moved Rank 5 to proposed next article. |

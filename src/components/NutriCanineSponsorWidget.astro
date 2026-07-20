@@ -1,4 +1,6 @@
 ---
+import OptimizedImage from "./OptimizedImage.astro";
+
 const sponsorUrl = "https://www.nutricanine.ca/LeashFree";
 
 const recipes = [
@@ -217,7 +219,7 @@ const recipes = [
 
   <div class="nutricanine-brand">
     <a href={sponsorUrl} target="_blank" rel="noopener sponsored" aria-label="Open NutriCanine in a new tab">
-      <img src="/images/sponsors/nutricanine/nutricanine-logo.png" alt="NutriCanine" loading="lazy" />
+      <OptimizedImage src="/images/sponsors/nutricanine/nutricanine-logo.png" alt="NutriCanine" loading="lazy" />
     </a>
     <p id="nutricanine-widget-title">Real Food, Always Fresh, Never Processed</p>
   </div>
@@ -225,7 +227,7 @@ const recipes = [
   <div class="nutricanine-carousel" aria-live="polite">
     {recipes.map((recipe, index) => (
       <article class:list={["nutricanine-slide", index === 0 && "is-active"]} data-nutricanine-slide>
-        <img class="nutricanine-recipe-image" src={recipe.image} alt={`${recipe.name} by NutriCanine`} loading="lazy" />
+        <OptimizedImage class="nutricanine-recipe-image" src={recipe.image} alt={`${recipe.name} by NutriCanine`} loading="lazy" sizes="(min-width: 1200px) 360px, 100vw" />
         <div class="nutricanine-recipe-body">
           <div class="nutricanine-recipe-heading">
             <span>{recipe.tag}</span>

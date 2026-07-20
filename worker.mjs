@@ -24,6 +24,15 @@ export default {
     }
 
     const response = await env.ASSETS.fetch(request);
+    if (response.status === 404 && url.pathname !== "/404.html") {
+      const notFoundUrl = new URL("/404.html", url);
+      const notFoundResponse = await env.ASSETS.fetch(new Request(notFoundUrl, request));
+      return new Response(notFoundResponse.body, {
+        status: 404,
+        statusText: "Not Found",
+        headers: notFoundResponse.headers
+      });
+    }
     const contentType = response.headers.get("content-type") || "";
     const gaId =
       env.EDGE_GA_MEASUREMENT_ID ||

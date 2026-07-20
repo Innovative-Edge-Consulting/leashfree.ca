@@ -1,4 +1,5 @@
 ---
+import OptimizedImage from "./OptimizedImage.astro";
 import { PLACEHOLDER } from "../utils/media.js";
 
 interface Props {
@@ -38,37 +39,17 @@ const className = variant === "hero" ? "media hero-media" : "media card-media";
 const style = `${imagePosition ? `object-position: ${imagePosition};` : ""}${imageFit ? `object-fit: ${imageFit};` : ""}`;
 ---
 
-{
-  sourceSets.length > 0 ? (
-    <picture>
-      {sourceSets.map((source) => <source type={source.type} srcset={source.srcset} sizes={sizes} />)}
-      <img
-        class={className}
-        style={style}
-        src={finalSrc}
-        srcset={srcset}
-        sizes={sizes}
-        width={width}
-        height={height}
-        alt={alt}
-        loading={loading}
-        fetchpriority={fetchPriority}
-        decoding="async"
-      />
-    </picture>
-  ) : (
-    <img
-      class={className}
-      style={style}
-      src={finalSrc}
-      srcset={srcset}
-      sizes={sizes}
-      width={width}
-      height={height}
-      alt={alt}
-      loading={loading}
-      fetchpriority={fetchPriority}
-      decoding="async"
-    />
-  )
-}
+<OptimizedImage
+  class={className}
+  style={style}
+  src={finalSrc}
+  srcset={srcset}
+  sizes={sizes}
+  sourceSets={sourceSets}
+  width={width}
+  height={height}
+  alt={alt}
+  loading={loading}
+  fetchPriority={fetchPriority}
+  decoding="async"
+/>

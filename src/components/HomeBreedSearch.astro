@@ -1,7 +1,9 @@
 ---
+import OptimizedImage from "./OptimizedImage.astro";
 import breeds from "../data/generated/dog-breeds.json";
 import mediaMap from "../data/media-map.json";
 import { excerpt } from "../utils/content.js";
+import { renderOptimizedImageHtml } from "../utils/image-derivatives.js";
 import { resolveMedia } from "../utils/media.js";
 
 const getOptions = (field) =>
@@ -24,6 +26,11 @@ const breedItems = breeds.map((breed) => ({
   url: `/dog-breeds/${breed.slug}/`,
   description: excerpt(breed.raw["Breed Summary"], breed.metaDescription || breed.description, 145),
   image: resolveMedia(breed, "Featured Image", mediaMap).src,
+  imageHtml: renderOptimizedImageHtml(resolveMedia(breed, "Featured Image", mediaMap).src, {
+    alt: `${breed.name} dog breed`,
+    loading: "lazy",
+    sizes: "96px"
+  }),
   group: breed.raw["Breed Group"] || "",
   size: breed.raw["Size Category"] || "",
   activity: breed.raw["Activity Level"] || "",
@@ -113,7 +120,7 @@ const json = JSON.stringify({ breeds: breedItems }).replace(/</g, "\\u003c");
       {featuredBreeds.map((breed) => (
         <li>
           <a href={breed.url}>
-            <img src={breed.image} alt={`${breed.name} dog breed`} loading="lazy" />
+            <OptimizedImage src={breed.image} alt={`${breed.name} dog breed`} loading="lazy" sizes="96px" />
             <span>
               <strong>{breed.name}</strong>
               <small>{[breed.group, breed.size, breed.activity].filter(Boolean).join(" | ")}</small>
@@ -207,7 +214,7 @@ const json = JSON.stringify({ breeds: breedItems }).replace(/</g, "\\u003c");
       return `
         <li>
           <a href="${escapeHtml(breed.url)}">
-            <img src="${escapeHtml(breed.image)}" alt="${escapeHtml(breed.name)} dog breed" loading="lazy">
+            ${breed.imageHtml || `<img src="${escapeHtml(breed.image)}" alt="${escapeHtml(breed.name)} dog breed" loading="lazy">`}
             <span>
               <strong>${escapeHtml(breed.name)}</strong>
               <small>${escapeHtml(traits)}</small>

@@ -1,0 +1,83 @@
+---
+import { PLACEHOLDER } from "../utils/media.js";
+import { resolveOptimizedImage } from "../utils/image-derivatives.js";
+
+interface Props {
+  src?: string;
+  alt?: string;
+  class?: string;
+  style?: string;
+  loading?: "lazy" | "eager";
+  fetchPriority?: "high" | "low" | "auto";
+  width?: number;
+  height?: number;
+  sizes?: string;
+  srcset?: string;
+  sourceSets?: {
+    type: string;
+    srcset: string;
+  }[];
+  decoding?: "async" | "sync" | "auto";
+}
+
+const {
+  src,
+  alt = "",
+  class: className,
+  style,
+  loading = "lazy",
+  fetchPriority,
+  width,
+  height,
+  sizes,
+  srcset,
+  sourceSets = [],
+  decoding = "async",
+  ...rest
+} = Astro.props;
+
+const originalSrc = src || PLACEHOLDER;
+const derived = sourceSets.length === 0 && !srcset ? resolveOptimizedImage(originalSrc) : null;
+const finalSourceSets = sourceSets.length > 0 ? sourceSets : derived?.sourceSets || [];
+const finalSrc = derived?.src || originalSrc;
+const finalSrcset = srcset || derived?.srcset;
+const finalWidth = width || derived?.width;
+const finalHeight = height || derived?.height;
+---
+
+{
+  finalSourceSets.length > 0 ? (
+    <picture class={className} style={style}>
+      {finalSourceSets.map((source) => <source type={source.type} srcset={source.srcset} sizes={sizes} />)}
+      <img
+        class={`${className || ""} image-rendered`}
+        style={style}
+        src={finalSrc}
+        srcset={finalSrcset}
+        sizes={sizes}
+        width={finalWidth}
+        height={finalHeight}
+        alt={alt}
+        loading={loading}
+        fetchpriority={fetchPriority}
+        decoding={decoding}
+        {...rest}
+      />
+    </picture>
+  ) : (
+    <img
+      class={className}
+      style={style}
+      src={finalSrc}
+      srcset={finalSrcset}
+      sizes={sizes}
+      width={finalWidth}
+      height={finalHeight}
+      alt={alt}
+      loading={loading}
+      fetchpriority={fetchPriority}
+      decoding={decoding}
+      {...rest}
+    />
+  )
+}

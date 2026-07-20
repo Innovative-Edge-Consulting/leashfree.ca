@@ -217,6 +217,9 @@ export function dateLabel(value) {
 }
 
 export function isPublishedNow(item, now = new Date()) {
+  const draftValue = item?.raw?.Draft ?? item?.draft;
+  if (draftValue === true || String(draftValue).toLowerCase() === "true") return false;
+
   const value = item?.raw?.["Published On"] || item?.publishedDate || item?.date;
   if (!value) return true;
 

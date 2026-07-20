@@ -10,10 +10,11 @@ interface Props {
   canonical?: string;
   ogImage?: string;
   ogType?: string;
+  robots?: string;
   structuredData?: Record<string, unknown> | Record<string, unknown>[];
 }
 
-const { title, description, canonical, ogImage, ogType, structuredData } = Astro.props;
+const { title, description, canonical, ogImage, ogType, robots, structuredData } = Astro.props;
 const gscVerification = import.meta.env.PUBLIC_GSC_VERIFICATION;
 const gaMeasurementId =
   process.env.PUBLIC_GA_MEASUREMENT_ID ||
@@ -28,7 +29,7 @@ const gaMeasurementId =
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/images/general/leashfree-logo.png" />
     <link rel="apple-touch-icon" href="/images/general/leashfree-logo.png" />
-    <SEO title={title} description={description} canonical={canonical} ogImage={ogImage} ogType={ogType} structuredData={structuredData} />
+    <SEO title={title} description={description} canonical={canonical} ogImage={ogImage} ogType={ogType} robots={robots} structuredData={structuredData} />
     {gscVerification && <meta name="google-site-verification" content={gscVerification} />}
     <script
       async

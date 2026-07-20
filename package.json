@@ -17,6 +17,7 @@
     "media:scan": "node scripts/build-media-map.js",
     "media:copy:dry": "node scripts/copy-media.js --dry-run",
     "media:copy": "node scripts/copy-media.js --write",
+    "optimize:images": "node scripts/optimize-images.mjs",
     "validate:data": "node scripts/validate-data.js",
     "data:audit:dog-food": "node scripts/auditDogFoodProducts.mjs",
     "migrate:prep": "npm run convert:cms && npm run dedupe:directories && npm run dedupe:dog-breeds && npm run build:media-map && npm run validate:data",
@@ -34,6 +35,7 @@
     "react-dom": "^19.2.6"
   },
   "devDependencies": {
+    "sharp": "^0.35.3",
     "typescript": "^5.6.3"
   }
 }

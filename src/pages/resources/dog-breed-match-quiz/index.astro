@@ -5,6 +5,7 @@ import ImageWithFallback from "../../../components/ImageWithFallback.astro";
 import Section from "../../../components/Section.astro";
 import mediaMap from "../../../data/media-map.json";
 import breeds from "../../../data/generated/dog-breeds.json";
+import { renderOptimizedImageHtml } from "../../../utils/image-derivatives.js";
 import { breadcrumbSchema, excerpt, stripHtml } from "../../../utils/content.js";
 import { resolveMedia } from "../../../utils/media.js";
 
@@ -159,6 +160,10 @@ const quizBreeds = breeds
     slug: breed.slug,
     href: `/dog-breeds/${breed.slug}/`,
     image: resolveMedia(breed, "Featured Image", mediaMap).src,
+    imageHtml: renderOptimizedImageHtml(resolveMedia(breed, "Featured Image", mediaMap).src, {
+      alt: `${breed.name} breed`,
+      sizes: "(min-width: 980px) 360px, 100vw"
+    }),
     description: excerpt(breed.description, breed.metaDescription, 190),
     summary: excerpt(breed.raw?.["Breed Summary"], breed.description, 190),
     exercise: stripHtml(breed.raw?.["Exercise Needs"]),
@@ -637,7 +642,7 @@ const quizBreeds = breeds
       return `
         <article class="breed-result-card">
           <a class="breed-result-media" href="${escapeHtml(breed.href)}">
-            <img src="${escapeHtml(breed.image)}" alt="${escapeHtml(breed.name)} breed" loading="${index === 0 ? "eager" : "lazy"}" />
+            ${breed.imageHtml || `<img src="${escapeHtml(breed.image)}" alt="${escapeHtml(breed.name)} breed" loading="${index === 0 ? "eager" : "lazy"}" />`}
             <span class="breed-score-badge"><strong>${escapeHtml(percent)}%</strong><em>match</em></span>
           </a>
           <div class="breed-result-body">

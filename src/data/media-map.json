@@ -6,6 +6,44 @@
   "items": [
     {
       "collection": "Blog Posts",
+      "itemName": "Best Dog Breeds for First-Time Owners in Canada",
+      "itemSlug": "best-dog-breeds-first-time-owners-canada",
+      "fieldName": "Hero Image",
+      "localFilename": "blog-best-dog-breeds-first-time-owners-canada-hero-v2.png",
+      "currentLocalPath": "public/images/blog/blog-best-dog-breeds-first-time-owners-canada-hero-v2.png",
+      "publicPath": "/images/blog/blog-best-dog-breeds-first-time-owners-canada-hero-v2.png?v=20260720",
+      "publicPathReady": true,
+      "priority": "High",
+      "status": "published",
+      "matchStatus": "published",
+      "confidence": "high",
+      "matchConfidence": "high",
+      "needsOwnerReview": false,
+      "notes": [
+        "Generated dedicated breed-fit hero image added 2026-07-20."
+      ]
+    },
+    {
+      "collection": "Blog Posts",
+      "itemName": "How To Read a Dog Food Label in Canada",
+      "itemSlug": "how-to-read-dog-food-label-canada",
+      "fieldName": "Hero Image",
+      "localFilename": "blog-how-to-read-dog-food-label-canada-hero.png",
+      "currentLocalPath": "public/images/blog/blog-how-to-read-dog-food-label-canada-hero.png",
+      "publicPath": "/images/blog/blog-how-to-read-dog-food-label-canada-hero.png?v=20260719",
+      "publicPathReady": true,
+      "priority": "High",
+      "status": "published",
+      "matchStatus": "published",
+      "confidence": "high",
+      "matchConfidence": "high",
+      "needsOwnerReview": false,
+      "notes": [
+        "Generated dedicated dog-food-label hero image added 2026-07-19."
+      ]
+    },
+    {
+      "collection": "Blog Posts",
       "itemName": "Wildfire Smoke and Dogs in Ontario: When to Skip the Walk",
       "itemSlug": "wildfire-smoke-dogs-canada",
       "fieldName": "Hero Image",

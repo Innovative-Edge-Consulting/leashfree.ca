@@ -5,6 +5,7 @@ import ContentBlock from "../../components/ContentBlock.astro";
 import ImageWithFallback from "../../components/ImageWithFallback.astro";
 import Layout from "../../components/Layout.astro";
 import MapPanel from "../../components/MapPanel.astro";
+import OptimizedImage from "../../components/OptimizedImage.astro";
 import Section from "../../components/Section.astro";
 import mediaMap from "../../data/media-map.json";
 import directories from "../../data/generated/directories.json";
@@ -354,20 +355,20 @@ const structuredData = [
   <Section title="Explore related dog resources">
     <div class="related-resource-grid">
       <article class="related-listing-card">
-        <img class="related-card-image" src={categoryImage} alt={`${categoryName} directory`} loading="lazy" decoding="async" />
+        <OptimizedImage class="related-card-image" src={categoryImage} alt={`${categoryName} directory`} loading="lazy" decoding="async" sizes="(min-width: 1200px) 320px, (min-width: 720px) 50vw, 100vw" />
         <h3><a href={categoryPath(category)}>{categoryName} directory</a></h3>
         <p>{`Browse more ${categoryName.toLowerCase()} in the LeashFree.ca business directory.`}</p>
       </article>
       {cityPage && (
         <article class="related-listing-card">
-          <img class="related-card-image" src="/images/blog/blog-how-to-choose-the-right-dog-park-for-your-pup-hero.jpg" alt={`${cityPage.name} dog parks`} loading="lazy" decoding="async" />
+          <OptimizedImage class="related-card-image" src="/images/blog/blog-how-to-choose-the-right-dog-park-for-your-pup-hero.jpg" alt={`${cityPage.name} dog parks`} loading="lazy" decoding="async" sizes="(min-width: 1200px) 320px, (min-width: 720px) 50vw, 100vw" />
           <h3><a href={`/dog-parks/${cityPage.slug}/`}>{cityPage.name} dog parks</a></h3>
           <p>{`Find leash-free parks and dog-friendly spaces near ${cityPage.name}.`}</p>
         </article>
       )}
       {guideLinks.map((link) => (
         <article class="related-listing-card">
-          <img class="related-card-image" src={link.image} alt={link.label} loading="lazy" decoding="async" />
+          <OptimizedImage class="related-card-image" src={link.image} alt={link.label} loading="lazy" decoding="async" sizes="(min-width: 1200px) 320px, (min-width: 720px) 50vw, 100vw" />
           <h3><a href={link.href}>{link.label}</a></h3>
           <p>Helpful reading for Canadian dog owners planning local pet care.</p>
         </article>

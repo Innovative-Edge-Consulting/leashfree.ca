@@ -1,4 +1,5 @@
 ---
+import OptimizedImage from "./OptimizedImage.astro";
 interface Props {
   title: string;
   href?: string;
@@ -33,7 +34,17 @@ const cleanBadges = badges.map((badge) => cleanText(badge)).filter(Boolean);
 ---
 
 <article class="card">
-  {image && <img class="card-media" style={imagePosition ? `object-position: ${imagePosition};` : undefined} src={image} alt={cleanImageAlt} loading="lazy" decoding="async" />}
+  {image && (
+    <OptimizedImage
+      class="card-media"
+      style={imagePosition ? `object-position: ${imagePosition};` : undefined}
+      src={image}
+      alt={cleanImageAlt}
+      loading="lazy"
+      decoding="async"
+      sizes="(min-width: 1200px) 360px, (min-width: 720px) 50vw, 100vw"
+    />
+  )}
   <div class="card-body">
     {cleanBadges.length > 0 && <div class="badges">{cleanBadges.map((badge) => <span class="badge">{badge}</span>)}</div>}
     {meta && <p class="small">{meta}</p>}
