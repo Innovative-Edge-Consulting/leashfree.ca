@@ -40,6 +40,7 @@ const cleanBadges = badges.map((badge) => cleanText(badge)).filter(Boolean);
       style={imagePosition ? `object-position: ${imagePosition};` : undefined}
       src={image}
       alt={cleanImageAlt}
+      maxWidth={800}
       loading="lazy"
       decoding="async"
       sizes="(min-width: 1200px) 360px, (min-width: 720px) 50vw, 100vw"

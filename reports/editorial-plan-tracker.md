@@ -1,6 +1,6 @@
 # LeashFree.ca Editorial Plan Tracker
 
-Last updated: 2026-07-20
+Last updated: 2026-07-21
 
 Source strategy report: `reports/editorial-backlog-2026-07-11.md`
 
@@ -33,8 +33,8 @@ Statuses:
 
 | Slot | Item | Status | Decision |
 | --- | --- | --- | --- |
-| Next article | Puppy First-Year Cost Canada: Budget, Timeline, and Mistakes To Avoid | Backlog | Rank 7 is published; the next priority extends the cost and ownership-planning cluster with a month-by-month puppy budget. |
-| Next cluster | Puppy ownership costs | Backlog | Route puppy-intent readers into the dog cost calculator, insurance guide, vet directory, and trainer directory. |
+| Next article | Puppy First-Year Cost Canada: Budget, Timeline, and Mistakes To Avoid | Drafting | Rank 8 is now drafted with current Canadian cost benchmarks; next step is fact-checking assumptions, adding a dedicated hero image, and preparing publication QA. |
+| Next cluster | Puppy ownership costs | Drafting | Route puppy-intent readers into the dog cost calculator, insurance guide, vet directory, and trainer directory. |
 | Seasonal backup | Wildfire Smoke and Dogs in Canada: When To Skip the Walk | Backlog | Strong fallback during active smoke periods or AQHI spikes. |
 
 ## Working Board
@@ -48,7 +48,7 @@ Statuses:
 | 5 | Published | 22 | Dog Park Safety Checklist Canada: Heat, Smoke, Ticks, Water, Fights, and Recall | `dog-park-safety-checklist-canada` | Dog parks / safety | Dog parks directory, summer safety posts | Heat, smoke, ticks, algae, recall, and dog-park etiquette sources | Monitor performance and add park-page links | Published at /blog/dog-park-safety-checklist-canada/ on 2026-07-18. |
 | 6 | Published | 21 | How To Read a Dog Food Label in Canada | `how-to-read-dog-food-label-canada` | Dog food | Dog food comparison tool | CFIA labelling resources, AAFCO/FEDIAF context, vet nutrition sources | Monitor performance and add links from food and calculator surfaces | Published at /blog/how-to-read-dog-food-label-canada/ on 2026-07-19. |
 | 7 | Published | 21 | Best Dog Breeds for First-Time Owners in Canada | `best-dog-breeds-first-time-owners-canada` | Breeds | Breed match quiz, breed profiles | CKC breed profiles, activity/grooming/trainability criteria, Canadian lifestyle examples | Monitor performance and add links from breed directory and quiz surfaces | Published at /blog/best-dog-breeds-first-time-owners-canada/ on 2026-07-20 with a dedicated generated hero image. |
-| 8 | Backlog | 20 | Puppy First-Year Cost Canada: Budget, Timeline, and Mistakes To Avoid | `puppy-first-year-cost-canada` | Cost / puppy | Dog cost calculator, vet directory, trainer directory | Vet visit cost ranges, food assumptions, training/grooming estimates | Build month-by-month cost table | Good follow-up to insurance guide. |
+| 8 | Drafting | 20 | Puppy First-Year Cost Canada: Budget, Timeline, and Mistakes To Avoid | `puppy-first-year-cost-canada` | Cost / puppy | Dog cost calculator, vet directory, trainer directory | OVMA 2025 benchmark reported by CAA, current shelter fees, food assumptions, training/grooming estimates | Fact-check assumptions, generate a dedicated hero image, and run publication QA | Drafted 2026-07-21; do not publish until the image and final source review are complete. |
 | 9 | Backlog | 20 | When Should You Go to the Emergency Vet? Symptom Guide for Canadian Dog Owners | `when-to-go-emergency-vet-dog-canada` | Health / urgent care | Veterinarian directory | Veterinary emergency symptom sources | Draft medically conservative symptom matrix | Needs careful disclaimers. |
 | 10 | Backlog | 19 | Best Dog Food for Sensitive Stomachs in Canada: What To Ask Your Vet and How To Compare Labels | `best-dog-food-sensitive-stomachs-canada` | Dog food / health | Dog food comparison tool, vet directory | Vet nutrition sources, product label examples, exclusion diet caveats | Decide whether to avoid "best" in final title | High intent but higher medical-risk. |
 | 11 | Backlog | 19 | How Much Exercise Does My Dog Need? Breed-by-Breed Activity Guide | `how-much-exercise-does-my-dog-need` | Breeds / parks | Breed profiles, dog parks | Breed activity data, veterinary exercise guidance | Link breed groups to activity bands | Strong internal-link opportunity. |
@@ -78,7 +78,7 @@ Statuses:
 
 ### Drafting
 
-- None
+- Rank 8: Puppy First-Year Cost Canada - draft complete; fact-check, image, and publication QA remain.
 
 ### Review
 
@@ -169,6 +169,7 @@ Use this checklist before marking an article `Ready To Publish`.
 
 | Date | Change |
 | --- | --- |
+| 2026-07-21 | Started drafting Rank 8 at /blog/puppy-first-year-cost-canada/ using current Canadian cost benchmarks and a month-by-month budgeting table; kept it unpublished pending image generation and final QA. |
 | 2026-07-20 | Published Rank 7 at /blog/best-dog-breeds-first-time-owners-canada/ with a dedicated generated hero image; moved Rank 8 to the next backlog focus. |
 | 2026-07-19 | Published Rank 6 at /blog/how-to-read-dog-food-label-canada/ with a dedicated generated hero image; moved Rank 7 to the next backlog focus. |
 | 2026-07-18 | Published Rank 13 at /blog/wildfire-smoke-dogs-canada/ in response to current Ontario wildfire and smoke conditions; kept Rank 6 as the next evergreen backlog article. |

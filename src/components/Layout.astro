@@ -2,6 +2,7 @@
 import SEO from "./SEO.astro";
 import Header from "./Header.astro";
 import Footer from "./Footer.astro";
+import ShareBar from "./ShareBar.astro";
 import "../styles/global.css";
 
 interface Props {
@@ -59,6 +60,7 @@ const gaMeasurementId =
       <main id="main-content" class="site-main">
         <slot />
       </main>
+      <ShareBar />
       <Footer />
     </div>
   </body>

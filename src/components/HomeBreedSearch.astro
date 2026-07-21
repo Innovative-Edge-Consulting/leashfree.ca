@@ -29,7 +29,8 @@ const breedItems = breeds.map((breed) => ({
   imageHtml: renderOptimizedImageHtml(resolveMedia(breed, "Featured Image", mediaMap).src, {
     alt: `${breed.name} dog breed`,
     loading: "lazy",
-    sizes: "96px"
+    sizes: "96px",
+    maxWidth: 240
   }),
   group: breed.raw["Breed Group"] || "",
   size: breed.raw["Size Category"] || "",
@@ -120,7 +121,7 @@ const json = JSON.stringify({ breeds: breedItems }).replace(/</g, "\\u003c");
       {featuredBreeds.map((breed) => (
         <li>
           <a href={breed.url}>
-            <OptimizedImage src={breed.image} alt={`${breed.name} dog breed`} loading="lazy" sizes="96px" />
+            <OptimizedImage src={breed.image} alt={`${breed.name} dog breed`} loading="lazy" sizes="96px" maxWidth={240} />
             <span>
               <strong>{breed.name}</strong>
               <small>{[breed.group, breed.size, breed.activity].filter(Boolean).join(" | ")}</small>

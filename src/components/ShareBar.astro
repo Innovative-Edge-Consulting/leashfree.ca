@@ -1,0 +1,49 @@
+---
+---
+
+<aside class="share-bar" aria-label="Share this page">
+  <span class="share-label">Share</span>
+  <div class="share-actions">
+    <a class="share-action" data-share="facebook" href="https://www.facebook.com/sharer/sharer.php" target="_blank" rel="noopener noreferrer" aria-label="Share this page on Facebook" title="Share on Facebook">
+      <span aria-hidden="true">f</span>
+    </a>
+    <a class="share-action share-action-whatsapp" data-share="whatsapp" href="https://wa.me/" target="_blank" rel="noopener noreferrer" aria-label="Share this page on WhatsApp" title="Share on WhatsApp">
+      <span aria-hidden="true">wa</span>
+    </a>
+    <a class="share-action" data-share="email" href="mailto:" aria-label="Share this page by email" title="Share by email">
+      <span aria-hidden="true">@</span>
+    </a>
+    <button class="share-action share-action-copy" data-share="copy" type="button" aria-label="Copy link to this page" title="Copy link">
+      <span aria-hidden="true">↗</span>
+    </button>
+  </div>
+  <span class="share-status" role="status" aria-live="polite"></span>
+</aside>
+
+<script is:inline>
+  (() => {
+    const pageUrl = window.location.href;
+    const pageTitle = document.title;
+    const text = `I thought you might find this useful: ${pageTitle}`;
+    const setLink = (selector, url) => {
+      const link = document.querySelector(selector);
+      if (link) link.href = url;
+    };
+
+    setLink('[data-share="facebook"]', `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}`);
+    setLink('[data-share="whatsapp"]', `https://wa.me/?text=${encodeURIComponent(`${text} ${pageUrl}`)}`);
+    setLink('[data-share="email"]', `mailto:?subject=${encodeURIComponent(pageTitle)}&body=${encodeURIComponent(`${text}\n\n${pageUrl}`)}`);
+
+    const copyButton = document.querySelector('[data-share="copy"]');
+    const status = document.querySelector('.share-status');
+    copyButton?.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(pageUrl);
+        if (status) status.textContent = 'Link copied';
+        window.setTimeout(() => { if (status) status.textContent = ''; }, 2200);
+      } catch {
+        if (status) status.textContent = 'Copy unavailable';
+      }
+    });
+  })();
+</script>

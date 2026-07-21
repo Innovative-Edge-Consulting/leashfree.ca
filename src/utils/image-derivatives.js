@@ -19,16 +19,29 @@ function toSrcset(entries = []) {
   return entries.map((entry) => `${entry.src} ${entry.width}w`).join(", ");
 }
 
-export function resolveOptimizedImage(src) {
+function clampVariants(variants = [], maxWidth) {
+  if (!maxWidth || !Number.isFinite(maxWidth) || maxWidth <= 0) return variants;
+  const filtered = variants.filter((entry) => entry.width <= maxWidth);
+  if (filtered.length > 0) return filtered;
+  return variants.length > 0 ? [variants[0]] : [];
+}
+
+function scaledHeight(width, originalWidth, originalHeight) {
+  if (!width || !originalWidth || !originalHeight) return originalHeight;
+  return Math.round((originalHeight * width) / originalWidth);
+}
+
+export function resolveOptimizedImage(src, { maxWidth } = {}) {
   if (!isLocalImagePath(src)) return null;
 
   const entry = images[src];
   if (!entry) return null;
 
-  const fallbackEntries = entry.variants?.[entry.fallbackFormat] || [];
+  const fallbackEntries = clampVariants(entry.variants?.[entry.fallbackFormat] || [], maxWidth);
+  const fallbackAsset = fallbackEntries[fallbackEntries.length - 1];
   const sourceSets = ["avif", "webp"]
     .map((format) => {
-      const variants = entry.variants?.[format] || [];
+      const variants = clampVariants(entry.variants?.[format] || [], maxWidth);
       if (variants.length === 0) return null;
       return {
         type: `image/${format}`,
@@ -38,11 +51,11 @@ export function resolveOptimizedImage(src) {
     .filter(Boolean);
 
   return {
-    src: entry.fallbackSrc || src,
+    src: fallbackAsset?.src || entry.fallbackSrc || src,
     srcset: toSrcset(fallbackEntries),
     sourceSets,
-    width: entry.width,
-    height: entry.height
+    width: fallbackAsset?.width || entry.width,
+    height: scaledHeight(fallbackAsset?.width || entry.width, entry.width, entry.height)
   };
 }
 
@@ -50,9 +63,10 @@ export function renderOptimizedImageHtml(src, {
   alt = "",
   loading = "lazy",
   sizes,
-  className = ""
+  className = "",
+  maxWidth
 } = {}) {
-  const derived = resolveOptimizedImage(src);
+  const derived = resolveOptimizedImage(src, { maxWidth });
   const attrs = [
     className ? `class="${escapeHtml(className)}"` : "",
     `src="${escapeHtml(derived?.src || src || "")}"`,

@@ -11,6 +11,7 @@ interface Props {
   fetchPriority?: "high" | "low" | "auto";
   width?: number;
   height?: number;
+  maxWidth?: number;
   sizes?: string;
   srcset?: string;
   sourceSets?: {
@@ -29,6 +30,7 @@ const {
   fetchPriority,
   width,
   height,
+  maxWidth,
   sizes,
   srcset,
   sourceSets = [],
@@ -37,7 +39,7 @@ const {
 } = Astro.props;
 
 const originalSrc = src || PLACEHOLDER;
-const derived = sourceSets.length === 0 && !srcset ? resolveOptimizedImage(originalSrc) : null;
+const derived = sourceSets.length === 0 && !srcset ? resolveOptimizedImage(originalSrc, { maxWidth }) : null;
 const finalSourceSets = sourceSets.length > 0 ? sourceSets : derived?.sourceSets || [];
 const finalSrc = derived?.src || originalSrc;
 const finalSrcset = srcset || derived?.srcset;

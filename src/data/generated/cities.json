@@ -1102,29 +1102,28 @@
     "name": "Estevan",
     "slug": "estevan",
     "title": "Estevan",
-    "seoTitle": "Off-Leash Dog Park in Estevan SK | LeashFree.ca",
-    "metaDescription": "Discover Estevan’s fenced off-leash dog park — a safe and open space for dogs to play and exercise freely in Saskatchewan’s southeast.",
-    "description": "Discover Estevan’s fenced off-leash dog park — a safe and open space for dogs to play and exercise freely in Saskatchewan’s southeast.",
-    "body": "<p>The City of <strong id=\"\">Estevan</strong>, located in <strong id=\"\">southeast Saskatchewan</strong>, features a <strong id=\"\">designated off-leash dog park</strong> on the west side of the city, along the walking trails near the water treatment plant. This <strong id=\"\">fenced green space</strong> includes grassy areas for running, benches, and nearby walking paths. It’s a quiet and friendly environment where dogs can play safely off-leash. The city encourages proper pet etiquette and waste cleanup to ensure a clean and enjoyable space for all park users.</p>",
+    "seoTitle": "Dog Parks in Estevan, Saskatchewan | Off-Leash Guide",
+    "metaDescription": "Source-backed guide to dog parks in Estevan, Saskatchewan, including the city's off-leash park context, licence rules, and practical location guidance from official sources.",
+    "description": "Source-backed guide to dog parks in Estevan, Saskatchewan, including the city's off-leash park context, licence rules, and practical location guidance from official sources.",
+    "body": "<p>The City's current animal-licensing page confirms that dogs inside Estevan city limits are regulated under the Animal Control Bylaw and that unlicensed animals can trigger a fine. A separate city tourism and recreation source adds the key park-specific fact: the City's Selfie Spot page tells visitors to walk down from the 4th Avenue Walking Path into the valley to reach the off-leash dog park. That is an official municipal acknowledgement that the off-leash dog park is a real destination connected to the valley walking-path network, not just a user-submitted rumour.</p><p>Location detail still needs to be handled conservatively. The reviewed city sources are much stronger on valley-path context than on a formal civic dog-park address. The Pleasantdale Valley Walking Path page publishes exact access points at Wellock Road and Souris Avenue North on the north side and off King Street between Cundall Drive and Hillcrest Drive on the south side, while the Selfie Spot page separately points to the 4th Avenue Walking Path as the route down to the off-leash park. Rather than pretend the city has clearly published one tidy dog-park address, this guide should reflect what the sources actually support: Estevan's off-leash dog park sits within the valley walking-path area, and visitors should confirm the final entrance from posted signage or live map directions when they arrive.</p>",
     "collection": "City Pages",
     "sourceFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - City Pages - 68419a1c56454ae93923d2e4.csv",
     "canonicalUrl": "https://leashfree.ca/dog-parks/estevan/",
     "routePath": "/dog-parks/estevan/",
-    "media": [
-      {
-        "fieldName": "Hero Image",
-        "value": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6855f8b7dddec16f09782f9d_off-leash-dog-parks-canada.png",
-        "originalUrls": [
-          "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6855f8b7dddec16f09782f9d_off-leash-dog-parks-canada.png"
-        ]
-      }
-    ],
+    "media": [],
     "references": {
       "Province": [
         "Saskatchewan"
       ],
+      "Featured Park 1": [
+        "estevan-off-leash-dog-park"
+      ],
       "Province Page": [
         "https://leashfree.ca/saskatchewan-dog-parks"
+      ],
+      "Nearby Cities": [
+        "Weyburn",
+        "Regina"
       ]
     },
     "raw": {
@@ -1136,25 +1135,25 @@
       "Archived": "false",
       "Draft": "false",
       "Created On": "Sun Jul 13 2025 00:52:29 GMT+0000 (Coordinated Universal Time)",
-      "Updated On": "Mon Sep 08 2025 13:21:12 GMT+0000 (Coordinated Universal Time)",
-      "Published On": "Mon Sep 08 2025 13:27:50 GMT+0000 (Coordinated Universal Time)",
+      "Updated On": "Tue Jul 21 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "Published On": "Tue Jul 21 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "Province": "Saskatchewan",
-      "SEO Title Tag": "Off-Leash Dog Park in Estevan SK | LeashFree.ca",
-      "Meta Description": "Discover Estevan’s fenced off-leash dog park — a safe and open space for dogs to play and exercise freely in Saskatchewan’s southeast.",
-      "Hero Image": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6855f8b7dddec16f09782f9d_off-leash-dog-parks-canada.png",
-      "Intro Paragraph": "<p>Estevan’s <strong id=\"\">fenced off-leash dog park</strong> offers a secure and scenic space where dogs can play freely while owners enjoy a peaceful prairie setting.</p>",
-      "About Section": "<p>The City of <strong id=\"\">Estevan</strong>, located in <strong id=\"\">southeast Saskatchewan</strong>, features a <strong id=\"\">designated off-leash dog park</strong> on the west side of the city, along the walking trails near the water treatment plant. This <strong id=\"\">fenced green space</strong> includes grassy areas for running, benches, and nearby walking paths. It’s a quiet and friendly environment where dogs can play safely off-leash. The city encourages proper pet etiquette and waste cleanup to ensure a clean and enjoyable space for all park users.</p>",
-      "Featured Park 1": "",
+      "SEO Title Tag": "Dog Parks in Estevan, Saskatchewan | Off-Leash Guide",
+      "Meta Description": "Source-backed guide to dog parks in Estevan, Saskatchewan, including the city's off-leash park context, licence rules, and practical location guidance from official sources.",
+      "Hero Image": "",
+      "Intro Paragraph": "<p>Estevan's dog-park situation is clearer than the old generic draft suggested, but not because the city publishes a glossy standalone dog-park brochure. The strongest current official sources are the City of Estevan's animal-licensing page and several city recreation pages that place the off-leash dog park within the valley and walking-path system rather than presenting it as a heavily marketed feature on its own.</p>",
+      "About Section": "<p>The City's current animal-licensing page confirms that dogs inside Estevan city limits are regulated under the Animal Control Bylaw and that unlicensed animals can trigger a fine. A separate city tourism and recreation source adds the key park-specific fact: the City's Selfie Spot page tells visitors to walk down from the 4th Avenue Walking Path into the valley to reach the off-leash dog park. That is an official municipal acknowledgement that the off-leash dog park is a real destination connected to the valley walking-path network, not just a user-submitted rumour.</p><p>Location detail still needs to be handled conservatively. The reviewed city sources are much stronger on valley-path context than on a formal civic dog-park address. The Pleasantdale Valley Walking Path page publishes exact access points at Wellock Road and Souris Avenue North on the north side and off King Street between Cundall Drive and Hillcrest Drive on the south side, while the Selfie Spot page separately points to the 4th Avenue Walking Path as the route down to the off-leash park. Rather than pretend the city has clearly published one tidy dog-park address, this guide should reflect what the sources actually support: Estevan's off-leash dog park sits within the valley walking-path area, and visitors should confirm the final entrance from posted signage or live map directions when they arrive.</p>",
+      "Featured Park 1": "estevan-off-leash-dog-park",
       "Featured Park 2": "",
       "Featured Park 3": "",
-      "Seasonal Tips": "<p id=\"\">- Winter: May be icy—wear boots and watch for snowdrifts.<br>- Spring: Wet and muddy conditions—bring a towel for cleanup.<br>- Summer: Use the park early in the day to avoid heat.<br>- Fall: A scenic time to enjoy off-leash activity with cooler temps.</p>",
-      "Park Rules": "",
-      "City Website": "",
+      "Seasonal Tips": "<ul><li><strong>Winter:</strong> Valley paths and slopes can become icy or drifted with snow, so keep dogs leashed until you reach the designated off-leash area.</li><li><strong>Spring:</strong> Estevan's valley routes can be muddy during thaw. Bring towels and expect soft ground near path edges.</li><li><strong>Summer:</strong> Estevan is sunny and open. Bring water, avoid the hottest part of the day, and watch for heat buildup on exposed routes.</li><li><strong>Fall:</strong> Cooler temperatures make longer outings easier, but shorter daylight and leaf cover can make footing less predictable along valley paths.</li></ul>",
+      "Park Rules": "<p><strong>Licensing:</strong> The City of Estevan says pet owners are responsible under the Animal Control Bylaw and that unlicensed animals can result in a fine. The licence page also lists the registration requirements and City Hall purchase process.</p><p><strong>Use the designated off-leash space:</strong> The City's recreation material identifies one off-leash dog park in the valley context rather than suggesting that ordinary city parks are generally off leash.</p><p><strong>Control and cleanup:</strong> Because the off-leash space sits within a broader public-path setting, handlers should keep dogs under control on the approach and remove waste immediately.</p>",
+      "City Website": "https://estevan.ca/animal-licenses/",
       "Province Page": "https://leashfree.ca/saskatchewan-dog-parks",
-      "Dog Park Etiquettes": "<p id=\"\"><strong id=\"\">1. Is the dog park fenced?</strong></p><p id=\"\">Yes. Estevan’s off-leash dog park is **fully fenced** with a gated entry.</p><p id=\"\"><strong id=\"\">2. Do dogs need to be licensed?</strong></p><p id=\"\">Yes. Dogs must be **licensed with the City of Estevan** and be up-to-date on vaccinations.</p><p id=\"\"><strong id=\"\">3. Are there leash requirements?</strong></p><p id=\"\">Dogs must be **on-leash outside the fenced area**, including nearby trails.</p><p id=\"\"><strong id=\"\">4. Can food or toys be brought in?</strong></p><p id=\"\">Avoid bringing food or high-value toys that may trigger guarding behavior.</p><p id=\"\"><strong id=\"\">5. Do owners need to clean up?</strong></p><p id=\"\">Yes. **Bring your own bags** and use provided bins to dispose of dog waste.</p>",
-      "Dog Park FAQs": "<p id=\"\"><strong id=\"\">1. Where is the off-leash dog park in Estevan?</strong></p><p id=\"\">Near the **walking trail system** west of the city, close to the water treatment plant.</p><p id=\"\"><strong id=\"\">2. Is the park open year-round?</strong></p><p id=\"\">Yes, but **conditions vary** in winter and spring due to snow and mud.</p><p id=\"\"><strong id=\"\">3. Are there separate areas for large and small dogs?</strong></p><p id=\"\">No. All dogs use the **same fenced area**.</p><p id=\"\"><strong id=\"\">4. Are there any amenities?</strong></p><p id=\"\">Benches and **waste bins** are available. Bring water for your dog.</p><p id=\"\"><strong id=\"\">5. What are the operating hours?</strong></p><p id=\"\">Generally **6:00 a.m. to 10:00 p.m.**, unless posted otherwise.</p><p id=\"\"><strong id=\"\">6. Is parking available?</strong></p><p id=\"\">Yes. **Street or nearby parking** is accessible within walking distance of the park.</p>",
-      "Nearby Cities": "",
-      "Reviewed On": ""
+      "Dog Park Etiquettes": "<p><strong>1. Start with licensing.</strong></p><p>Estevan's current animal-licensing page is one of the strongest official sources in the city dog-source set, so municipal compliance is part of basic trip prep.</p><p><strong>2. Treat the valley as a transition space.</strong></p><p>The city places the off-leash park within the walking-path and valley context, so calm leash transitions matter before your dog is fully inside the designated area.</p><p><strong>3. Bring your own essentials.</strong></p><p>The reviewed official source set does not clearly publish a full amenity sheet for the dog park, so plan as if you need your own water, bags, and towels.</p><p><strong>4. Use conservative assumptions about layout.</strong></p><p>The city clearly supports the park's existence, but not a detailed public feature map. Verify the exact entrance and current conditions when you arrive.</p><p><strong>5. Leave early if the environment is not working for your dog.</strong></p><p>Shared valley and pathway settings can mix walkers, dogs, and changing terrain, so supervision matters more than generic dog-park slogans.</p>",
+      "Dog Park FAQs": "<p><strong>1. Does Estevan have an official off-leash dog park?</strong></p><p>Yes. Current City of Estevan recreation content explicitly refers to the off-leash dog park in the valley.</p><p><strong>2. Does Estevan require dog licensing?</strong></p><p>Yes. The City's animal-licensing page says pets within city limits are regulated under the Animal Control Bylaw, and unlicensed animals can result in a fine.</p><p><strong>3. Where is the off-leash dog park in Estevan?</strong></p><p>The strongest official location context places it in the valley and walking-path system. The Selfie Spot page points visitors down from the 4th Avenue Walking Path to the off-leash dog park, while other city path pages publish nearby valley access points. Visitors should still confirm the final park entrance on arrival.</p><p><strong>4. Why is this guide conservative about amenities?</strong></p><p>Because the reviewed official source set confirms the park's existence and valley context more clearly than it confirms details such as fencing, water, benches, or posted hours.</p><p><strong>5. What should I check before visiting?</strong></p><p>Confirm your dog's licence status, bring your own supplies, and verify the exact entrance and current path conditions when you arrive.</p>",
+      "Nearby Cities": "Weyburn, Regina",
+      "Reviewed On": "Tue Jul 21 2026 00:00:00 GMT+0000 (Coordinated Universal Time)"
     },
     "warnings": []
   },
@@ -2097,29 +2096,35 @@
     "name": "Laval",
     "slug": "laval",
     "title": "Laval",
-    "seoTitle": "Dog parks in Laval, Quebec | LeashFree.ca",
-    "metaDescription": "Find Laval's top off-leash dog parks. Explore fenced parcs à chiens where dogs can run freely, play safely, and meet other pups across Laval.",
-    "description": "Find Laval's top off-leash dog parks. Explore fenced parcs à chiens where dogs can run freely, play safely, and meet other pups across Laval.",
-    "body": "<p>Laval continues to expand its network of <strong id=\"\">dedicated parcs à chiens</strong>, providing fenced, secure zones where dogs can play off-leash. These parks are distributed throughout the city, with popular locations in Vimont, Sainte-Rose, and Duvernay. Amenities vary by site, with some parks offering benches, lighting, shaded areas, and water during warmer months. Most parks are open year-round and are maintained by the City of Laval.</p>",
+    "seoTitle": "Dog Parks in Laval, Quebec | Off-Leash Guide",
+    "metaDescription": "Source-backed guide to Laval dog parks, including the city's current dog-park network, licence and tag rules, leash requirements, and official park access guidance.",
+    "description": "Source-backed guide to Laval dog parks, including the city's current dog-park network, licence and tag rules, leash requirements, and official park access guidance.",
+    "body": "<p>Laval's current dog-parks guide and interactive map show that the city's dog spaces are distributed across multiple sectors rather than concentrated in one neighbourhood. The published list includes named sites in Auteuil, Duvernay, Laval-des-Rapides, Laval-Ouest, Sainte-Rose, Vimont, and other sectors, with both dedicated parcs canins and aires d'exercice pour chiens. Individual park pages also publish specific addresses, the standard park schedule of 7 h to 22 h year-round for the dog space, and the same core access rules.</p><p>The city-wide animal regulation page adds the broader legal context. Outside designated off-leash dog spaces, Laval requires dogs to be kept on a leash no longer than 1.85 metres in public. Dogs must also be registered with the city and wear a valid municipal tag, and handlers must clean up waste in public spaces. For a stronger city guide, the right approach is to reflect the size of the official network, link to representative current parks, and use the city's published rules instead of generic dog-park filler.</p>",
     "collection": "City Pages",
     "sourceFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - City Pages - 68419a1c56454ae93923d2e4.csv",
     "canonicalUrl": "https://leashfree.ca/dog-parks/laval/",
     "routePath": "/dog-parks/laval/",
-    "media": [
-      {
-        "fieldName": "Hero Image",
-        "value": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6855f8b7dddec16f09782f9d_off-leash-dog-parks-canada.png",
-        "originalUrls": [
-          "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6855f8b7dddec16f09782f9d_off-leash-dog-parks-canada.png"
-        ]
-      }
-    ],
+    "media": [],
     "references": {
       "Province": [
         "Quebec"
       ],
+      "Featured Park 1": [
+        "parc-canin-des-rossignols"
+      ],
+      "Featured Park 2": [
+        "parc-canin-lava"
+      ],
+      "Featured Park 3": [
+        "parc-laval-ouest-site-saint-antoine-dog-exercise-area"
+      ],
       "Province Page": [
-        "https://leashfree.ca/quebec-dog-parks"
+        "https://leashfree.ca/dog-parks/qc/"
+      ],
+      "Nearby Cities": [
+        "Montreal",
+        "Terrebonne",
+        "Longueuil"
       ]
     },
     "raw": {
@@ -2131,25 +2136,25 @@
       "Archived": "false",
       "Draft": "false",
       "Created On": "Sun Jul 20 2025 00:12:43 GMT+0000 (Coordinated Universal Time)",
-      "Updated On": "Mon Sep 08 2025 13:21:13 GMT+0000 (Coordinated Universal Time)",
-      "Published On": "Mon Sep 08 2025 13:27:50 GMT+0000 (Coordinated Universal Time)",
+      "Updated On": "Mon Jul 20 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "Published On": "Mon Jul 20 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "Province": "Quebec",
-      "SEO Title Tag": "Dog parks in Laval, Quebec | LeashFree.ca",
-      "Meta Description": "Find Laval's top off-leash dog parks. Explore fenced parcs à chiens where dogs can run freely, play safely, and meet other pups across Laval.",
-      "Hero Image": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6855f8b7dddec16f09782f9d_off-leash-dog-parks-canada.png",
-      "Intro Paragraph": "<p>Laval offers a growing number of <strong id=\"\">off-leash dog parks (parcs à chiens)</strong> where pets can run free in fenced areas designed for safety, exercise, and socialization.</p>",
-      "About Section": "<p>Laval continues to expand its network of <strong id=\"\">dedicated parcs à chiens</strong>, providing fenced, secure zones where dogs can play off-leash. These parks are distributed throughout the city, with popular locations in Vimont, Sainte-Rose, and Duvernay. Amenities vary by site, with some parks offering benches, lighting, shaded areas, and water during warmer months. Most parks are open year-round and are maintained by the City of Laval.</p>",
-      "Featured Park 1": "",
-      "Featured Park 2": "",
-      "Featured Park 3": "",
-      "Seasonal Tips": "<p id=\"\">- Winter: Paths may not be cleared—wear proper footwear.<br>- Spring: Parks may be muddy after snowmelt.<br>- Summer: Some parks offer water stations; bring water just in case.<br>- Fall: Enjoy colourful leaves and lower foot traffic.</p>",
-      "Park Rules": "",
-      "City Website": "",
-      "Province Page": "https://leashfree.ca/quebec-dog-parks",
-      "Dog Park Etiquettes": "<p id=\"\"><strong id=\"\">1. Are dogs allowed off-leash everywhere?</strong></p><p id=\"\">No, dogs must remain on leash in public unless in a **designated off-leash park**.</p><p id=\"\"><strong id=\"\">2. What behavior is expected from dogs?</strong></p><p id=\"\">Dogs should be **non-aggressive, socialized**, and under voice control at all times.</p><p id=\"\"><strong id=\"\">3. Can food or toys be brought in?</strong></p><p id=\"\">Avoid bringing food or toys that may trigger **possessive or aggressive behavior**.</p><p id=\"\"><strong id=\"\">4. Do dogs need to be licensed?</strong></p><p id=\"\">Yes, dogs must have a **valid Laval license tag** visible.</p><p id=\"\"><strong id=\"\">5. Do owners need to clean up after their dogs?</strong></p><p id=\"\">Yes. **Cleaning up is mandatory** — bring bags and use provided waste bins.</p>",
-      "Dog Park FAQs": "<p id=\"\"><strong id=\"\">1. Are Laval’s dog parks fenced?</strong></p><p id=\"\">Yes. All official off-leash dog parks in Laval are **fenced and enclosed**.</p><p id=\"\"><strong id=\"\">2. Is there an entry fee?</strong></p><p id=\"\">No. Laval’s parcs à chiens are **free to use** for all residents and visitors.</p><p id=\"\"><strong id=\"\">3. Are dog parks open in winter?</strong></p><p id=\"\">Yes. Laval’s dog parks are **open year-round**, although maintenance levels may vary.</p><p id=\"\"><strong id=\"\">4. What are the hours of operation?</strong></p><p id=\"\">Typically **7 a.m. to 11 p.m.**, but hours may differ by park — check signage.</p><p id=\"\"><strong id=\"\">5. Are separate areas available for small dogs?</strong></p><p id=\"\">Some parks may offer **designated small dog zones**; verify before visiting.</p><p id=\"\"><strong id=\"\">6. Do I need to register my dog with Laval?</strong></p><p id=\"\">Yes. Dogs must be **registered and wear a city-issued ID tag**.</p>",
-      "Nearby Cities": "",
-      "Reviewed On": ""
+      "SEO Title Tag": "Dog Parks in Laval, Quebec | Off-Leash Guide",
+      "Meta Description": "Source-backed guide to Laval dog parks, including the city's current dog-park network, licence and tag rules, leash requirements, and official park access guidance.",
+      "Hero Image": "",
+      "Intro Paragraph": "<p>As of July 20, 2026, Laval's current official dog-parks guide page shows 12 results across parcs canins and aires d'exercice pour chiens. That is a much stronger factual base than the older generic draft, because the Ville de Laval now publishes a current network page, individual park entries, and the broader municipal animal rules that govern leash use, tags, and public conduct.</p>",
+      "About Section": "<p>Laval's current dog-parks guide and interactive map show that the city's dog spaces are distributed across multiple sectors rather than concentrated in one neighbourhood. The published list includes named sites in Auteuil, Duvernay, Laval-des-Rapides, Laval-Ouest, Sainte-Rose, Vimont, and other sectors, with both dedicated parcs canins and aires d'exercice pour chiens. Individual park pages also publish specific addresses, the standard park schedule of 7 h to 22 h year-round for the dog space, and the same core access rules.</p><p>The city-wide animal regulation page adds the broader legal context. Outside designated off-leash dog spaces, Laval requires dogs to be kept on a leash no longer than 1.85 metres in public. Dogs must also be registered with the city and wear a valid municipal tag, and handlers must clean up waste in public spaces. For a stronger city guide, the right approach is to reflect the size of the official network, link to representative current parks, and use the city's published rules instead of generic dog-park filler.</p>",
+      "Featured Park 1": "parc-canin-des-rossignols",
+      "Featured Park 2": "parc-canin-lava",
+      "Featured Park 3": "parc-laval-ouest-site-saint-antoine-dog-exercise-area",
+      "Seasonal Tips": "<ul><li><strong>Winter:</strong> Laval's dog spaces are listed as open year-round, but snowpack, ice, and slushy gates can change how easy it is to enter and exit safely.</li><li><strong>Spring:</strong> Thaw conditions can make dog runs muddy. Bring towels and keep transitions controlled near entrances.</li><li><strong>Summer:</strong> Standard dog-park hours remain broad, but midday heat can build quickly on exposed surfaces. Bring water unless you have confirmed a fountain on site.</li><li><strong>Fall:</strong> Cooler temperatures are usually better for longer play sessions, but wet leaves and shorter daylight make footing and visibility worth checking before evening visits.</li></ul>",
+      "Park Rules": "<p><strong>Leash rule outside designated dog spaces:</strong> Laval says dogs in public must be kept on a leash no longer than 1.85 metres unless they are inside a designated dog park or exercise area.</p><p><strong>Tag requirement:</strong> The city's current animal rules require dogs to be registered and to wear a valid municipal tag.</p><p><strong>Dog-park access rules:</strong> Laval's current dog-park pages say the space is reserved for dogs and their handlers, children under 12 must be accompanied by an adult, and dogs showing illness, aggression, or heat-cycle risk are not allowed.</p><p><strong>Dog-park use rules:</strong> The city says handlers must keep gates closed, keep dogs leashed until they are inside the exercise area, remain with the dog, clean up waste immediately, and avoid feeding dogs inside the enclosure.</p><p><strong>Incident reporting:</strong> Individual Laval dog-park pages say any bite or attack involving a dog should be reported by calling 911.</p>",
+      "City Website": "https://www.laval.ca/Pages/Fr/Citoyens/parcs-a-chiens.aspx",
+      "Province Page": "https://leashfree.ca/dog-parks/qc/",
+      "Dog Park Etiquettes": "<p><strong>1. Treat designated dog spaces as the exception.</strong></p><p>Laval's city-wide rule is that dogs stay on a leash up to 1.85 metres in public unless you are inside a designated dog park or exercise area.</p><p><strong>2. Keep your dog's city tag current and visible.</strong></p><p>The official rules require a valid municipal tag, and the dog-park pages repeat that dogs must wear it.</p><p><strong>3. Leash up until you are fully inside.</strong></p><p>Laval's published park rules explicitly require dogs to stay on leash until they are inside the exercise area, so calm entries and exits are part of basic handling.</p><p><strong>4. Do not bring a dog that is sick, in heat, or showing aggression.</strong></p><p>The city's access rules are clear on these restrictions, which is more useful than generic socialization advice.</p><p><strong>5. Plan for differences between parks.</strong></p><p>Some Laval sites publish extra amenities such as a water fountain or picnic area, while others are listed more simply. Confirm the exact site features before you rely on them.</p>",
+      "Dog Park FAQs": "<p><strong>1. How many official dog spaces does Laval currently show?</strong></p><p>As of July 20, 2026, Laval's current dog-parks guide page shows 12 results across dog parks and dog exercise areas.</p><p><strong>2. Can I let my dog off leash in regular Laval parks?</strong></p><p>No. Laval's animal rules say dogs in public must stay on a leash no longer than 1.85 metres unless they are in a designated dog space.</p><p><strong>3. Does Laval require a dog licence and tag?</strong></p><p>Yes. Laval requires dogs to be registered with the city and to wear a valid municipal tag.</p><p><strong>4. What hours do Laval dog parks usually follow?</strong></p><p>Individual official park pages reviewed for this update list the standard park schedule as open year-round from 7 h to 22 h for the dog space.</p><p><strong>5. Are all Laval dog parks the same?</strong></p><p>No. The city publishes a network of both parcs canins and aires d'exercice pour chiens, and some individual pages list extra features while others only confirm the location, hours, and rules.</p>",
+      "Nearby Cities": "Montreal, Terrebonne, Longueuil",
+      "Reviewed On": "Mon Jul 20 2026 00:00:00 GMT+0000 (Coordinated Universal Time)"
     },
     "warnings": []
   },
@@ -2524,29 +2529,28 @@
     "name": "Melfort",
     "slug": "melfort",
     "title": "Melfort",
-    "seoTitle": "Off-Leash Dog Park in Melfort SK | LeashFree.ca",
-    "metaDescription": "Discover Melfort’s off-leash dog park, a fenced and welcoming space in northeast Saskatchewan where dogs can enjoy safe, off-leash play.",
-    "description": "Discover Melfort’s off-leash dog park, a fenced and welcoming space in northeast Saskatchewan where dogs can enjoy safe, off-leash play.",
-    "body": "<p>Melfort features a <strong id=\"\">designated off-leash dog park</strong> located just off Saskatchewan Drive, adjacent to the Melfort Fairgrounds. The fenced area includes grassy terrain, waste bins, and a peaceful atmosphere where dogs can socialize and burn off energy. Residents appreciate the city’s commitment to pet-friendly infrastructure, and the park is maintained seasonally to ensure a safe and enjoyable environment for all.</p>",
+    "seoTitle": "Dog Parks in Melfort, Saskatchewan | Off-Leash Guide",
+    "metaDescription": "Official-source guide to dog parks in Melfort, Saskatchewan, including Spruce Haven's fenced off-leash park, leash rules, and pet licensing requirements.",
+    "description": "Official-source guide to dog parks in Melfort, Saskatchewan, including Spruce Haven's fenced off-leash park, leash rules, and pet licensing requirements.",
+    "body": "<p>The City of Melfort's official dog-park page says the off-leash dog park is located near Spruce Haven Park and is the only area in the city where dogs may be off leash in public. That matters because it gives this page a clear municipal rule foundation instead of the generic assumption that any open greenspace might be acceptable for off-leash use.</p><p>The City's broader parks page adds useful location context. Spruce Haven Recreation Area is identified at the corner of Shadd Drive and Spruce Haven Road, and the City lists the off-leash dog park as one of the amenities within that recreation area alongside trails, sports fields, washrooms, and other public facilities. The dedicated dog-park page then confirms that the park is open year round, fully fenced, and organized into suggested small-dog and large-dog sections.</p><p>Melfort also publishes a clear animal-services framework. The City requires annual pet licences for dogs and cats within city limits and states that dogs found running at large are in breach of the dog-control bylaw. The City's walking-trails page reinforces the same distinction: dogs must stay leashed on city trails and can only enjoy unleashed exercise at the designated dog park. That combination gives this page a much stronger factual base than the older draft.</p>",
     "collection": "City Pages",
     "sourceFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - City Pages - 68419a1c56454ae93923d2e4.csv",
     "canonicalUrl": "https://leashfree.ca/dog-parks/melfort/",
     "routePath": "/dog-parks/melfort/",
-    "media": [
-      {
-        "fieldName": "Hero Image",
-        "value": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6855f8b7dddec16f09782f9d_off-leash-dog-parks-canada.png",
-        "originalUrls": [
-          "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6855f8b7dddec16f09782f9d_off-leash-dog-parks-canada.png"
-        ]
-      }
-    ],
+    "media": [],
     "references": {
       "Province": [
         "Saskatchewan"
       ],
+      "Featured Park 1": [
+        "spruce-haven-off-leash-dog-park"
+      ],
       "Province Page": [
         "https://leashfree.ca/saskatchewan-dog-parks"
+      ],
+      "Nearby Cities": [
+        "Nipawin",
+        "Prince Albert"
       ]
     },
     "raw": {
@@ -2558,25 +2562,25 @@
       "Archived": "false",
       "Draft": "false",
       "Created On": "Sun Jul 13 2025 01:44:43 GMT+0000 (Coordinated Universal Time)",
-      "Updated On": "Mon Sep 08 2025 13:21:13 GMT+0000 (Coordinated Universal Time)",
-      "Published On": "Mon Sep 08 2025 13:27:50 GMT+0000 (Coordinated Universal Time)",
+      "Updated On": "Tue Jul 21 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "Published On": "Tue Jul 21 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "Province": "Saskatchewan",
-      "SEO Title Tag": "Off-Leash Dog Park in Melfort SK | LeashFree.ca",
-      "Meta Description": "Discover Melfort’s off-leash dog park, a fenced and welcoming space in northeast Saskatchewan where dogs can enjoy safe, off-leash play.",
-      "Hero Image": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6855f8b7dddec16f09782f9d_off-leash-dog-parks-canada.png",
-      "Intro Paragraph": "<p>In the heart of northeast Saskatchewan, <strong id=\"\">Melfort’s off-leash dog park</strong> offers a clean, secure, and community-loved space for dogs to run free.</p>",
-      "About Section": "<p>Melfort features a <strong id=\"\">designated off-leash dog park</strong> located just off Saskatchewan Drive, adjacent to the Melfort Fairgrounds. The fenced area includes grassy terrain, waste bins, and a peaceful atmosphere where dogs can socialize and burn off energy. Residents appreciate the city’s commitment to pet-friendly infrastructure, and the park is maintained seasonally to ensure a safe and enjoyable environment for all.</p>",
-      "Featured Park 1": "",
+      "SEO Title Tag": "Dog Parks in Melfort, Saskatchewan | Off-Leash Guide",
+      "Meta Description": "Official-source guide to dog parks in Melfort, Saskatchewan, including Spruce Haven's fenced off-leash park, leash rules, and pet licensing requirements.",
+      "Hero Image": "",
+      "Intro Paragraph": "<p>Melfort is one of the easier Saskatchewan city pages to improve because the City publishes a dedicated dog-park page instead of leaving visitors to guess from scattered references. The official source set confirms where off-leash recreation is allowed, how the park is divided, and what ownership rules apply across the city.</p>",
+      "About Section": "<p>The City of Melfort's official dog-park page says the off-leash dog park is located near Spruce Haven Park and is the only area in the city where dogs may be off leash in public. That matters because it gives this page a clear municipal rule foundation instead of the generic assumption that any open greenspace might be acceptable for off-leash use.</p><p>The City's broader parks page adds useful location context. Spruce Haven Recreation Area is identified at the corner of Shadd Drive and Spruce Haven Road, and the City lists the off-leash dog park as one of the amenities within that recreation area alongside trails, sports fields, washrooms, and other public facilities. The dedicated dog-park page then confirms that the park is open year round, fully fenced, and organized into suggested small-dog and large-dog sections.</p><p>Melfort also publishes a clear animal-services framework. The City requires annual pet licences for dogs and cats within city limits and states that dogs found running at large are in breach of the dog-control bylaw. The City's walking-trails page reinforces the same distinction: dogs must stay leashed on city trails and can only enjoy unleashed exercise at the designated dog park. That combination gives this page a much stronger factual base than the older draft.</p>",
+      "Featured Park 1": "spruce-haven-off-leash-dog-park",
       "Featured Park 2": "",
       "Featured Park 3": "",
-      "Seasonal Tips": "<p id=\"\">- Winter: May be inaccessible after heavy snowfall.<br>- Spring: Prepare for muddy conditions.<br>- Summer: Bring water and avoid midday heat.<br>- Fall: Pleasant weather encourages longer play sessions.</p>",
-      "Park Rules": "",
-      "City Website": "",
+      "Seasonal Tips": "<ul><li><strong>Winter:</strong> The City says the dog park is open year round, but prairie wind, packed snow, and icy gates can still affect comfort and footing.</li><li><strong>Spring:</strong> Bring towels and expect muddy ground as snowmelt moves through the recreation area.</li><li><strong>Summer:</strong> Use cooler parts of the day, carry water, and keep dogs leashed until fully inside the off-leash enclosure.</li><li><strong>Fall:</strong> Cooler temperatures are ideal for longer visits, but wet grass and early frost can make surfaces slick.</li></ul>",
+      "Park Rules": "<p><strong>Off-leash access is limited to the designated dog park.</strong> The City says the off-leash dog park near Spruce Haven Park is the only place in Melfort where dogs may be off leash in public.</p><p><strong>Licence your dog.</strong> Melfort requires annual pet licences for dogs and cats within city limits.</p><p><strong>Follow posted park rules.</strong> The official dog-park page says dogs must be leashed while entering and exiting, waste must be cleaned up immediately, handlers must supervise their dogs inside the park, and aggressive dogs must be removed right away.</p>",
+      "City Website": "https://www.melfort.ca/p/dog-park",
       "Province Page": "https://leashfree.ca/saskatchewan-dog-parks",
-      "Dog Park Etiquettes": "<p id=\"\"><strong id=\"\">1. Are dogs allowed off-leash in the park?</strong></p><p id=\"\">Yes, within the **fenced area only**. Dogs must be leashed elsewhere.</p><p id=\"\"><strong id=\"\">2. What are the supervision rules?</strong></p><p id=\"\">Owners must remain in the park and **monitor their dogs at all times**.</p><p id=\"\"><strong id=\"\">3. Can I bring treats or toys?</strong></p><p id=\"\">Yes, but use caution—**avoid food that may attract other dogs**.</p><p id=\"\"><strong id=\"\">4. Do I need to bring waste bags?</strong></p><p id=\"\">Yes. **Clean up is required**, and bags may not always be provided.</p><p id=\"\"><strong id=\"\">5. Are aggressive dogs allowed?</strong></p><p id=\"\">No. Dogs must be **well-socialized and under control**.</p>",
-      "Dog Park FAQs": "<p id=\"\"><strong id=\"\">1. Where is the Melfort dog park located?</strong></p><p id=\"\">Near the **Melfort Fairgrounds** on Saskatchewan Drive.</p><p id=\"\"><strong id=\"\">2. Is the park fully fenced?</strong></p><p id=\"\">Yes. It features **secure perimeter fencing** with a gate.</p><p id=\"\"><strong id=\"\">3. Are dogs of all sizes welcome?</strong></p><p id=\"\">Yes. However, there is **no separate small dog area**.</p><p id=\"\"><strong id=\"\">4. Is there water on-site?</strong></p><p id=\"\">No. Please **bring your own water** for your dog.</p><p id=\"\"><strong id=\"\">5. When is the park open?</strong></p><p id=\"\">Generally **from dawn to dusk**, year-round (weather permitting).</p><p id=\"\"><strong id=\"\">6. Is parking available?</strong></p><p id=\"\">Yes. **Free parking** is located near the Fairgrounds.</p>",
-      "Nearby Cities": "",
-      "Reviewed On": ""
+      "Dog Park Etiquettes": "<p><strong>1. Use the enclosure, not the surrounding greenspace.</strong></p><p>Melfort's rules are unusually clear: off-leash activity belongs inside the designated dog park, not on ordinary trails or park lawns.</p><p><strong>2. Choose the right section thoughtfully.</strong></p><p>The City suggests the small-dog area for dogs under 30 pounds, quieter senior dogs, and dogs more comfortable with smaller companions, while the large-dog area is suggested for dogs over 30 pounds and active small dogs.</p><p><strong>3. Keep transitions calm.</strong></p><p>Because dogs must be leashed while entering and exiting, the gate area should stay controlled and uncluttered.</p><p><strong>4. Supervise actively.</strong></p><p>The official rules require handlers to stay inside the park with a leash readily available.</p><p><strong>5. Respect the prohibited list.</strong></p><p>The City specifically prohibits food or treats, glass containers, dogs in heat, sick dogs, aggressive dogs, and puppies under four months.</p>",
+      "Dog Park FAQs": "<p><strong>1. Does Melfort have an official off-leash dog park?</strong></p><p>Yes. The City of Melfort publishes a dedicated dog-park page and says it is the only area in the city where dogs can be off leash in public.</p><p><strong>2. Where is the dog park in Melfort?</strong></p><p>The City places it near Spruce Haven Park, and the broader recreation-area page identifies Spruce Haven Recreation Area at Shadd Drive and Spruce Haven Road.</p><p><strong>3. Is the Melfort dog park fenced?</strong></p><p>Yes. The City's dog-park page says the park is fully fenced.</p><p><strong>4. Are there separate areas for different dogs?</strong></p><p>Yes. The City describes suggested small-dog and large-dog sections within the park.</p><p><strong>5. Are dogs allowed off leash on Melfort walking trails?</strong></p><p>No. The City's trail page says dogs must always be kept on a leash on trails and can only enjoy unleashed exercise at the designated dog park.</p><p><strong>6. Does Melfort require dog licensing?</strong></p><p>Yes. The City's animal-services page says dogs and cats within city limits require an annual pet licence.</p>",
+      "Nearby Cities": "Nipawin, Prince Albert",
+      "Reviewed On": "Tue Jul 21 2026 00:00:00 GMT+0000 (Coordinated Universal Time)"
     },
     "warnings": []
   },
