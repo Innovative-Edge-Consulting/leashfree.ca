@@ -1,10 +1,10 @@
 # Content Review Summary
 
-Generated at: 2026-07-20T12:37:58.152Z
-- Total pages audited: 1098
-- Stale pages: 651
-- Thin pages: 680
-- Missing source URLs: 112
+Generated at: 2026-07-22T16:08:00.618Z
+- Total pages audited: 1104
+- Stale pages: 646
+- Thin pages: 675
+- Missing source URLs: 108
 - Duplicate title groups: 1
 - Duplicate meta description groups: 0
 - Missing updatedOn: 0
@@ -24,27 +24,27 @@ Generated at: 2026-07-20T12:37:58.152Z
 
 | Section | URLs | Risk | Avg Score | Avg Quality | Complete | Stale | Thin | Missing Sources | Data Risk |
 | --- | ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Core | 10 | High | 45 | 93 | 0 | 10 | 1 | 0 | 0 |
-| Dog Parks | 515 | Very high | 77 | 88 | 7 | 496 | 444 | 40 | 0 |
-| Dog Park Locations | 92 | High | 91 | 78 | 8 | 79 | 72 | 72 | 0 |
+| Core | 10 | High | 40 | 100 | 0 | 10 | 0 | 0 | 0 |
+| Dog Parks | 520 | Very high | 76 | 88 | 7 | 495 | 444 | 40 | 0 |
+| Dog Park Locations | 92 | High | 87 | 80 | 12 | 75 | 68 | 68 | 0 |
 | Directory | 66 | Medium-high | 47 | 100 | 0 | 66 | 16 | 0 | 6 |
-| Blog | 57 | Medium | 12 | 100 | 51 | 0 | 1 | 0 | 4 |
+| Blog | 58 | Medium | 12 | 100 | 52 | 0 | 1 | 0 | 4 |
 | Dog Breeds | 319 | Medium-low | 17 | 100 | 210 | 0 | 107 | 0 | 2 |
 | Dog Names | 39 | Low | 29 | 100 | 0 | 0 | 39 | 0 | 0 |
 
 ## Quality Status Counts
 
-- thin-content: 616
-- complete: 276
-- missing-source: 112
-- needs-review: 82
+- thin-content: 615
+- complete: 281
+- missing-source: 108
+- needs-review: 88
 - data-quality-risk: 12
 
 ## Issue Classification Counts
 
-- needs-content-expansion: 726
+- needs-content-expansion: 721
 - needs-human-review: 670
-- needs-source-research: 112
+- needs-source-research: 108
 - possible-duplicate: 12
 - safe-technical-fix: 10
 
@@ -52,31 +52,31 @@ Generated at: 2026-07-20T12:37:58.152Z
 
 | Score | Quality | Status | Section | Route | Main Reasons |
 | ---: | ---: | --- | --- | --- | --- |
-| 110 | 64 | missing-source | Dog Park Locations | /dog-parks/estevan/ | stale 315 days; thin content 377 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn, parkListingGrid |
-| 110 | 64 | missing-source | Dog Park Locations | /dog-parks/laval/ | stale 315 days; thin content 364 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn, parkListingGrid |
-| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/amherst/ | stale 315 days; thin content 323 words; missing official/source URL; missing city fields: officialSource, reviewedOn, parkListingGrid |
-| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/barrie/ | stale 315 days; thin content 435 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
-| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/belleville/ | stale 315 days; thin content 384 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
-| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/brampton/ | stale 315 days; thin content 394 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
-| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/brandon/ | stale 315 days; thin content 425 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
-| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/burnaby/ | stale 315 days; thin content 419 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
-| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/campbellford/ | stale 315 days; thin content 389 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
-| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/coquitlam/ | stale 315 days; thin content 413 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
-| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/courtice/ | stale 315 days; thin content 359 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
-| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/edmonton/ | stale 315 days; thin content 429 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
-| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/etobicoke/ | stale 315 days; thin content 423 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
-| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/gimli/ | stale 315 days; thin content 411 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
-| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/grande-prairie/ | stale 315 days; thin content 398 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
-| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/grimsby/ | stale 315 days; thin content 396 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
-| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/guelph/ | stale 315 days; thin content 423 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
-| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/halton-hills-dog-parks/ | stale 315 days; thin content 411 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
-| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/hamilton/ | stale 315 days; thin content 412 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
-| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/ladysmith/ | stale 315 days; thin content 402 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
-| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/lethbridge/ | stale 315 days; thin content 430 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
-| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/medicine-hat/ | stale 315 days; thin content 409 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
-| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/melfort/ | stale 315 days; thin content 299 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
-| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/melville/ | stale 315 days; thin content 354 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
-| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/milton/ | stale 315 days; thin content 399 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
+| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/barrie/ | stale 317 days; thin content 435 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
+| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/belleville/ | stale 317 days; thin content 384 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
+| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/brampton/ | stale 317 days; thin content 394 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
+| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/brandon/ | stale 317 days; thin content 425 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
+| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/burnaby/ | stale 317 days; thin content 419 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
+| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/campbellford/ | stale 317 days; thin content 389 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
+| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/coquitlam/ | stale 317 days; thin content 413 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
+| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/courtice/ | stale 317 days; thin content 359 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
+| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/edmonton/ | stale 317 days; thin content 429 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
+| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/etobicoke/ | stale 317 days; thin content 423 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
+| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/gimli/ | stale 317 days; thin content 411 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
+| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/grande-prairie/ | stale 317 days; thin content 398 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
+| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/grimsby/ | stale 317 days; thin content 396 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
+| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/guelph/ | stale 317 days; thin content 423 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
+| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/halton-hills-dog-parks/ | stale 317 days; thin content 411 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
+| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/hamilton/ | stale 317 days; thin content 412 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
+| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/ladysmith/ | stale 317 days; thin content 402 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
+| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/lethbridge/ | stale 317 days; thin content 430 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
+| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/medicine-hat/ | stale 317 days; thin content 409 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
+| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/melville/ | stale 317 days; thin content 354 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
+| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/milton/ | stale 317 days; thin content 399 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
+| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/montreal/ | stale 317 days; thin content 378 words; missing official/source URL; missing city fields: seasonalTips, officialSource, reviewedOn |
+| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/moose-jaw/ | stale 317 days; thin content 402 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
+| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/morden/ | stale 317 days; thin content 372 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
+| 107 | 73 | missing-source | Dog Park Locations | /dog-parks/nelson/ | stale 317 days; thin content 421 words; missing official/source URL; missing city fields: rules, officialSource, reviewedOn |
 
 ## Top Pages Closest to Completion
 
@@ -102,9 +102,9 @@ Generated at: 2026-07-20T12:37:58.152Z
 - 100% /directory/hawkins-animal-hospital/: data-quality-risk; missing minor review
 - 100% /directory/james-snow-animal-hospital-milton/: data-quality-risk; missing minor review
 - 100% /directory/james-snow-animal-hospital/: data-quality-risk; missing minor review
+- 100% /dog-parks/spruce-haven-off-leash-dog-park/: thin-content; missing minor review
 - 100% /dog-breeds/miniature-american-shepherd-2/: data-quality-risk; missing minor review
 - 100% /dog-breeds/miniature-american-shepherd/: data-quality-risk; missing minor review
-- 100% /dog-parks/ab/: thin-content; missing minor review
 
 ## Major Data Issues
 
@@ -171,9 +171,6 @@ Generated at: 2026-07-20T12:37:58.152Z
 
 ## Thin Pages Sample
 
-- /dog-parks/estevan/ (377/450 words)
-- /dog-parks/laval/ (364/450 words)
-- /dog-parks/amherst/ (323/450 words)
 - /dog-parks/barrie/ (435/450 words)
 - /dog-parks/belleville/ (384/450 words)
 - /dog-parks/brampton/ (394/450 words)
@@ -193,15 +190,15 @@ Generated at: 2026-07-20T12:37:58.152Z
 - /dog-parks/ladysmith/ (402/450 words)
 - /dog-parks/lethbridge/ (430/450 words)
 - /dog-parks/medicine-hat/ (409/450 words)
-- /dog-parks/melfort/ (299/450 words)
 - /dog-parks/melville/ (354/450 words)
 - /dog-parks/milton/ (399/450 words)
+- /dog-parks/montreal/ (378/450 words)
+- /dog-parks/moose-jaw/ (402/450 words)
+- /dog-parks/morden/ (372/450 words)
+- /dog-parks/nelson/ (421/450 words)
 
 ## Missing Source URL Sample
 
-- /dog-parks/estevan/ (City Pages)
-- /dog-parks/laval/ (City Pages)
-- /dog-parks/amherst/ (City Pages)
 - /dog-parks/barrie/ (City Pages)
 - /dog-parks/belleville/ (City Pages)
 - /dog-parks/brampton/ (City Pages)
@@ -221,15 +218,15 @@ Generated at: 2026-07-20T12:37:58.152Z
 - /dog-parks/ladysmith/ (City Pages)
 - /dog-parks/lethbridge/ (City Pages)
 - /dog-parks/medicine-hat/ (City Pages)
-- /dog-parks/melfort/ (City Pages)
 - /dog-parks/melville/ (City Pages)
 - /dog-parks/milton/ (City Pages)
+- /dog-parks/montreal/ (City Pages)
+- /dog-parks/moose-jaw/ (City Pages)
+- /dog-parks/morden/ (City Pages)
+- /dog-parks/nelson/ (City Pages)
 
 ## City Pages Missing Official Sources
 
-- /dog-parks/estevan/ (110)
-- /dog-parks/laval/ (110)
-- /dog-parks/amherst/ (107)
 - /dog-parks/barrie/ (107)
 - /dog-parks/belleville/ (107)
 - /dog-parks/brampton/ (107)
@@ -249,9 +246,12 @@ Generated at: 2026-07-20T12:37:58.152Z
 - /dog-parks/ladysmith/ (107)
 - /dog-parks/lethbridge/ (107)
 - /dog-parks/medicine-hat/ (107)
-- /dog-parks/melfort/ (107)
 - /dog-parks/melville/ (107)
 - /dog-parks/milton/ (107)
+- /dog-parks/montreal/ (107)
+- /dog-parks/moose-jaw/ (107)
+- /dog-parks/morden/ (107)
+- /dog-parks/nelson/ (107)
 
 ## Park Pages Missing Key Amenity Fields
 
@@ -283,7 +283,7 @@ Generated at: 2026-07-20T12:37:58.152Z
 
 ## Stale Pages by Content Type
 
-- Dog Parks: 496
-- City Pages: 79
+- Dog Parks: 495
+- City Pages: 75
 - Directories: 66
 - Core: 10

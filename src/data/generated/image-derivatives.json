@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T15:42:52.837Z",
+  "generatedAt": "2026-07-22T22:13:34.760Z",
   "images": {
     "/images/blog/blog-average-vet-costs-in-canada-hero.jpg": {
       "width": 702,
@@ -3891,6 +3891,128 @@
           {
             "width": 405,
             "src": "/images/optimized/blog/blog-most-googled-dog-questions-hero/405.jpg"
+          }
+        ]
+      }
+    },
+    "/images/blog/blog-puppy-first-year-cost-canada-hero.png": {
+      "width": 1536,
+      "height": 1024,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/blog/blog-puppy-first-year-cost-canada-hero/1536.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 160,
+            "src": "/images/optimized/blog/blog-puppy-first-year-cost-canada-hero/160.avif"
+          },
+          {
+            "width": 240,
+            "src": "/images/optimized/blog/blog-puppy-first-year-cost-canada-hero/240.avif"
+          },
+          {
+            "width": 320,
+            "src": "/images/optimized/blog/blog-puppy-first-year-cost-canada-hero/320.avif"
+          },
+          {
+            "width": 480,
+            "src": "/images/optimized/blog/blog-puppy-first-year-cost-canada-hero/480.avif"
+          },
+          {
+            "width": 640,
+            "src": "/images/optimized/blog/blog-puppy-first-year-cost-canada-hero/640.avif"
+          },
+          {
+            "width": 800,
+            "src": "/images/optimized/blog/blog-puppy-first-year-cost-canada-hero/800.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/blog/blog-puppy-first-year-cost-canada-hero/960.avif"
+          },
+          {
+            "width": 1200,
+            "src": "/images/optimized/blog/blog-puppy-first-year-cost-canada-hero/1200.avif"
+          },
+          {
+            "width": 1536,
+            "src": "/images/optimized/blog/blog-puppy-first-year-cost-canada-hero/1536.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 160,
+            "src": "/images/optimized/blog/blog-puppy-first-year-cost-canada-hero/160.webp"
+          },
+          {
+            "width": 240,
+            "src": "/images/optimized/blog/blog-puppy-first-year-cost-canada-hero/240.webp"
+          },
+          {
+            "width": 320,
+            "src": "/images/optimized/blog/blog-puppy-first-year-cost-canada-hero/320.webp"
+          },
+          {
+            "width": 480,
+            "src": "/images/optimized/blog/blog-puppy-first-year-cost-canada-hero/480.webp"
+          },
+          {
+            "width": 640,
+            "src": "/images/optimized/blog/blog-puppy-first-year-cost-canada-hero/640.webp"
+          },
+          {
+            "width": 800,
+            "src": "/images/optimized/blog/blog-puppy-first-year-cost-canada-hero/800.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/blog/blog-puppy-first-year-cost-canada-hero/960.webp"
+          },
+          {
+            "width": 1200,
+            "src": "/images/optimized/blog/blog-puppy-first-year-cost-canada-hero/1200.webp"
+          },
+          {
+            "width": 1536,
+            "src": "/images/optimized/blog/blog-puppy-first-year-cost-canada-hero/1536.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 160,
+            "src": "/images/optimized/blog/blog-puppy-first-year-cost-canada-hero/160.jpg"
+          },
+          {
+            "width": 240,
+            "src": "/images/optimized/blog/blog-puppy-first-year-cost-canada-hero/240.jpg"
+          },
+          {
+            "width": 320,
+            "src": "/images/optimized/blog/blog-puppy-first-year-cost-canada-hero/320.jpg"
+          },
+          {
+            "width": 480,
+            "src": "/images/optimized/blog/blog-puppy-first-year-cost-canada-hero/480.jpg"
+          },
+          {
+            "width": 640,
+            "src": "/images/optimized/blog/blog-puppy-first-year-cost-canada-hero/640.jpg"
+          },
+          {
+            "width": 800,
+            "src": "/images/optimized/blog/blog-puppy-first-year-cost-canada-hero/800.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/blog/blog-puppy-first-year-cost-canada-hero/960.jpg"
+          },
+          {
+            "width": 1200,
+            "src": "/images/optimized/blog/blog-puppy-first-year-cost-canada-hero/1200.jpg"
+          },
+          {
+            "width": 1536,
+            "src": "/images/optimized/blog/blog-puppy-first-year-cost-canada-hero/1536.jpg"
           }
         ]
       }
@@ -17633,6 +17755,140 @@
         ]
       }
     },
+    "/images/dog-parks/amherst-original.png": {
+      "width": 1821,
+      "height": 864,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/amherst-original/1821.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 160,
+            "src": "/images/optimized/dog-parks/amherst-original/160.avif"
+          },
+          {
+            "width": 240,
+            "src": "/images/optimized/dog-parks/amherst-original/240.avif"
+          },
+          {
+            "width": 320,
+            "src": "/images/optimized/dog-parks/amherst-original/320.avif"
+          },
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/amherst-original/480.avif"
+          },
+          {
+            "width": 640,
+            "src": "/images/optimized/dog-parks/amherst-original/640.avif"
+          },
+          {
+            "width": 800,
+            "src": "/images/optimized/dog-parks/amherst-original/800.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/amherst-original/960.avif"
+          },
+          {
+            "width": 1200,
+            "src": "/images/optimized/dog-parks/amherst-original/1200.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/amherst-original/1600.avif"
+          },
+          {
+            "width": 1821,
+            "src": "/images/optimized/dog-parks/amherst-original/1821.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 160,
+            "src": "/images/optimized/dog-parks/amherst-original/160.webp"
+          },
+          {
+            "width": 240,
+            "src": "/images/optimized/dog-parks/amherst-original/240.webp"
+          },
+          {
+            "width": 320,
+            "src": "/images/optimized/dog-parks/amherst-original/320.webp"
+          },
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/amherst-original/480.webp"
+          },
+          {
+            "width": 640,
+            "src": "/images/optimized/dog-parks/amherst-original/640.webp"
+          },
+          {
+            "width": 800,
+            "src": "/images/optimized/dog-parks/amherst-original/800.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/amherst-original/960.webp"
+          },
+          {
+            "width": 1200,
+            "src": "/images/optimized/dog-parks/amherst-original/1200.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/amherst-original/1600.webp"
+          },
+          {
+            "width": 1821,
+            "src": "/images/optimized/dog-parks/amherst-original/1821.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 160,
+            "src": "/images/optimized/dog-parks/amherst-original/160.jpg"
+          },
+          {
+            "width": 240,
+            "src": "/images/optimized/dog-parks/amherst-original/240.jpg"
+          },
+          {
+            "width": 320,
+            "src": "/images/optimized/dog-parks/amherst-original/320.jpg"
+          },
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/amherst-original/480.jpg"
+          },
+          {
+            "width": 640,
+            "src": "/images/optimized/dog-parks/amherst-original/640.jpg"
+          },
+          {
+            "width": 800,
+            "src": "/images/optimized/dog-parks/amherst-original/800.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/amherst-original/960.jpg"
+          },
+          {
+            "width": 1200,
+            "src": "/images/optimized/dog-parks/amherst-original/1200.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/amherst-original/1600.jpg"
+          },
+          {
+            "width": 1821,
+            "src": "/images/optimized/dog-parks/amherst-original/1821.jpg"
+          }
+        ]
+      }
+    },
     "/images/dog-parks/battleford-off-leash-dog-park-original.png": {
       "width": 1834,
       "height": 858,
@@ -20581,6 +20837,274 @@
         ]
       }
     },
+    "/images/dog-parks/nipawin-original.png": {
+      "width": 1823,
+      "height": 863,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/nipawin-original/1823.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 160,
+            "src": "/images/optimized/dog-parks/nipawin-original/160.avif"
+          },
+          {
+            "width": 240,
+            "src": "/images/optimized/dog-parks/nipawin-original/240.avif"
+          },
+          {
+            "width": 320,
+            "src": "/images/optimized/dog-parks/nipawin-original/320.avif"
+          },
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/nipawin-original/480.avif"
+          },
+          {
+            "width": 640,
+            "src": "/images/optimized/dog-parks/nipawin-original/640.avif"
+          },
+          {
+            "width": 800,
+            "src": "/images/optimized/dog-parks/nipawin-original/800.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/nipawin-original/960.avif"
+          },
+          {
+            "width": 1200,
+            "src": "/images/optimized/dog-parks/nipawin-original/1200.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/nipawin-original/1600.avif"
+          },
+          {
+            "width": 1823,
+            "src": "/images/optimized/dog-parks/nipawin-original/1823.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 160,
+            "src": "/images/optimized/dog-parks/nipawin-original/160.webp"
+          },
+          {
+            "width": 240,
+            "src": "/images/optimized/dog-parks/nipawin-original/240.webp"
+          },
+          {
+            "width": 320,
+            "src": "/images/optimized/dog-parks/nipawin-original/320.webp"
+          },
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/nipawin-original/480.webp"
+          },
+          {
+            "width": 640,
+            "src": "/images/optimized/dog-parks/nipawin-original/640.webp"
+          },
+          {
+            "width": 800,
+            "src": "/images/optimized/dog-parks/nipawin-original/800.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/nipawin-original/960.webp"
+          },
+          {
+            "width": 1200,
+            "src": "/images/optimized/dog-parks/nipawin-original/1200.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/nipawin-original/1600.webp"
+          },
+          {
+            "width": 1823,
+            "src": "/images/optimized/dog-parks/nipawin-original/1823.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 160,
+            "src": "/images/optimized/dog-parks/nipawin-original/160.jpg"
+          },
+          {
+            "width": 240,
+            "src": "/images/optimized/dog-parks/nipawin-original/240.jpg"
+          },
+          {
+            "width": 320,
+            "src": "/images/optimized/dog-parks/nipawin-original/320.jpg"
+          },
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/nipawin-original/480.jpg"
+          },
+          {
+            "width": 640,
+            "src": "/images/optimized/dog-parks/nipawin-original/640.jpg"
+          },
+          {
+            "width": 800,
+            "src": "/images/optimized/dog-parks/nipawin-original/800.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/nipawin-original/960.jpg"
+          },
+          {
+            "width": 1200,
+            "src": "/images/optimized/dog-parks/nipawin-original/1200.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/nipawin-original/1600.jpg"
+          },
+          {
+            "width": 1823,
+            "src": "/images/optimized/dog-parks/nipawin-original/1823.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/north-battleford-original.png": {
+      "width": 1774,
+      "height": 887,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/north-battleford-original/1774.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 160,
+            "src": "/images/optimized/dog-parks/north-battleford-original/160.avif"
+          },
+          {
+            "width": 240,
+            "src": "/images/optimized/dog-parks/north-battleford-original/240.avif"
+          },
+          {
+            "width": 320,
+            "src": "/images/optimized/dog-parks/north-battleford-original/320.avif"
+          },
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/north-battleford-original/480.avif"
+          },
+          {
+            "width": 640,
+            "src": "/images/optimized/dog-parks/north-battleford-original/640.avif"
+          },
+          {
+            "width": 800,
+            "src": "/images/optimized/dog-parks/north-battleford-original/800.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/north-battleford-original/960.avif"
+          },
+          {
+            "width": 1200,
+            "src": "/images/optimized/dog-parks/north-battleford-original/1200.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/north-battleford-original/1600.avif"
+          },
+          {
+            "width": 1774,
+            "src": "/images/optimized/dog-parks/north-battleford-original/1774.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 160,
+            "src": "/images/optimized/dog-parks/north-battleford-original/160.webp"
+          },
+          {
+            "width": 240,
+            "src": "/images/optimized/dog-parks/north-battleford-original/240.webp"
+          },
+          {
+            "width": 320,
+            "src": "/images/optimized/dog-parks/north-battleford-original/320.webp"
+          },
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/north-battleford-original/480.webp"
+          },
+          {
+            "width": 640,
+            "src": "/images/optimized/dog-parks/north-battleford-original/640.webp"
+          },
+          {
+            "width": 800,
+            "src": "/images/optimized/dog-parks/north-battleford-original/800.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/north-battleford-original/960.webp"
+          },
+          {
+            "width": 1200,
+            "src": "/images/optimized/dog-parks/north-battleford-original/1200.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/north-battleford-original/1600.webp"
+          },
+          {
+            "width": 1774,
+            "src": "/images/optimized/dog-parks/north-battleford-original/1774.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 160,
+            "src": "/images/optimized/dog-parks/north-battleford-original/160.jpg"
+          },
+          {
+            "width": 240,
+            "src": "/images/optimized/dog-parks/north-battleford-original/240.jpg"
+          },
+          {
+            "width": 320,
+            "src": "/images/optimized/dog-parks/north-battleford-original/320.jpg"
+          },
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/north-battleford-original/480.jpg"
+          },
+          {
+            "width": 640,
+            "src": "/images/optimized/dog-parks/north-battleford-original/640.jpg"
+          },
+          {
+            "width": 800,
+            "src": "/images/optimized/dog-parks/north-battleford-original/800.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/north-battleford-original/960.jpg"
+          },
+          {
+            "width": 1200,
+            "src": "/images/optimized/dog-parks/north-battleford-original/1200.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/north-battleford-original/1600.jpg"
+          },
+          {
+            "width": 1774,
+            "src": "/images/optimized/dog-parks/north-battleford-original/1774.jpg"
+          }
+        ]
+      }
+    },
     "/images/dog-parks/parc-allen-dog-exercise-area-original.png": {
       "width": 1693,
       "height": 929,
@@ -20845,6 +21369,140 @@
           {
             "width": 1774,
             "src": "/images/optimized/dog-parks/parc-de-la-technologie-off-leash-area-original/1774.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/prince-albert-original.png": {
+      "width": 1693,
+      "height": 929,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/prince-albert-original/1693.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 160,
+            "src": "/images/optimized/dog-parks/prince-albert-original/160.avif"
+          },
+          {
+            "width": 240,
+            "src": "/images/optimized/dog-parks/prince-albert-original/240.avif"
+          },
+          {
+            "width": 320,
+            "src": "/images/optimized/dog-parks/prince-albert-original/320.avif"
+          },
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/prince-albert-original/480.avif"
+          },
+          {
+            "width": 640,
+            "src": "/images/optimized/dog-parks/prince-albert-original/640.avif"
+          },
+          {
+            "width": 800,
+            "src": "/images/optimized/dog-parks/prince-albert-original/800.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/prince-albert-original/960.avif"
+          },
+          {
+            "width": 1200,
+            "src": "/images/optimized/dog-parks/prince-albert-original/1200.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/prince-albert-original/1600.avif"
+          },
+          {
+            "width": 1693,
+            "src": "/images/optimized/dog-parks/prince-albert-original/1693.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 160,
+            "src": "/images/optimized/dog-parks/prince-albert-original/160.webp"
+          },
+          {
+            "width": 240,
+            "src": "/images/optimized/dog-parks/prince-albert-original/240.webp"
+          },
+          {
+            "width": 320,
+            "src": "/images/optimized/dog-parks/prince-albert-original/320.webp"
+          },
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/prince-albert-original/480.webp"
+          },
+          {
+            "width": 640,
+            "src": "/images/optimized/dog-parks/prince-albert-original/640.webp"
+          },
+          {
+            "width": 800,
+            "src": "/images/optimized/dog-parks/prince-albert-original/800.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/prince-albert-original/960.webp"
+          },
+          {
+            "width": 1200,
+            "src": "/images/optimized/dog-parks/prince-albert-original/1200.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/prince-albert-original/1600.webp"
+          },
+          {
+            "width": 1693,
+            "src": "/images/optimized/dog-parks/prince-albert-original/1693.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 160,
+            "src": "/images/optimized/dog-parks/prince-albert-original/160.jpg"
+          },
+          {
+            "width": 240,
+            "src": "/images/optimized/dog-parks/prince-albert-original/240.jpg"
+          },
+          {
+            "width": 320,
+            "src": "/images/optimized/dog-parks/prince-albert-original/320.jpg"
+          },
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/prince-albert-original/480.jpg"
+          },
+          {
+            "width": 640,
+            "src": "/images/optimized/dog-parks/prince-albert-original/640.jpg"
+          },
+          {
+            "width": 800,
+            "src": "/images/optimized/dog-parks/prince-albert-original/800.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/prince-albert-original/960.jpg"
+          },
+          {
+            "width": 1200,
+            "src": "/images/optimized/dog-parks/prince-albert-original/1200.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/prince-albert-original/1600.jpg"
+          },
+          {
+            "width": 1693,
+            "src": "/images/optimized/dog-parks/prince-albert-original/1693.jpg"
           }
         ]
       }
@@ -21369,6 +22027,140 @@
           {
             "width": 1536,
             "src": "/images/optimized/dog-parks/westview-park-winnipeg-original/1536.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/weyburn-original.png": {
+      "width": 1821,
+      "height": 864,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/weyburn-original/1821.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 160,
+            "src": "/images/optimized/dog-parks/weyburn-original/160.avif"
+          },
+          {
+            "width": 240,
+            "src": "/images/optimized/dog-parks/weyburn-original/240.avif"
+          },
+          {
+            "width": 320,
+            "src": "/images/optimized/dog-parks/weyburn-original/320.avif"
+          },
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/weyburn-original/480.avif"
+          },
+          {
+            "width": 640,
+            "src": "/images/optimized/dog-parks/weyburn-original/640.avif"
+          },
+          {
+            "width": 800,
+            "src": "/images/optimized/dog-parks/weyburn-original/800.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/weyburn-original/960.avif"
+          },
+          {
+            "width": 1200,
+            "src": "/images/optimized/dog-parks/weyburn-original/1200.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/weyburn-original/1600.avif"
+          },
+          {
+            "width": 1821,
+            "src": "/images/optimized/dog-parks/weyburn-original/1821.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 160,
+            "src": "/images/optimized/dog-parks/weyburn-original/160.webp"
+          },
+          {
+            "width": 240,
+            "src": "/images/optimized/dog-parks/weyburn-original/240.webp"
+          },
+          {
+            "width": 320,
+            "src": "/images/optimized/dog-parks/weyburn-original/320.webp"
+          },
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/weyburn-original/480.webp"
+          },
+          {
+            "width": 640,
+            "src": "/images/optimized/dog-parks/weyburn-original/640.webp"
+          },
+          {
+            "width": 800,
+            "src": "/images/optimized/dog-parks/weyburn-original/800.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/weyburn-original/960.webp"
+          },
+          {
+            "width": 1200,
+            "src": "/images/optimized/dog-parks/weyburn-original/1200.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/weyburn-original/1600.webp"
+          },
+          {
+            "width": 1821,
+            "src": "/images/optimized/dog-parks/weyburn-original/1821.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 160,
+            "src": "/images/optimized/dog-parks/weyburn-original/160.jpg"
+          },
+          {
+            "width": 240,
+            "src": "/images/optimized/dog-parks/weyburn-original/240.jpg"
+          },
+          {
+            "width": 320,
+            "src": "/images/optimized/dog-parks/weyburn-original/320.jpg"
+          },
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/weyburn-original/480.jpg"
+          },
+          {
+            "width": 640,
+            "src": "/images/optimized/dog-parks/weyburn-original/640.jpg"
+          },
+          {
+            "width": 800,
+            "src": "/images/optimized/dog-parks/weyburn-original/800.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/weyburn-original/960.jpg"
+          },
+          {
+            "width": 1200,
+            "src": "/images/optimized/dog-parks/weyburn-original/1200.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/weyburn-original/1600.jpg"
+          },
+          {
+            "width": 1821,
+            "src": "/images/optimized/dog-parks/weyburn-original/1821.jpg"
           }
         ]
       }

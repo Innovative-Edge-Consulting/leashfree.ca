@@ -1,22 +1,22 @@
 # Thin Page Improvement Backlog
 
-Generated from `reports/content-health.json` on 2026-07-19.
+Generated from `reports/content-health.json` on 2026-07-22.
 
-This backlog contains all 679 pages currently flagged as thin. The CSV is the working queue; this document explains prioritization and shows the first 50 records.
+This backlog contains 669 pages in the current working queue. The CSV is the operational backlog for this initiative; this document explains prioritization and shows the first 50 records.
 
 ## Backlog counts
 
 | Tier | Pages |
 | --- | ---: |
-| T3-standard-expansion | 363 |
-| T2-high-value-expansion | 252 |
-| T1-source-research | 64 |
+| T3-standard-expansion | 364 |
+| T2-high-value-expansion | 248 |
+| T1-source-research | 57 |
 
 | Content type | Pages |
 | --- | ---: |
-| Dog Parks | 444 |
+| Dog Parks | 441 |
 | Dog Breeds | 98 |
-| City Pages | 68 |
+| City Pages | 61 |
 | Dog Names | 39 |
 | Directories | 16 |
 | Breed Groups | 9 |
@@ -36,56 +36,56 @@ Do not treat the queue as a mass publishing schedule. Work one page at a time, k
 
 | # | Tier | Type | Page | Score | Words | Missing source |
 | ---: | --- | --- | --- | ---: | ---: | --- |
-| 1 | T1-source-research | City Pages | [Laval](/dog-parks/laval/) | 110 | 364 | yes |
-| 2 | T1-source-research | City Pages | [Estevan](/dog-parks/estevan/) | 110 | 377 | yes |
-| 3 | T1-source-research | City Pages | [Melfort](/dog-parks/melfort/) | 107 | 299 | yes |
-| 4 | T1-source-research | City Pages | [Weyburn](/dog-parks/weyburn/) | 107 | 320 | yes |
-| 5 | T1-source-research | City Pages | [Amherst](/dog-parks/amherst/) | 107 | 323 | yes |
-| 6 | T1-source-research | City Pages | [Prince Albert](/dog-parks/prince-albert/) | 107 | 325 | yes |
-| 7 | T1-source-research | City Pages | [Nipawin](/dog-parks/nipawin/) | 107 | 336 | yes |
-| 8 | T1-source-research | City Pages | [North Battleford](/dog-parks/north-battleford/) | 107 | 338 | yes |
-| 9 | T1-source-research | City Pages | [Melville](/dog-parks/melville/) | 107 | 354 | yes |
-| 10 | T1-source-research | City Pages | [Warman](/dog-parks/warman/) | 107 | 357 | yes |
-| 11 | T1-source-research | City Pages | [Courtice](/dog-parks/courtice/) | 107 | 359 | yes |
-| 12 | T1-source-research | City Pages | [Steinbach](/dog-parks/steinbach/) | 107 | 364 | yes |
-| 13 | T1-source-research | City Pages | [Stouffville](/dog-parks/stouffville/) | 107 | 367 | yes |
-| 14 | T1-source-research | City Pages | [Morden](/dog-parks/morden/) | 107 | 372 | yes |
-| 15 | T1-source-research | City Pages | [Quebec City](/dog-parks/quebec-city/) | 107 | 375 | yes |
-| 16 | T1-source-research | City Pages | [Montreal](/dog-parks/montreal/) | 107 | 378 | yes |
-| 17 | T1-source-research | City Pages | [Yarmouth](/dog-parks/yarmouth/) | 107 | 379 | yes |
-| 18 | T1-source-research | City Pages | [Thompson](/dog-parks/thompson/) | 107 | 383 | yes |
-| 19 | T1-source-research | City Pages | [Belleville](/dog-parks/belleville/) | 107 | 384 | yes |
-| 20 | T1-source-research | City Pages | [Selkirk](/dog-parks/selkirk/) | 107 | 384 | yes |
-| 21 | T1-source-research | City Pages | [Campbellford](/dog-parks/campbellford/) | 107 | 389 | yes |
-| 22 | T1-source-research | City Pages | [Brampton](/dog-parks/brampton/) | 107 | 394 | yes |
-| 23 | T1-source-research | City Pages | [Portage la Prairie](/dog-parks/portage-la-prairie/) | 107 | 394 | yes |
-| 24 | T1-source-research | City Pages | [Swift Current](/dog-parks/swift-current/) | 107 | 394 | yes |
-| 25 | T1-source-research | City Pages | [Grimsby](/dog-parks/grimsby/) | 107 | 396 | yes |
-| 26 | T1-source-research | City Pages | [Niagara Falls](/dog-parks/niagara-falls/) | 107 | 396 | yes |
-| 27 | T1-source-research | City Pages | [Grande Prairie](/dog-parks/grande-prairie/) | 107 | 398 | yes |
-| 28 | T1-source-research | City Pages | [Woodstock](/dog-parks/woodstock/) | 107 | 398 | yes |
-| 29 | T1-source-research | City Pages | [Milton](/dog-parks/milton/) | 107 | 399 | yes |
-| 30 | T1-source-research | City Pages | [Saskatoon](/dog-parks/saskatoon/) | 107 | 400 | yes |
-| 31 | T1-source-research | City Pages | [Ladysmith](/dog-parks/ladysmith/) | 107 | 402 | yes |
-| 32 | T1-source-research | City Pages | [Moose Jaw](/dog-parks/moose-jaw/) | 107 | 402 | yes |
-| 33 | T1-source-research | City Pages | [Regina](/dog-parks/regina/) | 107 | 402 | yes |
-| 34 | T1-source-research | City Pages | [Oshawa](/dog-parks/oshawa/) | 107 | 404 | yes |
-| 35 | T1-source-research | City Pages | [Medicine Hat](/dog-parks/medicine-hat/) | 107 | 409 | yes |
-| 36 | T1-source-research | City Pages | [Gimli](/dog-parks/gimli/) | 107 | 411 | yes |
-| 37 | T1-source-research | City Pages | [Halton Hills](/dog-parks/halton-hills-dog-parks/) | 107 | 411 | yes |
-| 38 | T1-source-research | City Pages | [Hamilton](/dog-parks/hamilton/) | 107 | 412 | yes |
-| 39 | T1-source-research | City Pages | [Coquitlam](/dog-parks/coquitlam/) | 107 | 413 | yes |
-| 40 | T1-source-research | City Pages | [Winnipeg](/dog-parks/winnipeg/) | 107 | 418 | yes |
-| 41 | T1-source-research | City Pages | [Burnaby](/dog-parks/burnaby/) | 107 | 419 | yes |
-| 42 | T1-source-research | City Pages | [Red Deer](/dog-parks/red-deer/) | 107 | 420 | yes |
-| 43 | T1-source-research | City Pages | [Nelson](/dog-parks/nelson/) | 107 | 421 | yes |
-| 44 | T1-source-research | City Pages | [Etobicoke](/dog-parks/etobicoke/) | 107 | 423 | yes |
-| 45 | T1-source-research | City Pages | [Guelph](/dog-parks/guelph/) | 107 | 423 | yes |
-| 46 | T1-source-research | City Pages | [St. Albert](/dog-parks/st-albert/) | 107 | 424 | yes |
-| 47 | T1-source-research | City Pages | [Brandon](/dog-parks/brandon/) | 107 | 425 | yes |
-| 48 | T1-source-research | City Pages | [New Westminster](/dog-parks/new-westminster/) | 107 | 426 | yes |
-| 49 | T1-source-research | City Pages | [Victoria](/dog-parks/victoria/) | 107 | 426 | yes |
-| 50 | T1-source-research | City Pages | [White Rock](/dog-parks/white-rock/) | 107 | 427 | yes |
+| 1 | T1-source-research | City Pages | [North Battleford](/dog-parks/north-battleford/) | 107 | 338 | yes |
+| 2 | T1-source-research | City Pages | [Melville](/dog-parks/melville/) | 107 | 354 | yes |
+| 3 | T1-source-research | City Pages | [Warman](/dog-parks/warman/) | 107 | 357 | yes |
+| 4 | T1-source-research | City Pages | [Courtice](/dog-parks/courtice/) | 107 | 359 | yes |
+| 5 | T1-source-research | City Pages | [Steinbach](/dog-parks/steinbach/) | 107 | 364 | yes |
+| 6 | T1-source-research | City Pages | [Stouffville](/dog-parks/stouffville/) | 107 | 367 | yes |
+| 7 | T1-source-research | City Pages | [Morden](/dog-parks/morden/) | 107 | 372 | yes |
+| 8 | T1-source-research | City Pages | [Quebec City](/dog-parks/quebec-city/) | 107 | 375 | yes |
+| 9 | T1-source-research | City Pages | [Montreal](/dog-parks/montreal/) | 107 | 378 | yes |
+| 10 | T1-source-research | City Pages | [Yarmouth](/dog-parks/yarmouth/) | 107 | 379 | yes |
+| 11 | T1-source-research | City Pages | [Thompson](/dog-parks/thompson/) | 107 | 383 | yes |
+| 12 | T1-source-research | City Pages | [Belleville](/dog-parks/belleville/) | 107 | 384 | yes |
+| 13 | T1-source-research | City Pages | [Selkirk](/dog-parks/selkirk/) | 107 | 384 | yes |
+| 14 | T1-source-research | City Pages | [Campbellford](/dog-parks/campbellford/) | 107 | 389 | yes |
+| 15 | T1-source-research | City Pages | [Brampton](/dog-parks/brampton/) | 107 | 394 | yes |
+| 16 | T1-source-research | City Pages | [Portage la Prairie](/dog-parks/portage-la-prairie/) | 107 | 394 | yes |
+| 17 | T1-source-research | City Pages | [Swift Current](/dog-parks/swift-current/) | 107 | 394 | yes |
+| 18 | T1-source-research | City Pages | [Grimsby](/dog-parks/grimsby/) | 107 | 396 | yes |
+| 19 | T1-source-research | City Pages | [Niagara Falls](/dog-parks/niagara-falls/) | 107 | 396 | yes |
+| 20 | T1-source-research | City Pages | [Grande Prairie](/dog-parks/grande-prairie/) | 107 | 398 | yes |
+| 21 | T1-source-research | City Pages | [Woodstock](/dog-parks/woodstock/) | 107 | 398 | yes |
+| 22 | T1-source-research | City Pages | [Milton](/dog-parks/milton/) | 107 | 399 | yes |
+| 23 | T1-source-research | City Pages | [Saskatoon](/dog-parks/saskatoon/) | 107 | 400 | yes |
+| 24 | T1-source-research | City Pages | [Ladysmith](/dog-parks/ladysmith/) | 107 | 402 | yes |
+| 25 | T1-source-research | City Pages | [Moose Jaw](/dog-parks/moose-jaw/) | 107 | 402 | yes |
+| 26 | T1-source-research | City Pages | [Regina](/dog-parks/regina/) | 107 | 402 | yes |
+| 27 | T1-source-research | City Pages | [Oshawa](/dog-parks/oshawa/) | 107 | 404 | yes |
+| 28 | T1-source-research | City Pages | [Medicine Hat](/dog-parks/medicine-hat/) | 107 | 409 | yes |
+| 29 | T1-source-research | City Pages | [Gimli](/dog-parks/gimli/) | 107 | 411 | yes |
+| 30 | T1-source-research | City Pages | [Halton Hills](/dog-parks/halton-hills-dog-parks/) | 107 | 411 | yes |
+| 31 | T1-source-research | City Pages | [Hamilton](/dog-parks/hamilton/) | 107 | 412 | yes |
+| 32 | T1-source-research | City Pages | [Coquitlam](/dog-parks/coquitlam/) | 107 | 413 | yes |
+| 33 | T1-source-research | City Pages | [Winnipeg](/dog-parks/winnipeg/) | 107 | 418 | yes |
+| 34 | T1-source-research | City Pages | [Burnaby](/dog-parks/burnaby/) | 107 | 419 | yes |
+| 35 | T1-source-research | City Pages | [Red Deer](/dog-parks/red-deer/) | 107 | 420 | yes |
+| 36 | T1-source-research | City Pages | [Nelson](/dog-parks/nelson/) | 107 | 421 | yes |
+| 37 | T1-source-research | City Pages | [Etobicoke](/dog-parks/etobicoke/) | 107 | 423 | yes |
+| 38 | T1-source-research | City Pages | [Guelph](/dog-parks/guelph/) | 107 | 423 | yes |
+| 39 | T1-source-research | City Pages | [St. Albert](/dog-parks/st-albert/) | 107 | 424 | yes |
+| 40 | T1-source-research | City Pages | [Brandon](/dog-parks/brandon/) | 107 | 425 | yes |
+| 41 | T1-source-research | City Pages | [New Westminster](/dog-parks/new-westminster/) | 107 | 426 | yes |
+| 42 | T1-source-research | City Pages | [Victoria](/dog-parks/victoria/) | 107 | 426 | yes |
+| 43 | T1-source-research | City Pages | [White Rock](/dog-parks/white-rock/) | 107 | 427 | yes |
+| 44 | T1-source-research | City Pages | [Edmonton](/dog-parks/edmonton/) | 107 | 429 | yes |
+| 45 | T1-source-research | City Pages | [Lethbridge](/dog-parks/lethbridge/) | 107 | 430 | yes |
+| 46 | T1-source-research | City Pages | [Barrie](/dog-parks/barrie/) | 107 | 435 | yes |
+| 47 | T1-source-research | City Pages | [Surrey](/dog-parks/surrey/) | 107 | 437 | yes |
+| 48 | T1-source-research | City Pages | [Tiny](/dog-parks/tiny/) | 107 | 440 | yes |
+| 49 | T1-source-research | City Pages | [Quinte West](/dog-parks/quinte-west/) | 107 | 441 | yes |
+| 50 | T1-source-research | City Pages | [Restoule](/dog-parks/restoule/) | 107 | 441 | yes |
 
 ## Required page workflow
 

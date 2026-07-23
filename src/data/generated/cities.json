@@ -65,10 +65,10 @@
     "name": "Amherst",
     "slug": "amherst",
     "title": "Amherst",
-    "seoTitle": "Amherst Off-Leash Dog Park",
-    "metaDescription": "Visit the off-leash dog park in Amherst, Nova Scotia, located near Dickey Park. A great place for dogs to play and socialize safely.",
-    "description": "Visit the off-leash dog park in Amherst, Nova Scotia, located near Dickey Park. A great place for dogs to play and socialize safely.",
-    "body": "<p>Located adjacent to <strong id=\"\">Dickey Park</strong>, the Amherst Off-Leash Dog Park is a <strong id=\"\">fully fenced area</strong> with plenty of open space for dogs to run and play. This community amenity is maintained by the Town of Amherst and is open daily from dawn to dusk.</p>",
+    "seoTitle": "Dog Parks in Amherst, Nova Scotia | Off-Leash Guide",
+    "metaDescription": "Source-backed guide to dog parks in Amherst, Nova Scotia, focused on the official off-leash dog park at Dickey Park, location context, and visit planning.",
+    "description": "Source-backed guide to dog parks in Amherst, Nova Scotia, focused on the official off-leash dog park at Dickey Park, location context, and visit planning.",
+    "body": "<p>The Town of Amherst's parks page places the off-leash dog park at Dickey Park, 132 East Pleasant Street. The same page says the dog park is a one-acre fenced-in green space where dogs can run and play all year round. That gives Amherst a much stronger factual base than the older version of this page, which relied on generic claims without a live municipal source.</p><p>The town also describes Dickey Park itself as a broader recreation area with a lighted walking track, a large greenspace, a play structure, a splash pad, and change rooms and washrooms. For dog owners, that matters because the off-leash area is not an isolated field in the abstract. It sits inside a real municipal park setting that is easier to locate and plan around before you arrive.</p>",
     "collection": "City Pages",
     "sourceFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - City Pages - 68419a1c56454ae93923d2e4.csv",
     "canonicalUrl": "https://leashfree.ca/dog-parks/amherst/",
@@ -77,6 +77,9 @@
     "references": {
       "Province": [
         "Nova Scotia"
+      ],
+      "Featured Park 1": [
+        "amherst-off-leash-dog-park"
       ],
       "Province Page": [
         "https://leashfree.ca/nova-scotia-dog-parks"
@@ -91,25 +94,25 @@
       "Archived": "false",
       "Draft": "false",
       "Created On": "Thu Sep 04 2025 12:36:38 GMT+0000 (Coordinated Universal Time)",
-      "Updated On": "Mon Sep 08 2025 13:21:11 GMT+0000 (Coordinated Universal Time)",
-      "Published On": "Mon Sep 08 2025 13:27:50 GMT+0000 (Coordinated Universal Time)",
+      "Updated On": "Wed Jul 22 2026 12:00:00 GMT+0000 (Coordinated Universal Time)",
+      "Published On": "Wed Jul 22 2026 12:00:00 GMT+0000 (Coordinated Universal Time)",
       "Province": "Nova Scotia",
-      "SEO Title Tag": "Amherst Off-Leash Dog Park",
-      "Meta Description": "Visit the off-leash dog park in Amherst, Nova Scotia, located near Dickey Park. A great place for dogs to play and socialize safely.",
+      "SEO Title Tag": "Dog Parks in Amherst, Nova Scotia | Off-Leash Guide",
+      "Meta Description": "Source-backed guide to dog parks in Amherst, Nova Scotia, focused on the official off-leash dog park at Dickey Park, location context, and visit planning.",
       "Hero Image": "",
-      "Intro Paragraph": "<p>Amherst offers a <strong id=\"\">dedicated off-leash dog park</strong> that provides a safe, fenced-in space for your dog to run, play, and meet other furry friends.</p>",
-      "About Section": "<p>Located adjacent to <strong id=\"\">Dickey Park</strong>, the Amherst Off-Leash Dog Park is a <strong id=\"\">fully fenced area</strong> with plenty of open space for dogs to run and play. This community amenity is maintained by the Town of Amherst and is open daily from dawn to dusk.</p>",
-      "Featured Park 1": "",
+      "Intro Paragraph": "<p>Amherst's off-leash dog park is now clearly documented on the Town of Amherst website rather than floating around as an unsupported local mention. The town lists the off-leash dog park at Dickey Park on East Pleasant Street and describes it as fenced green space that is available year round.</p>",
+      "About Section": "<p>The Town of Amherst's parks page places the off-leash dog park at Dickey Park, 132 East Pleasant Street. The same page says the dog park is a one-acre fenced-in green space where dogs can run and play all year round. That gives Amherst a much stronger factual base than the older version of this page, which relied on generic claims without a live municipal source.</p><p>The town also describes Dickey Park itself as a broader recreation area with a lighted walking track, a large greenspace, a play structure, a splash pad, and change rooms and washrooms. For dog owners, that matters because the off-leash area is not an isolated field in the abstract. It sits inside a real municipal park setting that is easier to locate and plan around before you arrive.</p>",
+      "Featured Park 1": "amherst-off-leash-dog-park",
       "Featured Park 2": "",
       "Featured Park 3": "",
-      "Seasonal Tips": "<p id=\"\">- Winter: Watch for icy patches.<br>- Spring: Grass can get muddy.<br>- Summer: Hot days call for extra hydration.<br>- Fall: Pleasant temperatures make for ideal visits.</p><p>‍</p>",
-      "Park Rules": "<p id=\"\">- Dogs must be leashed outside the fenced area.</p><p id=\"\">- Off-leash play is allowed only within the designated fenced dog park.</p><p id=\"\">- Owners must clean up after their pets.</p><p id=\"\">- Dogs must be under control and non-aggressive.</p><p id=\"\">- No food (for humans or pets) inside the dog park.</p><p id=\"\">- Use park at your own risk; children must be supervised.</p>",
-      "City Website": "",
+      "Seasonal Tips": "<ul><li><strong>Winter:</strong> The town says the off-leash dog park is open all year round, but snow and ice can change footing at gates and along the wider Dickey Park grounds.</li><li><strong>Spring:</strong> One-acre grass parks can soften during thaw and rain, so bring towels and watch for muddy entry points.</li><li><strong>Summer:</strong> Dickey Park is part of a broader recreation area, so arrive with water and expect more activity around the splash pad and sports spaces.</li><li><strong>Fall:</strong> Cooler weather is ideal for longer visits, but shorter daylight makes it worth planning your run earlier in the day.</li></ul>",
+      "Park Rules": "<p><strong>Official location:</strong> The Town of Amherst places the off-leash dog park at Dickey Park, 132 East Pleasant Street.</p><p><strong>Published park format:</strong> The town describes it as a one-acre fenced-in green space for dogs to run and play all year round.</p><p><strong>Published cleanliness guidance:</strong> The town asks visitors to help keep Amherst clean and beautiful by picking up after their pet and not littering.</p><p><strong>On-site verification:</strong> Amherst's public parks page is concise, so use posted signage at Dickey Park for any additional rules in force on the day of your visit.</p>",
+      "City Website": "https://www.amherst.ca/parks-playgrounds.html",
       "Province Page": "https://leashfree.ca/nova-scotia-dog-parks",
-      "Dog Park Etiquettes": "<p id=\"\">- Ensure your dog is socialized and comfortable in group settings.</p><p id=\"\">- Never leave your dog unattended inside the park.</p><p id=\"\">- Avoid using your phone — always watch your pet.</p><p id=\"\">- Keep gates closed behind you.</p><p id=\"\">- Don’t bring puppies under 4 months or unvaccinated dogs.</p>",
-      "Dog Park FAQs": "<p id=\"\"><strong id=\"\">1. Where is the dog park located?</strong></p><p id=\"\">The park is located near **Dickey Park** in Amherst, Nova Scotia.</p><p id=\"\"><strong id=\"\">2. Is the dog park fenced?</strong></p><p id=\"\">Yes, it is a fully enclosed off-leash space.</p><p id=\"\"><strong id=\"\">3. Are waste bins provided?</strong></p><p id=\"\">Yes, there are bins and bag dispensers for dog waste.</p><p id=\"\"><strong id=\"\">4. Is there parking nearby?</strong></p><p id=\"\">Yes, parking is available near Dickey Park.</p><p id=\"\"><strong id=\"\">5. What are the park hours?</strong></p><p id=\"\">The park is open daily from dawn to dusk.</p>",
+      "Dog Park Etiquettes": "<p><strong>1. Treat the fenced area as the off-leash zone and the rest of Dickey Park as shared public space.</strong></p><p>The town's page identifies a specific fenced dog park inside a larger recreation site, so leash transitions and calm entry behavior matter.</p><p><strong>2. Clean up immediately.</strong></p><p>That is one of the few explicit instructions published by the town, so it should be treated as a non-optional part of using the park responsibly.</p><p><strong>3. Plan for a municipal recreation setting, not a remote trailhead.</strong></p><p>Dickey Park also includes a walking track, splash pad, and other family-oriented amenities, which means traffic patterns can be busier than at a standalone dog field.</p><p><strong>4. Check signage before you unclip.</strong></p><p>The official Amherst page confirms the location and core setup, but any day-to-day restrictions or temporary notices will be posted on site.</p>",
+      "Dog Park FAQs": "<p><strong>1. Is there an official off-leash dog park in Amherst?</strong></p><p>Yes. The Town of Amherst lists an off-leash dog park on its Parks & Playgrounds page.</p><p><strong>2. Where is Amherst's off-leash dog park?</strong></p><p>The town places it at Dickey Park, 132 East Pleasant Street.</p><p><strong>3. Is the park fenced?</strong></p><p>Yes. The official town page describes it as a one-acre fenced-in green space.</p><p><strong>4. Is it seasonal?</strong></p><p>No seasonal closure is listed on the town page. Amherst says dogs can run and play there all year round.</p><p><strong>5. What nearby amenities does Dickey Park have?</strong></p><p>The town says Dickey Park includes a lighted walking track, large greenspace, play structure, splash pad, and change rooms and washrooms.</p><p><strong>6. What rule is explicitly published by the town for dog owners?</strong></p><p>The town asks visitors to pick up after their pet and not litter.</p>",
       "Nearby Cities": "",
-      "Reviewed On": ""
+      "Reviewed On": "Wed Jul 22 2026 12:00:00 GMT+0000 (Coordinated Universal Time)"
     },
     "warnings": []
   },
@@ -3197,23 +3200,15 @@
     "name": "Nipawin",
     "slug": "nipawin",
     "title": "Nipawin",
-    "seoTitle": "Off-Leash Dog Park in Nipawin SK | LeashFree.ca",
-    "metaDescription": "Visit Nipawin’s fenced off-leash dog park in Saskatchewan. A safe and friendly space for your dog to run free, socialize, and enjoy outdoor playtime.",
-    "description": "Visit Nipawin’s fenced off-leash dog park in Saskatchewan. A safe and friendly space for your dog to run free, socialize, and enjoy outdoor playtime.",
-    "body": "<p>Nipawin’s <strong id=\"\">off-leash dog park</strong> is a quiet, well-kept space located near Central Park and the Nipawin Evergreen Centre. The park is fully fenced, with grassy areas for dogs to roam and a nearby trail system for leashed walking. Local dog owners appreciate the low-traffic environment and clean surroundings. Whether you're visiting or a local resident, the Nipawin dog park is a great place for your pup to socialize and stretch their legs.</p>",
+    "seoTitle": "Dog Parks in Nipawin, Saskatchewan | Off-Leash Guide",
+    "metaDescription": "Source-backed guide to dog parks in Nipawin, Saskatchewan, based on the town's recreation pages, the listed Nipawin Dog Park, and current animal-control licensing rules.",
+    "description": "Source-backed guide to dog parks in Nipawin, Saskatchewan, based on the town's recreation pages, the listed Nipawin Dog Park, and current animal-control licensing rules.",
+    "body": "<p>The Town of Nipawin's current leisure-services page includes Nipawin Dog Park in the official parks, playgrounds, and open-spaces inventory. The town's programs page also refers to the same park as The Lions Nipawin Dog Park. That naming detail matters because it suggests the park may be known locally by both forms, but in both cases the source is the current municipal website rather than a third-party listing.</p><p>The town's current animal-control page adds the rule framework that makes this guide more useful. Nipawin says all dogs and cats residing in town must be licensed, and it provides current contact details for the animal-control officer. The town also links this service directly from the same site structure as recreation, which is enough to build a conservative city guide even though the municipal pages do not currently publish a precise civic address or a detailed amenity sheet for the dog park itself.</p>",
     "collection": "City Pages",
     "sourceFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - City Pages - 68419a1c56454ae93923d2e4.csv",
     "canonicalUrl": "https://leashfree.ca/dog-parks/nipawin/",
     "routePath": "/dog-parks/nipawin/",
-    "media": [
-      {
-        "fieldName": "Hero Image",
-        "value": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6855f8b7dddec16f09782f9d_off-leash-dog-parks-canada.png",
-        "originalUrls": [
-          "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6855f8b7dddec16f09782f9d_off-leash-dog-parks-canada.png"
-        ]
-      }
-    ],
+    "media": [],
     "references": {
       "Province": [
         "Saskatchewan"
@@ -3231,25 +3226,25 @@
       "Archived": "false",
       "Draft": "false",
       "Created On": "Sun Jul 13 2025 01:49:12 GMT+0000 (Coordinated Universal Time)",
-      "Updated On": "Mon Sep 08 2025 13:21:14 GMT+0000 (Coordinated Universal Time)",
-      "Published On": "Mon Sep 08 2025 13:27:50 GMT+0000 (Coordinated Universal Time)",
+      "Updated On": "Wed Jul 22 2026 12:00:00 GMT+0000 (Coordinated Universal Time)",
+      "Published On": "Wed Jul 22 2026 12:00:00 GMT+0000 (Coordinated Universal Time)",
       "Province": "Saskatchewan",
-      "SEO Title Tag": "Off-Leash Dog Park in Nipawin SK | LeashFree.ca",
-      "Meta Description": "Visit Nipawin’s fenced off-leash dog park in Saskatchewan. A safe and friendly space for your dog to run free, socialize, and enjoy outdoor playtime.",
-      "Hero Image": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6855f8b7dddec16f09782f9d_off-leash-dog-parks-canada.png",
-      "Intro Paragraph": "<p>Located in northeast Saskatchewan, <strong id=\"\">Nipawin’s off-leash dog park</strong> offers a fenced, green space where dogs can run freely and safely year-round.</p>",
-      "About Section": "<p>Nipawin’s <strong id=\"\">off-leash dog park</strong> is a quiet, well-kept space located near Central Park and the Nipawin Evergreen Centre. The park is fully fenced, with grassy areas for dogs to roam and a nearby trail system for leashed walking. Local dog owners appreciate the low-traffic environment and clean surroundings. Whether you're visiting or a local resident, the Nipawin dog park is a great place for your pup to socialize and stretch their legs.</p>",
-      "Featured Park 1": "",
+      "SEO Title Tag": "Dog Parks in Nipawin, Saskatchewan | Off-Leash Guide",
+      "Meta Description": "Source-backed guide to dog parks in Nipawin, Saskatchewan, based on the town's recreation pages, the listed Nipawin Dog Park, and current animal-control licensing rules.",
+      "Hero Image": "",
+      "Intro Paragraph": "<p>Nipawin is stronger than many thin Saskatchewan city pages because the town's current recreation pages directly list a dog park in the parks and open-spaces inventory, and the current animal-control page clearly confirms dog licensing requirements. That gives the city page a usable municipal source base instead of forcing it to rely on review sites or generic copy.</p>",
+      "About Section": "<p>The Town of Nipawin's current leisure-services page includes Nipawin Dog Park in the official parks, playgrounds, and open-spaces inventory. The town's programs page also refers to the same park as The Lions Nipawin Dog Park. That naming detail matters because it suggests the park may be known locally by both forms, but in both cases the source is the current municipal website rather than a third-party listing.</p><p>The town's current animal-control page adds the rule framework that makes this guide more useful. Nipawin says all dogs and cats residing in town must be licensed, and it provides current contact details for the animal-control officer. The town also links this service directly from the same site structure as recreation, which is enough to build a conservative city guide even though the municipal pages do not currently publish a precise civic address or a detailed amenity sheet for the dog park itself.</p>",
+      "Featured Park 1": "nipawin-dog-park",
       "Featured Park 2": "",
       "Featured Park 3": "",
-      "Seasonal Tips": "<p id=\"\">- Winter: Bundle up—trails and park may be snow-covered.<br>- Spring: Watch for muddy patches after thaw.<br>- Summer: Morning visits are best for shade.<br>- Fall: Ideal for crisp walks and quiet playtime.</p>",
-      "Park Rules": "",
-      "City Website": "",
+      "Seasonal Tips": "<ul><li><strong>Winter:</strong> Snow, wind, and icy gates can change footing and comfort quickly in northeast Saskatchewan.</li><li><strong>Spring:</strong> Expect soft ground and mud during thaw, especially around entries and parking edges.</li><li><strong>Summer:</strong> Bring water and check sun exposure before longer play sessions.</li><li><strong>Fall:</strong> Cooler weather is ideal for visits, but earlier sunset makes daytime outings easier.</li></ul>",
+      "Park Rules": "<p><strong>Official park existence:</strong> The Town of Nipawin currently lists Nipawin Dog Park on its leisure-services page and refers to The Lions Nipawin Dog Park on the programs page.</p><p><strong>Licensing:</strong> The town's current animal-control page says all dogs and cats residing in Nipawin must be licensed.</p><p><strong>Animal-control contact:</strong> The same page provides current contact information for the animal-control officer, which is useful if you need local guidance before visiting.</p><p><strong>Location confidence:</strong> The current municipal pages confirm the park exists, but they do not clearly publish a full civic address or coordinates, so this guide keeps the location description conservative and points visitors back to town sources and on-site signage.</p>",
+      "City Website": "https://nipawin.com/leisure-recreation/leisure-services/",
       "Province Page": "https://leashfree.ca/saskatchewan-dog-parks",
-      "Dog Park Etiquettes": "<p id=\"\"><strong id=\"\">1. Are dogs allowed off-leash?</strong></p><p id=\"\">Yes, **within the fenced dog park only**.</p><p id=\"\"><strong id=\"\">2. Do owners need to stay inside the park?</strong></p><p id=\"\">Yes. Owners must **supervise their dogs at all times**.</p><p id=\"\"><strong id=\"\">3. Should I bring my own waste bags?</strong></p><p id=\"\">Yes. **Clean up after your dog** and use waste bins provided.</p><p id=\"\"><strong id=\"\">4. Are toys or treats allowed?</strong></p><p id=\"\">Use caution—**toys are fine**, but avoid food items that may cause conflict.</p><p id=\"\"><strong id=\"\">5. Are aggressive dogs allowed?</strong></p><p id=\"\">No. **Only well-behaved and socialized dogs** are permitted.</p>",
-      "Dog Park FAQs": "<p id=\"\"><strong id=\"\">1. Where is the dog park in Nipawin?</strong></p><p id=\"\">Near **Central Park**, close to the Nipawin Evergreen Centre.</p><p id=\"\"><strong id=\"\">2. Is it fenced?</strong></p><p id=\"\">Yes. The dog park is **fully enclosed** for safety.</p><p id=\"\"><strong id=\"\">3. Is there a separate area for small dogs?</strong></p><p id=\"\">No, it’s a **shared space** for all dog sizes.</p><p id=\"\"><strong id=\"\">4. Is the park open year-round?</strong></p><p id=\"\">Yes. **Weather permitting**, it's accessible all year.</p><p id=\"\"><strong id=\"\">5. Is water available on-site?</strong></p><p id=\"\">No. Please **bring your own water** for your dog.</p><p id=\"\"><strong id=\"\">6. Can I park nearby?</strong></p><p id=\"\">Yes. **Free parking** is available near Central Park.</p>",
-      "Nearby Cities": "",
-      "Reviewed On": ""
+      "Dog Park Etiquettes": "<p><strong>1. Treat the listed dog park as the town-recognized off-leash space.</strong></p><p>The municipal recreation pages explicitly list Nipawin Dog Park, so that is the right place to focus off-leash visits rather than assuming ordinary greenspace is equivalent.</p><p><strong>2. Keep licensing current.</strong></p><p>Nipawin's animal-control page clearly says all resident dogs and cats must be licensed.</p><p><strong>3. Verify the exact entrance on arrival.</strong></p><p>Because the town confirms the park but does not clearly publish a full address on the current pages reviewed here, posted signage and local wayfinding still matter.</p><p><strong>4. Plan conservatively for amenities.</strong></p><p>The current official pages are better for park existence and town rules than for a detailed amenity breakdown, so bring water and basic cleanup supplies.</p><p><strong>5. Use the animal-control contact when needed.</strong></p><p>If you need clarification on local dog rules or a park-related issue, the town publishes direct current animal-control contact details.</p>",
+      "Dog Park FAQs": "<p><strong>1. Does Nipawin have an official dog park?</strong></p><p>Yes. The Town of Nipawin currently lists Nipawin Dog Park on its leisure-services page.</p><p><strong>2. Is the park named anything else?</strong></p><p>Yes. The town's programs page refers to it as The Lions Nipawin Dog Park.</p><p><strong>3. Does Nipawin require dog licensing?</strong></p><p>Yes. The town's animal-control page says all dogs and cats residing in Nipawin must be licensed.</p><p><strong>4. Does the town publish a full address for the dog park?</strong></p><p>Not clearly on the current municipal pages reviewed in this pass. The town confirms the park exists, but this guide keeps the exact location description conservative.</p><p><strong>5. Where can I find current local dog-rule contacts?</strong></p><p>The Town of Nipawin animal-control page publishes current contact information for the animal-control officer.</p><p><strong>6. What makes this city page more trustworthy than the older draft?</strong></p><p>It now relies on the town's own recreation and animal-control pages instead of generic unsupported park descriptions.</p>",
+      "Nearby Cities": "Melfort, Prince Albert",
+      "Reviewed On": "Wed Jul 22 2026 12:00:00 GMT+0000 (Coordinated Universal Time)"
     },
     "warnings": []
   },
@@ -3258,23 +3253,15 @@
     "name": "North Battleford",
     "slug": "north-battleford",
     "title": "North Battleford",
-    "seoTitle": "Off-Leash Dog Park in North Battleford SK | LeashFree.ca",
-    "metaDescription": "Explore North Battleford’s fenced off-leash dog park — a secure and welcoming green space where your dog can run freely and safely in northwest Saskatchewan.",
-    "description": "Explore North Battleford’s fenced off-leash dog park — a secure and welcoming green space where your dog can run freely and safely in northwest Saskatchewan.",
-    "body": "<p>North Battleford’s <strong id=\"\">designated off-leash dog park</strong> is located near 100th Street and 22nd Avenue. It features open green space, secure fencing, and convenient waste bins. The area is well-maintained by the city and appreciated by dog owners who value a safe place for their pets to play off-leash. With its accessible location and open layout, this park provides a reliable option for locals and visitors alike.</p>",
+    "seoTitle": "Dog Parks in North Battleford, Saskatchewan | Off-Leash Guide",
+    "metaDescription": "Source-backed guide to dog parks in North Battleford, Saskatchewan, based on the city's official dog park page, animal services section, and current pet-licensing rules.",
+    "description": "Source-backed guide to dog parks in North Battleford, Saskatchewan, based on the city's official dog park page, animal services section, and current pet-licensing rules.",
+    "body": "<p>The City of North Battleford publishes an official dog park page that clearly states the Dog Park is the only public area where dogs may be off leash. The city places the park just off Airport Road by Cameron McIntosh Airport, says it is fully fenced, and says it is open all year round.</p><p>That source set is much stronger than the older generic city draft. The city also publishes practical rules for park use, including licensing and vaccination expectations, leash-carry requirements, nuisance-dog removal, and a ban on dogs in heat and motorized vehicles in the park.</p><p>The current pet-licences page adds another important fact base: all dogs and cats owned within North Battleford must be licensed and wear a city-issued tag. That gives this city page enough official support to be specific without inventing amenities the city does not publish.</p>",
     "collection": "City Pages",
     "sourceFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - City Pages - 68419a1c56454ae93923d2e4.csv",
     "canonicalUrl": "https://leashfree.ca/dog-parks/north-battleford/",
     "routePath": "/dog-parks/north-battleford/",
-    "media": [
-      {
-        "fieldName": "Hero Image",
-        "value": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6855f8b7dddec16f09782f9d_off-leash-dog-parks-canada.png",
-        "originalUrls": [
-          "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6855f8b7dddec16f09782f9d_off-leash-dog-parks-canada.png"
-        ]
-      }
-    ],
+    "media": [],
     "references": {
       "Province": [
         "Saskatchewan"
@@ -3292,25 +3279,25 @@
       "Archived": "false",
       "Draft": "false",
       "Created On": "Sun Jul 13 2025 01:53:16 GMT+0000 (Coordinated Universal Time)",
-      "Updated On": "Mon Sep 08 2025 13:21:14 GMT+0000 (Coordinated Universal Time)",
-      "Published On": "Mon Sep 08 2025 13:27:50 GMT+0000 (Coordinated Universal Time)",
+      "Updated On": "Wed Jul 22 2026 12:00:00 GMT+0000 (Coordinated Universal Time)",
+      "Published On": "Wed Jul 22 2026 12:00:00 GMT+0000 (Coordinated Universal Time)",
       "Province": "Saskatchewan",
-      "SEO Title Tag": "Off-Leash Dog Park in North Battleford SK | LeashFree.ca",
-      "Meta Description": "Explore North Battleford’s fenced off-leash dog park — a secure and welcoming green space where your dog can run freely and safely in northwest Saskatchewan.",
-      "Hero Image": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6855f8b7dddec16f09782f9d_off-leash-dog-parks-canada.png",
-      "Intro Paragraph": "<p>Situated in northwest Saskatchewan, <strong id=\"\">North Battleford’s off-leash dog park</strong> is a fully fenced space offering a safe and fun environment for dogs to socialize and exercise.</p>",
-      "About Section": "<p>North Battleford’s <strong id=\"\">designated off-leash dog park</strong> is located near 100th Street and 22nd Avenue. It features open green space, secure fencing, and convenient waste bins. The area is well-maintained by the city and appreciated by dog owners who value a safe place for their pets to play off-leash. With its accessible location and open layout, this park provides a reliable option for locals and visitors alike.</p>",
-      "Featured Park 1": "",
+      "SEO Title Tag": "Dog Parks in North Battleford, Saskatchewan | Off-Leash Guide",
+      "Meta Description": "Source-backed guide to dog parks in North Battleford, Saskatchewan, based on the city's official dog park page, animal services section, and current pet-licensing rules.",
+      "Hero Image": "",
+      "Intro Paragraph": "<p>North Battleford is a much stronger Saskatchewan city page once it is tied to the city's own dog-park and animal-services pages. The City of North Battleford explicitly publishes its dog park, states that it is the only public off-leash area in the city, and pairs that with current pet-licensing rules and contact information.</p>",
+      "About Section": "<p>The city's official dog park page says the Dog Park is the only area where a dog can be off leash in public. It places the park just off Airport Road by Cameron McIntosh Airport, says the park is open all year round, and confirms that it is fully fenced. That is materially better source support than the older generic draft and third-party park listing.</p><p>The same source set also gives practical rule detail. The city says dangerous dogs prohibited under Bylaw 1888 are not allowed, dogs in heat are not allowed, dogs must have a valid pet licence and up-to-date vaccinations, owners must clean up waste, nuisance dogs must be leashed and removed immediately, handlers must accompany their dog and carry a leash no longer than 1.5 metres, and motorized vehicles are not permitted in the park.</p><p>The current pet-licences page strengthens the city guide further by stating that all dogs and cats owned within North Battleford must be licensed and wear a city-issued tag. Together, these official pages support a high-confidence city overview without needing to rely on unsupported amenity claims or an unverified third-party map point.</p>",
+      "Featured Park 1": "north-battleford-off-leash-dog-park",
       "Featured Park 2": "",
       "Featured Park 3": "",
-      "Seasonal Tips": "<p id=\"\">- Winter: Snow buildup may limit access to entry points.<br>- Spring: Bring towels — it can get muddy.<br>- Summer: Shade is limited — visit early or late.<br>- Fall: Enjoy crisp weather and fewer crowds.</p>",
-      "Park Rules": "",
-      "City Website": "",
+      "Seasonal Tips": "<ul><li><strong>Winter:</strong> The city says the dog park is open all year round, but prairie wind, snow, and icy gates can still change visit comfort quickly.</li><li><strong>Spring:</strong> Expect softer ground near entries and fence lines during thaw.</li><li><strong>Summer:</strong> Bring water and check heat exposure before longer play sessions.</li><li><strong>Fall:</strong> Cooler temperatures are ideal, but shorter daylight makes daytime visits easier.</li></ul>",
+      "Park Rules": "<p><strong>Official off-leash status:</strong> The city says the Dog Park is the only area your dog can be off leash in public.</p><p><strong>Location context:</strong> The city places the park just off Airport Road by Cameron McIntosh Airport.</p><p><strong>Core park rules:</strong> No dogs in heat, no dangerous dogs covered by Bylaw 1888, and no motorized vehicles in the park.</p><p><strong>Handler responsibilities:</strong> Owners must accompany their dog, carry a leash no longer than 1.5 metres, clean up waste, and remove nuisance dogs immediately.</p><p><strong>Licensing:</strong> The city's pet-licences page says all dogs and cats owned within North Battleford must be licensed and wear a city-issued tag.</p>",
+      "City Website": "https://www.cityofnb.ca/parks-recreation-culture/parks-trails-and-sports-fields/dog-park/",
       "Province Page": "https://leashfree.ca/saskatchewan-dog-parks",
-      "Dog Park Etiquettes": "<p id=\"\"><strong id=\"\">1. Are leashes required?</strong></p><p id=\"\">Leashes must be used **outside the fenced area** only.</p><p id=\"\"><strong id=\"\">2. Is there supervision required?</strong></p><p id=\"\">Yes. Dogs must be **supervised at all times** by a responsible person.</p><p id=\"\"><strong id=\"\">3. What about waste pickup?</strong></p><p id=\"\">**Immediate cleanup is mandatory**. Please bring your own waste bags.</p><p id=\"\"><strong id=\"\">4. Are certain dog breeds restricted?</strong></p><p id=\"\">No, but **aggressive or reactive dogs are not permitted**.</p><p id=\"\"><strong id=\"\">5. Can children enter the dog park?</strong></p><p id=\"\">Yes, but **children must be accompanied and supervised**.</p>",
-      "Dog Park FAQs": "<p id=\"\"><strong id=\"\">1. Where is the dog park located?</strong></p><p id=\"\">Near **100th Street and 22nd Avenue**, by Centennial Park.</p><p id=\"\"><strong id=\"\">2. Is the park fenced?</strong></p><p id=\"\">Yes, the off-leash area is **securely enclosed** with a double-gated entry.</p><p id=\"\"><strong id=\"\">3. Are all dog sizes allowed?</strong></p><p id=\"\">Yes. **There is no size restriction**, but supervision is advised.</p><p id=\"\"><strong id=\"\">4. Is there seating or shade?</strong></p><p id=\"\">Minimal seating; **bring your own chair** if desired.</p><p id=\"\"><strong id=\"\">5. What are the hours?</strong></p><p id=\"\">The park is open **from dawn to dusk** daily.</p><p id=\"\"><strong id=\"\">6. Are there any fees?</strong></p><p id=\"\">No, the park is **free and open to the public**.</p>",
-      "Nearby Cities": "",
-      "Reviewed On": ""
+      "Dog Park Etiquettes": "<p><strong>1. Use the published dog park for off-leash time.</strong></p><p>The city explicitly says this is the only public area where dogs may be off leash.</p><p><strong>2. Arrive with licence and vaccination details current.</strong></p><p>The city requires a valid pet licence and says dogs at the park must be up to date with vaccinations.</p><p><strong>3. Stay with your dog and keep a leash on hand.</strong></p><p>The official park rules say handlers must accompany their dog and carry a leash no longer than 1.5 metres.</p><p><strong>4. Remove problems quickly.</strong></p><p>The city says nuisance dogs must be leashed and removed from the park immediately.</p><p><strong>5. Keep the space clean and low-conflict.</strong></p><p>Pick up waste, skip visits with dogs in heat, and avoid assuming unverified amenities will be available.</p>",
+      "Dog Park FAQs": "<p><strong>1. Does North Battleford have an official off-leash dog park?</strong></p><p>Yes. The city publishes an official Dog Park page and says it is the only area where dogs can be off leash in public.</p><p><strong>2. Where does the city place the dog park?</strong></p><p>The city says it is just off Airport Road by Cameron McIntosh Airport.</p><p><strong>3. Is the park fenced?</strong></p><p>Yes. The official dog park page says the park is fully fenced.</p><p><strong>4. Is the park seasonal?</strong></p><p>No. The city says the dog park is open all year round.</p><p><strong>5. Are licences required?</strong></p><p>Yes. The city says all dogs and cats owned within North Battleford must be licensed and wear a city-issued tag.</p><p><strong>6. What rules matter most before visiting?</strong></p><p>Carry a leash, accompany your dog, clean up waste, keep dogs current on licensing and vaccinations, and remove nuisance dogs immediately.</p>",
+      "Nearby Cities": "Battleford, Lloydminster",
+      "Reviewed On": "Wed Jul 22 2026 12:00:00 GMT+0000 (Coordinated Universal Time)"
     },
     "warnings": []
   },
@@ -3622,23 +3609,15 @@
     "name": "Prince Albert",
     "slug": "prince-albert",
     "title": "Prince Albert",
-    "seoTitle": "Off-Leash Dog Park in Prince Albert SK | LeashFree.ca",
-    "metaDescription": "Explore Prince Albert’s fenced off-leash dog park — a safe space in northern Saskatchewan where dogs can run freely and socialize outdoors.",
-    "description": "Explore Prince Albert’s fenced off-leash dog park — a safe space in northern Saskatchewan where dogs can run freely and socialize outdoors.",
-    "body": "<p>Prince Albert’s <strong id=\"\">designated off-leash dog park</strong> is located near the Alfred Jenkins Field House. The park features a fully fenced green space where dogs can run safely. With easy access to parking, walking paths, and waste bins, the park is well-suited for regular visits by local dog owners. It’s a great spot for pets to enjoy exercise while remaining within a secure and supervised environment.</p>",
+    "seoTitle": "Dog Parks in Prince Albert, Saskatchewan | Off-Leash Guide",
+    "metaDescription": "Source-backed guide to dog parks in Prince Albert, Saskatchewan, built around current city pet rules and the community off-leash space beside the Prince Albert SPCA.",
+    "description": "Source-backed guide to dog parks in Prince Albert, Saskatchewan, built around current city pet rules and the community off-leash space beside the Prince Albert SPCA.",
+    "body": "<p>The older Prince Albert page on LeashFree.ca relied on generic claims about a fenced dog park near the Alfred Jenkins Field House, but the current city website does not appear to publish a dedicated municipal dog-park page that supports that description. What the city does publish clearly is the current animal-services framework: Animal Control Services handles dogs and cats at large, Prince Albert requires annual pet licences, and pet owners are directed to the responsible-pet-ownership and dangerous-animal bylaws for the rules that govern ownership inside the city.</p><p>For the actual off-leash destination, the strongest local record available in this research pass points to Central Bark beside the Prince Albert SPCA. The SPCA's current contact page confirms its location at 1125 North Industrial Drive, and long-standing local reporting identifies Central Bark as the city's dog park beside the SPCA building on the north side of the river. That is not as strong as a direct city park page, so this guide stays explicit about source quality instead of overstating certainty.</p>",
     "collection": "City Pages",
     "sourceFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - City Pages - 68419a1c56454ae93923d2e4.csv",
     "canonicalUrl": "https://leashfree.ca/dog-parks/prince-albert/",
     "routePath": "/dog-parks/prince-albert/",
-    "media": [
-      {
-        "fieldName": "Hero Image",
-        "value": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6855f8b7dddec16f09782f9d_off-leash-dog-parks-canada.png",
-        "originalUrls": [
-          "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6855f8b7dddec16f09782f9d_off-leash-dog-parks-canada.png"
-        ]
-      }
-    ],
+    "media": [],
     "references": {
       "Province": [
         "Saskatchewan"
@@ -3656,25 +3635,25 @@
       "Archived": "false",
       "Draft": "false",
       "Created On": "Sun Jul 13 2025 02:01:26 GMT+0000 (Coordinated Universal Time)",
-      "Updated On": "Mon Sep 08 2025 13:21:16 GMT+0000 (Coordinated Universal Time)",
-      "Published On": "Mon Sep 08 2025 13:27:50 GMT+0000 (Coordinated Universal Time)",
+      "Updated On": "Wed Jul 22 2026 12:00:00 GMT+0000 (Coordinated Universal Time)",
+      "Published On": "Wed Jul 22 2026 12:00:00 GMT+0000 (Coordinated Universal Time)",
       "Province": "Saskatchewan",
-      "SEO Title Tag": "Off-Leash Dog Park in Prince Albert SK | LeashFree.ca",
-      "Meta Description": "Explore Prince Albert’s fenced off-leash dog park — a safe space in northern Saskatchewan where dogs can run freely and socialize outdoors.",
-      "Hero Image": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6855f8b7dddec16f09782f9d_off-leash-dog-parks-canada.png",
-      "Intro Paragraph": "<p>In northern Saskatchewan, <strong id=\"\">Prince Albert’s off-leash dog park</strong> offers a secure and peaceful space for your dog to enjoy off-leash play and social time.</p>",
-      "About Section": "<p>Prince Albert’s <strong id=\"\">designated off-leash dog park</strong> is located near the Alfred Jenkins Field House. The park features a fully fenced green space where dogs can run safely. With easy access to parking, walking paths, and waste bins, the park is well-suited for regular visits by local dog owners. It’s a great spot for pets to enjoy exercise while remaining within a secure and supervised environment.</p>",
-      "Featured Park 1": "",
+      "SEO Title Tag": "Dog Parks in Prince Albert, Saskatchewan | Off-Leash Guide",
+      "Meta Description": "Source-backed guide to dog parks in Prince Albert, Saskatchewan, built around current city pet rules and the community off-leash space beside the Prince Albert SPCA.",
+      "Hero Image": "",
+      "Intro Paragraph": "<p>Prince Albert is a case where the current municipal source set is useful for pet rules but not especially strong for a dedicated dog-park listing. The City of Prince Albert's current animal-services page clearly explains licensing, animal control contacts, and where dogs and cats are handled in the city, while the best-supported local off-leash park record points to Central Bark beside the Prince Albert SPCA.</p>",
+      "About Section": "<p>The older Prince Albert page on LeashFree.ca relied on generic claims about a fenced dog park near the Alfred Jenkins Field House, but the current city website does not appear to publish a dedicated municipal dog-park page that supports that description. What the city does publish clearly is the current animal-services framework: Animal Control Services handles dogs and cats at large, Prince Albert requires annual pet licences, and pet owners are directed to the responsible-pet-ownership and dangerous-animal bylaws for the rules that govern ownership inside the city.</p><p>For the actual off-leash destination, the strongest local record available in this research pass points to Central Bark beside the Prince Albert SPCA. The SPCA's current contact page confirms its location at 1125 North Industrial Drive, and long-standing local reporting identifies Central Bark as the city's dog park beside the SPCA building on the north side of the river. That is not as strong as a direct city park page, so this guide stays explicit about source quality instead of overstating certainty.</p>",
+      "Featured Park 1": "central-bark-dog-park",
       "Featured Park 2": "",
       "Featured Park 3": "",
-      "Seasonal Tips": "<p id=\"\">- Winter: Expect deep snow and bundle up.<br>- Spring: Ground may be soft or muddy.<br>- Summer: Visit early morning or evening for shade.<br>- Fall: Great time to visit for crisp weather and fewer bugs.</p>",
-      "Park Rules": "",
-      "City Website": "",
+      "Seasonal Tips": "<ul><li><strong>Winter:</strong> Prince Albert winters can mean packed snow, ice, and exposed wind, so shorter visits and paw protection may matter.</li><li><strong>Spring:</strong> Snowmelt can make entry areas and parking edges wet or muddy, especially around industrial or shelter-adjacent sites.</li><li><strong>Summer:</strong> Bring water and confirm ground conditions before longer play sessions.</li><li><strong>Fall:</strong> Cooler weather is ideal for longer outings, but shorter daylight makes earlier visits simpler.</li></ul>",
+      "Park Rules": "<p><strong>City-wide pet rules:</strong> The City of Prince Albert's current animal-services page directs owners to the responsible-pet-ownership bylaw, dangerous-animal bylaw, and annual licensing requirements.</p><p><strong>Licensing:</strong> The city says dog licences can be purchased through City Hall, the Prince Albert SPCA, or Paw Print Inn, and that licences must be renewed yearly.</p><p><strong>Animal control:</strong> The city says Animal Control Services handles dogs or cats at large and gives current reporting contacts for loose, distressed, or abandoned domestic animals.</p><p><strong>Off-leash source confidence:</strong> A current dedicated municipal dog-park page was not identified in this research pass, so the off-leash park details below are based on the Prince Albert SPCA location page plus local reporting about Central Bark beside the shelter.</p>",
+      "City Website": "https://www.citypa.ca/living-in-our-community/animal-services/",
       "Province Page": "https://leashfree.ca/saskatchewan-dog-parks",
-      "Dog Park Etiquettes": "<p id=\"\"><strong id=\"\">1. Where can my dog be off-leash?</strong></p><p id=\"\">Only inside the **fenced off-leash park**.</p><p id=\"\"><strong id=\"\">2. Should I stay with my dog?</strong></p><p id=\"\">Yes. **Handlers must supervise their dogs** at all times.</p><p id=\"\"><strong id=\"\">3. Are treats or toys allowed?</strong></p><p id=\"\">Use caution. **Treats may attract other dogs**, and shared toys should be safe.</p><p id=\"\"><strong id=\"\">4. Do I need to clean up?</strong></p><p id=\"\">Yes. Bring your own bags and **clean up after your dog immediately**.</p><p id=\"\"><strong id=\"\">5. Are children allowed?</strong></p><p id=\"\">Yes, but they should be **closely supervised by an adult**.</p>",
-      "Dog Park FAQs": "<p id=\"\"><strong id=\"\">1. Where is the dog park located?</strong></p><p id=\"\">Next to the **Alfred Jenkins Field House**.</p><p id=\"\"><strong id=\"\">2. Is the area fenced?</strong></p><p id=\"\">Yes, it’s a **fully enclosed off-leash zone**.</p><p id=\"\"><strong id=\"\">3. Can all dogs use the park?</strong></p><p id=\"\">Yes. It’s open to **all friendly and socialized dogs**.</p><p id=\"\"><strong id=\"\">4. Are there separate areas for small dogs?</strong></p><p id=\"\">No. It’s a shared space for all dog sizes.</p><p id=\"\"><strong id=\"\">5. Is there water at the park?</strong></p><p id=\"\">No. **Bring your own water** for your pet.</p><p id=\"\"><strong id=\"\">6. Is the park free to use?</strong></p><p id=\"\">Yes. It’s **public and free to access**.</p>",
-      "Nearby Cities": "",
-      "Reviewed On": ""
+      "Dog Park Etiquettes": "<p><strong>1. Treat Prince Albert's off-leash information conservatively.</strong></p><p>Because the city does not currently publish a dedicated dog-park page that clearly lays out every amenity and rule, visitors should use posted signage on arrival and avoid assuming unsupported features.</p><p><strong>2. Keep licensing current.</strong></p><p>The city's current animal-services page says pet licences are required and renewed yearly, so that should be handled before relying on any local off-leash space.</p><p><strong>3. Stay controlled outside the enclosure.</strong></p><p>The city maintains an active animal-control framework for dogs at large, which is a reminder that transitions in parking areas, road approaches, and paths still require control.</p><p><strong>4. Use shelter-adjacent spaces respectfully.</strong></p><p>Central Bark is associated with the Prince Albert SPCA site, so owners should keep visits clean, low-conflict, and considerate of the broader animal-services setting.</p><p><strong>5. Verify conditions before longer visits.</strong></p><p>Prince Albert's current source set is better for rules and location context than for daily amenity details, so water, footing, and temporary restrictions should be checked on site.</p>",
+      "Dog Park FAQs": "<p><strong>1. Does Prince Albert have a current official city dog-park page?</strong></p><p>Not one that was clearly identified in this research pass. The city currently publishes animal-services and pet-ownership information, but the off-leash park record is better supported by local shelter information and local reporting.</p><p><strong>2. What current city source is most useful for dog owners?</strong></p><p>The City of Prince Albert animal-services page is the strongest current municipal source because it explains licensing, animal-control contacts, and the bylaws owners should follow.</p><p><strong>3. What off-leash park does this guide feature?</strong></p><p>This guide features Central Bark Dog Park, the community off-leash space associated with the Prince Albert SPCA site.</p><p><strong>4. Where is Central Bark Dog Park?</strong></p><p>The Prince Albert SPCA contact page confirms the shelter location at 1125 North Industrial Drive, and local reporting places Central Bark beside the SPCA building on the north side of the river.</p><p><strong>5. Does Prince Albert require dog licensing?</strong></p><p>Yes. The city's animal-services page says pet licences are required and must be renewed yearly.</p><p><strong>6. Who handles dogs at large in Prince Albert?</strong></p><p>The city says Animal Control Services handles reports involving dogs or cats at large during business hours.</p>",
+      "Nearby Cities": "Nipawin, Melfort",
+      "Reviewed On": "Wed Jul 22 2026 12:00:00 GMT+0000 (Coordinated Universal Time)"
     },
     "warnings": []
   },
@@ -4981,29 +4960,28 @@
     "name": "Weyburn",
     "slug": "weyburn",
     "title": "Weyburn",
-    "seoTitle": "Off-Leash Dog Park in Weyburn SK | LeashFree.ca",
-    "metaDescription": "Visit Weyburn’s fenced off-leash dog park — a clean, friendly space where dogs can run free and socialize in southeast Saskatchewan.",
-    "description": "Visit Weyburn’s fenced off-leash dog park — a clean, friendly space where dogs can run free and socialize in southeast Saskatchewan.",
-    "body": "<p>Weyburn’s <strong id=\"\">off-leash dog park</strong> is located just off Highway 13 near 16th Street. The park features a large, securely fenced grassy area for dogs of all sizes. Dog waste stations and benches are provided, and the park is open daily from dawn to dusk. Whether you're looking for a quick play session or a longer visit, this park is a convenient stop for local residents and travelers alike.</p>",
+    "seoTitle": "Dog Parks in Weyburn, Saskatchewan | Off-Leash Guide",
+    "metaDescription": "Source-backed guide to dog parks in Weyburn, Saskatchewan, focused on the official community dog park, published rules, and practical visit planning.",
+    "description": "Source-backed guide to dog parks in Weyburn, Saskatchewan, focused on the official community dog park, published rules, and practical visit planning.",
+    "body": "<p>The City's dog-park page says the Weyburn Community Dog Park is located on Aylmer Street along the Tatagwa Trail, across from the Tatagwa View Care Facility. The same page says the park is fenced, covers 2.8 acres, includes separate areas for large and small dogs, and has a fenced staging area where owners can remove leashes before entering the off-leash sections. That is a much stronger factual base than the older city page, which relied on generic claims and an imprecise location summary.</p><p>Weyburn also publishes the dog-park rules as a separate PDF linked from the official park page. Those rules add the practical details that matter for a higher-trust city guide: dogs must wear current rabies and licence tags, dogs outside the park boundaries must be leashed, owners must carry a leash inside the park, aggressive dogs and dogs in heat are not allowed, food and drinks are prohibited, and owners must clean up waste. Together, the city page and the rules PDF make Weyburn one of the more straightforward municipal off-leash profiles to improve.</p>",
     "collection": "City Pages",
     "sourceFile": "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - City Pages - 68419a1c56454ae93923d2e4.csv",
     "canonicalUrl": "https://leashfree.ca/dog-parks/weyburn/",
     "routePath": "/dog-parks/weyburn/",
-    "media": [
-      {
-        "fieldName": "Hero Image",
-        "value": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6855f8b7dddec16f09782f9d_off-leash-dog-parks-canada.png",
-        "originalUrls": [
-          "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6855f8b7dddec16f09782f9d_off-leash-dog-parks-canada.png"
-        ]
-      }
-    ],
+    "media": [],
     "references": {
       "Province": [
         "Saskatchewan"
       ],
+      "Featured Park 1": [
+        "weyburn-community-dog-park"
+      ],
       "Province Page": [
         "https://leashfree.ca/saskatchewan-dog-parks"
+      ],
+      "Nearby Cities": [
+        "Estevan",
+        "Regina"
       ]
     },
     "raw": {
@@ -5015,25 +4993,25 @@
       "Archived": "false",
       "Draft": "false",
       "Created On": "Sun Jul 13 2025 02:05:40 GMT+0000 (Coordinated Universal Time)",
-      "Updated On": "Mon Sep 08 2025 13:21:17 GMT+0000 (Coordinated Universal Time)",
-      "Published On": "Mon Sep 08 2025 13:27:50 GMT+0000 (Coordinated Universal Time)",
+      "Updated On": "Wed Jul 22 2026 12:00:00 GMT+0000 (Coordinated Universal Time)",
+      "Published On": "Wed Jul 22 2026 12:00:00 GMT+0000 (Coordinated Universal Time)",
       "Province": "Saskatchewan",
-      "SEO Title Tag": "Off-Leash Dog Park in Weyburn SK | LeashFree.ca",
-      "Meta Description": "Visit Weyburn’s fenced off-leash dog park — a clean, friendly space where dogs can run free and socialize in southeast Saskatchewan.",
-      "Hero Image": "https://cdn.prod.website-files.com/683758b09dd1e3ac2e4e980a/6855f8b7dddec16f09782f9d_off-leash-dog-parks-canada.png",
-      "Intro Paragraph": "<p>In southeast Saskatchewan, <strong id=\"\">Weyburn’s off-leash dog park</strong> provides a secure, fully fenced environment where your dog can enjoy exercise and outdoor freedom.</p>",
-      "About Section": "<p>Weyburn’s <strong id=\"\">off-leash dog park</strong> is located just off Highway 13 near 16th Street. The park features a large, securely fenced grassy area for dogs of all sizes. Dog waste stations and benches are provided, and the park is open daily from dawn to dusk. Whether you're looking for a quick play session or a longer visit, this park is a convenient stop for local residents and travelers alike.</p>",
-      "Featured Park 1": "",
+      "SEO Title Tag": "Dog Parks in Weyburn, Saskatchewan | Off-Leash Guide",
+      "Meta Description": "Source-backed guide to dog parks in Weyburn, Saskatchewan, focused on the official community dog park, published rules, and practical visit planning.",
+      "Hero Image": "",
+      "Intro Paragraph": "<p>Weyburn has one of the clearer municipal dog-park source sets in this backlog. The City of Weyburn publishes a dedicated page for the Weyburn Community Dog Park, including the location along the Tatagwa Trail, park size, and fenced layout, and it also links directly to a separate rules PDF.</p>",
+      "About Section": "<p>The City's dog-park page says the Weyburn Community Dog Park is located on Aylmer Street along the Tatagwa Trail, across from the Tatagwa View Care Facility. The same page says the park is fenced, covers 2.8 acres, includes separate areas for large and small dogs, and has a fenced staging area where owners can remove leashes before entering the off-leash sections. That is a much stronger factual base than the older city page, which relied on generic claims and an imprecise location summary.</p><p>Weyburn also publishes the dog-park rules as a separate PDF linked from the official park page. Those rules add the practical details that matter for a higher-trust city guide: dogs must wear current rabies and licence tags, dogs outside the park boundaries must be leashed, owners must carry a leash inside the park, aggressive dogs and dogs in heat are not allowed, food and drinks are prohibited, and owners must clean up waste. Together, the city page and the rules PDF make Weyburn one of the more straightforward municipal off-leash profiles to improve.</p>",
+      "Featured Park 1": "weyburn-community-dog-park",
       "Featured Park 2": "",
       "Featured Park 3": "",
-      "Seasonal Tips": "<p id=\"\">- Winter: Snow accumulation may limit entry.<br>- Spring: Some areas may be muddy — bring towels.<br>- Summer: Bring water and visit during cooler hours.<br>- Fall: A great season for walks and play.</p>",
-      "Park Rules": "",
-      "City Website": "",
+      "Seasonal Tips": "<ul><li><strong>Winter:</strong> The park remains a useful off-leash option, but snow, ice, and packed surfaces can change footing around gates and the staging area.</li><li><strong>Spring:</strong> Trail approaches and grass zones can soften during thaw, so bring towels and keep transitions controlled near entries.</li><li><strong>Summer:</strong> Open prairie conditions can heat up quickly. Bring water and use the staging area to settle dogs before entering busier play zones.</li><li><strong>Fall:</strong> Cooler temperatures are ideal for longer visits, but shorter daylight and changing ground conditions make earlier outings easier.</li></ul>",
+      "Park Rules": "<p><strong>Official location:</strong> The City of Weyburn places the dog park on Aylmer Street along the Tatagwa Trail, across from the Tatagwa View Care Facility.</p><p><strong>Official park format:</strong> The city says the park is 2.8 acres, fenced, has separate areas for large and small dogs, and includes a fenced staging area for leash removal.</p><p><strong>Leash and tag rules:</strong> The official rules PDF says dogs must wear up-to-date rabies and licence tags, dogs outside the park boundaries must be leashed, and handlers must carry a leash at all times inside the off-leash park.</p><p><strong>Behavior and safety rules:</strong> The official rules prohibit aggressive dogs, female dogs in heat, sick dogs, and dogs younger than four months, and require owners to remove dogs immediately if they become aggressive.</p><p><strong>Cleanup and conduct:</strong> The official rules prohibit glass containers, smoking, and food or drinks, require owners to clean up feces, and require all gates to stay closed.</p>",
+      "City Website": "https://weyburn.ca/weyburn-community-dog-park/",
       "Province Page": "https://leashfree.ca/saskatchewan-dog-parks",
-      "Dog Park Etiquettes": "<p id=\"\"><strong id=\"\">1. Where can my dog go off-leash?</strong></p><p id=\"\">Only inside the **fenced dog park area**.</p><p id=\"\"><strong id=\"\">2. Am I required to supervise my dog?</strong></p><p id=\"\">Yes. Dogs must be **under control and within sight at all times**.</p><p id=\"\"><strong id=\"\">3. Are waste bags provided?</strong></p><p id=\"\">Some are, but it’s best to **bring your own bags**.</p><p id=\"\"><strong id=\"\">4. Can I bring food or treats?</strong></p><p id=\"\">No. **Avoid food** to prevent conflict between dogs.</p><p id=\"\"><strong id=\"\">5. Can children use the park?</strong></p><p id=\"\">Yes, but only if **accompanied and supervised by an adult**.</p>",
-      "Dog Park FAQs": "<p id=\"\"><strong id=\"\">1. Where is the dog park located?</strong></p><p id=\"\">Just off **Highway 13**, near **16th Street**.</p><p id=\"\"><strong id=\"\">2. Is the park fully fenced?</strong></p><p id=\"\">Yes. It’s a **secure off-leash area**.</p><p id=\"\"><strong id=\"\">3. What size of dogs can use the park?</strong></p><p id=\"\">All sizes are welcome, but **owners are responsible for safe play**.</p><p id=\"\"><strong id=\"\">4. Is it open year-round?</strong></p><p id=\"\">Yes, **weather permitting**.</p><p id=\"\"><strong id=\"\">5. Is there lighting or water?</strong></p><p id=\"\">No lighting or on-site water — please **plan ahead**.</p><p id=\"\"><strong id=\"\">6. Is the park free to use?</strong></p><p id=\"\">Yes. It’s **free and open to the public**.</p>",
-      "Nearby Cities": "",
-      "Reviewed On": ""
+      "Dog Park Etiquettes": "<p><strong>1. Use the staging area properly.</strong></p><p>Weyburn's official park page specifically mentions a fenced staging area for removing leashes before entering, so owners should use it to prevent rushed gate entries.</p><p><strong>2. Arrive with current tags and a leash in hand.</strong></p><p>The official rules require up-to-date rabies and licence tags and say handlers must carry a leash inside the park.</p><p><strong>3. Match your dog to the correct section.</strong></p><p>The city says the park has separate areas for large and small dogs, so use the section that best fits your dog's size and play style.</p><p><strong>4. Remove problems immediately.</strong></p><p>The rules require aggressive dogs to be leashed and taken out right away, which means owners need to act quickly instead of hoping behavior settles on its own.</p><p><strong>5. Keep the space clean and low-conflict.</strong></p><p>The rules prohibit food and drinks, require waste pickup, and require gates to stay closed, all of which reduce avoidable conflict and mess.</p>",
+      "Dog Park FAQs": "<p><strong>1. Does Weyburn have an official dog park?</strong></p><p>Yes. The City of Weyburn publishes a dedicated page for the Weyburn Community Dog Park.</p><p><strong>2. Where is Weyburn Community Dog Park?</strong></p><p>The city places it on Aylmer Street along the Tatagwa Trail, across from the Tatagwa View Care Facility.</p><p><strong>3. How large is the park?</strong></p><p>The official city page says the park is 2.8 acres.</p><p><strong>4. Are there separate areas for large and small dogs?</strong></p><p>Yes. The city says the park has separate areas for large and small dogs.</p><p><strong>5. Do I need to carry a leash inside the park?</strong></p><p>Yes. The official rules say dogs outside the park boundaries must be leashed and owners must carry a leash with them at all times inside the leash-free park.</p><p><strong>6. What dogs are not allowed?</strong></p><p>The official rules say female dogs in heat, sick dogs, dogs under four months old, and aggressive dogs are not allowed in the park.</p>",
+      "Nearby Cities": "Estevan, Regina",
+      "Reviewed On": "Wed Jul 22 2026 12:00:00 GMT+0000 (Coordinated Universal Time)"
     },
     "warnings": []
   },

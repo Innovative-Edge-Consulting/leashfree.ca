@@ -1,6 +1,6 @@
 # Validation Report
 
-Generated at: 2026-07-21T15:21:35.052Z
+Generated at: 2026-07-22T16:18:49.158Z
 
 - Errors: 0
 - Warnings: 0
@@ -8,7 +8,7 @@ Generated at: 2026-07-21T15:21:35.052Z
 - Media warnings: 0
 - Data quality warnings: 0
 - Owner review items: 0
-- Generated routes checked: 1127
+- Generated routes checked: 1132
 - Media tracker rows missing local files: 257
 
 ## Counts By Collection
@@ -21,9 +21,9 @@ Generated at: 2026-07-21T15:21:35.052Z
 | Breed Groups | 9 | 0 | 0 | 0 | 0 | 0 |
 | Categories | 7 | 0 | 0 | 0 | 0 | 0 |
 | City Pages | 88 | 0 | 0 | 0 | 0 | 0 |
-| Directories | 63 | 0 | 0 | 0 | 0 | 0 |
-| Dog Breeds | 309 | 0 | 0 | 0 | 0 | 0 |
-| Dog Parks | 527 | 0 | 0 | 0 | 0 | 0 |
+| Directories | 66 | 0 | 0 | 0 | 0 | 0 |
+| Dog Breeds | 310 | 0 | 0 | 0 | 0 | 0 |
+| Dog Parks | 528 | 0 | 0 | 0 | 0 | 0 |
 | Pet Insurance Providers | 8 | 0 | 0 | 0 | 0 | 0 |
 | Provinces | 4 | 0 | 0 | 0 | 0 | 0 |
 | Dog Names | 39 | 0 | 0 | 0 | 0 | 0 |

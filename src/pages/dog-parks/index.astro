@@ -4,6 +4,7 @@ import DogParkSearch from "../../components/DogParkSearch.astro";
 import Hero from "../../components/Hero.astro";
 import Layout from "../../components/Layout.astro";
 import Section from "../../components/Section.astro";
+import { originalCityHeroImages, originalParkHeroImages } from "../../data/dog-park-image-overrides.js";
 import mediaMap from "../../data/media-map.json";
 import parks from "../../data/generated/parks.json";
 import cities from "../../data/generated/cities.json";
@@ -15,6 +16,19 @@ import { withoutRedirectedRecords } from "../../utils/redirects.js";
 const featuredCities = cities.slice(0, 24);
 const activeParks = withoutRedirectedRecords(parks);
 const featuredParks = activeParks.slice(0, 48);
+const cityCardImage = (city) => originalCityHeroImages[city.slug] || resolveMedia(city, "Hero Image", mediaMap).src;
+const parkCardImage = (park) => {
+  const override = originalParkHeroImages[park.slug];
+  if (override) return override;
+
+  const resolved = resolveMedia(park, undefined, mediaMap);
+  if (typeof resolved.status === "string" && resolved.status.startsWith("defaulted")) {
+    const city = cities.find((cityItem) => cityItem.name === park.raw.City);
+    if (city?.slug && originalCityHeroImages[city.slug]) return originalCityHeroImages[city.slug];
+  }
+
+  return resolved.src;
+};
 const breadcrumbs = [
   { label: "Home", href: "/" },
   { label: "Dog Parks", href: "/dog-parks/" }
@@ -99,7 +113,7 @@ const breadcrumbs = [
           title={`${item.name} dog parks`}
           href={`/dog-parks/${item.slug}/`}
           description={excerpt(item.description, item.metaDescription)}
-          image={resolveMedia(item, "Hero Image", mediaMap).src}
+          image={cityCardImage(item)}
           imageAlt={`${item.name} dog park guide`}
           badges={[item.raw.Province].filter(Boolean)}
           ctaLabel="View city"
@@ -115,7 +129,7 @@ const breadcrumbs = [
           title={item.name}
           href={`/dog-parks/${item.slug}/`}
           description={excerpt(item.description, item.raw["Street Address"])}
-          image={resolveMedia(item, undefined, mediaMap).src}
+          image={parkCardImage(item)}
           imageAlt={`${item.name} dog park`}
           meta={[item.raw.City, item.raw.Province].filter(Boolean).join(", ")}
           badges={[item.raw.Fenced ? `Fenced: ${item.raw.Fenced}` : ""].filter(Boolean)}

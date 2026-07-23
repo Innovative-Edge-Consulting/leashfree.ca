@@ -1,8 +1,8 @@
 # QA Page Report
 
-Generated at: 2026-07-19T13:04:42.294Z
-- HTML pages checked: 1121
-- Sitemap routes found: 1110
+Generated at: 2026-07-23T00:27:26.218Z
+- HTML pages checked: 1128
+- Sitemap routes found: 1117
 - Missing title tags: 0
 - Missing meta descriptions: 0
 - Duplicate title groups: 1
@@ -10,7 +10,7 @@ Generated at: 2026-07-19T13:04:42.294Z
 - Missing H1: 0
 - Multiple H1s: 0
 - Broken internal links: 0
-- Redirect-covered internal links: 4585
+- Redirect-covered internal links: 4613
 - Implemented-redirect internal links: 0
 - Broken image paths: 0
 - Pages using placeholder images: 0

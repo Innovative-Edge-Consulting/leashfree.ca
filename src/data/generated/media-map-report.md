@@ -1,6 +1,6 @@
 # Media Map Report
 
-Generated at: 2026-07-21T15:21:33.259Z
+Generated at: 2026-07-22T17:11:50.374Z
 - Total tracker rows: 689
 - Total source media files found: 395
 - Published media rows: 425

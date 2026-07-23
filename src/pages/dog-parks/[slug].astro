@@ -89,14 +89,19 @@ const enhancedProvinceConfig = {
 };
 const enhancedProvince = isProvince ? enhancedProvinceConfig[primary.slug] : null;
 const resolvedImage = resolveMedia(primary, undefined, mediaMap);
+const cityCardImage = (cityItem) => originalCityHeroImages[cityItem.slug] || resolveMedia(cityItem, "Hero Image", mediaMap).src;
+const city = isPark ? findByName(cities, primary.raw.City) : null;
+const parkFallsBackToDefault = isPark && typeof resolvedImage.status === "string" && resolvedImage.status.startsWith("defaulted");
+const parkCityImage = isPark && city?.slug ? originalCityHeroImages[city.slug] : null;
 const image = enhancedProvince
   ? { ...resolvedImage, ...(enhancedProvince.heroImage ? { src: enhancedProvince.heroImage } : {}) }
   : isCity && originalCityHeroImages[primary.slug]
     ? { ...resolvedImage, src: originalCityHeroImages[primary.slug] }
   : isPark && originalParkHeroImages[primary.slug]
     ? { ...resolvedImage, src: originalParkHeroImages[primary.slug] }
+  : isPark && parkFallsBackToDefault && parkCityImage
+    ? { ...resolvedImage, src: parkCityImage }
   : resolvedImage;
-const city = isPark ? findByName(cities, primary.raw.City) : null;
 const province = isPark || isCity ? findByName(provinces, primary.raw.Province) : primary;
 const sourceUrl = primary.raw["Park Website or Source"] || "";
 const parseDateValue = (value) => {
@@ -880,6 +885,8 @@ const structuredData = [
                     title={`${cityItem.name} dog parks`}
                     href={`/dog-parks/${cityItem.slug}/`}
                     description={`${count} listed park${count === 1 ? "" : "s"} in ${cityItem.name}, including ${fenced} fenced, ${water} with water, and ${parking} with parking where data is available.`}
+                    image={cityCardImage(cityItem)}
+                    imageAlt={`${cityItem.name} dog park guide`}
                     badges={[cityItem.raw.Province].filter(Boolean)}
                     ctaLabel="View city guide"
                   />
@@ -913,6 +920,8 @@ const structuredData = [
               title={`${cityItem.name} dog parks`}
               href={`/dog-parks/${cityItem.slug}/`}
               description={excerpt(cityItem.description, `${cityItem.name} dog park guide`)}
+              image={cityCardImage(cityItem)}
+              imageAlt={`${cityItem.name} dog park guide`}
               ctaLabel="View city"
             />
           ))}

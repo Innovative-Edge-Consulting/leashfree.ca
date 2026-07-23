@@ -6,7 +6,7 @@ import HomeMapSearch from "../components/HomeMapSearch.astro";
 import Layout from "../components/Layout.astro";
 import Section from "../components/Section.astro";
 import CTA from "../components/CTA.astro";
-import { originalParkHeroImages } from "../data/dog-park-image-overrides.js";
+import { originalCityHeroImages, originalParkHeroImages } from "../data/dog-park-image-overrides.js";
 import mediaMap from "../data/media-map.json";
 import parks from "../data/generated/parks.json";
 import cities from "../data/generated/cities.json";
@@ -23,6 +23,19 @@ const featuredCitySlugs = ["toronto", "vancouver", "calgary", "montreal"];
 const featuredCities = featuredCitySlugs
   .map((slug) => cities.find((city) => city.slug === slug))
   .filter(Boolean);
+const cityCardImage = (city) => originalCityHeroImages[city.slug] || resolveMedia(city, "Hero Image", mediaMap).src;
+const parkCardImage = (park) => {
+  const override = originalParkHeroImages[park.slug];
+  if (override) return override;
+
+  const resolved = resolveMedia(park, undefined, mediaMap);
+  if (typeof resolved.status === "string" && resolved.status.startsWith("defaulted")) {
+    const city = cities.find((cityItem) => cityItem.name === park.raw.City);
+    if (city?.slug && originalCityHeroImages[city.slug]) return originalCityHeroImages[city.slug];
+  }
+
+  return resolved.src;
+};
 
 const parkActivityDate = (park) => {
   const rawDate = park.raw["Reviewed On"] || park.raw["Updated On"] || park.raw["Published On"];
@@ -263,7 +276,7 @@ const resourceCards = [
           title={`${city.name} dog parks`}
           href={`/dog-parks/${city.slug}/`}
           description={excerpt(city.description, city.metaDescription)}
-          image={resolveMedia(city, "Hero Image", mediaMap).src}
+          image={cityCardImage(city)}
           imageAlt={`${city.name} dog park guide`}
           badges={[city.raw.Province].filter(Boolean)}
           ctaLabel="View city"
@@ -274,7 +287,7 @@ const resourceCards = [
           title={park.name}
           href={`/dog-parks/${park.slug}/`}
           description={excerpt(park.description, park.raw["Street Address"])}
-          image={originalParkHeroImages[park.slug] || resolveMedia(park, undefined, mediaMap).src}
+          image={parkCardImage(park)}
           imageAlt={`${park.name} dog park`}
           meta={[
             [park.raw.City, park.raw.Province].filter(Boolean).join(", "),

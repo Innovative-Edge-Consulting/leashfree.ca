@@ -1,14 +1,19 @@
 ---
 import Card from "./Card.astro";
 import { dateLabel, excerpt } from "../utils/content.js";
+import mediaMap from "../data/media-map.json";
+import { resolveMedia } from "../utils/media.js";
 
 const { post } = Astro.props;
+const image = resolveMedia(post, "Hero Image", mediaMap).src;
 ---
 
 <Card
   title={post.title || post.name}
   href={`/blog/${post.slug}/`}
   description={excerpt(post.metaDescription, post.description)}
+  image={image}
+  imageAlt={`${post.title || post.name} article`}
   meta={dateLabel(post.raw?.["Published On"] || post.raw?.["Updated On"])}
   badges={[post.references?.Category?.[0] || ""].filter(Boolean)}
   ctaLabel="Read article"

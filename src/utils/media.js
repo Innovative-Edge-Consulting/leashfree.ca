@@ -17,6 +17,18 @@ export function defaultMediaFor(collection) {
   return DEFAULT_MEDIA[collection] || PLACEHOLDER;
 }
 
+function firstUsableMediaValue(item, fieldName) {
+  const fieldMatch = Array.isArray(item.media)
+    ? item.media.find((entry) => (!fieldName || entry.fieldName === fieldName) && entry.value)
+    : null;
+  if (fieldMatch?.value) return fieldMatch.value;
+
+  if (fieldName && item.raw?.[fieldName]) return item.raw[fieldName];
+  if (item.image) return item.image;
+
+  return null;
+}
+
 export function resolveMedia(item, fieldName, mediaMap) {
   const entries = mediaMap?.items || [];
   const match = entries.find((entry) => {
@@ -33,6 +45,15 @@ export function resolveMedia(item, fieldName, mediaMap) {
       src: match.publicPath,
       status: "mapped",
       source: match
+    };
+  }
+
+  const directValue = firstUsableMediaValue(item, fieldName);
+  if (directValue) {
+    return {
+      src: directValue,
+      status: "embedded",
+      source: match || directValue
     };
   }
 

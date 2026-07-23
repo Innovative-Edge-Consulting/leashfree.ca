@@ -1,4 +1,5 @@
 export const originalCityHeroImages = {
+  "amherst": "/images/dog-parks/amherst-original.png",
   "battleford": "/images/dog-parks/battleford-original.png",
   "estevan": "/images/dog-parks/estevan-original.png",
   "gatineau": "/images/dog-parks/gatineau-original.png",
@@ -9,6 +10,10 @@ export const originalCityHeroImages = {
   "martensville": "/images/dog-parks/martensville-original.png",
   "melfort": "/images/dog-parks/melfort-original.png",
   "meadow-lake": "/images/dog-parks/meadow-lake-original.png",
+  "nipawin": "/images/dog-parks/nipawin-original.png",
+  "north-battleford": "/images/dog-parks/north-battleford-original.png",
+  "prince-albert": "/images/dog-parks/prince-albert-original.png",
+  "weyburn": "/images/dog-parks/weyburn-original.png",
   "yorkton": "/images/dog-parks/yorkton-original.png"
 };
 
@@ -24,6 +29,7 @@ export const originalParkHeroImages = {
   "lloydminster-off-leash-dog-park": "/images/dog-parks/lloydminster-off-leash-dog-park-original.png",
   "martensville-dog-park": "/images/dog-parks/martensville-dog-park-original.png",
   "meadow-lake-off-leash-dog-park": "/images/dog-parks/meadow-lake-off-leash-dog-park-original.png",
+  "north-battleford-off-leash-dog-park": "/images/dog-parks/north-battleford-original.png",
   "parc-allen-dog-exercise-area": "/images/dog-parks/parc-allen-dog-exercise-area-original.png",
   "parc-de-la-technologie-off-leash-area": "/images/dog-parks/parc-de-la-technologie-off-leash-area-original.png",
   "r-h-brekko-lake-off-leash-area": "/images/dog-parks/r-h-brekko-lake-off-leash-area-original.png",
