@@ -5,8 +5,8 @@ const parkFile = "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFr
 const citiesJsonFile = "src/data/generated/cities.json";
 const parksJsonFile = "src/data/generated/parks.json";
 
-const reviewDate = "Wed Jul 22 2026 12:00:00 GMT+0000 (Coordinated Universal Time)";
-const dogParkSource = "https://www.cityofnb.ca/parks-recreation-culture/parks-trails-and-sports-fields/dog-park/";
+const reviewDate = "Sat Jul 25 2026 12:00:00 GMT+0000 (Coordinated Universal Time)";
+const dogParkSource = "https://www.cityofnb.ca/community-safety-support/animal-services/dog-park/";
 const animalServicesSource = "https://www.cityofnb.ca/community-safety-support/animal-services/";
 const petLicencesSource = "https://www.cityofnb.ca/community-safety-support/animal-services/pet-licences/";
 const parksIndexSource = "https://www.cityofnb.ca/parks-recreation-culture/parks-trails-and-sports-fields/";

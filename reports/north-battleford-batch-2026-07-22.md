@@ -1,4 +1,4 @@
-# North Battleford batch - 2026-07-22
+# North Battleford batch - 2026-07-25
 
 Completed the next highest-priority city-guide cleanup for North Battleford, Saskatchewan.
 
@@ -23,7 +23,7 @@ Completed the next highest-priority city-guide cleanup for North Battleford, Sas
 ## Validation
 
 - `node scripts/apply-north-battleford-updates.mjs`
-- `npm run optimize:images`
+- `node scripts/optimize-images.mjs --files public/images/dog-parks/north-battleford-original.png`
 - `npm run build`
 
 ## Result target

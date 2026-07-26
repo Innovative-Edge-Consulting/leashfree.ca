@@ -16971,6 +16971,63 @@
       "notes": [
         "No source media file matched this tracker row."
       ]
+    },
+    {
+      "collection": "Blog Posts",
+      "itemName": "When Should You Go to the Emergency Vet? Symptom Guide for Canadian Dog Owners",
+      "itemSlug": "when-to-go-emergency-vet-dog-canada",
+      "fieldName": "Hero Image",
+      "localFilename": "blog-when-to-go-emergency-vet-dog-canada-hero.png",
+      "cleanedFilename": "blog-when-to-go-emergency-vet-dog-canada-hero.png",
+      "suggestedFilename": "blog-when-to-go-emergency-vet-dog-canada-hero.png",
+      "suggestedPublicPath": "/images/blog/blog-when-to-go-emergency-vet-dog-canada-hero.png",
+      "publicPath": "/images/blog/blog-when-to-go-emergency-vet-dog-canada-hero.png?v=20260723",
+      "publicPathReady": true,
+      "priority": "High",
+      "status": "published",
+      "matchStatus": "published",
+      "confidence": "high",
+      "matchConfidence": "high",
+      "needsOwnerReview": false,
+      "notes": ["Generated dedicated emergency-vet hero image for draft article on 2026-07-23."]
+    },
+    {
+      "collection": "Blog Posts",
+      "itemName": "Best Dog Food for Sensitive Stomachs in Canada: What To Ask Your Vet and How To Compare Labels",
+      "itemSlug": "best-dog-food-sensitive-stomachs-canada",
+      "fieldName": "Hero Image",
+      "localFilename": "blog-best-dog-food-sensitive-stomachs-canada-hero.png",
+      "cleanedFilename": "blog-best-dog-food-sensitive-stomachs-canada-hero.png",
+      "suggestedFilename": "blog-best-dog-food-sensitive-stomachs-canada-hero.png",
+      "suggestedPublicPath": "/images/blog/blog-best-dog-food-sensitive-stomachs-canada-hero.png",
+      "publicPath": "/images/blog/blog-best-dog-food-sensitive-stomachs-canada-hero.png?v=20260724",
+      "publicPathReady": true,
+      "priority": "High",
+      "status": "published",
+      "matchStatus": "published",
+      "confidence": "high",
+      "matchConfidence": "high",
+      "needsOwnerReview": false,
+      "notes": ["Generated dedicated sensitive-stomach dog-food hero image for draft article on 2026-07-24."]
+    },
+    {
+      "collection": "Blog Posts",
+      "itemName": "How Much Exercise Does My Dog Need? Breed-by-Breed Activity Guide",
+      "itemSlug": "how-much-exercise-does-my-dog-need",
+      "fieldName": "Hero Image",
+      "localFilename": "blog-how-much-exercise-does-my-dog-need-hero.png",
+      "cleanedFilename": "blog-how-much-exercise-does-my-dog-need-hero.png",
+      "suggestedFilename": "blog-how-much-exercise-does-my-dog-need-hero.png",
+      "suggestedPublicPath": "/images/blog/blog-how-much-exercise-does-my-dog-need-hero.png",
+      "publicPath": "/images/blog/blog-how-much-exercise-does-my-dog-need-hero.png?v=20260725",
+      "publicPathReady": true,
+      "priority": "High",
+      "status": "published",
+      "matchStatus": "published",
+      "confidence": "high",
+      "matchConfidence": "high",
+      "needsOwnerReview": false,
+      "notes": ["Generated dedicated dog-exercise hero image for draft article on 2026-07-25."]
     }
   ],
   "unmatchedLocalFiles": [

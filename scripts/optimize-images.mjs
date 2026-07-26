@@ -9,6 +9,7 @@ const manifestPath = path.join(rootDir, "src", "data", "generated", "image-deriv
 
 const RASTER_EXTENSIONS = new Set([".jpg", ".jpeg", ".png", ".webp"]);
 const WIDTH_CANDIDATES = [160, 240, 320, 480, 640, 800, 960, 1200, 1600, 2000];
+const TARGETED_WIDTH_CANDIDATES = [480, 960, 1600];
 
 function toPosix(value) {
   return value.split(path.sep).join("/");
@@ -37,9 +38,49 @@ async function walk(dir) {
   return files;
 }
 
-function targetWidths(width) {
-  const widths = WIDTH_CANDIDATES.filter((candidate) => candidate < width);
-  widths.push(width);
+function parseArgs(argv) {
+  const options = {
+    files: [],
+    widths: null
+  };
+
+  for (let index = 0; index < argv.length; index += 1) {
+    const arg = argv[index];
+    if (arg === "--files") {
+      const value = argv[index + 1] || "";
+      options.files = value.split(",").map((entry) => entry.trim()).filter(Boolean);
+      index += 1;
+      continue;
+    }
+
+    if (arg.startsWith("--files=")) {
+      options.files = arg.slice("--files=".length).split(",").map((entry) => entry.trim()).filter(Boolean);
+      continue;
+    }
+
+    if (arg === "--widths") {
+      const value = argv[index + 1] || "";
+      options.widths = value.split(",").map((entry) => Number.parseInt(entry.trim(), 10)).filter((entry) => Number.isFinite(entry) && entry > 0);
+      index += 1;
+      continue;
+    }
+
+    if (arg.startsWith("--widths=")) {
+      options.widths = arg.slice("--widths=".length).split(",").map((entry) => Number.parseInt(entry.trim(), 10)).filter((entry) => Number.isFinite(entry) && entry > 0);
+    }
+  }
+
+  return options;
+}
+
+function resolveInputFile(filePath) {
+  if (path.isAbsolute(filePath)) return filePath;
+  return path.join(rootDir, filePath);
+}
+
+function targetWidths(width, widthCandidates, { includeOriginal = true } = {}) {
+  const widths = widthCandidates.filter((candidate) => candidate < width);
+  if (includeOriginal || widths.length === 0) widths.push(width);
   return [...new Set(widths)].sort((a, b) => a - b);
 }
 
@@ -68,7 +109,7 @@ async function writeVariant(pipeline, format, outputFile) {
   await pipeline.jpeg({ quality: 78, mozjpeg: true }).toFile(outputFile);
 }
 
-async function optimizeFile(filePath) {
+async function optimizeFile(filePath, widthCandidates, { includeOriginal = true } = {}) {
   const metadata = await sharp(filePath).metadata();
   const width = metadata.width || 0;
   const height = metadata.height || 0;
@@ -78,7 +119,7 @@ async function optimizeFile(filePath) {
   const hasAlpha = Boolean(metadata.hasAlpha);
   const inputExtension = path.extname(filePath).toLowerCase();
   const fallbackFormat = hasAlpha && inputExtension !== ".jpg" && inputExtension !== ".jpeg" ? "png" : "jpg";
-  const widths = targetWidths(width);
+  const widths = targetWidths(width, widthCandidates, { includeOriginal });
   const publicSrc = publicPathFromAbsolute(filePath);
   const relativeFromImages = path.relative(publicImagesDir, filePath);
   const parsed = path.parse(relativeFromImages);
@@ -122,19 +163,49 @@ async function optimizeFile(filePath) {
   };
 }
 
-async function main() {
-  const files = await walk(publicImagesDir);
-  const rasterFiles = files
-    .filter((filePath) => RASTER_EXTENSIONS.has(path.extname(filePath).toLowerCase()))
-    .sort((a, b) => a.localeCompare(b));
+async function loadExistingManifest() {
+  try {
+    const raw = await fs.readFile(manifestPath, "utf8");
+    const parsed = JSON.parse(raw);
+    return {
+      generatedAt: parsed.generatedAt || new Date().toISOString(),
+      images: parsed.images || {}
+    };
+  } catch {
+    return {
+      generatedAt: new Date().toISOString(),
+      images: {}
+    };
+  }
+}
 
-  const manifest = {
-    generatedAt: new Date().toISOString(),
-    images: {}
-  };
+async function main() {
+  const options = parseArgs(process.argv.slice(2));
+  const targetedMode = options.files.length > 0;
+  const widthCandidates = options.widths?.length
+    ? options.widths
+    : targetedMode
+      ? TARGETED_WIDTH_CANDIDATES
+      : WIDTH_CANDIDATES;
+  const includeOriginal = !targetedMode;
+
+  const rasterFiles = targetedMode
+    ? options.files.map(resolveInputFile)
+      .filter((filePath) => RASTER_EXTENSIONS.has(path.extname(filePath).toLowerCase()))
+      .sort((a, b) => a.localeCompare(b))
+    : (await walk(publicImagesDir))
+      .filter((filePath) => RASTER_EXTENSIONS.has(path.extname(filePath).toLowerCase()))
+      .sort((a, b) => a.localeCompare(b));
+
+  const manifest = targetedMode
+    ? await loadExistingManifest()
+    : {
+        generatedAt: new Date().toISOString(),
+        images: {}
+      };
 
   for (const filePath of rasterFiles) {
-    const optimized = await optimizeFile(filePath);
+    const optimized = await optimizeFile(filePath, widthCandidates, { includeOriginal });
     if (!optimized) continue;
     manifest.images[optimized.src] = {
       width: optimized.width,
@@ -145,10 +216,14 @@ async function main() {
     };
   }
 
+  manifest.generatedAt = new Date().toISOString();
+
   await ensureDir(path.dirname(manifestPath));
   await fs.writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
 
-  console.log(`Optimized ${Object.keys(manifest.images).length} images`);
+  console.log(targetedMode
+    ? `Optimized ${rasterFiles.length} targeted image(s) with widths ${widthCandidates.join(", ")}`
+    : `Optimized ${Object.keys(manifest.images).length} images`);
 }
 
 await main();

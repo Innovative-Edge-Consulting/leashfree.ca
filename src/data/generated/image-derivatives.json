@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T22:13:34.760Z",
+  "generatedAt": "2026-07-26T02:13:33.449Z",
   "images": {
     "/images/blog/blog-average-vet-costs-in-canada-hero.jpg": {
       "width": 702,
@@ -20975,132 +20975,48 @@
       "width": 1774,
       "height": 887,
       "fallbackFormat": "jpg",
-      "fallbackSrc": "/images/optimized/dog-parks/north-battleford-original/1774.jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/north-battleford-original/1600.jpg",
       "variants": {
         "avif": [
           {
-            "width": 160,
-            "src": "/images/optimized/dog-parks/north-battleford-original/160.avif"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/dog-parks/north-battleford-original/240.avif"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/dog-parks/north-battleford-original/320.avif"
-          },
-          {
             "width": 480,
             "src": "/images/optimized/dog-parks/north-battleford-original/480.avif"
-          },
-          {
-            "width": 640,
-            "src": "/images/optimized/dog-parks/north-battleford-original/640.avif"
-          },
-          {
-            "width": 800,
-            "src": "/images/optimized/dog-parks/north-battleford-original/800.avif"
           },
           {
             "width": 960,
             "src": "/images/optimized/dog-parks/north-battleford-original/960.avif"
           },
           {
-            "width": 1200,
-            "src": "/images/optimized/dog-parks/north-battleford-original/1200.avif"
-          },
-          {
             "width": 1600,
             "src": "/images/optimized/dog-parks/north-battleford-original/1600.avif"
-          },
-          {
-            "width": 1774,
-            "src": "/images/optimized/dog-parks/north-battleford-original/1774.avif"
           }
         ],
         "webp": [
           {
-            "width": 160,
-            "src": "/images/optimized/dog-parks/north-battleford-original/160.webp"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/dog-parks/north-battleford-original/240.webp"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/dog-parks/north-battleford-original/320.webp"
-          },
-          {
             "width": 480,
             "src": "/images/optimized/dog-parks/north-battleford-original/480.webp"
-          },
-          {
-            "width": 640,
-            "src": "/images/optimized/dog-parks/north-battleford-original/640.webp"
-          },
-          {
-            "width": 800,
-            "src": "/images/optimized/dog-parks/north-battleford-original/800.webp"
           },
           {
             "width": 960,
             "src": "/images/optimized/dog-parks/north-battleford-original/960.webp"
           },
           {
-            "width": 1200,
-            "src": "/images/optimized/dog-parks/north-battleford-original/1200.webp"
-          },
-          {
             "width": 1600,
             "src": "/images/optimized/dog-parks/north-battleford-original/1600.webp"
-          },
-          {
-            "width": 1774,
-            "src": "/images/optimized/dog-parks/north-battleford-original/1774.webp"
           }
         ],
         "jpg": [
           {
-            "width": 160,
-            "src": "/images/optimized/dog-parks/north-battleford-original/160.jpg"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/dog-parks/north-battleford-original/240.jpg"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/dog-parks/north-battleford-original/320.jpg"
-          },
-          {
             "width": 480,
             "src": "/images/optimized/dog-parks/north-battleford-original/480.jpg"
-          },
-          {
-            "width": 640,
-            "src": "/images/optimized/dog-parks/north-battleford-original/640.jpg"
-          },
-          {
-            "width": 800,
-            "src": "/images/optimized/dog-parks/north-battleford-original/800.jpg"
           },
           {
             "width": 960,
             "src": "/images/optimized/dog-parks/north-battleford-original/960.jpg"
           },
           {
-            "width": 1200,
-            "src": "/images/optimized/dog-parks/north-battleford-original/1200.jpg"
-          },
-          {
             "width": 1600,
             "src": "/images/optimized/dog-parks/north-battleford-original/1600.jpg"
-          },
-          {
-            "width": 1774,
-            "src": "/images/optimized/dog-parks/north-battleford-original/1774.jpg"
           }
         ]
       }
@@ -27287,6 +27203,194 @@
           {
             "width": 410,
             "src": "/images/optimized/sponsors/nutricanine/salmon-recipe/410.png"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/melville-original.png": {
+      "width": 1806,
+      "height": 871,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/melville-original/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/melville-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/melville-original/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/melville-original/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/melville-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/melville-original/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/melville-original/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/melville-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/melville-original/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/melville-original/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/cities/city-stouffville-hero.png": {
+      "width": 1693,
+      "height": 929,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/cities/city-stouffville-hero/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/cities/city-stouffville-hero/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/cities/city-stouffville-hero/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/cities/city-stouffville-hero/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/cities/city-stouffville-hero/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/cities/city-stouffville-hero/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/cities/city-stouffville-hero/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/cities/city-stouffville-hero/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/cities/city-stouffville-hero/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/cities/city-stouffville-hero/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/cities/city-montreal-hero.png": {
+      "width": 1536,
+      "height": 1024,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/cities/city-montreal-hero/960.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/cities/city-montreal-hero/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/cities/city-montreal-hero/960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/cities/city-montreal-hero/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/cities/city-montreal-hero/960.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/cities/city-montreal-hero/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/cities/city-montreal-hero/960.jpg"
+          }
+        ]
+      }
+    },
+    "/images/cities/city-yarmouth-hero.png": {
+      "width": 1693,
+      "height": 929,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/cities/city-yarmouth-hero/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/cities/city-yarmouth-hero/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/cities/city-yarmouth-hero/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/cities/city-yarmouth-hero/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/cities/city-yarmouth-hero/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/cities/city-yarmouth-hero/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/cities/city-yarmouth-hero/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/cities/city-yarmouth-hero/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/cities/city-yarmouth-hero/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/cities/city-yarmouth-hero/1600.jpg"
           }
         ]
       }

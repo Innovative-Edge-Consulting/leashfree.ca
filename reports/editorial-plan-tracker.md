@@ -1,6 +1,6 @@
 # LeashFree.ca Editorial Plan Tracker
 
-Last updated: 2026-07-22
+Last updated: 2026-07-25
 
 Source strategy report: `reports/editorial-backlog-2026-07-11.md`
 
@@ -33,8 +33,8 @@ Statuses:
 
 | Slot | Item | Status | Decision |
 | --- | --- | --- | --- |
-| Next article | When Should You Go to the Emergency Vet? Symptom Guide for Canadian Dog Owners | Backlog | Rank 8 is published; next priority is the medically conservative urgent-care guide with clear escalation advice. |
-| Next cluster | Health and urgent care | Backlog | Route health-intent readers into the veterinarian directory and emergency-cost planning content. |
+| Next article | Apartment Puppy Survival Guide Canada: Potty, Noise, Elevators, Socialization, and Winter | Backlog | Rank 11 is published; Rank 12 is the next priority, supporting puppy owners in Canadian apartment and condo settings. |
+| Next cluster | Puppy and apartment living | Backlog | Route puppy-intent readers into the breed quiz, puppy content, and practical apartment-living guidance. |
 | Seasonal backup | Wildfire Smoke and Dogs in Canada: When To Skip the Walk | Backlog | Strong fallback during active smoke periods or AQHI spikes. |
 
 ## Working Board
@@ -49,10 +49,10 @@ Statuses:
 | 6 | Published | 21 | How To Read a Dog Food Label in Canada | `how-to-read-dog-food-label-canada` | Dog food | Dog food comparison tool | CFIA labelling resources, AAFCO/FEDIAF context, vet nutrition sources | Monitor performance and add links from food and calculator surfaces | Published at /blog/how-to-read-dog-food-label-canada/ on 2026-07-19. |
 | 7 | Published | 21 | Best Dog Breeds for First-Time Owners in Canada | `best-dog-breeds-first-time-owners-canada` | Breeds | Breed match quiz, breed profiles | CKC breed profiles, activity/grooming/trainability criteria, Canadian lifestyle examples | Monitor performance and add links from breed directory and quiz surfaces | Published at /blog/best-dog-breeds-first-time-owners-canada/ on 2026-07-20 with a dedicated generated hero image. |
 | 8 | Published | 20 | Puppy First-Year Cost Canada: Budget, Timeline, and Mistakes To Avoid | `puppy-first-year-cost-canada` | Cost / puppy | Dog cost calculator, vet directory, trainer directory | OVMA 2025 benchmark reported by CAA, current shelter fees, food assumptions, training/grooming estimates | Monitor performance and add links from cost, vet, and trainer surfaces | Published at /blog/puppy-first-year-cost-canada/ on 2026-07-22 with a dedicated generated hero image. |
-| 9 | Backlog | 20 | When Should You Go to the Emergency Vet? Symptom Guide for Canadian Dog Owners | `when-to-go-emergency-vet-dog-canada` | Health / urgent care | Veterinarian directory | Veterinary emergency symptom sources | Draft medically conservative symptom matrix | Needs careful disclaimers. |
-| 10 | Backlog | 19 | Best Dog Food for Sensitive Stomachs in Canada: What To Ask Your Vet and How To Compare Labels | `best-dog-food-sensitive-stomachs-canada` | Dog food / health | Dog food comparison tool, vet directory | Vet nutrition sources, product label examples, exclusion diet caveats | Decide whether to avoid "best" in final title | High intent but higher medical-risk. |
-| 11 | Backlog | 19 | How Much Exercise Does My Dog Need? Breed-by-Breed Activity Guide | `how-much-exercise-does-my-dog-need` | Breeds / parks | Breed profiles, dog parks | Breed activity data, veterinary exercise guidance | Link breed groups to activity bands | Strong internal-link opportunity. |
-| 12 | Backlog | 19 | Apartment Puppy Survival Guide Canada: Potty, Noise, Elevators, Socialization, and Winter | `apartment-puppy-survival-guide-canada` | Puppy / apartment | Breed quiz, puppy posts | Training sources, condo/apartment examples, winter care references | Build practical workflow outline | Supports existing apartment dog content. |
+| 9 | Published | 20 | When Should You Go to the Emergency Vet? Symptom Guide for Canadian Dog Owners | `when-to-go-emergency-vet-dog-canada` | Health / urgent care | Veterinarian directory | Merck Veterinary Manual, VCA Animal Hospitals, ASPCA Poison Control | Monitor performance and add links from vet directory and urgent-care surfaces | Published at /blog/when-to-go-emergency-vet-dog-canada/ on 2026-07-23 with a dedicated generated hero image. |
+| 10 | Published | 19 | Best Dog Food for Sensitive Stomachs in Canada: What To Ask Your Vet and How To Compare Labels | `best-dog-food-sensitive-stomachs-canada` | Dog food / health | Dog food comparison tool, vet directory | WSAVA, Merck Veterinary Manual, VCA/CAVN, product label examples | Monitor performance and add links from food comparison and vet directory surfaces | Published at /blog/best-dog-food-sensitive-stomachs-canada/ on 2026-07-24 with a dedicated generated hero image. |
+| 11 | Published | 19 | How Much Exercise Does My Dog Need? Breed-by-Breed Activity Guide | `how-much-exercise-does-my-dog-need` | Breeds / parks | Breed profiles, dog parks | AKC exercise guidance, Merck health guidance, Canadian weather safety, breed activity references | Monitor performance and add links from breed profiles, dog parks, and quiz surfaces | Published at /blog/how-much-exercise-does-my-dog-need/ on 2026-07-25 with a dedicated generated hero image. |
+| 12 | Backlog | 19 | Apartment Puppy Survival Guide Canada: Potty, Noise, Elevators, Socialization, and Winter | `apartment-puppy-survival-guide-canada` | Puppy / apartment | Breed quiz, puppy posts | Training sources, condo/apartment examples, winter care references | Build practical workflow outline | Next priority after Rank 11. |
 | 13 | Published | 18 | Wildfire Smoke and Dogs in Ontario: When To Skip the Walk | `wildfire-smoke-dogs-canada` | Seasonal safety | Dog parks, vet directory | AQHI, wildfire smoke, veterinary respiratory guidance | Monitor performance and refresh current-alert links during smoke events | Published at /blog/wildfire-smoke-dogs-canada/ on 2026-07-18. |
 | 14 | Backlog | 18 | How To Choose a Dog Trainer in Canada: Certifications, Methods, Red Flags, and Questions | `how-to-choose-dog-trainer-canada` | Directory / training | Trainer directory | Humane training sources, certification bodies, red-flag guidance | Define directory CTA and vetting checklist | Supports local service monetization. |
 | 15 | Backlog | 18 | Dog Boarding vs Dog Daycare vs Pet Sitter: Which Is Safest for Your Dog? | `dog-boarding-vs-daycare-vs-pet-sitter` | Directory / care services | Daycare, boarding, pet sitter directory | Service safety guidance, vaccination norms, temperament fit | Build decision matrix | Useful before holidays/travel. |
@@ -98,6 +98,9 @@ Statuses:
 - Rank 13: Wildfire Smoke and Dogs in Ontario: When To Skip the Walk - /blog/wildfire-smoke-dogs-canada/
 - Rank 6: How To Read a Dog Food Label in Canada - /blog/how-to-read-dog-food-label-canada/
 - Rank 7: Best Dog Breeds for First-Time Owners in Canada - /blog/best-dog-breeds-first-time-owners-canada/
+- Rank 9: When Should You Go to the Emergency Vet? Symptom Guide for Canadian Dog Owners - /blog/when-to-go-emergency-vet-dog-canada/
+- Rank 10: Best Dog Food for Sensitive Stomachs in Canada: What To Ask Your Vet and How To Compare Labels - /blog/best-dog-food-sensitive-stomachs-canada/
+- Rank 11: How Much Exercise Does My Dog Need? Breed-by-Breed Activity Guide - /blog/how-much-exercise-does-my-dog-need/
 
 ### Parked
 
@@ -169,6 +172,12 @@ Use this checklist before marking an article `Ready To Publish`.
 
 | Date | Change |
 | --- | --- |
+| 2026-07-25 | Published Rank 11 at /blog/how-much-exercise-does-my-dog-need/ with a dedicated generated hero image; moved Rank 12 to the next backlog focus. |
+| 2026-07-25 | Started drafting Rank 11 at /blog/how-much-exercise-does-my-dog-need/ with breed activity bands, life-stage adjustments, mental enrichment, and Canadian weather guidance; kept it unpublished pending image and final QA. |
+| 2026-07-24 | Published Rank 10 at /blog/best-dog-food-sensitive-stomachs-canada/ with a dedicated generated hero image; moved Rank 11 to the next backlog focus. |
+| 2026-07-24 | Started drafting Rank 10 at /blog/best-dog-food-sensitive-stomachs-canada/ with a vet-first label comparison framework and conservative diet-trial guidance; kept it unpublished pending image and final QA. |
+| 2026-07-23 | Published Rank 9 at /blog/when-to-go-emergency-vet-dog-canada/ with a dedicated generated hero image; moved Rank 10 to the next backlog focus. |
+| 2026-07-23 | Started drafting Rank 9 at /blog/when-to-go-emergency-vet-dog-canada/ with a conservative symptom matrix and veterinary sources; kept it unpublished pending image and final QA. |
 | 2026-07-22 | Published Rank 8 at /blog/puppy-first-year-cost-canada/ with a dedicated generated hero image; moved Rank 9 to the next backlog focus. |
 | 2026-07-21 | Started drafting Rank 8 at /blog/puppy-first-year-cost-canada/ using current Canadian cost benchmarks and a month-by-month budgeting table; kept it unpublished pending image generation and final QA. |
 | 2026-07-20 | Published Rank 7 at /blog/best-dog-breeds-first-time-owners-canada/ with a dedicated generated hero image; moved Rank 8 to the next backlog focus. |
