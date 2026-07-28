@@ -1,6 +1,6 @@
 # LeashFree.ca Editorial Plan Tracker
 
-Last updated: 2026-07-25
+Last updated: 2026-07-26
 
 Source strategy report: `reports/editorial-backlog-2026-07-11.md`
 
@@ -33,8 +33,8 @@ Statuses:
 
 | Slot | Item | Status | Decision |
 | --- | --- | --- | --- |
-| Next article | Apartment Puppy Survival Guide Canada: Potty, Noise, Elevators, Socialization, and Winter | Backlog | Rank 11 is published; Rank 12 is the next priority, supporting puppy owners in Canadian apartment and condo settings. |
-| Next cluster | Puppy and apartment living | Backlog | Route puppy-intent readers into the breed quiz, puppy content, and practical apartment-living guidance. |
+| Next article | How To Choose a Dog Trainer in Canada: Certifications, Methods, Red Flags, and Questions | Backlog | Rank 12 is approved for publication and will become the current published puppy/apartment guide after deployment. |
+| Next cluster | Directory / training | Backlog | Rank 12 is published; the next opportunity supports trainer-directory discovery and humane training decisions. |
 | Seasonal backup | Wildfire Smoke and Dogs in Canada: When To Skip the Walk | Backlog | Strong fallback during active smoke periods or AQHI spikes. |
 
 ## Working Board
@@ -52,7 +52,7 @@ Statuses:
 | 9 | Published | 20 | When Should You Go to the Emergency Vet? Symptom Guide for Canadian Dog Owners | `when-to-go-emergency-vet-dog-canada` | Health / urgent care | Veterinarian directory | Merck Veterinary Manual, VCA Animal Hospitals, ASPCA Poison Control | Monitor performance and add links from vet directory and urgent-care surfaces | Published at /blog/when-to-go-emergency-vet-dog-canada/ on 2026-07-23 with a dedicated generated hero image. |
 | 10 | Published | 19 | Best Dog Food for Sensitive Stomachs in Canada: What To Ask Your Vet and How To Compare Labels | `best-dog-food-sensitive-stomachs-canada` | Dog food / health | Dog food comparison tool, vet directory | WSAVA, Merck Veterinary Manual, VCA/CAVN, product label examples | Monitor performance and add links from food comparison and vet directory surfaces | Published at /blog/best-dog-food-sensitive-stomachs-canada/ on 2026-07-24 with a dedicated generated hero image. |
 | 11 | Published | 19 | How Much Exercise Does My Dog Need? Breed-by-Breed Activity Guide | `how-much-exercise-does-my-dog-need` | Breeds / parks | Breed profiles, dog parks | AKC exercise guidance, Merck health guidance, Canadian weather safety, breed activity references | Monitor performance and add links from breed profiles, dog parks, and quiz surfaces | Published at /blog/how-much-exercise-does-my-dog-need/ on 2026-07-25 with a dedicated generated hero image. |
-| 12 | Backlog | 19 | Apartment Puppy Survival Guide Canada: Potty, Noise, Elevators, Socialization, and Winter | `apartment-puppy-survival-guide-canada` | Puppy / apartment | Breed quiz, puppy posts | Training sources, condo/apartment examples, winter care references | Build practical workflow outline | Next priority after Rank 11. |
+| 12 | Published | 19 | Apartment Puppy Survival Guide Canada: Potty, Noise, Elevators, Socialization, and Winter | `apartment-puppy-survival-guide-canada` | Puppy / apartment | Breed quiz, puppy posts | AVSAB socialization guidance, Ontario condo guidance, Government of Canada winter guidance, AKC puppy guidance | Monitor performance and add links from puppy and breed surfaces | Approved and published 2026-07-26 with date, category, tags, sources, internal links, and dedicated hero image. |
 | 13 | Published | 18 | Wildfire Smoke and Dogs in Ontario: When To Skip the Walk | `wildfire-smoke-dogs-canada` | Seasonal safety | Dog parks, vet directory | AQHI, wildfire smoke, veterinary respiratory guidance | Monitor performance and refresh current-alert links during smoke events | Published at /blog/wildfire-smoke-dogs-canada/ on 2026-07-18. |
 | 14 | Backlog | 18 | How To Choose a Dog Trainer in Canada: Certifications, Methods, Red Flags, and Questions | `how-to-choose-dog-trainer-canada` | Directory / training | Trainer directory | Humane training sources, certification bodies, red-flag guidance | Define directory CTA and vetting checklist | Supports local service monetization. |
 | 15 | Backlog | 18 | Dog Boarding vs Dog Daycare vs Pet Sitter: Which Is Safest for Your Dog? | `dog-boarding-vs-daycare-vs-pet-sitter` | Directory / care services | Daycare, boarding, pet sitter directory | Service safety guidance, vaccination norms, temperament fit | Build decision matrix | Useful before holidays/travel. |
@@ -173,6 +173,7 @@ Use this checklist before marking an article `Ready To Publish`.
 | Date | Change |
 | --- | --- |
 | 2026-07-25 | Published Rank 11 at /blog/how-much-exercise-does-my-dog-need/ with a dedicated generated hero image; moved Rank 12 to the next backlog focus. |
+| 2026-07-26 | Published Rank 12 at /blog/apartment-puppy-survival-guide-canada/ with a dedicated generated hero image; moved Rank 14 to the next backlog focus. |
 | 2026-07-25 | Started drafting Rank 11 at /blog/how-much-exercise-does-my-dog-need/ with breed activity bands, life-stage adjustments, mental enrichment, and Canadian weather guidance; kept it unpublished pending image and final QA. |
 | 2026-07-24 | Published Rank 10 at /blog/best-dog-food-sensitive-stomachs-canada/ with a dedicated generated hero image; moved Rank 11 to the next backlog focus. |
 | 2026-07-24 | Started drafting Rank 10 at /blog/best-dog-food-sensitive-stomachs-canada/ with a vet-first label comparison framework and conservative diet-trial guidance; kept it unpublished pending image and final QA. |

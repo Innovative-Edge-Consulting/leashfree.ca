@@ -17029,6 +17029,26 @@
       "needsOwnerReview": false,
       "notes": ["Generated dedicated dog-exercise hero image for draft article on 2026-07-25."]
     }
+  ,
+    {
+      "collection": "Blog Posts",
+      "itemName": "Apartment Puppy Survival Guide Canada: Potty, Noise, Elevators, Socialization, and Winter",
+      "itemSlug": "apartment-puppy-survival-guide-canada",
+      "fieldName": "Hero Image",
+      "localFilename": "blog-apartment-puppy-survival-guide-canada-hero.png",
+      "cleanedFilename": "blog-apartment-puppy-survival-guide-canada-hero.png",
+      "suggestedFilename": "blog-apartment-puppy-survival-guide-canada-hero.png",
+      "suggestedPublicPath": "/images/blog/blog-apartment-puppy-survival-guide-canada-hero.png",
+      "publicPath": "/images/blog/blog-apartment-puppy-survival-guide-canada-hero.png?v=20260726",
+      "publicPathReady": true,
+      "priority": "High",
+      "status": "published",
+      "matchStatus": "Matched",
+      "confidence": 1,
+      "matchConfidence": 1,
+      "needsOwnerReview": false,
+      "notes": "Dedicated generated hero image for Rank 12 published article on 2026-07-26."
+    }
   ],
   "unmatchedLocalFiles": [
     {
