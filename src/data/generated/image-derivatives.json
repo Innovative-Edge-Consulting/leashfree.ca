@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-28T03:36:06.012Z",
+  "generatedAt": "2026-07-29T17:59:14.010Z",
   "images": {
     "/images/blog/blog-average-vet-costs-in-canada-hero.jpg": {
       "width": 702,
@@ -8434,99 +8434,51 @@
       }
     },
     "/images/cities/city-barrie-hero.png": {
-      "width": 899,
-      "height": 561,
-      "fallbackFormat": "png",
-      "fallbackSrc": "/images/optimized/cities/city-barrie-hero/899.png",
+      "width": 1693,
+      "height": 929,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/cities/city-barrie-hero/1600.jpg",
       "variants": {
         "avif": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-barrie-hero/160.avif"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-barrie-hero/240.avif"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-barrie-hero/320.avif"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-barrie-hero/480.avif"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-barrie-hero/640.avif"
+            "width": 960,
+            "src": "/images/optimized/cities/city-barrie-hero/960.avif"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-barrie-hero/800.avif"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-barrie-hero/899.avif"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-barrie-hero/1600.avif"
           }
         ],
         "webp": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-barrie-hero/160.webp"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-barrie-hero/240.webp"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-barrie-hero/320.webp"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-barrie-hero/480.webp"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-barrie-hero/640.webp"
+            "width": 960,
+            "src": "/images/optimized/cities/city-barrie-hero/960.webp"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-barrie-hero/800.webp"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-barrie-hero/899.webp"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-barrie-hero/1600.webp"
           }
         ],
-        "png": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-barrie-hero/160.png"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-barrie-hero/240.png"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-barrie-hero/320.png"
-          },
+        "jpg": [
           {
             "width": 480,
-            "src": "/images/optimized/cities/city-barrie-hero/480.png"
+            "src": "/images/optimized/cities/city-barrie-hero/480.jpg"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-barrie-hero/640.png"
+            "width": 960,
+            "src": "/images/optimized/cities/city-barrie-hero/960.jpg"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-barrie-hero/800.png"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-barrie-hero/899.png"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-barrie-hero/1600.jpg"
           }
         ]
       }
@@ -8778,99 +8730,51 @@
       }
     },
     "/images/cities/city-brandon-hero.png": {
-      "width": 899,
-      "height": 561,
-      "fallbackFormat": "png",
-      "fallbackSrc": "/images/optimized/cities/city-brandon-hero/899.png",
+      "width": 1774,
+      "height": 887,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/cities/city-brandon-hero/1600.jpg",
       "variants": {
         "avif": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-brandon-hero/160.avif"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-brandon-hero/240.avif"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-brandon-hero/320.avif"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-brandon-hero/480.avif"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-brandon-hero/640.avif"
+            "width": 960,
+            "src": "/images/optimized/cities/city-brandon-hero/960.avif"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-brandon-hero/800.avif"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-brandon-hero/899.avif"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-brandon-hero/1600.avif"
           }
         ],
         "webp": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-brandon-hero/160.webp"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-brandon-hero/240.webp"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-brandon-hero/320.webp"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-brandon-hero/480.webp"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-brandon-hero/640.webp"
+            "width": 960,
+            "src": "/images/optimized/cities/city-brandon-hero/960.webp"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-brandon-hero/800.webp"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-brandon-hero/899.webp"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-brandon-hero/1600.webp"
           }
         ],
-        "png": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-brandon-hero/160.png"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-brandon-hero/240.png"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-brandon-hero/320.png"
-          },
+        "jpg": [
           {
             "width": 480,
-            "src": "/images/optimized/cities/city-brandon-hero/480.png"
+            "src": "/images/optimized/cities/city-brandon-hero/480.jpg"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-brandon-hero/640.png"
+            "width": 960,
+            "src": "/images/optimized/cities/city-brandon-hero/960.jpg"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-brandon-hero/800.png"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-brandon-hero/899.png"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-brandon-hero/1600.jpg"
           }
         ]
       }
@@ -8950,99 +8854,51 @@
       }
     },
     "/images/cities/city-burnaby-hero.png": {
-      "width": 899,
-      "height": 561,
-      "fallbackFormat": "png",
-      "fallbackSrc": "/images/optimized/cities/city-burnaby-hero/899.png",
+      "width": 1693,
+      "height": 929,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/cities/city-burnaby-hero/1600.jpg",
       "variants": {
         "avif": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-burnaby-hero/160.avif"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-burnaby-hero/240.avif"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-burnaby-hero/320.avif"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-burnaby-hero/480.avif"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-burnaby-hero/640.avif"
+            "width": 960,
+            "src": "/images/optimized/cities/city-burnaby-hero/960.avif"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-burnaby-hero/800.avif"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-burnaby-hero/899.avif"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-burnaby-hero/1600.avif"
           }
         ],
         "webp": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-burnaby-hero/160.webp"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-burnaby-hero/240.webp"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-burnaby-hero/320.webp"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-burnaby-hero/480.webp"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-burnaby-hero/640.webp"
+            "width": 960,
+            "src": "/images/optimized/cities/city-burnaby-hero/960.webp"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-burnaby-hero/800.webp"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-burnaby-hero/899.webp"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-burnaby-hero/1600.webp"
           }
         ],
-        "png": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-burnaby-hero/160.png"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-burnaby-hero/240.png"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-burnaby-hero/320.png"
-          },
+        "jpg": [
           {
             "width": 480,
-            "src": "/images/optimized/cities/city-burnaby-hero/480.png"
+            "src": "/images/optimized/cities/city-burnaby-hero/480.jpg"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-burnaby-hero/640.png"
+            "width": 960,
+            "src": "/images/optimized/cities/city-burnaby-hero/960.jpg"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-burnaby-hero/800.png"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-burnaby-hero/899.png"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-burnaby-hero/1600.jpg"
           }
         ]
       }
@@ -9588,99 +9444,51 @@
       }
     },
     "/images/cities/city-edmonton-hero.png": {
-      "width": 899,
-      "height": 561,
-      "fallbackFormat": "png",
-      "fallbackSrc": "/images/optimized/cities/city-edmonton-hero/899.png",
+      "width": 1823,
+      "height": 863,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/cities/city-edmonton-hero/1600.jpg",
       "variants": {
         "avif": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-edmonton-hero/160.avif"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-edmonton-hero/240.avif"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-edmonton-hero/320.avif"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-edmonton-hero/480.avif"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-edmonton-hero/640.avif"
+            "width": 960,
+            "src": "/images/optimized/cities/city-edmonton-hero/960.avif"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-edmonton-hero/800.avif"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-edmonton-hero/899.avif"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-edmonton-hero/1600.avif"
           }
         ],
         "webp": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-edmonton-hero/160.webp"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-edmonton-hero/240.webp"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-edmonton-hero/320.webp"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-edmonton-hero/480.webp"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-edmonton-hero/640.webp"
+            "width": 960,
+            "src": "/images/optimized/cities/city-edmonton-hero/960.webp"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-edmonton-hero/800.webp"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-edmonton-hero/899.webp"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-edmonton-hero/1600.webp"
           }
         ],
-        "png": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-edmonton-hero/160.png"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-edmonton-hero/240.png"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-edmonton-hero/320.png"
-          },
+        "jpg": [
           {
             "width": 480,
-            "src": "/images/optimized/cities/city-edmonton-hero/480.png"
+            "src": "/images/optimized/cities/city-edmonton-hero/480.jpg"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-edmonton-hero/640.png"
+            "width": 960,
+            "src": "/images/optimized/cities/city-edmonton-hero/960.jpg"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-edmonton-hero/800.png"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-edmonton-hero/899.png"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-edmonton-hero/1600.jpg"
           }
         ]
       }
@@ -9784,99 +9592,51 @@
       }
     },
     "/images/cities/city-etobicoke-hero.png": {
-      "width": 899,
-      "height": 561,
-      "fallbackFormat": "png",
-      "fallbackSrc": "/images/optimized/cities/city-etobicoke-hero/899.png",
+      "width": 1774,
+      "height": 887,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/cities/city-etobicoke-hero/1600.jpg",
       "variants": {
         "avif": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-etobicoke-hero/160.avif"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-etobicoke-hero/240.avif"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-etobicoke-hero/320.avif"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-etobicoke-hero/480.avif"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-etobicoke-hero/640.avif"
+            "width": 960,
+            "src": "/images/optimized/cities/city-etobicoke-hero/960.avif"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-etobicoke-hero/800.avif"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-etobicoke-hero/899.avif"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-etobicoke-hero/1600.avif"
           }
         ],
         "webp": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-etobicoke-hero/160.webp"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-etobicoke-hero/240.webp"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-etobicoke-hero/320.webp"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-etobicoke-hero/480.webp"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-etobicoke-hero/640.webp"
+            "width": 960,
+            "src": "/images/optimized/cities/city-etobicoke-hero/960.webp"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-etobicoke-hero/800.webp"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-etobicoke-hero/899.webp"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-etobicoke-hero/1600.webp"
           }
         ],
-        "png": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-etobicoke-hero/160.png"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-etobicoke-hero/240.png"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-etobicoke-hero/320.png"
-          },
+        "jpg": [
           {
             "width": 480,
-            "src": "/images/optimized/cities/city-etobicoke-hero/480.png"
+            "src": "/images/optimized/cities/city-etobicoke-hero/480.jpg"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-etobicoke-hero/640.png"
+            "width": 960,
+            "src": "/images/optimized/cities/city-etobicoke-hero/960.jpg"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-etobicoke-hero/800.png"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-etobicoke-hero/899.png"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-etobicoke-hero/1600.jpg"
           }
         ]
       }
@@ -10080,99 +9840,51 @@
       }
     },
     "/images/cities/city-guelph-hero.png": {
-      "width": 899,
-      "height": 561,
-      "fallbackFormat": "png",
-      "fallbackSrc": "/images/optimized/cities/city-guelph-hero/899.png",
+      "width": 1717,
+      "height": 916,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/cities/city-guelph-hero/1600.jpg",
       "variants": {
         "avif": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-guelph-hero/160.avif"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-guelph-hero/240.avif"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-guelph-hero/320.avif"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-guelph-hero/480.avif"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-guelph-hero/640.avif"
+            "width": 960,
+            "src": "/images/optimized/cities/city-guelph-hero/960.avif"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-guelph-hero/800.avif"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-guelph-hero/899.avif"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-guelph-hero/1600.avif"
           }
         ],
         "webp": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-guelph-hero/160.webp"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-guelph-hero/240.webp"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-guelph-hero/320.webp"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-guelph-hero/480.webp"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-guelph-hero/640.webp"
+            "width": 960,
+            "src": "/images/optimized/cities/city-guelph-hero/960.webp"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-guelph-hero/800.webp"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-guelph-hero/899.webp"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-guelph-hero/1600.webp"
           }
         ],
-        "png": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-guelph-hero/160.png"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-guelph-hero/240.png"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-guelph-hero/320.png"
-          },
+        "jpg": [
           {
             "width": 480,
-            "src": "/images/optimized/cities/city-guelph-hero/480.png"
+            "src": "/images/optimized/cities/city-guelph-hero/480.jpg"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-guelph-hero/640.png"
+            "width": 960,
+            "src": "/images/optimized/cities/city-guelph-hero/960.jpg"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-guelph-hero/800.png"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-guelph-hero/899.png"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-guelph-hero/1600.jpg"
           }
         ]
       }
@@ -10768,99 +10480,51 @@
       }
     },
     "/images/cities/city-lethbridge-hero.png": {
-      "width": 899,
-      "height": 561,
-      "fallbackFormat": "png",
-      "fallbackSrc": "/images/optimized/cities/city-lethbridge-hero/899.png",
+      "width": 1774,
+      "height": 887,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/cities/city-lethbridge-hero/1600.jpg",
       "variants": {
         "avif": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-lethbridge-hero/160.avif"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-lethbridge-hero/240.avif"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-lethbridge-hero/320.avif"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-lethbridge-hero/480.avif"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-lethbridge-hero/640.avif"
+            "width": 960,
+            "src": "/images/optimized/cities/city-lethbridge-hero/960.avif"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-lethbridge-hero/800.avif"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-lethbridge-hero/899.avif"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-lethbridge-hero/1600.avif"
           }
         ],
         "webp": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-lethbridge-hero/160.webp"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-lethbridge-hero/240.webp"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-lethbridge-hero/320.webp"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-lethbridge-hero/480.webp"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-lethbridge-hero/640.webp"
+            "width": 960,
+            "src": "/images/optimized/cities/city-lethbridge-hero/960.webp"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-lethbridge-hero/800.webp"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-lethbridge-hero/899.webp"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-lethbridge-hero/1600.webp"
           }
         ],
-        "png": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-lethbridge-hero/160.png"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-lethbridge-hero/240.png"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-lethbridge-hero/320.png"
-          },
+        "jpg": [
           {
             "width": 480,
-            "src": "/images/optimized/cities/city-lethbridge-hero/480.png"
+            "src": "/images/optimized/cities/city-lethbridge-hero/480.jpg"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-lethbridge-hero/640.png"
+            "width": 960,
+            "src": "/images/optimized/cities/city-lethbridge-hero/960.jpg"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-lethbridge-hero/800.png"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-lethbridge-hero/899.png"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-lethbridge-hero/1600.jpg"
           }
         ]
       }
@@ -11506,197 +11170,101 @@
       }
     },
     "/images/cities/city-nelson-hero.png": {
-      "width": 899,
-      "height": 561,
-      "fallbackFormat": "png",
-      "fallbackSrc": "/images/optimized/cities/city-nelson-hero/899.png",
+      "width": 1692,
+      "height": 929,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/cities/city-nelson-hero/1600.jpg",
       "variants": {
         "avif": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-nelson-hero/160.avif"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-nelson-hero/240.avif"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-nelson-hero/320.avif"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-nelson-hero/480.avif"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-nelson-hero/640.avif"
+            "width": 960,
+            "src": "/images/optimized/cities/city-nelson-hero/960.avif"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-nelson-hero/800.avif"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-nelson-hero/899.avif"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-nelson-hero/1600.avif"
           }
         ],
         "webp": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-nelson-hero/160.webp"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-nelson-hero/240.webp"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-nelson-hero/320.webp"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-nelson-hero/480.webp"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-nelson-hero/640.webp"
+            "width": 960,
+            "src": "/images/optimized/cities/city-nelson-hero/960.webp"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-nelson-hero/800.webp"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-nelson-hero/899.webp"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-nelson-hero/1600.webp"
           }
         ],
-        "png": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-nelson-hero/160.png"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-nelson-hero/240.png"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-nelson-hero/320.png"
-          },
+        "jpg": [
           {
             "width": 480,
-            "src": "/images/optimized/cities/city-nelson-hero/480.png"
+            "src": "/images/optimized/cities/city-nelson-hero/480.jpg"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-nelson-hero/640.png"
+            "width": 960,
+            "src": "/images/optimized/cities/city-nelson-hero/960.jpg"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-nelson-hero/800.png"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-nelson-hero/899.png"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-nelson-hero/1600.jpg"
           }
         ]
       }
     },
     "/images/cities/city-new-westminster-hero.png": {
-      "width": 899,
-      "height": 561,
-      "fallbackFormat": "png",
-      "fallbackSrc": "/images/optimized/cities/city-new-westminster-hero/899.png",
+      "width": 1693,
+      "height": 929,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/cities/city-new-westminster-hero/1600.jpg",
       "variants": {
         "avif": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-new-westminster-hero/160.avif"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-new-westminster-hero/240.avif"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-new-westminster-hero/320.avif"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-new-westminster-hero/480.avif"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-new-westminster-hero/640.avif"
+            "width": 960,
+            "src": "/images/optimized/cities/city-new-westminster-hero/960.avif"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-new-westminster-hero/800.avif"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-new-westminster-hero/899.avif"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-new-westminster-hero/1600.avif"
           }
         ],
         "webp": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-new-westminster-hero/160.webp"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-new-westminster-hero/240.webp"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-new-westminster-hero/320.webp"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-new-westminster-hero/480.webp"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-new-westminster-hero/640.webp"
+            "width": 960,
+            "src": "/images/optimized/cities/city-new-westminster-hero/960.webp"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-new-westminster-hero/800.webp"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-new-westminster-hero/899.webp"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-new-westminster-hero/1600.webp"
           }
         ],
-        "png": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-new-westminster-hero/160.png"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-new-westminster-hero/240.png"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-new-westminster-hero/320.png"
-          },
+        "jpg": [
           {
             "width": 480,
-            "src": "/images/optimized/cities/city-new-westminster-hero/480.png"
+            "src": "/images/optimized/cities/city-new-westminster-hero/480.jpg"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-new-westminster-hero/640.png"
+            "width": 960,
+            "src": "/images/optimized/cities/city-new-westminster-hero/960.jpg"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-new-westminster-hero/800.png"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-new-westminster-hero/899.png"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-new-westminster-hero/1600.jpg"
           }
         ]
       }
@@ -12390,197 +11958,101 @@
       }
     },
     "/images/cities/city-quinte-west-hero.png": {
-      "width": 899,
-      "height": 561,
-      "fallbackFormat": "png",
-      "fallbackSrc": "/images/optimized/cities/city-quinte-west-hero/899.png",
+      "width": 1774,
+      "height": 887,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/cities/city-quinte-west-hero/1600.jpg",
       "variants": {
         "avif": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-quinte-west-hero/160.avif"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-quinte-west-hero/240.avif"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-quinte-west-hero/320.avif"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-quinte-west-hero/480.avif"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-quinte-west-hero/640.avif"
+            "width": 960,
+            "src": "/images/optimized/cities/city-quinte-west-hero/960.avif"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-quinte-west-hero/800.avif"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-quinte-west-hero/899.avif"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-quinte-west-hero/1600.avif"
           }
         ],
         "webp": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-quinte-west-hero/160.webp"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-quinte-west-hero/240.webp"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-quinte-west-hero/320.webp"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-quinte-west-hero/480.webp"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-quinte-west-hero/640.webp"
+            "width": 960,
+            "src": "/images/optimized/cities/city-quinte-west-hero/960.webp"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-quinte-west-hero/800.webp"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-quinte-west-hero/899.webp"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-quinte-west-hero/1600.webp"
           }
         ],
-        "png": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-quinte-west-hero/160.png"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-quinte-west-hero/240.png"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-quinte-west-hero/320.png"
-          },
+        "jpg": [
           {
             "width": 480,
-            "src": "/images/optimized/cities/city-quinte-west-hero/480.png"
+            "src": "/images/optimized/cities/city-quinte-west-hero/480.jpg"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-quinte-west-hero/640.png"
+            "width": 960,
+            "src": "/images/optimized/cities/city-quinte-west-hero/960.jpg"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-quinte-west-hero/800.png"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-quinte-west-hero/899.png"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-quinte-west-hero/1600.jpg"
           }
         ]
       }
     },
     "/images/cities/city-red-deer-hero.png": {
-      "width": 899,
-      "height": 561,
-      "fallbackFormat": "png",
-      "fallbackSrc": "/images/optimized/cities/city-red-deer-hero/899.png",
+      "width": 1798,
+      "height": 875,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/cities/city-red-deer-hero/1600.jpg",
       "variants": {
         "avif": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-red-deer-hero/160.avif"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-red-deer-hero/240.avif"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-red-deer-hero/320.avif"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-red-deer-hero/480.avif"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-red-deer-hero/640.avif"
+            "width": 960,
+            "src": "/images/optimized/cities/city-red-deer-hero/960.avif"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-red-deer-hero/800.avif"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-red-deer-hero/899.avif"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-red-deer-hero/1600.avif"
           }
         ],
         "webp": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-red-deer-hero/160.webp"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-red-deer-hero/240.webp"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-red-deer-hero/320.webp"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-red-deer-hero/480.webp"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-red-deer-hero/640.webp"
+            "width": 960,
+            "src": "/images/optimized/cities/city-red-deer-hero/960.webp"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-red-deer-hero/800.webp"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-red-deer-hero/899.webp"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-red-deer-hero/1600.webp"
           }
         ],
-        "png": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-red-deer-hero/160.png"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-red-deer-hero/240.png"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-red-deer-hero/320.png"
-          },
+        "jpg": [
           {
             "width": 480,
-            "src": "/images/optimized/cities/city-red-deer-hero/480.png"
+            "src": "/images/optimized/cities/city-red-deer-hero/480.jpg"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-red-deer-hero/640.png"
+            "width": 960,
+            "src": "/images/optimized/cities/city-red-deer-hero/960.jpg"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-red-deer-hero/800.png"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-red-deer-hero/899.png"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-red-deer-hero/1600.jpg"
           }
         ]
       }
@@ -12636,99 +12108,51 @@
       }
     },
     "/images/cities/city-restoule-hero.png": {
-      "width": 899,
-      "height": 561,
-      "fallbackFormat": "png",
-      "fallbackSrc": "/images/optimized/cities/city-restoule-hero/899.png",
+      "width": 1792,
+      "height": 878,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/cities/city-restoule-hero/1600.jpg",
       "variants": {
         "avif": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-restoule-hero/160.avif"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-restoule-hero/240.avif"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-restoule-hero/320.avif"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-restoule-hero/480.avif"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-restoule-hero/640.avif"
+            "width": 960,
+            "src": "/images/optimized/cities/city-restoule-hero/960.avif"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-restoule-hero/800.avif"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-restoule-hero/899.avif"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-restoule-hero/1600.avif"
           }
         ],
         "webp": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-restoule-hero/160.webp"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-restoule-hero/240.webp"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-restoule-hero/320.webp"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-restoule-hero/480.webp"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-restoule-hero/640.webp"
+            "width": 960,
+            "src": "/images/optimized/cities/city-restoule-hero/960.webp"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-restoule-hero/800.webp"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-restoule-hero/899.webp"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-restoule-hero/1600.webp"
           }
         ],
-        "png": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-restoule-hero/160.png"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-restoule-hero/240.png"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-restoule-hero/320.png"
-          },
+        "jpg": [
           {
             "width": 480,
-            "src": "/images/optimized/cities/city-restoule-hero/480.png"
+            "src": "/images/optimized/cities/city-restoule-hero/480.jpg"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-restoule-hero/640.png"
+            "width": 960,
+            "src": "/images/optimized/cities/city-restoule-hero/960.jpg"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-restoule-hero/800.png"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-restoule-hero/899.png"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-restoule-hero/1600.jpg"
           }
         ]
       }
@@ -12882,99 +12306,51 @@
       }
     },
     "/images/cities/city-st-albert-hero.png": {
-      "width": 899,
-      "height": 561,
-      "fallbackFormat": "png",
-      "fallbackSrc": "/images/optimized/cities/city-st-albert-hero/899.png",
+      "width": 1824,
+      "height": 862,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/cities/city-st-albert-hero/1600.jpg",
       "variants": {
         "avif": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-st-albert-hero/160.avif"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-st-albert-hero/240.avif"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-st-albert-hero/320.avif"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-st-albert-hero/480.avif"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-st-albert-hero/640.avif"
+            "width": 960,
+            "src": "/images/optimized/cities/city-st-albert-hero/960.avif"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-st-albert-hero/800.avif"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-st-albert-hero/899.avif"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-st-albert-hero/1600.avif"
           }
         ],
         "webp": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-st-albert-hero/160.webp"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-st-albert-hero/240.webp"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-st-albert-hero/320.webp"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-st-albert-hero/480.webp"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-st-albert-hero/640.webp"
+            "width": 960,
+            "src": "/images/optimized/cities/city-st-albert-hero/960.webp"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-st-albert-hero/800.webp"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-st-albert-hero/899.webp"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-st-albert-hero/1600.webp"
           }
         ],
-        "png": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-st-albert-hero/160.png"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-st-albert-hero/240.png"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-st-albert-hero/320.png"
-          },
+        "jpg": [
           {
             "width": 480,
-            "src": "/images/optimized/cities/city-st-albert-hero/480.png"
+            "src": "/images/optimized/cities/city-st-albert-hero/480.jpg"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-st-albert-hero/640.png"
+            "width": 960,
+            "src": "/images/optimized/cities/city-st-albert-hero/960.jpg"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-st-albert-hero/800.png"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-st-albert-hero/899.png"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-st-albert-hero/1600.jpg"
           }
         ]
       }
@@ -13152,99 +12528,51 @@
       }
     },
     "/images/cities/city-surrey-hero.png": {
-      "width": 899,
-      "height": 561,
-      "fallbackFormat": "png",
-      "fallbackSrc": "/images/optimized/cities/city-surrey-hero/899.png",
+      "width": 1774,
+      "height": 887,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/cities/city-surrey-hero/1600.jpg",
       "variants": {
         "avif": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-surrey-hero/160.avif"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-surrey-hero/240.avif"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-surrey-hero/320.avif"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-surrey-hero/480.avif"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-surrey-hero/640.avif"
+            "width": 960,
+            "src": "/images/optimized/cities/city-surrey-hero/960.avif"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-surrey-hero/800.avif"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-surrey-hero/899.avif"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-surrey-hero/1600.avif"
           }
         ],
         "webp": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-surrey-hero/160.webp"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-surrey-hero/240.webp"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-surrey-hero/320.webp"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-surrey-hero/480.webp"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-surrey-hero/640.webp"
+            "width": 960,
+            "src": "/images/optimized/cities/city-surrey-hero/960.webp"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-surrey-hero/800.webp"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-surrey-hero/899.webp"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-surrey-hero/1600.webp"
           }
         ],
-        "png": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-surrey-hero/160.png"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-surrey-hero/240.png"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-surrey-hero/320.png"
-          },
+        "jpg": [
           {
             "width": 480,
-            "src": "/images/optimized/cities/city-surrey-hero/480.png"
+            "src": "/images/optimized/cities/city-surrey-hero/480.jpg"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-surrey-hero/640.png"
+            "width": 960,
+            "src": "/images/optimized/cities/city-surrey-hero/960.jpg"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-surrey-hero/800.png"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-surrey-hero/899.png"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-surrey-hero/1600.jpg"
           }
         ]
       }
@@ -13398,197 +12726,101 @@
       }
     },
     "/images/cities/city-tiny-hero.png": {
-      "width": 899,
-      "height": 561,
-      "fallbackFormat": "png",
-      "fallbackSrc": "/images/optimized/cities/city-tiny-hero/899.png",
+      "width": 1821,
+      "height": 864,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/cities/city-tiny-hero/1600.jpg",
       "variants": {
         "avif": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-tiny-hero/160.avif"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-tiny-hero/240.avif"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-tiny-hero/320.avif"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-tiny-hero/480.avif"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-tiny-hero/640.avif"
+            "width": 960,
+            "src": "/images/optimized/cities/city-tiny-hero/960.avif"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-tiny-hero/800.avif"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-tiny-hero/899.avif"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-tiny-hero/1600.avif"
           }
         ],
         "webp": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-tiny-hero/160.webp"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-tiny-hero/240.webp"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-tiny-hero/320.webp"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-tiny-hero/480.webp"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-tiny-hero/640.webp"
+            "width": 960,
+            "src": "/images/optimized/cities/city-tiny-hero/960.webp"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-tiny-hero/800.webp"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-tiny-hero/899.webp"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-tiny-hero/1600.webp"
           }
         ],
-        "png": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-tiny-hero/160.png"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-tiny-hero/240.png"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-tiny-hero/320.png"
-          },
+        "jpg": [
           {
             "width": 480,
-            "src": "/images/optimized/cities/city-tiny-hero/480.png"
+            "src": "/images/optimized/cities/city-tiny-hero/480.jpg"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-tiny-hero/640.png"
+            "width": 960,
+            "src": "/images/optimized/cities/city-tiny-hero/960.jpg"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-tiny-hero/800.png"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-tiny-hero/899.png"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-tiny-hero/1600.jpg"
           }
         ]
       }
     },
     "/images/cities/city-victoria-hero.png": {
-      "width": 899,
-      "height": 561,
-      "fallbackFormat": "png",
-      "fallbackSrc": "/images/optimized/cities/city-victoria-hero/899.png",
+      "width": 1693,
+      "height": 929,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/cities/city-victoria-hero/1600.jpg",
       "variants": {
         "avif": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-victoria-hero/160.avif"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-victoria-hero/240.avif"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-victoria-hero/320.avif"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-victoria-hero/480.avif"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-victoria-hero/640.avif"
+            "width": 960,
+            "src": "/images/optimized/cities/city-victoria-hero/960.avif"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-victoria-hero/800.avif"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-victoria-hero/899.avif"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-victoria-hero/1600.avif"
           }
         ],
         "webp": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-victoria-hero/160.webp"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-victoria-hero/240.webp"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-victoria-hero/320.webp"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-victoria-hero/480.webp"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-victoria-hero/640.webp"
+            "width": 960,
+            "src": "/images/optimized/cities/city-victoria-hero/960.webp"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-victoria-hero/800.webp"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-victoria-hero/899.webp"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-victoria-hero/1600.webp"
           }
         ],
-        "png": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-victoria-hero/160.png"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-victoria-hero/240.png"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-victoria-hero/320.png"
-          },
+        "jpg": [
           {
             "width": 480,
-            "src": "/images/optimized/cities/city-victoria-hero/480.png"
+            "src": "/images/optimized/cities/city-victoria-hero/480.jpg"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-victoria-hero/640.png"
+            "width": 960,
+            "src": "/images/optimized/cities/city-victoria-hero/960.jpg"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-victoria-hero/800.png"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-victoria-hero/899.png"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-victoria-hero/1600.jpg"
           }
         ]
       }
@@ -13888,197 +13120,101 @@
       }
     },
     "/images/cities/city-white-rock-hero.png": {
-      "width": 899,
-      "height": 561,
-      "fallbackFormat": "png",
-      "fallbackSrc": "/images/optimized/cities/city-white-rock-hero/899.png",
+      "width": 1822,
+      "height": 863,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/cities/city-white-rock-hero/1600.jpg",
       "variants": {
         "avif": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-white-rock-hero/160.avif"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-white-rock-hero/240.avif"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-white-rock-hero/320.avif"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-white-rock-hero/480.avif"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-white-rock-hero/640.avif"
+            "width": 960,
+            "src": "/images/optimized/cities/city-white-rock-hero/960.avif"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-white-rock-hero/800.avif"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-white-rock-hero/899.avif"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-white-rock-hero/1600.avif"
           }
         ],
         "webp": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-white-rock-hero/160.webp"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-white-rock-hero/240.webp"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-white-rock-hero/320.webp"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-white-rock-hero/480.webp"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-white-rock-hero/640.webp"
+            "width": 960,
+            "src": "/images/optimized/cities/city-white-rock-hero/960.webp"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-white-rock-hero/800.webp"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-white-rock-hero/899.webp"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-white-rock-hero/1600.webp"
           }
         ],
-        "png": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-white-rock-hero/160.png"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-white-rock-hero/240.png"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-white-rock-hero/320.png"
-          },
+        "jpg": [
           {
             "width": 480,
-            "src": "/images/optimized/cities/city-white-rock-hero/480.png"
+            "src": "/images/optimized/cities/city-white-rock-hero/480.jpg"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-white-rock-hero/640.png"
+            "width": 960,
+            "src": "/images/optimized/cities/city-white-rock-hero/960.jpg"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-white-rock-hero/800.png"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-white-rock-hero/899.png"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-white-rock-hero/1600.jpg"
           }
         ]
       }
     },
     "/images/cities/city-winnipeg-hero.png": {
-      "width": 899,
-      "height": 561,
-      "fallbackFormat": "png",
-      "fallbackSrc": "/images/optimized/cities/city-winnipeg-hero/899.png",
+      "width": 1846,
+      "height": 852,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/cities/city-winnipeg-hero/1600.jpg",
       "variants": {
         "avif": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-winnipeg-hero/160.avif"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-winnipeg-hero/240.avif"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-winnipeg-hero/320.avif"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-winnipeg-hero/480.avif"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-winnipeg-hero/640.avif"
+            "width": 960,
+            "src": "/images/optimized/cities/city-winnipeg-hero/960.avif"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-winnipeg-hero/800.avif"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-winnipeg-hero/899.avif"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-winnipeg-hero/1600.avif"
           }
         ],
         "webp": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-winnipeg-hero/160.webp"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-winnipeg-hero/240.webp"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-winnipeg-hero/320.webp"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-winnipeg-hero/480.webp"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-winnipeg-hero/640.webp"
+            "width": 960,
+            "src": "/images/optimized/cities/city-winnipeg-hero/960.webp"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-winnipeg-hero/800.webp"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-winnipeg-hero/899.webp"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-winnipeg-hero/1600.webp"
           }
         ],
-        "png": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-winnipeg-hero/160.png"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-winnipeg-hero/240.png"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-winnipeg-hero/320.png"
-          },
+        "jpg": [
           {
             "width": 480,
-            "src": "/images/optimized/cities/city-winnipeg-hero/480.png"
+            "src": "/images/optimized/cities/city-winnipeg-hero/480.jpg"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-winnipeg-hero/640.png"
+            "width": 960,
+            "src": "/images/optimized/cities/city-winnipeg-hero/960.jpg"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-winnipeg-hero/800.png"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-winnipeg-hero/899.png"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-winnipeg-hero/1600.jpg"
           }
         ]
       }
@@ -26821,6 +25957,206 @@
           {
             "width": 1600,
             "src": "/images/optimized/cities/city-halton-hills-hero/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/cities/city-kentville-hero.png": {
+      "width": 1822,
+      "height": 863,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/cities/city-kentville-hero/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/cities/city-kentville-hero/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/cities/city-kentville-hero/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/cities/city-kentville-hero/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/cities/city-kentville-hero/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/cities/city-kentville-hero/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/cities/city-kentville-hero/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/cities/city-kentville-hero/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/cities/city-kentville-hero/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/cities/city-kentville-hero/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/cities/city-sydney-hero.png": {
+      "width": 1796,
+      "height": 876,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/cities/city-sydney-hero/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/cities/city-sydney-hero/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/cities/city-sydney-hero/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/cities/city-sydney-hero/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/cities/city-sydney-hero/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/cities/city-sydney-hero/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/cities/city-sydney-hero/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/cities/city-sydney-hero/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/cities/city-sydney-hero/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/cities/city-sydney-hero/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/cities/city-bridgewater-hero.png": {
+      "width": 1693,
+      "height": 929,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/cities/city-bridgewater-hero/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/cities/city-bridgewater-hero/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/cities/city-bridgewater-hero/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/cities/city-bridgewater-hero/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/cities/city-bridgewater-hero/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/cities/city-bridgewater-hero/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/cities/city-bridgewater-hero/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/cities/city-bridgewater-hero/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/cities/city-bridgewater-hero/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/cities/city-bridgewater-hero/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/cities/city-truro-hero.png": {
+      "width": 1693,
+      "height": 929,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/cities/city-truro-hero/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/cities/city-truro-hero/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/cities/city-truro-hero/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/cities/city-truro-hero/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/cities/city-truro-hero/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/cities/city-truro-hero/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/cities/city-truro-hero/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/cities/city-truro-hero/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/cities/city-truro-hero/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/cities/city-truro-hero/1600.jpg"
           }
         ]
       }

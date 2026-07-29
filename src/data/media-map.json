@@ -17049,6 +17049,46 @@
       "needsOwnerReview": false,
       "notes": "Dedicated generated hero image for Rank 12 published article on 2026-07-26."
     }
+  ,
+    {
+      "collection": "Blog Posts",
+      "itemName": "How To Choose a Dog Trainer in Canada: Certifications, Methods, Red Flags, and Questions",
+      "itemSlug": "how-to-choose-dog-trainer-canada",
+      "fieldName": "Hero Image",
+      "localFilename": "blog-how-to-choose-dog-trainer-canada-hero.png",
+      "cleanedFilename": "blog-how-to-choose-dog-trainer-canada-hero.png",
+      "suggestedFilename": "blog-how-to-choose-dog-trainer-canada-hero.png",
+      "suggestedPublicPath": "/images/blog/blog-how-to-choose-dog-trainer-canada-hero.png",
+      "publicPath": "/images/blog/blog-how-to-choose-dog-trainer-canada-hero.png?v=20260728",
+      "publicPathReady": true,
+      "priority": "High",
+      "status": "published",
+      "matchStatus": "Matched",
+      "confidence": 1,
+      "matchConfidence": 1,
+      "needsOwnerReview": false,
+      "notes": "Dedicated generated hero image for Rank 14 published article on 2026-07-28."
+    }
+  ,
+    {
+      "collection": "Blog Posts",
+      "itemName": "Dog Boarding vs Dog Daycare vs Pet Sitter: Which Is Safest for Your Dog?",
+      "itemSlug": "dog-boarding-vs-daycare-vs-pet-sitter",
+      "fieldName": "Hero Image",
+      "localFilename": "blog-dog-boarding-vs-daycare-vs-pet-sitter-hero.png",
+      "cleanedFilename": "blog-dog-boarding-vs-daycare-vs-pet-sitter-hero.png",
+      "suggestedFilename": "blog-dog-boarding-vs-daycare-vs-pet-sitter-hero.png",
+      "suggestedPublicPath": "/images/blog/blog-dog-boarding-vs-daycare-vs-pet-sitter-hero.png",
+      "publicPath": "/images/blog/blog-dog-boarding-vs-daycare-vs-pet-sitter-hero.png?v=20260729",
+      "publicPathReady": true,
+      "priority": "High",
+      "status": "published",
+      "matchStatus": "Matched",
+      "confidence": 1,
+      "matchConfidence": 1,
+      "needsOwnerReview": false,
+      "notes": "Dedicated generated hero image for Rank 15 published article on 2026-07-29."
+    }
   ],
   "unmatchedLocalFiles": [
     {
