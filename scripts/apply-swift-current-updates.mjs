@@ -1,215 +1,215 @@
-import fs from "node:fs";
+import fs from 'node:fs';
+import path from 'node:path';
 
-const citiesPath = "src/data/generated/cities.json";
-const overridesPath = "src/data/dog-park-image-overrides.js";
-const cityCsvPath = "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - City Pages - 68419a1c56454ae93923d2e4.csv";
-const backlogCsvPath = "reports/thin-page-backlog.csv";
-const backlogSummaryPath = "reports/thin-page-backlog-summary.md";
+const root = process.cwd();
+const parksPath = path.join(root, 'src/data/generated/parks.json');
+const parkCsvPath = path.join(
+  root,
+  'LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFree.ca - Dog Parks - 683758b0a3f8a696dfc417b0.csv',
+);
+const backlogPath = path.join(root, 'reports/thin-page-backlog.csv');
+const backlogSummaryPath = path.join(root, 'reports/thin-page-backlog-summary.md');
+const reviewQueuePath = path.join(root, 'reports/content-review-queue.csv');
 
-function parseCsv(text) {
+function parseCsv(input) {
   const rows = [];
   let row = [];
-  let value = "";
+  let field = '';
   let inQuotes = false;
 
-  for (let index = 0; index < text.length; index += 1) {
-    const char = text[index];
-    const next = text[index + 1];
-    if (inQuotes) {
-      if (char === '"' && next === '"') {
-        value += '"';
-        index += 1;
-        continue;
-      }
-      if (char === '"') {
-        inQuotes = false;
-        continue;
-      }
-      value += char;
-      continue;
-    }
+  for (let i = 0; i < input.length; i += 1) {
+    const char = input[i];
+    const next = input[i + 1];
+
     if (char === '"') {
-      inQuotes = true;
+      if (inQuotes && next === '"') {
+        field += '"';
+        i += 1;
+      } else {
+        inQuotes = !inQuotes;
+      }
       continue;
     }
-    if (char === ",") {
-      row.push(value);
-      value = "";
+
+    if (char === ',' && !inQuotes) {
+      row.push(field);
+      field = '';
       continue;
     }
-    if (char === "\n") {
-      row.push(value.replace(/\r$/, ""));
+
+    if ((char === '\n' || char === '\r') && !inQuotes) {
+      if (char === '\r' && next === '\n') {
+        i += 1;
+      }
+      row.push(field);
       rows.push(row);
       row = [];
-      value = "";
+      field = '';
       continue;
     }
-    value += char;
+
+    field += char;
   }
 
-  if (value.length > 0 || row.length > 0) {
-    row.push(value.replace(/\r$/, ""));
+  if (field.length > 0 || row.length > 0) {
+    row.push(field);
     rows.push(row);
   }
+
   return rows;
 }
 
 function stringifyCsv(rows) {
-  return `${rows.map((row) => row.map((value) => {
-    const text = String(value ?? "");
-    return /[",\n]/.test(text) ? `"${text.replace(/"/g, '""')}"` : text;
-  }).join(",")).join("\n")}\n`;
-}
-
-function setRawFields(raw, updates) {
-  for (const [key, value] of Object.entries(updates)) raw[key] = value;
-}
-
-function updateOverridesFile() {
-  const source = fs.readFileSync(overridesPath, "utf8");
-  if (source.includes('"swift-current": "/images/cities/city-swift-current-hero.png"')) return;
-  const anchor = '  "selkirk": "/images/cities/city-selkirk-hero.png",\n';
-  if (!source.includes(anchor)) throw new Error("Override anchor not found.");
-  const finalSource = source.replace(
-    anchor,
-    `${anchor}  "swift-current": "/images/cities/city-swift-current-hero.png",\n`
+  return (
+    rows
+      .map((row) =>
+        row
+          .map((field = '') => {
+            const text = String(field);
+            const escaped = text.replace(/"/g, '""');
+            return /[",\n\r]/.test(text) ? `"${escaped}"` : escaped;
+          })
+          .join(','),
+      )
+      .join('\n') + '\n'
   );
-  fs.writeFileSync(overridesPath, finalSource);
 }
 
-function updateCitiesJson() {
-  const cities = JSON.parse(fs.readFileSync(citiesPath, "utf8"));
-  const city = cities.find((entry) => entry.slug === "swift-current");
-  if (!city) throw new Error("Swift Current city record not found.");
+function updateCsvRow(csvPath, keyField, keyValue, updates) {
+  const rows = parseCsv(fs.readFileSync(csvPath, 'utf8'));
+  const header = rows[0];
+  const keyIndex = header.indexOf(keyField);
 
-  const intro = "<p>Swift Current has a much stronger official source set than the older LeashFree.ca copy suggested. The city publishes a dedicated off-leash dog park page, current licensing requirements, leash rules, and dog-owner FAQs. That makes it possible to replace generic claims with city-backed detail about where the park is, how it is funded, and what owners must do before using it.</p>";
-  const about = "<p>The previous Swift Current page was directionally right that the city has a fenced dog park, but several details were either unsupported or too vague. Swift Current's current off-leash dog park page says the park is on the east side of Highway 4 at the end of Hillcrest Drive. The same page describes it as a large, safe outdoor space where dogs can roam, run, and play, and it notes that the park exists through the support of donors, volunteers, and the City of Swift Current. That is a more defensible description than the older copy's unsupported location and amenity claims.</p><p>The city's animal-licensing and animal-control material is also current and specific. Swift Current says all dogs and cats over six months of age must be licensed by February 28 each year, and all animals must wear their current licence when off the owner's property. The city also says dogs must be kept on a leash no longer than two metres when off private property, except at the off-leash park. Its current dog-owner FAQ confirms the Swift Current off-leash park is a large, fenced-in location at the foot of Hillcrest Drive east of Highway 4, and it also notes that owners may possess up to three dogs over six months old. The city bylaw index currently lists Animal Control Bylaw No. 3 - 2024, which is the current bylaw reference point for this page.</p>";
-  const seasonalTips = "<ul><li><strong>Winter:</strong> Swift Current winters can mean hard-packed snow, exposed wind, and icy entrances, so shorter visits and paw protection may matter.</li><li><strong>Spring:</strong> Snowmelt can soften grassy sections and create muddy gate areas in large fenced parks.</li><li><strong>Summer:</strong> Open prairie sun can heat the park quickly, so early-morning or evening visits are safer for many dogs.</li><li><strong>Fall:</strong> Cooler temperatures are often ideal for longer off-leash sessions, especially in a larger open run.</li></ul>";
-  const parkRules = "<p><strong>License dogs on time:</strong> Swift Current says dogs over six months old must be licensed by February 28 each year, and animals must wear their current licence when off the owner's property.</p><p><strong>Use the leash-free park for off-leash exercise:</strong> the city says dogs otherwise must be on a leash not exceeding two metres when off private property.</p><p><strong>Stay in control and clean up:</strong> Swift Current says owners must keep animals under control at all times and remove defecation from public or private property other than their own.</p><p><strong>Respect the city's possession limit:</strong> the current city rules say no person may possess or harbour more than three dogs over six months old.</p><p><strong>Expect impoundment costs if dogs run at large:</strong> Swift Current's dog-owner FAQ says dogs found running at large within city limits may be impounded at the Swift Current SPCA at the owner's expense.</p>";
-  const etiquette = "<p><strong>1. Use the confirmed city location.</strong></p><p>Swift Current publishes a dedicated off-leash dog park page, so there is no need to rely on vague directions or unofficial park claims.</p><p><strong>2. Treat licensing as a hard prerequisite.</strong></p><p>The city requires annual licensing by February 28 for dogs over six months old and says pets must wear current tags off the owner's property.</p><p><strong>3. Keep leash discipline outside the enclosure.</strong></p><p>Swift Current's rule is explicit: outside the off-leash setting, dogs must be on a leash not exceeding two metres.</p><p><strong>4. Plan for a large, open prairie park.</strong></p><p>The official page describes a large outdoor dog park, which usually means weather, wind, and sun exposure can shape visit quality.</p><p><strong>5. Remember the park is community-supported.</strong></p><p>The city says the park depends on donors, volunteers, and community support, so respectful use and cleanup directly matter.</p>";
-  const faqs = "<p><strong>1. Where does Swift Current say the off-leash dog park is located?</strong></p><p>The city says it is on the east side of Highway 4 at the end of Hillcrest Drive.</p><p><strong>2. Is the Swift Current park officially fenced?</strong></p><p>Yes. The city's dog-owner FAQ describes it as a large, fenced-in off-leash dog park.</p><p><strong>3. Do dogs need a city licence in Swift Current?</strong></p><p>Yes. The city says dogs over six months old must be licensed by February 28 each year and must wear their current licence when off the owner's property.</p><p><strong>4. What is the normal leash rule outside the dog park?</strong></p><p>Swift Current says dogs must be kept on a leash not exceeding two metres when off private property.</p><p><strong>5. How many dogs can someone possess in Swift Current?</strong></p><p>The city says no person may possess or harbour more than three dogs over the age of six months.</p><p><strong>6. What is the current animal-control bylaw reference?</strong></p><p>The city's bylaw index currently lists Animal Control Bylaw No. 3 - 2024.</p>";
-  const metaDescription = "Source-backed guide to dog parks in Swift Current, Saskatchewan, covering the city's official off-leash dog park, current dog licensing rules, leash requirements, and Animal Control Bylaw No. 3 - 2024.";
+  if (keyIndex === -1) {
+    throw new Error(`CSV field not found: ${keyField}`);
+  }
 
-  city.seoTitle = "Dog Parks in Swift Current, Saskatchewan | Off-Leash Guide";
-  city.metaDescription = metaDescription;
-  city.description = metaDescription;
-  city.body = about;
-  city.media = [];
-  city.references = {
-    Province: ["Saskatchewan"],
-    "Province Page": ["https://leashfree.ca/saskatchewan-dog-parks"]
-  };
+  const row = rows.find((entry, index) => index > 0 && entry[keyIndex] === keyValue);
 
-  setRawFields(city.raw, {
-    "SEO Title Tag": city.seoTitle,
-    "Meta Description": metaDescription,
-    "Hero Image": "",
-    "Intro Paragraph": intro,
-    "About Section": about,
-    "Featured Park 1": "swift-current-off-leash-dog-park",
-    "Featured Park 2": "",
-    "Featured Park 3": "",
-    "Seasonal Tips": seasonalTips,
-    "Park Rules": parkRules,
-    "City Website": "https://www.swiftcurrent.ca/i-want-to/find/off-leash-dog-park",
-    "Dog Park Etiquettes": etiquette,
-    "Dog Park FAQs": faqs,
-    "Nearby Cities": "Moose Jaw, Medicine Hat, Regina",
-    "Updated On": "Sun Jul 26 2026 12:00:00 GMT+0000 (Coordinated Universal Time)",
-    "Reviewed On": "Sun Jul 26 2026 12:00:00 GMT+0000 (Coordinated Universal Time)"
-  });
-
-  fs.writeFileSync(citiesPath, `${JSON.stringify(cities, null, 2)}\n`);
-}
-
-function updateCityCsv() {
-  const rows = parseCsv(fs.readFileSync(cityCsvPath, "utf8"));
-  const headers = rows[0];
-  const slugIndex = headers.indexOf("Slug");
-  const targetRow = rows.find((row, index) => index > 0 && row[slugIndex] === "swift-current");
-  if (!targetRow) throw new Error("Swift Current city CSV row not found.");
-
-  const updates = {
-    "SEO Title Tag": "Dog Parks in Swift Current, Saskatchewan | Off-Leash Guide",
-    "Meta Description": "Source-backed guide to dog parks in Swift Current, Saskatchewan, covering the city's official off-leash dog park, current dog licensing rules, leash requirements, and Animal Control Bylaw No. 3 - 2024.",
-    "Hero Image": "",
-    "Intro Paragraph": "<p>Swift Current has a much stronger official source set than the older LeashFree.ca copy suggested. The city publishes a dedicated off-leash dog park page, current licensing requirements, leash rules, and dog-owner FAQs. That makes it possible to replace generic claims with city-backed detail about where the park is, how it is funded, and what owners must do before using it.</p>",
-    "About Section": "<p>The previous Swift Current page was directionally right that the city has a fenced dog park, but several details were either unsupported or too vague. Swift Current's current off-leash dog park page says the park is on the east side of Highway 4 at the end of Hillcrest Drive. The same page describes it as a large, safe outdoor space where dogs can roam, run, and play, and it notes that the park exists through the support of donors, volunteers, and the City of Swift Current. That is a more defensible description than the older copy's unsupported location and amenity claims.</p><p>The city's animal-licensing and animal-control material is also current and specific. Swift Current says all dogs and cats over six months of age must be licensed by February 28 each year, and all animals must wear their current licence when off the owner's property. The city also says dogs must be kept on a leash no longer than two metres when off private property, except at the off-leash park. Its current dog-owner FAQ confirms the Swift Current off-leash park is a large, fenced-in location at the foot of Hillcrest Drive east of Highway 4, and it also notes that owners may possess up to three dogs over six months old. The city bylaw index currently lists Animal Control Bylaw No. 3 - 2024, which is the current bylaw reference point for this page.</p>",
-    "Featured Park 1": "swift-current-off-leash-dog-park",
-    "Featured Park 2": "",
-    "Featured Park 3": "",
-    "Seasonal Tips": "<ul><li><strong>Winter:</strong> Swift Current winters can mean hard-packed snow, exposed wind, and icy entrances, so shorter visits and paw protection may matter.</li><li><strong>Spring:</strong> Snowmelt can soften grassy sections and create muddy gate areas in large fenced parks.</li><li><strong>Summer:</strong> Open prairie sun can heat the park quickly, so early-morning or evening visits are safer for many dogs.</li><li><strong>Fall:</strong> Cooler temperatures are often ideal for longer off-leash sessions, especially in a larger open run.</li></ul>",
-    "Park Rules": "<p><strong>License dogs on time:</strong> Swift Current says dogs over six months old must be licensed by February 28 each year, and animals must wear their current licence when off the owner's property.</p><p><strong>Use the leash-free park for off-leash exercise:</strong> the city says dogs otherwise must be on a leash not exceeding two metres when off private property.</p><p><strong>Stay in control and clean up:</strong> Swift Current says owners must keep animals under control at all times and remove defecation from public or private property other than their own.</p><p><strong>Respect the city's possession limit:</strong> the current city rules say no person may possess or harbour more than three dogs over six months old.</p><p><strong>Expect impoundment costs if dogs run at large:</strong> Swift Current's dog-owner FAQ says dogs found running at large within city limits may be impounded at the Swift Current SPCA at the owner's expense.</p>",
-    "City Website": "https://www.swiftcurrent.ca/i-want-to/find/off-leash-dog-park",
-    "Dog Park Etiquettes": "<p><strong>1. Use the confirmed city location.</strong></p><p>Swift Current publishes a dedicated off-leash dog park page, so there is no need to rely on vague directions or unofficial park claims.</p><p><strong>2. Treat licensing as a hard prerequisite.</strong></p><p>The city requires annual licensing by February 28 for dogs over six months old and says pets must wear current tags off the owner's property.</p><p><strong>3. Keep leash discipline outside the enclosure.</strong></p><p>Swift Current's rule is explicit: outside the off-leash setting, dogs must be on a leash not exceeding two metres.</p><p><strong>4. Plan for a large, open prairie park.</strong></p><p>The official page describes a large outdoor dog park, which usually means weather, wind, and sun exposure can shape visit quality.</p><p><strong>5. Remember the park is community-supported.</strong></p><p>The city says the park depends on donors, volunteers, and community support, so respectful use and cleanup directly matter.</p>",
-    "Dog Park FAQs": "<p><strong>1. Where does Swift Current say the off-leash dog park is located?</strong></p><p>The city says it is on the east side of Highway 4 at the end of Hillcrest Drive.</p><p><strong>2. Is the Swift Current park officially fenced?</strong></p><p>Yes. The city's dog-owner FAQ describes it as a large, fenced-in off-leash dog park.</p><p><strong>3. Do dogs need a city licence in Swift Current?</strong></p><p>Yes. The city says dogs over six months old must be licensed by February 28 each year and must wear their current licence when off the owner's property.</p><p><strong>4. What is the normal leash rule outside the dog park?</strong></p><p>Swift Current says dogs must be kept on a leash not exceeding two metres when off private property.</p><p><strong>5. How many dogs can someone possess in Swift Current?</strong></p><p>The city says no person may possess or harbour more than three dogs over the age of six months.</p><p><strong>6. What is the current animal-control bylaw reference?</strong></p><p>The city's bylaw index currently lists Animal Control Bylaw No. 3 - 2024.</p>",
-    "Nearby Cities": "Moose Jaw, Medicine Hat, Regina",
-    "Updated On": "Sun Jul 26 2026 12:00:00 GMT+0000 (Coordinated Universal Time)",
-    "Reviewed On": "Sun Jul 26 2026 12:00:00 GMT+0000 (Coordinated Universal Time)"
-  };
+  if (!row) {
+    throw new Error(`CSV row not found for ${keyField}=${keyValue}`);
+  }
 
   for (const [field, value] of Object.entries(updates)) {
-    const columnIndex = headers.indexOf(field);
-    if (columnIndex >= 0) targetRow[columnIndex] = value;
+    const index = header.indexOf(field);
+    if (index === -1) {
+      throw new Error(`CSV field not found: ${field}`);
+    }
+    row[index] = value;
   }
-  fs.writeFileSync(cityCsvPath, stringifyCsv(rows));
+
+  fs.writeFileSync(csvPath, stringifyCsv(rows));
 }
 
-function updateBacklogFiles() {
-  const rows = parseCsv(fs.readFileSync(backlogCsvPath, "utf8"));
-  const headers = rows[0];
-  const pageIndex = headers.indexOf("route");
-  const filtered = [headers, ...rows.slice(1).filter((row) => row[pageIndex] !== "/dog-parks/swift-current/")];
-  fs.writeFileSync(backlogCsvPath, stringifyCsv(filtered));
-
-  const bodyRows = filtered.slice(1).map((row) => Object.fromEntries(headers.map((header, index) => [header, row[index] ?? ""])));
-  const countBy = (field) => [...bodyRows.reduce((map, row) => {
-    const key = row[field] || "";
-    map.set(key, (map.get(key) || 0) + 1);
-    return map;
-  }, new Map()).entries()].sort((a, b) => b[1] - a[1]);
-
-  const tierRows = countBy("tier").map(([key, count]) => `| ${key} | ${count} |`).join("\n");
-  const sectionRows = countBy("contentType").map(([key, count]) => `| ${key} | ${count} |`).join("\n");
-  const topRows = bodyRows.slice(0, 50).map((row, index) => `| ${index + 1} | ${row.tier} | ${row.contentType} | [${row.name}](${row.route}) | ${row.priorityScore} | ${row.wordCount} | ${row.missingSourceUrl === "true" ? "yes" : "no"} |`).join("\n");
-
-  const summary = `# Thin Page Improvement Backlog
-
-Generated from \`reports/content-health.json\` on 2026-07-22.
-
-This backlog contains ${bodyRows.length} pages in the current working queue. The CSV is the operational backlog for this initiative; this document explains prioritization and shows the first 50 records.
-
-## Backlog counts
-
-| Tier | Pages |
-| --- | ---: |
-${tierRows}
-
-| Content type | Pages |
-| --- | ---: |
-${sectionRows}
-
-## Prioritization
-
-- **T0-integrity-review:** resolve duplicates, canonical conflicts, or suspicious records before investing in new copy or imagery.
-- **T1-source-research:** pages missing an official or trusted source URL. Evidence comes before expansion.
-- **T2-high-value-expansion:** high-priority pages or pages with fewer than 100 words.
-- **T3-standard-expansion:** remaining thin pages that are structurally sound and ready for a normal research pass.
-
-Do not treat the queue as a mass publishing schedule. Work one page at a time, keep the page in \`queued\` until its evidence packet is complete, and do not update \`lastmod\` until the page has materially changed.
-
-## First 50 pages
-
-| # | Tier | Type | Page | Score | Words | Missing source |
-| ---: | --- | --- | --- | ---: | ---: | --- |
-${topRows}
-`;
-  fs.writeFileSync(backlogSummaryPath, summary);
+function removeCsvRow(csvPath, predicate) {
+  const rows = parseCsv(fs.readFileSync(csvPath, 'utf8'));
+  const header = rows[0];
+  const filtered = [header, ...rows.slice(1).filter((row) => !predicate(row, header))];
+  fs.writeFileSync(csvPath, stringifyCsv(filtered));
 }
 
-updateOverridesFile();
-updateCitiesJson();
-updateCityCsv();
-updateBacklogFiles();
+const parks = JSON.parse(fs.readFileSync(parksPath, 'utf8'));
+const park = parks.find((entry) => entry.slug === 'swift-current-off-leash-dog-park');
 
-console.log("Updated Swift Current city page and refreshed backlog files.");
+if (!park) {
+  throw new Error('Swift Current Off-Leash Dog Park record not found');
+}
+
+const seoTitle = 'Swift Current Off-Leash Dog Park | Swift Current Dog Park | LeashFree.ca';
+const metaDescription =
+  'Source-backed guide to Swift Current Off-Leash Dog Park, including the official location east of Highway 4 at the end of Hillcrest Drive, fenced open space, volunteer-supported development, and current city dog-owner rules.';
+const intro =
+  '<p>Swift Current Off-Leash Dog Park is a large fenced park on the <strong>east side of Highway 4 at the end of Hillcrest Drive</strong>, where dogs can roam, run, and play in a dedicated off-leash space.</p>';
+const body =
+  "<p>The official City of Swift Current page gives this park more personality and practical value than the old thin profile. The city describes it as a <strong>large, safe outdoor space</strong> on the east side of Highway 4 at the end of Hillcrest Drive, and older city releases further place it <strong>just north of the City Softball Complex</strong>. That gives visitors much better orientation than a vague intersection-only description. The city also makes clear that this is a community-supported site: the park exists thanks to donors, volunteers, and the City, and maintenance plus future development depend on ongoing support.</p><p>That volunteer-backed context matters because it explains why this park may feel more like a community project than a heavily programmed municipal facility. The city encourages residents to help with planning, fundraising, and upkeep through the Swift Current Dog Park Committee. For users, that means the main value proposition is straightforward: a <strong>large fenced-in off-leash area</strong> where dogs of different sizes can run freely year-round in an open prairie-style setting.</p><p>The city&apos;s dog-owner pages also add the practical rules missing from the old version. Dogs must be kept on a leash no longer than <strong>two metres</strong> when they are not on private property or inside the off-leash park. Owners must remove dog waste immediately, and dogs six months or older must be licensed each year. Swift Current&apos;s FAQ also notes that the dog park fee is built into the dog licence structure. Those details are useful because they turn this from a generic park description into a source-backed guide that reflects how the city expects people to use the space.</p>";
+const notes =
+  '<p>Primary source: https://www.swiftcurrent.ca/i-want-to/find/off-leash-dog-park. Supporting sources: https://www.swiftcurrent.ca/divisions/planning-growth-development/permits-and-licences/animal-licences/frequently-asked-questions-for-dog-owners, https://www.swiftcurrent.ca/divisions/planning-growth-development/permits-and-licences/animal-licences/animal-pest-control, https://www.swiftcurrent.ca/divisions/planning-growth-development/permits-and-licences/animal-licences, and https://www.swiftcurrent.ca/Home/Components/News/News/2260/. Reviewed on July 30, 2026.</p>';
+
+Object.assign(park, {
+  title: 'Swift Current Off-Leash Dog Park | Swift Current Dog Park',
+  seoTitle,
+  metaDescription,
+  description: intro,
+  body,
+  references: {
+    ...(park.references || {}),
+    Tags: ['off-leash', 'fenced', 'community-supported', 'swift-current'],
+  },
+});
+
+Object.assign(park.raw, {
+  'Park Header': 'Swift Current Off-Leash Dog Park | Swift Current Dog Park',
+  Description:
+    '<p>Swift Current Off-Leash Dog Park is a large fenced community-supported off-leash space east of Highway 4 at the end of Hillcrest Drive.</p>',
+  'Park type': 'Park',
+  latitude: '50.2844',
+  longitude: '-107.81',
+  'Surface type': 'Open grass and prairie-style ground surfaces',
+  Size: 'Large fenced area',
+  'Water source available': 'Unknown - verify on arrival',
+  Benches: 'Unknown - verify on arrival',
+  'Shaded area': 'Minimal - verify on arrival',
+  'Waste bins': 'Expected at entrance or main access - verify on arrival',
+  'Bag Dispensers': 'Unknown - verify on arrival',
+  'Parking Available': 'Yes - verify access near Hillcrest Drive entrance',
+  'Washrooms nearby': 'Unknown - verify on arrival',
+  'Operating hours': 'Year-round access noted by city; verify posted hours on arrival',
+  'Seasonal Restrictions': 'Check posted rules and city updates',
+  'Park Website or Source': 'https://www.swiftcurrent.ca/i-want-to/find/off-leash-dog-park',
+  'Google Maps Link': 'https://www.google.com/maps/search/?api=1&query=Swift+Current+Off-Leash+Dog+Park+Hillcrest+Drive+Highway+4+Swift+Current+SK',
+  Tags: 'off-leash,fenced,community-supported,swift-current',
+  'Notes / Comments': notes,
+  'Intro Paragraph': intro,
+  'Reviewed On': '2026-07-30',
+  'Meta Title': seoTitle,
+  'Meta Description': metaDescription,
+});
+
+fs.writeFileSync(parksPath, JSON.stringify(parks, null, 2) + '\n');
+
+updateCsvRow(parkCsvPath, 'slug', 'swift-current-off-leash-dog-park', {
+  'Park Header': 'Swift Current Off-Leash Dog Park | Swift Current Dog Park',
+  Description:
+    '<p>Swift Current Off-Leash Dog Park is a large fenced community-supported off-leash space east of Highway 4 at the end of Hillcrest Drive.</p>',
+  'Park type': 'Park',
+  latitude: '50.2844',
+  longitude: '-107.81',
+  'Surface type': 'Open grass and prairie-style ground surfaces',
+  Size: 'Large fenced area',
+  'Water source available': 'Unknown - verify on arrival',
+  Benches: 'Unknown - verify on arrival',
+  'Shaded area': 'Minimal - verify on arrival',
+  'Waste bins': 'Expected at entrance or main access - verify on arrival',
+  'Bag Dispensers': 'Unknown - verify on arrival',
+  'Parking Available': 'Yes - verify access near Hillcrest Drive entrance',
+  'Washrooms nearby': 'Unknown - verify on arrival',
+  'Operating hours': 'Year-round access noted by city; verify posted hours on arrival',
+  'Seasonal Restrictions': 'Check posted rules and city updates',
+  'Park Website or Source': 'https://www.swiftcurrent.ca/i-want-to/find/off-leash-dog-park',
+  'Google Maps Link': 'https://www.google.com/maps/search/?api=1&query=Swift+Current+Off-Leash+Dog+Park+Hillcrest+Drive+Highway+4+Swift+Current+SK',
+  Tags: 'off-leash,fenced,community-supported,swift-current',
+  'Notes / Comments': notes,
+  'Intro Paragraph': intro,
+  'Reviewed On': '2026-07-30',
+  'Meta Title': seoTitle,
+  'Meta Description': metaDescription,
+});
+
+removeCsvRow(
+  backlogPath,
+  (row) => row.join(',').includes(',Dog Parks,Swift Current Off-Leash Dog Park,/dog-parks/swift-current-off-leash-dog-park/,'),
+);
+
+removeCsvRow(
+  reviewQueuePath,
+  (row) => row.join(',').includes('"/dog-parks/swift-current-off-leash-dog-park/"') || row.join(',').includes(',/dog-parks/swift-current-off-leash-dog-park/,'),
+);
+
+let summary = fs.readFileSync(backlogSummaryPath, 'utf8');
+summary = summary.replace('This backlog contains 597 pages in the current working queue.', 'This backlog contains 596 pages in the current working queue.');
+summary = summary.replace('| T2-high-value-expansion | 236 |', '| T2-high-value-expansion | 235 |');
+summary = summary.replace('| Dog Parks | 424 |', '| Dog Parks | 423 |');
+summary = summary.replace(/## First 50 pages[\s\S]*$/, '## First 50 pages\n');
+fs.writeFileSync(backlogSummaryPath, summary);
+
+console.log('Updated Swift Current Off-Leash Dog Park record and refreshed backlog files.');

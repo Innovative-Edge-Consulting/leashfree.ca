@@ -2,19 +2,19 @@
 
 Generated from `reports/content-health.json` on 2026-07-22.
 
-This backlog contains 606 pages in the current working queue. The CSV is the operational backlog for this initiative; this document explains prioritization and shows the first 50 records.
+This backlog contains 587 pages in the current working queue. The CSV is the operational backlog for this initiative; this document explains prioritization and shows the first 50 records.
 
 ## Backlog counts
 
 | Tier | Pages |
 | --- | ---: |
 | T3-standard-expansion | 361 |
-| T2-high-value-expansion | 243 |
-| T1-source-research | 2 |
+| T2-high-value-expansion | 226 |
+| T1-source-research | 0 |
 
 | Content type | Pages |
 | --- | ---: |
-| Dog Parks | 433 |
+| Dog Parks | 414 |
 | Dog Breeds | 98 |
 | Dog Names | 39 |
 | Directories | 16 |
