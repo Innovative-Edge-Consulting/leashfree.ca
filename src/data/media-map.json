@@ -17089,6 +17089,46 @@
       "needsOwnerReview": false,
       "notes": "Dedicated generated hero image for Rank 15 published article on 2026-07-29."
     }
+  ,
+    {
+      "collection": "Blog Posts",
+      "itemName": "Senior Dog Care Costs Canada: Food, Vet Visits, Insurance, Mobility, and End-of-Life Planning",
+      "itemSlug": "senior-dog-care-costs-canada",
+      "fieldName": "Hero Image",
+      "localFilename": "blog-senior-dog-care-costs-canada-hero.png",
+      "cleanedFilename": "blog-senior-dog-care-costs-canada-hero.png",
+      "suggestedFilename": "blog-senior-dog-care-costs-canada-hero.png",
+      "suggestedPublicPath": "/images/blog/blog-senior-dog-care-costs-canada-hero.png",
+      "publicPath": "/images/blog/blog-senior-dog-care-costs-canada-hero.png?v=20260730",
+      "publicPathReady": true,
+      "priority": "High",
+      "status": "published",
+      "matchStatus": "Matched",
+      "confidence": 1,
+      "matchConfidence": 1,
+      "needsOwnerReview": false,
+      "notes": "Dedicated generated hero image for Rank 16 published article on 2026-07-30."
+    }
+  ,
+    {
+      "collection": "Blog Posts",
+      "itemName": "Dog Adoption Checklist Canada: Rescue Questions, Trial Periods, Fees, and Red Flags",
+      "itemSlug": "dog-adoption-checklist-canada",
+      "fieldName": "Hero Image",
+      "localFilename": "blog-dog-adoption-checklist-canada-hero.png",
+      "cleanedFilename": "blog-dog-adoption-checklist-canada-hero.png",
+      "suggestedFilename": "blog-dog-adoption-checklist-canada-hero.png",
+      "suggestedPublicPath": "/images/blog/blog-dog-adoption-checklist-canada-hero.png",
+      "publicPath": "/images/blog/blog-dog-adoption-checklist-canada-hero.png?v=20260731",
+      "publicPathReady": true,
+      "priority": "High",
+      "status": "published",
+      "matchStatus": "Matched",
+      "confidence": 1,
+      "matchConfidence": 1,
+      "needsOwnerReview": false,
+      "notes": "Dedicated generated hero image for Rank 17 published article on 2026-07-31."
+    }
   ],
   "unmatchedLocalFiles": [
     {

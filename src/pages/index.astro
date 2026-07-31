@@ -61,7 +61,7 @@ const parkActivityLabel = (park) => {
 
 const featuredParks = [...activeParks]
   .sort((a, b) => parkActivityDate(b) - parkActivityDate(a) || a.name.localeCompare(b.name))
-  .slice(0, 6);
+  .slice(0, 8);
 const homeHeroImage = "/images/home/leashfree-canada-dog-parks-hero-1600.jpg";
 const homeHeroAlt = "Dogs walking off leash in a Toronto park with the city skyline, representing Canadian dog parks and LeashFree.ca resources";
 const homeHeroSizes = "(min-width: 960px) 44vw, 100vw";

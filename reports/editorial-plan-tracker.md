@@ -1,6 +1,6 @@
 # LeashFree.ca Editorial Plan Tracker
 
-Last updated: 2026-07-29
+Last updated: 2026-07-31
 
 Source strategy report: `reports/editorial-backlog-2026-07-11.md`
 
@@ -33,8 +33,8 @@ Statuses:
 
 | Slot | Item | Status | Decision |
 | --- | --- | --- | --- |
-| Next article | Senior Dog Care Costs Canada: Food, Vet Visits, Insurance, Mobility, and End-of-Life Planning | Backlog | Rank 15 is approved for publication and will become the current care-services guide after deployment. |
-| Next cluster | Cost / senior care | Backlog | Rank 15 is published; the next opportunity supports senior-care cost planning and veterinarian discovery. |
+| Next article | Best Dog Parks in Montreal, Calgary, Ottawa, and Edmonton: City Expansion Series | Backlog | Rank 17 is published; the next opportunity expands local dog-park discovery through city-specific briefs. |
+| Next cluster | Local dog parks | Backlog | Rank 17 is live; Rank 18 should be split into city-specific briefs rather than one generic national article. |
 | Seasonal backup | Wildfire Smoke and Dogs in Canada: When To Skip the Walk | Backlog | Strong fallback during active smoke periods or AQHI spikes. |
 
 ## Working Board
@@ -56,8 +56,8 @@ Statuses:
 | 13 | Published | 18 | Wildfire Smoke and Dogs in Ontario: When To Skip the Walk | `wildfire-smoke-dogs-canada` | Seasonal safety | Dog parks, vet directory | AQHI, wildfire smoke, veterinary respiratory guidance | Monitor performance and refresh current-alert links during smoke events | Published at /blog/wildfire-smoke-dogs-canada/ on 2026-07-18. |
 | 14 | Published | 18 | How To Choose a Dog Trainer in Canada: Certifications, Methods, Red Flags, and Questions | `how-to-choose-dog-trainer-canada` | Directory / training | Trainer directory | CCPDT certification and owner guidance, IAABC credentials, AVSAB humane-training position, Canadian service and referral context | Monitor performance and add links from trainer directory surfaces | Published 2026-07-28 with dedicated hero image, source list, FAQ, internal links, and trainer-directory CTA. |
 | 15 | Published | 18 | Dog Boarding vs Dog Daycare vs Pet Sitter: Which Is Safest for Your Dog? | `dog-boarding-vs-daycare-vs-pet-sitter` | Directory / care services | Daycare, boarding, pet sitter directory | AVMA companion-animal care guidance, provincial/municipal boarding rules, pet-sitter interview guidance, vaccination and emergency-planning references | Monitor performance and add links from care-service directories | Published 2026-07-29 with dedicated hero image, decision matrix, safety checklist, FAQ, sources, and directory CTAs. |
-| 16 | Backlog | 17 | Senior Dog Care Costs Canada: Food, Vet Visits, Insurance, Mobility, and End-of-Life Planning | `senior-dog-care-costs-canada` | Cost / senior care | Dog cost calculator, vet directory | Veterinary senior-care guidance, cost assumptions, insurance caveats | Build compassionate cost plan | High value but heavier topic. |
-| 17 | Backlog | 17 | Dog Adoption Checklist Canada: Rescue Questions, Trial Periods, Fees, and Red Flags | `dog-adoption-checklist-canada` | Adoption / directory | Animal shelters and rescues directory | Rescue/adoption guidance, provincial shelter examples | Build pre-adoption worksheet | Supports shelter directory. |
+| 16 | Published | 17 | Senior Dog Care Costs Canada: Food, Vet Visits, Insurance, Mobility, and End-of-Life Planning | `senior-dog-care-costs-canada` | Cost / senior care | Dog cost calculator, vet directory | VCA/Merck senior-care guidance, Canadian clinic fee examples, insurance caveats, quality-of-life and end-of-life planning references | Monitor performance and add links from cost and veterinarian surfaces | Published 2026-07-30 with dedicated hero image, cost framework, FAQs, sources, and directory links. |
+| 17 | Published | 17 | Dog Adoption Checklist Canada: Rescue Questions, Trial Periods, Fees, and Red Flags | `dog-adoption-checklist-canada` | Adoption / directory | Animal shelters and rescues directory | Ontario SPCA, Humane Canada, Toronto Humane Society adoption process/questionnaire, 3-3-3 adjustment guidance | Monitor performance and add links from shelter and rescue directory surfaces | Published 2026-07-31 with dedicated hero image, source list, five internal links, FAQ, fee caveats, red-flag checklist, and first-72-hour plan. |
 | 18 | Backlog | 17 | Best Dog Parks in Montreal, Calgary, Ottawa, and Edmonton: City Expansion Series | `best-dog-parks-city-series-canada` | Local dog parks | City dog park pages | Official park sources, local rules, amenities, map data | Split into city-specific briefs | Treat as a series, not one article. |
 | 19 | Backlog | 16 | Dental Cleaning Costs for Dogs in Canada: What Owners Should Budget For | `dog-dental-cleaning-cost-canada` | Cost / vet care | Dog cost calculator, vet directory | Veterinary dental guidance, cost ranges, insurance policy examples | Gather cost evidence | Strong insurance support article. |
 | 20 | Backlog | 16 | Dog Gear That Is Worth Buying in Canada, and What To Skip | `dog-gear-worth-buying-canada` | Gear | Dog gear finder | Product/use-case evidence, safety guidance, seasonal examples | Define no-hype recommendation rules | Good for affiliate/sponsor fit later. |
@@ -71,6 +71,14 @@ Statuses:
 ### In Research
 
 - None
+
+### Drafting
+
+- None
+
+### Review
+
+- Senior Dog Care Costs Canada: Food, Vet Visits, Insurance, Mobility, and End-of-Life Planning
 
 ### Ready To Draft
 
@@ -178,6 +186,10 @@ Use this checklist before marking an article `Ready To Publish`.
 | 2026-07-28 | Published Rank 14 at /blog/how-to-choose-dog-trainer-canada/ with a dedicated generated hero image; moved Rank 15 to the next backlog focus. |
 | 2026-07-29 | Started research for Rank 15 using AVMA, Ontario, and professional pet-sitter guidance; moved it from Backlog to In Research. |
 | 2026-07-29 | Published Rank 15 at /blog/dog-boarding-vs-daycare-vs-pet-sitter/ with a dedicated generated hero image; moved Rank 16 to the next backlog focus. |
+| 2026-07-30 | Started research for Rank 16 using VCA, Merck, CVMA, and Canadian clinic fee references; moved it from Backlog to In Research. |
+| 2026-07-30 | Published Rank 16 at /blog/senior-dog-care-costs-canada/ with a dedicated generated hero image; moved Rank 17 to the next backlog focus. |
+| 2026-07-31 | Researched and drafted Rank 17 using Humane Canada, Ontario SPCA, and Toronto Humane Society adoption guidance; added a dedicated generated hero image, source list, five internal links, and build-validated draft metadata. |
+| 2026-07-31 | Published Rank 17 at /blog/dog-adoption-checklist-canada/ with a dedicated generated hero image; moved Rank 18 to the next backlog focus. |
 | 2026-07-25 | Started drafting Rank 11 at /blog/how-much-exercise-does-my-dog-need/ with breed activity bands, life-stage adjustments, mental enrichment, and Canadian weather guidance; kept it unpublished pending image and final QA. |
 | 2026-07-24 | Published Rank 10 at /blog/best-dog-food-sensitive-stomachs-canada/ with a dedicated generated hero image; moved Rank 11 to the next backlog focus. |
 | 2026-07-24 | Started drafting Rank 10 at /blog/best-dog-food-sensitive-stomachs-canada/ with a vet-first label comparison framework and conservative diet-trial guidance; kept it unpublished pending image and final QA. |
