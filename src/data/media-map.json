@@ -16989,7 +16989,9 @@
       "confidence": "high",
       "matchConfidence": "high",
       "needsOwnerReview": false,
-      "notes": ["Generated dedicated emergency-vet hero image for draft article on 2026-07-23."]
+      "notes": [
+        "Generated dedicated emergency-vet hero image for draft article on 2026-07-23."
+      ]
     },
     {
       "collection": "Blog Posts",
@@ -17008,7 +17010,9 @@
       "confidence": "high",
       "matchConfidence": "high",
       "needsOwnerReview": false,
-      "notes": ["Generated dedicated sensitive-stomach dog-food hero image for draft article on 2026-07-24."]
+      "notes": [
+        "Generated dedicated sensitive-stomach dog-food hero image for draft article on 2026-07-24."
+      ]
     },
     {
       "collection": "Blog Posts",
@@ -17027,9 +17031,10 @@
       "confidence": "high",
       "matchConfidence": "high",
       "needsOwnerReview": false,
-      "notes": ["Generated dedicated dog-exercise hero image for draft article on 2026-07-25."]
-    }
-  ,
+      "notes": [
+        "Generated dedicated dog-exercise hero image for draft article on 2026-07-25."
+      ]
+    },
     {
       "collection": "Blog Posts",
       "itemName": "Apartment Puppy Survival Guide Canada: Potty, Noise, Elevators, Socialization, and Winter",
@@ -17048,8 +17053,7 @@
       "matchConfidence": 1,
       "needsOwnerReview": false,
       "notes": "Dedicated generated hero image for Rank 12 published article on 2026-07-26."
-    }
-  ,
+    },
     {
       "collection": "Blog Posts",
       "itemName": "How To Choose a Dog Trainer in Canada: Certifications, Methods, Red Flags, and Questions",
@@ -17068,8 +17072,7 @@
       "matchConfidence": 1,
       "needsOwnerReview": false,
       "notes": "Dedicated generated hero image for Rank 14 published article on 2026-07-28."
-    }
-  ,
+    },
     {
       "collection": "Blog Posts",
       "itemName": "Dog Boarding vs Dog Daycare vs Pet Sitter: Which Is Safest for Your Dog?",
@@ -17088,8 +17091,7 @@
       "matchConfidence": 1,
       "needsOwnerReview": false,
       "notes": "Dedicated generated hero image for Rank 15 published article on 2026-07-29."
-    }
-  ,
+    },
     {
       "collection": "Blog Posts",
       "itemName": "Senior Dog Care Costs Canada: Food, Vet Visits, Insurance, Mobility, and End-of-Life Planning",
@@ -17108,8 +17110,7 @@
       "matchConfidence": 1,
       "needsOwnerReview": false,
       "notes": "Dedicated generated hero image for Rank 16 published article on 2026-07-30."
-    }
-  ,
+    },
     {
       "collection": "Blog Posts",
       "itemName": "Dog Adoption Checklist Canada: Rescue Questions, Trial Periods, Fees, and Red Flags",
@@ -17128,6 +17129,25 @@
       "matchConfidence": 1,
       "needsOwnerReview": false,
       "notes": "Dedicated generated hero image for Rank 17 published article on 2026-07-31."
+    },
+    {
+      "collection": "Blog Posts",
+      "itemName": "Best Dog Parks in Toronto: Off-Leash Rules, Fenced Areas, and What To Know Before You Go",
+      "itemSlug": "best-dog-parks-toronto",
+      "fieldName": "Hero Image",
+      "localFilename": "blog-best-dog-parks-toronto-hero.png",
+      "cleanedFilename": "blog-best-dog-parks-toronto-hero.png",
+      "suggestedFilename": "blog-best-dog-parks-toronto-hero.png",
+      "suggestedPublicPath": "/images/blog/blog-best-dog-parks-toronto-hero.png",
+      "publicPath": "/images/blog/blog-best-dog-parks-toronto-hero.png?v=20260801",
+      "publicPathReady": true,
+      "priority": "High",
+      "status": "published",
+      "matchStatus": "Matched",
+      "confidence": 1,
+      "matchConfidence": 1,
+      "needsOwnerReview": false,
+      "notes": "Dedicated generated hero image for Rank 18 published article on 2026-08-01."
     }
   ],
   "unmatchedLocalFiles": [
