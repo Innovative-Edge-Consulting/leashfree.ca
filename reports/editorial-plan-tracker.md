@@ -1,6 +1,6 @@
 # LeashFree.ca Editorial Plan Tracker
 
-Last updated: 2026-08-01
+Last updated: 2026-08-03
 
 Source strategy report: `reports/editorial-backlog-2026-07-11.md`
 
@@ -33,8 +33,8 @@ Statuses:
 
 | Slot | Item | Status | Decision |
 | --- | --- | --- | --- |
-| Next article | Dental Cleaning Costs for Dogs in Canada: What Owners Should Budget For | Backlog | Rank 18 is approved for publication; the next opportunity supports the dog cost calculator and veterinarian directory with a high-intent cost guide. |
-| Next cluster | Cost / vet care | Backlog | Rank 18 is ready to publish; move next to dental cost research with clinic-price caveats and veterinary guidance. |
+| Next article | Dog Gear That Is Worth Buying in Canada, and What To Skip | Backlog | Rank 19 is approved for publication; the next opportunity supports the dog gear finder with a no-hype, use-case-based buying guide. |
+| Next cluster | Gear | Backlog | Rank 19 is ready to publish; move next to evidence-based gear recommendations and Canadian seasonal use cases. |
 | Seasonal backup | Wildfire Smoke and Dogs in Canada: When To Skip the Walk | Backlog | Strong fallback during active smoke periods or AQHI spikes. |
 
 ## Working Board
@@ -59,7 +59,7 @@ Statuses:
 | 16 | Published | 17 | Senior Dog Care Costs Canada: Food, Vet Visits, Insurance, Mobility, and End-of-Life Planning | `senior-dog-care-costs-canada` | Cost / senior care | Dog cost calculator, vet directory | VCA/Merck senior-care guidance, Canadian clinic fee examples, insurance caveats, quality-of-life and end-of-life planning references | Monitor performance and add links from cost and veterinarian surfaces | Published 2026-07-30 with dedicated hero image, cost framework, FAQs, sources, and directory links. |
 | 17 | Published | 17 | Dog Adoption Checklist Canada: Rescue Questions, Trial Periods, Fees, and Red Flags | `dog-adoption-checklist-canada` | Adoption / directory | Animal shelters and rescues directory | Ontario SPCA, Humane Canada, Toronto Humane Society adoption process/questionnaire, 3-3-3 adjustment guidance | Monitor performance and add links from shelter and rescue directory surfaces | Published 2026-07-31 with dedicated hero image, source list, five internal links, FAQ, fee caveats, red-flag checklist, and first-72-hour plan. |
 | 18 | Published | 17 | Best Dog Parks in Toronto: Off-Leash Rules, Fenced Areas, and What To Know Before You Go | `best-dog-parks-toronto` | Local dog parks | Toronto dog parks page and dog park directory | City of Toronto off-leash rules, park-by-park official sources, amenities, seasonal safety, map data | Monitor performance and add links from Toronto directory surfaces | Published 2026-08-01 with dedicated hero image, official source list, park-fit table, inspection checklist, seasonal guidance, FAQ, and internal links to Toronto park and directory pages. |
-| 19 | Backlog | 16 | Dental Cleaning Costs for Dogs in Canada: What Owners Should Budget For | `dog-dental-cleaning-cost-canada` | Cost / vet care | Dog cost calculator, vet directory | Veterinary dental guidance, cost ranges, insurance policy examples | Gather cost evidence | Strong insurance support article. |
+| 19 | Published | 16 | Dental Cleaning Costs for Dogs in Canada: What Owners Should Budget For | `dog-dental-cleaning-cost-canada` | Cost / vet care | Dog cost calculator, vet directory | CVMA, AAHA/VCA dental guidance, Canadian clinic fee examples, insurance policy caveats | Monitor performance and add links from cost and veterinarian surfaces | Published 2026-08-03 with dedicated hero image, cost tables, COHAT explanation, extraction scenarios, insurance caveats, home-care guidance, FAQ, and internal links. |
 | 20 | Backlog | 16 | Dog Gear That Is Worth Buying in Canada, and What To Skip | `dog-gear-worth-buying-canada` | Gear | Dog gear finder | Product/use-case evidence, safety guidance, seasonal examples | Define no-hype recommendation rules | Good for affiliate/sponsor fit later. |
 
 ## Kanban View
@@ -80,6 +80,7 @@ Statuses:
 
 - Senior Dog Care Costs Canada: Food, Vet Visits, Insurance, Mobility, and End-of-Life Planning
 - Rank 18: Best Dog Parks in Toronto: Off-Leash Rules, Fenced Areas, and What To Know Before You Go
+- Rank 19: Dental Cleaning Costs for Dogs in Canada: What Owners Should Budget For
 
 ### Ready To Draft
 
@@ -194,6 +195,8 @@ Use this checklist before marking an article `Ready To Publish`.
 | 2026-08-01 | Narrowed Rank 18 from a four-city series to a Toronto-specific guide because Toronto has the strongest existing directory and related-page coverage; future cities can follow after the format is validated. |
 | 2026-08-01 | Researched and drafted Rank 18 using current City of Toronto off-leash, dog-area, responsible-ownership, parks-etiquette, and Dogs Off-Leash Strategy guidance; added a dedicated generated hero image and build-validated draft. |
 | 2026-08-01 | Published Rank 18 at /blog/best-dog-parks-toronto/ with a dedicated generated hero image; moved Rank 19 to the next backlog focus. |
+| 2026-08-03 | Researched and drafted Rank 19 using CVMA, AAHA, VCA, Ontario SPCA, and Canadian clinic pricing examples; added a dedicated generated hero image, cost framework, source list, and build-validated draft. |
+| 2026-08-03 | Published Rank 19 at /blog/dog-dental-cleaning-cost-canada/ with a dedicated generated hero image; moved Rank 20 to the next backlog focus. |
 | 2026-07-25 | Started drafting Rank 11 at /blog/how-much-exercise-does-my-dog-need/ with breed activity bands, life-stage adjustments, mental enrichment, and Canadian weather guidance; kept it unpublished pending image and final QA. |
 | 2026-07-24 | Published Rank 10 at /blog/best-dog-food-sensitive-stomachs-canada/ with a dedicated generated hero image; moved Rank 11 to the next backlog focus. |
 | 2026-07-24 | Started drafting Rank 10 at /blog/best-dog-food-sensitive-stomachs-canada/ with a vet-first label comparison framework and conservative diet-trial guidance; kept it unpublished pending image and final QA. |

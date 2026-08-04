@@ -17148,6 +17148,25 @@
       "matchConfidence": 1,
       "needsOwnerReview": false,
       "notes": "Dedicated generated hero image for Rank 18 published article on 2026-08-01."
+    },
+    {
+      "collection": "Blog Posts",
+      "itemName": "Dental Cleaning Costs for Dogs in Canada: What Owners Should Budget For",
+      "itemSlug": "dog-dental-cleaning-cost-canada",
+      "fieldName": "Hero Image",
+      "localFilename": "blog-dog-dental-cleaning-cost-canada-hero.png",
+      "cleanedFilename": "blog-dog-dental-cleaning-cost-canada-hero.png",
+      "suggestedFilename": "blog-dog-dental-cleaning-cost-canada-hero.png",
+      "suggestedPublicPath": "/images/blog/blog-dog-dental-cleaning-cost-canada-hero.png",
+      "publicPath": "/images/blog/blog-dog-dental-cleaning-cost-canada-hero.png?v=20260803",
+      "publicPathReady": true,
+      "priority": "High",
+      "status": "published",
+      "matchStatus": "Matched",
+      "confidence": 1,
+      "matchConfidence": 1,
+      "needsOwnerReview": false,
+      "notes": "Dedicated generated hero image for Rank 19 published article on 2026-08-03."
     }
   ],
   "unmatchedLocalFiles": [
