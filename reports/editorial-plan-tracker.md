@@ -1,6 +1,6 @@
 # LeashFree.ca Editorial Plan Tracker
 
-Last updated: 2026-08-03
+Last updated: 2026-08-04
 
 Source strategy report: `reports/editorial-backlog-2026-07-11.md`
 
@@ -33,8 +33,8 @@ Statuses:
 
 | Slot | Item | Status | Decision |
 | --- | --- | --- | --- |
-| Next article | Dog Gear That Is Worth Buying in Canada, and What To Skip | Backlog | Rank 19 is approved for publication; the next opportunity supports the dog gear finder with a no-hype, use-case-based buying guide. |
-| Next cluster | Gear | Backlog | Rank 19 is ready to publish; move next to evidence-based gear recommendations and Canadian seasonal use cases. |
+| Next article | Reprioritize backlog | Proposed | Rank 20 is published and the current 20-item backlog is complete; select the next opportunity during the next editorial re-ranking. |
+| Next cluster | To be re-ranked | Proposed | Review performance and business priorities before adding Rank 21. |
 | Seasonal backup | Wildfire Smoke and Dogs in Canada: When To Skip the Walk | Backlog | Strong fallback during active smoke periods or AQHI spikes. |
 
 ## Working Board
@@ -60,7 +60,7 @@ Statuses:
 | 17 | Published | 17 | Dog Adoption Checklist Canada: Rescue Questions, Trial Periods, Fees, and Red Flags | `dog-adoption-checklist-canada` | Adoption / directory | Animal shelters and rescues directory | Ontario SPCA, Humane Canada, Toronto Humane Society adoption process/questionnaire, 3-3-3 adjustment guidance | Monitor performance and add links from shelter and rescue directory surfaces | Published 2026-07-31 with dedicated hero image, source list, five internal links, FAQ, fee caveats, red-flag checklist, and first-72-hour plan. |
 | 18 | Published | 17 | Best Dog Parks in Toronto: Off-Leash Rules, Fenced Areas, and What To Know Before You Go | `best-dog-parks-toronto` | Local dog parks | Toronto dog parks page and dog park directory | City of Toronto off-leash rules, park-by-park official sources, amenities, seasonal safety, map data | Monitor performance and add links from Toronto directory surfaces | Published 2026-08-01 with dedicated hero image, official source list, park-fit table, inspection checklist, seasonal guidance, FAQ, and internal links to Toronto park and directory pages. |
 | 19 | Published | 16 | Dental Cleaning Costs for Dogs in Canada: What Owners Should Budget For | `dog-dental-cleaning-cost-canada` | Cost / vet care | Dog cost calculator, vet directory | CVMA, AAHA/VCA dental guidance, Canadian clinic fee examples, insurance policy caveats | Monitor performance and add links from cost and veterinarian surfaces | Published 2026-08-03 with dedicated hero image, cost tables, COHAT explanation, extraction scenarios, insurance caveats, home-care guidance, FAQ, and internal links. |
-| 20 | Backlog | 16 | Dog Gear That Is Worth Buying in Canada, and What To Skip | `dog-gear-worth-buying-canada` | Gear | Dog gear finder | Product/use-case evidence, safety guidance, seasonal examples | Define no-hype recommendation rules | Good for affiliate/sponsor fit later. |
+| 20 | Published | 16 | Dog Gear That Is Worth Buying in Canada, and What To Skip | `dog-gear-worth-buying-canada` | Gear | Dog gear finder | VCA collar/harness guidance, AVMA travel guidance, Canadian winter guidance, heat-safety guidance | Monitor performance and add links from gear finder surfaces | Published 2026-08-04 with dedicated hero image, buy-first table, travel and seasonal guidance, fit checklist, skip/avoid list, FAQ, and internal links. |
 
 ## Kanban View
 
@@ -197,6 +197,8 @@ Use this checklist before marking an article `Ready To Publish`.
 | 2026-08-01 | Published Rank 18 at /blog/best-dog-parks-toronto/ with a dedicated generated hero image; moved Rank 19 to the next backlog focus. |
 | 2026-08-03 | Researched and drafted Rank 19 using CVMA, AAHA, VCA, Ontario SPCA, and Canadian clinic pricing examples; added a dedicated generated hero image, cost framework, source list, and build-validated draft. |
 | 2026-08-03 | Published Rank 19 at /blog/dog-dental-cleaning-cost-canada/ with a dedicated generated hero image; moved Rank 20 to the next backlog focus. |
+| 2026-08-04 | Researched and drafted Rank 20 using VCA collar/harness guidance, AVMA travel guidance, Government of Canada winter guidance, and heat-safety guidance; added a dedicated generated hero image and build-validated draft. |
+| 2026-08-04 | Published Rank 20 at /blog/dog-gear-worth-buying-canada/ with a dedicated generated hero image; the original 20-item backlog is now complete and requires re-ranking before Rank 21. |
 | 2026-07-25 | Started drafting Rank 11 at /blog/how-much-exercise-does-my-dog-need/ with breed activity bands, life-stage adjustments, mental enrichment, and Canadian weather guidance; kept it unpublished pending image and final QA. |
 | 2026-07-24 | Published Rank 10 at /blog/best-dog-food-sensitive-stomachs-canada/ with a dedicated generated hero image; moved Rank 11 to the next backlog focus. |
 | 2026-07-24 | Started drafting Rank 10 at /blog/best-dog-food-sensitive-stomachs-canada/ with a vet-first label comparison framework and conservative diet-trial guidance; kept it unpublished pending image and final QA. |
