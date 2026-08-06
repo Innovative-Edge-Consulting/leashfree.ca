@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T17:39:06.383Z",
+  "generatedAt": "2026-08-06T12:14:56.466Z",
   "images": {
     "/images/blog/blog-average-vet-costs-in-canada-hero.jpg": {
       "width": 702,
@@ -29957,6 +29957,482 @@
           {
             "width": 1600,
             "src": "/images/optimized/dog-parks/wellington-off-leash-area-original/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/jinkerson-dog-park-original.png": {
+      "width": 1536,
+      "height": 1024,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/jinkerson-dog-park-original/960.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/jinkerson-dog-park-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/jinkerson-dog-park-original/960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/jinkerson-dog-park-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/jinkerson-dog-park-original/960.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/jinkerson-dog-park-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/jinkerson-dog-park-original/960.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/silverwood-dog-park-original.png": {
+      "width": 1536,
+      "height": 1024,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/silverwood-dog-park-original/960.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/silverwood-dog-park-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/silverwood-dog-park-original/960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/silverwood-dog-park-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/silverwood-dog-park-original/960.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/silverwood-dog-park-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/silverwood-dog-park-original/960.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/caswell-mayfair-dog-park-original.png": {
+      "width": 1717,
+      "height": 916,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/caswell-mayfair-dog-park-original/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/caswell-mayfair-dog-park-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/caswell-mayfair-dog-park-original/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/caswell-mayfair-dog-park-original/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/caswell-mayfair-dog-park-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/caswell-mayfair-dog-park-original/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/caswell-mayfair-dog-park-original/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/caswell-mayfair-dog-park-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/caswell-mayfair-dog-park-original/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/caswell-mayfair-dog-park-original/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/charleswood-dog-park-original.png": {
+      "width": 1727,
+      "height": 911,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/charleswood-dog-park-original/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/charleswood-dog-park-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/charleswood-dog-park-original/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/charleswood-dog-park-original/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/charleswood-dog-park-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/charleswood-dog-park-original/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/charleswood-dog-park-original/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/charleswood-dog-park-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/charleswood-dog-park-original/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/charleswood-dog-park-original/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/dawson-park-off-leash-area-original.png": {
+      "width": 1779,
+      "height": 884,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/dawson-park-off-leash-area-original/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/dawson-park-off-leash-area-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/dawson-park-off-leash-area-original/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/dawson-park-off-leash-area-original/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/dawson-park-off-leash-area-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/dawson-park-off-leash-area-original/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/dawson-park-off-leash-area-original/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/dawson-park-off-leash-area-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/dawson-park-off-leash-area-original/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/dawson-park-off-leash-area-original/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/gold-bar-park-off-leash-area-original.png": {
+      "width": 1983,
+      "height": 793,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/gold-bar-park-off-leash-area-original/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/gold-bar-park-off-leash-area-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/gold-bar-park-off-leash-area-original/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/gold-bar-park-off-leash-area-original/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/gold-bar-park-off-leash-area-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/gold-bar-park-off-leash-area-original/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/gold-bar-park-off-leash-area-original/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/gold-bar-park-off-leash-area-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/gold-bar-park-off-leash-area-original/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/gold-bar-park-off-leash-area-original/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/morgan-crossing-dog-park-original.png": {
+      "width": 1814,
+      "height": 867,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/morgan-crossing-dog-park-original/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/morgan-crossing-dog-park-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/morgan-crossing-dog-park-original/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/morgan-crossing-dog-park-original/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/morgan-crossing-dog-park-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/morgan-crossing-dog-park-original/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/morgan-crossing-dog-park-original/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/morgan-crossing-dog-park-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/morgan-crossing-dog-park-original/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/morgan-crossing-dog-park-original/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/peach-park-chilliwack-original.png": {
+      "width": 1746,
+      "height": 901,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/peach-park-chilliwack-original/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/peach-park-chilliwack-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/peach-park-chilliwack-original/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/peach-park-chilliwack-original/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/peach-park-chilliwack-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/peach-park-chilliwack-original/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/peach-park-chilliwack-original/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/peach-park-chilliwack-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/peach-park-chilliwack-original/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/peach-park-chilliwack-original/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/queens-park-new-westminster-original.png": {
+      "width": 1805,
+      "height": 871,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/queens-park-new-westminster-original/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/queens-park-new-westminster-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/queens-park-new-westminster-original/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/queens-park-new-westminster-original/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/queens-park-new-westminster-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/queens-park-new-westminster-original/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/queens-park-new-westminster-original/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/queens-park-new-westminster-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/queens-park-new-westminster-original/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/queens-park-new-westminster-original/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/beckett-park-maple-ridge-original.png": {
+      "width": 1881,
+      "height": 836,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/beckett-park-maple-ridge-original/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/beckett-park-maple-ridge-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/beckett-park-maple-ridge-original/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/beckett-park-maple-ridge-original/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/beckett-park-maple-ridge-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/beckett-park-maple-ridge-original/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/beckett-park-maple-ridge-original/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/beckett-park-maple-ridge-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/beckett-park-maple-ridge-original/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/beckett-park-maple-ridge-original/1600.jpg"
           }
         ]
       }
