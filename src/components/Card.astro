@@ -7,10 +7,13 @@ interface Props {
   image?: string;
   imageAlt?: string;
   imagePosition?: string;
+  imageLabel?: string;
+  imageFallback?: boolean;
   meta?: string;
   badges?: string[];
   ctaLabel?: string;
   showCta?: boolean;
+  className?: string;
 }
 
 import { cleanText } from "../utils/content.js";
@@ -22,10 +25,13 @@ const {
   image,
   imageAlt = "",
   imagePosition,
+  imageLabel,
+  imageFallback = false,
   meta,
   badges = [],
   ctaLabel = "View details",
-  showCta = true
+  showCta = true,
+  className = ""
 } = Astro.props;
 
 const cleanTitle = cleanText(title);
@@ -33,19 +39,23 @@ const cleanImageAlt = cleanText(imageAlt);
 const cleanBadges = badges.map((badge) => cleanText(badge)).filter(Boolean);
 ---
 
-<article class="card">
+<article class:list={["card", className]}>
   {image && (
-    <OptimizedImage
-      class="card-media"
-      style={imagePosition ? `object-position: ${imagePosition};` : undefined}
-      src={image}
-      alt={cleanImageAlt}
-      maxWidth={800}
-      loading="lazy"
-      decoding="async"
-      sizes="(min-width: 1200px) 360px, (min-width: 720px) 50vw, 100vw"
-    />
+    <div class="card-media-wrap">
+      <OptimizedImage
+        class="card-media"
+        style={imagePosition ? `object-position: ${imagePosition};` : undefined}
+        src={image}
+        alt={cleanImageAlt}
+        maxWidth={800}
+        loading="lazy"
+        decoding="async"
+        sizes="(min-width: 1200px) 360px, (min-width: 720px) 50vw, 100vw"
+      />
+      {imageLabel && <span class="card-image-label">{imageLabel}</span>}
+    </div>
   )}
+  {!image && imageFallback && <div class="card-media-placeholder" aria-hidden="true"><span>LeashFree</span></div>}
   <div class="card-body">
     {cleanBadges.length > 0 && <div class="badges">{cleanBadges.map((badge) => <span class="badge">{badge}</span>)}</div>}
     {meta && <p class="small">{meta}</p>}

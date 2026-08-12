@@ -15,6 +15,7 @@ interface Props {
 }
 
 const location = mapLocation(Astro.props);
+const destination = [Astro.props.address, Astro.props.city, Astro.props.province, Astro.props.postalCode].filter(Boolean).join(", ");
 ---
 
 {location && (
@@ -23,10 +24,12 @@ const location = mapLocation(Astro.props);
       <div class="map-copy-main">
         <h2>{Astro.props.title}</h2>
         <p>{Astro.props.intro}</p>
+        {destination && <p class="map-panel-address"><strong>{destination}</strong></p>}
       </div>
       <div class="button-row compact-row map-panel-actions">
         <a class="button primary" href={location.directionsUrl} target="_blank" rel="noopener noreferrer">Directions</a>
         <a class="button secondary" href={location.searchUrl} target="_blank" rel="noopener noreferrer">Open map</a>
+        <button class="button secondary use-location-button" type="button" data-destination={destination}>Use my location</button>
       </div>
     </div>
     <iframe
@@ -39,3 +42,26 @@ const location = mapLocation(Astro.props);
     ></iframe>
   </div>
 )}
+
+<script>
+  document.querySelectorAll(".use-location-button").forEach((element) => {
+    element.addEventListener("click", () => {
+      if (!(element instanceof HTMLButtonElement) || !navigator.geolocation) return;
+      const originalLabel = element.textContent;
+      element.textContent = "Finding you…";
+      navigator.geolocation.getCurrentPosition(
+        ({ coords }) => {
+          const origin = `${coords.latitude},${coords.longitude}`;
+          const destination = element.dataset.destination || "";
+          window.open(`https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(origin)}&destination=${encodeURIComponent(destination)}`, "_blank", "noopener,noreferrer");
+          element.textContent = originalLabel;
+        },
+        () => {
+          element.textContent = "Location unavailable";
+          window.setTimeout(() => { element.textContent = originalLabel; }, 2200);
+        },
+        { enableHighAccuracy: false, timeout: 8000 }
+      );
+    });
+  });
+</script>

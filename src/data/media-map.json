@@ -17167,8 +17167,7 @@
       "matchConfidence": 1,
       "needsOwnerReview": false,
       "notes": "Dedicated generated hero image for Rank 19 published article on 2026-08-03."
-    }
-  ,
+    },
     {
       "collection": "Blog Posts",
       "itemName": "Dog Gear That Is Worth Buying in Canada, and What To Skip",
@@ -17187,6 +17186,25 @@
       "matchConfidence": 1,
       "needsOwnerReview": false,
       "notes": "Dedicated generated hero image for Rank 20 published article on 2026-08-04."
+    },
+    {
+      "collection": "Blog Posts",
+      "itemName": "How To Stop Your Dog From Pulling on Walks: A Humane Training Plan by Age",
+      "itemSlug": "stop-dog-pulling-on-walks",
+      "fieldName": "Hero Image",
+      "localFilename": "blog-stop-dog-pulling-on-walks-hero.png",
+      "cleanedFilename": "blog-stop-dog-pulling-on-walks-hero.png",
+      "suggestedFilename": "blog-stop-dog-pulling-on-walks-hero.png",
+      "suggestedPublicPath": "/images/blog/blog-stop-dog-pulling-on-walks-hero.png",
+      "publicPath": "/images/blog/blog-stop-dog-pulling-on-walks-hero.png?v=20260806",
+      "publicPathReady": true,
+      "priority": "High",
+      "status": "published",
+      "matchStatus": "Matched",
+      "confidence": 1,
+      "matchConfidence": 1,
+      "needsOwnerReview": false,
+      "notes": "Dedicated generated hero image for Rank 21 published article on 2026-08-06."
     }
   ],
   "unmatchedLocalFiles": [

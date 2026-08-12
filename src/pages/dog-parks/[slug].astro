@@ -90,6 +90,12 @@ const enhancedProvinceConfig = {
 const enhancedProvince = isProvince ? enhancedProvinceConfig[primary.slug] : null;
 const resolvedImage = resolveMedia(primary, undefined, mediaMap);
 const cityCardImage = (cityItem) => originalCityHeroImages[cityItem.slug] || resolveMedia(cityItem, "Hero Image", mediaMap).src;
+const parkCardImage = (parkItem) => {
+  if (originalParkHeroImages[parkItem.slug]) return originalParkHeroImages[parkItem.slug];
+
+  const parkHero = resolveMedia(parkItem, "Hero Image", mediaMap);
+  return parkHero.status === "mapped" || parkHero.status === "embedded" ? parkHero.src : undefined;
+};
 const city = isPark ? findByName(cities, primary.raw.City) : null;
 const parkFallsBackToDefault = isPark && typeof resolvedImage.status === "string" && resolvedImage.status.startsWith("defaulted");
 const parkCityImage = isPark && city?.slug ? originalCityHeroImages[city.slug] : null;
@@ -162,6 +168,12 @@ const matchesProvinceRecord = (value, provinceItem) =>
 const cityParks = isCity
   ? activeParks.filter((park) => slugify(park.raw.City) === slugify(primary.name)).slice(0, 120)
   : [];
+const cityFeaturedPark = isCity && cityParks.length >= 3
+  ? cityParks.find((park) => Boolean(parkCardImage(park))) || cityParks[0]
+  : null;
+const cityStandardParks = cityFeaturedPark
+  ? cityParks.filter((park) => park.slug !== cityFeaturedPark.slug)
+  : cityParks;
 const cityIntentCounts = isCity
   ? {
       fenced: cityParks.filter((park) => isAffirmative(park.raw.Fenced)).length,
@@ -350,6 +362,14 @@ const atAGlanceItems = isPark
       { label: "Hours", value: fieldText("Operating hours") || "Check posted signs" },
       { label: "Surface", value: fieldText("Surface type") || "Not listed" }
     ]
+  : [];
+const heroHighlights = isPark
+  ? [
+      isAffirmative(primary.raw.Fenced) ? "Fenced" : "",
+      isAffirmative(primary.raw["Separate Small Dog Area"]) ? "Small-dog area" : "",
+      isAffirmative(primary.raw["Water source available"]) ? "Water available" : "",
+      isAffirmative(primary.raw["Parking Available"]) ? "Parking available" : ""
+    ].filter(Boolean).slice(0, 4)
   : [];
 const amenityIcons = {
   fence: "M4 6h16M4 12h16M4 18h16M8 4v16M16 4v16",
@@ -542,7 +562,18 @@ const structuredData = [
         <div class="eyebrow">{isPark ? "Dog park" : isCity ? "City guide" : "Province guide"}</div>
         <h1>{enhancedProvince ? `${enhancedProvince.shortName} dog parks` : isCity ? `${primaryName} dog parks` : cleanText(primary.title || primary.name)}</h1>
         <p class="summary">{excerpt(description)}</p>
-        {freshnessText && <p class="summary">{freshnessText}</p>}
+        {isPark && (fieldText("Street Address") || heroHighlights.length > 0) && (
+          <div class="hero-park-facts" aria-label="Park highlights">
+            {fieldText("Street Address") && <span class="hero-address"><span aria-hidden="true">●</span>{fieldText("Street Address")}</span>}
+            {heroHighlights.map((highlight) => <span>{highlight}</span>)}
+          </div>
+        )}
+        {(freshnessText || sourceUrl) && (
+          <div class="park-trust-row">
+            {freshnessText && <span>{updatedAt ? `Information reviewed ${formatDisplayDate(updatedAt)}` : freshnessText}</span>}
+            {sourceUrl && <a href={sourceUrl} target="_blank" rel="noreferrer">Municipal or official source ↗</a>}
+          </div>
+        )}
         <div class="button-row">
           {isPark ? (
             <a class="button primary" href="#park-map">Map and directions</a>
@@ -569,7 +600,7 @@ const structuredData = [
   )}
 
   {isPark && (
-    <Section title="Park details">
+    <Section eyebrow="Know before you go" title="Park details">
       <div class="split park-details-layout">
         <div class="park-details-main">
           <section class="park-at-a-glance" aria-labelledby="park-at-a-glance-title">
@@ -667,7 +698,7 @@ const structuredData = [
   )}
 
   {isPark && (
-    <Section tight id="park-map">
+    <Section eyebrow="Plan your visit" tight id="park-map">
       <MapPanel
         title="Map and directions"
         intro={`Use the map to confirm the location for ${primaryName}, then open directions in your device map before you leave.`}
@@ -684,7 +715,7 @@ const structuredData = [
   )}
 
   {isPark && (
-    <Section tight>
+    <Section eyebrow="Good to know" tight>
       <div class="card park-profile-summary">
         <div class="card-body">
           <h2>Park profile</h2>
@@ -711,12 +742,17 @@ const structuredData = [
   )}
 
   {isPark && relatedParks.length > 0 && (
-    <Section title={`Related parks in ${cityName}`} intro="Parks with similar amenities in the same city.">
-      <div class="grid">
+    <Section eyebrow="More local options" title={`Related parks in ${cityName}`} intro="Parks with similar amenities in the same city.">
+      <div class="grid park-card-grid">
         {relatedParks.map(({ park }) => (
           <Card
+            className="park-card"
             title={park.name}
             href={`/dog-parks/${park.slug}/`}
+            image={parkCardImage(park)}
+            imageFallback
+            imageLabel={isAffirmative(park.raw.Fenced) ? "Fenced" : undefined}
+            imageAlt={`${cleanText(park.name)} dog park`}
             description={excerpt(park.description, park.raw["Street Address"])}
             badges={parkFeatureBadges(park)}
             ctaLabel="View park"
@@ -727,7 +763,7 @@ const structuredData = [
   )}
 
   {isPark && parkFaqEntries.length > 0 && (
-    <Section title={`FAQs about ${primaryName}`} intro="Common questions and answers for this park.">
+    <Section eyebrow="Quick answers" title={`FAQs about ${primaryName}`} intro="Common questions and answers for this park.">
       <div class="card">
         <div class="card-body faq-accordion">
           {parkFaqEntries.map((item) => (
@@ -742,12 +778,17 @@ const structuredData = [
   )}
 
   {isPark && nearbyParks.length > 0 && (
-    <Section title="Nearby parks" intro="Closest off-leash parks by map distance.">
-      <div class="grid">
+    <Section eyebrow="Keep exploring" title="Nearby parks" intro="Closest off-leash parks by map distance.">
+      <div class="grid park-card-grid">
         {nearbyParks.map(({ park, distance }) => (
           <Card
+            className="park-card"
             title={park.name}
             href={`/dog-parks/${park.slug}/`}
+            image={parkCardImage(park)}
+            imageFallback
+            imageLabel={`${distance.toFixed(1)} km away`}
+            imageAlt={`${cleanText(park.name)} dog park`}
             description={excerpt(park.description, park.raw["Street Address"])}
             badges={parkFeatureBadges(park, { includeCity: true, includeDistance: distance })}
             ctaLabel="View park"
@@ -759,7 +800,7 @@ const structuredData = [
 
   {isCity && (
     <>
-      <Section title="City dog park guidance" alt>
+      <Section eyebrow="Local guide" title="City dog park guidance" alt>
         <ContentBlock html={primary.body || primary.raw["About Section"] || primary.raw["Intro Paragraph"]} />
         {primary.raw["Park Rules"] && <ContentBlock html={primary.raw["Park Rules"]} />}
         {primary.raw["Seasonal Tips"] && <ContentBlock html={primary.raw["Seasonal Tips"]} />}
@@ -770,7 +811,7 @@ const structuredData = [
         </Section>
       )}
       {primary.raw["Dog Park FAQs"] && (
-        <Section title={`FAQs about dog parks in ${primaryName}`} alt>
+        <Section eyebrow="Quick answers" title={`FAQs about dog parks in ${primaryName}`} alt>
           <div class="card">
             <div class="card-body faq-accordion">
               {parseFaqHtml(primary.raw["Dog Park FAQs"]).map((item) => (
@@ -789,30 +830,61 @@ const structuredData = [
       >
         <DogParkSearch initialProvince={provinceName} initialCity={primaryName} />
       </Section>
-      <Section title={`Dog parks in ${primaryName}`} intro={`${cityParks.length} park records currently match this city.`}>
+      <Section eyebrow="Explore nearby" title={`Dog parks in ${primaryName}`} intro={`${cityParks.length} park records currently match this city.`}>
         {cityParks.length > 0 ? (
-          <div class="grid">
-            {cityParks.map((park) => (
+          <div class="city-park-listing">
+            {cityFeaturedPark && (
+              <div class="featured-park">
+                <div class="featured-park-heading"><span>Featured park</span><p>A well-documented place to start exploring {primaryName}.</p></div>
+                <Card
+                  className="park-card park-card-featured"
+                  title={cityFeaturedPark.name}
+                  href={`/dog-parks/${cityFeaturedPark.slug}/`}
+                  image={parkCardImage(cityFeaturedPark)}
+                  imageFallback
+                  imageLabel={isAffirmative(cityFeaturedPark.raw.Fenced) ? "Fenced park" : "Local pick"}
+                  imageAlt={`${cleanText(cityFeaturedPark.name)} dog park`}
+                  description={excerpt(cityFeaturedPark.description, cityFeaturedPark.raw["Street Address"])}
+                  meta={cleanText(cityFeaturedPark.raw["Street Address"])}
+                  badges={parkFeatureBadges(cityFeaturedPark).slice(0, 3)}
+                  ctaLabel="Explore this park"
+                />
+              </div>
+            )}
+            <div class="grid park-card-grid">
+            {cityStandardParks.map((park) => (
               <Card
+                className="park-card"
                 title={park.name}
                 href={`/dog-parks/${park.slug}/`}
+                image={parkCardImage(park)}
+                imageFallback
+                imageLabel={isAffirmative(park.raw.Fenced) ? "Fenced" : undefined}
+                imageAlt={`${cleanText(park.name)} dog park`}
                 description={excerpt(park.description, park.raw["Street Address"])}
-                badges={parkFeatureBadges(park)}
+                meta={cleanText(park.raw["Street Address"])}
+                badges={parkFeatureBadges(park).slice(0, 3)}
                 ctaLabel="View park"
               />
             ))}
+            </div>
           </div>
         ) : (
           <EmptyState text="No park records currently match this city." />
         )}
       </Section>
       {cityFilteredGroups.map((group) => (
-        <Section title={group.title} intro={`${group.parks.length} matching parks.`} alt id={group.key}>
-          <div class="grid">
+        <Section eyebrow="Browse by feature" title={group.title} intro={`${group.parks.length} matching parks.`} alt id={group.key}>
+          <div class="grid park-card-grid">
             {group.parks.map((park) => (
               <Card
+                className="park-card"
                 title={park.name}
                 href={`/dog-parks/${park.slug}/`}
+                image={parkCardImage(park)}
+                imageFallback
+                imageLabel={isAffirmative(park.raw.Fenced) ? "Fenced" : undefined}
+                imageAlt={`${cleanText(park.name)} dog park`}
                 description={excerpt(park.description, park.raw["Street Address"])}
                 badges={[
                   cleanText(park.raw["Street Address"]) || "",
@@ -897,11 +969,15 @@ const structuredData = [
 
           {provinceFeatureGroups.map((group) => (
             <Section title={group.title} intro={group.intro}>
-              <div class="grid compact">
+              <div class="grid compact park-card-grid">
                 {group.parks.map((park) => (
                   <Card
+                    className="park-card"
                     title={park.name}
                     href={`/dog-parks/${park.slug}/`}
+                    image={parkCardImage(park)}
+                    imageFallback
+                    imageAlt={`${cleanText(park.name)} dog park`}
                     description={excerpt(park.description, park.raw["Street Address"])}
                     meta={[park.raw.City, park.raw["Street Address"]].filter(Boolean).join(" - ")}
                     ctaLabel="View park"
@@ -928,11 +1004,15 @@ const structuredData = [
         </div>
       </Section>
       <Section title={`Dog parks in ${primary.name}`} intro={`${provinceParks.length} park records currently match this province.`} alt>
-        <div class="grid">
+        <div class="grid park-card-grid">
           {provinceParks.map((park) => (
             <Card
+              className="park-card"
               title={park.name}
               href={`/dog-parks/${park.slug}/`}
+              image={parkCardImage(park)}
+              imageFallback
+              imageAlt={`${cleanText(park.name)} dog park`}
               description={excerpt(park.description, park.raw["Street Address"])}
               meta={park.raw.City}
               ctaLabel="View park"
@@ -943,7 +1023,7 @@ const structuredData = [
     </>
   )}
 
-  <Section title="Before you visit" tight>
+  <Section eyebrow="Final check" title="Before you visit" tight>
     <div class="card">
       <div class="card-body">
         {isPark ? (
@@ -964,6 +1044,95 @@ const structuredData = [
 </Layout>
 
 <style>
+  .hero-park-facts,
+  .park-trust-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    align-items: center;
+  }
+
+  .hero-park-facts {
+    margin-top: var(--space-4);
+  }
+
+  .hero-park-facts > span {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    background: var(--color-surface);
+    padding: 0.38rem 0.72rem;
+    color: var(--color-primary-dark);
+    font-size: 0.84rem;
+    font-weight: 800;
+  }
+
+  .hero-park-facts .hero-address {
+    display: inline-flex;
+    gap: 0.45rem;
+    align-items: center;
+    background: var(--color-primary-soft);
+  }
+
+  .hero-address > span {
+    color: var(--color-primary);
+    font-size: 0.58rem;
+  }
+
+  .park-trust-row {
+    margin-top: var(--space-3);
+    color: var(--color-muted);
+    font-size: 0.86rem;
+  }
+
+  .park-trust-row > * + *::before {
+    margin-right: var(--space-2);
+    color: var(--color-border);
+    content: "•";
+  }
+
+  .city-park-listing {
+    display: grid;
+    gap: var(--space-6);
+    margin-top: var(--space-5);
+  }
+
+  .city-park-listing > .park-card-grid {
+    margin-top: 0;
+  }
+
+  .featured-park {
+    display: grid;
+    grid-template-columns: minmax(180px, 0.42fr) minmax(0, 1.58fr);
+    gap: var(--space-5);
+    align-items: center;
+    border-radius: calc(var(--radius-card) + 4px);
+    background: linear-gradient(135deg, var(--color-primary-soft), transparent 72%);
+    padding: var(--space-5);
+  }
+
+  .featured-park-heading span {
+    color: var(--color-primary-dark);
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .featured-park-heading p {
+    max-width: 24ch;
+    margin: var(--space-2) 0 0;
+    color: var(--color-muted);
+  }
+
+  .park-card-featured :global(.card-media),
+  .park-card-featured :global(.card-media-placeholder) {
+    aspect-ratio: 2 / 1;
+  }
+
+  .park-card-featured :global(.card-body) {
+    min-height: 220px;
+  }
+
   .park-at-a-glance {
     border: 1px solid var(--color-border);
     border-radius: var(--radius-card);
@@ -1017,22 +1186,74 @@ const structuredData = [
 
   .faq-accordion {
     display: grid;
-    gap: 0.65rem;
+    gap: var(--space-3);
+    background: linear-gradient(145deg, var(--color-surface), var(--color-surface-alt));
   }
 
   .faq-item {
-    border: 1px solid var(--border, #d7dbe4);
-    border-radius: 8px;
-    background: var(--surface, #fff);
-    padding: 0.4rem 0.75rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+    background: var(--color-surface);
+    box-shadow: 0 2px 8px rgba(25, 62, 45, 0.04);
+    overflow: hidden;
+    transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+  }
+
+  .faq-item:hover {
+    border-color: color-mix(in srgb, var(--color-primary) 40%, var(--color-border));
+    transform: translateY(-1px);
+  }
+
+  .faq-item[open] {
+    border-color: color-mix(in srgb, var(--color-primary) 60%, var(--color-border));
+    box-shadow: 0 10px 28px rgba(25, 62, 45, 0.1);
   }
 
   .faq-item summary {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 2rem;
+    gap: var(--space-4);
+    align-items: center;
     cursor: pointer;
-    font-weight: 600;
-    line-height: 1.45;
+    padding: 1rem 1.1rem;
+    color: var(--color-text);
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.4;
     list-style: none;
-    padding: 0.35rem 0;
+    transition: background-color 180ms ease, color 180ms ease;
+  }
+
+  .faq-item summary::after {
+    display: grid;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    place-items: center;
+    background: var(--color-primary-soft);
+    color: var(--color-primary-dark);
+    content: "+";
+    font-size: 1.35rem;
+    font-weight: 500;
+    line-height: 1;
+    transition: transform 180ms ease, background-color 180ms ease, color 180ms ease;
+  }
+
+  .faq-item[open] summary {
+    background: var(--color-primary-soft);
+    color: var(--color-primary-dark);
+  }
+
+  .faq-item[open] summary::after {
+    background: var(--color-primary);
+    color: white;
+    content: "−";
+    transform: rotate(180deg);
+  }
+
+  .faq-item summary:focus-visible {
+    outline: 3px solid color-mix(in srgb, var(--color-primary) 38%, transparent);
+    outline-offset: -3px;
   }
 
   .faq-item summary::-webkit-details-marker {
@@ -1040,8 +1261,25 @@ const structuredData = [
   }
 
   .faq-item p {
-    margin: 0 0 0.35rem;
-    color: var(--muted);
-    line-height: 1.65;
+    max-width: 76ch;
+    margin: 0;
+    padding: 0.2rem 1.1rem 1.15rem;
+    color: var(--color-muted);
+    line-height: 1.7;
+  }
+
+  @media (max-width: 720px) {
+    .featured-park {
+      grid-template-columns: 1fr;
+      padding: var(--space-4);
+    }
+
+    .featured-park-heading p {
+      max-width: none;
+    }
+
+    .park-trust-row > * + *::before {
+      content: none;
+    }
   }
 </style>
