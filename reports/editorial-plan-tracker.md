@@ -1,6 +1,6 @@
 # LeashFree.ca Editorial Plan Tracker
 
-Last updated: 2026-08-06
+Last updated: 2026-08-12
 
 Source strategy report: `reports/editorial-backlog-2026-07-11.md`
 
@@ -33,8 +33,8 @@ Statuses:
 
 | Slot | Item | Status | Decision |
 | --- | --- | --- | --- |
-| Next article | Reprioritize backlog | Proposed | Rank 21 is published; select the next opportunity after reviewing performance, seasonal demand, and business priorities. |
-| Next cluster | To be re-ranked | Proposed | The current backlog should be refreshed before selecting Rank 22. |
+| Next article | Reprioritize backlog | Proposed | Rank 22 is published; select the next opportunity after reviewing seasonal demand, business destinations, and the refreshed backlog. |
+| Next cluster | To be re-ranked | Proposed | Re-rank the next outdoor-safety, behaviour, care-service, and local-discovery opportunities before Rank 23. |
 | Seasonal backup | Wildfire Smoke and Dogs in Canada: When To Skip the Walk | Backlog | Strong fallback during active smoke periods or AQHI spikes. |
 
 ## Working Board
@@ -62,6 +62,7 @@ Statuses:
 | 19 | Published | 16 | Dental Cleaning Costs for Dogs in Canada: What Owners Should Budget For | `dog-dental-cleaning-cost-canada` | Cost / vet care | Dog cost calculator, vet directory | CVMA, AAHA/VCA dental guidance, Canadian clinic fee examples, insurance policy caveats | Monitor performance and add links from cost and veterinarian surfaces | Published 2026-08-03 with dedicated hero image, cost tables, COHAT explanation, extraction scenarios, insurance caveats, home-care guidance, FAQ, and internal links. |
 | 20 | Published | 16 | Dog Gear That Is Worth Buying in Canada, and What To Skip | `dog-gear-worth-buying-canada` | Gear | Dog gear finder | VCA collar/harness guidance, AVMA travel guidance, Canadian winter guidance, heat-safety guidance | Monitor performance and add links from gear finder surfaces | Published 2026-08-04 with dedicated hero image, buy-first table, travel and seasonal guidance, fit checklist, skip/avoid list, FAQ, and internal links. |
 | 21 | Published | 16 | How To Stop Your Dog From Pulling on Walks: A Humane Training Plan by Age | `stop-dog-pulling-on-walks` | Training / behaviour | Trainer directory, dog gear finder | VCA loose-leash guidance, AVSAB humane-training position, puppy/adolescent expectations, senior pain and behaviour guidance | Monitor performance and add links from trainer and gear surfaces | Published 2026-08-06 with dedicated hero image, age expectations table, 10-minute practice session, trigger-management guidance, humane equipment boundaries, FAQ, and internal links. |
+| 22 | Published | 18 | What To Do If Your Dog Is Stung by a Bee or Wasp in Canada | `dog-bee-wasp-sting-first-aid-canada` | Outdoor safety / urgent care | Veterinarian directory, emergency-vet guide, dog gear finder | Pet Poison Helpline sting guidance, VCA anaphylaxis and insect-reaction guidance, Ontario SPCA summer safety, conservative medication and emergency-care caveats | Monitor performance and add links from veterinarian and emergency-care surfaces | Published at /blog/dog-bee-wasp-sting-first-aid-canada/ on 2026-08-12 with dedicated hero image, emergency decision table, five source links, internal links, and IndexNow submission. |
 
 ## Kanban View
 
@@ -70,6 +71,8 @@ Statuses:
 - None
 
 ### In Research
+
+- None
 
 - None
 
@@ -203,6 +206,9 @@ Use this checklist before marking an article `Ready To Publish`.
 | 2026-08-06 | Added Rank 21 after re-ranking: researched and began drafting an age-aware, reward-based loose-leash training guide using VCA and AVSAB guidance; kept it unpublished pending image and QA. |
 | 2026-08-06 | Completed Rank 21 draft with dedicated generated hero image, age expectations table, humane training plan, FAQ, source list, and build validation; awaiting approval. |
 | 2026-08-06 | Published Rank 21 at /blog/stop-dog-pulling-on-walks/ with a dedicated generated hero image; refresh the backlog before selecting Rank 22. |
+| 2026-08-12 | Re-ranked the post-20 backlog and proposed Rank 22, a source-backed August outdoor-safety guide for bee and wasp stings with a veterinarian-directory destination. |
+| 2026-08-12 | Started research and drafted Rank 22 with five high-trust sources, emergency decision table, conservative medication guidance, internal links, and a dedicated hero image; pending build QA and publication approval. |
+| 2026-08-12 | Published Rank 22 at /blog/dog-bee-wasp-sting-first-aid-canada/ with a dedicated generated hero image; production deploy succeeded and IndexNow returned HTTP 200. Re-rank the backlog before selecting Rank 23. |
 | 2026-07-25 | Started drafting Rank 11 at /blog/how-much-exercise-does-my-dog-need/ with breed activity bands, life-stage adjustments, mental enrichment, and Canadian weather guidance; kept it unpublished pending image and final QA. |
 | 2026-07-24 | Published Rank 10 at /blog/best-dog-food-sensitive-stomachs-canada/ with a dedicated generated hero image; moved Rank 11 to the next backlog focus. |
 | 2026-07-24 | Started drafting Rank 10 at /blog/best-dog-food-sensitive-stomachs-canada/ with a vet-first label comparison framework and conservative diet-trial guidance; kept it unpublished pending image and final QA. |
