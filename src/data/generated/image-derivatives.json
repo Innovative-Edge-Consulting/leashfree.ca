@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T02:04:07.310Z",
+  "generatedAt": "2026-08-14T02:46:10.350Z",
   "images": {
     "/images/blog/blog-average-vet-costs-in-canada-hero.jpg": {
       "width": 702,
@@ -8336,99 +8336,51 @@
       }
     },
     "/images/cities/city-ajax-hero.png": {
-      "width": 899,
-      "height": 561,
-      "fallbackFormat": "png",
-      "fallbackSrc": "/images/optimized/cities/city-ajax-hero/899.png",
+      "width": 1693,
+      "height": 929,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/cities/city-ajax-hero/1600.jpg",
       "variants": {
         "avif": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-ajax-hero/160.avif"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-ajax-hero/240.avif"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-ajax-hero/320.avif"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-ajax-hero/480.avif"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-ajax-hero/640.avif"
+            "width": 960,
+            "src": "/images/optimized/cities/city-ajax-hero/960.avif"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-ajax-hero/800.avif"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-ajax-hero/899.avif"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-ajax-hero/1600.avif"
           }
         ],
         "webp": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-ajax-hero/160.webp"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-ajax-hero/240.webp"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-ajax-hero/320.webp"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-ajax-hero/480.webp"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-ajax-hero/640.webp"
+            "width": 960,
+            "src": "/images/optimized/cities/city-ajax-hero/960.webp"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-ajax-hero/800.webp"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-ajax-hero/899.webp"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-ajax-hero/1600.webp"
           }
         ],
-        "png": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-ajax-hero/160.png"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-ajax-hero/240.png"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-ajax-hero/320.png"
-          },
+        "jpg": [
           {
             "width": 480,
-            "src": "/images/optimized/cities/city-ajax-hero/480.png"
+            "src": "/images/optimized/cities/city-ajax-hero/480.jpg"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-ajax-hero/640.png"
+            "width": 960,
+            "src": "/images/optimized/cities/city-ajax-hero/960.jpg"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-ajax-hero/800.png"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-ajax-hero/899.png"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-ajax-hero/1600.jpg"
           }
         ]
       }
@@ -8582,108 +8534,48 @@
       }
     },
     "/images/cities/city-belleville-hero.png": {
-      "width": 899,
-      "height": 561,
-      "fallbackFormat": "png",
-      "fallbackSrc": "/images/optimized/cities/city-belleville-hero/899.png",
+      "width": 1536,
+      "height": 1024,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/cities/city-belleville-hero/960.jpg",
       "variants": {
         "avif": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-belleville-hero/160.avif"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-belleville-hero/240.avif"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-belleville-hero/320.avif"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-belleville-hero/480.avif"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-belleville-hero/640.avif"
-          },
-          {
-            "width": 800,
-            "src": "/images/optimized/cities/city-belleville-hero/800.avif"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-belleville-hero/899.avif"
+            "width": 960,
+            "src": "/images/optimized/cities/city-belleville-hero/960.avif"
           }
         ],
         "webp": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-belleville-hero/160.webp"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-belleville-hero/240.webp"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-belleville-hero/320.webp"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-belleville-hero/480.webp"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-belleville-hero/640.webp"
-          },
-          {
-            "width": 800,
-            "src": "/images/optimized/cities/city-belleville-hero/800.webp"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-belleville-hero/899.webp"
+            "width": 960,
+            "src": "/images/optimized/cities/city-belleville-hero/960.webp"
           }
         ],
-        "png": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-belleville-hero/160.png"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-belleville-hero/240.png"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-belleville-hero/320.png"
-          },
+        "jpg": [
           {
             "width": 480,
-            "src": "/images/optimized/cities/city-belleville-hero/480.png"
+            "src": "/images/optimized/cities/city-belleville-hero/480.jpg"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-belleville-hero/640.png"
-          },
-          {
-            "width": 800,
-            "src": "/images/optimized/cities/city-belleville-hero/800.png"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-belleville-hero/899.png"
+            "width": 960,
+            "src": "/images/optimized/cities/city-belleville-hero/960.jpg"
           }
         ]
       }
     },
     "/images/cities/city-brampton-hero.png": {
-      "width": 1693,
-      "height": 929,
+      "width": 1536,
+      "height": 1024,
       "fallbackFormat": "jpg",
-      "fallbackSrc": "/images/optimized/cities/city-brampton-hero/1600.jpg",
+      "fallbackSrc": "/images/optimized/cities/city-brampton-hero/960.jpg",
       "variants": {
         "avif": [
           {
@@ -8693,10 +8585,6 @@
           {
             "width": 960,
             "src": "/images/optimized/cities/city-brampton-hero/960.avif"
-          },
-          {
-            "width": 1600,
-            "src": "/images/optimized/cities/city-brampton-hero/1600.avif"
           }
         ],
         "webp": [
@@ -8707,10 +8595,6 @@
           {
             "width": 960,
             "src": "/images/optimized/cities/city-brampton-hero/960.webp"
-          },
-          {
-            "width": 1600,
-            "src": "/images/optimized/cities/city-brampton-hero/1600.webp"
           }
         ],
         "jpg": [
@@ -8721,10 +8605,6 @@
           {
             "width": 960,
             "src": "/images/optimized/cities/city-brampton-hero/960.jpg"
-          },
-          {
-            "width": 1600,
-            "src": "/images/optimized/cities/city-brampton-hero/1600.jpg"
           }
         ]
       }
@@ -11566,99 +11446,51 @@
       }
     },
     "/images/cities/city-pickering-hero.png": {
-      "width": 899,
-      "height": 561,
-      "fallbackFormat": "png",
-      "fallbackSrc": "/images/optimized/cities/city-pickering-hero/899.png",
+      "width": 1774,
+      "height": 887,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/cities/city-pickering-hero/1600.jpg",
       "variants": {
         "avif": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-pickering-hero/160.avif"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-pickering-hero/240.avif"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-pickering-hero/320.avif"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-pickering-hero/480.avif"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-pickering-hero/640.avif"
+            "width": 960,
+            "src": "/images/optimized/cities/city-pickering-hero/960.avif"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-pickering-hero/800.avif"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-pickering-hero/899.avif"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-pickering-hero/1600.avif"
           }
         ],
         "webp": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-pickering-hero/160.webp"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-pickering-hero/240.webp"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-pickering-hero/320.webp"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-pickering-hero/480.webp"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-pickering-hero/640.webp"
+            "width": 960,
+            "src": "/images/optimized/cities/city-pickering-hero/960.webp"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-pickering-hero/800.webp"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-pickering-hero/899.webp"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-pickering-hero/1600.webp"
           }
         ],
-        "png": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-pickering-hero/160.png"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-pickering-hero/240.png"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-pickering-hero/320.png"
-          },
+        "jpg": [
           {
             "width": 480,
-            "src": "/images/optimized/cities/city-pickering-hero/480.png"
+            "src": "/images/optimized/cities/city-pickering-hero/480.jpg"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-pickering-hero/640.png"
+            "width": 960,
+            "src": "/images/optimized/cities/city-pickering-hero/960.jpg"
           },
           {
-            "width": 800,
-            "src": "/images/optimized/cities/city-pickering-hero/800.png"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-pickering-hero/899.png"
+            "width": 1600,
+            "src": "/images/optimized/cities/city-pickering-hero/1600.jpg"
           }
         ]
       }
@@ -31161,6 +30993,306 @@
           {
             "width": 1600,
             "src": "/images/optimized/dog-parks/bowmont-park-original/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/edworthy-park-original.png": {
+      "width": 1881,
+      "height": 836,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/edworthy-park-original/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/edworthy-park-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/edworthy-park-original/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/edworthy-park-original/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/edworthy-park-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/edworthy-park-original/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/edworthy-park-original/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/edworthy-park-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/edworthy-park-original/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/edworthy-park-original/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/nose-hill-park-original.png": {
+      "width": 1823,
+      "height": 863,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/nose-hill-park-original/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/nose-hill-park-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/nose-hill-park-original/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/nose-hill-park-original/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/nose-hill-park-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/nose-hill-park-original/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/nose-hill-park-original/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/nose-hill-park-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/nose-hill-park-original/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/nose-hill-park-original/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/central-park-original.png": {
+      "width": 1804,
+      "height": 872,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/central-park-original/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/central-park-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/central-park-original/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/central-park-original/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/central-park-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/central-park-original/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/central-park-original/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/central-park-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/central-park-original/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/central-park-original/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/pathfinder-park-original.png": {
+      "width": 1983,
+      "height": 793,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/pathfinder-park-original/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/pathfinder-park-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/pathfinder-park-original/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/pathfinder-park-original/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/pathfinder-park-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/pathfinder-park-original/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/pathfinder-park-original/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/pathfinder-park-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/pathfinder-park-original/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/pathfinder-park-original/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/hidden-valley-park-original.png": {
+      "width": 1805,
+      "height": 871,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/hidden-valley-park-original/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/hidden-valley-park-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/hidden-valley-park-original/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/hidden-valley-park-original/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/hidden-valley-park-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/hidden-valley-park-original/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/hidden-valley-park-original/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/hidden-valley-park-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/hidden-valley-park-original/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/hidden-valley-park-original/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/roly-bird-park-original.png": {
+      "width": 1754,
+      "height": 897,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/roly-bird-park-original/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/roly-bird-park-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/roly-bird-park-original/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/roly-bird-park-original/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/roly-bird-park-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/roly-bird-park-original/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/roly-bird-park-original/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/roly-bird-park-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/roly-bird-park-original/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/roly-bird-park-original/1600.jpg"
           }
         ]
       }
