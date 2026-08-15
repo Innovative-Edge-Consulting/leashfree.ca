@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T02:46:10.350Z",
+  "generatedAt": "2026-08-15T14:05:06.015Z",
   "images": {
     "/images/blog/blog-average-vet-costs-in-canada-hero.jpg": {
       "width": 702,
@@ -8784,99 +8784,39 @@
       }
     },
     "/images/cities/city-campbellford-hero.png": {
-      "width": 899,
-      "height": 561,
-      "fallbackFormat": "png",
-      "fallbackSrc": "/images/optimized/cities/city-campbellford-hero/899.png",
+      "width": 1536,
+      "height": 1024,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/cities/city-campbellford-hero/960.jpg",
       "variants": {
         "avif": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-campbellford-hero/160.avif"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-campbellford-hero/240.avif"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-campbellford-hero/320.avif"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-campbellford-hero/480.avif"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-campbellford-hero/640.avif"
-          },
-          {
-            "width": 800,
-            "src": "/images/optimized/cities/city-campbellford-hero/800.avif"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-campbellford-hero/899.avif"
+            "width": 960,
+            "src": "/images/optimized/cities/city-campbellford-hero/960.avif"
           }
         ],
         "webp": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-campbellford-hero/160.webp"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-campbellford-hero/240.webp"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-campbellford-hero/320.webp"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-campbellford-hero/480.webp"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-campbellford-hero/640.webp"
-          },
-          {
-            "width": 800,
-            "src": "/images/optimized/cities/city-campbellford-hero/800.webp"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-campbellford-hero/899.webp"
+            "width": 960,
+            "src": "/images/optimized/cities/city-campbellford-hero/960.webp"
           }
         ],
-        "png": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-campbellford-hero/160.png"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-campbellford-hero/240.png"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-campbellford-hero/320.png"
-          },
+        "jpg": [
           {
             "width": 480,
-            "src": "/images/optimized/cities/city-campbellford-hero/480.png"
+            "src": "/images/optimized/cities/city-campbellford-hero/480.jpg"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-campbellford-hero/640.png"
-          },
-          {
-            "width": 800,
-            "src": "/images/optimized/cities/city-campbellford-hero/800.png"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-campbellford-hero/899.png"
+            "width": 960,
+            "src": "/images/optimized/cities/city-campbellford-hero/960.jpg"
           }
         ]
       }
@@ -9178,99 +9118,39 @@
       }
     },
     "/images/cities/city-courtice-hero.png": {
-      "width": 899,
-      "height": 561,
-      "fallbackFormat": "png",
-      "fallbackSrc": "/images/optimized/cities/city-courtice-hero/899.png",
+      "width": 1536,
+      "height": 1024,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/cities/city-courtice-hero/960.jpg",
       "variants": {
         "avif": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-courtice-hero/160.avif"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-courtice-hero/240.avif"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-courtice-hero/320.avif"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-courtice-hero/480.avif"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-courtice-hero/640.avif"
-          },
-          {
-            "width": 800,
-            "src": "/images/optimized/cities/city-courtice-hero/800.avif"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-courtice-hero/899.avif"
+            "width": 960,
+            "src": "/images/optimized/cities/city-courtice-hero/960.avif"
           }
         ],
         "webp": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-courtice-hero/160.webp"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-courtice-hero/240.webp"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-courtice-hero/320.webp"
-          },
           {
             "width": 480,
             "src": "/images/optimized/cities/city-courtice-hero/480.webp"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-courtice-hero/640.webp"
-          },
-          {
-            "width": 800,
-            "src": "/images/optimized/cities/city-courtice-hero/800.webp"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-courtice-hero/899.webp"
+            "width": 960,
+            "src": "/images/optimized/cities/city-courtice-hero/960.webp"
           }
         ],
-        "png": [
-          {
-            "width": 160,
-            "src": "/images/optimized/cities/city-courtice-hero/160.png"
-          },
-          {
-            "width": 240,
-            "src": "/images/optimized/cities/city-courtice-hero/240.png"
-          },
-          {
-            "width": 320,
-            "src": "/images/optimized/cities/city-courtice-hero/320.png"
-          },
+        "jpg": [
           {
             "width": 480,
-            "src": "/images/optimized/cities/city-courtice-hero/480.png"
+            "src": "/images/optimized/cities/city-courtice-hero/480.jpg"
           },
           {
-            "width": 640,
-            "src": "/images/optimized/cities/city-courtice-hero/640.png"
-          },
-          {
-            "width": 800,
-            "src": "/images/optimized/cities/city-courtice-hero/800.png"
-          },
-          {
-            "width": 899,
-            "src": "/images/optimized/cities/city-courtice-hero/899.png"
+            "width": 960,
+            "src": "/images/optimized/cities/city-courtice-hero/960.jpg"
           }
         ]
       }
@@ -31293,6 +31173,570 @@
           {
             "width": 1600,
             "src": "/images/optimized/dog-parks/roly-bird-park-original/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/warner-loat-park-burnaby-original.png": {
+      "width": 1535,
+      "height": 1024,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/warner-loat-park-burnaby-original/960.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/warner-loat-park-burnaby-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/warner-loat-park-burnaby-original/960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/warner-loat-park-burnaby-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/warner-loat-park-burnaby-original/960.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/warner-loat-park-burnaby-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/warner-loat-park-burnaby-original/960.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/larkspur-off-leash-dog-park-original.png": {
+      "width": 1536,
+      "height": 1024,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/larkspur-off-leash-dog-park-original/960.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/larkspur-off-leash-dog-park-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/larkspur-off-leash-dog-park-original/960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/larkspur-off-leash-dog-park-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/larkspur-off-leash-dog-park-original/960.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/larkspur-off-leash-dog-park-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/larkspur-off-leash-dog-park-original/960.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/lauderdale-dog-park-original.png": {
+      "width": 1774,
+      "height": 887,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/lauderdale-dog-park-original/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/lauderdale-dog-park-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/lauderdale-dog-park-original/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/lauderdale-dog-park-original/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/lauderdale-dog-park-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/lauderdale-dog-park-original/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/lauderdale-dog-park-original/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/lauderdale-dog-park-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/lauderdale-dog-park-original/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/lauderdale-dog-park-original/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/shaughnessy-original.png": {
+      "width": 1823,
+      "height": 863,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/shaughnessy-original/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/shaughnessy-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/shaughnessy-original/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/shaughnessy-original/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/shaughnessy-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/shaughnessy-original/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/shaughnessy-original/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/shaughnessy-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/shaughnessy-original/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/shaughnessy-original/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/whitby-park-south-original.png": {
+      "width": 1796,
+      "height": 876,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/whitby-park-south-original/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/whitby-park-south-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/whitby-park-south-original/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/whitby-park-south-original/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/whitby-park-south-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/whitby-park-south-original/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/whitby-park-south-original/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/whitby-park-south-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/whitby-park-south-original/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/whitby-park-south-original/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/beacon-hill-park-victoria-original.png": {
+      "width": 1921,
+      "height": 819,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/beacon-hill-park-victoria-original/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/beacon-hill-park-victoria-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/beacon-hill-park-victoria-original/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/beacon-hill-park-victoria-original/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/beacon-hill-park-victoria-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/beacon-hill-park-victoria-original/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/beacon-hill-park-victoria-original/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/beacon-hill-park-victoria-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/beacon-hill-park-victoria-original/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/beacon-hill-park-victoria-original/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/kinsmen-dog-park-quinte-west-original.png": {
+      "width": 1694,
+      "height": 928,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/kinsmen-dog-park-quinte-west-original/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/kinsmen-dog-park-quinte-west-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/kinsmen-dog-park-quinte-west-original/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/kinsmen-dog-park-quinte-west-original/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/kinsmen-dog-park-quinte-west-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/kinsmen-dog-park-quinte-west-original/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/kinsmen-dog-park-quinte-west-original/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/kinsmen-dog-park-quinte-west-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/kinsmen-dog-park-quinte-west-original/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/kinsmen-dog-park-quinte-west-original/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/knox-mountain-dog-park-kelowna-original.png": {
+      "width": 1693,
+      "height": 929,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/knox-mountain-dog-park-kelowna-original/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/knox-mountain-dog-park-kelowna-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/knox-mountain-dog-park-kelowna-original/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/knox-mountain-dog-park-kelowna-original/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/knox-mountain-dog-park-kelowna-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/knox-mountain-dog-park-kelowna-original/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/knox-mountain-dog-park-kelowna-original/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/knox-mountain-dog-park-kelowna-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/knox-mountain-dog-park-kelowna-original/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/knox-mountain-dog-park-kelowna-original/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/lakefront-walkway-dog-park-nelson-original.png": {
+      "width": 1536,
+      "height": 1024,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/lakefront-walkway-dog-park-nelson-original/960.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/lakefront-walkway-dog-park-nelson-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/lakefront-walkway-dog-park-nelson-original/960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/lakefront-walkway-dog-park-nelson-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/lakefront-walkway-dog-park-nelson-original/960.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/lakefront-walkway-dog-park-nelson-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/lakefront-walkway-dog-park-nelson-original/960.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/oakes-road-north-original.png": {
+      "width": 1717,
+      "height": 916,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/oakes-road-north-original/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/oakes-road-north-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/oakes-road-north-original/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/oakes-road-north-original/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/oakes-road-north-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/oakes-road-north-original/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/oakes-road-north-original/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/oakes-road-north-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/oakes-road-north-original/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/oakes-road-north-original/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/riverstone-dog-park-original.png": {
+      "width": 1731,
+      "height": 909,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/riverstone-dog-park-original/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/riverstone-dog-park-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/riverstone-dog-park-original/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/riverstone-dog-park-original/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/riverstone-dog-park-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/riverstone-dog-park-original/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/riverstone-dog-park-original/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/riverstone-dog-park-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/riverstone-dog-park-original/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/riverstone-dog-park-original/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/rutland-recreation-park-kelowna-original.png": {
+      "width": 1821,
+      "height": 864,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/rutland-recreation-park-kelowna-original/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/rutland-recreation-park-kelowna-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/rutland-recreation-park-kelowna-original/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/rutland-recreation-park-kelowna-original/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/rutland-recreation-park-kelowna-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/rutland-recreation-park-kelowna-original/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/rutland-recreation-park-kelowna-original/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/rutland-recreation-park-kelowna-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/rutland-recreation-park-kelowna-original/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/rutland-recreation-park-kelowna-original/1600.jpg"
           }
         ]
       }
