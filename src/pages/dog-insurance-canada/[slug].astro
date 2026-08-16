@@ -1,89 +1,93 @@
 ---
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import Card from "../../components/Card.astro";
 import Layout from "../../components/Layout.astro";
 import Section from "../../components/Section.astro";
 import providers from "../../data/generated/pet-insurance-providers.json";
 import { breadcrumbSchema, cleanText } from "../../utils/content.js";
 
 export function getStaticPaths() {
-  return providers.filter((provider) => provider.slug).map((provider) => ({
-    params: { slug: provider.slug },
-    props: { provider }
-  }));
+  return providers.filter((provider) => provider.slug).map((provider) => ({ params: { slug: provider.slug }, props: { provider } }));
 }
 
 const { provider } = Astro.props;
 const raw = provider.raw || {};
-const breadcrumbs = [
-  { label: "Home", href: "/" },
-  { label: "Dog Insurance Canada", href: "/dog-insurance-canada/" },
-  { label: cleanText(provider.name) }
+const value = (input, fallback = "Confirm with provider") => cleanText(input)?.replace(/\s*\(per site\)/gi, "") || fallback;
+const providerName = value(provider.name);
+const profileUrl = provider.canonicalUrl || `https://leashfree.ca/dog-insurance-canada/${provider.slug}/`;
+const destinationUrl = raw.AffiliateURL || raw.SourceURL;
+const monogram = providerName.split(/\s+/).map((word) => word[0]).join("").slice(0, 2).toUpperCase();
+const verifiedDate = new Date(raw.LastVerified || raw.SourceCapturedDate);
+const verifiedLabel = Number.isNaN(verifiedDate.valueOf()) ? "Check provider source" : new Intl.DateTimeFormat("en-CA", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" }).format(verifiedDate);
+const ageDays = Number.isNaN(verifiedDate.valueOf()) ? null : Math.floor((Date.now() - verifiedDate.valueOf()) / 86400000);
+const needsRefresh = ageDays !== null && ageDays > 180;
+const facts = {
+  planTypes: value(raw.PlanTypes), annualLimit: value(raw.AnnualLimit), reimbursement: value(raw.ReimbursementPercents), deductible: value(raw.DeductibleOptions),
+  accidentWait: value(raw.WaitingPeriodAccident), illnessWait: value(raw.WaitingPeriodIllness), dental: value(raw.Dental), extendedCare: value(raw.AlternativeRehabBehavioral),
+  claims: value(raw.ClaimsNotes), exclusions: value(raw.ExclusionsSummary), availability: value(raw.ProvincesAvailable), underwriter: value(raw["Parent/Underwriter"])
+};
+const requiresConfirmation = (text) => /see |varies|typically|generally|may |depending|~|confirm/i.test(text);
+const confirmationItems = [["Waiting periods", `${facts.accidentWait} for accidents; ${facts.illnessWait} for illnesses.`], ["Dental coverage", facts.dental], ["Rehabilitation and behavioural care", facts.extendedCare], ["Policy exclusions", facts.exclusions]];
+const breadcrumbs = [{ label: "Home", href: "/" }, { label: "Dog Insurance Canada", href: "/dog-insurance-canada/" }, { label: providerName }];
+const peers = [...providers].filter((item) => item.slug !== provider.slug).sort((a, b) => Number(a.raw?.DisplayRank || 999) - Number(b.raw?.DisplayRank || 999)).slice(0, 3);
+const faqs = [
+  { question: `What type of coverage does ${providerName} offer?`, answer: `${providerName} lists ${facts.planTypes}. Coverage is subject to current policy wording, limits, exclusions, and eligibility requirements.` },
+  { question: `What are ${providerName}'s annual limit and reimbursement rate?`, answer: `The provider information reviewed lists the annual limit as ${facts.annualLimit} and reimbursement as ${facts.reimbursement}. The selected plan and eligible expenses can affect payments.` },
+  { question: `How long are ${providerName}'s waiting periods?`, answer: `The accident waiting-period information is ${facts.accidentWait}; the illness waiting-period information is ${facts.illnessWait}. Confirm effective dates and condition-specific waits before enrolling.` },
+  { question: `Where is ${providerName} available?`, answer: `The provider information reviewed lists availability as ${facts.availability}. Confirm availability using your residence and postal code.` },
+  { question: `Does ${providerName} cover pre-existing conditions?`, answer: `${facts.exclusions}. Read the current policy definition carefully because symptoms, prior treatment, and medical records may affect the assessment.` }
 ];
-
-const rows = [
-  ["Parent or underwriter", raw["Parent/Underwriter"]],
-  ["Plan types", raw.PlanTypes],
-  ["Annual limit", raw.AnnualLimit],
-  ["Reimbursement", raw.ReimbursementPercents],
-  ["Deductible options", raw.DeductibleOptions],
-  ["Accident waiting period", raw.WaitingPeriodAccident],
-  ["Illness waiting period", raw.WaitingPeriodIllness],
-  ["Dental", raw.Dental],
-  ["Alternative, rehab, or behavioural care", raw.AlternativeRehabBehavioral],
-  ["Claims notes", raw.ClaimsNotes],
-  ["Exclusions summary", raw.ExclusionsSummary],
-  ["Availability", raw.ProvincesAvailable],
-  ["Last verified", raw.LastVerified]
-].map(([label, value]) => [label, cleanText(value)]).filter(([, value]) => value);
+const pageTitle = `${providerName} Pet Insurance Canada: Coverage & Policy Details`;
+const pageDescription = `Review ${providerName} dog insurance in Canada, including ${facts.annualLimit} annual coverage, ${facts.reimbursement} reimbursement, deductibles, waiting periods, exclusions, and availability.`;
+const structuredData = [breadcrumbSchema(breadcrumbs), { "@context": "https://schema.org", "@type": "WebPage", name: pageTitle, description: pageDescription, url: profileUrl, dateModified: raw.LastVerified || raw["Updated On"] || undefined, about: { "@type": "Organization", name: providerName, url: raw.SourceURL || undefined } }, { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer } })) }];
 ---
 
-<Layout
-  title={`${cleanText(provider.name)} | Dog Insurance Canada | LeashFree.ca`}
-  description={cleanText(provider.metaDescription || `${provider.name} pet insurance provider information for Canadian dog owners.`)}
-  canonical={provider.canonicalUrl}
-  structuredData={breadcrumbSchema(breadcrumbs)}
->
-  <section class="page-header">
-    <div class="container">
-      <Breadcrumbs items={breadcrumbs} />
-      <div class="eyebrow">Dog Insurance Provider</div>
-      <h1>{cleanText(provider.name)}</h1>
-      <p class="summary">
-        Review plan structure, limits, reimbursement, waiting periods, claims notes, and source links before requesting a quote.
-      </p>
-      <div class="button-row">
-        {raw.SourceURL && <a class="button" href={raw.SourceURL} rel="nofollow noopener">Visit provider</a>}
-        <a class="button secondary" href="/blog/pet-insurance-canada-dog-owners-guide/">Read comparison guide</a>
+<Layout title={`${pageTitle} | LeashFree.ca`} description={pageDescription} canonical={profileUrl} ogImage="/images/blog/blog-dog-insurance-waiting-periods-canada-hero.jpg" structuredData={structuredData}>
+  <section class="provider-hero"><div class="container">
+    <Breadcrumbs items={breadcrumbs} />
+    <div class="hero-grid">
+      <div><div class="eyebrow">Canadian dog insurance profile</div><h1>{providerName} pet insurance</h1><p class="summary">A neutral look at coverage, limits, reimbursement, waiting periods, claims, and important policy details to verify before you request a quote.</p>
+        <div class="button-row">{destinationUrl && <a class="button primary" href={destinationUrl} rel="nofollow noopener">Visit {providerName}<span aria-hidden="true"> ↗</span></a>}<a class="button secondary" href="/dog-insurance-canada/#compare-providers">Compare all providers</a></div>
+        <p class="external-note">Provider links open the provider's website. LeashFree.ca does not sell insurance or provide personalized insurance advice.</p>
       </div>
+      <aside class="snapshot" aria-label={`${providerName} coverage at a glance`}><div class="identity"><span class="mark" aria-hidden="true">{monogram}</span><div><strong>{providerName}</strong><small>{facts.availability}</small></div></div><dl><div><dt>Annual limit</dt><dd>{facts.annualLimit}</dd></div><div><dt>Reimbursement</dt><dd>{facts.reimbursement}</dd></div><div><dt>Plan type</dt><dd>{facts.planTypes}</dd></div><div><dt>Deductible</dt><dd>{facts.deductible}</dd></div></dl></aside>
     </div>
-  </section>
+  </div></section>
 
-  <Section title="Provider Details">
-    <div class="table-wrap">
-      <table>
-        <tbody>
-          {rows.map(([label, value]) => (
-            <tr>
-              <th scope="row">{label}</th>
-              <td>{value}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+  <div class="research-strip"><div class="container research-grid"><span><strong>Independent profile</strong><small>Neutral provider summary</small></span><span><strong>Last checked</strong><small>{verifiedLabel}</small></span><span><strong>Primary source</strong><small>{raw.SourceURL ? "Provider website or policy" : "Source unavailable"}</small></span><span><strong>Not a ranking</strong><small>Compare policy fit and price</small></span></div></div>
+
+  <Section eyebrow="Quick assessment" title={`What stands out about ${providerName}`} intro="Use these points to focus your policy review; they are not a recommendation or coverage guarantee.">
+    {needsRefresh && <div class="freshness"><strong>Research refresh due.</strong> This profile was last checked {verifiedLabel}. Confirm current terms directly with the provider.</div>}
+    <div class="assessment-grid"><article><b aria-hidden="true">$</b><h3>Coverage ceiling</h3><p>{facts.annualLimit}</p><small>Check for treatment or condition sub-limits.</small></article><article><b aria-hidden="true">%</b><h3>Claim share</h3><p>{facts.reimbursement}</p><small>Deductibles and exclusions affect payment.</small></article><article><b aria-hidden="true">✓</b><h3>Where it is offered</h3><p>{facts.availability}</p><small>Confirm eligibility with your postal code.</small></article></div>
+  </Section>
+
+  <Section alt eyebrow="Policy details" title={`${providerName} coverage at a glance`} intro="Policy facts are grouped by the decision they affect, with prompts for details that need closer review.">
+    <div class="detail-grid">
+      <article class="detail-card"><header><span>01</span><div><h3>Plan and coverage</h3><p>How the policy is structured.</p></div></header><dl><div><dt>Plan types</dt><dd>{facts.planTypes}</dd></div><div><dt>Annual limit</dt><dd>{facts.annualLimit}</dd></div><div><dt>Reimbursement</dt><dd>{facts.reimbursement}</dd></div><div><dt>Deductible options</dt><dd>{facts.deductible}</dd></div></dl></article>
+      <article class="detail-card"><header><span>02</span><div><h3>Waiting and eligibility</h3><p>When coverage may begin.</p></div></header><dl><div><dt>Accident wait</dt><dd>{facts.accidentWait}</dd></div><div><dt>Illness wait</dt><dd>{facts.illnessWait}</dd></div><div><dt>Availability</dt><dd>{facts.availability}</dd></div><div><dt>Underwriter</dt><dd>{facts.underwriter}</dd></div></dl></article>
+      <article class="detail-card"><header><span>03</span><div><h3>Treatment details</h3><p>Benefits that often differ by plan.</p></div></header><dl><div><dt>Dental</dt><dd>{facts.dental}</dd></div><div><dt>Rehab, alternative, and behavioural care</dt><dd>{facts.extendedCare}</dd></div></dl></article>
+      <article class="detail-card"><header><span>04</span><div><h3>Claims and exclusions</h3><p>How reimbursement and limitations work.</p></div></header><dl><div><dt>Claims notes</dt><dd>{facts.claims}</dd></div><div><dt>Exclusions summary</dt><dd>{facts.exclusions}</dd></div></dl></article>
     </div>
   </Section>
 
-  <Section title="Before You Buy" alt>
-    <p>
-      Provider information can change. Confirm current policy wording, exclusions, waiting periods, deductibles,
-      reimbursement rates, taxes, exam-fee coverage, and renewal terms directly with the insurer before enrolling.
-    </p>
-    <ul>
-      <li><a href="/dog-insurance-canada/">Compare all dog insurance providers</a></li>
-      <li><a href="/blog/dog-insurance-waiting-periods-canada/">Understand dog insurance waiting periods</a></li>
-      <li><a href="/blog/unlimited-vs-10000-annual-limit/">Compare unlimited vs $10,000 annual limits</a></li>
-      <li><a href="/resources/dog-cost-calculator-canada/">Estimate dog ownership costs</a></li>
-    </ul>
+  <Section eyebrow="Verify before enrolling" title="Questions to ask before you buy" intro={`Several ${providerName} details depend on the selected plan or current policy wording.`}>
+    <div class="verify-layout"><div class="verify-list">{confirmationItems.map(([label, detail]) => <article class:list={["verify-item", { uncertain: requiresConfirmation(detail) }]}><span aria-hidden="true">{requiresConfirmation(detail) ? "?" : "✓"}</span><div><h3>{label}</h3><p>{detail}</p></div></article>)}</div>
+      <aside class="checklist"><div class="eyebrow">Bring to your quote</div><h3>Your five-question checklist</h3><ol><li>What counts as pre-existing?</li><li>Are exam fees and taxes eligible?</li><li>When does the deductible reset?</li><li>Are there age, breed, or condition sub-limits?</li><li>How can terms change at renewal?</li></ol>{raw.SourceURL && <a href={raw.SourceURL} rel="nofollow noopener">Review provider source <span aria-hidden="true">↗</span></a>}</aside>
+    </div>
   </Section>
+
+  <Section alt eyebrow="See the math" title={`How ${facts.reimbursement} reimbursement may affect a claim`}><div class="math-layout"><div class="math-card"><div><span>Example eligible vet bill</span><strong>$5,000</strong></div><div><span>Less example deductible</span><strong>− $300</strong></div><div><span>Eligible amount after deductible</span><strong>$4,700</strong></div><div class="result"><span>Apply policy reimbursement</span><strong>{facts.reimbursement}</strong></div></div><div><h3>An illustration—not a claim estimate</h3><p>The order of calculation can vary. Limits, excluded expenses, taxes, exam fees, and condition-specific terms may change the payment.</p><p>Ask the provider to walk through an example using the exact plan you are considering.</p><a href="/blog/is-dog-insurance-worth-it-canada/" class="button secondary">Learn how to assess value</a></div></div></Section>
+
+  <Section eyebrow="Compare alternatives" title={`Compare ${providerName} with other providers`} intro="Open another profile or return to the complete comparison to assess the same policy fields side by side."><div class="peer-grid">{peers.map((peer) => <a class="peer" href={`/dog-insurance-canada/${peer.slug}/`}><span class="mark" aria-hidden="true">{value(peer.name).split(/\s+/).map((word) => word[0]).join("").slice(0, 2).toUpperCase()}</span><span><strong>{value(peer.name)}</strong><small>{value(peer.raw?.AnnualLimit)}</small></span><b aria-hidden="true">→</b></a>)}</div><p class="center"><a class="button primary" href="/dog-insurance-canada/#compare-providers">View the full comparison</a></p></Section>
+
+  <Section alt eyebrow="Common questions" title={`${providerName} pet insurance FAQ`}><div class="faq-list">{faqs.map((faq) => <details><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</div></Section>
+
+  <Section eyebrow="Continue researching" title="Canadian dog insurance guides"><div class="guide-grid"><Card title="How pet insurance works in Canada" href="/blog/pet-insurance-canada-dog-owners-guide/" description="Understand policy terms and tradeoffs before buying." image="/images/blog/blog-is-dog-insurance-worth-it-canada-hero.jpg" imageAlt="Dog owner reviewing insurance with a veterinarian" imageLabel="Buyer guide" ctaLabel="Read guide" /><Card title="Dog insurance waiting periods" href="/blog/dog-insurance-waiting-periods-canada/" description="Learn when accident and illness coverage can begin." image="/images/blog/blog-dog-insurance-waiting-periods-canada-hero.jpg" imageAlt="Veterinarian discussing waiting periods" imageLabel="Policy details" ctaLabel="Read guide" /><Card title="Unlimited versus $10,000 limits" href="/blog/unlimited-vs-10000-annual-limit/" description="Compare annual caps and premium tradeoffs." image="/images/blog/blog-unlimited-vs-10000-annual-limit-hero.jpg" imageAlt="Dog insurance annual limit comparison" imageLabel="Coverage limits" ctaLabel="Read guide" /></div></Section>
 </Layout>
 
+<style>
+  .provider-hero{padding:var(--space-4) 0 var(--space-7);background:linear-gradient(135deg,#f4f8f5,#fff 55%,#edf5f0)}.hero-grid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(350px,.72fr);gap:clamp(2rem,6vw,5rem);align-items:center;margin-top:var(--space-5)}.external-note{max-width:650px;margin:var(--space-3) 0 0;color:var(--color-muted);font-size:.8rem}.snapshot{overflow:hidden;border:1px solid rgba(73,127,100,.25);border-radius:22px;background:#fff;box-shadow:0 20px 50px rgba(31,41,51,.12)}.identity{display:flex;align-items:center;gap:var(--space-3);padding:var(--space-4);background:var(--color-primary-dark);color:#fff}.identity strong,.identity small{display:block}.identity small{margin-top:.15rem;color:rgba(255,255,255,.76)}.mark{display:grid;flex:0 0 auto;width:48px;height:48px;place-items:center;border-radius:14px;background:var(--color-accent);color:var(--color-text);font-weight:950}.snapshot dl,.detail-card dl{margin:0}.snapshot dl div,.detail-card dl div{display:grid;grid-template-columns:120px 1fr;gap:var(--space-3);padding:.9rem var(--space-4);border-top:1px solid var(--color-border)}dt{color:var(--color-muted);font-size:.8rem;font-weight:800}dd{margin:0;line-height:1.5}.research-strip{border-block:1px solid var(--color-border);background:var(--color-surface)}.research-grid{display:grid;grid-template-columns:repeat(4,1fr)}.research-grid>span{padding:1rem;text-align:center}.research-grid>span+span{border-left:1px solid var(--color-border)}.research-grid strong,.research-grid small{display:block}.research-grid strong{color:var(--color-primary-dark)}.research-grid small{margin-top:.15rem;color:var(--color-muted)}.freshness{margin-bottom:var(--space-5);padding:1rem;border:1px solid #dec991;border-radius:12px;background:#fff9e8;color:#594b24}.assessment-grid,.peer-grid,.guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-4)}.assessment-grid article{padding:var(--space-5);border:1px solid var(--color-border);border-radius:18px;background:var(--color-surface);box-shadow:0 10px 30px rgba(31,41,51,.06)}.assessment-grid b{display:grid;width:38px;height:38px;place-items:center;border-radius:11px;background:var(--color-primary-soft);color:var(--color-primary-dark)}.assessment-grid h3{margin:var(--space-3) 0 .35rem;font-size:1rem}.assessment-grid p{margin:0;font-size:1.15rem;font-weight:900}.assessment-grid small{display:block;margin-top:.65rem;color:var(--color-muted)}.detail-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-4)}.detail-card{overflow:hidden;border:1px solid var(--color-border);border-radius:18px;background:var(--color-surface)}.detail-card header{display:flex;gap:var(--space-3);align-items:center;padding:var(--space-4);background:var(--color-primary-soft)}.detail-card header>span{color:var(--color-primary);font-weight:950}.detail-card header h3,.detail-card header p{margin:0}.detail-card header p{color:var(--color-muted);font-size:.84rem}.verify-layout,.math-layout{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(310px,.68fr);gap:var(--space-6);align-items:start}.verify-list{display:grid;gap:var(--space-3)}.verify-item{display:flex;gap:var(--space-3);padding:var(--space-4);border:1px solid var(--color-border);border-radius:14px;background:var(--color-surface)}.verify-item>span{display:grid;flex:0 0 auto;width:30px;height:30px;place-items:center;border-radius:50%;background:var(--color-primary-soft);font-weight:950}.verify-item.uncertain>span{background:#fff2ca;color:#6c5210}.verify-item h3,.verify-item p{margin:0}.verify-item p{margin-top:.3rem;color:var(--color-muted)}.checklist{padding:var(--space-5);border-radius:20px;background:var(--color-primary-dark);color:#fff}.checklist h3{color:#fff}.checklist li+li{margin-top:.55rem}.checklist a{color:#fff;font-weight:900}.math-card{overflow:hidden;border:1px solid var(--color-border);border-radius:18px;background:var(--color-surface)}.math-card div{display:flex;justify-content:space-between;gap:var(--space-4);padding:1rem var(--space-4);border-top:1px solid var(--color-border)}.math-card div:first-child{border:0}.math-card span{color:var(--color-muted)}.math-card .result{background:var(--color-primary-dark);color:#fff}.math-card .result span{color:rgba(255,255,255,.78)}.peer{display:flex;align-items:center;gap:var(--space-3);padding:var(--space-4);border:1px solid var(--color-border);border-radius:16px;background:var(--color-surface);color:var(--color-text);text-decoration:none}.peer:hover{border-color:var(--color-primary);box-shadow:0 12px 28px rgba(31,41,51,.09)}.peer>span:nth-child(2){min-width:0;flex:1}.peer strong,.peer small{display:block}.peer small{overflow:hidden;color:var(--color-muted);text-overflow:ellipsis;white-space:nowrap}.center{margin-top:var(--space-5);text-align:center}.faq-list{display:grid;max-width:900px;gap:var(--space-3)}.faq-list details{border:1px solid var(--color-border);border-radius:14px;background:var(--color-surface);padding:0 var(--space-4)}.faq-list summary{cursor:pointer;padding:1rem 2rem 1rem 0;font-weight:850}.faq-list p{margin:0;padding:0 0 1rem;color:var(--color-muted)}
+  .mark{background:#f2c96d;color:#1f2933}
+  @media(max-width:900px){.hero-grid,.verify-layout,.math-layout{grid-template-columns:1fr}.research-grid{grid-template-columns:repeat(2,1fr)}.assessment-grid,.peer-grid,.guide-grid{grid-template-columns:1fr}}
+  @media(max-width:680px){.provider-hero{padding-bottom:var(--space-5)}.research-grid,.detail-grid{grid-template-columns:1fr}.research-grid>span+span{border-top:1px solid var(--color-border);border-left:0}.snapshot dl div,.detail-card dl div{grid-template-columns:1fr;gap:.25rem}}
+</style>

@@ -53,31 +53,28 @@ const breedProfileHref = toInternalPath(
     matchedBreed?.canonicalUrl ||
     (matchedBreed?.slug ? `/dog-breeds/${matchedBreed.slug}/` : "")
 );
-const related = allDogNames
-  .filter((candidate) => candidate.slug !== entry.slug && candidate.references?.["Breed Name"]?.[0] === breed)
-  .slice(0, 3);
+const normalizeDuplicateDog = (value = "") => String(value).replace(/\bDog Dog Names\b/gi, "Dog Names");
+const displayTitle = normalizeDuplicateDog(entry.title || entry.name);
+const heading = normalizeDuplicateDog(entry.raw["H1 Header"] || displayTitle);
+const relatedPool = breed
+  ? [...manualDogNameGuides, ...dogNames.filter((candidate) => candidate.references?.["Breed Name"]?.[0] !== breed)]
+  : [...manualDogNameGuides, ...dogNames];
+const related = relatedPool.filter((candidate) => candidate.slug !== entry.slug).slice(0, 4);
+const relatedImage = (item) => {
+  const source = item.raw?.["Hero Image"] || item.media?.find((asset) => asset.fieldName === "Hero Image")?.value || "";
+  const extension = source.match(/\.(avif|png|webp|jpe?g)(?:\?|$)/i)?.[1]?.toLowerCase().replace("jpeg", "jpg") || "jpg";
+  return source.startsWith("/images/dog-names/") ? source : `/images/dog-names/dog-name-${item.slug}-hero.${extension}`;
+};
 const breadcrumbs = [
   { label: "Home", href: "/" },
   { label: "Dog Names", href: "/dog-names/" },
-  { label: entry.title || entry.name }
+  { label: displayTitle }
 ];
-const structuredData = [
-  breadcrumbSchema(breadcrumbs),
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: entry.title || entry.name,
-    description: stripHtml(entry.metaDescription || entry.description),
-    datePublished: entry.raw["Published On"] || undefined,
-    dateModified: entry.raw["Updated On"] || undefined,
-    url: entry.canonicalUrl,
-    image: image.src
-  }
-];
-
-const heading = entry.raw["H1 Header"] || entry.title || entry.name;
 const introSummary = entry.body || entry.raw["Intro Summary"] || entry.description;
 const defaultNameCategory = entry.raw["Default Name Category"] || "";
+const rawUpdatedDate = entry.raw["Last Update Date"] || entry.raw["Updated On"] || entry.raw["Published On"];
+const updatedDate = new Date(rawUpdatedDate);
+const updatedLabel = Number.isNaN(updatedDate.valueOf()) ? "Editorially curated" : new Intl.DateTimeFormat("en-CA", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" }).format(updatedDate);
 
 const listSectionTitles = new Set([
   "Editor's picks",
@@ -197,119 +194,71 @@ const sections = sectionCandidates
     return { title: section.title, type: "html", html: cleanedHtml };
   })
   .filter(Boolean);
+const sectionId = (title = "") => title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+const navigableSections = sections.filter((section) => section.title !== "Breed snapshot" && section.title !== "FAQs");
+const orderedSections = [
+  ...sections.filter((section) => section.title !== "Breed snapshot" && section.title !== "FAQs"),
+  ...sections.filter((section) => section.title === "Breed snapshot"),
+  ...sections.filter((section) => section.title === "FAQs")
+];
+const totalIdeas = sections.reduce((sum, section) => sum + (section.items?.length || section.groups?.reduce((groupSum, group) => groupSum + group.items.length, 0) || 0), 0);
+const faqSection = sections.find((section) => section.type === "faq");
+const structuredData = [
+  breadcrumbSchema(breadcrumbs),
+  { "@context": "https://schema.org", "@type": "Article", headline: heading, description: stripHtml(entry.metaDescription || entry.description), datePublished: entry.raw["Published On"] || undefined, dateModified: rawUpdatedDate || undefined, url: entry.canonicalUrl, image: image.src },
+  ...(faqSection?.items?.length ? [{ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqSection.items.map((item) => ({ "@type": "Question", name: item.question, acceptedAnswer: { "@type": "Answer", text: item.answer } })) }] : [])
+];
 ---
 
-<Layout title={entry.seoTitle || entry.title || entry.name} description={entry.metaDescription || entry.description} canonical={entry.canonicalUrl} ogImage={image.src} structuredData={structuredData}>
-  <section class="page-header">
-    <div class="container detail-layout">
-      <div>
-        <Breadcrumbs items={breadcrumbs} />
-        <div class="eyebrow">Dog Names</div>
-        <h1>{heading}</h1>
-        <p class="summary">{excerpt(entry.description, entry.metaDescription)}</p>
-        {breedProfileHref && breed && (
-          <p class="summary">
-            Looking for temperament, size, and care tips? See our <a href={breedProfileHref}>{breed} breed profile</a>.
-          </p>
-        )}
-        {breed && (
-          <div class="badges">
-            <span class="badge">{breed}</span>
-          </div>
-        )}
-      </div>
-      <ImageWithFallback
-        src={image.src}
-        alt={`${entry.title || entry.name} featured image`}
-        variant="hero"
-        loading="eager"
-        imagePosition="center 20%"
-        imageFit="contain"
-      />
-    </div>
-  </section>
+<Layout title={normalizeDuplicateDog(entry.seoTitle || displayTitle)} description={entry.metaDescription || entry.description} canonical={entry.canonicalUrl} ogImage={image.src} structuredData={structuredData}>
+  <section class="guide-hero"><div class="container"><Breadcrumbs items={breadcrumbs} /><div class="guide-hero-grid"><div><div class="eyebrow">Curated dog name guide</div><h1>{heading}</h1><p class="summary">{excerpt(entry.description, entry.metaDescription)}</p>{breed && <div class="badges"><span class="badge">{breed}</span></div>}<div class="button-row"><a class="button primary" href="#name-ideas">Browse name ideas</a><a class="button secondary" href="/dog-name-finder/">Build a personalized list</a></div></div><figure class="guide-hero-media"><ImageWithFallback src={image.src} alt={`${displayTitle} featured image`} variant="hero" loading="eager" fetchPriority="high" imagePosition="center top" imageFit="cover" /><figcaption><span aria-hidden="true">♥</span> Shortlist names, say them aloud, and test them with your dog.</figcaption></figure></div></div></section>
 
-  <Section>
-    <div class="split">
-      <article>
-        <ContentBlock html={introSummary} />
-        {defaultNameCategory && (
-          <DogNamesTable
-            title="Top 1,000 Dog & Puppy Names"
-            intro="Browse the same Top 1,000 dog name database used on the main dog names page."
-            defaultCategory={defaultNameCategory}
-          />
-        )}
-        {sections.map((section) => (
-          <section class="content-block">
-            <h2>{section.title}</h2>
-            {section.type === "name-list" ? (
-              <div class="name-grid">
-                {section.items.map((item) => (
-                  <article class="name-card">
-                    <h3>{item.label}</h3>
-                    {item.note && <p>{item.note}</p>}
-                  </article>
-                ))}
-              </div>
-            ) : section.type === "color-groups" ? (
-              <div class="color-groups">
-                {section.groups.map((group) => (
-                  <section class="color-group">
-                    <h3>{group.title}</h3>
-                    <div class="chip-list">
-                      {group.items.map((item) => (
-                        <span class="name-chip" title={item.note || item.label}>{item.label}</span>
-                      ))}
-                    </div>
-                  </section>
-                ))}
-              </div>
-            ) : section.type === "faq" ? (
-              <div class="faq-accordion">
-                {section.items.map((item) => (
-                  <details class="faq-item">
-                    <summary>{item.question}</summary>
-                    <div class="faq-answer">
-                      <p>{item.answer}</p>
-                    </div>
-                  </details>
-                ))}
-              </div>
-            ) : (
-              <div set:html={section.html} />
-            )}
-          </section>
-        ))}
-      </article>
-      <aside class="sidebar">
-        {breed && (
-          <section class="card">
-            <div class="card-body">
-              <h2>Guide details</h2>
-              <ul>
-                <li><strong>Breed:</strong> {breed}</li>
-              </ul>
-              {(breedProfileHref || breedGroupHref) && (
-                <div class="button-row">
-                  {breedProfileHref && <a class="button secondary" href={breedProfileHref}>View breed profile</a>}
-                  {breedGroupHref && <a class="button secondary" href={breedGroupHref}>Browse breed group</a>}
-                </div>
-              )}
-            </div>
-          </section>
-        )}
-      </aside>
-    </div>
-  </Section>
+  <div class="guide-trust"><div class="container guide-trust-grid"><span><strong>{totalIdeas || "Curated"}</strong><small>{totalIdeas ? "name ideas" : "editor selections"}</small></span><span><strong>{navigableSections.length}</strong><small>naming sections</small></span><span><strong>Updated</strong><small>{updatedLabel}</small></span><span><strong>{breed || "All dogs"}</strong><small>{breed ? "breed-focused guide" : "theme-based guide"}</small></span></div></div>
 
-  {related.length > 0 && (
-    <Section title="Related dog name guides" alt>
-      <div class="grid">
-        {related.map((item) => (
-          <Card title={item.title || item.name} href={`/dog-names/${item.slug}/`} description={excerpt(item.metaDescription, item.description)} ctaLabel="Read guide" />
-        ))}
-      </div>
-    </Section>
-  )}
+  <Section tight><div class="guide-intro"><ContentBlock html={introSummary} /></div>{breedProfileHref && breed && <div class="breed-callout"><span aria-hidden="true">🐾</span><div><strong>Researching the breed too?</strong><p>Review temperament, size, exercise, and care considerations in the {breed} profile.</p></div><a class="button secondary" href={breedProfileHref}>View breed profile</a></div>}</Section>
+
+  <Section id="name-ideas" alt eyebrow="Browse this guide" title="Jump to a naming style" intro="Move directly to the ideas that best match your dog's personality and your preferences."><nav class="section-nav" aria-label="Dog name categories">{navigableSections.map((section) => <a href={`#${sectionId(section.title)}`}>{section.title}{section.items?.length ? <span>{section.items.length}</span> : null}</a>)}{faqSection && <a href="#faqs">FAQs</a>}</nav></Section>
+
+  <Section tight><div class="guide-layout"><article class="guide-content">
+    <section class="shortlist-panel" id="shortlist"><div><div class="eyebrow">Your shortlist</div><h2>Save complete name records</h2><p>Each saved name includes its meaning, ideal gender, category, and source guide.</p></div><div class="shortlist-actions"><span data-shortlist-status>No names saved yet</span><a class="button secondary" href="/dog-names/my-list/">Open my list</a><button class="button secondary" type="button" data-copy-shortlist disabled>Copy shortlist</button><button class="text-button" type="button" data-clear-shortlist disabled>Clear</button></div><div class="shortlist-chips" data-shortlist-chips aria-live="polite"></div></section>
+
+    <details class="additional-search"><summary><span><strong>Search and add more names</strong><small>Browse all 488 database records without leaving this guide.</small></span><span aria-hidden="true">＋</span></summary><div class="additional-search-body"><div class="additional-controls"><label><span>Search names or meanings</span><input type="search" data-additional-name-search placeholder="Try Maple, mountain, strong..." /></label><label><span>Ideal gender</span><select data-additional-gender><option value="">All genders</option><option>Male</option><option>Female</option><option>Unisex</option></select></label><label><span>Category</span><select data-additional-category><option value="">All categories</option></select></label></div><p class="additional-status" data-additional-status>Loading additional names...</p><div class="additional-results" data-additional-results></div><p><a href="/dog-names/">Open the complete dog names hub</a></p></div></details>
+
+    {defaultNameCategory && <DogNamesTable title="488 Dog & Puppy Names" intro="Search the same 488-name database used on the main dog names page." defaultCategory={defaultNameCategory} />}
+
+    {orderedSections.map((section) => <section class:list={["content-block", { featuredNames: section.title === "Editor's picks" }]} id={sectionId(section.title)}><header class="section-heading"><div><div class="eyebrow">{section.title === "Editor's picks" ? "Curated shortlist" : section.title === "Breed snapshot" ? "Breed context" : section.title === "FAQs" ? "Common questions" : "Name collection"}</div><h2>{section.title}</h2></div>{section.items?.length ? <span>{section.items.length} ideas</span> : null}</header>
+      {section.type === "name-list" ? <div class="name-grid">{section.items.map((item) => <article class="name-card"><div><h3>{item.label}</h3>{item.note && <p>{item.note}</p>}</div><button class="save-name" type="button" data-save-name={item.label} data-meaning={item.note} data-gender={section.title === "Male names" ? "Male" : section.title === "Female names" ? "Female" : ""} data-category={section.title} data-source-label={displayTitle} data-source-url={entry.routePath || `/dog-names/${entry.slug}/`} aria-label={`Save ${item.label} to your shortlist`} aria-pressed="false"><span aria-hidden="true">♡</span></button></article>)}</div>
+      : section.type === "color-groups" ? <div class="color-groups">{section.groups.map((group) => <section class="color-group"><h3>{group.title}</h3><div class="color-name-grid">{group.items.map((item) => <article><div><strong>{item.label}</strong>{item.note && <p>{item.note}</p>}</div><button class="save-name" type="button" data-save-name={item.label} data-meaning={item.note} data-category="Color-Inspired Names" data-source-label={displayTitle} data-source-url={entry.routePath || `/dog-names/${entry.slug}/`} aria-label={`Save ${item.label} to your shortlist`} aria-pressed="false"><span aria-hidden="true">♡</span></button></article>)}</div></section>)}</div>
+      : section.type === "faq" ? <div class="faq-accordion">{section.items.map((item) => <details class="faq-item"><summary>{item.question}</summary><div class="faq-answer"><p>{item.answer}</p></div></details>)}</div>
+      : <div class="prose-panel" set:html={section.html} />}
+      {section.title !== "FAQs" && <a class="back-link" href="#name-ideas">Back to categories ↑</a>}
+    </section>)}
+  </article>
+  <aside class="guide-sidebar"><div class="sidebar-card"><div class="eyebrow">Guide navigator</div><h2>Find your shortlist</h2><a class="saved-link" href="#shortlist"><span>Saved names</span><strong data-saved-count>0</strong></a><nav aria-label="Guide sections">{navigableSections.map((section) => <a href={`#${sectionId(section.title)}`}>{section.title}</a>)}</nav>{(breedProfileHref || breedGroupHref) && <div class="sidebar-actions">{breedProfileHref && <a href={breedProfileHref}>View breed profile</a>}{breedGroupHref && <a href={breedGroupHref}>Browse breed group</a>}</div>}</div></aside>
+  </div></Section>
+
+  <Section alt eyebrow="Keep exploring" title="Related dog name guides" intro="Compare another naming style or browse ideas beyond this breed."><div class="related-guide-grid">{related.map((item) => <Card className="related-name-card" title={normalizeDuplicateDog(item.title || item.name)} href={`/dog-names/${item.slug}/`} description={excerpt(item.metaDescription, item.description)} image={relatedImage(item)} imageAlt={`${normalizeDuplicateDog(item.title || item.name)} guide`} imagePosition="center top" imageLabel="Name guide" ctaLabel="Explore names" />)}</div></Section>
+
+  <script>
+    import { initGuideShortlist } from "../../scripts/dog-name-shortlist.js";
+    initGuideShortlist();
+  </script>
 </Layout>
+
+<style>
+  .guide-hero{padding:var(--space-4) 0 var(--space-7);background:linear-gradient(135deg,#f4f8f5,#fff 55%,#edf5f0)}.guide-hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(350px,.75fr);gap:var(--space-7);align-items:center;margin-top:var(--space-5)}.guide-hero .summary{max-width:680px}.guide-hero .badges{margin-top:var(--space-3)}.guide-hero-media{position:relative;overflow:hidden;margin:0;border:1px solid rgba(73,127,100,.22);border-radius:22px;background:var(--color-primary-soft);box-shadow:0 18px 42px rgba(31,41,51,.14)}.guide-hero-media :global(.hero-media){width:100%;min-height:410px;aspect-ratio:4/3;object-fit:cover}.guide-hero-media figcaption{position:absolute;right:var(--space-4);bottom:var(--space-4);left:var(--space-4);display:flex;gap:.55rem;align-items:center;padding:.7rem .85rem;border:1px solid rgba(255,255,255,.7);border-radius:12px;background:rgba(255,255,255,.9);font-size:.8rem;font-weight:850;box-shadow:0 8px 24px rgba(31,41,51,.12);backdrop-filter:blur(10px)}
+  .guide-trust{border-block:1px solid var(--color-border);background:var(--color-surface)}.guide-trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}.guide-trust-grid span{padding:1rem;text-align:center}.guide-trust-grid span+span{border-left:1px solid var(--color-border)}.guide-trust-grid strong,.guide-trust-grid small{display:block}.guide-trust-grid strong{color:var(--color-primary-dark)}.guide-trust-grid small{margin-top:.15rem;color:var(--color-muted)}.guide-intro{max-width:850px;font-size:1.05rem}.breed-callout{display:flex;gap:var(--space-3);align-items:center;margin-top:var(--space-4);padding:var(--space-4);border:1px solid var(--color-border);border-radius:16px;background:var(--color-primary-soft)}.breed-callout>span{font-size:1.5rem}.breed-callout div{flex:1}.breed-callout p{margin:.15rem 0 0;color:var(--color-muted)}
+  .section-nav{display:flex;flex-wrap:wrap;gap:var(--space-3)}.section-nav a{display:inline-flex;gap:.5rem;align-items:center;padding:.65rem .85rem;border:1px solid var(--color-border);border-radius:999px;background:var(--color-surface);color:var(--color-text);font-weight:800;text-decoration:none}.section-nav a:hover{border-color:var(--color-primary);color:var(--color-primary-dark)}.section-nav span{display:grid;min-width:22px;height:22px;place-items:center;border-radius:999px;background:var(--color-primary-soft);color:var(--color-primary-dark);font-size:.7rem}
+  .guide-layout{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:var(--space-6);align-items:start}.guide-content{min-width:0}.guide-sidebar{position:sticky;top:92px}.sidebar-card{padding:var(--space-4);border:1px solid var(--color-border);border-radius:18px;background:var(--color-surface);box-shadow:0 10px 28px rgba(31,41,51,.06)}.sidebar-card h2{margin:.35rem 0 var(--space-3);font-size:1.2rem}.saved-link{display:flex;justify-content:space-between;align-items:center;padding:.7rem .8rem;border-radius:10px;background:var(--color-primary-dark);color:#fff;text-decoration:none;font-weight:850}.saved-link strong{display:grid;min-width:26px;height:26px;place-items:center;border-radius:50%;background:#f2c96d;color:#1f2933}.sidebar-card nav{display:grid;margin-top:var(--space-3)}.sidebar-card nav a{padding:.55rem 0;border-bottom:1px solid var(--color-border);color:var(--color-muted);font-size:.86rem;text-decoration:none}.sidebar-card nav a:hover{color:var(--color-primary-dark)}.sidebar-actions{display:grid;gap:.5rem;margin-top:var(--space-3)}.sidebar-actions a{font-size:.84rem;font-weight:850}
+  .shortlist-panel{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--space-4);margin-bottom:var(--space-6);padding:var(--space-5);border-radius:20px;background:var(--color-primary-dark);color:#fff}.shortlist-panel h2{margin:.35rem 0;color:#fff}.shortlist-panel p{margin:0;color:rgba(255,255,255,.78)}.shortlist-actions{display:flex;flex-wrap:wrap;gap:.65rem;align-items:center;justify-content:flex-end}.shortlist-actions>span{width:100%;color:rgba(255,255,255,.75);font-size:.8rem;text-align:right}.text-button{border:0;background:transparent;color:#fff;cursor:pointer;font-weight:800;text-decoration:underline}.text-button:disabled{opacity:.45}.shortlist-chips{display:flex;grid-column:1/-1;flex-wrap:wrap;gap:.5rem}.shortlist-chips :global(button){border:1px solid rgba(255,255,255,.35);border-radius:999px;background:rgba(255,255,255,.12);color:#fff;padding:.4rem .65rem;cursor:pointer;font-weight:750}
+  .content-block{scroll-margin-top:100px;margin-top:var(--space-7)}.section-heading{display:flex;justify-content:space-between;gap:var(--space-4);align-items:end;margin-bottom:var(--space-4)}.section-heading h2{margin:.25rem 0 0}.section-heading>span{border-radius:999px;background:var(--color-primary-soft);color:var(--color-primary-dark);padding:.4rem .7rem;font-size:.76rem;font-weight:850}.name-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-3)}.name-card{display:flex;justify-content:space-between;gap:var(--space-3);min-height:116px;padding:var(--space-4);border:1px solid var(--color-border);border-radius:14px;background:var(--color-surface);transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease}.name-card:hover{transform:translateY(-2px);border-color:var(--color-primary);box-shadow:0 10px 24px rgba(31,41,51,.07)}.name-card h3,.name-card p{margin:0}.name-card p{margin-top:.35rem;color:var(--color-muted);font-size:.88rem;line-height:1.5}.featuredNames{padding:var(--space-5);border:1px solid rgba(73,127,100,.25);border-radius:20px;background:linear-gradient(135deg,var(--color-primary-soft),#fff)}.featuredNames .name-card{border-color:rgba(73,127,100,.24);box-shadow:0 7px 20px rgba(31,41,51,.05)}.save-name{display:grid;flex:0 0 auto;width:34px;height:34px;place-items:center;border:1px solid var(--color-border);border-radius:50%;background:#fff;color:var(--color-primary-dark);cursor:pointer;font-size:1.1rem}.save-name:hover,.save-name[aria-pressed="true"]{border-color:var(--color-primary);background:var(--color-primary-soft)}.back-link{display:inline-flex;margin-top:var(--space-3);color:var(--color-muted);font-size:.82rem;font-weight:800}
+  .color-groups{display:grid;gap:var(--space-4)}.color-group{padding:var(--space-4);border:1px solid var(--color-border);border-radius:16px;background:var(--color-surface)}.color-group>h3{margin-top:0}.color-name-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-3)}.color-name-grid article{display:flex;justify-content:space-between;gap:var(--space-2);padding:var(--space-3);border-radius:12px;background:var(--color-primary-soft)}.color-name-grid p{margin:.25rem 0 0;color:var(--color-muted);font-size:.8rem}.prose-panel{padding:var(--space-5);border:1px solid var(--color-border);border-radius:17px;background:var(--color-surface)}.faq-accordion{display:grid;gap:var(--space-3)}.faq-item{padding:0 var(--space-4);border:1px solid var(--color-border);border-radius:14px;background:var(--color-surface)}.faq-item summary{cursor:pointer;padding:1rem 2rem 1rem 0;font-weight:850}.faq-answer p{margin:0;padding:0 0 1rem;color:var(--color-muted)}
+  .related-guide-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-4)}.related-guide-grid :global(.related-name-card){display:flex;min-height:100%;flex-direction:column;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}.related-guide-grid :global(.related-name-card:hover){transform:translateY(-3px);border-color:var(--color-primary);box-shadow:0 14px 32px rgba(31,41,51,.1)}.related-guide-grid :global(.card-media-wrap){aspect-ratio:16/10}.related-guide-grid :global(.card-media){height:100%}.related-guide-grid :global(.card-body){display:flex;flex:1;flex-direction:column;padding:var(--space-4)}.related-guide-grid :global(.card-body>p){display:-webkit-box;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:3}.related-guide-grid :global(.card-body>.button){align-self:flex-start;margin-top:auto}
+  .additional-search{overflow:hidden;margin-bottom:var(--space-6);border:1px solid var(--color-border);border-radius:18px;background:var(--color-surface)}.additional-search summary{display:flex;justify-content:space-between;gap:var(--space-4);align-items:center;cursor:pointer;padding:var(--space-4);list-style:none}.additional-search summary::-webkit-details-marker{display:none}.additional-search summary strong,.additional-search summary small{display:block}.additional-search summary small{margin-top:.2rem;color:var(--color-muted)}.additional-search summary>span:last-child{font-size:1.5rem;color:var(--color-primary-dark)}.additional-search[open] summary{border-bottom:1px solid var(--color-border);background:var(--color-primary-soft)}.additional-search-body{padding:var(--space-4)}.additional-controls{display:grid;grid-template-columns:minmax(220px,1.3fr) minmax(130px,.55fr) minmax(180px,.8fr);gap:var(--space-3)}.additional-controls label{display:grid;gap:.4rem;color:var(--color-text);font-size:.76rem;font-weight:850}.additional-controls input,.additional-controls select{min-height:44px;border:1px solid var(--color-border);border-radius:10px;background:#fff;padding:.65rem .75rem;color:var(--color-text)}.additional-status{color:var(--color-muted);font-size:.82rem}.additional-results{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-3);max-height:520px;overflow:auto;padding-right:.25rem}.additional-results :global(article){display:flex;justify-content:space-between;gap:var(--space-3);align-items:center;padding:var(--space-3);border:1px solid var(--color-border);border-radius:12px}.additional-results :global(article strong),.additional-results :global(article small){display:block}.additional-results :global(article p){margin:.2rem 0;color:var(--color-muted);font-size:.82rem}.additional-results :global(article small){color:var(--color-primary-dark);font-size:.72rem;font-weight:750}.additional-results :global(.button){flex:0 0 auto;padding:.5rem .7rem}
+  .guide-hero h1{max-width:760px;font-size:clamp(2.2rem,4vw,3.6rem);line-height:1.04}
+  @media(max-width:1050px){.name-grid,.color-name-grid{grid-template-columns:repeat(2,1fr)}.related-guide-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:850px){.guide-hero-grid,.guide-layout{grid-template-columns:1fr}.guide-sidebar{display:none}.guide-hero-media :global(.hero-media){min-height:0}.shortlist-panel{grid-template-columns:1fr}.shortlist-actions{justify-content:flex-start}.shortlist-actions>span{text-align:left}.breed-callout{align-items:flex-start;flex-wrap:wrap}.breed-callout .button{margin-left:2.5rem}}
+  @media(max-width:620px){.guide-hero{padding-bottom:var(--space-5)}.guide-hero h1{font-size:clamp(2rem,10vw,2.65rem)}.guide-trust-grid,.name-grid,.color-name-grid,.related-guide-grid{grid-template-columns:1fr}.guide-trust-grid span+span{border-top:1px solid var(--color-border);border-left:0}.section-nav{display:grid;grid-template-columns:repeat(2,1fr)}.section-nav a{justify-content:space-between;border-radius:12px}.featuredNames{padding:var(--space-4)}.shortlist-panel{padding:var(--space-4)}.section-heading{align-items:flex-start;flex-direction:column}.name-card{min-height:0}}
+  @media(max-width:850px){.additional-controls{grid-template-columns:1fr 1fr}.additional-controls label:first-child{grid-column:1/-1}.additional-results{grid-template-columns:1fr}}
+  @media(max-width:620px){.additional-controls{grid-template-columns:1fr}.additional-controls label:first-child{grid-column:auto}}
+</style>

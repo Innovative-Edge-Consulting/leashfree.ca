@@ -1,8 +1,8 @@
 # QA Page Report
 
-Generated at: 2026-08-15T16:43:20.563Z
-- HTML pages checked: 1142
-- Sitemap routes found: 1131
+Generated at: 2026-08-16T13:19:44.688Z
+- HTML pages checked: 1144
+- Sitemap routes found: 1132
 - Missing title tags: 0
 - Missing meta descriptions: 0
 - Duplicate title groups: 1
@@ -10,14 +10,14 @@ Generated at: 2026-08-15T16:43:20.563Z
 - Missing H1: 0
 - Multiple H1s: 0
 - Broken internal links: 0
-- Redirect-covered internal links: 4669
+- Redirect-covered internal links: 4681
 - Implemented-redirect internal links: 0
 - Broken image paths: 0
 - Pages using placeholder images: 0
 - Empty or very short pages: 0
 - Canonical mismatches: 0
 - Pages missing Open Graph title/description: 0
-- Routes missing from sitemap: 10
+- Routes missing from sitemap: 11
 - Implemented safe redirects: 0
 - Redirect source routes still built as active pages: 0
 - Redirect source routes still in sitemap: 0
@@ -36,6 +36,7 @@ Generated at: 2026-08-15T16:43:20.563Z
 - /dog-insurance-canada/pets-plus-us/: missing sitemap
 - /dog-insurance-canada/petsecure/: missing sitemap
 - /dog-insurance-canada/trupanion/: missing sitemap
+- /dog-names/my-list/: missing sitemap
 - /search/: missing sitemap
 
 ## Redirect Validation

@@ -1,6 +1,7 @@
 ---
-import Card from "../../components/Card.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BusinessDirectorySearch from "../../components/BusinessDirectorySearch.astro";
+import Card from "../../components/Card.astro";
 import Hero from "../../components/Hero.astro";
 import Layout from "../../components/Layout.astro";
 import OptimizedImage from "../../components/OptimizedImage.astro";
@@ -8,116 +9,72 @@ import Section from "../../components/Section.astro";
 import mediaMap from "../../data/media-map.json";
 import directories from "../../data/generated/directories.json";
 import { excerpt, breadcrumbSchema } from "../../utils/content.js";
-import {
-  DIRECTORY_CATEGORY_LABELS,
-  directoryCategory,
-  directoryCategoryCopy,
-  directoryCategoryPath
-} from "../../utils/directory.js";
+import { DIRECTORY_CATEGORY_LABELS, directoryCategory, directoryCategoryCopy, directoryCategoryLabel, directoryCategoryPath, directoryLocationLabel } from "../../utils/directory.js";
 import { resolveMedia } from "../../utils/media.js";
 
-const breadcrumbs = [
-  { label: "Home", href: "/" },
-  { label: "Directory", href: "/directory/" }
-];
-
-const activeCategoryPaths = new Set([
-  "/directory/animal-shelters-and-rescues/",
-  "/directory/veterinarians/"
-]);
-const categoryCounts = directories.reduce((counts, item) => {
-  const category = directoryCategory(item);
-  if (!category) return counts;
-  counts.set(category, (counts.get(category) || 0) + 1);
-  return counts;
-}, new Map());
+const breadcrumbs = [{ label: "Home", href: "/" }, { label: "Directory", href: "/directory/" }];
+const activeCategoryPaths = new Set(["/directory/animal-shelters-and-rescues/", "/directory/veterinarians/"]);
+const categoryCounts = directories.reduce((counts, item) => { const category = directoryCategory(item); if (category) counts.set(category, (counts.get(category) || 0) + 1); return counts; }, new Map());
 const categories = Object.keys(DIRECTORY_CATEGORY_LABELS).map((slug) => {
-  const copy = directoryCategoryCopy(slug);
-  const count = categoryCounts.get(slug) || 0;
-  const href = directoryCategoryPath(slug);
-  return {
-    slug,
-    title: DIRECTORY_CATEGORY_LABELS[slug],
-    href: activeCategoryPaths.has(href) ? href : "#add-business",
-    image: copy.image,
-    summary: copy.summary,
-    count,
-    status: count > 0 ? `${count} listings` : "Coming soon",
-    cta: activeCategoryPaths.has(href) ? "Browse category" : "Add a business"
-  };
+  const copy = directoryCategoryCopy(slug); const count = categoryCounts.get(slug) || 0; const href = directoryCategoryPath(slug); const active = activeCategoryPaths.has(href);
+  return { slug, title: DIRECTORY_CATEGORY_LABELS[slug], href, image: copy.image, summary: copy.summary, count, active };
 });
+const activeCategories = categories.filter((category) => category.active);
+const upcomingCategories = categories.filter((category) => !category.active);
+const featuredListings = [...directories].sort((a, b) => String(a.name).localeCompare(String(b.name))).slice(0, 6);
+const provinceCount = new Set(directories.map((item) => String(item.raw?.Province || "").toLowerCase()).filter(Boolean)).size;
+const structuredData = [
+  breadcrumbSchema(breadcrumbs),
+  { "@context": "https://schema.org", "@type": "ItemList", name: "Canadian dog service categories", itemListElement: activeCategories.map((category, index) => ({ "@type": "ListItem", position: index + 1, name: category.title, url: `https://leashfree.ca${category.href}` })) }
+];
 ---
 
-<Layout
-  title="Dog Services Directory"
-  description="Browse Canadian dog services and pet resources, including veterinarians, rescues, shelters, trainers, groomers, pet stores, maps, and local listings."
-  canonical="https://leashfree.ca/directory/"
-  structuredData={breadcrumbSchema(breadcrumbs)}
->
-  <Hero
-    eyebrow="Directory"
-    title="Dog services and pet resources"
-    summary="Find rescues, clinics, pet stores, trainers, groomers, and other dog-related services."
-    primaryHref="#listings"
-    primaryLabel="Browse listings"
-    secondaryHref="#add-business"
-    secondaryLabel="Add a Business"
-    image="/images/general/directory-services-hero.png"
-    imageAlt="Dog services and pet resources"
-  />
+<Layout title="Canadian Dog Services Directory: Vets, Rescues & Pet Businesses | LeashFree.ca" description="Find Canadian veterinarians, animal shelters, rescues, and other dog services by business name, category, city, province, or nearby location." canonical="https://leashfree.ca/directory/" structuredData={structuredData}>
+  <Hero eyebrow="Canadian dog services directory" title="Find trusted dog services near you" summary="Search Canadian veterinarians, animal shelters, rescues, and local pet services by location or business name." primaryHref="#search-directory" primaryLabel="Search the directory" secondaryHref="https://www.quizflowlabs.com/flow/flow-templates/add-a-business-listing-leashfree-ca" secondaryLabel="Add a business" secondaryTarget="_blank" image="/images/general/directory-services-hero.png" imageAlt="Dog owner visiting a local pet service business">
+    <Breadcrumbs slot="pretitle" items={breadcrumbs} />
+  </Hero>
 
-  <Section
-    title="Browse by business type"
-    intro="Start with a dog service category, then search by business name, city, province, or nearby location."
-  >
-    <div class="directory-category-grid">
-      {categories.map((category) => (
-        <article class="directory-category-card">
-          <OptimizedImage src={category.image} alt={`${category.title} category`} loading="lazy" decoding="async" sizes="(min-width: 1200px) 280px, (min-width: 720px) 50vw, 100vw" />
-          <div class="directory-category-card-body">
-            <p class="small">{category.status}</p>
-            <h3><a href={category.href}>{category.title}</a></h3>
-            <p>{category.summary}</p>
-            <a class="button secondary" href={category.href}>{category.cta}</a>
-          </div>
-        </article>
-      ))}
+  <div class="directory-trust-strip"><div class="container directory-trust-grid"><span><strong>{directories.length}</strong><small>reviewed listings</small></span><span><strong>{activeCategories.length}</strong><small>active categories</small></span><span><strong>{provinceCount}</strong><small>provinces represented</small></span><span><strong>Free</strong><small>business submissions</small></span></div></div>
+
+  <Section eyebrow="Browse services" title="Start with a business type" intro="Choose an active category for curated listings, or search the complete directory by name and location.">
+    <div class="active-category-grid">
+      {activeCategories.map((category) => <a class="active-category-card" href={category.href}>
+        <div class="category-media"><OptimizedImage src={category.image} alt={`${category.title} in Canada`} loading="lazy" decoding="async" sizes="(min-width: 800px) 50vw, 100vw" /></div>
+        <div class="active-category-body"><div><span class="category-count">{category.count} listings</span><h3>{category.title}</h3><p>{category.summary}</p></div><span class="category-action">Browse category <b aria-hidden="true">→</b></span></div>
+      </a>)}
     </div>
   </Section>
 
-  <Section
-    title="Search dog businesses"
-    intro="Find dog services and pet resources by name, category, city, province, or nearby location."
-  >
+  <Section id="search-directory" alt eyebrow="Search and map" title="Find dog businesses" intro="Search by business, category, city, province, or address. Use the filters to narrow the results or explore them on the map.">
     <BusinessDirectorySearch />
   </Section>
 
-  <Section
-    id="add-business"
-    title="Add a business listing"
-    intro="Submit a Canadian dog service, pet business, rescue, shelter, or veterinary clinic for review in the LeashFree.ca directory."
-    alt
-  >
-    <div class="add-business-listing-panel">
-      <div data-quizflow-embed="add-a-business-listing-leashfree-ca" data-quizflow-mode="fullpage"></div>
+  <Section eyebrow="Listing preview" title="Explore Canadian dog businesses" intro="A sample of businesses in the directory. Use the search above to browse all listings.">
+    <div class="featured-listing-grid">
+      {featuredListings.map((item) => <Card className="directory-listing-card" title={item.name} href={`/directory/${item.slug}/`} description={excerpt(item.metaDescription, item.description, 145)} image={resolveMedia(item, "Featured Image", mediaMap).src} imageAlt={`${item.name} listing`} imageLabel={directoryCategoryLabel(directoryCategory(item))} meta={directoryLocationLabel(item)} ctaLabel="View business" />)}
     </div>
-    <script async src="https://quizflowlabs.com/embed.js"></script>
+    <p class="section-action"><a class="button secondary" href="#search-directory">Search all {directories.length} listings</a></p>
   </Section>
 
-  <Section id="listings" title="Directory listings" intro={`${directories.length} dog service and pet resource listings.`}>
-    <div class="grid">
-      {directories.map((item) => (
-        <Card
-          title={item.name}
-          href={`/directory/${item.slug}/`}
-          description={excerpt(item.metaDescription, item.description)}
-          image={resolveMedia(item, "Featured Image", mediaMap).src}
-          imageAlt={`${item.name} listing`}
-          meta={[item.raw.City, item.raw.Province].filter(Boolean).join(", ")}
-          badges={[item.references.Category?.[0] || item.raw.Category || ""].filter(Boolean)}
-          ctaLabel="View listing"
-        />
-      ))}
+  <Section alt eyebrow="Growing directory" title="More service categories are coming" intro="These categories are being prepared as new Canadian businesses are reviewed and added.">
+    <div class="upcoming-grid">
+      {upcomingCategories.map((category) => <article class="upcoming-card"><span class="upcoming-icon" aria-hidden="true">{category.title.charAt(0)}</span><div><span>Coming soon</span><h3>{category.title}</h3><p>{category.summary.split(".")[0]}.</p></div></article>)}
     </div>
   </Section>
+
+  <Section id="add-business" eyebrow="For business owners" title="Add a Canadian dog business" intro="Help dog owners discover your clinic, rescue, shelter, pet business, or local service. Submissions are reviewed before publication.">
+    <div class="submission-layout"><div class="submission-copy"><h3>What to prepare</h3><ul><li>Business name, category, and service area</li><li>Website and contact details</li><li>A clear description of your services</li><li>Accurate location information</li></ul><p>Submitting a listing is free. Inclusion and publication timing are subject to editorial review.</p></div><div class="submission-panel"><div class="submission-embed" data-quizflow-embed="add-a-business-listing-leashfree-ca" data-quizflow-mode="fullpage"></div></div></div>
+    <script async src="https://quizflowlabs.com/embed.js"></script>
+  </Section>
 </Layout>
+
+<style>
+  .directory-trust-strip{border-block:1px solid var(--color-border);background:var(--color-surface)}.directory-trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}.directory-trust-grid span{padding:1rem;text-align:center}.directory-trust-grid span+span{border-left:1px solid var(--color-border)}.directory-trust-grid strong,.directory-trust-grid small{display:block}.directory-trust-grid strong{color:var(--color-primary-dark);font-size:1.05rem}.directory-trust-grid small{margin-top:.15rem;color:var(--color-muted)}
+  .active-category-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-5)}.active-category-card{display:grid;grid-template-columns:minmax(210px,.78fr) 1fr;overflow:hidden;border:1px solid var(--color-border);border-radius:20px;background:var(--color-surface);color:var(--color-text);text-decoration:none;box-shadow:0 10px 28px rgba(31,41,51,.06);transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}.active-category-card:hover{transform:translateY(-3px);border-color:var(--color-primary);box-shadow:0 16px 36px rgba(31,41,51,.11)}.category-media{min-height:100%;overflow:hidden}.category-media :global(picture){display:block;width:100%;height:100%}.category-media :global(img){display:block;width:100%;height:100%;min-height:260px;object-fit:cover;transition:transform .35s ease}.active-category-card:hover .category-media :global(img){transform:scale(1.025)}.active-category-body{display:flex;min-width:0;flex-direction:column;justify-content:space-between;padding:var(--space-5)}.active-category-body h3{margin:.45rem 0 .55rem}.active-category-body p{margin:0;color:var(--color-muted)}.category-count{display:inline-flex;border-radius:999px;background:var(--color-primary-soft);color:var(--color-primary-dark);padding:.3rem .65rem;font-size:.75rem;font-weight:850}.category-action{margin-top:var(--space-4);color:var(--color-primary-dark);font-weight:900}.category-action b{margin-left:.25rem}
+  .featured-listing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-4)}.featured-listing-grid :global(.directory-listing-card){display:flex;min-height:100%;flex-direction:column;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}.featured-listing-grid :global(.directory-listing-card:hover){transform:translateY(-3px);border-color:var(--color-primary);box-shadow:0 14px 32px rgba(31,41,51,.1)}.featured-listing-grid :global(.card-media-wrap){aspect-ratio:16/10}.featured-listing-grid :global(.card-media){height:100%}.featured-listing-grid :global(.card-body){display:flex;flex:1;flex-direction:column}.featured-listing-grid :global(.card-body>p:not(.small)){display:-webkit-box;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:3}.featured-listing-grid :global(.card-body>.button){align-self:flex-start;margin-top:auto}.featured-listing-grid :global(.small){font-weight:750;text-transform:none}.section-action{margin:var(--space-5) 0 0;text-align:center}
+  .upcoming-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:var(--space-3)}.upcoming-card{display:flex;gap:var(--space-3);padding:var(--space-4);border:1px dashed color-mix(in srgb,var(--color-border) 75%,var(--color-primary));border-radius:15px;background:rgba(255,255,255,.58)}.upcoming-icon{display:grid;flex:0 0 auto;width:38px;height:38px;place-items:center;border-radius:11px;background:var(--color-border);color:var(--color-muted);font-weight:950}.upcoming-card div>span{color:var(--color-primary-dark);font-size:.7rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em}.upcoming-card h3{margin:.25rem 0 .35rem;font-size:1rem}.upcoming-card p{margin:0;color:var(--color-muted);font-size:.84rem;line-height:1.45}
+  .submission-layout{display:grid;grid-template-columns:minmax(280px,.7fr) minmax(0,1.3fr);gap:var(--space-6);align-items:start}.submission-copy{padding:var(--space-5);border:1px solid var(--color-border);border-radius:18px;background:var(--color-primary-soft)}.submission-copy h3{margin-top:0}.submission-copy li+li{margin-top:.45rem}.submission-copy p{margin-bottom:0;color:var(--color-muted)}.submission-panel{overflow:hidden;border:1px solid var(--color-border);border-radius:18px;background:var(--color-surface)}
+  @media(max-width:1050px){.active-category-card{grid-template-columns:1fr}.category-media{aspect-ratio:16/8}.category-media :global(img){min-height:0}.upcoming-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:800px){.directory-trust-grid{grid-template-columns:repeat(2,1fr)}.directory-trust-grid span:nth-child(3){border-top:1px solid var(--color-border);border-left:0}.directory-trust-grid span:nth-child(4){border-top:1px solid var(--color-border)}.active-category-grid,.featured-listing-grid,.submission-layout{grid-template-columns:1fr}}
+  @media(max-width:560px){.directory-trust-grid,.upcoming-grid{grid-template-columns:1fr}.directory-trust-grid span+span{border-top:1px solid var(--color-border);border-left:0}.category-media{aspect-ratio:16/9}.active-category-body{padding:var(--space-4)}}
+</style>

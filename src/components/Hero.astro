@@ -21,6 +21,7 @@ interface Props {
   primaryLabel?: string;
   secondaryHref?: string;
   secondaryLabel?: string;
+  secondaryTarget?: "_blank";
 }
 
 const {
@@ -39,7 +40,8 @@ const {
   primaryHref,
   primaryLabel,
   secondaryHref,
-  secondaryLabel
+  secondaryLabel,
+  secondaryTarget
 } = Astro.props;
 ---
 
@@ -52,7 +54,7 @@ const {
       {summary && <p class="lead">{summary}</p>}
       <div class="button-row">
         {primaryHref && <a class="button primary" href={primaryHref}>{primaryLabel || "Explore"}</a>}
-        {secondaryHref && <a class="button secondary" href={secondaryHref}>{secondaryLabel || "Learn more"}</a>}
+        {secondaryHref && <a class="button secondary" href={secondaryHref} target={secondaryTarget} rel={secondaryTarget === "_blank" ? "noopener noreferrer" : undefined}>{secondaryLabel || "Learn more"}</a>}
       </div>
     </div>
     <ImageWithFallback
