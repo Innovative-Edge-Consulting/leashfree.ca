@@ -1,6 +1,6 @@
 # LeashFree.ca Editorial Plan Tracker
 
-Last updated: 2026-08-15
+Last updated: 2026-08-17
 
 Source strategy report: `reports/editorial-backlog-2026-07-11.md`
 
@@ -33,8 +33,8 @@ Statuses:
 
 | Slot | Item | Status | Decision |
 | --- | --- | --- | --- |
-| Next article | Reprioritize backlog | Proposed | Rank 23 is published; select the next breed-fit or broader owner-intent opportunity after reviewing the new series response. |
-| Next cluster | Living With... breed-fit series | Backlog | Continue the breed-fit format with another high-interest Canadian breed after reviewing Rank 23 performance and internal-link coverage. |
+| Next article | Dog Boarding vs Dog Daycare vs Pet Sitter: Which Is Safest for Your Dog? | Proposed | Rank 25 deliberately changes clusters after two consecutive breed-fit posts and supports LeashFree's local service-discovery strategy. |
+| Next cluster | Care decisions / local services | Proposed | Compare care options by dog temperament, supervision, health, schedule, cost, and emergency planning, with directory destinations. Return to the breed-fit series after this intervening post. |
 | Seasonal backup | Wildfire Smoke and Dogs in Canada: When To Skip the Walk | Backlog | Strong fallback during active smoke periods or AQHI spikes. |
 
 ## Working Board
@@ -64,6 +64,8 @@ Statuses:
 | 21 | Published | 16 | How To Stop Your Dog From Pulling on Walks: A Humane Training Plan by Age | `stop-dog-pulling-on-walks` | Training / behaviour | Trainer directory, dog gear finder | VCA loose-leash guidance, AVSAB humane-training position, puppy/adolescent expectations, senior pain and behaviour guidance | Monitor performance and add links from trainer and gear surfaces | Published 2026-08-06 with dedicated hero image, age expectations table, 10-minute practice session, trigger-management guidance, humane equipment boundaries, FAQ, and internal links. |
 | 22 | Published | 18 | What To Do If Your Dog Is Stung by a Bee or Wasp in Canada | `dog-bee-wasp-sting-first-aid-canada` | Outdoor safety / urgent care | Veterinarian directory, emergency-vet guide, dog gear finder | Pet Poison Helpline sting guidance, VCA anaphylaxis and insect-reaction guidance, Ontario SPCA summer safety, conservative medication and emergency-care caveats | Monitor performance and add links from veterinarian and emergency-care surfaces | Published at /blog/dog-bee-wasp-sting-first-aid-canada/ on 2026-08-12 with dedicated hero image, emergency decision table, five source links, internal links, and IndexNow submission. |
 | 23 | Published | 19 | Living With a German Shorthaired Pointer: Exercise, Training, and Ownership Guide | `living-with-german-shorthaired-pointer` | Breed fit / ownership | Dog breed directory, breed-match quiz, exercise guide, trainer directory | CKC breed standard, AKC breed and puppy guidance, GSPCA/OFA health-testing guidance, veterinary GDV guidance, Canadian winter and water-safety sources | Monitor performance and use the format for the next breed-fit article | Published at /blog/living-with-german-shorthaired-pointer/ on 2026-08-15 with dedicated hero image, six source links, Canadian ownership guidance, GDV explanation, series cross-links, and IndexNow submission. |
+| 24 | Published | 21 | Living With a Labrador Retriever: Exercise, Training, and Family Fit | `living-with-labrador-retriever` | Breed fit / ownership | Dog breed directory, breed-match quiz, exercise guide, dog food comparison, dog parks | CKC Labrador profile and 2025 popularity data, AKC family-fit guidance, Labrador Retriever Club health clearances, VCA exercise and weight guidance, Canadian swimming and winter sources | Monitor performance and return to the series after an intervening cluster | Published at /blog/living-with-labrador-retriever/ on 2026-08-17 with dedicated hero image, Canadian ownership guidance, six source links, series cross-links, and IndexNow submission. |
+| 25 | Proposed | 20 | Dog Boarding vs Dog Daycare vs Pet Sitter: Which Is Safest for Your Dog? | `dog-boarding-vs-daycare-vs-pet-sitter` | Care decisions / local services | Boarding and daycare directory, pet sitter directory, veterinarian directory, dog cost calculator | Current Canadian service guidance, veterinary supervision and emergency-planning sources, humane-society preparation guidance, transparent local pricing examples | Research the comparison framework and source set before drafting; generate a dedicated image | Deliberate non-breed follow-up after Rank 23 and Rank 24; strong directory fit and broad travel, work-schedule, and separation-management intent. |
 
 ## Kanban View
 
@@ -73,7 +75,7 @@ Statuses:
 
 ### In Research
 
-- None
+- Rank 24: Living With a Labrador Retriever: Exercise, Training, and Family Fit
 
 - None
 
@@ -212,6 +214,8 @@ Use this checklist before marking an article `Ready To Publish`.
 | 2026-08-12 | Published Rank 22 at /blog/dog-bee-wasp-sting-first-aid-canada/ with a dedicated generated hero image; production deploy succeeded and IndexNow returned HTTP 200. Re-rank the backlog before selecting Rank 23. |
 | 2026-08-15 | Added Rank 23 as the first article in the proposed “Living With...” breed-fit series; revised the supplied German Shorthaired Pointer draft, added Canadian ownership guidance, six source links, internal links, and a dedicated hero image. |
 | 2026-08-15 | Published Rank 23 at /blog/living-with-german-shorthaired-pointer/; production deploy succeeded and IndexNow returned HTTP 200. The “Living With...” series is now an active backlog cluster for future breed-fit posts. |
+| 2026-08-17 | Re-ranked the breed-fit series and selected Rank 24, Living With a Labrador Retriever, using CKC popularity data, family-fit demand, existing LeashFree destinations, and a strong source base. |
+| 2026-08-17 | Published Rank 24 at /blog/living-with-labrador-retriever/ with a dedicated hero image; production deploy succeeded and IndexNow returned HTTP 200. Set Rank 25 to a care-decision article so the next post is not another breed-fit article back-to-back. |
 | 2026-07-25 | Started drafting Rank 11 at /blog/how-much-exercise-does-my-dog-need/ with breed activity bands, life-stage adjustments, mental enrichment, and Canadian weather guidance; kept it unpublished pending image and final QA. |
 | 2026-07-24 | Published Rank 10 at /blog/best-dog-food-sensitive-stomachs-canada/ with a dedicated generated hero image; moved Rank 11 to the next backlog focus. |
 | 2026-07-24 | Started drafting Rank 10 at /blog/best-dog-food-sensitive-stomachs-canada/ with a vet-first label comparison framework and conservative diet-trial guidance; kept it unpublished pending image and final QA. |

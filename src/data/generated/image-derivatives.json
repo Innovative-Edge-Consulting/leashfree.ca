@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T13:03:14.398Z",
+  "generatedAt": "2026-08-17T14:51:55.777Z",
   "images": {
     "/images/blog/blog-average-vet-costs-in-canada-hero.jpg": {
       "width": 702,
@@ -32237,6 +32237,496 @@
           {
             "width": 1600,
             "src": "/images/optimized/dog-parks/sheffield-dog-off-leash-area-original/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/southwest-dog-park-saskatoon-original.png": {
+      "width": 1536,
+      "height": 1024,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/southwest-dog-park-saskatoon-original/960.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/southwest-dog-park-saskatoon-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/southwest-dog-park-saskatoon-original/960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/southwest-dog-park-saskatoon-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/southwest-dog-park-saskatoon-original/960.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/southwest-dog-park-saskatoon-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/southwest-dog-park-saskatoon-original/960.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/three-mile-bend-recreation-area-original.png": {
+      "width": 1536,
+      "height": 1024,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/three-mile-bend-recreation-area-original/960.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/three-mile-bend-recreation-area-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/three-mile-bend-recreation-area-original/960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/three-mile-bend-recreation-area-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/three-mile-bend-recreation-area-original/960.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/three-mile-bend-recreation-area-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/three-mile-bend-recreation-area-original/960.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/audley-recreation-centre-original.png": {
+      "width": 1660,
+      "height": 947,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/audley-recreation-centre-original/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/audley-recreation-centre-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/audley-recreation-centre-original/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/audley-recreation-centre-original/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/audley-recreation-centre-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/audley-recreation-centre-original/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/audley-recreation-centre-original/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/audley-recreation-centre-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/audley-recreation-centre-original/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/audley-recreation-centre-original/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/albion-fairgrounds-maple-ridge-original.png": {
+      "width": 1536,
+      "height": 1024,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/albion-fairgrounds-maple-ridge-original/960.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/albion-fairgrounds-maple-ridge-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/albion-fairgrounds-maple-ridge-original/960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/albion-fairgrounds-maple-ridge-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/albion-fairgrounds-maple-ridge-original/960.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/albion-fairgrounds-maple-ridge-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/albion-fairgrounds-maple-ridge-original/960.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/hammond-dog-off-leash-area-original.png": {
+      "width": 1693,
+      "height": 929,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/hammond-dog-off-leash-area-original/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/hammond-dog-off-leash-area-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/hammond-dog-off-leash-area-original/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/hammond-dog-off-leash-area-original/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/hammond-dog-off-leash-area-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/hammond-dog-off-leash-area-original/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/hammond-dog-off-leash-area-original/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/hammond-dog-off-leash-area-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/hammond-dog-off-leash-area-original/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/hammond-dog-off-leash-area-original/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/jerry-sulina-park-maple-ridge-original.png": {
+      "width": 1536,
+      "height": 1024,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/jerry-sulina-park-maple-ridge-original/960.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/jerry-sulina-park-maple-ridge-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/jerry-sulina-park-maple-ridge-original/960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/jerry-sulina-park-maple-ridge-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/jerry-sulina-park-maple-ridge-original/960.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/jerry-sulina-park-maple-ridge-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/jerry-sulina-park-maple-ridge-original/960.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/saratoga-dog-park-original.png": {
+      "width": 1774,
+      "height": 887,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/saratoga-dog-park-original/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/saratoga-dog-park-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/saratoga-dog-park-original/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/saratoga-dog-park-original/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/saratoga-dog-park-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/saratoga-dog-park-original/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/saratoga-dog-park-original/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/saratoga-dog-park-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/saratoga-dog-park-original/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/saratoga-dog-park-original/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/steve-mcdonnell-original.png": {
+      "width": 1825,
+      "height": 862,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/steve-mcdonnell-original/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/steve-mcdonnell-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/steve-mcdonnell-original/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/steve-mcdonnell-original/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/steve-mcdonnell-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/steve-mcdonnell-original/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/steve-mcdonnell-original/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/steve-mcdonnell-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/steve-mcdonnell-original/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/steve-mcdonnell-original/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/crystal-ridge-neighbourhood-off-leash-area-original.png": {
+      "width": 1535,
+      "height": 1024,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/crystal-ridge-neighbourhood-off-leash-area-original/960.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/crystal-ridge-neighbourhood-off-leash-area-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/crystal-ridge-neighbourhood-off-leash-area-original/960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/crystal-ridge-neighbourhood-off-leash-area-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/crystal-ridge-neighbourhood-off-leash-area-original/960.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/crystal-ridge-neighbourhood-off-leash-area-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/crystal-ridge-neighbourhood-off-leash-area-original/960.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/grand-valley-park-pickering-original.png": {
+      "width": 1704,
+      "height": 923,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/grand-valley-park-pickering-original/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/grand-valley-park-pickering-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/grand-valley-park-pickering-original/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/grand-valley-park-pickering-original/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/grand-valley-park-pickering-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/grand-valley-park-pickering-original/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/grand-valley-park-pickering-original/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/grand-valley-park-pickering-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/grand-valley-park-pickering-original/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/grand-valley-park-pickering-original/1600.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/paisley-dog-park-original.png": {
+      "width": 1983,
+      "height": 793,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/paisley-dog-park-original/1600.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/paisley-dog-park-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/paisley-dog-park-original/960.avif"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/paisley-dog-park-original/1600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/paisley-dog-park-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/paisley-dog-park-original/960.webp"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/paisley-dog-park-original/1600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/paisley-dog-park-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/paisley-dog-park-original/960.jpg"
+          },
+          {
+            "width": 1600,
+            "src": "/images/optimized/dog-parks/paisley-dog-park-original/1600.jpg"
           }
         ]
       }
