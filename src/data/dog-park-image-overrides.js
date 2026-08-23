@@ -188,6 +188,8 @@ export const originalParkHeroImages = {
   "diamond-jubilee-park": "/images/dog-parks/diamond-jubilee-park-original.png",
   "lions-park-belleville": "/images/dog-parks/lions-park-belleville-original.png",
   "don-boudria-park": "/images/dog-parks/don-boudria-park-original.png",
+  "sir-casimir-gzowski-park-etobicoke": "/images/dog-parks/sir-casimir-gzowski-park-etobicoke-original.png",
+  "don-russell-memorial-park-etobicoke": "/images/dog-parks/don-russell-memorial-park-etobicoke-original.png",
   "kinsmen-dog-park-quinte-west": "/images/dog-parks/kinsmen-dog-park-quinte-west-original.png",
   "klarvatten-off-leash-area": "/images/dog-parks/klarvatten-off-leash-area-original.png",
   "knox-mountain-dog-park-kelowna": "/images/dog-parks/knox-mountain-dog-park-kelowna-original.png",

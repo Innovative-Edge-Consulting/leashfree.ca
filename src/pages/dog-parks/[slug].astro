@@ -131,7 +131,7 @@ const primaryName = cleanText(primary.name);
 const cityName = cleanText(city?.name || primary.raw.City);
 const provinceName = cleanText(province?.name || primary.raw.Province);
 const fieldText = (field) => cleanText(primary.raw[field]);
-const notesText = normalizeText(primary.raw["Notes / Comments"]);
+const notesText = normalizeText(primary.raw["Public Notes"] || "");
 const parseFaqHtml = (html) => {
   if (!html || typeof html !== "string") return [];
   const items = [];

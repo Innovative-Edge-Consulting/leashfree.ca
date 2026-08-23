@@ -1,6 +1,8 @@
 # Draft Cloudflare Pages redirects for launch review.
 # Keep this file conservative; unresolved legacy sections remain in the Phase 6 redirect report.
 
+/dog-parks/kings-mill-park/ /dog-parks/kings-mill-park-etobicoke/ 301
+
 /breed-groups/herding-dogs /dog-breeds/group/herding-dogs/ 301
 /breed-groups/hound-dogs /dog-breeds/group/hound-dogs/ 301
 /breed-groups/hybrid-designer-mixes /dog-breeds/group/hybrid-designer-mixes/ 301

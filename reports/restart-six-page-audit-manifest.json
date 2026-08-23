@@ -1,0 +1,99 @@
+{
+  "manifestVersion": 1,
+  "auditSet": "six-page-restart-2026-08-22",
+  "scope": "Raymore Park; King's Mill Park; Diamond Jubilee Park; Lion's Park, Belleville; Don Boudria Park; Sir Casimir Gzowski Park",
+  "createdOn": "2026-08-22",
+  "policy": {
+    "onePageAtATime": true,
+    "researchBeforeEditing": true,
+    "primarySourcesPreferred": true,
+    "visibleResearchUrlsForbidden": true,
+    "completionRequiresBuildAndRenderedInspection": true
+  },
+  "worktreeNote": "The repository had pre-existing uncommitted changes before this manifest was created. They were not reset, reverted, or overwritten.",
+  "pages": [
+    {
+      "name": "Raymore Park",
+      "slug": "raymore-park",
+      "route": "/dog-parks/raymore-park/",
+      "city": "Toronto",
+      "province": "Ontario",
+      "status": "passed",
+      "currentRecord": "Toronto's current 2025 Dogs Off-Leash Strategy lists Raymore Park as a Ward 2 off-leash area; the City-wide study identifies a small-dog area.",
+      "conflicts": [],
+      "artifactChecks": {"content": "implementation-complete", "seo": "implementation-complete", "structuredData": "verified-in-render", "generatedJson": "implementation-complete", "csv": "implementation-complete", "imageMapping": "verified", "sourceImage": "verified", "optimizedDerivatives": "verified", "backlog": "implementation-complete", "renderedPage": "verified"},
+      "sourceUrls": ["https://www.toronto.ca/legdocs/mmis/2025/ie/bgrd/backgroundfile-254205.pdf", "https://www.toronto.ca/legdocs/mmis/2025/ie/bgrd/backgroundfile-254206.pdf", "https://www.toronto.ca/city-government/public-notices-bylaws/bylaw-enforcement/dogs-off-leash/", "https://www.toronto.ca/explore-enjoy/parks-recreation/how-to-use-our-services/love-parks/"],
+      "nextAction": "Complete; proceed to King's Mill Park only after resolving its duplicate-route conflict."
+    },
+    {
+      "name": "King's Mill Park",
+      "slug": "kings-mill-park-etobicoke",
+      "legacySlug": "kings-mill-park",
+      "route": "/dog-parks/kings-mill-park-etobicoke/",
+      "city": "Toronto",
+      "province": "Ontario",
+      "status": "passed",
+      "currentRecord": "Toronto's current 2025 Dogs Off-Leash Strategy lists King's Mill Park as a Ward 3 off-leash area. The Etobicoke route is canonical; the legacy route now redirects to it.",
+      "conflicts": ["Historical 2010 proposal material conflicted with the newer 2025 City strategy; the newer strategy controls current status."],
+      "artifactChecks": {"content": "implementation-complete", "seo": "implementation-complete", "structuredData": "verified-in-render", "generatedJson": "implementation-complete", "csv": "implementation-complete", "imageMapping": "verified", "sourceImage": "verified", "optimizedDerivatives": "verified", "backlog": "implementation-complete", "redirect": "verified", "renderedPage": "verified"},
+      "sourceUrls": ["https://www.toronto.ca/legdocs/mmis/2025/ie/bgrd/backgroundfile-254205.pdf", "https://www.toronto.ca/city-government/planning-development/construction-new-facilities/park-facility-projects/dogs-off-leash-strategy/", "https://www.toronto.ca/city-government/public-notices-bylaws/bylaw-enforcement/dogs-off-leash/", "https://www.toronto.ca/explore-enjoy/parks-recreation/how-to-use-our-services/love-parks/"],
+      "nextAction": "Complete; proceed to Diamond Jubilee Park."
+    },
+    {
+      "name": "Diamond Jubilee Park",
+      "slug": "diamond-jubilee-park",
+      "route": "/dog-parks/diamond-jubilee-park/",
+      "city": "Ottawa",
+      "province": "Ontario",
+      "status": "passed",
+      "currentRecord": "Ottawa's current dogs-in-parks map does not identify Diamond Jubilee Park as an off-leash location; older Phase 2 planning material is historical and not current designation evidence.",
+      "conflicts": [],
+      "artifactChecks": {"content": "implementation-complete", "seo": "implementation-complete", "structuredData": "verified-in-render", "generatedJson": "implementation-complete", "csv": "implementation-complete", "imageMapping": "verified", "sourceImage": "verified", "optimizedDerivatives": "verified", "backlog": "not-needed", "renderedPage": "verified"},
+      "sourceUrls": ["https://ottawa.ca/en/recreation-and-parks/parks-and-green-space/dog-parks/dogs-parks", "https://ottawa.ca/en/recreation-and-parks/parks-and-green-space/dog-parks/map-dogs-parks", "https://ottawa.ca/en/recreation-and-parks/facilities-and-rentals/parks-and-green-space"],
+      "nextAction": "Complete; proceed to Lion's Park, Belleville."
+    },
+    {
+      "name": "Lion's Park, Belleville",
+      "slug": "lions-park-belleville",
+      "route": "/dog-parks/lions-park-belleville/",
+      "city": "Belleville",
+      "province": "Ontario",
+      "status": "passed",
+      "currentRecord": "Belleville's current listing identifies Lion's Park at 70 Station Street as a landscaped park with floral gardens, wedding-photo use, and trail access; it does not identify Lion's Park as the City's off-leash facility. The City-operated off-leash dog park is at East Zwick's Park, 11 Bay Bridge Road.",
+      "conflicts": [],
+      "artifactChecks": {"content": "implementation-complete", "seo": "implementation-complete", "structuredData": "verified-in-render", "generatedJson": "implementation-complete", "csv": "implementation-complete", "imageMapping": "verified", "sourceImage": "verified", "optimizedDerivatives": "verified", "backlog": "implementation-complete", "renderedPage": "verified"},
+      "sourceUrls": ["https://facilities.belleville.ca/Home/Detail?CloseMap=true&FacilityTypeIds=30762&Id=6f161e33-f632-4c8e-b548-771a95049210&Keywords=zwicks", "https://www.belleville.ca/files/Belleville_Dog_By-Law_2005-206_Consolidated_May_2014.pdf", "https://www.belleville.ca/en/learn-and-play/parks-trails-and-green-spaces/trails-and-paths/", "https://www.belleville.ca/home-and-property/by-law-and-animal-services/commonly-requested-by-laws/"],
+      "nextAction": "Complete; proceed to Don Boudria Park."
+    },
+    {
+      "name": "Don Boudria Park",
+      "slug": "don-boudria-park",
+      "route": "/dog-parks/don-boudria-park/",
+      "city": "Ottawa",
+      "province": "Ontario",
+      "status": "passed",
+      "currentRecord": "Ottawa's current dogs-in-parks record identifies Don Boudria Park at 655 Décoeur Drive as an accessible community park that is not designated for off-leash use; dogs must remain on leash.",
+      "conflicts": [],
+      "artifactChecks": {"content": "implementation-complete", "seo": "implementation-complete", "structuredData": "verified-in-render", "generatedJson": "implementation-complete", "csv": "implementation-complete", "imageMapping": "verified", "sourceImage": "verified", "optimizedDerivatives": "verified", "backlog": "implementation-complete", "renderedPage": "verified"},
+      "sourceUrls": ["https://ottawa.ca/en/recreation-and-parks/parks-facilities-and-rentals/outdoor-recreation/parks/dog-parks/dogs-parks", "https://ottawa.ca/en/recreation-and-parks/parks-facilities-and-rentals/outdoor-recreation/parks/dog-parks/map-dogs-parks", "https://ottawa.ca/en/living-ottawa/laws-licences-and-permits/laws/laws-z/animal-care-and-control-law-no-2003-077", "https://ottawa.ca/en/living-ottawa/laws-licences-and-permits/laws/laws-z/parks-and-facilities-law-no-2025-251"],
+      "nextAction": "Complete; proceed to Sir Casimir Gzowski Park."
+    },
+    {
+      "name": "Sir Casimir Gzowski Park",
+      "slug": "sir-casimir-gzowski-park-etobicoke",
+      "legacySlug": "sir-casimir-gzowski-park",
+      "route": "/dog-parks/sir-casimir-gzowski-park-etobicoke/",
+      "city": "Toronto",
+      "province": "Ontario",
+      "status": "passed",
+      "currentRecord": "Toronto's current 2025 Dogs Off-Leash Strategy lists Sir Casimir Gzowski Park as a Ward 4 off-leash area; the City-wide study identifies the area as fenced. The canonical Etobicoke route is active and the shorter legacy route redirects to it.",
+      "conflicts": [],
+      "artifactChecks": {"content": "implementation-complete", "seo": "implementation-complete", "structuredData": "verified-in-render", "generatedJson": "implementation-complete", "csv": "implementation-complete", "imageMapping": "verified", "sourceImage": "verified", "optimizedDerivatives": "verified", "backlog": "implementation-complete", "redirect": "verified-in-manifest", "renderedPage": "verified"},
+      "sourceUrls": ["https://www.toronto.ca/legdocs/mmis/2025/ie/bgrd/backgroundfile-254205.pdf", "https://www.toronto.ca/legdocs/mmis/2025/ie/bgrd/backgroundfile-254206.pdf", "https://www.toronto.ca/legdocs/mmis/2022/ie/bgrd/backgroundfile-225886.pdf", "https://www.toronto.ca/city-government/public-notices-bylaws/bylaw-enforcement/dogs-off-leash/"],
+      "nextAction": "Complete; six-page restart audit finished."
+    }
+  ],
+  "overallStatus": "passed",
+  "nextPriorityPage": null,
+  "blockingIssues": []
+}

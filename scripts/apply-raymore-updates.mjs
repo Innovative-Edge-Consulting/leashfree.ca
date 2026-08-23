@@ -80,6 +80,7 @@ function getContent() {
 
 function applyParkFields(park) {
   const { seoTitle, metaDescription, intro, body, notes } = getContent();
+  const faqs = "<p><strong>1. Is Raymore Park currently listed as a Toronto off-leash area?</strong></p><p>Yes. Toronto's 2025 Dogs Off-Leash Strategy lists Raymore Park as a designated off-leash area in Ward 2.</p><p><strong>2. Is there a separate small-dog area?</strong></p><p>The City's current city-wide study identifies a small-dog area at Raymore Park. Check the posted layout when you arrive.</p><p><strong>3. Can dogs be off leash throughout the park?</strong></p><p>No. Dogs may be off leash only within the designated area. Keep a leash with you for paths, entrances, exits, and other park spaces.</p><p><strong>4. What rules apply inside the off-leash area?</strong></p><p>Toronto requires dogs to remain within sight and under control. Dogs must be licensed and vaccinated, and owners must clean up waste.</p><p><strong>5. What hours should I plan for?</strong></p><p>Toronto parks are generally closed between midnight and 5:30 a.m.; confirm posted signage and temporary notices before visiting.</p><p><strong>6. Are water, parking, benches, and waste bins confirmed here?</strong></p><p>The reviewed sources did not confirm those site-specific amenities. Bring water and waste bags, and verify conditions on arrival.</p>";
 
   park.title = "Raymore Park | Toronto";
   park.seoTitle = seoTitle;
@@ -122,12 +123,25 @@ function applyParkFields(park) {
     Tags: "integrity-correction,toronto,dogs-on-leash,etobicoke",
     "Notes / Comments": notes,
     "Intro Paragraph": intro,
+    "Dog Park FAQs": faqs,
     Media: "",
     "Reviewed On": "Fri Aug 21 2026 12:00:00 GMT+0000 (Coordinated Universal Time)",
     "Meta Title": seoTitle,
     "Meta Description": metaDescription,
     "Updated On": "Fri Aug 21 2026 12:00:00 GMT+0000 (Coordinated Universal Time)",
   });
+
+  const correctedSeoTitle = "Raymore Park Off-Leash Area | Toronto, ON | LeashFree.ca";
+  const correctedMeta = "Current Toronto source-backed guide to Raymore Park's designated off-leash area, including its Humber valley setting and small-dog area.";
+  const correctedIntro = "<p>Raymore Park is a City of Toronto park with a <strong>designated dogs off-leash area</strong> in Etobicoke. Toronto's current strategy also identifies a <strong>small-dog area</strong> at Raymore.</p>";
+  const correctedBody = "<p>Toronto's current <strong>Dog Off-Leash Strategy</strong> lists Raymore Park as a designated off-leash area in Ward 2. The City's current study also identifies a small-dog area. Dogs may run off leash only inside the designated area; keep them leashed while entering, leaving, or using other park spaces.</p><p>Raymore sits in Toronto's Humber valley landscape and provides a naturalized setting for supervised dog exercise. Toronto's off-leash rules require dogs to be vaccinated and licensed, kept within sight and under control, and not left unattended. Female dogs in heat and dogs subject to dangerous-dog restrictions are not permitted in off-leash areas.</p><p>Check posted boundaries onsite, carry a leash, clean up waste, and protect nearby vegetation and wildlife. Toronto parks are closed between midnight and 5:30 a.m.; verify current notices before visiting.</p>";
+  const correctedNotes = "<p>Primary sources reviewed on Saturday, August 22, 2026: https://www.toronto.ca/legdocs/mmis/2025/ie/bgrd/backgroundfile-254205.pdf for the current Toronto Dog Off-Leash Strategy listing Raymore Park; https://www.toronto.ca/legdocs/mmis/2025/ie/bgrd/backgroundfile-254206.pdf for the current City-wide study identifying Raymore's small-dog area; https://www.toronto.ca/city-government/public-notices-bylaws/bylaw-enforcement/dogs-off-leash/ for current off-leash rules; and https://www.toronto.ca/explore-enjoy/parks-recreation/how-to-use-our-services/love-parks/ for park hours and etiquette.</p>";
+  park.seoTitle = correctedSeoTitle;
+  park.metaDescription = correctedMeta;
+  park.description = correctedIntro;
+  park.body = correctedBody;
+  park.references = { City: ["Toronto"], Province: ["Ontario"], Tags: ["off-leash", "toronto", "etobicoke", "humber-valley", "small-dog-area"] };
+  Object.assign(park.raw, { Description: correctedBody, "Park type": "Designated Dogs Off-Leash Area", Fenced: "Verify current boundaries on arrival", "Separate Small Dog Area": "Yes - City study identifies a small-dog area", "Seasonal Restrictions": "Dogs must remain within the designated off-leash area and under control", "Park Website or Source": "https://www.toronto.ca/legdocs/mmis/2025/ie/bgrd/backgroundfile-254205.pdf", Tags: "off-leash,toronto,etobicoke,humber-valley,small-dog-area", "Notes / Comments": correctedNotes, "Intro Paragraph": correctedIntro, "Dog Park FAQs": faqs, "Meta Title": correctedSeoTitle, "Meta Description": correctedMeta, "Reviewed On": "Sat Aug 22 2026 12:00:00 GMT+0000 (Coordinated Universal Time)", "Updated On": "Sat Aug 22 2026 12:00:00 GMT+0000 (Coordinated Universal Time)" });
 }
 
 function updateParksJson() {

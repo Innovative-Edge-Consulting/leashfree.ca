@@ -1,5 +1,11 @@
 [
   {
+    "sourceRoute": "/dog-parks/kings-mill-park/",
+    "targetRoute": "/dog-parks/kings-mill-park-etobicoke/",
+    "status": 301,
+    "duplicateGroupKey": "park-name-city|king's mill park|toronto|ontario"
+  },
+  {
     "sourceRoute": "/dog-parks/charleson-dog-park-8fc05/",
     "targetRoute": "/dog-parks/charleson-dog-park/",
     "status": 301,
@@ -58,5 +64,11 @@
     "targetRoute": "/dog-parks/falaise-park-dog-park/",
     "status": 301,
     "duplicateGroupKey": "park-name-city|falaise park|vancouver|bc"
+  },
+  {
+    "sourceRoute": "/dog-parks/sir-casimir-gzowski-park/",
+    "targetRoute": "/dog-parks/sir-casimir-gzowski-park-etobicoke/",
+    "status": 301,
+    "duplicateGroupKey": "park-name-city|sir casimir gzowski park|toronto|ontario"
   }
 ]
