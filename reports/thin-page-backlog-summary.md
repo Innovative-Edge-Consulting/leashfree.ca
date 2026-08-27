@@ -26,20 +26,6 @@ This backlog contains 446 pages in the current working queue. The CSV is the ope
 
 | # | Tier | Type | Page | Score | Words | Missing source |
 | ---: | --- | --- | --- | ---: | ---: | --- |
-| 1 | T2-high-value-expansion | Dog Parks | [Yellowquill Provincial Park Off-Leash Dog Area](/dog-parks/yellowquill-provincial-park-off-leash-dog-area/) | 79 | 92 | no |
-| 2 | T2-high-value-expansion | Dog Parks | [Baffin Dog Park](/dog-parks/baffin-dog-park/) | 79 | 93 | no |
-| 3 | T2-high-value-expansion | Dog Parks | [Don Russell Memorial Park](/dog-parks/don-russell-memorial-park-etobicoke/) | 77 | 79 | no |
-| 4 | T2-high-value-expansion | Dog Parks | [Corbett's Park](/dog-parks/corbetts-park/) | 77 | 80 | no |
-| 5 | T2-high-value-expansion | Dog Parks | [Conroy Pit](/dog-parks/conroy-pit/) | 77 | 84 | no |
-| 6 | T2-high-value-expansion | Dog Parks | [Brewer Park](/dog-parks/brewer-park/) | 77 | 85 | no |
-| 7 | T2-high-value-expansion | Dog Parks | [Brenda Leipsic Park](/dog-parks/brenda-leipsic-park/) | 77 | 86 | no |
-| 8 | T2-high-value-expansion | Dog Parks | [Hermitage Park](/dog-parks/hermitage-park/) | 77 | 86 | no |
-| 9 | T2-high-value-expansion | Dog Parks | [Chris Gibson Park](/dog-parks/chris-gibson-park/) | 77 | 87 | no |
-| 10 | T2-high-value-expansion | Dog Parks | [Don Russell Memorial Park](/dog-parks/don-russell-memorial-park/) | 77 | 87 | no |
-| 11 | T2-high-value-expansion | Dog Parks | [Sunnidale Park](/dog-parks/sunnidale-park/) | 77 | 87 | no |
-| 12 | T2-high-value-expansion | Dog Parks | [Ajax Waterfront Park](/dog-parks/ajax-waterfront-park/) | 77 | 88 | no |
-| 13 | T2-high-value-expansion | Dog Parks | [Firemen's Park](/dog-parks/firemens-park/) | 77 | 88 | no |
-| 14 | T2-high-value-expansion | Dog Parks | [Hamilton Beach](/dog-parks/hamilton-beach/) | 77 | 88 | no |
 | 15 | T2-high-value-expansion | Dog Parks | [Memorial Park](/dog-parks/memorial-park-white-rock/) | 77 | 88 | no |
 | 16 | T2-high-value-expansion | Dog Parks | [White Spruce Park](/dog-parks/white-spruce-park/) | 77 | 88 | no |
 | 17 | T2-high-value-expansion | Dog Parks | [Bakerview Park](/dog-parks/bakerview-park-surrey/) | 77 | 89 | no |

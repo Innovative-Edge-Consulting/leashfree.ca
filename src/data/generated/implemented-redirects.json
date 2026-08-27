@@ -70,5 +70,11 @@
     "targetRoute": "/dog-parks/sir-casimir-gzowski-park-etobicoke/",
     "status": 301,
     "duplicateGroupKey": "park-name-city|sir casimir gzowski park|toronto|ontario"
+  },
+  {
+    "sourceRoute": "/dog-parks/don-russell-memorial-park/",
+    "targetRoute": "/dog-parks/don-russell-memorial-park-etobicoke/",
+    "status": 301,
+    "duplicateGroupKey": "park-name-city|don russell memorial park|toronto|ontario"
   }
 ]

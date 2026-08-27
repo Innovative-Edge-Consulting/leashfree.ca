@@ -40,6 +40,7 @@ const primary = matches[0];
 const activeParks = withoutRedirectedRecords(parks);
 const pageType = primary.collection;
 const isPark = pageType === "Dog Parks";
+const isOnLeashParkGuide = isPark && primary.raw["Park type"] === "On-leash park guide";
 const isCity = pageType === "City Pages";
 const isProvince = pageType === "Provinces";
 const enhancedProvinceConfig = {
@@ -120,8 +121,10 @@ const formatDisplayDate = (date) => (date
   ? new Intl.DateTimeFormat("en-CA", { year: "numeric", month: "short", day: "numeric" }).format(date)
   : "");
 const updatedAt = parseDateValue(primary.raw["Updated On"]);
+const reviewedAt = parseDateValue(primary.raw["Reviewed On"]);
 const publishedAt = parseDateValue(primary.raw["Published On"]) || parseDateValue(primary.raw["Created On"]);
 const updatedIso = toIsoDate(updatedAt);
+const reviewedIso = toIsoDate(reviewedAt);
 const publishedIso = toIsoDate(publishedAt);
 const normalizeText = (value) => cleanText(value);
 const siteUrl = Astro.site || "https://leashfree.ca";
@@ -130,6 +133,17 @@ const parkUrl = (park) => absoluteUrl(`/dog-parks/${park.slug}/`, siteUrl);
 const primaryName = cleanText(primary.name);
 const cityName = cleanText(city?.name || primary.raw.City);
 const provinceName = cleanText(province?.name || primary.raw.Province);
+const parkHeroAltOverrides = {
+  "conroy-pit": "Painterly illustration of two off-leash dogs with their handler in a Pine Grove forest clearing at Conroy Pit",
+  "brewer-park": "Painterly illustration of two off-leash dogs with their handler beside the riverside path in the designated southern area of Brewer Park",
+  "brenda-leipsic-park": "Painterly illustration of two off-leash dogs and their handler on a broad path beside an open shelter in a prairie park setting",
+  "hermitage-park": "Painterly illustration of two off-leash dogs with their handler inside the grass and woven-wire enclosure at Hermitage Park in Ajax",
+  "chris-gibson-park": "Painterly illustration of two off-leash dogs playing with their handler in a broad tree-lined community park in Brampton",
+  "sunnidale-park": "Painterly illustration of two off-leash dogs and their handler on a fenced woodland footpath at Sunnidale Park in Barrie"
+  ,"ajax-waterfront-park": "Painterly illustration of a leashed dog and handler on the asphalt trail beside Lake Ontario at Ajax Waterfront"
+  ,"firemens-park": "Painterly illustration of two off-leash dogs running with their handler in a grassy, tree-lined area of Firemen's Park"
+  ,"hamilton-beach": "Realistic digital illustration of a leashed dog and handler on the paved Hamilton Beach Trail beside Lake Ontario"
+};
 const fieldText = (field) => cleanText(primary.raw[field]);
 const notesText = normalizeText(primary.raw["Public Notes"] || "");
 const parseFaqHtml = (html) => {
@@ -152,11 +166,7 @@ const parseFaqHtml = (html) => {
   }
   return items;
 };
-const freshnessText = updatedAt
-  ? `Last updated ${formatDisplayDate(updatedAt)}`
-  : publishedAt
-  ? `Published ${formatDisplayDate(publishedAt)}`
-  : "";
+const freshnessText = reviewedAt ? `Information reviewed ${formatDisplayDate(reviewedAt)}` : "";
 const isAffirmative = (value) => {
   if (typeof value === "boolean") return value;
   if (typeof value !== "string") return false;
@@ -408,7 +418,9 @@ const bestForParts = [
 ].filter(Boolean);
 const bestFor = bestForParts.length > 0
   ? `This park is best for ${bestForParts.join(", ")}.`
-  : "This park supports general off-leash visits; check posted guidance before entering.";
+  : isOnLeashParkGuide
+    ? "This park is best for leashed neighbourhood walks and shared use of its confirmed public recreation amenities."
+    : "This park supports general off-leash visits; check posted guidance before entering.";
 const visitTips = [
   primary.raw["Operating hours"] ? `Operating hours: ${primary.raw["Operating hours"]}.` : "",
   primary.raw["Seasonal Restrictions"] ? cleanText(primary.raw["Seasonal Restrictions"]) : "",
@@ -506,7 +518,7 @@ const structuredData = [
         },
         hasMap: mapLink || undefined,
         sameAs: sourceUrl || undefined,
-        dateModified: updatedIso,
+        dateModified: reviewedIso,
         datePublished: publishedIso,
         amenityFeature: amenityDefs
           .filter((item) => isAffirmative(primary.raw[item.field]))
@@ -527,7 +539,7 @@ const structuredData = [
     ? {
         "@context": "https://schema.org",
           "@type": "FAQPage",
-          dateModified: updatedIso,
+          dateModified: reviewedIso,
           datePublished: publishedIso,
           mainEntity: parkFaqEntities
       }
@@ -559,7 +571,7 @@ const structuredData = [
     <div class="container detail-layout">
       <div>
         <Breadcrumbs items={breadcrumbs} />
-        <div class="eyebrow">{isPark ? "Dog park" : isCity ? "City guide" : "Province guide"}</div>
+        <div class="eyebrow">{isOnLeashParkGuide ? "Park guide" : isPark ? "Dog park" : isCity ? "City guide" : "Province guide"}</div>
         <h1>{enhancedProvince ? `${enhancedProvince.shortName} dog parks` : isCity ? `${primaryName} dog parks` : cleanText(primary.title || primary.name)}</h1>
         <p class="summary">{excerpt(description)}</p>
         {isPark && (fieldText("Street Address") || heroHighlights.length > 0) && (
@@ -570,7 +582,7 @@ const structuredData = [
         )}
         {(freshnessText || sourceUrl) && (
           <div class="park-trust-row">
-            {freshnessText && <span>{updatedAt ? `Information reviewed ${formatDisplayDate(updatedAt)}` : freshnessText}</span>}
+            {freshnessText && <span>{freshnessText}</span>}
             {sourceUrl && <a href={sourceUrl} target="_blank" rel="noreferrer">Municipal or official source ↗</a>}
           </div>
         )}
@@ -587,7 +599,16 @@ const structuredData = [
           {city && <a class="button secondary" href={`/dog-parks/${city.slug}/`}>More in {cityName}</a>}
         </div>
       </div>
-      <ImageWithFallback src={image.src} alt={isPark ? `Dog park guide for ${primaryName}` : `${primaryName} dog parks`} variant="hero" loading="eager" />
+      <ImageWithFallback
+        src={image.src}
+        alt={parkHeroAltOverrides[primary.slug] || (isOnLeashParkGuide
+          ? `Illustration of a leashed dog near the playground, gazebo, sports field, and shade trees at ${primaryName}`
+          : isPark
+            ? `Dog park guide for ${primaryName}`
+            : `${primaryName} dog parks`)}
+        variant="hero"
+        loading="eager"
+      />
     </div>
   </section>
 
