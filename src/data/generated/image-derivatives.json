@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T18:29:02.374Z",
+  "generatedAt": "2026-08-28T23:07:27.365Z",
   "images": {
     "/images/blog/blog-average-vet-costs-in-canada-hero.jpg": {
       "width": 702,
@@ -34329,6 +34329,500 @@
           {
             "width": 960,
             "src": "/images/optimized/dog-parks/hamilton-beach-original/960.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/memorial-park-white-rock-original.png": {
+      "width": 1536,
+      "height": 1024,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/memorial-park-white-rock-original/960.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/memorial-park-white-rock-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/memorial-park-white-rock-original/960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/memorial-park-white-rock-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/memorial-park-white-rock-original/960.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/memorial-park-white-rock-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/memorial-park-white-rock-original/960.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/white-spruce-park-original.png": {
+      "width": 1536,
+      "height": 1024,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/white-spruce-park-original/960.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/white-spruce-park-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/white-spruce-park-original/960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/white-spruce-park-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/white-spruce-park-original/960.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/white-spruce-park-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/white-spruce-park-original/960.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/bakerview-park-surrey-original.png": {
+      "width": 1536,
+      "height": 1024,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/bakerview-park-surrey-original/960.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/bakerview-park-surrey-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/bakerview-park-surrey-original/960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/bakerview-park-surrey-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/bakerview-park-surrey-original/960.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/bakerview-park-surrey-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/bakerview-park-surrey-original/960.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/semiahmoo-park-original.png": {
+      "width": 1536,
+      "height": 1024,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/semiahmoo-park-original/960.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/semiahmoo-park-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/semiahmoo-park-original/960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/semiahmoo-park-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/semiahmoo-park-original/960.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/semiahmoo-park-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/semiahmoo-park-original/960.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/stony-swamp-conservation-area-original.png": {
+      "width": 1536,
+      "height": 1024,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/stony-swamp-conservation-area-original/960.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/stony-swamp-conservation-area-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/stony-swamp-conservation-area-original/960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/stony-swamp-conservation-area-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/stony-swamp-conservation-area-original/960.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/stony-swamp-conservation-area-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/stony-swamp-conservation-area-original/960.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/nelson-dog-walk-lakeside-path-original.png": {
+      "width": 1536,
+      "height": 1024,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/nelson-dog-walk-lakeside-path-original/960.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/nelson-dog-walk-lakeside-path-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/nelson-dog-walk-lakeside-path-original/960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/nelson-dog-walk-lakeside-path-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/nelson-dog-walk-lakeside-path-original/960.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/nelson-dog-walk-lakeside-path-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/nelson-dog-walk-lakeside-path-original/960.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/thurlow-dog-park-original.png": {
+      "width": 1536,
+      "height": 1024,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/thurlow-dog-park-original/960.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/thurlow-dog-park-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/thurlow-dog-park-original/960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/thurlow-dog-park-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/thurlow-dog-park-original/960.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/thurlow-dog-park-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/thurlow-dog-park-original/960.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/barkwood-forest-original.png": {
+      "width": 1536,
+      "height": 1024,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/barkwood-forest-original/960.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/barkwood-forest-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/barkwood-forest-original/960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/barkwood-forest-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/barkwood-forest-original/960.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/barkwood-forest-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/barkwood-forest-original/960.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/bishops-park-original.png": {
+      "width": 1536,
+      "height": 1024,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/bishops-park-original/960.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/bishops-park-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/bishops-park-original/960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/bishops-park-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/bishops-park-original/960.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/bishops-park-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/bishops-park-original/960.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/colonel-danforth-park-original.png": {
+      "width": 1536,
+      "height": 1024,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/colonel-danforth-park-original/960.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/colonel-danforth-park-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/colonel-danforth-park-original/960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/colonel-danforth-park-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/colonel-danforth-park-original/960.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/colonel-danforth-park-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/colonel-danforth-park-original/960.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/david-bartlett-park-original.png": {
+      "width": 1536,
+      "height": 1024,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/david-bartlett-park-original/960.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/david-bartlett-park-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/david-bartlett-park-original/960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/david-bartlett-park-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/david-bartlett-park-original/960.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/david-bartlett-park-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/david-bartlett-park-original/960.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/guindon-park-cornwall-original.png": {
+      "width": 1536,
+      "height": 1024,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/guindon-park-cornwall-original/960.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/guindon-park-cornwall-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/guindon-park-cornwall-original/960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/guindon-park-cornwall-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/guindon-park-cornwall-original/960.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/guindon-park-cornwall-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/guindon-park-cornwall-original/960.jpg"
+          }
+        ]
+      }
+    },
+    "/images/dog-parks/millers-creek-park-original.png": {
+      "width": 1536,
+      "height": 1024,
+      "fallbackFormat": "jpg",
+      "fallbackSrc": "/images/optimized/dog-parks/millers-creek-park-original/960.jpg",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/millers-creek-park-original/480.avif"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/millers-creek-park-original/960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/millers-creek-park-original/480.webp"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/millers-creek-park-original/960.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/images/optimized/dog-parks/millers-creek-park-original/480.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/images/optimized/dog-parks/millers-creek-park-original/960.jpg"
           }
         ]
       }

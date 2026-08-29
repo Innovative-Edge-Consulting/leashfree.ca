@@ -16,13 +16,13 @@ const csvPath = "LeashFree-Webflow-Backup-2026-05-26/02-cms-csv-exports/LeashFre
 const imageSource = "/images/dog-parks/hamilton-beach-original.png";
 const sourceImagePath = `public${imageSource}`;
 const expectedTitle = "Hamilton Beach On-Leash Guide | Hamilton, Ontario | LeashFree.ca";
-const expectedDescription = "Plan an on-leash walk at Confederation Beach Park and Hamilton Beach Trail: current hours, paved trail length, beach restriction, parking, and rules.";
+const expectedDescription = "Plan an on-leash walk through approximately 93 hectares at Confederation Beach Park: current hours, paved trail, beach restriction, parking, and rules.";
 const expectedCanonical = "https://leashfree.ca/dog-parks/hamilton-beach/";
 const expectedSource = "https://conservationhamilton.ca/conservation-areas/confederation-park/";
 const expectedAlt = "Realistic digital illustration of a leashed dog and handler on the paved Hamilton Beach Trail beside Lake Ontario";
-const expectedReviewed = "2026-08-26T12:00:00.000Z";
+const expectedReviewed = "2026-08-27T12:00:00.000Z";
 const expectedCoordinates = { latitude: "43.2501726941", longitude: "-79.7537066673" };
-const areaConflict = "The City of Hamilton's project page describes a 93-hectare park, while the current Open Hamilton Parks layer (last edited 2026-08-02) records 96.444 hectares. Both values are withheld from visitor content until the City reconciles the boundary or measurement difference.";
+const areaVariation = "The City project page's approximately 93-hectare total park-area figure controls visitor wording. The current Open Hamilton Parks polygon reports 96.444 hectares; that modest boundary-layer variation is retained only in internal notes and does not block publication.";
 
 function parseCsv(text) {
   const rows = [];
@@ -69,21 +69,11 @@ function updateManifest(patch, nextPriorityPage = "Hamilton Beach") {
   if (end < 0) throw new Error("Hamilton Beach manifest entry end not found");
   const entry = JSON.parse(text.slice(start, end + 1));
   Object.assign(entry, patch);
+  if (patch.status === "passed") delete entry.blockingIssues;
   let updated = `${text.slice(0, start)}${JSON.stringify(entry)}${text.slice(end + 1)}`;
   updated = updated.replace(/"overallStatus"\s*:\s*"[^"]+"/, `"overallStatus": "${patch.status}"`);
   updated = updated.replace(/"nextPriorityPage"\s*:\s*"[^"]+"/, `"nextPriorityPage": "${nextPriorityPage}"`);
-  if (patch.status === "blocked") {
-    updated = updated.replace(/"blockingIssues"\s*:\s*\[[^\]]*\](?![\s\S]*"blockingIssues")/, `"blockingIssues": ${JSON.stringify([areaConflict])}`);
-    const revalidation = {
-      page: "Hamilton Beach",
-      route,
-      checkedOn: "2026-08-26",
-      checkedAt: new Date().toISOString(),
-      status: "blocked",
-      finding: "The City project page still says 93 hectares, while the live Open Hamilton Parks layer, last edited 2026-08-02, still reports 96.444 hectares. Both values remain withheld from visitor content."
-    };
-    updated = updated.replace(/"lastBlockedRevalidation"\s*:\s*\{[^}]*\}/, `"lastBlockedRevalidation": ${JSON.stringify(revalidation)}`);
-  }
+  if (patch.status === "passed") updated = updated.replace(/"blockingIssues"\s*:\s*\[[^\]]*\]/, `"blockingIssues": []`);
   fs.writeFileSync(manifestPath, updated);
 }
 
@@ -101,7 +91,7 @@ const implementationChecks = {
 };
 
 if (markVerification) {
-  updateManifest({ status: "verification-pending", artifactChecks: implementationChecks, nextAction: "Run production build, repository QA, parity, image, and rendered-page checks; retain the documented official area conflict." });
+  updateManifest({ status: "verification-pending", artifactChecks: implementationChecks, nextAction: "Run production build, repository QA, parity, image, and rendered-page checks for the approved approximate-area resolution." });
   console.log("Marked Hamilton Beach verification-pending.");
   process.exit(0);
 }
@@ -132,7 +122,7 @@ const faqSchema = jsonLd.find((entry) => entry["@type"] === "FAQPage");
 check(title === expectedTitle, "SEO title mismatch");
 check(description === expectedDescription, "meta description mismatch");
 check(canonical === expectedCanonical, "canonical mismatch");
-check(visibleText.includes("Information reviewed Aug 26, 2026"), "Reviewed On text missing");
+check(visibleText.includes("Information reviewed Aug 27, 2026"), "Reviewed On text missing");
 check(visibleText.includes("680 Van Wagners Beach Road"), "street address missing");
 check(visibleText.includes("L8E 3L8"), "postal code missing");
 check(visibleText.includes("Hamilton") && visibleText.includes("Ontario"), "city or province missing");
@@ -142,13 +132,14 @@ check(visibleText.includes("4.3-kilometre paved Hamilton Beach Trail"), "trail l
 check(visibleText.includes("another 4.2 kilometres of Waterfront Trail"), "trail connection missing");
 check(visibleText.includes("shorter than 2 metres"), "leash length rule missing");
 check(visibleText.includes("open daily from 6 a.m. to 11 p.m."), "hours missing");
+check(visibleText.includes("approximately 93 hectares"), "approximate total park area missing");
 check(visibleText.includes("accessible parking spaces") && visibleText.includes("washrooms"), "confirmed facilities missing");
 check(!visibleText.includes("580 Van Wagners Beach Rd"), "stale address visible");
 check(!visibleText.includes("7:00 AM") && !visibleText.includes("9:00 PM"), "stale hours visible");
 check(!visibleText.includes("Approx. 10 acres") && !visibleText.includes("10 acres"), "unsupported size visible");
 check(!visibleText.includes("boardwalk"), "unsupported boardwalk claim visible");
 check(!visibleText.includes("lifeguard-supervised swimming zones"), "stale beach-access claim visible");
-check(!visibleText.includes("93 hectare") && !visibleText.includes("93-hectare") && !visibleText.includes("96.444"), "conflicting area value visible");
+check(!visibleText.includes("96.444"), "internal GIS area variation visible");
 check(!/https?:\/\//i.test(visibleText), "raw URL visible in page text");
 check(!/(primary sources|research notes|implementation|verification|visitor-facing|editorial|source conflict|old copy|improved page|municipal gis)/i.test(visibleText), "internal process language visible");
 
@@ -167,7 +158,7 @@ const amenities = new Set((parkSchema?.amenityFeature || []).map((item) => item.
 check(amenities.size === 3 && amenities.has("Waste bins") && amenities.has("Parking") && amenities.has("Washrooms"), "amenity schema should contain only confirmed waste bins, parking, and washrooms");
 check(Boolean(faqSchema), "FAQ schema missing");
 check(faqSchema?.dateModified === expectedReviewed, "FAQ schema Reviewed On mismatch");
-check(faqSchema?.mainEntity?.length === 7, "FAQ schema count mismatch");
+check(faqSchema?.mainEntity?.length === 8, "FAQ schema count mismatch");
 
 check(html.includes(imageSource), "intended source image missing");
 check(html.includes(`alt="${expectedAlt}"`), "hero alt mismatch");
@@ -220,9 +211,11 @@ if (failures.length) {
 
 if (finalize) {
   updateManifest({
-    status: "blocked",
-    conflicts: [areaConflict],
-    blockingIssues: [areaConflict],
+    status: "passed",
+    conflicts: [],
+    currentRecord: "Confederation Beach Park is an approximately 93-hectare City waterfront park operated by Hamilton Conservation Authority. The Hamilton Beach route is an on-leash visitor guide to the park and its 4.3-kilometre paved trail, not a leash-free dog park; dogs are prohibited on the beach.",
+    unknowns: ["precise surveyed boundary area", "any physical perimeter fencing unrelated to dog access", "separate small-dog area", "potable dog water", "dog-bag dispensers", "bench locations distinct from confirmed picnic tables", "shade conditions along a specific trail segment", "washroom opening schedule", "ordinary availability in each parking lot", "temporary or seasonal closures beyond posted notices"],
+    sourceVariation: areaVariation,
     image: {
       source: imageSource,
       width: 1536,
@@ -247,9 +240,9 @@ if (finalize) {
       backlog: "implementation-complete",
       renderedPage: "verified"
     },
-    reason: "Conflict-safe implementation and verification completed with current City of Hamilton and Hamilton Conservation Authority park, trail, pet-rule, leash-free-map, park-map, and municipal GIS sources; synchronized visitor copy, SEO, FAQs, generated JSON and CMS CSV; verified the unique compressed illustration and six responsive derivatives; completed production build, repository page QA, exact artifact parity, and rendered metadata, schema, source, image, fallback, and editorial-marker inspection. The page remains blocked because current official sources disagree on total park area, and neither value is visitor-facing.",
-    nextAction: "Revalidate Hamilton Beach when the City reconciles the 93-hectare project-page figure with the current 96.444-hectare GIS value; do not advance to Memorial Park while this page is active."
-  });
+    reason: "Implementation and verification completed with current City of Hamilton and Hamilton Conservation Authority park, trail, pet-rule, leash-free-map, park-map, and municipal GIS sources; synchronized the City project page's approximately 93-hectare total park-area wording under the established approximate-area policy; retained the modest GIS polygon variation only in internal notes; synchronized visitor copy, SEO, FAQs, generated JSON and CMS CSV; verified the unique compressed illustration and six responsive derivatives; completed production build, repository page QA, exact artifact parity, and rendered metadata, schema, source, image, fallback, and editorial-marker inspection.",
+    nextAction: "Complete; proceed to Memorial Park in White Rock on the next page-improvement run."
+  }, "Memorial Park");
 }
 
-console.log(`Hamilton Beach verification passed (${finalize ? "manifest blocked on official area conflict" : "verification only"}); SHA-256 ${sourceHash}.`);
+console.log(`Hamilton Beach verification passed (${finalize ? "manifest passed with approved approximate area wording" : "verification only"}); SHA-256 ${sourceHash}.`);
